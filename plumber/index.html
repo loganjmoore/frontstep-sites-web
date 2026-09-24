@@ -37,7 +37,7 @@ body{font-family:var(--read);font-size:1.0625rem;line-height:1.6;color:var(--ink
 a{color:inherit}
 img,svg{display:block;max-width:100%}
 .wrap{width:min(1120px,100% - 32px);margin-inline:auto}
-:focus-visible{outline:3px solid var(--brass);outline-offset:3px}
+:focus-visible{outline:3px solid var(--ink);outline-offset:2px;box-shadow:0 0 0 6px var(--brass)}
 
 /* sample banner: always honest about what this is */
 .sample{background:var(--ink);color:#e9ece7;font-size:.9rem;padding:.55rem 0}
@@ -83,7 +83,7 @@ header nav a:hover{color:var(--ink)}
 .hero .copy{padding-bottom:44px}
 @media(min-width:900px){.van{order:0;margin-right:-40px}.hero .copy{padding-bottom:64px}}
 .van svg{width:100%;height:auto;overflow:visible}
-.van .paint{position:absolute;left:7%;top:20%;width:61%;height:46%;display:flex;flex-direction:column;justify-content:center;gap:1cqi;pointer-events:none}
+.van .paint{overflow:hidden;position:absolute;left:7%;top:20%;width:61%;height:46%;display:flex;flex-direction:column;justify-content:center;gap:1cqi;pointer-events:none}
 .van .paint .name{font-family:var(--letter);font-weight:900;text-transform:uppercase;color:var(--livery);font-size:min(8.2cqi,4.4rem);line-height:.9;text-wrap:balance;letter-spacing:.005em;overflow-wrap:anywhere}
 .van .paint .name.long{font-size:min(6.6cqi,3.5rem)}
 .van .paint .name.longer{font-size:min(5.2cqi,2.8rem)}
@@ -118,7 +118,7 @@ h2{font-family:var(--letter);font-weight:800;text-transform:uppercase;font-size:
 /* reviews */
 .reviews .grid{display:grid;gap:18px;margin-top:32px}
 @media(min-width:800px){.reviews .grid{grid-template-columns:repeat(3,1fr)}}
-blockquote{background:#fff;border:1px solid var(--rule);border-radius:8px;padding:22px;box-shadow:0 2px 8px rgba(22,32,27,.05)}
+blockquote{border-top:3px solid var(--ink);padding:16px 0 4px}
 blockquote .stars{color:#b7791f;letter-spacing:.1em;font-size:1.05rem}
 blockquote p{margin:.5rem 0 .9rem}
 blockquote cite{font-style:normal;font-weight:700}
@@ -330,7 +330,7 @@ footer a{color:#fff}
 (function () {
   var q = new URLSearchParams(location.search);
   var clean = function (s, max) { return (s || "").replace(/[\u0000-\u001f<>]/g, "").trim().slice(0, max); };
-  var name = clean(q.get("n"), 60), city = clean(q.get("c"), 40), since = clean(q.get("since"), 4);
+  var name = clean(q.get("n"), 44), city = clean(q.get("c"), 40), since = clean(q.get("since"), 4);
   var digits = (q.get("p") || "").replace(/\D/g, "").replace(/^1(?=\d{10}$)/, "");
   var color = (q.get("color") || "").replace(/[^0-9a-f]/gi, "");
   var set = function (sel, v) { document.querySelectorAll(sel).forEach(function (el) { el.textContent = v; }); };
