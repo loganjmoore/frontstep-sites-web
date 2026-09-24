@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Front Step Sites | Your website, built and kept up for you</title>
+<meta name="description" content="Done-for-you websites for small businesses anywhere in the US. $99 a year after a $249 setup. A real person makes every change. Leave any time with one click.">
+<!--
+THESIS: the offer shelved like honest merchandise: price, unit price, what's in the box, no fine print. Refuses the SaaS builder landing page.
+OWN-WORLD: retail shelf tags on a steel rail; white card-stock tags with condensed black numerals, our tag in label yellow; unit-price boxes, barcode dividers; Archivo throughout. See /DESIGN.md.
+STORY: owner sees what it costs vs doing it themselves, that a person does the work, and that leaving is free; then sees their own name on a sample site and emails to start.
+FIRST VIEWPORT: headline top-left; the shelf beneath it with three tags (DIY builder, our Launch tag larger and yellow, Leaving $0); the name box to open a sample directly under the shelf.
+FORM: shelf-tag world, diagnostic comparison-plate staging (seed d7f88bc8).
+-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#111312;--ink-2:#474d4b;--ground:#eceeec;--tag:#fff;--yellow:#ffd60a;
+  --rail:#a3aaa9;--rail-deep:#5d6563;--ok:#1d7a45;
+  --font:"Archivo","Arial Narrow",system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:var(--font);font-size:1.0625rem;line-height:1.6;color:var(--ink);background:var(--ground)}
+a{color:inherit}
+.wrap{width:min(1120px,100% - 32px);margin-inline:auto}
+:focus-visible{outline:3px solid var(--ink);outline-offset:3px}
+.label{font-size:.78rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase}
+.num{font-stretch:75%;font-weight:800;line-height:.88;letter-spacing:-.01em}
+h1,h2{font-stretch:80%;font-weight:800;line-height:.98;letter-spacing:-.005em;text-wrap:balance}
+h2{font-size:clamp(2rem,4.4vw,3rem);max-width:18ch}
+p.lead{font-size:clamp(1.1rem,2vw,1.3rem);color:var(--ink-2);max-width:52ch}
+
+/* header */
+header{padding:18px 0}
+header .wrap{display:flex;align-items:center;justify-content:space-between;gap:1rem}
+.brand{display:flex;align-items:center;gap:.6rem;text-decoration:none;font-weight:800;font-stretch:85%;font-size:1.35rem;letter-spacing:-.005em}
+.brand svg{width:34px;height:34px}
+header nav{display:flex;gap:1.2rem;align-items:center;font-weight:600}
+header nav a{text-decoration:none}
+header nav a.hide-sm{display:none}
+@media(min-width:720px){header nav a.hide-sm{display:inline}}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;font:inherit;font-weight:700;text-decoration:none;border-radius:3px;cursor:pointer;min-height:48px;padding:0 1.2rem;border:2px solid var(--ink);transition:transform .12s ease-out,box-shadow .12s ease-out}
+.btn-primary{background:var(--ink);color:var(--yellow)}
+.btn-primary:hover{box-shadow:0 3px 0 var(--rail-deep);transform:translateY(-1px)}
+.btn-secondary{background:var(--tag);color:var(--ink)}
+.btn-secondary:hover{background:#f6f7f6}
+
+/* hero + shelf */
+.hero{padding:20px 0 0}
+.hero h1{font-size:clamp(2.3rem,5vw,3.8rem);max-width:21ch}
+.hero .lead{margin-top:1rem}
+.shelf{position:relative;margin-top:28px;padding-bottom:36px}
+.shelf .tags{display:grid;gap:40px;align-items:start;position:relative;z-index:1}
+@media(min-width:860px){.shelf .tags{grid-template-columns:1fr 1.22fr 1fr;gap:28px}}
+/* the steel rail each tag clips onto */
+.rail{position:absolute;left:0;right:0;height:30px;background:linear-gradient(var(--rail),#b9bfbe);border-bottom:5px solid var(--rail-deep)}
+.shelf > .rail{top:34px;display:none}
+@media(min-width:860px){.shelf > .rail{display:block}}
+.slot{position:relative;padding-top:34px}
+.slot > .rail{top:34px;left:-16px;right:-16px}
+@media(min-width:860px){.slot > .rail{display:none}.slot{padding-top:0}}
+@media(min-width:860px){.shelf .tags{padding-top:34px}}
+
+.tag{position:relative;background:var(--tag);border:1.5px solid var(--ink);padding:16px 18px 14px;box-shadow:0 2px 0 rgba(0,0,0,.18);display:grid;grid-template-columns:1fr auto;grid-template-areas:"label label" "desc desc" "price box" "fine fine";gap:6px 12px;transform-origin:50% 0}
+.tag.ours{background:var(--yellow);padding:18px 20px 16px;border-width:2px}
+.tag .label{grid-area:label}
+.tag .desc{grid-area:desc;font-weight:500;color:var(--ink);font-size:1rem;line-height:1.35;max-width:30ch}
+.tag .price{grid-area:price;display:flex;align-items:flex-start;gap:.15rem;margin-top:8px}
+.tag .price .num{font-size:clamp(4.2rem,9vw,5.6rem)}
+.tag.ours .price .num{font-size:clamp(5rem,11vw,7rem)}
+.tag .price .unit{font-weight:700;font-stretch:80%;font-size:1.35rem;margin-top:.35rem}
+.tag .price .cur{font-weight:800;font-stretch:75%;font-size:2rem;margin-top:.25rem}
+.tag .box{grid-area:box;align-self:end;border:1.5px solid var(--ink);background:var(--tag);padding:5px 8px;text-align:left;min-width:92px}
+.tag .box .label{font-size:.62rem;display:block}
+.tag .box b{font-stretch:80%;font-size:1.15rem;white-space:nowrap}
+.tag .fine{grid-area:fine;font-size:.8rem;color:var(--ink-2);border-top:1px dashed rgba(17,19,18,.35);padding-top:8px;margin-top:6px;line-height:1.4}
+.tag.ours .fine{color:var(--ink);border-top-color:rgba(17,19,18,.5)}
+.tag .hole{position:absolute;top:10px;right:12px;width:10px;height:10px;border-radius:50%;background:var(--ground);border:1.5px solid var(--ink)}
+@media (prefers-reduced-motion:no-preference){
+  .tag{animation:clip .7s cubic-bezier(.16,1,.3,1) both}
+  .slot:nth-child(2) .tag{animation-delay:.08s}
+  .slot:nth-child(3) .tag{animation-delay:.16s}
+  @keyframes clip{0%{transform:translateY(-14px) rotate(-1.2deg)}60%{transform:translateY(2px) rotate(.4deg)}100%{transform:none}}
+}
+
+/* try-it bar */
+.try{background:var(--tag);border:1.5px solid var(--ink);margin-top:8px;padding:18px;display:grid;gap:12px}
+@media(min-width:860px){.try{grid-template-columns:auto 1fr 1fr auto;align-items:end}}
+.try h3{font-stretch:85%;font-size:1.3rem;line-height:1.1;max-width:14ch}
+.field{display:grid;gap:4px}
+.field span{font-size:.78rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase}
+input{font:inherit;min-height:48px;padding:0 .8rem;border:1.5px solid var(--ink);border-radius:3px;background:#fff;width:100%}
+input:focus{outline:3px solid var(--yellow);outline-offset:0}
+.try small{grid-column:1/-1;color:var(--ink-2);font-size:.85rem}
+
+.barcode{display:block;width:100%;height:26px;margin:0;color:var(--ink);opacity:.9}
+
+section{padding:80px 0}
+section.white{background:var(--tag)}
+
+/* what's in the box: packing lists */
+.box-cols{display:grid;gap:28px;margin-top:36px}
+@media(min-width:860px){.box-cols{grid-template-columns:1fr 1fr 1fr}}
+.pack{border:1.5px solid var(--ink);background:var(--tag)}
+.pack header{padding:14px 16px;border-bottom:1.5px solid var(--ink);display:flex;justify-content:space-between;align-items:baseline;gap:1rem}
+.pack header b{font-stretch:80%;font-size:1.5rem;line-height:1}
+.pack.ours header{background:var(--yellow)}
+.pack ul{list-style:none;padding:6px 16px 14px}
+.pack li{padding:.55rem 0;border-bottom:1px dashed rgba(17,19,18,.25);display:grid;grid-template-columns:18px 1fr;gap:10px;align-items:start}
+.pack li:last-child{border-bottom:0}
+.pack li::before{content:"";width:15px;height:15px;border:1.5px solid var(--ink);margin-top:.3rem;background:#fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12'%3E%3Cpath d='M2.2 6.3l2.4 2.4 5.2-5.4' fill='none' stroke='%23111312' stroke-width='1.8'/%3E%3C/svg%3E") center/11px no-repeat}
+
+/* grow */
+.grow{display:grid;gap:36px;align-items:start}
+@media(min-width:860px){.grow{grid-template-columns:1fr 1.3fr}}
+.grow .tag{max-width:420px}
+.lists{display:grid;gap:24px}
+@media(min-width:640px){.lists{grid-template-columns:1fr 1fr}}
+.lists h3{font-size:1rem;font-weight:800;margin-bottom:.4rem}
+.lists ul{padding-left:1.1rem;color:var(--ink-2)}
+.lists li{margin:.25rem 0}
+.promise{margin-top:20px;border-top:2px solid var(--ink);padding-top:12px;font-weight:600;max-width:60ch}
+
+/* leaving: the real button */
+.leave{display:grid;gap:40px;align-items:center}
+@media(min-width:860px){.leave{grid-template-columns:1fr 1fr}}
+.portal{background:var(--tag);border:1.5px solid var(--ink);box-shadow:0 2px 0 rgba(0,0,0,.18);max-width:460px}
+.portal .bar{display:flex;justify-content:space-between;padding:10px 14px;border-bottom:1px solid #d7dbd9;font-size:.85rem;color:var(--ink-2)}
+.portal .body{padding:18px}
+.portal .status{display:flex;align-items:center;gap:.45rem}
+.portal .status i{width:9px;height:9px;border-radius:50%;background:var(--ok)}
+.portal .dom{font-stretch:80%;font-weight:800;font-size:clamp(1.6rem,4vw,2.1rem);line-height:1;margin:.4rem 0 .2rem;overflow-wrap:anywhere}
+.portal .renew{color:var(--ink-2);font-size:.95rem}
+.portal .acts{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}
+.portal .done{margin-top:16px;border:1.5px solid var(--ok);background:#eef7f1;padding:12px 14px;font-size:.98rem;display:none}
+.portal.moved .done{display:block}
+.portal.moved .status i{background:#c98a00}
+.demo-note{font-size:.8rem;color:var(--ink-2);margin-top:8px}
+.steps{list-style:none;margin-top:20px;display:grid;gap:14px;max-width:52ch}
+.steps li{display:grid;grid-template-columns:36px 1fr;gap:10px}
+.steps li b{font-stretch:75%;font-weight:800;font-size:1.9rem;line-height:1}
+
+/* how it starts */
+.start{display:grid;gap:0;margin-top:36px;border-top:2px solid var(--ink)}
+@media(min-width:860px){.start{grid-template-columns:repeat(3,1fr)}}
+.start li{list-style:none;padding:18px 18px 22px 0;border-bottom:1px solid #cfd4d2}
+@media(min-width:860px){.start li{border-bottom:0;border-right:1px solid #cfd4d2;padding-left:18px}.start li:first-child{padding-left:0}.start li:last-child{border-right:0}}
+.start .num{font-size:3.2rem;display:block}
+.start h3{font-size:1.15rem;margin:.3rem 0}
+.start p{color:var(--ink-2)}
+
+/* founding offer */
+.founding{background:var(--ink);color:#f1f2f1}
+.founding .wrap{display:grid;gap:28px;align-items:center}
+@media(min-width:860px){.founding .wrap{grid-template-columns:1.4fr 1fr}}
+.founding h2{color:#fff}
+.founding p{color:#c8cdcb;max-width:52ch;margin-top:.8rem}
+.stub{background:var(--yellow);color:var(--ink);padding:18px 20px;border:2px dashed var(--ink);outline:2px solid var(--yellow)}
+.stub .num{font-size:4.6rem}
+.stub s{font-stretch:80%;font-weight:700;font-size:1.3rem;margin-left:.4rem;opacity:.7}
+
+/* faq */
+.faq{margin-top:28px;border-top:2px solid var(--ink);max-width:820px}
+details{border-bottom:1px solid #cfd4d2}
+summary{cursor:pointer;list-style:none;padding:1rem 2rem 1rem 0;font-weight:700;font-size:1.12rem;position:relative}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";position:absolute;right:4px;top:.75rem;font-size:1.5rem;font-weight:500}
+details[open] summary::after{content:"\2212"}
+details p{padding:0 0 1.1rem;color:var(--ink-2);max-width:65ch}
+
+footer{padding:40px 0 56px;border-top:2px solid var(--ink)}
+footer .wrap{display:flex;flex-wrap:wrap;gap:1rem 2rem;justify-content:space-between;align-items:center}
+footer p{color:var(--ink-2);font-size:.92rem}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="bars" viewBox="0 0 240 26" preserveAspectRatio="none">
+      <g fill="currentColor"><rect x="0" width="3" height="26"/><rect x="5" width="1" height="26"/><rect x="8" width="2" height="26"/><rect x="12" width="1" height="26"/><rect x="15" width="4" height="26"/><rect x="21" width="1" height="26"/><rect x="24" width="2" height="26"/><rect x="28" width="3" height="26"/><rect x="33" width="1" height="26"/><rect x="36" width="1" height="26"/><rect x="39" width="3" height="26"/><rect x="44" width="2" height="26"/><rect x="48" width="1" height="26"/><rect x="51" width="4" height="26"/><rect x="57" width="1" height="26"/><rect x="60" width="2" height="26"/><rect x="64" width="1" height="26"/><rect x="67" width="3" height="26"/><rect x="72" width="1" height="26"/><rect x="75" width="2" height="26"/><rect x="79" width="1" height="26"/><rect x="82" width="4" height="26"/><rect x="88" width="1" height="26"/><rect x="91" width="3" height="26"/><rect x="96" width="1" height="26"/><rect x="99" width="2" height="26"/><rect x="103" width="1" height="26"/><rect x="106" width="3" height="26"/><rect x="111" width="2" height="26"/><rect x="115" width="1" height="26"/><rect x="118" width="4" height="26"/><rect x="124" width="1" height="26"/><rect x="127" width="2" height="26"/><rect x="131" width="3" height="26"/><rect x="136" width="1" height="26"/><rect x="139" width="1" height="26"/><rect x="142" width="4" height="26"/><rect x="148" width="2" height="26"/><rect x="152" width="1" height="26"/><rect x="155" width="3" height="26"/><rect x="160" width="1" height="26"/><rect x="163" width="2" height="26"/><rect x="167" width="1" height="26"/><rect x="170" width="4" height="26"/><rect x="176" width="1" height="26"/><rect x="179" width="3" height="26"/><rect x="184" width="2" height="26"/><rect x="188" width="1" height="26"/><rect x="191" width="1" height="26"/><rect x="194" width="3" height="26"/><rect x="199" width="2" height="26"/><rect x="203" width="4" height="26"/><rect x="209" width="1" height="26"/><rect x="212" width="2" height="26"/><rect x="216" width="1" height="26"/><rect x="219" width="3" height="26"/><rect x="224" width="1" height="26"/><rect x="227" width="2" height="26"/><rect x="231" width="4" height="26"/><rect x="237" width="3" height="26"/></g>
+    </symbol>
+  </defs>
+</svg>
+
+<header>
+  <div class="wrap">
+    <a class="brand" href="/" aria-label="Front Step Sites home">
+      <svg viewBox="0 0 34 34" aria-hidden="true"><rect width="34" height="34" fill="#ffd60a"/><path d="M6 27h22v-5H17v-5h-5v-5H6z" fill="#111312"/></svg>
+      Front Step Sites
+    </a>
+    <nav aria-label="Page">
+      <a class="hide-sm" href="#box">What you get</a>
+      <a class="hide-sm" href="#leaving">Leaving</a>
+      <a class="btn btn-primary" href="mailto:hello@frontstepsites.com?subject=I%20want%20a%20website">Start</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="hero" style="padding-bottom:0" aria-labelledby="h1">
+  <div class="wrap">
+    <h1 id="h1">We build your website. We keep it running. You never log in.</h1>
+    <p class="lead">Done-for-you websites for small businesses anywhere in the US. One 15-minute call, and a real person writes it, builds it, and makes every change after.</p>
+
+    <div class="shelf" aria-label="Price comparison">
+      <div class="rail" aria-hidden="true"></div>
+      <div class="tags">
+        <div class="slot">
+          <div class="rail" aria-hidden="true"></div>
+          <article class="tag">
+            <span class="hole" aria-hidden="true"></span>
+            <span class="label">Build it yourself</span>
+            <span class="desc">Wix Light. You learn it, build it, and fix it.</span>
+            <div class="price"><span class="cur">$</span><span class="num">17</span><span class="unit">/mo</span></div>
+            <div class="box"><span class="label">Unit price</span><b>$204/yr</b></div>
+            <span class="fine">Billed yearly. Squarespace Basic is $19/mo. Prices checked Sept 2026 (tooltester.com, squarespace.com).</span>
+          </article>
+        </div>
+        <div class="slot">
+          <div class="rail" aria-hidden="true"></div>
+          <article class="tag ours">
+            <span class="hole" aria-hidden="true"></span>
+            <span class="label">Front Step Sites &middot; Launch</span>
+            <span class="desc">We build it, host it, and keep it updated. You never touch it.</span>
+            <div class="price"><span class="cur">$</span><span class="num">99</span><span class="unit">/yr</span></div>
+            <div class="box"><span class="label">Unit price</span><b>$8.25/mo</b></div>
+            <span class="fine">Plus a one-time $249 setup: we write every word from one call. Domain $19.99/yr, in your name.</span>
+          </article>
+        </div>
+        <div class="slot">
+          <div class="rail" aria-hidden="true"></div>
+          <article class="tag">
+            <span class="hole" aria-hidden="true"></span>
+            <span class="label">Leaving</span>
+            <span class="desc">Your domain is registered in your name. Take it anywhere.</span>
+            <div class="price"><span class="cur">$</span><span class="num">0</span></div>
+            <div class="box"><span class="label">Effort</span><b>1 click</b></div>
+            <span class="fine">No fees, no phone call, no waiting on us. <a href="#leaving">See the button.</a></span>
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <form class="try" id="try" action="/plumber/" method="get">
+      <h3>See it with your name on it</h3>
+      <label class="field"><span>Business name</span><input name="n" autocomplete="organization" placeholder="Bob's Plumbing" required maxlength="60"></label>
+      <label class="field"><span>Town</span><input name="c" autocomplete="address-level2" placeholder="Tulsa" maxlength="40"></label>
+      <button class="btn btn-primary" type="submit">Show me</button>
+      <small>Opens a sample plumbing site with your business on it. Yours is built for your trade, with your photos and prices.</small>
+    </form>
+  </div>
+  <svg class="barcode" style="margin-top:64px" aria-hidden="true"><use href="#bars"/></svg>
+</section>
+
+<section id="box" class="white" aria-labelledby="box-h">
+  <div class="wrap">
+    <h2 id="box-h">What's in the box</h2>
+    <p class="lead" style="margin-top:.8rem">You tell us about your business once. We do the rest, and you approve it before anyone sees it.</p>
+    <div class="box-cols">
+      <div class="pack">
+        <header><span class="label">Setup, once</span><b>$249</b></header>
+        <ul>
+          <li>15-minute call. We write every word; you send nothing.</li>
+          <li>1 to 5 pages, built for phones first</li>
+          <li>Contact form that lands in your email</li>
+          <li>Google Business Profile set up and linked</li>
+          <li>Domain registered in your name</li>
+          <li>You approve it before it goes live</li>
+        </ul>
+      </div>
+      <div class="pack ours">
+        <header><span class="label">Launch, every year</span><b>$99</b></header>
+        <ul>
+          <li>Hosting that doesn't go to sleep</li>
+          <li>SSL, the padlock in the address bar</li>
+          <li>Kept online, fast, and up to date</li>
+          <li>One content refresh a year</li>
+          <li>A person to email, not a help center</li>
+        </ul>
+      </div>
+      <div class="pack">
+        <header><span class="label">Domain, every year</span><b>$19.99</b></header>
+        <ul>
+          <li>yourbusiness.com, registered in your name</li>
+          <li>Renewed for you, reminders before it lapses</li>
+          <li>Private: your home address stays off public records</li>
+          <li>Moves with you if you ever leave</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section aria-labelledby="grow-h">
+  <div class="wrap grow">
+    <div>
+      <h2 id="grow-h">Want every change handled?</h2>
+      <p class="lead" style="margin-top:.8rem">Most owners add Grow after their site is live. Email what you want changed. It's live within two business days.</p>
+      <div class="slot" style="margin-top:28px"><div class="rail" aria-hidden="true" style="display:block"></div>
+        <article class="tag ours">
+          <span class="hole" aria-hidden="true"></span>
+          <span class="label">Grow &middot; care plan</span>
+          <span class="desc">Unlimited small updates, a monthly check-in, your Google reviews on your site.</span>
+          <div class="price"><span class="cur">$</span><span class="num">29</span><span class="unit">/mo</span></div>
+          <div class="box"><span class="label">Or yearly</span><b>$290/yr</b></div>
+          <span class="fine">Yearly saves two months. Cancel whenever you like.</span>
+        </article>
+      </div>
+    </div>
+    <div>
+      <div class="lists">
+        <div>
+          <h3>Included, as often as you like</h3>
+          <ul>
+            <li>Prices, hours, phone, address</li>
+            <li>New photos, swapped photos</li>
+            <li>Adding or removing a service</li>
+            <li>Holiday hours, promos, "we're hiring"</li>
+            <li>Small tweaks to an existing page</li>
+            <li>Your Google reviews, kept current</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Quoted first, never a surprise</h3>
+          <ul>
+            <li>A brand-new page</li>
+            <li>A full redesign or new logo</li>
+            <li>Online store, booking, or payments</li>
+            <li>Custom features or integrations</li>
+          </ul>
+        </div>
+      </div>
+      <p class="promise">If an included update takes longer than two business days, that month of Grow is free.</p>
+    </div>
+  </div>
+</section>
+
+<section id="leaving" class="white" aria-labelledby="leave-h">
+  <div class="wrap leave">
+    <div>
+      <h2 id="leave-h">Leaving takes one click. Here's the button.</h2>
+      <p class="lead" style="margin-top:.8rem">Some web shops register your domain in their own name, so leaving means begging for it back. Yours is registered in your name from day one.</p>
+      <ol class="steps">
+        <li><b>1</b><span>Sign in to your account and press <strong>Move my domain</strong>.</span></li>
+        <li><b>2</b><span>The domain unlocks, and the registrar emails the transfer code straight to you. We don't touch it.</span></li>
+        <li><b>3</b><span>Give the code to your new provider. Domain billing stops right away, you can cancel your plan on the same page, and we send you your site's files.</span></li>
+      </ol>
+    </div>
+    <div>
+      <div class="portal" id="portal">
+        <div class="bar"><span>Front Step Sites &middot; Your account</span><span>Joe A.</span></div>
+        <div class="body">
+          <div class="status label"><i></i><span id="st">Active</span></div>
+          <div class="dom">joesplumbing.com</div>
+          <div class="renew" id="renew">Renews March 3, 2027 &middot; auto-renew on</div>
+          <div class="acts">
+            <button class="btn btn-secondary" type="button" id="move">Move my domain</button>
+          </div>
+          <div class="done" role="status" aria-live="polite">Done. Your domain is unlocked, and the registrar just emailed the transfer code to joe@joesplumbing.com. Auto-renew is off, so you won't be charged again.</div>
+        </div>
+      </div>
+      <p class="demo-note">A working copy of the real button, with a made-up customer. Press it.</p>
+    </div>
+  </div>
+</section>
+
+<section aria-labelledby="start-h">
+  <div class="wrap">
+    <h2 id="start-h">How it starts</h2>
+    <ol class="start">
+      <li><span class="num">1</span><h3>A 15-minute call</h3><p>You tell us what you do, where you work, and what customers ask. That's all the work you do.</p></li>
+      <li><span class="num">2</span><h3>We build it, you approve it</h3><p>Usually within a week. Change anything you like before it goes public.</p></li>
+      <li><span class="num">3</span><h3>It goes live</h3><p>You show up on Google with a real site. We keep it running; you get back to work.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section class="founding" aria-labelledby="found-h">
+  <div class="wrap">
+    <div>
+      <h2 id="found-h">Founding customers: setup is free.</h2>
+      <p>We're new, and we'd rather earn our first reviews than make them up. The first five businesses pay no setup fee in exchange for an honest review and before-and-after screenshots.</p>
+      <p style="margin-top:1.4rem"><a class="btn btn-primary" style="background:var(--yellow);color:var(--ink);border-color:var(--yellow)" href="mailto:hello@frontstepsites.com?subject=Founding%20customer">Claim a founding spot</a></p>
+    </div>
+    <div class="stub" aria-label="Setup fee for founding customers: zero dollars, normally 249">
+      <span class="label">Setup &middot; founding customer</span>
+      <div><span class="num">$0</span><s>$249</s></div>
+    </div>
+  </div>
+</section>
+
+<section class="white" aria-labelledby="faq-h">
+  <div class="wrap">
+    <h2 id="faq-h">Plain answers</h2>
+    <div class="faq">
+      <details><summary>Do I own my website?</summary><p>Yes. Your domain is registered in your name, and if you ever leave we send you your site's files. No fees to leave.</p></details>
+      <details><summary>How is this cheaper than Wix?</summary><p>Simple sites are cheap to host, so we keep the yearly price low and don't make you do the work. The setup fee pays for writing and building it. After the first year, you pay $99 plus your domain, against $204 or more a year to run a builder yourself.</p></details>
+      <details><summary>How do changes work?</summary><p>Email what you want changed. On Launch, one content refresh a year is included. On Grow, small changes are unlimited and live within two business days.</p></details>
+      <details><summary>What if I already have a domain?</summary><p>We can move it into your account (it stays in your name) or just point it at your new site. Either way nothing breaks.</p></details>
+      <details><summary>Where are you?</summary><p>We work with businesses anywhere in the US, by email and a scheduled call.</p></details>
+      <details><summary>What isn't included?</summary><p>Online stores, booking systems, payments, and custom features. We'll quote those before anything costs extra.</p></details>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <a class="brand" href="/" aria-label="Front Step Sites home"><svg viewBox="0 0 34 34" aria-hidden="true"><rect width="34" height="34" fill="#ffd60a"/><path d="M6 27h22v-5H17v-5h-5v-5H6z" fill="#111312"/></svg>Front Step Sites</a>
+    <p><a href="mailto:hello@frontstepsites.com">hello@frontstepsites.com</a> &middot; Competitor prices checked September 2026 &middot; &copy; <span id="yr">2026</span></p>
+  </div>
+</footer>
+
+<script>
+document.getElementById("yr").textContent = new Date().getFullYear();
+document.getElementById("move").addEventListener("click", function () {
+  var p = document.getElementById("portal");
+  p.classList.add("moved");
+  document.getElementById("st").textContent = "Moving out";
+  document.getElementById("renew").textContent = "Paid through March 3, 2027 \u00b7 auto-renew off";
+  this.disabled = true;
+  this.textContent = "Code sent";
+});
+</script>
+</body>
+</html>

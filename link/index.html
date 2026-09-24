@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Demo link builder | Front Step Sites</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#111312;--ink-2:#474d4b;--ground:#eceeec;--yellow:#ffd60a;--ok:#1d7a45}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:"Archivo",system-ui,sans-serif;background:var(--ground);color:var(--ink);line-height:1.5;padding:24px 16px 60px}
+main{max-width:720px;margin:0 auto}
+h1{font-stretch:80%;font-weight:800;font-size:2.2rem;line-height:1}
+p.sub{color:var(--ink-2);margin:.5rem 0 1.4rem}
+form{background:#fff;border:1.5px solid var(--ink);padding:18px;display:grid;gap:14px}
+.two{display:grid;gap:14px}
+@media(min-width:600px){.two{grid-template-columns:1fr 1fr}}
+label{display:grid;gap:4px;font-size:.78rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase}
+input,select,textarea{font:inherit;font-size:1rem;letter-spacing:0;text-transform:none;font-weight:400;min-height:46px;padding:.5rem .7rem;border:1.5px solid var(--ink);border-radius:3px;background:#fff;width:100%}
+textarea{min-height:170px;line-height:1.5}
+.out{margin-top:18px;display:grid;gap:12px}
+.row{display:flex;gap:8px;flex-wrap:wrap}
+button,a.btn{font:inherit;font-weight:700;min-height:46px;padding:0 1rem;border:2px solid var(--ink);border-radius:3px;background:var(--ink);color:var(--yellow);cursor:pointer;text-decoration:none;display:inline-flex;align-items:center}
+button.alt,a.alt{background:#fff;color:var(--ink)}
+.copied{color:var(--ok);font-weight:700;align-self:center}
+</style>
+</head>
+<body>
+<main>
+  <h1>Demo link builder</h1>
+  <p class="sub">For Logan. Fill in what you found on Google Maps, then copy the link or the whole message.</p>
+  <form id="f">
+    <label>Business name<input name="n" required maxlength="60" placeholder="Bob's Plumbing & Drain"></label>
+    <div class="two">
+      <label>Town<input name="c" maxlength="40" placeholder="Tulsa"></label>
+      <label>Their phone (from Google)<input name="p" inputmode="tel" placeholder="918 555 0100"></label>
+    </div>
+    <div class="two">
+      <label>Owner first name (optional)<input name="who" maxlength="30" placeholder="Bob"></label>
+      <label>Van color<select name="color">
+        <option value="">Green (default)</option><option value="1b3f8b">Blue</option><option value="9b1c1c">Red</option><option value="2b2f33">Charcoal</option><option value="7a3e0e">Copper</option>
+      </select></label>
+    </div>
+  </form>
+  <div class="out">
+    <label>Demo link<input id="url" readonly></label>
+    <div class="row"><button id="cu" type="button">Copy link</button><a class="btn alt" id="open" target="_blank" rel="noopener">Open it</a><span class="copied" id="ok1" hidden>Copied</span></div>
+    <label>Message (text, email, or Facebook)<textarea id="msg"></textarea></label>
+    <div class="row"><button id="cm" type="button">Copy message</button><span class="copied" id="ok2" hidden>Copied</span></div>
+  </div>
+</main>
+<script>
+var f = document.getElementById("f");
+function build() {
+  var d = new FormData(f), q = new URLSearchParams();
+  var n = (d.get("n") || "").trim(), c = (d.get("c") || "").trim(), p = (d.get("p") || "").replace(/\D/g, ""), who = (d.get("who") || "").trim();
+  if (n) q.set("n", n);
+  if (c) q.set("c", c);
+  if (p) q.set("p", p);
+  if (d.get("color")) q.set("color", d.get("color"));
+  var url = location.origin + "/plumber/" + (q.toString() ? "?" + q : "");
+  document.getElementById("url").value = url;
+  document.getElementById("open").href = url;
+  document.getElementById("msg").value =
+    "Hi" + (who ? " " + who : "") + ", I found " + (n || "your business") + " on Google" + (c ? " in " + c : "") + " and noticed you don't have a website, so the \"near me\" searches go to whoever does.\n\n" +
+    "I made you a sample so you can see what yours could look like, with your name on it:\n" + url + "\n\n" +
+    "I build and run simple sites for small businesses: $99 a year after a one-time $249 setup, and I write everything from a 15-minute call. Your domain is in your name, and you can leave any time.\n\n" +
+    "Worth a quick call this week?\nLogan, Front Step Sites";
+}
+function copy(id, ok) {
+  navigator.clipboard.writeText(document.getElementById(id).value).then(function () {
+    var el = document.getElementById(ok); el.hidden = false; setTimeout(function () { el.hidden = true; }, 1500);
+  });
+}
+f.addEventListener("input", build);
+document.getElementById("cu").onclick = function () { copy("url", "ok1"); };
+document.getElementById("cm").onclick = function () { copy("msg", "ok2"); };
+build();
+</script>
+</body>
+</html>
