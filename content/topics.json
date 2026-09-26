@@ -1,0 +1,1494 @@
+[
+ {
+  "slug": "website-plumbing",
+  "title": "What a plumber website needs to turn visitors into calls",
+  "cluster": "trades/plumbing",
+  "trade": "plumbing",
+  "angle": "the pages, details, and layout that make a local plumbing website get calls, in order of importance"
+ },
+ {
+  "slug": "plumbing-website-cost",
+  "title": "How much a website costs for a plumber in 2026",
+  "cluster": "trades/plumbing",
+  "trade": "plumbing",
+  "angle": "honest cost ranges for DIY builders, done-for-you, freelancers, and agencies for a plumbing business, using only the verified prices in SPEC.md; what actually drives cost"
+ },
+ {
+  "slug": "plumbing-more-calls-from-google",
+  "title": "How plumbers get more calls from Google",
+  "cluster": "trades/plumbing",
+  "trade": "plumbing",
+  "angle": "the three things that decide who Google shows for local plumbing searches: Google Business Profile, a clear website, and reviews; practical steps"
+ },
+ {
+  "slug": "plumbing-google-business-profile",
+  "title": "Google Business Profile for plumbers: a setup and upkeep guide",
+  "cluster": "trades/plumbing",
+  "trade": "plumbing",
+  "angle": "categories, services, photos, hours, posts, Q&A, and review replies specific to plumbing"
+ },
+ {
+  "slug": "plumbing-local-seo-checklist",
+  "title": "Local SEO checklist for plumbers",
+  "cluster": "trades/plumbing",
+  "trade": "plumbing",
+  "angle": "a practical checklist: name/address/phone consistency, service and town pages, schema, reviews, photos, speed, citations; specific to plumbing"
+ },
+ {
+  "slug": "plumbing-website-mistakes",
+  "title": "Plumbers website mistakes that cost calls",
+  "cluster": "trades/plumbing",
+  "trade": "plumbing",
+  "angle": "common, specific mistakes on plumbing websites (hidden phone number, no prices, stock photos, slow pages, no service area) and fixes"
+ },
+ {
+  "slug": "plumbing-homepage-copy",
+  "title": "What to write on a plumber homepage",
+  "cluster": "trades/plumbing",
+  "trade": "plumbing",
+  "angle": "section-by-section guidance with short example lines a plumber could adapt; plain words customers use"
+ },
+ {
+  "slug": "plumbing-get-more-reviews",
+  "title": "How to get more Google reviews as a plumber",
+  "cluster": "trades/plumbing",
+  "trade": "plumbing",
+  "angle": "ethical ways to ask, timing, scripts, replying to bad reviews; never buy or gate reviews"
+ },
+ {
+  "slug": "plumbing-facebook-vs-website",
+  "title": "Is a Facebook page enough for a plumber?",
+  "cluster": "trades/plumbing",
+  "trade": "plumbing",
+  "angle": "honest pros and cons of Facebook-only vs a website for plumbing, and how to use both"
+ },
+ {
+  "slug": "plumbing-blog-ideas",
+  "title": "Blog post ideas that bring plumbing customers",
+  "cluster": "trades/plumbing",
+  "trade": "plumbing",
+  "angle": "20+ specific local article ideas for plumbing, why each works, and how to write them without inventing facts"
+ },
+ {
+  "slug": "website-hvac",
+  "title": "What a HVAC contractor website needs to turn visitors into calls",
+  "cluster": "trades/hvac",
+  "trade": "HVAC",
+  "angle": "the pages, details, and layout that make a local HVAC website get calls, in order of importance"
+ },
+ {
+  "slug": "hvac-website-cost",
+  "title": "How much a website costs for a HVAC contractor in 2026",
+  "cluster": "trades/hvac",
+  "trade": "HVAC",
+  "angle": "honest cost ranges for DIY builders, done-for-you, freelancers, and agencies for a HVAC business, using only the verified prices in SPEC.md; what actually drives cost"
+ },
+ {
+  "slug": "hvac-more-calls-from-google",
+  "title": "How HVAC contractors get more calls from Google",
+  "cluster": "trades/hvac",
+  "trade": "HVAC",
+  "angle": "the three things that decide who Google shows for local HVAC searches: Google Business Profile, a clear website, and reviews; practical steps"
+ },
+ {
+  "slug": "hvac-google-business-profile",
+  "title": "Google Business Profile for HVAC contractors: a setup and upkeep guide",
+  "cluster": "trades/hvac",
+  "trade": "HVAC",
+  "angle": "categories, services, photos, hours, posts, Q&A, and review replies specific to HVAC"
+ },
+ {
+  "slug": "hvac-local-seo-checklist",
+  "title": "Local SEO checklist for HVAC contractors",
+  "cluster": "trades/hvac",
+  "trade": "HVAC",
+  "angle": "a practical checklist: name/address/phone consistency, service and town pages, schema, reviews, photos, speed, citations; specific to HVAC"
+ },
+ {
+  "slug": "hvac-website-mistakes",
+  "title": "HVAC contractors website mistakes that cost calls",
+  "cluster": "trades/hvac",
+  "trade": "HVAC",
+  "angle": "common, specific mistakes on HVAC websites (hidden phone number, no prices, stock photos, slow pages, no service area) and fixes"
+ },
+ {
+  "slug": "hvac-homepage-copy",
+  "title": "What to write on a HVAC contractor homepage",
+  "cluster": "trades/hvac",
+  "trade": "HVAC",
+  "angle": "section-by-section guidance with short example lines a HVAC contractor could adapt; plain words customers use"
+ },
+ {
+  "slug": "hvac-get-more-reviews",
+  "title": "How to get more Google reviews as a HVAC contractor",
+  "cluster": "trades/hvac",
+  "trade": "HVAC",
+  "angle": "ethical ways to ask, timing, scripts, replying to bad reviews; never buy or gate reviews"
+ },
+ {
+  "slug": "hvac-facebook-vs-website",
+  "title": "Is a Facebook page enough for a HVAC contractor?",
+  "cluster": "trades/hvac",
+  "trade": "HVAC",
+  "angle": "honest pros and cons of Facebook-only vs a website for HVAC, and how to use both"
+ },
+ {
+  "slug": "hvac-blog-ideas",
+  "title": "Blog post ideas that bring HVAC customers",
+  "cluster": "trades/hvac",
+  "trade": "HVAC",
+  "angle": "20+ specific local article ideas for HVAC, why each works, and how to write them without inventing facts"
+ },
+ {
+  "slug": "website-electrical",
+  "title": "What a electrician website needs to turn visitors into calls",
+  "cluster": "trades/electrical",
+  "trade": "electrical",
+  "angle": "the pages, details, and layout that make a local electrical website get calls, in order of importance"
+ },
+ {
+  "slug": "electrical-website-cost",
+  "title": "How much a website costs for a electrician in 2026",
+  "cluster": "trades/electrical",
+  "trade": "electrical",
+  "angle": "honest cost ranges for DIY builders, done-for-you, freelancers, and agencies for a electrical business, using only the verified prices in SPEC.md; what actually drives cost"
+ },
+ {
+  "slug": "electrical-more-calls-from-google",
+  "title": "How electricians get more calls from Google",
+  "cluster": "trades/electrical",
+  "trade": "electrical",
+  "angle": "the three things that decide who Google shows for local electrical searches: Google Business Profile, a clear website, and reviews; practical steps"
+ },
+ {
+  "slug": "electrical-google-business-profile",
+  "title": "Google Business Profile for electricians: a setup and upkeep guide",
+  "cluster": "trades/electrical",
+  "trade": "electrical",
+  "angle": "categories, services, photos, hours, posts, Q&A, and review replies specific to electrical"
+ },
+ {
+  "slug": "electrical-local-seo-checklist",
+  "title": "Local SEO checklist for electricians",
+  "cluster": "trades/electrical",
+  "trade": "electrical",
+  "angle": "a practical checklist: name/address/phone consistency, service and town pages, schema, reviews, photos, speed, citations; specific to electrical"
+ },
+ {
+  "slug": "electrical-website-mistakes",
+  "title": "Electricians website mistakes that cost calls",
+  "cluster": "trades/electrical",
+  "trade": "electrical",
+  "angle": "common, specific mistakes on electrical websites (hidden phone number, no prices, stock photos, slow pages, no service area) and fixes"
+ },
+ {
+  "slug": "electrical-homepage-copy",
+  "title": "What to write on a electrician homepage",
+  "cluster": "trades/electrical",
+  "trade": "electrical",
+  "angle": "section-by-section guidance with short example lines a electrician could adapt; plain words customers use"
+ },
+ {
+  "slug": "electrical-get-more-reviews",
+  "title": "How to get more Google reviews as a electrician",
+  "cluster": "trades/electrical",
+  "trade": "electrical",
+  "angle": "ethical ways to ask, timing, scripts, replying to bad reviews; never buy or gate reviews"
+ },
+ {
+  "slug": "electrical-facebook-vs-website",
+  "title": "Is a Facebook page enough for a electrician?",
+  "cluster": "trades/electrical",
+  "trade": "electrical",
+  "angle": "honest pros and cons of Facebook-only vs a website for electrical, and how to use both"
+ },
+ {
+  "slug": "electrical-blog-ideas",
+  "title": "Blog post ideas that bring electrical customers",
+  "cluster": "trades/electrical",
+  "trade": "electrical",
+  "angle": "20+ specific local article ideas for electrical, why each works, and how to write them without inventing facts"
+ },
+ {
+  "slug": "website-roofing",
+  "title": "What a roofer website needs to turn visitors into calls",
+  "cluster": "trades/roofing",
+  "trade": "roofing",
+  "angle": "the pages, details, and layout that make a local roofing website get calls, in order of importance"
+ },
+ {
+  "slug": "roofing-website-cost",
+  "title": "How much a website costs for a roofer in 2026",
+  "cluster": "trades/roofing",
+  "trade": "roofing",
+  "angle": "honest cost ranges for DIY builders, done-for-you, freelancers, and agencies for a roofing business, using only the verified prices in SPEC.md; what actually drives cost"
+ },
+ {
+  "slug": "roofing-more-calls-from-google",
+  "title": "How roofers get more calls from Google",
+  "cluster": "trades/roofing",
+  "trade": "roofing",
+  "angle": "the three things that decide who Google shows for local roofing searches: Google Business Profile, a clear website, and reviews; practical steps"
+ },
+ {
+  "slug": "roofing-google-business-profile",
+  "title": "Google Business Profile for roofers: a setup and upkeep guide",
+  "cluster": "trades/roofing",
+  "trade": "roofing",
+  "angle": "categories, services, photos, hours, posts, Q&A, and review replies specific to roofing"
+ },
+ {
+  "slug": "roofing-local-seo-checklist",
+  "title": "Local SEO checklist for roofers",
+  "cluster": "trades/roofing",
+  "trade": "roofing",
+  "angle": "a practical checklist: name/address/phone consistency, service and town pages, schema, reviews, photos, speed, citations; specific to roofing"
+ },
+ {
+  "slug": "roofing-website-mistakes",
+  "title": "Roofers website mistakes that cost calls",
+  "cluster": "trades/roofing",
+  "trade": "roofing",
+  "angle": "common, specific mistakes on roofing websites (hidden phone number, no prices, stock photos, slow pages, no service area) and fixes"
+ },
+ {
+  "slug": "roofing-homepage-copy",
+  "title": "What to write on a roofer homepage",
+  "cluster": "trades/roofing",
+  "trade": "roofing",
+  "angle": "section-by-section guidance with short example lines a roofer could adapt; plain words customers use"
+ },
+ {
+  "slug": "roofing-get-more-reviews",
+  "title": "How to get more Google reviews as a roofer",
+  "cluster": "trades/roofing",
+  "trade": "roofing",
+  "angle": "ethical ways to ask, timing, scripts, replying to bad reviews; never buy or gate reviews"
+ },
+ {
+  "slug": "roofing-facebook-vs-website",
+  "title": "Is a Facebook page enough for a roofer?",
+  "cluster": "trades/roofing",
+  "trade": "roofing",
+  "angle": "honest pros and cons of Facebook-only vs a website for roofing, and how to use both"
+ },
+ {
+  "slug": "roofing-blog-ideas",
+  "title": "Blog post ideas that bring roofing customers",
+  "cluster": "trades/roofing",
+  "trade": "roofing",
+  "angle": "20+ specific local article ideas for roofing, why each works, and how to write them without inventing facts"
+ },
+ {
+  "slug": "website-landscaping",
+  "title": "What a landscaper website needs to turn visitors into calls",
+  "cluster": "trades/landscaping",
+  "trade": "landscaping and lawn care",
+  "angle": "the pages, details, and layout that make a local landscaping and lawn care website get calls, in order of importance"
+ },
+ {
+  "slug": "landscaping-website-cost",
+  "title": "How much a website costs for a landscaper in 2026",
+  "cluster": "trades/landscaping",
+  "trade": "landscaping and lawn care",
+  "angle": "honest cost ranges for DIY builders, done-for-you, freelancers, and agencies for a landscaping and lawn care business, using only the verified prices in SPEC.md; what actually drives cost"
+ },
+ {
+  "slug": "landscaping-more-calls-from-google",
+  "title": "How landscapers get more calls from Google",
+  "cluster": "trades/landscaping",
+  "trade": "landscaping and lawn care",
+  "angle": "the three things that decide who Google shows for local landscaping and lawn care searches: Google Business Profile, a clear website, and reviews; practical steps"
+ },
+ {
+  "slug": "landscaping-google-business-profile",
+  "title": "Google Business Profile for landscapers: a setup and upkeep guide",
+  "cluster": "trades/landscaping",
+  "trade": "landscaping and lawn care",
+  "angle": "categories, services, photos, hours, posts, Q&A, and review replies specific to landscaping and lawn care"
+ },
+ {
+  "slug": "landscaping-local-seo-checklist",
+  "title": "Local SEO checklist for landscapers",
+  "cluster": "trades/landscaping",
+  "trade": "landscaping and lawn care",
+  "angle": "a practical checklist: name/address/phone consistency, service and town pages, schema, reviews, photos, speed, citations; specific to landscaping and lawn care"
+ },
+ {
+  "slug": "landscaping-website-mistakes",
+  "title": "Landscapers website mistakes that cost calls",
+  "cluster": "trades/landscaping",
+  "trade": "landscaping and lawn care",
+  "angle": "common, specific mistakes on landscaping and lawn care websites (hidden phone number, no prices, stock photos, slow pages, no service area) and fixes"
+ },
+ {
+  "slug": "landscaping-homepage-copy",
+  "title": "What to write on a landscaper homepage",
+  "cluster": "trades/landscaping",
+  "trade": "landscaping and lawn care",
+  "angle": "section-by-section guidance with short example lines a landscaper could adapt; plain words customers use"
+ },
+ {
+  "slug": "landscaping-get-more-reviews",
+  "title": "How to get more Google reviews as a landscaper",
+  "cluster": "trades/landscaping",
+  "trade": "landscaping and lawn care",
+  "angle": "ethical ways to ask, timing, scripts, replying to bad reviews; never buy or gate reviews"
+ },
+ {
+  "slug": "landscaping-facebook-vs-website",
+  "title": "Is a Facebook page enough for a landscaper?",
+  "cluster": "trades/landscaping",
+  "trade": "landscaping and lawn care",
+  "angle": "honest pros and cons of Facebook-only vs a website for landscaping and lawn care, and how to use both"
+ },
+ {
+  "slug": "landscaping-blog-ideas",
+  "title": "Blog post ideas that bring landscaping and lawn care customers",
+  "cluster": "trades/landscaping",
+  "trade": "landscaping and lawn care",
+  "angle": "20+ specific local article ideas for landscaping and lawn care, why each works, and how to write them without inventing facts"
+ },
+ {
+  "slug": "website-auto-repair",
+  "title": "What a auto repair shop website needs to turn visitors into calls",
+  "cluster": "trades/auto-repair",
+  "trade": "auto repair",
+  "angle": "the pages, details, and layout that make a local auto repair website get calls, in order of importance"
+ },
+ {
+  "slug": "auto-repair-website-cost",
+  "title": "How much a website costs for a auto repair shop in 2026",
+  "cluster": "trades/auto-repair",
+  "trade": "auto repair",
+  "angle": "honest cost ranges for DIY builders, done-for-you, freelancers, and agencies for a auto repair business, using only the verified prices in SPEC.md; what actually drives cost"
+ },
+ {
+  "slug": "auto-repair-more-calls-from-google",
+  "title": "How auto repair shops get more calls from Google",
+  "cluster": "trades/auto-repair",
+  "trade": "auto repair",
+  "angle": "the three things that decide who Google shows for local auto repair searches: Google Business Profile, a clear website, and reviews; practical steps"
+ },
+ {
+  "slug": "auto-repair-google-business-profile",
+  "title": "Google Business Profile for auto repair shops: a setup and upkeep guide",
+  "cluster": "trades/auto-repair",
+  "trade": "auto repair",
+  "angle": "categories, services, photos, hours, posts, Q&A, and review replies specific to auto repair"
+ },
+ {
+  "slug": "auto-repair-local-seo-checklist",
+  "title": "Local SEO checklist for auto repair shops",
+  "cluster": "trades/auto-repair",
+  "trade": "auto repair",
+  "angle": "a practical checklist: name/address/phone consistency, service and town pages, schema, reviews, photos, speed, citations; specific to auto repair"
+ },
+ {
+  "slug": "auto-repair-website-mistakes",
+  "title": "Auto repair shops website mistakes that cost calls",
+  "cluster": "trades/auto-repair",
+  "trade": "auto repair",
+  "angle": "common, specific mistakes on auto repair websites (hidden phone number, no prices, stock photos, slow pages, no service area) and fixes"
+ },
+ {
+  "slug": "auto-repair-homepage-copy",
+  "title": "What to write on a auto repair shop homepage",
+  "cluster": "trades/auto-repair",
+  "trade": "auto repair",
+  "angle": "section-by-section guidance with short example lines a auto repair shop could adapt; plain words customers use"
+ },
+ {
+  "slug": "auto-repair-get-more-reviews",
+  "title": "How to get more Google reviews as a auto repair shop",
+  "cluster": "trades/auto-repair",
+  "trade": "auto repair",
+  "angle": "ethical ways to ask, timing, scripts, replying to bad reviews; never buy or gate reviews"
+ },
+ {
+  "slug": "auto-repair-facebook-vs-website",
+  "title": "Is a Facebook page enough for a auto repair shop?",
+  "cluster": "trades/auto-repair",
+  "trade": "auto repair",
+  "angle": "honest pros and cons of Facebook-only vs a website for auto repair, and how to use both"
+ },
+ {
+  "slug": "auto-repair-blog-ideas",
+  "title": "Blog post ideas that bring auto repair customers",
+  "cluster": "trades/auto-repair",
+  "trade": "auto repair",
+  "angle": "20+ specific local article ideas for auto repair, why each works, and how to write them without inventing facts"
+ },
+ {
+  "slug": "website-auto-detailing",
+  "title": "What a auto detailer website needs to turn visitors into calls",
+  "cluster": "trades/auto-detailing",
+  "trade": "auto detailing",
+  "angle": "the pages, details, and layout that make a local auto detailing website get calls, in order of importance"
+ },
+ {
+  "slug": "auto-detailing-website-cost",
+  "title": "How much a website costs for a auto detailer in 2026",
+  "cluster": "trades/auto-detailing",
+  "trade": "auto detailing",
+  "angle": "honest cost ranges for DIY builders, done-for-you, freelancers, and agencies for a auto detailing business, using only the verified prices in SPEC.md; what actually drives cost"
+ },
+ {
+  "slug": "auto-detailing-more-calls-from-google",
+  "title": "How auto detailers get more calls from Google",
+  "cluster": "trades/auto-detailing",
+  "trade": "auto detailing",
+  "angle": "the three things that decide who Google shows for local auto detailing searches: Google Business Profile, a clear website, and reviews; practical steps"
+ },
+ {
+  "slug": "auto-detailing-google-business-profile",
+  "title": "Google Business Profile for auto detailers: a setup and upkeep guide",
+  "cluster": "trades/auto-detailing",
+  "trade": "auto detailing",
+  "angle": "categories, services, photos, hours, posts, Q&A, and review replies specific to auto detailing"
+ },
+ {
+  "slug": "auto-detailing-local-seo-checklist",
+  "title": "Local SEO checklist for auto detailers",
+  "cluster": "trades/auto-detailing",
+  "trade": "auto detailing",
+  "angle": "a practical checklist: name/address/phone consistency, service and town pages, schema, reviews, photos, speed, citations; specific to auto detailing"
+ },
+ {
+  "slug": "auto-detailing-website-mistakes",
+  "title": "Auto detailers website mistakes that cost calls",
+  "cluster": "trades/auto-detailing",
+  "trade": "auto detailing",
+  "angle": "common, specific mistakes on auto detailing websites (hidden phone number, no prices, stock photos, slow pages, no service area) and fixes"
+ },
+ {
+  "slug": "auto-detailing-homepage-copy",
+  "title": "What to write on a auto detailer homepage",
+  "cluster": "trades/auto-detailing",
+  "trade": "auto detailing",
+  "angle": "section-by-section guidance with short example lines a auto detailer could adapt; plain words customers use"
+ },
+ {
+  "slug": "auto-detailing-get-more-reviews",
+  "title": "How to get more Google reviews as a auto detailer",
+  "cluster": "trades/auto-detailing",
+  "trade": "auto detailing",
+  "angle": "ethical ways to ask, timing, scripts, replying to bad reviews; never buy or gate reviews"
+ },
+ {
+  "slug": "auto-detailing-facebook-vs-website",
+  "title": "Is a Facebook page enough for a auto detailer?",
+  "cluster": "trades/auto-detailing",
+  "trade": "auto detailing",
+  "angle": "honest pros and cons of Facebook-only vs a website for auto detailing, and how to use both"
+ },
+ {
+  "slug": "auto-detailing-blog-ideas",
+  "title": "Blog post ideas that bring auto detailing customers",
+  "cluster": "trades/auto-detailing",
+  "trade": "auto detailing",
+  "angle": "20+ specific local article ideas for auto detailing, why each works, and how to write them without inventing facts"
+ },
+ {
+  "slug": "website-cleaning",
+  "title": "What a cleaning company website needs to turn visitors into calls",
+  "cluster": "trades/cleaning",
+  "trade": "house and office cleaning",
+  "angle": "the pages, details, and layout that make a local house and office cleaning website get calls, in order of importance"
+ },
+ {
+  "slug": "cleaning-website-cost",
+  "title": "How much a website costs for a cleaning company in 2026",
+  "cluster": "trades/cleaning",
+  "trade": "house and office cleaning",
+  "angle": "honest cost ranges for DIY builders, done-for-you, freelancers, and agencies for a house and office cleaning business, using only the verified prices in SPEC.md; what actually drives cost"
+ },
+ {
+  "slug": "cleaning-more-calls-from-google",
+  "title": "How cleaning companies get more calls from Google",
+  "cluster": "trades/cleaning",
+  "trade": "house and office cleaning",
+  "angle": "the three things that decide who Google shows for local house and office cleaning searches: Google Business Profile, a clear website, and reviews; practical steps"
+ },
+ {
+  "slug": "cleaning-google-business-profile",
+  "title": "Google Business Profile for cleaning companies: a setup and upkeep guide",
+  "cluster": "trades/cleaning",
+  "trade": "house and office cleaning",
+  "angle": "categories, services, photos, hours, posts, Q&A, and review replies specific to house and office cleaning"
+ },
+ {
+  "slug": "cleaning-local-seo-checklist",
+  "title": "Local SEO checklist for cleaning companies",
+  "cluster": "trades/cleaning",
+  "trade": "house and office cleaning",
+  "angle": "a practical checklist: name/address/phone consistency, service and town pages, schema, reviews, photos, speed, citations; specific to house and office cleaning"
+ },
+ {
+  "slug": "cleaning-website-mistakes",
+  "title": "Cleaning companies website mistakes that cost calls",
+  "cluster": "trades/cleaning",
+  "trade": "house and office cleaning",
+  "angle": "common, specific mistakes on house and office cleaning websites (hidden phone number, no prices, stock photos, slow pages, no service area) and fixes"
+ },
+ {
+  "slug": "cleaning-homepage-copy",
+  "title": "What to write on a cleaning company homepage",
+  "cluster": "trades/cleaning",
+  "trade": "house and office cleaning",
+  "angle": "section-by-section guidance with short example lines a cleaning company could adapt; plain words customers use"
+ },
+ {
+  "slug": "cleaning-get-more-reviews",
+  "title": "How to get more Google reviews as a cleaning company",
+  "cluster": "trades/cleaning",
+  "trade": "house and office cleaning",
+  "angle": "ethical ways to ask, timing, scripts, replying to bad reviews; never buy or gate reviews"
+ },
+ {
+  "slug": "cleaning-facebook-vs-website",
+  "title": "Is a Facebook page enough for a cleaning company?",
+  "cluster": "trades/cleaning",
+  "trade": "house and office cleaning",
+  "angle": "honest pros and cons of Facebook-only vs a website for house and office cleaning, and how to use both"
+ },
+ {
+  "slug": "cleaning-blog-ideas",
+  "title": "Blog post ideas that bring house and office cleaning customers",
+  "cluster": "trades/cleaning",
+  "trade": "house and office cleaning",
+  "angle": "20+ specific local article ideas for house and office cleaning, why each works, and how to write them without inventing facts"
+ },
+ {
+  "slug": "website-handyman",
+  "title": "What a handyman website needs to turn visitors into calls",
+  "cluster": "trades/handyman",
+  "trade": "handyman",
+  "angle": "the pages, details, and layout that make a local handyman website get calls, in order of importance"
+ },
+ {
+  "slug": "handyman-website-cost",
+  "title": "How much a website costs for a handyman in 2026",
+  "cluster": "trades/handyman",
+  "trade": "handyman",
+  "angle": "honest cost ranges for DIY builders, done-for-you, freelancers, and agencies for a handyman business, using only the verified prices in SPEC.md; what actually drives cost"
+ },
+ {
+  "slug": "handyman-more-calls-from-google",
+  "title": "How handymen get more calls from Google",
+  "cluster": "trades/handyman",
+  "trade": "handyman",
+  "angle": "the three things that decide who Google shows for local handyman searches: Google Business Profile, a clear website, and reviews; practical steps"
+ },
+ {
+  "slug": "handyman-google-business-profile",
+  "title": "Google Business Profile for handymen: a setup and upkeep guide",
+  "cluster": "trades/handyman",
+  "trade": "handyman",
+  "angle": "categories, services, photos, hours, posts, Q&A, and review replies specific to handyman"
+ },
+ {
+  "slug": "handyman-local-seo-checklist",
+  "title": "Local SEO checklist for handymen",
+  "cluster": "trades/handyman",
+  "trade": "handyman",
+  "angle": "a practical checklist: name/address/phone consistency, service and town pages, schema, reviews, photos, speed, citations; specific to handyman"
+ },
+ {
+  "slug": "handyman-website-mistakes",
+  "title": "Handymen website mistakes that cost calls",
+  "cluster": "trades/handyman",
+  "trade": "handyman",
+  "angle": "common, specific mistakes on handyman websites (hidden phone number, no prices, stock photos, slow pages, no service area) and fixes"
+ },
+ {
+  "slug": "handyman-homepage-copy",
+  "title": "What to write on a handyman homepage",
+  "cluster": "trades/handyman",
+  "trade": "handyman",
+  "angle": "section-by-section guidance with short example lines a handyman could adapt; plain words customers use"
+ },
+ {
+  "slug": "handyman-get-more-reviews",
+  "title": "How to get more Google reviews as a handyman",
+  "cluster": "trades/handyman",
+  "trade": "handyman",
+  "angle": "ethical ways to ask, timing, scripts, replying to bad reviews; never buy or gate reviews"
+ },
+ {
+  "slug": "handyman-facebook-vs-website",
+  "title": "Is a Facebook page enough for a handyman?",
+  "cluster": "trades/handyman",
+  "trade": "handyman",
+  "angle": "honest pros and cons of Facebook-only vs a website for handyman, and how to use both"
+ },
+ {
+  "slug": "handyman-blog-ideas",
+  "title": "Blog post ideas that bring handyman customers",
+  "cluster": "trades/handyman",
+  "trade": "handyman",
+  "angle": "20+ specific local article ideas for handyman, why each works, and how to write them without inventing facts"
+ },
+ {
+  "slug": "website-pest-control",
+  "title": "What a pest control company website needs to turn visitors into calls",
+  "cluster": "trades/pest-control",
+  "trade": "pest control",
+  "angle": "the pages, details, and layout that make a local pest control website get calls, in order of importance"
+ },
+ {
+  "slug": "pest-control-website-cost",
+  "title": "How much a website costs for a pest control company in 2026",
+  "cluster": "trades/pest-control",
+  "trade": "pest control",
+  "angle": "honest cost ranges for DIY builders, done-for-you, freelancers, and agencies for a pest control business, using only the verified prices in SPEC.md; what actually drives cost"
+ },
+ {
+  "slug": "pest-control-more-calls-from-google",
+  "title": "How pest control companies get more calls from Google",
+  "cluster": "trades/pest-control",
+  "trade": "pest control",
+  "angle": "the three things that decide who Google shows for local pest control searches: Google Business Profile, a clear website, and reviews; practical steps"
+ },
+ {
+  "slug": "pest-control-google-business-profile",
+  "title": "Google Business Profile for pest control companies: a setup and upkeep guide",
+  "cluster": "trades/pest-control",
+  "trade": "pest control",
+  "angle": "categories, services, photos, hours, posts, Q&A, and review replies specific to pest control"
+ },
+ {
+  "slug": "pest-control-local-seo-checklist",
+  "title": "Local SEO checklist for pest control companies",
+  "cluster": "trades/pest-control",
+  "trade": "pest control",
+  "angle": "a practical checklist: name/address/phone consistency, service and town pages, schema, reviews, photos, speed, citations; specific to pest control"
+ },
+ {
+  "slug": "pest-control-website-mistakes",
+  "title": "Pest control companies website mistakes that cost calls",
+  "cluster": "trades/pest-control",
+  "trade": "pest control",
+  "angle": "common, specific mistakes on pest control websites (hidden phone number, no prices, stock photos, slow pages, no service area) and fixes"
+ },
+ {
+  "slug": "pest-control-homepage-copy",
+  "title": "What to write on a pest control company homepage",
+  "cluster": "trades/pest-control",
+  "trade": "pest control",
+  "angle": "section-by-section guidance with short example lines a pest control company could adapt; plain words customers use"
+ },
+ {
+  "slug": "pest-control-get-more-reviews",
+  "title": "How to get more Google reviews as a pest control company",
+  "cluster": "trades/pest-control",
+  "trade": "pest control",
+  "angle": "ethical ways to ask, timing, scripts, replying to bad reviews; never buy or gate reviews"
+ },
+ {
+  "slug": "pest-control-facebook-vs-website",
+  "title": "Is a Facebook page enough for a pest control company?",
+  "cluster": "trades/pest-control",
+  "trade": "pest control",
+  "angle": "honest pros and cons of Facebook-only vs a website for pest control, and how to use both"
+ },
+ {
+  "slug": "pest-control-blog-ideas",
+  "title": "Blog post ideas that bring pest control customers",
+  "cluster": "trades/pest-control",
+  "trade": "pest control",
+  "angle": "20+ specific local article ideas for pest control, why each works, and how to write them without inventing facts"
+ },
+ {
+  "slug": "website-restaurant",
+  "title": "What a restaurant website needs to turn visitors into calls",
+  "cluster": "trades/restaurant",
+  "trade": "restaurant",
+  "angle": "the pages, details, and layout that make a local restaurant website get calls, in order of importance"
+ },
+ {
+  "slug": "restaurant-website-cost",
+  "title": "How much a website costs for a restaurant in 2026",
+  "cluster": "trades/restaurant",
+  "trade": "restaurant",
+  "angle": "honest cost ranges for DIY builders, done-for-you, freelancers, and agencies for a restaurant business, using only the verified prices in SPEC.md; what actually drives cost"
+ },
+ {
+  "slug": "restaurant-more-calls-from-google",
+  "title": "How restaurants get more calls from Google",
+  "cluster": "trades/restaurant",
+  "trade": "restaurant",
+  "angle": "the three things that decide who Google shows for local restaurant searches: Google Business Profile, a clear website, and reviews; practical steps"
+ },
+ {
+  "slug": "restaurant-google-business-profile",
+  "title": "Google Business Profile for restaurants: a setup and upkeep guide",
+  "cluster": "trades/restaurant",
+  "trade": "restaurant",
+  "angle": "categories, services, photos, hours, posts, Q&A, and review replies specific to restaurant"
+ },
+ {
+  "slug": "restaurant-local-seo-checklist",
+  "title": "Local SEO checklist for restaurants",
+  "cluster": "trades/restaurant",
+  "trade": "restaurant",
+  "angle": "a practical checklist: name/address/phone consistency, service and town pages, schema, reviews, photos, speed, citations; specific to restaurant"
+ },
+ {
+  "slug": "restaurant-website-mistakes",
+  "title": "Restaurants website mistakes that cost calls",
+  "cluster": "trades/restaurant",
+  "trade": "restaurant",
+  "angle": "common, specific mistakes on restaurant websites (hidden phone number, no prices, stock photos, slow pages, no service area) and fixes"
+ },
+ {
+  "slug": "restaurant-homepage-copy",
+  "title": "What to write on a restaurant homepage",
+  "cluster": "trades/restaurant",
+  "trade": "restaurant",
+  "angle": "section-by-section guidance with short example lines a restaurant could adapt; plain words customers use"
+ },
+ {
+  "slug": "restaurant-get-more-reviews",
+  "title": "How to get more Google reviews as a restaurant",
+  "cluster": "trades/restaurant",
+  "trade": "restaurant",
+  "angle": "ethical ways to ask, timing, scripts, replying to bad reviews; never buy or gate reviews"
+ },
+ {
+  "slug": "restaurant-facebook-vs-website",
+  "title": "Is a Facebook page enough for a restaurant?",
+  "cluster": "trades/restaurant",
+  "trade": "restaurant",
+  "angle": "honest pros and cons of Facebook-only vs a website for restaurant, and how to use both"
+ },
+ {
+  "slug": "restaurant-blog-ideas",
+  "title": "Blog post ideas that bring restaurant customers",
+  "cluster": "trades/restaurant",
+  "trade": "restaurant",
+  "angle": "20+ specific local article ideas for restaurant, why each works, and how to write them without inventing facts"
+ },
+ {
+  "slug": "website-salon",
+  "title": "What a salon or barbershop website needs to turn visitors into calls",
+  "cluster": "trades/salon",
+  "trade": "salon and barber",
+  "angle": "the pages, details, and layout that make a local salon and barber website get calls, in order of importance"
+ },
+ {
+  "slug": "salon-website-cost",
+  "title": "How much a website costs for a salon or barbershop in 2026",
+  "cluster": "trades/salon",
+  "trade": "salon and barber",
+  "angle": "honest cost ranges for DIY builders, done-for-you, freelancers, and agencies for a salon and barber business, using only the verified prices in SPEC.md; what actually drives cost"
+ },
+ {
+  "slug": "salon-more-calls-from-google",
+  "title": "How salons and barbershops get more calls from Google",
+  "cluster": "trades/salon",
+  "trade": "salon and barber",
+  "angle": "the three things that decide who Google shows for local salon and barber searches: Google Business Profile, a clear website, and reviews; practical steps"
+ },
+ {
+  "slug": "salon-google-business-profile",
+  "title": "Google Business Profile for salons and barbershops: a setup and upkeep guide",
+  "cluster": "trades/salon",
+  "trade": "salon and barber",
+  "angle": "categories, services, photos, hours, posts, Q&A, and review replies specific to salon and barber"
+ },
+ {
+  "slug": "salon-local-seo-checklist",
+  "title": "Local SEO checklist for salons and barbershops",
+  "cluster": "trades/salon",
+  "trade": "salon and barber",
+  "angle": "a practical checklist: name/address/phone consistency, service and town pages, schema, reviews, photos, speed, citations; specific to salon and barber"
+ },
+ {
+  "slug": "salon-website-mistakes",
+  "title": "Salons and barbershops website mistakes that cost calls",
+  "cluster": "trades/salon",
+  "trade": "salon and barber",
+  "angle": "common, specific mistakes on salon and barber websites (hidden phone number, no prices, stock photos, slow pages, no service area) and fixes"
+ },
+ {
+  "slug": "salon-homepage-copy",
+  "title": "What to write on a salon or barbershop homepage",
+  "cluster": "trades/salon",
+  "trade": "salon and barber",
+  "angle": "section-by-section guidance with short example lines a salon or barbershop could adapt; plain words customers use"
+ },
+ {
+  "slug": "salon-get-more-reviews",
+  "title": "How to get more Google reviews as a salon or barbershop",
+  "cluster": "trades/salon",
+  "trade": "salon and barber",
+  "angle": "ethical ways to ask, timing, scripts, replying to bad reviews; never buy or gate reviews"
+ },
+ {
+  "slug": "salon-facebook-vs-website",
+  "title": "Is a Facebook page enough for a salon or barbershop?",
+  "cluster": "trades/salon",
+  "trade": "salon and barber",
+  "angle": "honest pros and cons of Facebook-only vs a website for salon and barber, and how to use both"
+ },
+ {
+  "slug": "salon-blog-ideas",
+  "title": "Blog post ideas that bring salon and barber customers",
+  "cluster": "trades/salon",
+  "trade": "salon and barber",
+  "angle": "20+ specific local article ideas for salon and barber, why each works, and how to write them without inventing facts"
+ },
+ {
+  "slug": "website-painting",
+  "title": "What a painting contractor website needs to turn visitors into calls",
+  "cluster": "trades/painting",
+  "trade": "painting",
+  "angle": "the pages, details, and layout that make a local painting website get calls, in order of importance"
+ },
+ {
+  "slug": "painting-website-cost",
+  "title": "How much a website costs for a painting contractor in 2026",
+  "cluster": "trades/painting",
+  "trade": "painting",
+  "angle": "honest cost ranges for DIY builders, done-for-you, freelancers, and agencies for a painting business, using only the verified prices in SPEC.md; what actually drives cost"
+ },
+ {
+  "slug": "painting-more-calls-from-google",
+  "title": "How painting contractors get more calls from Google",
+  "cluster": "trades/painting",
+  "trade": "painting",
+  "angle": "the three things that decide who Google shows for local painting searches: Google Business Profile, a clear website, and reviews; practical steps"
+ },
+ {
+  "slug": "painting-google-business-profile",
+  "title": "Google Business Profile for painting contractors: a setup and upkeep guide",
+  "cluster": "trades/painting",
+  "trade": "painting",
+  "angle": "categories, services, photos, hours, posts, Q&A, and review replies specific to painting"
+ },
+ {
+  "slug": "painting-local-seo-checklist",
+  "title": "Local SEO checklist for painting contractors",
+  "cluster": "trades/painting",
+  "trade": "painting",
+  "angle": "a practical checklist: name/address/phone consistency, service and town pages, schema, reviews, photos, speed, citations; specific to painting"
+ },
+ {
+  "slug": "painting-website-mistakes",
+  "title": "Painting contractors website mistakes that cost calls",
+  "cluster": "trades/painting",
+  "trade": "painting",
+  "angle": "common, specific mistakes on painting websites (hidden phone number, no prices, stock photos, slow pages, no service area) and fixes"
+ },
+ {
+  "slug": "painting-homepage-copy",
+  "title": "What to write on a painting contractor homepage",
+  "cluster": "trades/painting",
+  "trade": "painting",
+  "angle": "section-by-section guidance with short example lines a painting contractor could adapt; plain words customers use"
+ },
+ {
+  "slug": "painting-get-more-reviews",
+  "title": "How to get more Google reviews as a painting contractor",
+  "cluster": "trades/painting",
+  "trade": "painting",
+  "angle": "ethical ways to ask, timing, scripts, replying to bad reviews; never buy or gate reviews"
+ },
+ {
+  "slug": "painting-facebook-vs-website",
+  "title": "Is a Facebook page enough for a painting contractor?",
+  "cluster": "trades/painting",
+  "trade": "painting",
+  "angle": "honest pros and cons of Facebook-only vs a website for painting, and how to use both"
+ },
+ {
+  "slug": "painting-blog-ideas",
+  "title": "Blog post ideas that bring painting customers",
+  "cluster": "trades/painting",
+  "trade": "painting",
+  "angle": "20+ specific local article ideas for painting, why each works, and how to write them without inventing facts"
+ },
+ {
+  "slug": "website-pressure-washing",
+  "title": "What a pressure washing business website needs to turn visitors into calls",
+  "cluster": "trades/pressure-washing",
+  "trade": "pressure washing",
+  "angle": "the pages, details, and layout that make a local pressure washing website get calls, in order of importance"
+ },
+ {
+  "slug": "pressure-washing-website-cost",
+  "title": "How much a website costs for a pressure washing business in 2026",
+  "cluster": "trades/pressure-washing",
+  "trade": "pressure washing",
+  "angle": "honest cost ranges for DIY builders, done-for-you, freelancers, and agencies for a pressure washing business, using only the verified prices in SPEC.md; what actually drives cost"
+ },
+ {
+  "slug": "pressure-washing-more-calls-from-google",
+  "title": "How pressure washing businesses get more calls from Google",
+  "cluster": "trades/pressure-washing",
+  "trade": "pressure washing",
+  "angle": "the three things that decide who Google shows for local pressure washing searches: Google Business Profile, a clear website, and reviews; practical steps"
+ },
+ {
+  "slug": "pressure-washing-google-business-profile",
+  "title": "Google Business Profile for pressure washing businesses: a setup and upkeep guide",
+  "cluster": "trades/pressure-washing",
+  "trade": "pressure washing",
+  "angle": "categories, services, photos, hours, posts, Q&A, and review replies specific to pressure washing"
+ },
+ {
+  "slug": "pressure-washing-local-seo-checklist",
+  "title": "Local SEO checklist for pressure washing businesses",
+  "cluster": "trades/pressure-washing",
+  "trade": "pressure washing",
+  "angle": "a practical checklist: name/address/phone consistency, service and town pages, schema, reviews, photos, speed, citations; specific to pressure washing"
+ },
+ {
+  "slug": "pressure-washing-website-mistakes",
+  "title": "Pressure washing businesses website mistakes that cost calls",
+  "cluster": "trades/pressure-washing",
+  "trade": "pressure washing",
+  "angle": "common, specific mistakes on pressure washing websites (hidden phone number, no prices, stock photos, slow pages, no service area) and fixes"
+ },
+ {
+  "slug": "pressure-washing-homepage-copy",
+  "title": "What to write on a pressure washing business homepage",
+  "cluster": "trades/pressure-washing",
+  "trade": "pressure washing",
+  "angle": "section-by-section guidance with short example lines a pressure washing business could adapt; plain words customers use"
+ },
+ {
+  "slug": "pressure-washing-get-more-reviews",
+  "title": "How to get more Google reviews as a pressure washing business",
+  "cluster": "trades/pressure-washing",
+  "trade": "pressure washing",
+  "angle": "ethical ways to ask, timing, scripts, replying to bad reviews; never buy or gate reviews"
+ },
+ {
+  "slug": "pressure-washing-facebook-vs-website",
+  "title": "Is a Facebook page enough for a pressure washing business?",
+  "cluster": "trades/pressure-washing",
+  "trade": "pressure washing",
+  "angle": "honest pros and cons of Facebook-only vs a website for pressure washing, and how to use both"
+ },
+ {
+  "slug": "pressure-washing-blog-ideas",
+  "title": "Blog post ideas that bring pressure washing customers",
+  "cluster": "trades/pressure-washing",
+  "trade": "pressure washing",
+  "angle": "20+ specific local article ideas for pressure washing, why each works, and how to write them without inventing facts"
+ },
+ {
+  "slug": "website-tree-service",
+  "title": "What a tree service website needs to turn visitors into calls",
+  "cluster": "trades/tree-service",
+  "trade": "tree service",
+  "angle": "the pages, details, and layout that make a local tree service website get calls, in order of importance"
+ },
+ {
+  "slug": "tree-service-website-cost",
+  "title": "How much a website costs for a tree service in 2026",
+  "cluster": "trades/tree-service",
+  "trade": "tree service",
+  "angle": "honest cost ranges for DIY builders, done-for-you, freelancers, and agencies for a tree service business, using only the verified prices in SPEC.md; what actually drives cost"
+ },
+ {
+  "slug": "tree-service-more-calls-from-google",
+  "title": "How tree services get more calls from Google",
+  "cluster": "trades/tree-service",
+  "trade": "tree service",
+  "angle": "the three things that decide who Google shows for local tree service searches: Google Business Profile, a clear website, and reviews; practical steps"
+ },
+ {
+  "slug": "tree-service-google-business-profile",
+  "title": "Google Business Profile for tree services: a setup and upkeep guide",
+  "cluster": "trades/tree-service",
+  "trade": "tree service",
+  "angle": "categories, services, photos, hours, posts, Q&A, and review replies specific to tree service"
+ },
+ {
+  "slug": "tree-service-local-seo-checklist",
+  "title": "Local SEO checklist for tree services",
+  "cluster": "trades/tree-service",
+  "trade": "tree service",
+  "angle": "a practical checklist: name/address/phone consistency, service and town pages, schema, reviews, photos, speed, citations; specific to tree service"
+ },
+ {
+  "slug": "tree-service-website-mistakes",
+  "title": "Tree services website mistakes that cost calls",
+  "cluster": "trades/tree-service",
+  "trade": "tree service",
+  "angle": "common, specific mistakes on tree service websites (hidden phone number, no prices, stock photos, slow pages, no service area) and fixes"
+ },
+ {
+  "slug": "tree-service-homepage-copy",
+  "title": "What to write on a tree service homepage",
+  "cluster": "trades/tree-service",
+  "trade": "tree service",
+  "angle": "section-by-section guidance with short example lines a tree service could adapt; plain words customers use"
+ },
+ {
+  "slug": "tree-service-get-more-reviews",
+  "title": "How to get more Google reviews as a tree service",
+  "cluster": "trades/tree-service",
+  "trade": "tree service",
+  "angle": "ethical ways to ask, timing, scripts, replying to bad reviews; never buy or gate reviews"
+ },
+ {
+  "slug": "tree-service-facebook-vs-website",
+  "title": "Is a Facebook page enough for a tree service?",
+  "cluster": "trades/tree-service",
+  "trade": "tree service",
+  "angle": "honest pros and cons of Facebook-only vs a website for tree service, and how to use both"
+ },
+ {
+  "slug": "tree-service-blog-ideas",
+  "title": "Blog post ideas that bring tree service customers",
+  "cluster": "trades/tree-service",
+  "trade": "tree service",
+  "angle": "20+ specific local article ideas for tree service, why each works, and how to write them without inventing facts"
+ },
+ {
+  "slug": "website-garage-door",
+  "title": "What a garage door company website needs to turn visitors into calls",
+  "cluster": "trades/garage-door",
+  "trade": "garage door",
+  "angle": "the pages, details, and layout that make a local garage door website get calls, in order of importance"
+ },
+ {
+  "slug": "garage-door-website-cost",
+  "title": "How much a website costs for a garage door company in 2026",
+  "cluster": "trades/garage-door",
+  "trade": "garage door",
+  "angle": "honest cost ranges for DIY builders, done-for-you, freelancers, and agencies for a garage door business, using only the verified prices in SPEC.md; what actually drives cost"
+ },
+ {
+  "slug": "garage-door-more-calls-from-google",
+  "title": "How garage door companies get more calls from Google",
+  "cluster": "trades/garage-door",
+  "trade": "garage door",
+  "angle": "the three things that decide who Google shows for local garage door searches: Google Business Profile, a clear website, and reviews; practical steps"
+ },
+ {
+  "slug": "garage-door-google-business-profile",
+  "title": "Google Business Profile for garage door companies: a setup and upkeep guide",
+  "cluster": "trades/garage-door",
+  "trade": "garage door",
+  "angle": "categories, services, photos, hours, posts, Q&A, and review replies specific to garage door"
+ },
+ {
+  "slug": "garage-door-local-seo-checklist",
+  "title": "Local SEO checklist for garage door companies",
+  "cluster": "trades/garage-door",
+  "trade": "garage door",
+  "angle": "a practical checklist: name/address/phone consistency, service and town pages, schema, reviews, photos, speed, citations; specific to garage door"
+ },
+ {
+  "slug": "garage-door-website-mistakes",
+  "title": "Garage door companies website mistakes that cost calls",
+  "cluster": "trades/garage-door",
+  "trade": "garage door",
+  "angle": "common, specific mistakes on garage door websites (hidden phone number, no prices, stock photos, slow pages, no service area) and fixes"
+ },
+ {
+  "slug": "garage-door-homepage-copy",
+  "title": "What to write on a garage door company homepage",
+  "cluster": "trades/garage-door",
+  "trade": "garage door",
+  "angle": "section-by-section guidance with short example lines a garage door company could adapt; plain words customers use"
+ },
+ {
+  "slug": "garage-door-get-more-reviews",
+  "title": "How to get more Google reviews as a garage door company",
+  "cluster": "trades/garage-door",
+  "trade": "garage door",
+  "angle": "ethical ways to ask, timing, scripts, replying to bad reviews; never buy or gate reviews"
+ },
+ {
+  "slug": "garage-door-facebook-vs-website",
+  "title": "Is a Facebook page enough for a garage door company?",
+  "cluster": "trades/garage-door",
+  "trade": "garage door",
+  "angle": "honest pros and cons of Facebook-only vs a website for garage door, and how to use both"
+ },
+ {
+  "slug": "garage-door-blog-ideas",
+  "title": "Blog post ideas that bring garage door customers",
+  "cluster": "trades/garage-door",
+  "trade": "garage door",
+  "angle": "20+ specific local article ideas for garage door, why each works, and how to write them without inventing facts"
+ },
+ {
+  "slug": "how-to-choose-a-domain-name-for-a-small-business",
+  "title": "How to choose a domain name for a small business",
+  "cluster": "guides",
+  "angle": "naming rules, .com vs other endings, avoiding hyphens and numbers, checking trademarks, keeping it in your own name"
+ },
+ {
+  "slug": "who-owns-your-domain-name-and-why-it-matters",
+  "title": "Who owns your domain name, and why it matters",
+  "cluster": "guides",
+  "angle": "registrant vs registrar vs web designer; how people lose domains; how to check and fix ownership"
+ },
+ {
+  "slug": "how-to-move-a-domain-to-a-new-provider",
+  "title": "How to move a domain to a new provider",
+  "cluster": "guides",
+  "angle": "auth codes, 60-day locks, what moves and what doesn't, avoiding downtime"
+ },
+ {
+  "slug": "what-website-hosting-is-in-plain-english",
+  "title": "What website hosting is, in plain English",
+  "cluster": "guides",
+  "angle": "hosting vs domain vs builder; what small businesses actually need"
+ },
+ {
+  "slug": "what-ssl-is-and-why-your-site-needs-the-padlock",
+  "title": "What SSL is and why your site needs the padlock",
+  "cluster": "guides",
+  "angle": "browser warnings, trust, and that it should be included free"
+ },
+ {
+  "slug": "why-your-small-business-website-should-be-built-for-phones-first",
+  "title": "Why your small business website should be built for phones first",
+  "cluster": "guides",
+  "angle": "how local customers search on phones; tap-to-call, speed, readable text"
+ },
+ {
+  "slug": "how-fast-should-a-small-business-website-load",
+  "title": "How fast should a small business website load?",
+  "cluster": "guides",
+  "angle": "what slows sites down, simple checks, why speed affects calls"
+ },
+ {
+  "slug": "click-to-call-making-your-phone-number-work-on-every-page",
+  "title": "Click-to-call: making your phone number work on every page",
+  "cluster": "guides",
+  "angle": "placement, formatting, tel links, tracking calls"
+ },
+ {
+  "slug": "contact-forms-that-actually-get-filled-out",
+  "title": "Contact forms that actually get filled out",
+  "cluster": "guides",
+  "angle": "fewer fields, what to ask, spam protection, where replies go"
+ },
+ {
+  "slug": "how-to-write-an-about-page-for-a-local-business",
+  "title": "How to write an About page for a local business",
+  "cluster": "guides",
+  "angle": "what customers want to know, honest details, photos"
+ },
+ {
+  "slug": "should-you-put-prices-on-your-website",
+  "title": "Should you put prices on your website?",
+  "cluster": "guides",
+  "angle": "starting prices, ranges, how it filters leads and builds trust"
+ },
+ {
+  "slug": "how-to-take-photos-for-your-business-website-with-a-phone",
+  "title": "How to take photos for your business website with a phone",
+  "cluster": "guides",
+  "angle": "light, angles, what to shoot, before/after, what not to post"
+ },
+ {
+  "slug": "service-area-pages-when-they-help-and-when-they-hurt",
+  "title": "Service area pages: when they help and when they hurt",
+  "cluster": "guides",
+  "angle": "real differences between towns vs thin copy-paste pages"
+ },
+ {
+  "slug": "nap-consistency-why-your-name-address-and-phone-must-match-everywhere",
+  "title": "NAP consistency: why your name, address, and phone must match everywhere",
+  "cluster": "guides",
+  "angle": "citations, directories, how to audit"
+ },
+ {
+  "slug": "local-business-schema-markup-explained-simply",
+  "title": "Local business schema markup, explained simply",
+  "cluster": "guides",
+  "angle": "what LocalBusiness structured data is, what to include, how to test it"
+ },
+ {
+  "slug": "how-to-set-up-google-search-console-for-a-small-business",
+  "title": "How to set up Google Search Console for a small business",
+  "cluster": "guides",
+  "angle": "verification, sitemaps, what reports to watch"
+ },
+ {
+  "slug": "how-to-tell-if-your-website-is-getting-you-customers",
+  "title": "How to tell if your website is getting you customers",
+  "cluster": "guides",
+  "angle": "calls, forms, Search Console, asking customers how they found you"
+ },
+ {
+  "slug": "bing-places-and-apple-business-connect-the-listings-most-businesses-sk",
+  "title": "Bing Places and Apple Business Connect: the listings most businesses skip",
+  "cluster": "guides",
+  "angle": "why they matter, how to claim them"
+ },
+ {
+  "slug": "yelp-nextdoor-and-angi-which-listings-are-worth-your-time",
+  "title": "Yelp, Nextdoor, and Angi: which listings are worth your time",
+  "cluster": "guides",
+  "angle": "by business type; free vs paid"
+ },
+ {
+  "slug": "how-to-reply-to-a-bad-review",
+  "title": "How to reply to a bad review",
+  "cluster": "guides",
+  "angle": "templates, tone, what never to do"
+ },
+ {
+  "slug": "blogging-for-local-businesses-does-it-still-work",
+  "title": "Blogging for local businesses: does it still work?",
+  "cluster": "guides",
+  "angle": "what kind of posts help, how often, writing from real questions"
+ },
+ {
+  "slug": "how-to-write-a-service-page-that-ranks-and-converts",
+  "title": "How to write a service page that ranks and converts",
+  "cluster": "guides",
+  "angle": "structure, questions, pricing, proof, calls to action"
+ },
+ {
+  "slug": "website-accessibility-basics-for-small-businesses",
+  "title": "Website accessibility basics for small businesses",
+  "cluster": "guides",
+  "angle": "contrast, text size, alt text, forms, keyboard use; practical, not legal advice"
+ },
+ {
+  "slug": "does-a-small-business-website-need-a-privacy-policy",
+  "title": "Does a small business website need a privacy policy?",
+  "cluster": "guides",
+  "angle": "when you collect info, what to include; not legal advice"
+ },
+ {
+  "slug": "how-to-get-your-business-on-google-maps",
+  "title": "How to get your business on Google Maps",
+  "cluster": "guides",
+  "angle": "Google Business Profile verification, service-area vs storefront"
+ },
+ {
+  "slug": "what-to-do-when-your-google-business-profile-gets-suspended",
+  "title": "What to do when your Google Business Profile gets suspended",
+  "cluster": "guides",
+  "angle": "common causes, reinstatement steps"
+ },
+ {
+  "slug": "keywords-for-local-businesses-how-customers-actually-search",
+  "title": "Keywords for local businesses: how customers actually search",
+  "cluster": "guides",
+  "angle": "service + town, near me, problem searches; how to use them naturally"
+ },
+ {
+  "slug": "how-often-should-you-update-your-business-website",
+  "title": "How often should you update your business website?",
+  "cluster": "guides",
+  "angle": "hours, prices, photos, seasonal changes, freshness"
+ },
+ {
+  "slug": "website-builders-vs-done-for-you-websites",
+  "title": "Website builders vs done-for-you websites",
+  "cluster": "guides",
+  "angle": "time cost vs money cost; who each fits"
+ },
+ {
+  "slug": "what-a-website-redesign-should-cost-and-when-you-need-one",
+  "title": "What a website redesign should cost and when you need one",
+  "cluster": "guides",
+  "angle": "signs you need one vs small fixes"
+ },
+ {
+  "slug": "how-to-write-website-text-when-you-re-not-a-writer",
+  "title": "How to write website text when you're not a writer",
+  "cluster": "guides",
+  "angle": "talk like you talk to customers; examples"
+ },
+ {
+  "slug": "emergency-service-businesses-how-to-show-you-re-open-now",
+  "title": "Emergency service businesses: how to show you're open now",
+  "cluster": "guides",
+  "angle": "hours, 24/7 messaging, call buttons"
+ },
+ {
+  "slug": "how-to-add-a-google-map-to-your-website-the-right-way",
+  "title": "How to add a Google Map to your website the right way",
+  "cluster": "guides",
+  "angle": "embed vs link, speed, NAP"
+ },
+ {
+  "slug": "what-to-put-in-your-website-footer",
+  "title": "What to put in your website footer",
+  "cluster": "guides",
+  "angle": "NAP, hours, service area, links"
+ },
+ {
+  "slug": "seasonal-marketing-for-local-service-businesses",
+  "title": "Seasonal marketing for local service businesses",
+  "cluster": "guides",
+  "angle": "what to change on your site and profile each season"
+ },
+ {
+  "slug": "how-to-get-customers-to-leave-reviews-on-google-without-being-pushy",
+  "title": "How to get customers to leave reviews on Google without being pushy",
+  "cluster": "guides",
+  "angle": "ask moments, links, QR codes"
+ },
+ {
+  "slug": "what-makes-a-local-business-website-trustworthy",
+  "title": "What makes a local business website trustworthy",
+  "cluster": "guides",
+  "angle": "real photos, license numbers, clear prices, reviews, owner name"
+ },
+ {
+  "slug": "how-to-handle-leads-from-your-website-fast",
+  "title": "How to handle leads from your website fast",
+  "cluster": "guides",
+  "angle": "speed to lead, auto-replies, missed-call texting"
+ },
+ {
+  "slug": "should-your-business-use-a-com",
+  "title": "Should your business use a .com?",
+  "cluster": "guides",
+  "angle": "trust and memory; alternatives"
+ },
+ {
+  "slug": "how-to-switch-website-providers-without-losing-google-rankings",
+  "title": "How to switch website providers without losing Google rankings",
+  "cluster": "guides",
+  "angle": "URLs, redirects, keeping content"
+ },
+ {
+  "slug": "how-ai-search-is-changing-how-customers-find-local-businesses",
+  "title": "How AI search is changing how customers find local businesses",
+  "cluster": "ai-search",
+  "angle": "ChatGPT, Google AI Overviews, voice assistants; what's known and what isn't; no made-up stats"
+ },
+ {
+  "slug": "how-to-show-up-when-someone-asks-chatgpt-for-a-local-service",
+  "title": "How to show up when someone asks ChatGPT for a local service",
+  "cluster": "ai-search",
+  "angle": "clear facts on your site, consistent listings, reviews, structured data; honest about uncertainty"
+ },
+ {
+  "slug": "google-ai-overviews-and-local-businesses-what-to-do-now",
+  "title": "Google AI Overviews and local businesses: what to do now",
+  "cluster": "ai-search",
+  "angle": "answer-first content, FAQs, Business Profile, reviews"
+ },
+ {
+  "slug": "what-is-geo-generative-engine-optimization-for-small-businesses",
+  "title": "What is GEO (generative engine optimization) for small businesses?",
+  "cluster": "ai-search",
+  "angle": "plain-English definition, how it relates to SEO, practical steps"
+ },
+ {
+  "slug": "writing-website-content-ai-assistants-can-quote",
+  "title": "Writing website content AI assistants can quote",
+  "cluster": "ai-search",
+  "angle": "answer-first paragraphs, specific facts, FAQs, structure"
+ },
+ {
+  "slug": "structured-data-for-ai-search-what-small-businesses-need",
+  "title": "Structured data for AI search: what small businesses need",
+  "cluster": "ai-search",
+  "angle": "LocalBusiness, FAQ, reviews policies, what not to fake"
+ },
+ {
+  "slug": "why-consistent-business-information-matters-for-ai-answers",
+  "title": "Why consistent business information matters for AI answers",
+  "cluster": "ai-search",
+  "angle": "NAP, hours, services everywhere"
+ },
+ {
+  "slug": "how-reviews-influence-ai-recommendations-of-local-businesses",
+  "title": "How reviews influence AI recommendations of local businesses",
+  "cluster": "ai-search",
+  "angle": "what assistants can see; asking for specific reviews"
+ },
+ {
+  "slug": "voice-search-for-local-businesses-what-still-matters",
+  "title": "Voice search for local businesses: what still matters",
+  "cluster": "ai-search",
+  "angle": "near me, hours, phone"
+ },
+ {
+  "slug": "what-llms-txt-is-and-whether-a-small-business-needs-one",
+  "title": "What llms.txt is and whether a small business needs one",
+  "cluster": "ai-search",
+  "angle": "honest: optional, low effort"
+ },
+ {
+  "slug": "how-to-check-what-ai-assistants-say-about-your-business",
+  "title": "How to check what AI assistants say about your business",
+  "cluster": "ai-search",
+  "angle": "ask them, fix the sources they rely on"
+ },
+ {
+  "slug": "faq-pages-that-answer-customers-and-ai-search",
+  "title": "FAQ pages that answer customers and AI search",
+  "cluster": "ai-search",
+  "angle": "picking real questions, answer first, schema"
+ },
+ {
+  "slug": "front-step-sites-vs-wix-for-a-small-business-website",
+  "title": "Front Step Sites vs Wix for a small business website",
+  "cluster": "compare",
+  "angle": "use verified Wix Light $17/mo billed yearly ($204/yr, checked Sept 2026); time cost; who each fits; fair to Wix"
+ },
+ {
+  "slug": "front-step-sites-vs-squarespace-for-a-local-business",
+  "title": "Front Step Sites vs Squarespace for a local business",
+  "cluster": "compare",
+  "angle": "use verified Squarespace Basic $19/mo (checked Sept 2026); fair comparison"
+ },
+ {
+  "slug": "front-step-sites-vs-hiring-a-freelancer",
+  "title": "Front Step Sites vs hiring a freelancer",
+  "cluster": "compare",
+  "angle": "ongoing changes, ownership, cost structure; no invented freelancer prices beyond wide ranges clearly labeled as typical"
+ },
+ {
+  "slug": "front-step-sites-vs-a-marketing-agency",
+  "title": "Front Step Sites vs a marketing agency",
+  "cluster": "compare",
+  "angle": "what agencies do that we don't (ads, big campaigns), when an agency fits better"
+ },
+ {
+  "slug": "done-for-you-website-vs-building-it-yourself",
+  "title": "Done-for-you website vs building it yourself",
+  "cluster": "compare",
+  "angle": "time, skills, ongoing upkeep"
+ },
+ {
+  "slug": "website-subscription-vs-one-time-website-build",
+  "title": "Website subscription vs one-time website build",
+  "cluster": "compare",
+  "angle": "ongoing costs of one-time builds: hosting, domain, changes"
+ },
+ {
+  "slug": "is-a-99-website-worth-it",
+  "title": "Is a $99 website worth it?",
+  "cluster": "compare",
+  "angle": "what's included, what isn't, who it fits and doesn't"
+ },
+ {
+  "slug": "what-to-ask-before-you-hire-someone-to-build-your-website",
+  "title": "What to ask before you hire someone to build your website",
+  "cluster": "compare",
+  "angle": "ownership, domain, changes, leaving, costs"
+ },
+ {
+  "slug": "how-to-leave-a-web-designer-and-keep-your-domain-and-site",
+  "title": "How to leave a web designer and keep your domain and site",
+  "cluster": "compare",
+  "angle": "steps; our no-lock-in approach"
+ },
+ {
+  "slug": "website-contracts-red-flags-for-small-business-owners",
+  "title": "Website contracts: red flags for small business owners",
+  "cluster": "compare",
+  "angle": "domain held hostage, setup fees, cancellation traps"
+ }
+]

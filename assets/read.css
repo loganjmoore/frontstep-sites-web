@@ -32,3 +32,42 @@ main.read{padding:48px 0 72px}
 footer.site{border-top:1.5px solid var(--ink);background:var(--tag);padding:28px 0;font-size:.95rem;color:var(--ink-2)}
 footer.site .wrap{display:flex;flex-wrap:wrap;gap:.6rem 1.4rem;justify-content:space-between;align-items:center}
 footer.site a{color:var(--ink)}
+
+/* blog: breadcrumb */
+.crumbs{font-size:.85rem;color:var(--ink-2);margin-bottom:.7rem}
+.crumbs a{color:var(--ink-2);text-decoration:none}
+.crumbs a:hover{text-decoration:underline}
+.crumbs .sep{margin:0 .4rem}
+.doc .updated{color:var(--ink-2);font-size:.92rem;margin:.1rem 0 1.3rem}
+
+/* blog: short-answer and offer tags. Already inside the .doc card, so no
+   border/shadow of their own (that would nest card-on-card): a left ink bar
+   and a flat tint carry the "tag" identity instead. Yellow means ours. */
+.tag-box{border-left:4px solid var(--ink);background:var(--ground);padding:14px 18px;margin:0 0 1.7rem}
+.tag-box .label{display:block;font-size:.78rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;margin-bottom:.4rem}
+.tag-box p{margin:0;max-width:65ch}
+.tag-offer{border-left-color:var(--ink);background:var(--yellow);margin:2.2rem 0}
+.tag-offer p{font-weight:600;margin-bottom:.9rem}
+.tag-offer .btn{margin-top:0}
+
+/* blog: related articles and hub lists (plain rows, not icon cards) */
+.related{margin-top:2.2rem;border-top:2px solid var(--ink);padding-top:1.1rem}
+.related h2{font-stretch:85%;font-weight:800;font-size:1.2rem;margin-bottom:.7rem}
+.article-list,.related ul{list-style:none;padding:0;display:grid;gap:1.1rem;margin-top:.8rem}
+.article-list li,.related li{border-bottom:1px solid var(--line);padding-bottom:1.1rem}
+.article-list li:last-child,.related li:last-child{border-bottom:0;padding-bottom:0}
+.article-list a,.related a{font-weight:700;text-decoration:none;font-size:1.08rem}
+.article-list a:hover,.related a:hover{text-decoration:underline}
+.article-list p,.related p{color:var(--ink-2);margin:.3rem 0 0;max-width:65ch}
+
+.hub-rail{margin-top:2.4rem;border-top:2px solid var(--ink);padding-top:1.2rem}
+.hub-rail h2{font-stretch:85%;font-weight:800;font-size:1.3rem;margin-bottom:.8rem}
+.hub-rail h2 a{color:var(--ink);text-decoration:none}
+.hub-rail h2 a:hover{text-decoration:underline}
+.hub-list{list-style:none;padding:0;display:grid;gap:0}
+.hub-list li{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;padding:.7rem 0;border-bottom:1px solid var(--line)}
+.hub-list li:last-child{border-bottom:0}
+.hub-list a{font-weight:700;text-decoration:none;font-size:1.05rem}
+.hub-list a:hover{text-decoration:underline}
+.hub-list .count{color:var(--ink-2);font-size:.9rem;white-space:nowrap}
+.hub-list .muted{color:var(--ink-2);font-weight:600}
