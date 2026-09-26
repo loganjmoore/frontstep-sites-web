@@ -1,0 +1,34 @@
+/* Read pages (privacy, terms, blog): the shelf-tag world, quiet. Tokens match /DESIGN.md. */
+:root{
+  --ink:#111312;--ink-2:#474d4b;--ground:#eceeec;--tag:#fff;--yellow:#ffd60a;
+  --rail:#a3aaa9;--rail-deep:#5d6563;--line:#cfd4d2;
+  --font:"Archivo","Arial Narrow",system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:var(--font);font-size:1.0625rem;line-height:1.65;color:var(--ink);background:var(--ground)}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--ink);outline-offset:2px;box-shadow:0 0 0 7px var(--yellow)}
+.wrap{width:min(1120px,100% - 32px);margin-inline:auto}
+header.site{padding:18px 0;border-bottom:1.5px solid var(--ink);background:var(--tag)}
+header.site .wrap{display:flex;align-items:center;justify-content:space-between;gap:1rem}
+.brand{display:flex;align-items:center;gap:.6rem;text-decoration:none;font-weight:800;font-stretch:85%;font-size:1.3rem}
+.brand svg{width:32px;height:32px}
+header.site nav{display:flex;gap:1.1rem;align-items:center;font-weight:600}
+header.site nav a:not(.btn){text-decoration:none}
+header.site nav a:not(.btn):hover{text-decoration:underline}
+.btn{display:inline-flex;align-items:center;min-height:44px;padding:0 1rem;border-radius:3px;background:var(--ink);color:var(--yellow);font-weight:700;text-decoration:none}
+.btn:hover{box-shadow:0 3px 0 var(--rail-deep)}
+@media(max-width:640px){header.site nav .hide-sm{display:none}}
+main.read{padding:48px 0 72px}
+.doc{background:var(--tag);border:1.5px solid var(--ink);box-shadow:0 2px 0 rgba(0,0,0,.18);padding:clamp(20px,4vw,44px);max-width:760px}
+.doc .kicker{font-size:.78rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-2)}
+.doc h1{font-stretch:80%;font-weight:800;font-size:clamp(2rem,5vw,3rem);line-height:1;margin:.4rem 0 .8rem;text-wrap:balance}
+.doc h2{font-stretch:85%;font-weight:800;font-size:1.5rem;line-height:1.15;margin:2rem 0 .5rem}
+.doc h3{font-weight:700;font-size:1.15rem;margin:1.4rem 0 .3rem}
+.doc p,.doc ul,.doc ol{margin:.7rem 0;max-width:65ch}
+.doc ul,.doc ol{padding-left:1.3rem}
+.doc li{margin:.3rem 0}
+.doc .meta{color:var(--ink-2);font-size:.95rem}
+footer.site{border-top:1.5px solid var(--ink);background:var(--tag);padding:28px 0;font-size:.95rem;color:var(--ink-2)}
+footer.site .wrap{display:flex;flex-wrap:wrap;gap:.6rem 1.4rem;justify-content:space-between;align-items:center}
+footer.site a{color:var(--ink)}
