@@ -7,7 +7,7 @@ answer: "Start with accurate, accessible information about your services, servic
 updated: 2026-09-26
 ---
 
-How do you get your business mentioned when someone asks ChatGPT for a plumber, roofer, or other local service? Start by making your business details clear, current, and accessible on the web. Treat that as useful groundwork, not a promise that any assistant will choose you over another company.
+ChatGPT is an AI assistant that can search the web and summarize an answer, including a mention of local businesses, when someone asks it a question. How do you get your business mentioned when someone asks ChatGPT for a plumber, roofer, or other local service? Start by making your business details clear, current, and accessible on the web. Treat that as useful groundwork, not a promise that any assistant will choose you over another company.
 
 ## Put the essential facts in plain sight
 

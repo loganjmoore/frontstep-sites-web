@@ -7,7 +7,7 @@ answer: Front Step Sites fits owners who want a business website with a stated a
 updated: 2026-09-26
 ---
 
-Should you pay a freelancer to build your website, or use Front Step Sites? Both can make sense, but they are not interchangeable purchases. The useful comparison is what your business needs built, who will keep it accurate, and what happens when those needs change.
+Front Step Sites is a done-for-you website service for small businesses, priced at $99 a year with the domain included, while a freelancer is an independent contractor you hire for a custom, scoped project. Should you pay a freelancer to build your website, or use Front Step Sites? Both can make sense, but they are not interchangeable purchases. The useful comparison is what your business needs built, who will keep it accurate, and what happens when those needs change.
 
 ## Start with the job your website must do
 

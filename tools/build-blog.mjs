@@ -349,7 +349,7 @@ ${HUB_FAQ.map((f) => `<h3>${escapeHtml(f.question)}</h3>\n<p>${escapeHtml(f.answ
 ${renderCrumbs(crumbs)}
 <h1>${escapeHtml(clusterName)}</h1>
 <p class="updated">${articles.length} article${articles.length === 1 ? "" : "s"}</p>
-<p>The ${escapeHtml(clusterName)} hub is a section of the Front Step Sites blog with ${articles.length} article${articles.length === 1 ? "" : "s"} of practical, specific guidance. Front Step Sites builds these sites for $99 a year, domain included, with 2 change requests a month included on the Launch plan.</p>
+<p>Front Step Sites is a done-for-you website service for small businesses, priced at $99 a year with the domain included and no setup fee. The ${escapeHtml(clusterName)} hub is a section of the Front Step Sites blog with ${articles.length} article${articles.length === 1 ? "" : "s"} of practical, specific guidance, with 2 change requests a month included on the Launch plan.</p>
 <ul class="article-list">
 ${articles.map((a) => `<li><a href="/blog/${a.slug}/">${escapeHtml(a.title)}</a><p>${escapeHtml(a.answer)}</p></li>`).join("\n")}
 </ul>
