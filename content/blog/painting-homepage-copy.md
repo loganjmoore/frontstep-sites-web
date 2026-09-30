@@ -1,5 +1,5 @@
 ---
-title: "What to write on a painting contractor homepage"
+title: "Painting: what to put on your homepage"
 description: "Write a painting contractor homepage that explains your services, preparation, project process, and estimate options, with clear examples you can adapt."
 slug: "painting-homepage-copy"
 cluster: "trades/painting"

@@ -1,5 +1,5 @@
 ---
-title: "What to write on an auto detailer homepage"
+title: "Auto detailing homepage: what to write"
 description: "Write a detailing homepage that explains your packages, vehicle condition pricing, mobile requirements, and booking steps in words customers understand."
 slug: "auto-detailing-homepage-copy"
 cluster: "trades/auto-detailing"

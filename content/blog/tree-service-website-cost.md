@@ -1,5 +1,5 @@
 ---
-title: "How much a website costs for a tree service in 2026"
+title: "Tree service website cost in 2026"
 description: "Understand tree service website costs, compare build options, and budget for clear service pages, credible crew details, and reliable estimate requests."
 slug: "tree-service-website-cost"
 cluster: "trades/tree-service"

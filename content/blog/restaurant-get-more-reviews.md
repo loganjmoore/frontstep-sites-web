@@ -1,5 +1,5 @@
 ---
-title: "How to get more Google reviews for your restaurant"
+title: "Restaurant: get more Google reviews"
 description: "Build a restaurant review routine that fits dine-in and takeout, uses neutral invitations, avoids rewards, and turns guest feedback into useful improvements."
 slug: "restaurant-get-more-reviews"
 cluster: "trades/restaurant"

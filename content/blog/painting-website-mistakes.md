@@ -1,5 +1,5 @@
 ---
-title: "Painting contractors website mistakes that cost calls"
+title: "Painting website mistakes that cost calls"
 description: "Fix painting website mistakes that confuse homeowners: vague prep details, weak project photos, hidden service areas, and frustrating estimate requests."
 slug: "painting-website-mistakes"
 cluster: "trades/painting"

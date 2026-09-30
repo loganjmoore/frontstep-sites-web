@@ -1,5 +1,5 @@
 ---
-title: "What to write on a pressure washing business homepage"
+title: "Pressure washing homepage: what to write"
 description: "Write pressure washing homepage copy that explains surfaces, cleaning limits, local coverage, and quote requests without promising every stain will vanish."
 slug: "pressure-washing-homepage-copy"
 cluster: "trades/pressure-washing"

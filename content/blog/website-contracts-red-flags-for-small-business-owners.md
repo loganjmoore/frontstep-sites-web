@@ -1,5 +1,5 @@
 ---
-title: "Website contracts: red flags for small business owners"
+title: "Website contracts: red flags to avoid"
 description: "Spot website contract red flags before you sign, from unclear domain ownership and extra fees to renewal terms, change limits, and difficult handovers."
 slug: website-contracts-red-flags-for-small-business-owners
 cluster: compare

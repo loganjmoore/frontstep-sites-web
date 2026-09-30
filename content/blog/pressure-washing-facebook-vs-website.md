@@ -1,5 +1,5 @@
 ---
-title: "Is a Facebook page enough for a pressure washing business?"
+title: "Pressure washing: Facebook vs. a website"
 description: "Compare Facebook and a website for your pressure washing business, including project photos, service details, quote requests, and realistic upkeep needs."
 slug: "pressure-washing-facebook-vs-website"
 cluster: "trades/pressure-washing"

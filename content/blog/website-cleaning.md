@@ -1,5 +1,5 @@
 ---
-title: "What a cleaning company website needs to turn visitors into calls"
+title: "Cleaning: what your website needs"
 description: "Build a cleaning company website that explains recurring visits, deep cleans, office work, pricing factors, and access arrangements before customers call."
 slug: "website-cleaning"
 cluster: "trades/cleaning"

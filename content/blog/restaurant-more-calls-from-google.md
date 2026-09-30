@@ -1,5 +1,5 @@
 ---
-title: "How restaurants get more calls from Google"
+title: "Restaurant: get more calls from Google"
 description: "Help diners find your restaurant on Google with current hours, a readable menu, clear booking and pickup details, real food photos, and honest customer reviews."
 slug: "restaurant-more-calls-from-google"
 cluster: "trades/restaurant"

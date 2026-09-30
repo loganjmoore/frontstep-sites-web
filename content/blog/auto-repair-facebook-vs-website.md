@@ -1,5 +1,5 @@
 ---
-title: "Is a Facebook page enough for an auto repair shop?"
+title: "Auto repair: Facebook page vs. a website"
 description: "Compare Facebook and a website for your auto repair shop, with practical advice on service details, appointment requests, customer trust, and daily upkeep."
 slug: "auto-repair-facebook-vs-website"
 cluster: "trades/auto-repair"

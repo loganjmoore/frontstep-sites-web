@@ -1,5 +1,5 @@
 ---
-title: "How cleaning companies get more calls from Google"
+title: "Cleaning: get more calls from Google"
 description: "Help cleaning customers find and contact you through accurate Google details, clear house and office cleaning pages, honest reviews, and useful forms."
 slug: cleaning-more-calls-from-google
 cluster: trades/cleaning

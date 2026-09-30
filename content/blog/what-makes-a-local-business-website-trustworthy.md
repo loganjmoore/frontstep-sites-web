@@ -1,5 +1,5 @@
 ---
-title: "What makes a local business website trustworthy"
+title: "What makes a website look trustworthy"
 description: "Build customer confidence with real photos, clear business details, honest reviews, useful pricing information, and contact options that work as promised."
 slug: what-makes-a-local-business-website-trustworthy
 cluster: guides

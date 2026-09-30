@@ -1,5 +1,5 @@
 ---
-title: "How to get more Google reviews as an auto detailer"
+title: "Auto detailing: get more Google reviews"
 description: "Build a simple review routine for your detailing business, from vehicle handover to follow-up messages, with honest requests and useful complaint replies."
 slug: "auto-detailing-get-more-reviews"
 cluster: "trades/auto-detailing"

@@ -1,5 +1,5 @@
 ---
-title: "Google Business Profile for salons and barbershops: a setup and upkeep guide"
+title: "Salon: Google Business Profile guide"
 description: "Build a useful salon or barbershop Google Business Profile with clear services, booking links, accurate hours, real work photos, and thoughtful review replies."
 slug: "salon-google-business-profile"
 cluster: "trades/salon"

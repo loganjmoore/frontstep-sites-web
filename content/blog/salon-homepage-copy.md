@@ -1,5 +1,5 @@
 ---
-title: "What to write on a salon or barbershop homepage"
+title: "Salon: what to put on your homepage"
 description: "Write salon homepage copy that explains your cuts, color services, prices, stylists, and booking options so new clients can choose the right appointment."
 slug: "salon-homepage-copy"
 cluster: "trades/salon"

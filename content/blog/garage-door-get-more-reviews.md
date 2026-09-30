@@ -1,5 +1,5 @@
 ---
-title: "How to get more Google reviews as a garage door company"
+title: "Garage door: get more Google reviews"
 description: "Ask for honest garage door reviews after repairs and installations, with practical handoff timing, simple messages, and calm replies to service concerns."
 slug: "garage-door-get-more-reviews"
 cluster: "trades/garage-door"

@@ -1,5 +1,5 @@
 ---
-title: "How much a website costs for a cleaning company in 2026"
+title: "Cleaning: what a website costs in 2026"
 description: "Compare cleaning website costs for DIY, managed services, and custom builds, including quote forms, recurring visits, office cleaning, and ongoing updates."
 slug: "cleaning-website-cost"
 cluster: "trades/cleaning"

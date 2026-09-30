@@ -1,5 +1,5 @@
 ---
-title: "Blogging for local businesses: does it still work?"
+title: "Blogging for local businesses: worth it?"
 description: "Find out which blog posts can help a local business, how to choose useful customer questions, and how to judge whether writing is worth your limited time."
 slug: blogging-for-local-businesses-does-it-still-work
 cluster: guides

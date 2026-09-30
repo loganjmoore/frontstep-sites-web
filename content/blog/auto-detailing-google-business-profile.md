@@ -1,5 +1,5 @@
 ---
-title: "Google Business Profile for auto detailers: a setup and upkeep guide"
+title: "Auto detailing: Google Business Profile"
 description: "Set up an auto detailing Google Business Profile with accurate service areas, packages, photos, and hours so customers know what to expect before booking."
 slug: "auto-detailing-google-business-profile"
 cluster: "trades/auto-detailing"

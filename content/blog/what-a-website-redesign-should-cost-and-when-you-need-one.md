@@ -1,5 +1,5 @@
 ---
-title: What a website redesign should cost and when you need one
+title: What a website redesign should cost
 description: Learn when your business website needs a redesign, when small repairs will do, and how to compare costs without paying for work you do not need.
 slug: what-a-website-redesign-should-cost-and-when-you-need-one
 cluster: guides

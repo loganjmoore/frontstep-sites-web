@@ -1,5 +1,5 @@
 ---
-title: "What a landscaper website needs to turn visitors into calls"
+title: "Landscaping: what your website needs"
 description: "Build a landscaping website that explains lawn care, cleanups, planting, and project estimates, with clear service areas, useful photos, and simple enquiries."
 slug: "website-landscaping"
 cluster: "trades/landscaping"

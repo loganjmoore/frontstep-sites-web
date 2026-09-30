@@ -1,5 +1,5 @@
 ---
-title: "Yelp, Nextdoor, and Angi: which listings are worth your time"
+title: "Yelp, Nextdoor, and Angi: which to use"
 description: "Compare Yelp, Nextdoor, and Angi by the work you do, learn where a free listing helps, and decide when paid promotion deserves a test for your business."
 slug: "yelp-nextdoor-and-angi-which-listings-are-worth-your-time"
 cluster: "guides"

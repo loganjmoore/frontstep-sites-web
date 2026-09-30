@@ -1,5 +1,5 @@
 ---
-title: "How to get more Google reviews as a handyman"
+title: "Handyman: how to get more Google reviews"
 description: "Ask for handyman reviews after a clear job walkthrough, use simple messages, handle unfinished punch lists fairly, and reply without exposing home details."
 slug: "handyman-get-more-reviews"
 cluster: "trades/handyman"

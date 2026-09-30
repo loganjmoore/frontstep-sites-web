@@ -1,5 +1,5 @@
 ---
-title: "Blog post ideas that bring roofing customers"
+title: "Roofing: blog post ideas for customers"
 description: "Find 24 practical roofing blog ideas based on repair calls, replacement estimates, storm questions, and project planning, with advice for writing useful posts."
 slug: "roofing-blog-ideas"
 cluster: "trades/roofing"

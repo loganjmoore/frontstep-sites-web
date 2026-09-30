@@ -1,5 +1,5 @@
 ---
-title: "Google Business Profile for electricians: a setup and upkeep guide"
+title: "Electrical: Google Business Profile guide"
 description: "Set up an electrician Google Business Profile with accurate services, honest availability, useful project photos, and answers that help local customers call."
 slug: "electrical-google-business-profile"
 cluster: "trades/electrical"

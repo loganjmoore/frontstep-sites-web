@@ -1,5 +1,5 @@
 ---
-title: "What SSL is and why your site needs the padlock"
+title: "What SSL is and why your site needs it"
 description: "Understand SSL, HTTPS, browser warnings, and certificate renewal in plain English, including why a secure connection may no longer show a padlock icon."
 slug: "what-ssl-is-and-why-your-site-needs-the-padlock"
 cluster: "guides"

@@ -1,5 +1,5 @@
 ---
-title: "How pest control companies get more calls from Google"
+title: "Pest control: get more calls from Google"
 description: "Improve pest control inquiries from Google with accurate listings, useful pest pages, honest reviews, clear inspection details, and working call links."
 slug: pest-control-more-calls-from-google
 cluster: trades/pest-control

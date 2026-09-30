@@ -1,5 +1,5 @@
 ---
-title: "What a tree service website needs to turn visitors into calls"
+title: "Tree service: what your website needs"
 description: "A tree service website should explain removals, pruning, stump work, access, and cleanup so local property owners know when to call and what to expect."
 slug: "website-tree-service"
 cluster: "trades/tree-service"

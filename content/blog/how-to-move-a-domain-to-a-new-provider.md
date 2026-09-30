@@ -7,7 +7,7 @@ answer: "To move a domain to a new registrar, confirm access and transfer eligib
 updated: "2026-09-26"
 ---
 
-How do you move your business domain to a new provider without losing your website or email? First, find out which part you are actually moving: the domain registration, the website, the email service, or all three. They can share one bill, but they are different services and need separate checks.
+A domain transfer is the process of moving a domain's registration from one registrar to another. How do you do that without losing your website or email? First, find out which part you are actually moving: the domain registration, the website, the email service, or all three. They can share one bill, but they are different services and need separate checks.
 
 ## Decide whether you need a domain transfer at all
 

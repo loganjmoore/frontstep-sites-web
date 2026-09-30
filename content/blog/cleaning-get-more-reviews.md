@@ -1,5 +1,5 @@
 ---
-title: "How to get more Google reviews as a cleaning company"
+title: "Cleaning: how to get more Google reviews"
 description: "Build a simple review routine for your cleaning company, with natural request scripts, sensible timing, privacy safeguards, and calm replies to complaints."
 slug: "cleaning-get-more-reviews"
 cluster: "trades/cleaning"

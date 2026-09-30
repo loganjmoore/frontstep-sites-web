@@ -1,5 +1,5 @@
 ---
-title: "Garage door website mistakes that cost calls"
+title: "Garage door website mistakes"
 description: "Fix garage door website mistakes that hide repair help, confuse replacement shoppers, overpromise availability, or make customers struggle to contact your team."
 slug: "garage-door-website-mistakes"
 cluster: "trades/garage-door"

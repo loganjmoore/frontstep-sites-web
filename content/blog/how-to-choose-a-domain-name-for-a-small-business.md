@@ -1,5 +1,5 @@
 ---
-title: "How to choose a domain name for a small business"
+title: "Choosing a domain name for your business"
 description: "Choose a small business domain that is easy to say, spell, and keep, with practical checks for name conflicts, renewal costs, and account ownership."
 slug: "how-to-choose-a-domain-name-for-a-small-business"
 cluster: "guides"
@@ -7,7 +7,7 @@ answer: "Choose a domain that closely matches your business name and is easy to 
 updated: "2026-09-26"
 ---
 
-You need a website address, but your first choice may already be taken. Should you add your town, use a different ending, or put a hyphen in the name? Choose an address that customers can repeat correctly and that you can keep as the business grows.
+A domain name is the web address customers type or tap to reach your business online. You need one, but your first choice may already be taken. Should you add your town, use a different ending, or put a hyphen in the name? Choose an address that customers can repeat correctly and that you can keep as the business grows.
 
 ## Start with the name customers already know
 

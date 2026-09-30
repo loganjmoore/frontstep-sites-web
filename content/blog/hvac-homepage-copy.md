@@ -1,5 +1,5 @@
 ---
-title: "What to write on an HVAC contractor homepage"
+title: "HVAC: what to put on your homepage"
 description: "Write an HVAC homepage that explains repairs, replacements, service areas, and scheduling, with practical example copy you can adapt to your own business."
 slug: "hvac-homepage-copy"
 cluster: "trades/hvac"

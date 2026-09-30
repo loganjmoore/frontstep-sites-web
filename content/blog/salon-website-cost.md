@@ -1,5 +1,5 @@
 ---
-title: "How much a website costs for a salon or barbershop in 2026"
+title: "Salon: what a website costs in 2026"
 description: "Compare salon and barbershop website costs for DIY, managed services, and custom builds, including service menus, stylist pages, booking links, and upkeep."
 slug: "salon-website-cost"
 cluster: "trades/salon"

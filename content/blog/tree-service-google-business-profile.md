@@ -1,5 +1,5 @@
 ---
-title: "Google Business Profile for tree services: a setup and upkeep guide"
+title: "Tree service: Google Business Profile"
 description: "Build a clear tree service Google Business Profile with accurate coverage, real crew photos, useful service details, and honest information about urgent calls."
 slug: "tree-service-google-business-profile"
 cluster: "trades/tree-service"

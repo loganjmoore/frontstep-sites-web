@@ -1,5 +1,5 @@
 ---
-title: "How much a website costs for a pressure washing business in 2026"
+title: "Pressure washing website cost in 2026"
 description: "Compare pressure washing website costs, from DIY to custom work, and learn which pages, quote tools, ownership terms, and ongoing expenses matter for you."
 slug: "pressure-washing-website-cost"
 cluster: "trades/pressure-washing"

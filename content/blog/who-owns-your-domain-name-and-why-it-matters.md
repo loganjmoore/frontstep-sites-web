@@ -1,5 +1,5 @@
 ---
-title: "Who owns your domain name, and why it matters"
+title: "Who owns your domain name?"
 description: "Find out who controls your business domain, how to check registration and account access, and what to fix before renewals or a website provider change."
 slug: "who-owns-your-domain-name-and-why-it-matters"
 cluster: "guides"
@@ -7,7 +7,7 @@ answer: "Your business should be the domain registrant and have reliable control
 updated: "2026-09-26"
 ---
 
-Who owns your domain name if a web designer bought it for you? Check the registration and account arrangements rather than assuming the name on the invoice settles everything. You want your business to control the address customers use, even if someone else maintains the website behind it.
+The domain owner is the registrant on file for a domain name, not necessarily whoever paid for it. Who owns your domain name if a web designer bought it for you? Check the registration and account arrangements rather than assuming the name on the invoice settles everything. You want your business to control the address customers use, even if someone else maintains the website behind it.
 
 ## Understand the three roles
 

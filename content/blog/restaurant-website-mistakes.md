@@ -1,5 +1,5 @@
 ---
-title: "Restaurants website mistakes that cost calls"
+title: "Restaurant website mistakes"
 description: "Fix restaurant website mistakes that hide menus, confuse pickup orders, show stale hours, and leave guests guessing about reservations, parking, or catering."
 slug: "restaurant-website-mistakes"
 cluster: "trades/restaurant"

@@ -1,5 +1,5 @@
 ---
-title: "How to write website text when you're not a writer"
+title: "Website text tips if you're not a writer"
 description: "Write clear website text using the words you already say to customers, with practical examples for your homepage, service pages, and contact instructions."
 slug: "how-to-write-website-text-when-you-re-not-a-writer"
 cluster: "guides"

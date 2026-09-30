@@ -1,5 +1,5 @@
 ---
-title: "What a plumber website needs to turn visitors into calls"
+title: "Plumbing: what your website needs"
 description: "Build a plumber website that answers customer questions, shows your service area, and makes calling easy, with a practical checklist you can use today."
 slug: website-plumbing
 cluster: trades/plumbing

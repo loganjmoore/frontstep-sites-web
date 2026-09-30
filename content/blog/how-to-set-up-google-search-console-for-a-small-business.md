@@ -1,5 +1,5 @@
 ---
-title: "How to set up Google Search Console for a small business"
+title: "How to set up Google Search Console"
 description: "Set up Google Search Console, verify your business website, submit its sitemap, and learn which reports help you spot problems and useful searches."
 slug: how-to-set-up-google-search-console-for-a-small-business
 cluster: guides

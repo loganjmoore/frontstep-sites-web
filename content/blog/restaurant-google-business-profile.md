@@ -1,5 +1,5 @@
 ---
-title: "Google Business Profile for restaurants: a setup and upkeep guide"
+title: "Restaurant: Google Business Profile guide"
 description: "Keep your restaurant Google Business Profile useful with accurate menus, meal hours, ordering links, dining photos, and clear answers before guests arrive."
 slug: "restaurant-google-business-profile"
 cluster: "trades/restaurant"

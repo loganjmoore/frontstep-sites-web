@@ -1,5 +1,5 @@
 ---
-title: "How to get more Google reviews as an electrician"
+title: "Electrical: get more Google reviews"
 description: "Ask for honest electrician reviews after repairs, panel upgrades, and installations, using simple scripts and a fair process that respects customer privacy."
 slug: "electrical-get-more-reviews"
 cluster: "trades/electrical"

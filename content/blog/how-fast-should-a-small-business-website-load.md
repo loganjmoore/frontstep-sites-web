@@ -1,5 +1,5 @@
 ---
-title: "How fast should a small business website load?"
+title: "How fast should your website load?"
 description: "Learn what website speed targets mean for a small business, how to test real customer tasks, and which image, video, and booking issues to fix first."
 slug: "how-fast-should-a-small-business-website-load"
 cluster: "guides"

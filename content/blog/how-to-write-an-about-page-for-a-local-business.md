@@ -1,5 +1,5 @@
 ---
-title: "How to write an About page for a local business"
+title: "Writing an About page for your business"
 description: "Write an About page that tells local customers who you are, where you work, and what to expect, with honest examples and a practical drafting checklist."
 slug: "how-to-write-an-about-page-for-a-local-business"
 cluster: "guides"

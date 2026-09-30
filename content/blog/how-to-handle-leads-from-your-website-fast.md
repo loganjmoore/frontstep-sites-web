@@ -1,5 +1,5 @@
 ---
-title: "How to handle leads from your website fast"
+title: "How to handle website leads fast"
 description: "Set up a practical routine for website inquiries, missed calls, and follow-ups so customers get a clear reply and you can keep track of the next step."
 slug: how-to-handle-leads-from-your-website-fast
 cluster: guides

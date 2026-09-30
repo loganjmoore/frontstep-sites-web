@@ -1,5 +1,5 @@
 ---
-title: "How to write a service page that ranks and converts"
+title: "How to write a service page that ranks"
 description: "Write a service page that answers local customers' questions, explains your work, shows honest proof, and makes the next step clear without keyword stuffing."
 slug: how-to-write-a-service-page-that-ranks-and-converts
 cluster: guides

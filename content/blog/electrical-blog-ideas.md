@@ -1,5 +1,5 @@
 ---
-title: "Blog post ideas that bring electrical customers"
+title: "Electrical: blog post ideas for customers"
 description: "Find specific electrical blog ideas for panel work, EV chargers, lighting, and service calls, with guidance on useful articles that avoid unsafe DIY advice."
 slug: electrical-blog-ideas
 cluster: trades/electrical

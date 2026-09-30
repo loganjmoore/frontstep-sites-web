@@ -1,5 +1,5 @@
 ---
-title: "Cleaning company website mistakes that cost calls"
+title: "Cleaning website mistakes that cost calls"
 description: "Fix cleaning website mistakes that leave customers guessing about scope, prices, service areas, crew access, and whether their requested visit is booked."
 slug: "cleaning-website-mistakes"
 cluster: "trades/cleaning"

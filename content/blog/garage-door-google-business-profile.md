@@ -1,5 +1,5 @@
 ---
-title: "Google Business Profile for garage door companies: a setup and upkeep guide"
+title: "Garage door Google Business Profile guide"
 description: "Build a useful garage door Google Business Profile with honest repair hours, clear installation services, real project photos, and dependable contact details."
 slug: "garage-door-google-business-profile"
 cluster: "trades/garage-door"

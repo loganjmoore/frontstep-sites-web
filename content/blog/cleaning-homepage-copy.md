@@ -1,5 +1,5 @@
 ---
-title: "What to write on a cleaning company homepage"
+title: "Cleaning: what to put on your homepage"
 description: "Write a cleaning company homepage with clear service descriptions, practical examples, honest scope, and quote requests for homes and office buildings."
 slug: cleaning-homepage-copy
 cluster: trades/cleaning

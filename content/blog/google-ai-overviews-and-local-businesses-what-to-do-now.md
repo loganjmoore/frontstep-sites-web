@@ -1,5 +1,5 @@
 ---
-title: "Google AI Overviews and local businesses: what to do now"
+title: "Google AI Overviews: what to do now"
 description: "Learn what local businesses can do about Google AI Overviews, from useful service answers and accurate listings to checking results without chasing tricks."
 slug: google-ai-overviews-and-local-businesses-what-to-do-now
 cluster: ai-search

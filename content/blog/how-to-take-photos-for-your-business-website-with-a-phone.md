@@ -1,5 +1,5 @@
 ---
-title: "How to take photos for your business website with a phone"
+title: "Take website photos with just a phone"
 description: "Take better business website photos with your phone: plan useful shots, find good light, show honest before-and-after results, and protect customer privacy."
 slug: how-to-take-photos-for-your-business-website-with-a-phone
 cluster: guides

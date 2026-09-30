@@ -1,5 +1,5 @@
 ---
-title: "What to ask before you hire someone to build your website"
+title: "What to ask before you hire a web builder"
 description: "Ask these practical questions before hiring a website builder so you understand domain ownership, total costs, ongoing changes, launch checks, and leaving."
 slug: "what-to-ask-before-you-hire-someone-to-build-your-website"
 cluster: "compare"

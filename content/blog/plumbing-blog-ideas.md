@@ -1,5 +1,5 @@
 ---
-title: "Blog post ideas that bring plumbing customers"
+title: "Plumbing: blog post ideas for customers"
 description: "Use these practical plumbing blog ideas to answer local customers' questions about leaks, drains, water heaters, and booking the right service visit."
 slug: plumbing-blog-ideas
 cluster: trades/plumbing

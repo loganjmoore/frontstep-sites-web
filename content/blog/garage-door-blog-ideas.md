@@ -1,5 +1,5 @@
 ---
-title: "Blog post ideas that bring garage door customers"
+title: "Garage door blog post ideas"
 description: "Find garage door blog ideas about repair calls, replacement decisions, opener questions, and appointments that help local customers take a clear next step."
 slug: "garage-door-blog-ideas"
 cluster: "trades/garage-door"

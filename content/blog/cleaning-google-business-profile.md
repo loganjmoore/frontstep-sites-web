@@ -1,5 +1,5 @@
 ---
-title: "Google Business Profile for cleaning companies: a setup and upkeep guide"
+title: "Cleaning: Google Business Profile guide"
 description: "Set up a clear Google Business Profile for your cleaning company, with accurate service areas, cleaning services, useful photos, hours, and review replies."
 slug: "cleaning-google-business-profile"
 cluster: "trades/cleaning"

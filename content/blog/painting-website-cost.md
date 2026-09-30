@@ -1,5 +1,5 @@
 ---
-title: "How much a website costs for a painting contractor in 2026"
+title: "Painting: what a website costs in 2026"
 description: "Compare painting contractor website costs, from DIY to done-for-you options, and learn which pages, project photos, and estimate tools deserve your budget."
 slug: "painting-website-cost"
 cluster: "trades/painting"

@@ -1,5 +1,5 @@
 ---
-title: "Blog post ideas that bring landscaping and lawn care customers"
+title: "Landscaping blog post ideas"
 description: "Find 24 specific landscaping and lawn-care blog ideas, with the customer question behind each and practical ways to write from real jobs and local sources."
 slug: "landscaping-blog-ideas"
 cluster: "trades/landscaping"

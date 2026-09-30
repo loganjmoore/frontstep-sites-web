@@ -1,5 +1,5 @@
 ---
-title: "How to get more Google reviews as a landscaper"
+title: "Landscaping: get more Google reviews"
 description: "Ask landscaping and lawn care customers for honest Google reviews using sensible timing, short request scripts, helpful replies, and a consistent crew routine."
 slug: "landscaping-get-more-reviews"
 cluster: "trades/landscaping"

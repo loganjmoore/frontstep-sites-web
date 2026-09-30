@@ -1,5 +1,5 @@
 ---
-title: "Pest control website mistakes that cost calls"
+title: "Pest control website mistakes"
 description: "Fix pest control website mistakes involving vague pest services, hidden contact details, unclear inspection pricing, alarming photos, and booking promises."
 slug: "pest-control-website-mistakes"
 cluster: "trades/pest-control"

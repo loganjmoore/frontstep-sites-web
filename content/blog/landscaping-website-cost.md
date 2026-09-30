@@ -1,5 +1,5 @@
 ---
-title: "How much a website costs for a landscaper in 2026"
+title: "Landscaping: what a website costs in 2026"
 description: "Compare landscaping website costs for DIY, done-for-you, freelancer, and agency options, including upkeep, project galleries, quote forms, and domain ownership."
 slug: "landscaping-website-cost"
 cluster: "trades/landscaping"

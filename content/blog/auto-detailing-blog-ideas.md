@@ -1,5 +1,5 @@
 ---
-title: "Blog post ideas that bring auto detailing customers"
+title: "Auto detailing blog post ideas"
 description: "Use these practical auto detailing blog ideas to answer real questions about interiors, paint care, mobile appointments, and choosing the right service."
 slug: "auto-detailing-blog-ideas"
 cluster: "trades/auto-detailing"

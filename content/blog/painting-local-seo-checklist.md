@@ -1,5 +1,5 @@
 ---
-title: "Local SEO checklist for painting contractors"
+title: "Painting: local SEO checklist"
 description: "Use this local SEO checklist for painting contractors to improve service pages, business details, project photos, reviews, and the path to an estimate."
 slug: "painting-local-seo-checklist"
 cluster: "trades/painting"

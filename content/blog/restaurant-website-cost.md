@@ -1,5 +1,5 @@
 ---
-title: "How much a website costs for a restaurant in 2026"
+title: "Restaurant: what a website costs in 2026"
 description: "Compare restaurant website costs for menus, reservations, pickup links, catering inquiries, and ongoing changes before paying for features you do not need."
 slug: "restaurant-website-cost"
 cluster: "trades/restaurant"

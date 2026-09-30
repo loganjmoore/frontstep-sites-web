@@ -1,5 +1,5 @@
 ---
-title: "Keywords for local businesses: how customers actually search"
+title: "Keywords for local businesses"
 description: "Find useful local business keywords in customer calls and search data, then use service names, towns, and problem phrases naturally on your website."
 slug: "keywords-for-local-businesses-how-customers-actually-search"
 cluster: "guides"

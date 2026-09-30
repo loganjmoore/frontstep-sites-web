@@ -1,5 +1,5 @@
 ---
-title: "Local SEO checklist for garage door companies"
+title: "Garage door: local SEO checklist"
 description: "Check your garage door company's local SEO with practical steps for repair pages, business listings, service areas, genuine reviews, and mobile contact links."
 slug: "garage-door-local-seo-checklist"
 cluster: "trades/garage-door"

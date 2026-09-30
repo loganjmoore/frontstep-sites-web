@@ -1,5 +1,5 @@
 ---
-title: How often should you update your business website?
+title: How often should you update your website?
 description: Use a practical website update schedule for hours, prices, seasonal services, photos, and contact forms so customers always get accurate information.
 slug: how-often-should-you-update-your-business-website
 cluster: guides

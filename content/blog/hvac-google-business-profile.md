@@ -1,5 +1,5 @@
 ---
-title: "Google Business Profile for HVAC contractors: a setup and upkeep guide"
+title: "HVAC: Google Business Profile guide"
 description: "Set up an accurate HVAC Google Business Profile with clear services, honest hours, useful job photos, and a simple routine for keeping details current."
 slug: hvac-google-business-profile
 cluster: trades/hvac

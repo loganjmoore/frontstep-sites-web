@@ -1,5 +1,5 @@
 ---
-title: "Salon and barbershop website mistakes that cost bookings"
+title: "Salon website mistakes that cost calls"
 description: "Fix salon website mistakes that confuse new clients, from vague prices and missing stylist details to broken booking links and unclear arrival instructions."
 slug: "salon-website-mistakes"
 cluster: "trades/salon"

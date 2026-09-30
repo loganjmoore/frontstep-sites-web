@@ -1,5 +1,5 @@
 ---
-title: "How to leave a web designer and keep your domain and site"
+title: "Leaving a web designer: keep your domain"
 description: "Leave your web designer with a clear handover plan for your domain, website files, email, accounts, and redirects before you cancel the old service."
 slug: how-to-leave-a-web-designer-and-keep-your-domain-and-site
 cluster: compare

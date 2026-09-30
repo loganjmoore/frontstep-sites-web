@@ -1,5 +1,5 @@
 ---
-title: "How much a website costs for a pest control company in 2026"
+title: "Pest control website cost in 2026"
 description: "Compare pest control website costs for DIY, managed services, and custom projects, including pest pages, inspection requests, service areas, and maintenance."
 slug: "pest-control-website-cost"
 cluster: "trades/pest-control"

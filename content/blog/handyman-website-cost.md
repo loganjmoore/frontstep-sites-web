@@ -1,5 +1,5 @@
 ---
-title: "How much a website costs for a handyman in 2026"
+title: "Handyman: what a website costs in 2026"
 description: "Compare handyman website costs and decide what to spend on service lists, job photos, estimate forms, ongoing updates, and a site that suits small repairs."
 slug: "handyman-website-cost"
 cluster: "trades/handyman"

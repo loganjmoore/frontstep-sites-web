@@ -1,5 +1,5 @@
 ---
-title: "Blog post ideas that bring painting customers"
+title: "Painting: blog post ideas for customers"
 description: "Use these 24 painting blog ideas to answer real questions about interiors, exteriors, cabinets, and estimates, with practical tips for writing each post."
 slug: "painting-blog-ideas"
 cluster: "trades/painting"

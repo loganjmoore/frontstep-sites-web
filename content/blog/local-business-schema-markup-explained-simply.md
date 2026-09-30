@@ -1,5 +1,5 @@
 ---
-title: "Local business schema markup, explained simply"
+title: "Local business schema markup, explained"
 description: "Learn what local business schema markup does, which details to include, and how to check your website without getting buried in confusing technical terms."
 slug: "local-business-schema-markup-explained-simply"
 cluster: "guides"

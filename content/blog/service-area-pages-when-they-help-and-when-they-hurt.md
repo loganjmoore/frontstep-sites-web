@@ -1,5 +1,5 @@
 ---
-title: "Service area pages: when they help and when they hurt"
+title: "Service area pages: help or hurt?"
 description: "Learn when a separate town page helps local customers, what belongs on it, and how to fix copied service area pages without losing useful information."
 slug: service-area-pages-when-they-help-and-when-they-hurt
 cluster: guides

@@ -1,5 +1,5 @@
 ---
-title: "What an auto repair shop website needs to turn visitors into calls"
+title: "Auto repair: what your website needs"
 description: "Build an auto repair website that explains services, vehicle fit, diagnostics, drop-off, and estimates, so local drivers know how to request an appointment."
 slug: website-auto-repair
 cluster: trades/auto-repair

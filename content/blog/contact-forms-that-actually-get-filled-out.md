@@ -1,5 +1,5 @@
 ---
-title: "Contact forms that actually get filled out"
+title: "Contact forms that get filled out"
 description: "Create a useful contact form with fewer fields, clear labels, sensible spam protection, and reliable delivery so customers can send an inquiry without fuss."
 slug: "contact-forms-that-actually-get-filled-out"
 cluster: "guides"

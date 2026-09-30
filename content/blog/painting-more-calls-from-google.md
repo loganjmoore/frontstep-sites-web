@@ -1,5 +1,5 @@
 ---
-title: "How painting contractors get more calls from Google"
+title: "Painting: get more calls from Google"
 description: "Help homeowners find your painting business on Google with clear service pages, real project photos, accurate listings, and an easier path to an estimate."
 slug: "painting-more-calls-from-google"
 cluster: "trades/painting"

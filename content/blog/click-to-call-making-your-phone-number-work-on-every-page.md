@@ -1,5 +1,5 @@
 ---
-title: "Click-to-call: making your phone number work on every page"
+title: "Click-to-call: your number on every page"
 description: "Make your website phone number easy to find and tap, with clear placement, correct telephone links, hours, and checks that separate clicks from real calls."
 slug: "click-to-call-making-your-phone-number-work-on-every-page"
 cluster: "guides"

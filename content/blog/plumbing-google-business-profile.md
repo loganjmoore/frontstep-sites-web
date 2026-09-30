@@ -1,5 +1,5 @@
 ---
-title: "Google Business Profile for plumbers: a setup and upkeep guide"
+title: "Plumbing: Google Business Profile guide"
 description: "Build a useful Google Business Profile for your plumbing company with accurate services, honest emergency hours, real job photos, and a simple upkeep routine."
 slug: "plumbing-google-business-profile"
 cluster: "trades/plumbing"

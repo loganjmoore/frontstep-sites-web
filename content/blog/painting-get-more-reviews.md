@@ -1,5 +1,5 @@
 ---
-title: "How to get more Google reviews as a painting contractor"
+title: "Painting: how to get more Google reviews"
 description: "Ask painting customers for honest Google reviews after a project handoff, with practical scripts, fair follow-up, and calm replies to unfinished-work concerns."
 slug: "painting-get-more-reviews"
 cluster: "trades/painting"

@@ -1,5 +1,5 @@
 ---
-title: "Google Business Profile for handymen: a setup and upkeep guide"
+title: "Handyman: Google Business Profile guide"
 description: "Make your handyman Google Business Profile useful with clear repair services, honest coverage, project photos, accurate hours, and a practical quote process."
 slug: "handyman-google-business-profile"
 cluster: "trades/handyman"

@@ -1,5 +1,5 @@
 ---
-title: "What to write on a garage door company homepage"
+title: "Garage door: what to put on your homepage"
 description: "Write garage door homepage copy that separates urgent repairs from new installations, explains service calls, and helps homeowners take the right next step."
 slug: "garage-door-homepage-copy"
 cluster: "trades/garage-door"

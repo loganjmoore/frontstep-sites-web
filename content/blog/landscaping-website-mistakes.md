@@ -1,5 +1,5 @@
 ---
-title: "Landscaping website mistakes that cost calls"
+title: "Landscaping website mistakes"
 description: "Fix landscaping website mistakes that confuse lawn-care and project customers, including vague coverage, weak photos, hidden contact details, and quote forms."
 slug: "landscaping-website-mistakes"
 cluster: "trades/landscaping"

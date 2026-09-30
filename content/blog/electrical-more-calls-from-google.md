@@ -1,5 +1,5 @@
 ---
-title: "How electricians get more calls from Google"
+title: "Electrical: get more calls from Google"
 description: "Help nearby customers find your electrical business on Google with clear service pages, accurate business details, honest reviews, and better call handling."
 slug: "electrical-more-calls-from-google"
 cluster: "trades/electrical"

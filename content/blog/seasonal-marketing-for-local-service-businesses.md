@@ -1,5 +1,5 @@
 ---
-title: "Seasonal marketing for local service businesses"
+title: "Seasonal marketing for local businesses"
 description: "Plan seasonal website and business profile updates around real demand, local weather, and crew capacity so customers know what to book and when to call."
 slug: "seasonal-marketing-for-local-service-businesses"
 cluster: "guides"

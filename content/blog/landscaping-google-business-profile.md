@@ -1,5 +1,5 @@
 ---
-title: "Google Business Profile for landscapers: a setup and upkeep guide"
+title: "Landscaping Google Business Profile guide"
 description: "Set up and maintain a landscaper Google Business Profile with accurate services, route coverage, seasonal hours, project photos, and helpful customer replies."
 slug: "landscaping-google-business-profile"
 cluster: "trades/landscaping"

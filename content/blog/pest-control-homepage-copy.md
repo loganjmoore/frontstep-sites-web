@@ -1,5 +1,5 @@
 ---
-title: "What to write on a pest control company homepage"
+title: "Pest control homepage: what to write"
 description: "Write pest control homepage copy that explains the pests you handle, inspection steps, service areas, follow-up terms, and how customers request help."
 slug: pest-control-homepage-copy
 cluster: trades/pest-control

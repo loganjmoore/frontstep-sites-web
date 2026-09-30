@@ -1,5 +1,5 @@
 ---
-title: "How auto repair shops get more calls from Google"
+title: "Auto repair: get more calls from Google"
 description: "Help suitable drivers find your auto repair shop on Google with accurate shop details, clear service pages, honest reviews, and a reliable path to scheduling."
 slug: "auto-repair-more-calls-from-google"
 cluster: "trades/auto-repair"

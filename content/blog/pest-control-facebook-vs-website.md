@@ -1,5 +1,5 @@
 ---
-title: "Is a Facebook page enough for a pest control company?"
+title: "Pest control: Facebook page vs. a website"
 description: "Compare Facebook and a website for pest control, with practical guidance on urgent inquiries, pest coverage, inspection requests, plan terms, and privacy."
 slug: "pest-control-facebook-vs-website"
 cluster: "trades/pest-control"

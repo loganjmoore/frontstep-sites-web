@@ -1,5 +1,5 @@
 ---
-title: "How much a website costs for an auto repair shop in 2026"
+title: "Auto repair: what a website costs in 2026"
 description: "Compare auto repair website costs for builders, managed services, freelancers, and agencies, including the shop features and ongoing work that affect your bill."
 slug: "auto-repair-website-cost"
 cluster: "trades/auto-repair"

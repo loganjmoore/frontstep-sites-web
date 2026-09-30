@@ -1,5 +1,5 @@
 ---
-title: "Is a Facebook page enough for an electrician?"
+title: "Electrical: Facebook page vs. a website"
 description: "Compare Facebook and a website for your electrical business, from local referrals and project photos to credentials, EV charger estimates, and service calls."
 slug: "electrical-facebook-vs-website"
 cluster: "trades/electrical"
