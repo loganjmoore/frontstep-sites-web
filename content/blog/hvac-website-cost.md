@@ -4,7 +4,7 @@ description: "Compare HVAC website costs for DIY, done-for-you, and custom build
 slug: "hvac-website-cost"
 cluster: "trades/hvac"
 answer: "An HVAC website budget depends on who builds it, how much service content you need, and who handles ongoing updates. A simple done-for-you site can cost $99 a year through Front Step Sites; custom freelancer and agency projects often cost a few thousand dollars or more. Compare the full scope and continuing costs before choosing."
-updated: "2026-09-26"
+updated: "2026-09-30"
 ---
 
 How much should you spend on a website for your HVAC company? The answer changes when you need a clear place for furnace repair calls versus a custom system for replacement estimates and customer bookings. Start with the work the site must do, then compare the cost of getting it built and keeping it accurate.

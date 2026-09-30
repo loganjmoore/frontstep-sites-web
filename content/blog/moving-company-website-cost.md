@@ -1,5 +1,5 @@
 ---
-title: "Moving company website cost in 2026: 4 pricing tiers"
+title: "Moving company website cost in 2026"
 description: "Moving company websites cost $0 to several thousand dollars depending on who builds them. Compare DIY, freelancer, agency, and done-for-you pricing."
 slug: "moving-company-website-cost"
 cluster: "trades/moving"

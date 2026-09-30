@@ -1,5 +1,5 @@
 ---
-title: "Locksmith website cost in 2026: 4 pricing tiers"
+title: "Locksmith website cost in 2026"
 description: "Locksmith websites cost $0 to several thousand dollars depending on who builds it. Compare DIY, freelancer, agency, and done-for-you pricing tiers."
 slug: "locksmith-website-cost"
 cluster: "trades/locksmith"

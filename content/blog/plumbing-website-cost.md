@@ -4,7 +4,7 @@ description: "Compare plumbing website costs, from DIY builders to custom work, 
 slug: plumbing-website-cost
 cluster: trades/plumbing
 answer: "A plumber's website cost depends on who builds it, how much content you need, and who handles changes afterward. A basic site should cover your services, service area, availability, and contact details. Compare the full ongoing cost, including the domain and updates, before paying extra for booking tools or a large custom build."
-updated: 2026-09-26
+updated: 2026-09-30
 ---
 
 How much should you spend on a website for your plumbing business? Start by pricing a site that helps people book the work you actually want, whether that is drain clearing, water heater replacement, or everyday repairs. The right budget depends more on those needs and ongoing upkeep than on how impressive a sales presentation looks.
