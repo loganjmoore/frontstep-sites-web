@@ -7,7 +7,7 @@ answer: "AI search gives customers another way to compare local businesses and a
 updated: 2026-09-26
 ---
 
-Are customers going to ask an AI assistant for a contractor instead of looking through websites? They can already use search tools that summarize answers and help compare options. Your job is to make your business easy to understand and contact, while treating claims about guaranteed AI recommendations with caution.
+AI search is the use of AI assistants and AI-generated summaries, such as Google AI Overviews or a ChatGPT answer, to help people compare local businesses instead of only scanning a list of website links. Are customers going to ask an AI assistant for a contractor instead of looking through websites? They can already use search tools that summarize answers and help compare options. Your job is to make your business easy to understand and contact, while treating claims about guaranteed AI recommendations with caution.
 
 ## Understand the different ways customers can search
 

@@ -7,11 +7,11 @@ answer: "Start with clear service pages, accurate business information, and answ
 updated: 2026-09-26
 ---
 
-Google is answering questions at the top of search results, and you want to know what that means for your business. Should you rewrite your website, buy a new service, or keep doing what already works? Start by making your existing pages more useful and your business details easier to verify.
+An AI Overview is an AI-generated summary that Google shows at the top of some search results, with links to supporting websites. Google is answering questions at the top of search results, and you want to know what that means for your business. Should you rewrite your website, buy a new service, or keep doing what already works? Start by making your existing pages more useful and your business details easier to verify.
 
 ## Know what you are trying to appear in
 
-An AI Overview is an AI-generated answer in Google Search with links for further reading. It is different from your Business Profile, a map listing, or a regular website result. Google does not show an Overview for every search. Its [guide to AI features](https://developers.google.com/search/docs/appearance/ai-features) says standard search practices apply, and there are no special optimization requirements.
+It is different from your Business Profile, a map listing, or a regular website result. Google does not show an Overview for every search. Its [guide to AI features](https://developers.google.com/search/docs/appearance/ai-features) says standard search practices apply, and there are no special optimization requirements.
 
 That distinction matters when someone sells you an AI visibility package. Ask which result they mean, what work they will do, and how you can check it. A screenshot of your business on Maps does not demonstrate a mention in an AI answer.
 

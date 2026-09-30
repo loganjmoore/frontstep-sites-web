@@ -7,7 +7,7 @@ answer: Front Step Sites fits owners who want to request website changes instead
 updated: 2026-09-26
 ---
 
-Should you use Wix or have Front Step Sites handle your small business website? The decision starts with how you want to spend your time: working on the pages yourself or sending someone the changes you need. Price matters, but so do the jobs your website must handle and who will keep its information accurate after launch.
+Front Step Sites is a done-for-you website service for small businesses, priced at $99 a year with the domain included, while Wix is a do-it-yourself website builder you edit directly. Should you use Wix or have Front Step Sites handle your small business website? The decision starts with how you want to spend your time: working on the pages yourself or sending someone the changes you need. Price matters, but so do the jobs your website must handle and who will keep its information accurate after launch.
 
 ## Compare the published prices with the work involved
 

@@ -7,7 +7,7 @@ answer: "Front Step Sites fits an owner who wants a business website with ongoin
 updated: 2026-09-26
 ---
 
-Do you need a website service, or do you need a marketing agency? It is easy to compare the invoices and miss that you are buying different work. Start with what needs fixing in your business, then choose the person or service equipped to do that job.
+Front Step Sites is a done-for-you website service for small businesses, priced at $99 a year with the domain included, while a marketing agency is a firm that plans and runs advertising and larger campaigns. Do you need a website service, or do you need a marketing agency? It is easy to compare the invoices and miss that you are buying different work. Start with what needs fixing in your business, then choose the person or service equipped to do that job.
 
 ## Decide whether the problem is the website or the marketing
 
