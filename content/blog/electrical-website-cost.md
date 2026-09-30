@@ -4,7 +4,7 @@ description: "Compare electrician website costs and plan a useful scope for pane
 slug: electrical-website-cost
 cluster: trades/electrical
 answer: "An electrician's website budget should reflect the services you need to explain and the help you want maintaining it. DIY plans, done-for-you services, and custom projects cover different amounts of work. Compare content, ongoing changes, domain ownership, and contact tools alongside price, especially if panel upgrades, EV charging, or commercial projects need separate explanations."
-updated: 2026-09-26
+updated: 2026-09-30
 ---
 
 What should an electrician pay for a website in 2026? Start with the jobs you want it to explain, such as residential troubleshooting, panel work, EV charger installations, or commercial lighting. A useful price comparison shows who will write those pages, keep them accurate, and make sure customers can reach you.

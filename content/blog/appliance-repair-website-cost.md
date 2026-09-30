@@ -1,5 +1,5 @@
 ---
-title: "Appliance repair website cost in 2026: 4 pricing tiers"
+title: "Appliance repair website cost in 2026"
 description: "Appliance repair websites cost $0 to several thousand dollars depending on who builds them. Compare DIY, freelancer, agency, and done-for-you pricing."
 slug: "appliance-repair-website-cost"
 cluster: "trades/appliance-repair"

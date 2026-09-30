@@ -4,7 +4,7 @@ description: "Compare handyman website costs and decide what to spend on service
 slug: "handyman-website-cost"
 cluster: "trades/handyman"
 answer: "A handyman website can start at $99 a year with a done-for-you service. Typical custom freelancer or agency work can range from a few thousand dollars to much more, depending on the scope. Prioritize a clear list of accepted jobs, your working area, real project photos, and a practical estimate request before paying for complicated features."
-updated: "2026-09-26"
+updated: "2026-09-30"
 ---
 
 You want a handyman website that brings the right inquiries without becoming another job to maintain. The cost depends on whether you need a simple way to request repairs or a larger system for scheduling and quoting them. Define that job first so you can compare proposals fairly.
