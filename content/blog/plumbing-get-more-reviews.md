@@ -1,5 +1,5 @@
 ---
-title: "How to get more Google reviews as a plumber"
+title: "Plumbing: how to get more Google reviews"
 description: "Get more honest Google reviews for your plumbing business with practical request scripts, better timing after service calls, and calm replies to complaints."
 slug: "plumbing-get-more-reviews"
 cluster: "trades/plumbing"

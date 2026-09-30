@@ -1,5 +1,5 @@
 ---
-title: "Blog post ideas that bring tree service customers"
+title: "Tree service blog post ideas"
 description: "Explore 24 tree service blog ideas about pruning, removal, stump grinding, access, and estimates, with useful angles grounded in real customer questions."
 slug: "tree-service-blog-ideas"
 cluster: "trades/tree-service"

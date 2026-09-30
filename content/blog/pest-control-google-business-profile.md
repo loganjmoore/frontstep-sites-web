@@ -1,5 +1,5 @@
 ---
-title: "Google Business Profile for pest control companies: a setup and upkeep guide"
+title: "Pest control: Google Business Profile"
 description: "Set up a useful pest control Google Business Profile with accurate coverage, pest-specific services, clear availability, discreet photos, and helpful replies."
 slug: "pest-control-google-business-profile"
 cluster: "trades/pest-control"

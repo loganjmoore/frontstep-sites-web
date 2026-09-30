@@ -1,5 +1,5 @@
 ---
-title: "How to add a Google Map to your website the right way"
+title: "How to add a Google Map to your website"
 description: "Choose a Google Maps link or an embedded map, check your business details, protect a private address, and make directions easy for customers on phones."
 slug: how-to-add-a-google-map-to-your-website-the-right-way
 cluster: guides

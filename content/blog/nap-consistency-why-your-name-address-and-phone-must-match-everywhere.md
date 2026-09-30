@@ -1,5 +1,5 @@
 ---
-title: "NAP consistency: why your name, address, and phone must match everywhere"
+title: "NAP consistency for local businesses"
 description: "Learn how to check your business name, address, and phone across websites and listings, fix old details, and protect a home address while staying accurate."
 slug: nap-consistency-why-your-name-address-and-phone-must-match-everywhere
 cluster: guides

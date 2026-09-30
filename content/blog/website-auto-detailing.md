@@ -1,5 +1,5 @@
 ---
-title: "What an auto detailer website needs to turn visitors into calls"
+title: "Auto detailing: what your website needs"
 description: "Build an auto detailing website that explains packages, shows honest results, answers mobile service questions, and makes requesting a quote easy."
 slug: website-auto-detailing
 cluster: trades/auto-detailing

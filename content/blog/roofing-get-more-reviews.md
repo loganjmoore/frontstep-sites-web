@@ -1,5 +1,5 @@
 ---
-title: "How to get more Google reviews as a roofer"
+title: "Roofing: how to get more Google reviews"
 description: "Build a practical Google review routine for your roofing company, with sensible timing, neutral request examples, respectful follow-up, and calm replies."
 slug: "roofing-get-more-reviews"
 cluster: "trades/roofing"

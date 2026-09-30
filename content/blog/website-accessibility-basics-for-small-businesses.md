@@ -1,5 +1,5 @@
 ---
-title: "Website accessibility basics for small businesses"
+title: "Website accessibility basics"
 description: "Make your small business website easier to read and use with practical checks for text, color contrast, photos, keyboard navigation, and contact forms."
 slug: "website-accessibility-basics-for-small-businesses"
 cluster: "guides"

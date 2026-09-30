@@ -1,5 +1,5 @@
 ---
-title: "What a garage door company website needs to turn visitors into calls"
+title: "Garage door: what your website needs"
 description: "Build a garage door website that helps customers request repairs or replacements with clear services, honest availability, useful photos, and pricing details."
 slug: "website-garage-door"
 cluster: "trades/garage-door"

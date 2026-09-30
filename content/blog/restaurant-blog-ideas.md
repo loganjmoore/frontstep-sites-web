@@ -1,5 +1,5 @@
 ---
-title: "Blog post ideas that bring restaurant customers"
+title: "Restaurant: blog post ideas for customers"
 description: "Plan restaurant blog posts around real guest questions about menus, pickup, group dining, catering, and local visits, with useful reasons to write each one."
 slug: "restaurant-blog-ideas"
 cluster: "trades/restaurant"

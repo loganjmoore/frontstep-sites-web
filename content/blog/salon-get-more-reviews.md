@@ -1,5 +1,5 @@
 ---
-title: "How to get more Google reviews as a salon or barbershop"
+title: "Salon: how to get more Google reviews"
 description: "Get more honest Google reviews for your salon or barbershop with natural checkout requests, useful follow-ups, and replies that protect client privacy."
 slug: "salon-get-more-reviews"
 cluster: "trades/salon"

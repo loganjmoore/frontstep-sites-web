@@ -1,5 +1,5 @@
 ---
-title: "Is a Facebook page enough for an HVAC contractor?"
+title: "HVAC: Facebook page vs. a website"
 description: "Compare a Facebook page with an HVAC website for repair calls, replacement estimates, and maintenance requests, then decide how to use both without extra work."
 slug: "hvac-facebook-vs-website"
 cluster: "trades/hvac"

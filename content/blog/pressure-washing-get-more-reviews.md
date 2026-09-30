@@ -1,5 +1,5 @@
 ---
-title: "How to get more Google reviews as a pressure washing business"
+title: "Pressure washing: get more Google reviews"
 description: "Get honest Google reviews for pressure washing jobs with better timing, simple request messages, thoughtful replies, and no discounts or rating pressure."
 slug: "pressure-washing-get-more-reviews"
 cluster: "trades/pressure-washing"

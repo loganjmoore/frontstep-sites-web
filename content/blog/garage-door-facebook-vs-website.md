@@ -1,5 +1,5 @@
 ---
-title: "Is a Facebook page enough for a garage door company?"
+title: "Garage door: Facebook page vs. a website"
 description: "Compare Facebook and a website for a garage door company, from urgent repair calls to replacement door estimates, service details, photos, and follow-up."
 slug: "garage-door-facebook-vs-website"
 cluster: "trades/garage-door"

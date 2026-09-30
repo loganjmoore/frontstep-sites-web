@@ -1,5 +1,5 @@
 ---
-title: "How to show up when someone asks ChatGPT for a local service"
+title: "How to show up when someone asks ChatGPT"
 description: "Help customers and AI search understand your local business with clear service pages, consistent listings, genuine reviews, and practical website checks."
 slug: how-to-show-up-when-someone-asks-chatgpt-for-a-local-service
 cluster: ai-search

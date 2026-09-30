@@ -1,5 +1,5 @@
 ---
-title: "What a pest control company website needs to turn visitors into calls"
+title: "Pest control: what your website needs"
 description: "Build a pest control website that explains covered pests, inspections, treatment plans, preparation, and follow-up so local customers know what to ask next."
 slug: "website-pest-control"
 cluster: "trades/pest-control"

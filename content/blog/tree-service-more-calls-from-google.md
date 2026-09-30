@@ -1,5 +1,5 @@
 ---
-title: "How tree services get more calls from Google"
+title: "Tree service: get more calls from Google"
 description: "Help local customers find your tree service on Google with accurate listings, clear pruning and removal pages, real project evidence, and useful quote steps."
 slug: "tree-service-more-calls-from-google"
 cluster: "trades/tree-service"

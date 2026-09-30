@@ -313,6 +313,11 @@ ${relatedHtml}
 
 // ---------- hub pages ----------
 
+const HUB_FAQ = [
+  { question: "How much does a Front Step Sites website cost?", answer: "$99 a year, with your domain included and no setup fee." },
+  { question: "How do I ask for a change to my site?", answer: "Sign in to your account and write the request in plain English. Launch includes 2 requests a month, done within 2 business days." },
+];
+
 function renderClusterHub(cluster, clusterName, articles) {
   const canonical = `${SITE}/blog/${cluster}/`;
   const crumbs = [{ name: "Home", url: "/" }, { name: "Blog", url: "/blog/" }, { name: clusterName, url: null }];
@@ -332,14 +337,23 @@ function renderClusterHub(cluster, clusterName, articles) {
       "@type": "BreadcrumbList",
       itemListElement: crumbs.map((c, i) => ({ "@type": "ListItem", position: i + 1, name: c.name, item: c.url ? `${SITE}${c.url}` : canonical })),
     },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: HUB_FAQ.map((f) => ({ "@type": "Question", name: f.question, acceptedAnswer: { "@type": "Answer", text: f.answer } })),
+    },
   ];
+  const faqHtml = `<h2 id="frequently-asked-questions">Frequently asked questions</h2>
+${HUB_FAQ.map((f) => `<h3>${escapeHtml(f.question)}</h3>\n<p>${escapeHtml(f.answer)}</p>`).join("\n")}`;
   const bodyHtml = `<article class="doc">
 ${renderCrumbs(crumbs)}
 <h1>${escapeHtml(clusterName)}</h1>
 <p class="updated">${articles.length} article${articles.length === 1 ? "" : "s"}</p>
+<p>The ${escapeHtml(clusterName)} hub is a section of the Front Step Sites blog with ${articles.length} article${articles.length === 1 ? "" : "s"} of practical, specific guidance. Front Step Sites builds these sites for $99 a year, domain included, with 2 change requests a month included on the Launch plan.</p>
 <ul class="article-list">
 ${articles.map((a) => `<li><a href="/blog/${a.slug}/">${escapeHtml(a.title)}</a><p>${escapeHtml(a.answer)}</p></li>`).join("\n")}
 </ul>
+${faqHtml}
 </article>`;
   return pageShell({
     title: `${clusterName} | Front Step Sites blog`,

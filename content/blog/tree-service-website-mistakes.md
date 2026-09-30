@@ -1,5 +1,5 @@
 ---
-title: "Tree services website mistakes that cost calls"
+title: "Tree service website mistakes"
 description: "Fix tree service website mistakes that leave customers unsure about emergency availability, removal scope, stump work, qualifications, and estimate requests."
 slug: "tree-service-website-mistakes"
 cluster: "trades/tree-service"

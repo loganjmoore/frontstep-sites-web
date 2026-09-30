@@ -1,5 +1,5 @@
 ---
-title: "HVAC contractors website mistakes that cost calls"
+title: "HVAC website mistakes that cost calls"
 description: "Fix HVAC website mistakes that confuse repair callers and replacement shoppers, from vague emergency hours to missing system details and broken request forms."
 slug: "hvac-website-mistakes"
 cluster: "trades/hvac"

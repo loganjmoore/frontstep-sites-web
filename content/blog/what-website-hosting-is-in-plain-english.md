@@ -7,7 +7,7 @@ answer: "Website hosting is the service that keeps your website available online
 updated: "2026-09-26"
 ---
 
-What is website hosting, and why are you paying for it when you already own a domain name? Hosting is what makes your website available for people to visit. The domain gives them an address, but buying that address alone does not create your pages or keep them online.
+Website hosting is the service that stores your site's files and delivers them to visitors. So why are you paying for it when you already own a domain name? Hosting is what makes your website available for people to visit. The domain gives them an address, but buying that address alone does not create your pages or keep them online.
 
 ## Separate the address, the website, and the hosting
 

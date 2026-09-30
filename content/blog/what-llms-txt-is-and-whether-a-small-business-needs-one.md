@@ -1,5 +1,5 @@
 ---
-title: "What llms.txt is and whether a small business needs one"
+title: "What llms.txt is and if you need one"
 description: "Find out what llms.txt does, why it is optional for a local business, and which website fixes deserve attention before you pay for an AI search add-on."
 slug: what-llms-txt-is-and-whether-a-small-business-needs-one
 cluster: ai-search

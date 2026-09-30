@@ -1,5 +1,5 @@
 ---
-title: "How to get more Google reviews as an HVAC contractor"
+title: "HVAC: how to get more Google reviews"
 description: "Build a practical HVAC review routine with fair requests, sensible timing after service, clear scripts, and calm replies to complaints about heating or AC."
 slug: hvac-get-more-reviews
 cluster: trades/hvac

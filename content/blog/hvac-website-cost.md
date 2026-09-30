@@ -1,5 +1,5 @@
 ---
-title: "How much a website costs for an HVAC contractor in 2026"
+title: "HVAC: what a website costs in 2026"
 description: "Compare HVAC website costs for DIY, done-for-you, and custom builds, plus the service pages, seasonal updates, and ownership details that shape your budget."
 slug: "hvac-website-cost"
 cluster: "trades/hvac"

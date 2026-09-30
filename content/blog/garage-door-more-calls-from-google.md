@@ -1,5 +1,5 @@
 ---
-title: "How garage door companies get more calls from Google"
+title: "Garage door: get more calls from Google"
 description: "Help your garage door business earn relevant Google inquiries with clear repair pages, accurate hours, genuine reviews, and a working phone contact path."
 slug: "garage-door-more-calls-from-google"
 cluster: "trades/garage-door"

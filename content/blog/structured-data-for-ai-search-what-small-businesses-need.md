@@ -1,5 +1,5 @@
 ---
-title: "Structured data for AI search: what small businesses need"
+title: "Structured data for AI search basics"
 description: "Understand local business structured data, current FAQ and review rules, and the checks that keep your website facts accurate for customers and search."
 slug: structured-data-for-ai-search-what-small-businesses-need
 cluster: ai-search

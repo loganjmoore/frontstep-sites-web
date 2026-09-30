@@ -1,5 +1,5 @@
 ---
-title: "How landscapers get more calls from Google"
+title: "Landscaping: get more calls from Google"
 description: "Help local customers find your landscaping business with accurate Google details, clear lawn and project pages, genuine reviews, and an easy way to call."
 slug: landscaping-more-calls-from-google
 cluster: trades/landscaping

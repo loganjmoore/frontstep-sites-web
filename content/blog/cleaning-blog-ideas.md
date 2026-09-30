@@ -1,5 +1,5 @@
 ---
-title: "Blog post ideas that bring house and office cleaning customers"
+title: "Cleaning: blog post ideas for customers"
 description: "Use these house and office cleaning blog ideas to answer real questions about deep cleans, recurring visits, move-outs, access, and commercial walkthroughs."
 slug: "cleaning-blog-ideas"
 cluster: "trades/cleaning"

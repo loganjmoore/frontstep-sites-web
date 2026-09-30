@@ -1,5 +1,5 @@
 ---
-title: "What a handyman website needs to turn visitors into calls"
+title: "Handyman: what your website needs"
 description: "Build a handyman website that shows the jobs you accept, explains estimates and materials, proves your work, and helps homeowners send useful requests."
 slug: website-handyman
 cluster: trades/handyman

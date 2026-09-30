@@ -1,5 +1,5 @@
 ---
-title: "How reviews influence AI recommendations of local businesses"
+title: "How reviews influence AI recommendations"
 description: "Learn how customer reviews can inform AI recommendations, what remains uncertain, and how to request honest feedback without scripting or rewarding it."
 slug: "how-reviews-influence-ai-recommendations-of-local-businesses"
 cluster: "ai-search"

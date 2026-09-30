@@ -1,5 +1,5 @@
 ---
-title: "Done-for-you website vs building it yourself"
+title: "Done-for-you website vs. DIY"
 description: "Compare a done-for-you website with building your own, including time, costs, upkeep, ownership, and the practical questions to ask before choosing a provider."
 slug: done-for-you-website-vs-building-it-yourself
 cluster: compare

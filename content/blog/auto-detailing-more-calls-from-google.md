@@ -1,5 +1,5 @@
 ---
-title: "How auto detailers get more calls from Google"
+title: "Auto detailing: more calls from Google"
 description: "Help local drivers find your detailing business on Google with clear packages, accurate business details, useful photos, honest reviews, and easier calls."
 slug: "auto-detailing-more-calls-from-google"
 cluster: "trades/auto-detailing"

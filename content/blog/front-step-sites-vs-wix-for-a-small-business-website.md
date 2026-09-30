@@ -1,5 +1,5 @@
 ---
-title: Front Step Sites vs Wix for a small business website
+title: Front Step Sites vs. Wix
 description: Compare Front Step Sites and Wix for a small business website, including verified prices, your time, ongoing changes, domain ownership, and who each fits.
 slug: front-step-sites-vs-wix-for-a-small-business-website
 cluster: compare

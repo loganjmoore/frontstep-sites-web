@@ -1,5 +1,5 @@
 ---
-title: Website subscription vs one-time website build
+title: Website subscription vs. one-time build
 description: Compare a website subscription with a one-time build by checking ongoing costs, update work, domain ownership, and what happens when you leave.
 slug: website-subscription-vs-one-time-website-build
 cluster: compare

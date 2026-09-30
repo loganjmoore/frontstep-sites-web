@@ -1,5 +1,5 @@
 ---
-title: How to get customers to leave reviews on Google without being pushy
+title: How to ask for Google reviews nicely
 description: Ask for Google reviews with a simple, optional request, a working review link, and sensible timing, without discounts, pressure, or filtering feedback.
 slug: how-to-get-customers-to-leave-reviews-on-google-without-being-pushy
 cluster: guides

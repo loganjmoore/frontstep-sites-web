@@ -1,5 +1,5 @@
 ---
-title: "What a restaurant website needs to turn visitors into calls"
+title: "Restaurant: what your website needs"
 description: "Build a restaurant website that makes menus, kitchen hours, directions, reservations, pickup orders, and group inquiries easy to find and use on a phone."
 slug: website-restaurant
 cluster: trades/restaurant

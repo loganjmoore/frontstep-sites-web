@@ -1,5 +1,5 @@
 ---
-title: "How much a website costs for a roofer in 2026"
+title: "Roofing: what a website costs in 2026"
 description: "Understand roofing website costs, from a simple service site to a custom project gallery, and compare quotes for content, updates, ownership, and useful forms."
 slug: "roofing-website-cost"
 cluster: "trades/roofing"

@@ -1,5 +1,5 @@
 ---
-title: "Is a Facebook page enough for a restaurant?"
+title: "Restaurant: Facebook page vs. a website"
 description: "Compare Facebook and a restaurant website for menus, specials, hours, reservations, pickup orders, and the information diners need before they visit."
 slug: restaurant-facebook-vs-website
 cluster: trades/restaurant

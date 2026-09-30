@@ -1,5 +1,5 @@
 ---
-title: "How salons and barbershops get more calls from Google"
+title: "Salon: get more calls from Google"
 description: "Help salon and barbershop customers find you on Google with clear services, stylist details, honest photos, accurate hours, and easy booking options."
 slug: salon-more-calls-from-google
 cluster: trades/salon

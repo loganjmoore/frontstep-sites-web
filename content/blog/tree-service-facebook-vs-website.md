@@ -1,5 +1,5 @@
 ---
-title: "Is a Facebook page enough for a tree service?"
+title: "Tree service: Facebook page vs. a website"
 description: "Compare Facebook with a tree service website for storm updates, planned removals, pruning, stump grinding, customer trust, and clear estimate requests."
 slug: "tree-service-facebook-vs-website"
 cluster: "trades/tree-service"

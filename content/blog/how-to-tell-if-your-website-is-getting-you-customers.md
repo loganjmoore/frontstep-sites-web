@@ -1,5 +1,5 @@
 ---
-title: "How to tell if your website is getting you customers"
+title: "Is your website getting you customers?"
 description: "Track calls, contact forms, search visits, and booked jobs with a simple routine that shows whether your business website brings useful customer inquiries."
 slug: how-to-tell-if-your-website-is-getting-you-customers
 cluster: guides

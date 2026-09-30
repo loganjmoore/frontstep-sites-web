@@ -1,5 +1,5 @@
 ---
-title: "How AI search is changing how customers find local businesses"
+title: "How AI search is changing local search"
 description: "Learn what AI search changes for local businesses, which website details still matter, and how to check whether new inquiries become real customers."
 slug: how-ai-search-is-changing-how-customers-find-local-businesses
 cluster: ai-search

@@ -1,5 +1,5 @@
 ---
-title: "Electrical website mistakes that cost calls"
+title: "Electrical website mistakes"
 description: "Fix electrician website mistakes that confuse homeowners about panel work, EV chargers, service calls, prices, and the next step for requesting help."
 slug: electrical-website-mistakes
 cluster: trades/electrical

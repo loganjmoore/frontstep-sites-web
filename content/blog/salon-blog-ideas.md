@@ -1,5 +1,5 @@
 ---
-title: "Blog post ideas that bring salon and barber customers"
+title: "Salon: blog post ideas for customers"
 description: "Find useful salon and barber blog ideas drawn from real appointment questions, with local angles that help clients choose services and book with confidence."
 slug: "salon-blog-ideas"
 cluster: "trades/salon"

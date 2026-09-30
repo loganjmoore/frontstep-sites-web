@@ -1,5 +1,5 @@
 ---
-title: "Google Business Profile for pressure washing businesses: a setup and upkeep guide"
+title: "Pressure washing: Google Business Profile"
 description: "Set up a pressure washing Google Business Profile with accurate services, realistic coverage, useful job photos, clear hours, and a simple upkeep routine."
 slug: "pressure-washing-google-business-profile"
 cluster: "trades/pressure-washing"

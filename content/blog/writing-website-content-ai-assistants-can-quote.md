@@ -1,5 +1,5 @@
 ---
-title: Writing website content AI assistants can quote
+title: Writing website content AI can quote
 description: Write clear website answers that customers and AI assistants can understand, with practical examples, checkable facts, useful FAQs, and honest limits.
 slug: writing-website-content-ai-assistants-can-quote
 cluster: ai-search

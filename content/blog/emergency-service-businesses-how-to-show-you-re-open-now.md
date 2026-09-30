@@ -1,5 +1,5 @@
 ---
-title: "Emergency service businesses: how to show you're open now"
+title: "Emergency businesses: show you're open"
 description: "Show emergency customers when you can help with accurate hours, clear service areas, working call buttons, and honest wording about after-hours availability."
 slug: emergency-service-businesses-how-to-show-you-re-open-now
 cluster: guides

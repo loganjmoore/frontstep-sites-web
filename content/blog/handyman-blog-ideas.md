@@ -1,5 +1,5 @@
 ---
-title: "Blog post ideas that bring handyman customers"
+title: "Handyman: blog post ideas for customers"
 description: "Find practical handyman blog ideas about small repairs, assembly, rental turnovers, and preparing for a visit, with a clear purpose behind each article."
 slug: "handyman-blog-ideas"
 cluster: "trades/handyman"

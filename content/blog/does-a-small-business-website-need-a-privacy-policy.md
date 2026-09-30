@@ -1,5 +1,5 @@
 ---
-title: Does a small business website need a privacy policy?
+title: Does a website need a privacy policy?
 description: Find out what to check about privacy policies, contact forms, tracking tools, and customer information before publishing your small business website.
 slug: does-a-small-business-website-need-a-privacy-policy
 cluster: guides

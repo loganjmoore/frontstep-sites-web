@@ -1,5 +1,5 @@
 ---
-title: "Blog post ideas that bring pressure washing customers"
+title: "Pressure washing blog post ideas"
 description: "Use these pressure washing blog ideas to answer questions about siding, concrete, stains, quotes, and property access without making promises you cannot keep."
 slug: "pressure-washing-blog-ideas"
 cluster: "trades/pressure-washing"

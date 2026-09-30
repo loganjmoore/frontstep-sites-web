@@ -1,5 +1,5 @@
 ---
-title: "Local SEO checklist for pest control companies"
+title: "Pest control: local SEO checklist"
 description: "Check your pest control local SEO with accurate listings, clear pest service pages, honest coverage, private customer proof, and a working inspection request."
 slug: "pest-control-local-seo-checklist"
 cluster: "trades/pest-control"

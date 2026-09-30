@@ -1,5 +1,5 @@
 ---
-title: "Blog post ideas that bring pest control customers"
+title: "Pest control blog post ideas"
 description: "Find pest control blog ideas about inspections, household concerns, rental coordination, and commercial service, with practical ways to keep advice accurate."
 slug: "pest-control-blog-ideas"
 cluster: "trades/pest-control"

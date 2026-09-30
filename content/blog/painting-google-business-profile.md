@@ -1,5 +1,5 @@
 ---
-title: "Google Business Profile for painting contractors: a setup and upkeep guide"
+title: "Painting: Google Business Profile guide"
 description: "Set up a painting contractor Google Business Profile with clear services, honest job photos, useful hours, and a practical routine for keeping details accurate."
 slug: "painting-google-business-profile"
 cluster: "trades/painting"

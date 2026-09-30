@@ -1,5 +1,5 @@
 ---
-title: "FAQ pages that answer customers and AI search"
+title: "FAQ pages for customers and AI search"
 description: "Build useful FAQ pages from real customer questions, write direct answers, and understand what FAQ schema can and cannot do for your local business."
 slug: "faq-pages-that-answer-customers-and-ai-search"
 cluster: "ai-search"

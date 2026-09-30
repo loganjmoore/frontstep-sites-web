@@ -1,5 +1,5 @@
 ---
-title: "What is GEO (generative engine optimization) for small businesses?"
+title: "What is GEO for small businesses?"
 description: "Understand GEO for small businesses, how it relates to local SEO, and the practical website changes that help customers find clear, reliable answers."
 slug: "what-is-geo-generative-engine-optimization-for-small-businesses"
 cluster: "ai-search"

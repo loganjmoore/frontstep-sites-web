@@ -1,5 +1,5 @@
 ---
-title: "How much a website costs for an electrician in 2026"
+title: "Electrical: what a website costs in 2026"
 description: "Compare electrician website costs and plan a useful scope for panel work, EV charging, and repairs, including content, updates, and domain ownership."
 slug: electrical-website-cost
 cluster: trades/electrical

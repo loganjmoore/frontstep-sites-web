@@ -1,5 +1,5 @@
 ---
-title: "Pressure washing website mistakes that cost calls"
+title: "Pressure washing website mistakes"
 description: "Fix pressure washing website mistakes with clear surface descriptions, honest before-and-after photos, quote forms, service areas, and working call links."
 slug: "pressure-washing-website-mistakes"
 cluster: "trades/pressure-washing"

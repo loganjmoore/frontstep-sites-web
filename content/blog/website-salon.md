@@ -1,5 +1,5 @@
 ---
-title: "What a salon or barbershop website needs to turn visitors into calls"
+title: "Salon: what your website needs"
 description: "Build a salon or barbershop website with clear services, honest price details, stylist information, useful photos, and booking steps that fit your appointments."
 slug: "website-salon"
 cluster: "trades/salon"

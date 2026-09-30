@@ -1,5 +1,5 @@
 ---
-title: "Google Business Profile for auto repair shops: a setup and upkeep guide"
+title: "Auto repair Google Business Profile guide"
 description: "Set up and maintain an auto repair Google Business Profile with accurate services, shop hours, arrival photos, useful updates, and clear customer information."
 slug: "auto-repair-google-business-profile"
 cluster: "trades/auto-repair"

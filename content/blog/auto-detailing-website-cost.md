@@ -1,5 +1,5 @@
 ---
-title: "How much a website costs for an auto detailer in 2026"
+title: "Auto detailing website cost in 2026"
 description: "Compare auto detailing website costs, from DIY to hired help, and learn which package pages, photos, quote forms, and booking details deserve your budget."
 slug: "auto-detailing-website-cost"
 cluster: "trades/auto-detailing"

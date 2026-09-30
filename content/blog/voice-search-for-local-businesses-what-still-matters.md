@@ -1,5 +1,5 @@
 ---
-title: "Voice search for local businesses: what still matters"
+title: "Voice search for local businesses"
 description: Help nearby customers find accurate hours, services, and phone numbers through voice search, with practical checks for your website and business listings.
 slug: voice-search-for-local-businesses-what-still-matters
 cluster: ai-search

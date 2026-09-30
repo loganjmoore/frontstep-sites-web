@@ -1,5 +1,5 @@
 ---
-title: "What an electrician website needs to turn visitors into calls"
+title: "Electrical: what your website needs"
 description: "Build an electrician website that clearly explains service calls, panel work, EV charger estimates, credentials, coverage, and how customers can reach you."
 slug: "website-electrical"
 cluster: "trades/electrical"

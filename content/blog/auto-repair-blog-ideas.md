@@ -1,5 +1,5 @@
 ---
-title: "Blog post ideas that bring auto repair customers"
+title: "Auto repair blog post ideas"
 description: "Find practical auto repair blog ideas based on driver questions, shop visits, seasonal concerns, and local trips, with advice for writing useful answers."
 slug: "auto-repair-blog-ideas"
 cluster: "trades/auto-repair"

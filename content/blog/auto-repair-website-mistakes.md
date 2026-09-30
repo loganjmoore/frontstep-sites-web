@@ -1,5 +1,5 @@
 ---
-title: "Auto repair website mistakes that cost calls"
+title: "Auto repair website mistakes"
 description: "Fix auto repair website mistakes that hide your services, confuse appointment requests, bury prices and directions, or make it harder for drivers to call."
 slug: "auto-repair-website-mistakes"
 cluster: "trades/auto-repair"

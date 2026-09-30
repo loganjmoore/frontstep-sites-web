@@ -1,5 +1,5 @@
 ---
-title: "Local SEO checklist for salons and barbershops"
+title: "Salon: local SEO checklist"
 description: "Help local clients find your salon or barbershop with accurate listings, clear service pages, real haircut photos, useful reviews, and easy online booking."
 slug: "salon-local-seo-checklist"
 cluster: "trades/salon"

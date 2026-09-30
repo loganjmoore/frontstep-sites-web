@@ -1,5 +1,5 @@
 ---
-title: "What to write on an auto repair shop homepage"
+title: "Auto repair: what to put on your homepage"
 description: "Write auto repair homepage copy that explains your services, vehicle coverage, diagnostics, and appointment process, with practical examples for your own shop."
 slug: "auto-repair-homepage-copy"
 cluster: "trades/auto-repair"

@@ -1,5 +1,5 @@
 ---
-title: "Is a Facebook page enough for a painting contractor?"
+title: "Painting: Facebook page vs. a website"
 description: "Compare a Facebook page with a painting website, including project photos, estimate requests, service details, and a practical way to use both together."
 slug: "painting-facebook-vs-website"
 cluster: "trades/painting"

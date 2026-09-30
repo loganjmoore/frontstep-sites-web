@@ -1,5 +1,5 @@
 ---
-title: "How to check what AI assistants say about your business"
+title: "Check what AI assistants say about you"
 description: "Run a practical check of AI answers about your business, save the questions and sources, and fix wrong details without mistaking one answer for a ranking."
 slug: how-to-check-what-ai-assistants-say-about-your-business
 cluster: ai-search

@@ -1,5 +1,5 @@
 ---
-title: "How to get more Google reviews as a tree service"
+title: "Tree service: get more Google reviews"
 description: "Get more honest tree service reviews with a clear cleanup handoff, simple request scripts, fair follow-up, and replies to concerns about the finished job."
 slug: "tree-service-get-more-reviews"
 cluster: "trades/tree-service"

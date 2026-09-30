@@ -1,5 +1,5 @@
 ---
-title: "Local SEO checklist for pressure washing businesses"
+title: "Pressure washing: local SEO checklist"
 description: "Use this pressure washing local SEO checklist to improve service pages, business listings, project photos, reviews, and the path from search to a quote."
 slug: "pressure-washing-local-seo-checklist"
 cluster: "trades/pressure-washing"

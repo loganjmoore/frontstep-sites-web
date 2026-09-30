@@ -1,5 +1,5 @@
 ---
-title: "Auto detailing website mistakes that cost calls"
+title: "Auto detailing website mistakes"
 description: "Fix auto detailing website mistakes that confuse car owners, hide package details, slow photo galleries, and turn simple quote requests into extra work."
 slug: "auto-detailing-website-mistakes"
 cluster: "trades/auto-detailing"

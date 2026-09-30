@@ -1,5 +1,5 @@
 ---
-title: "Bing Places and Apple Business Connect: the listings most businesses skip"
+title: "Bing Places and Apple Business Connect"
 description: "Check and claim your Bing and Apple listings, fix contact details, understand storefront eligibility, and make sure customers can reach the right place."
 slug: bing-places-and-apple-business-connect-the-listings-most-businesses-sk
 cluster: guides

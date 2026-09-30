@@ -1,5 +1,5 @@
 ---
-title: "What to do when your Google Business Profile gets suspended"
+title: "Fix a suspended Google Business Profile"
 description: "Follow a practical Google Business Profile suspension checklist: review the reason, fix policy problems, gather evidence, and submit a clear appeal to Google."
 slug: what-to-do-when-your-google-business-profile-gets-suspended
 cluster: guides

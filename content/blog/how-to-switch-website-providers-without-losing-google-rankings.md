@@ -1,5 +1,5 @@
 ---
-title: "How to switch website providers without losing Google rankings"
+title: "Switch providers without losing rankings"
 description: "Move your business website with a clear plan for page addresses, content, redirects, email, and Search Console checks before and after the switch."
 slug: how-to-switch-website-providers-without-losing-google-rankings
 cluster: guides

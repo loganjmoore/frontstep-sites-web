@@ -1,5 +1,5 @@
 ---
-title: "Is a Facebook page enough for a cleaning company?"
+title: "Cleaning: Facebook page vs. a website"
 description: "Compare Facebook and a website for your cleaning business, including referrals, service checklists, recurring bookings, office quotes, and customer privacy."
 slug: "cleaning-facebook-vs-website"
 cluster: "trades/cleaning"

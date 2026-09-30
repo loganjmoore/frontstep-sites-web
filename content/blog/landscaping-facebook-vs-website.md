@@ -1,5 +1,5 @@
 ---
-title: "Is a Facebook page enough for a landscaper?"
+title: "Landscaping: Facebook page vs. a website"
 description: "Decide whether Facebook is enough for your landscaping business, when a website helps, and how to use both for lawn care routes and larger project enquiries."
 slug: "landscaping-facebook-vs-website"
 cluster: "trades/landscaping"

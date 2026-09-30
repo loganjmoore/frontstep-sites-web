@@ -1,5 +1,5 @@
 ---
-title: "How much a website costs for a plumber in 2026"
+title: "Plumbing: what a website costs in 2026"
 description: "Compare plumbing website costs, from DIY builders to custom work, and learn which pages, updates, and ownership details belong in your written quote."
 slug: plumbing-website-cost
 cluster: trades/plumbing

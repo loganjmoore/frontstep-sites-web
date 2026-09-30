@@ -1,5 +1,5 @@
 ---
-title: "How to get more Google reviews as a pest control company"
+title: "Pest control: get more Google reviews"
 description: "Ask pest control customers for honest Google reviews with clear timing, discreet messages, fair follow-ups, and replies that protect private service details."
 slug: "pest-control-get-more-reviews"
 cluster: "trades/pest-control"

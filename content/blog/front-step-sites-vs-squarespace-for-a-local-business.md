@@ -1,5 +1,5 @@
 ---
-title: Front Step Sites vs Squarespace for a local business
+title: Front Step Sites vs. Squarespace
 description: Compare Front Step Sites and Squarespace for your local business, including price, editing work, domain control, and who each website option fits.
 slug: front-step-sites-vs-squarespace-for-a-local-business
 cluster: compare

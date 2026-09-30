@@ -1,5 +1,5 @@
 ---
-title: "How to get more Google reviews as an auto repair shop"
+title: "Auto repair: get more Google reviews"
 description: "Create a Google review routine for your auto repair shop, from pickup timing and neutral request scripts to follow-up and replies about service concerns."
 slug: "auto-repair-get-more-reviews"
 cluster: "trades/auto-repair"

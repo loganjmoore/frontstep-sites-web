@@ -1,5 +1,5 @@
 ---
-title: "Why your small business website should be built for phones first"
+title: "Build your website for phones first"
 description: "Build a small business website customers can use on their phones, with readable text, fast pages, easy call buttons, and forms that work on a small screen."
 slug: "why-your-small-business-website-should-be-built-for-phones-first"
 cluster: "guides"

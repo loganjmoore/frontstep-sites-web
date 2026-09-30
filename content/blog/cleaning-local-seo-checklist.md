@@ -1,5 +1,5 @@
 ---
-title: "Local SEO checklist for cleaning companies"
+title: "Cleaning: local SEO checklist"
 description: "Use this local SEO checklist to improve your cleaning website and listings, with clear service pages, real coverage areas, useful photos, and honest reviews."
 slug: "cleaning-local-seo-checklist"
 cluster: "trades/cleaning"

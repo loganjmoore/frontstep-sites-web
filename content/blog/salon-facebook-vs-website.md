@@ -1,5 +1,5 @@
 ---
-title: "Is a Facebook page enough for a salon or barbershop?"
+title: "Salon: Facebook page vs. a website"
 description: "Decide whether your salon needs a website alongside Facebook, with practical advice on service menus, stylist photos, booking links, prices, and walk-ins."
 slug: "salon-facebook-vs-website"
 cluster: "trades/salon"

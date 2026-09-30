@@ -1,5 +1,5 @@
 ---
-title: "How much a website costs for a garage door company in 2026"
+title: "Garage door: what a website costs in 2026"
 description: "Compare garage door website costs and decide what to pay for service pages, replacement inquiries, call handling, ongoing updates, and clear ownership terms."
 slug: "garage-door-website-cost"
 cluster: "trades/garage-door"

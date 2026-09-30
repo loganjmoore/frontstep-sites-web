@@ -1,5 +1,5 @@
 ---
-title: "Why consistent business information matters for AI answers"
+title: "Consistent business info matters for AI"
 description: "Keep your name, phone, hours, and services accurate across your website and listings so customers can check your business details when AI answers differ."
 slug: why-consistent-business-information-matters-for-ai-answers
 cluster: ai-search

@@ -1,5 +1,5 @@
 ---
-title: "Is a Facebook page enough for an auto detailer?"
+title: "Auto detailing: Facebook vs. a website"
 description: "Compare Facebook and a website for your auto detailing business, including galleries, package details, mobile service questions, and booking requests."
 slug: auto-detailing-facebook-vs-website
 cluster: trades/auto-detailing

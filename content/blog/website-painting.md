@@ -1,5 +1,5 @@
 ---
-title: "What a painting contractor website needs to turn visitors into calls"
+title: "Painting: what your website needs"
 description: "A painting contractor website should explain your services, show real prep and finish work, and make it easy for local homeowners to request an estimate."
 slug: "website-painting"
 cluster: "trades/painting"

@@ -1,5 +1,5 @@
 ---
-title: "How HVAC contractors get more calls from Google"
+title: "HVAC: get more calls from Google"
 description: "Help nearby homeowners find your HVAC business with clear service pages, an accurate Google profile, honest reviews, and a better path from search to calls."
 slug: "hvac-more-calls-from-google"
 cluster: "trades/hvac"

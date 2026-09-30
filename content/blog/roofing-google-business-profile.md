@@ -1,5 +1,5 @@
 ---
-title: "Google Business Profile for roofers: a setup and upkeep guide"
+title: "Roofing: Google Business Profile guide"
 description: "Keep your roofing Google Business Profile accurate with clear repair and replacement services, real project photos, useful updates, and honest availability."
 slug: roofing-google-business-profile
 cluster: trades/roofing

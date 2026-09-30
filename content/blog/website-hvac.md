@@ -1,5 +1,5 @@
 ---
-title: "What an HVAC contractor website needs to turn visitors into calls"
+title: "HVAC: what your website needs"
 description: "Build an HVAC website that helps customers book repairs, compare replacement options, understand maintenance, and find the right help in your service area."
 slug: "website-hvac"
 cluster: "trades/hvac"

@@ -1,5 +1,5 @@
 ---
-title: "What a pressure washing business website needs to turn visitors into calls"
+title: "Pressure washing: what your website needs"
 description: "Build a pressure washing website that explains surfaces, cleaning services, realistic results, and quote steps so local property owners know when to call."
 slug: "website-pressure-washing"
 cluster: "trades/pressure-washing"

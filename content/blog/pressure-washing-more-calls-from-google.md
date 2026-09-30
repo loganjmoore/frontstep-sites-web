@@ -1,5 +1,5 @@
 ---
-title: "How pressure washing businesses get more calls from Google"
+title: "Pressure washing: more calls from Google"
 description: "Help local customers find your pressure washing business with accurate Google details, clear surface cleaning pages, real job photos, and easy calls."
 slug: "pressure-washing-more-calls-from-google"
 cluster: "trades/pressure-washing"
