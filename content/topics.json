@@ -1490,5 +1490,26 @@
   "title": "Website contracts: red flags for small business owners",
   "cluster": "compare",
   "angle": "domain held hostage, setup fees, cancellation traps"
+ },
+ {
+  "slug": "locksmith-website-cost",
+  "title": "Locksmith website cost in 2026: 4 pricing tiers",
+  "cluster": "trades/locksmith",
+  "trade": "locksmith",
+  "angle": "DIY/freelancer/agency/Front Step Sites price-tier table for locksmith websites, plus what a locksmith site needs (service area, licensing, emergency availability)"
+ },
+ {
+  "slug": "moving-company-website-cost",
+  "title": "Moving company website cost in 2026: 4 pricing tiers",
+  "cluster": "trades/moving",
+  "trade": "moving company",
+  "angle": "DIY/freelancer/agency/Front Step Sites price-tier table for moving company websites, plus the pages a mover's site needs (service area, in-state vs long-distance, binding estimates)"
+ },
+ {
+  "slug": "appliance-repair-website-cost",
+  "title": "Appliance repair website cost in 2026: 4 pricing tiers",
+  "cluster": "trades/appliance-repair",
+  "trade": "appliance repair",
+  "angle": "DIY/freelancer/agency/Front Step Sites price-tier table for appliance repair websites, plus brand/model service pages and same-day availability messaging"
  }
 ]

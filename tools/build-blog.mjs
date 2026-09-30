@@ -106,8 +106,23 @@ function parseBlocks(md) {
       blocks.push({ type: "ol", items });
       continue;
     }
+    const imgMatch = line.match(/^!\[([^\]]*)\]\(([^)]+)\)\s*$/);
+    if (imgMatch) {
+      blocks.push({ type: "img", alt: imgMatch[1], src: imgMatch[2] });
+      i++;
+      continue;
+    }
+    if (/^\|.*\|\s*$/.test(line) && i + 1 < lines.length && /^\|?\s*:?-{2,}:?\s*(\|\s*:?-{2,}:?\s*)+\|?\s*$/.test(lines[i + 1])) {
+      const splitRow = (row) => row.trim().replace(/^\|/, "").replace(/\|$/, "").split("|").map((c) => c.trim());
+      const headers = splitRow(line);
+      i += 2;
+      const rows = [];
+      while (i < lines.length && /^\|.*\|\s*$/.test(lines[i])) { rows.push(splitRow(lines[i])); i++; }
+      blocks.push({ type: "table", headers, rows });
+      continue;
+    }
     const paraLines = [];
-    while (i < lines.length && lines[i].trim() && !/^#{2,3}\s+/.test(lines[i]) && !/^-\s+/.test(lines[i]) && !/^\d+\.\s+/.test(lines[i])) {
+    while (i < lines.length && lines[i].trim() && !/^#{2,3}\s+/.test(lines[i]) && !/^-\s+/.test(lines[i]) && !/^\d+\.\s+/.test(lines[i]) && !/^!\[([^\]]*)\]\(([^)]+)\)\s*$/.test(lines[i]) && !/^\|.*\|\s*$/.test(lines[i])) {
       paraLines.push(lines[i].trim());
       i++;
     }
@@ -172,6 +187,14 @@ function renderMarkdown(body, ctx) {
     } else if (block.type === "ul" || block.type === "ol") {
       const tag = block.type;
       html += `<${tag}>\n${block.items.map((it) => `<li>${inline(it, ctx)}</li>`).join("\n")}\n</${tag}>\n`;
+    } else if (block.type === "img") {
+      html += `<figure class="doc-figure"><img src="${escapeAttr(block.src)}" alt="${escapeAttr(block.alt)}" loading="lazy"></figure>\n`;
+    } else if (block.type === "table") {
+      html += `<div class="table-wrap"><table><thead><tr>${block.headers
+        .map((h) => `<th>${inline(h, ctx)}</th>`)
+        .join("")}</tr></thead><tbody>${block.rows
+        .map((r) => `<tr>${r.map((c) => `<td>${inline(c, ctx)}</td>`).join("")}</tr>`)
+        .join("")}</tbody></table></div>\n`;
     }
   }
   flushFaq();
@@ -195,7 +218,7 @@ function brandSvg() {
   return `<svg viewBox="0 0 34 34" aria-hidden="true"><rect width="34" height="34" fill="#ffd60a"/><path d="M6 27h22v-5H17v-5h-5v-5H6z" fill="#111312"/></svg>`;
 }
 
-function pageShell({ title, description, canonical, ogType = "website", bodyHtml, jsonLd = [] }) {
+function pageShell({ title, description, canonical, ogType = "website", ogImage, bodyHtml, jsonLd = [] }) {
   return `<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -204,11 +227,12 @@ function pageShell({ title, description, canonical, ogType = "website", bodyHtml
 <title>${escapeHtml(title)}</title>
 <meta name="description" content="${escapeAttr(description)}">
 <link rel="canonical" href="${escapeAttr(canonical)}">
+<link rel="alternate" type="application/rss+xml" title="Front Step Sites blog" href="${SITE}/feed.xml">
 <meta property="og:title" content="${escapeAttr(title)}">
 <meta property="og:description" content="${escapeAttr(description)}">
 <meta property="og:type" content="${escapeAttr(ogType)}">
 <meta property="og:url" content="${escapeAttr(canonical)}">
-<link rel="preconnect" href="https://fonts.googleapis.com">
+${ogImage ? `<meta property="og:image" content="${escapeAttr(ogImage)}">\n` : ""}<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/assets/read.css">
@@ -245,6 +269,7 @@ function renderCrumbs(crumbs) {
 
 function renderArticlePage(article, related, clusterName, clusterUrl) {
   const canonical = `${SITE}/blog/${article.slug}/`;
+  const ogImage = article.image ? `${SITE}${article.image}` : undefined;
   const crumbs = [
     { name: "Home", url: "/" },
     { name: "Blog", url: "/blog/" },
@@ -259,6 +284,7 @@ function renderArticlePage(article, related, clusterName, clusterUrl) {
       description: article.description,
       datePublished: article.updated,
       dateModified: article.updated,
+      ...(ogImage ? { image: ogImage } : {}),
       author: { "@type": "Organization", name: "Front Step Sites", url: `${SITE}/` },
       publisher: { "@type": "Organization", name: "Front Step Sites", url: `${SITE}/` },
       mainEntityOfPage: { "@type": "WebPage", "@id": canonical },
@@ -291,7 +317,7 @@ function renderArticlePage(article, related, clusterName, clusterUrl) {
 ${renderCrumbs(crumbs)}
 <h1>${escapeHtml(article.title)}</h1>
 <p class="updated">Updated ${formatDate(article.updated)}</p>
-<aside class="tag-box"><span class="label">Short answer</span><p>${escapeHtml(article.answer)}</p></aside>
+${article.image ? `<figure class="doc-figure doc-cover"><img src="${escapeAttr(article.image)}" alt="${escapeAttr(article.imageAlt || "")}" width="1200" height="630"></figure>\n` : ""}<aside class="tag-box"><span class="label">Short answer</span><p>${escapeHtml(article.answer)}</p></aside>
 ${article.bodyHtml}
 <aside class="tag-box tag-offer">
   <span class="label">Front Step Sites &middot; Launch</span>
@@ -306,6 +332,7 @@ ${relatedHtml}
     description: article.description,
     canonical,
     ogType: "article",
+    ogImage,
     bodyHtml,
     jsonLd,
   });
@@ -478,6 +505,8 @@ function main() {
       cluster: data.cluster,
       answer: data.answer,
       updated: data.updated,
+      image: data.image,
+      imageAlt: data.imageAlt,
       bodyHtml: html,
       faqItems,
     });
@@ -567,6 +596,21 @@ function main() {
     .join("\n")}\n</urlset>\n`;
   writeFileSync(join(WEB, "sitemap.xml"), sitemap);
 
+  // feed.xml (RSS 2.0), newest post first
+  const feedItems = [...articles].sort((a, b) => (a.updated < b.updated ? 1 : a.updated > b.updated ? -1 : 0));
+  const rssDate = (iso) => {
+    const m = String(iso).match(/^(\d{4})-(\d{2})-(\d{2})/);
+    if (!m) return new Date().toUTCString();
+    return new Date(Date.UTC(Number(m[1]), Number(m[2]) - 1, Number(m[3]), 12)).toUTCString();
+  };
+  const feed = `<?xml version="1.0" encoding="UTF-8"?>\n<rss version="2.0"><channel>\n  <title>Front Step Sites blog</title>\n  <link>${SITE}/blog/</link>\n  <description>Practical, specific answers for small business owners about websites, local SEO, and showing up when customers search.</description>\n  <language>en-us</language>\n  <lastBuildDate>${feedItems.length ? rssDate(feedItems[0].updated) : new Date().toUTCString()}</lastBuildDate>\n${feedItems
+    .map(
+      (a) =>
+        `  <item>\n    <title>${escapeHtml(a.title)}</title>\n    <link>${SITE}/blog/${a.slug}/</link>\n    <guid isPermaLink="true">${SITE}/blog/${a.slug}/</guid>\n    <pubDate>${rssDate(a.updated)}</pubDate>\n    <description>${escapeHtml(a.description)}</description>\n  </item>`
+    )
+    .join("\n")}\n</channel></rss>\n`;
+  writeFileSync(join(WEB, "feed.xml"), feed);
+
   // robots.txt (keep the existing disallow rules, add Allow + Sitemap)
   const robots = `User-agent: *\nAllow: /\nDisallow: /plumber/\nDisallow: /link/\n\nSitemap: ${SITE}/sitemap.xml\n`;
   writeFileSync(join(WEB, "robots.txt"), robots);
@@ -613,7 +657,7 @@ function main() {
   } else {
     console.log("No dead internal links found.");
   }
-  console.log("Wrote sitemap.xml, robots.txt, llms.txt.");
+  console.log("Wrote sitemap.xml, feed.xml, robots.txt, llms.txt.");
 }
 
 main();
