@@ -34,6 +34,7 @@ button.alt,a.alt{background:#fff;color:var(--ink)}
   <p class="sub">For Logan. Fill in what you found on Google Maps, then copy the link or the whole message.</p>
   <form id="f">
     <label>Business name<input name="n" required maxlength="60" placeholder="Bob's Plumbing & Drain"></label>
+    <label>Trade<select name="t"><option value="plumber">Plumbing</option><option value="roofer">Roofing</option><option value="landscaper">Landscaping</option><option value="cleaner">Cleaning</option><option value="painter">Painting</option><option value="hvac">HVAC</option></select></label>
     <div class="two">
       <label>Town<input name="c" maxlength="40" placeholder="Tulsa"></label>
       <label>Their phone (from Google)<input name="p" inputmode="tel" placeholder="918 555 0100"></label>
@@ -61,7 +62,7 @@ function build() {
   if (c) q.set("c", c);
   if (p) q.set("p", p);
   if (d.get("color")) q.set("color", d.get("color"));
-  var url = location.origin + "/plumber/" + (q.toString() ? "?" + q : "");
+  var url = location.origin + "/" + (d.get("t") || "plumber") + "/" + (q.toString() ? "?" + q : "");
   document.getElementById("url").value = url;
   document.getElementById("open").href = url;
   document.getElementById("msg").value =
