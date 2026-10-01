@@ -12,6 +12,7 @@ import { fileURLToPath } from "node:url";
 const WEB = fileURLToPath(new URL("..", import.meta.url));
 const CONTENT_DIR = join(WEB, "content", "blog");
 const BLOG_DIR = join(WEB, "blog");
+const READ_CSS = readFileSync(join(WEB, "assets", "read.css"), "utf8");
 const SITE = "https://frontstepsites.com";
 const LOGIN_URL = "https://app.frontstepsites.com/login";
 const START_URL = "https://app.frontstepsites.com/get-started";
@@ -225,7 +226,8 @@ function brandSvg() {
   return `<svg viewBox="0 0 34 34" aria-hidden="true"><rect width="34" height="34" fill="#ffd60a"/><path d="M6 27h22v-5H17v-5h-5v-5H6z" fill="#111312"/></svg>`;
 }
 
-function pageShell({ title, description, canonical, ogType = "website", ogImage, bodyHtml, jsonLd = [] }) {
+function pageShell({ title, description, canonical, ogType = "website", ogImage, preloadImage, bodyHtml, jsonLd = [] }) {
+  const fontHref = "https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&display=swap";
   return `<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -241,10 +243,11 @@ function pageShell({ title, description, canonical, ogType = "website", ogImage,
 <meta property="og:description" content="${escapeAttr(description)}">
 <meta property="og:type" content="${escapeAttr(ogType)}">
 <meta property="og:url" content="${escapeAttr(canonical)}">
-${ogImage ? `<meta property="og:image" content="${escapeAttr(ogImage)}">\n` : ""}<link rel="preconnect" href="https://fonts.googleapis.com">
+${ogImage ? `<meta property="og:image" content="${escapeAttr(ogImage)}">\n` : ""}${preloadImage ? `<link rel="preload" as="image" href="${escapeAttr(preloadImage)}" fetchpriority="high">\n` : ""}<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/assets/read.css">
+<link href="${fontHref}" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="${fontHref}" rel="stylesheet"></noscript>
+<style>${READ_CSS}</style>
 ${jsonLd.map(jsonLdScript).join("\n")}
 </head>
 <body>
@@ -327,7 +330,7 @@ function renderArticlePage(article, related, clusterName, clusterUrl) {
 ${renderCrumbs(crumbs)}
 <h1>${escapeHtml(article.title)}</h1>
 <p class="updated">Updated ${formatDate(article.updated)}</p>
-${article.image ? `<figure class="doc-figure doc-cover"><img src="${escapeAttr(article.image)}" alt="${escapeAttr(article.imageAlt || "")}" width="1200" height="630"></figure>\n` : ""}<aside class="tag-box"><span class="label">Short answer</span><p>${escapeHtml(article.answer)}</p></aside>
+${article.image ? `<figure class="doc-figure doc-cover"><img src="${escapeAttr(article.image)}" alt="${escapeAttr(article.imageAlt || "")}" width="1200" height="630" fetchpriority="high"></figure>\n` : ""}<aside class="tag-box"><span class="label">Short answer</span><p>${escapeHtml(article.answer)}</p></aside>
 ${article.bodyHtml}
 <aside class="tag-box tag-offer">
   <span class="label">Front Step Sites &middot; Launch</span>
@@ -343,6 +346,7 @@ ${relatedHtml}
     canonical,
     ogType: "article",
     ogImage,
+    preloadImage: article.image,
     bodyHtml,
     jsonLd,
   });

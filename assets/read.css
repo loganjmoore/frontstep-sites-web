@@ -77,7 +77,7 @@ footer.site a{color:var(--ink)}
 .doc-figure img{display:block;width:100%;height:auto;border:1.5px solid var(--ink)}
 .doc-cover{margin-top:.2rem}
 .table-wrap{overflow-x:auto;margin:1.2rem 0 1.7rem;border:1.5px solid var(--ink)}
-.doc table{width:100%;border-collapse:collapse;font-size:.98rem}
+.doc table{width:100%;border-collapse:collapse;font-size:.98rem;table-layout:fixed}
 .doc th,.doc td{text-align:left;padding:.6rem .8rem;border-bottom:1px solid var(--line)}
 .doc thead th{background:var(--ink);color:var(--tag);font-weight:700}
 .doc tbody tr:last-child td{border-bottom:0}
