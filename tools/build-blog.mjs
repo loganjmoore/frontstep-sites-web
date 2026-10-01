@@ -18,6 +18,13 @@ const START_URL = "https://app.frontstepsites.com/get-started";
 
 const MONTHS = ["January","February","March","April","May","June","July","August","September","October","November","December"];
 
+const ORG = {
+  "@type": "Organization",
+  name: "Front Step Sites",
+  url: `${SITE}/`,
+  description: "Front Step Sites (frontstepsites.com) is unrelated to FRONTSTEPS, the property-management/HOA software company.",
+};
+
 // ---------- small utilities ----------
 
 function escapeHtml(s) {
@@ -228,6 +235,8 @@ function pageShell({ title, description, canonical, ogType = "website", ogImage,
 <meta name="description" content="${escapeAttr(description)}">
 <link rel="canonical" href="${escapeAttr(canonical)}">
 <link rel="alternate" type="application/rss+xml" title="Front Step Sites blog" href="${SITE}/feed.xml">
+<meta name="google-site-verification" content="o99-pefOA6pR2C5f_pPemZCLI9MPywug-MAAubRePjQ" />
+<script type="text/javascript">(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window, document, "clarity", "script", "yqkzhoosjo");</script>
 <meta property="og:title" content="${escapeAttr(title)}">
 <meta property="og:description" content="${escapeAttr(description)}">
 <meta property="og:type" content="${escapeAttr(ogType)}">
@@ -253,6 +262,7 @@ ${bodyHtml}
 <footer class="site"><div class="wrap">
   <span>Front Step Sites &middot; <a href="mailto:hello@frontstepsites.com">hello@frontstepsites.com</a></span>
   <span><a href="/blog/">Blog</a> &middot; <a href="/privacy/">Privacy</a> &middot; <a href="/terms/">Terms</a> &middot; <a href="${LOGIN_URL}">Customer sign in</a></span>
+  <span class="disambig">Front Step Sites (frontstepsites.com) is unrelated to FRONTSTEPS, the property-management/HOA software company.</span>
 </div></footer>
 </body>
 </html>
@@ -285,8 +295,8 @@ function renderArticlePage(article, related, clusterName, clusterUrl) {
       datePublished: article.updated,
       dateModified: article.updated,
       ...(ogImage ? { image: ogImage } : {}),
-      author: { "@type": "Organization", name: "Front Step Sites", url: `${SITE}/` },
-      publisher: { "@type": "Organization", name: "Front Step Sites", url: `${SITE}/` },
+      author: ORG,
+      publisher: ORG,
       mainEntityOfPage: { "@type": "WebPage", "@id": canonical },
     },
     {
