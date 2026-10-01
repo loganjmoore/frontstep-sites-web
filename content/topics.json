@@ -1511,5 +1511,26 @@
   "cluster": "trades/appliance-repair",
   "trade": "appliance repair",
   "angle": "DIY/freelancer/agency/Front Step Sites price-tier table for appliance repair websites, plus brand/model service pages and same-day availability messaging"
+ },
+ {
+  "slug": "locksmith-google-business-profile",
+  "title": "Locksmith Google Business Profile: a setup guide",
+  "cluster": "trades/locksmith",
+  "trade": "locksmith",
+  "angle": "GBP setup for a mobile locksmith trade: service area built from cities/zips instead of a radius, honest 24/7 emergency hours, and where the state license number goes"
+ },
+ {
+  "slug": "moving-company-local-seo-checklist",
+  "title": "Local SEO checklist for moving companies",
+  "cluster": "trades/moving",
+  "trade": "moving company",
+  "angle": "Checklist format: GBP completeness, NAP consistency across listings, a service-area page per city, and reviews requested right after move day"
+ },
+ {
+  "slug": "appliance-repair-website-mistakes",
+  "title": "Appliance repair website mistakes",
+  "cluster": "trades/appliance-repair",
+  "trade": "appliance repair",
+  "angle": "Mistakes listicle: missing brand/model list, unclear service area, no same-day emergency messaging, slow mobile load"
  }
 ]
