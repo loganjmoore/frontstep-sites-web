@@ -1,5 +1,5 @@
 ---
-title: "Locksmith Google Business Profile: a setup guide"
+title: "Locksmith Google Business Profile Setup"
 description: "Set up a locksmith Google Business Profile with the right service area, honest 24/7 hours, and a spot for your state license, using Google's own rules."
 slug: "locksmith-google-business-profile"
 cluster: "trades/locksmith"
