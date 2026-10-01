@@ -9,6 +9,15 @@ updated: 2026-09-26
 
 Front Step Sites is a done-for-you website service for small businesses, priced at $99 a year with the domain included, while a marketing agency is a firm that plans and runs advertising and larger campaigns. Do you need a website service, or do you need a marketing agency? It is easy to compare the invoices and miss that you are buying different work. Start with what needs fixing in your business, then choose the person or service equipped to do that job.
 
+## Front Step Sites vs. a marketing agency at a glance
+
+| | Front Step Sites | Marketing agency |
+|---|---|---|
+| Ongoing cost | $99/yr (Launch), or $29/mo ($290/yr) for unlimited same-day changes on Grow | Set by the agency's proposal; ask for it broken out from ad spend |
+| Upfront cost | $0 setup fee | Varies; ask what's included before any ad spend starts |
+| Contract length | Ongoing subscription, cancel any time | Ask what happens after any introductory term |
+| Who handles changes | You submit requests in your account: 2 a month on Launch (2 business days) or unlimited same-day on Grow | Ask who on the team handles requests and how fast |
+
 ## Decide whether the problem is the website or the marketing
 
 A plumber whose referrals cannot find a service area or working phone number has a clear website problem. The immediate job is to explain the services, show where the plumber works, and make contacting the business straightforward. A complicated campaign is not needed to correct those missing details.

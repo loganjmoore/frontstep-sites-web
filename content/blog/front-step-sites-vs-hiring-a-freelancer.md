@@ -9,6 +9,15 @@ updated: 2026-09-26
 
 Front Step Sites is a done-for-you website service for small businesses, priced at $99 a year with the domain included, while a freelancer is an independent contractor you hire for a custom, scoped project. Should you pay a freelancer to build your website, or use Front Step Sites? Both can make sense, but they are not interchangeable purchases. The useful comparison is what your business needs built, who will keep it accurate, and what happens when those needs change.
 
+## Front Step Sites vs. a freelancer at a glance
+
+| | Front Step Sites | Freelancer |
+|---|---|---|
+| Ongoing cost | $99/yr (Launch), or $29/mo ($290/yr) for unlimited same-day changes on Grow | Varies by agreement; some include ongoing support, others end at handoff |
+| Upfront cost | $0 setup fee | Often a few thousand dollars for a custom project, more for complex work |
+| Timeline | Ongoing subscription, no fixed project timeline | Set in the freelancer's quote, scoped to the project |
+| Changes, hosting, and renewals after launch | Write a plain-English request in your account: 2 a month on Launch (2 business days) or unlimited same-day on Grow | Depends on the agreement: some freelancers offer ongoing support or teach you to edit, others hand it over at launch |
+
 ## Start with the job your website must do
 
 Picture the next person who visits your site. A homeowner with a blocked drain wants to know whether you handle the problem, cover their address, and answer the phone. A commercial property manager comparing electrical contractors may need details about maintenance work, project experience, and how to request a site visit.

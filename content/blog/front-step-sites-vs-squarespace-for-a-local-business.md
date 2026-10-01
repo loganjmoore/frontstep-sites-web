@@ -9,6 +9,16 @@ updated: 2026-09-26
 
 Front Step Sites is a done-for-you website service for small businesses, priced at $99 a year with the domain included, while Squarespace is a do-it-yourself website builder you edit directly. Is Front Step Sites or Squarespace the better choice for your local business? Front Step Sites is worth considering if you want to hand off website work, while Squarespace is worth considering if you want to build and edit the pages yourself. The choice comes down to how you want the work done, as well as what you pay.
 
+## Front Step Sites vs. Squarespace at a glance
+
+| | Front Step Sites | Squarespace Basic |
+|---|---|---|
+| Price/yr | $99/yr | $19/mo billed annually (about $228/yr) |
+| Setup fee | $0 | $0 |
+| Who builds/maintains the site | Built and maintained by Front Step Sites | You build and maintain it yourself |
+| Domain | Included, registered in your name, no transfer fee to leave | Free for the first year on an annual plan, then renews separately |
+| How changes are made | Write a plain-English request in your account (2 a month on Launch) | You edit it yourself in the Squarespace editor |
+
 ## Compare the stated prices carefully
 
 Front Step Sites costs $99 a year with the domain included and no setup fee. Squarespace Basic is $19/month as of September 2026. Check the current checkout terms before purchasing, including billing arrangements and any separate services you need.
