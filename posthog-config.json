@@ -1,0 +1,16 @@
+{
+  "key": "",
+  "host": "https://us.i.posthog.com",
+  "product": "frontstepsites.com",
+  "surface": "marketing",
+  "hosts": [
+    "frontstepsites.com",
+    "www.frontstepsites.com",
+    "app.frontstepsites.com"
+  ],
+  "consentKey": "",
+  "consentKind": "",
+  "sharedDomain": "frontstepsites.com",
+  "release": "",
+  "publicOnly": false
+}
