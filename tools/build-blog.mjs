@@ -227,7 +227,7 @@ function brandSvg() {
 }
 
 function pageShell({ title, description, canonical, ogType = "website", ogImage, preloadImage, bodyHtml, jsonLd = [] }) {
-  const fontHref = "https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&display=swap";
+  const fontHref = "https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&display=optional";
   return `<!DOCTYPE html>
 <html lang="en">
 <head>
