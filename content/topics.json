@@ -1532,5 +1532,25 @@
   "cluster": "trades/appliance-repair",
   "trade": "appliance repair",
   "angle": "Mistakes listicle: missing brand/model list, unclear service area, no same-day emergency messaging, slow mobile load"
+ },
+ {
+  "slug": "appliance-repair-google-business-profile",
+  "title": "Appliance Repair Google Business Profile",
+  "cluster": "trades/appliance-repair",
+  "trade": "appliance repair",
+  "angle": "Setup guide naming the specific GBP fields that matter: service-area list, brands and appliance types serviced, honest same-day/emergency availability"
+ },
+ {
+  "slug": "locksmith-local-seo-checklist",
+  "title": "Locksmith Local SEO Checklist",
+  "cluster": "trades/locksmith",
+  "trade": "locksmith",
+  "angle": "Checklist built around what's distinct for locksmiths: license number placement, 24/7 emergency honesty, service area, and review volume vs. the 4.5-star bar"
+ },
+ {
+  "slug": "what-front-step-sites-does-and-who-its-for",
+  "title": "What Front Step Sites Does, Who It's For",
+  "cluster": "guides",
+  "angle": "Product explainer: what's included at $99/yr, who it fits, domain ownership, and how change requests work"
  }
 ]

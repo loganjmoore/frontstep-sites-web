@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img" aria-label="Cover image: What Front Step Sites does, $99 a year with the domain included, changes made for you">
+  <rect width="1200" height="630" fill="#eceeec"/>
+  <rect x="46" y="46" width="1120" height="550" fill="#111312"/>
+  <rect x="40" y="40" width="1120" height="550" fill="#ffffff" stroke="#111312" stroke-width="3"/>
+  <g transform="translate(1030,66)">
+    <rect width="34" height="34" fill="#ffd60a"/>
+    <path d="M6 27h22v-5H17v-5h-5v-5H6z" fill="#111312"/>
+  </g>
+  <text x="80" y="98" font-family="Arial, sans-serif" font-size="22" font-weight="700" letter-spacing="2" fill="#474d4b">FRONT STEP SITES BLOG</text>
+  <text x="78" y="248" font-family="Arial, sans-serif" font-size="56" font-weight="800" fill="#111312">What We Do,</text>
+  <text x="80" y="308" font-family="Arial, sans-serif" font-size="40" font-weight="700" fill="#474d4b">Who It's For</text>
+  <g transform="translate(80,420)">
+    <rect x="0" y="0" width="325" height="130" fill="#ffd60a" stroke="#111312" stroke-width="2"/>
+    <text x="18" y="34" font-family="Arial, sans-serif" font-size="16" font-weight="700" letter-spacing="1" fill="#111312">PRICE</text>
+    <text x="18" y="70" font-family="Arial, sans-serif" font-size="19" font-weight="700" fill="#111312">$99/yr, domain in</text>
+  </g>
+  <g transform="translate(435,420)">
+    <rect x="0" y="0" width="325" height="130" fill="#ffffff" stroke="#111312" stroke-width="2"/>
+    <text x="18" y="34" font-family="Arial, sans-serif" font-size="17" font-weight="700" letter-spacing="1" fill="#111312">CHANGES</text>
+    <text x="18" y="70" font-family="Arial, sans-serif" font-size="19" font-weight="600" fill="#474d4b">You ask, we build it</text>
+  </g>
+  <g transform="translate(790,420)">
+    <rect x="0" y="0" width="325" height="130" fill="#ffffff" stroke="#111312" stroke-width="2"/>
+    <text x="18" y="34" font-family="Arial, sans-serif" font-size="16" font-weight="700" letter-spacing="1" fill="#111312">OWNERSHIP</text>
+    <text x="18" y="70" font-family="Arial, sans-serif" font-size="19" font-weight="700" fill="#111312">Domain in your name</text>
+  </g>
+</svg>
