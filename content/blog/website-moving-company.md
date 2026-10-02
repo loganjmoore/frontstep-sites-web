@@ -5,6 +5,8 @@ slug: website-moving-company
 cluster: trades/moving
 answer: "A moving company website needs a clear service area, separate pages for local and long-distance moves, and a plain explanation of how your estimates work, since those are the questions a customer comparing movers asks first. Add real photos of your crew and trucks, your USDOT number if you cross state lines, and a short quote-request form."
 updated: 2026-10-02
+image: "/assets/blog/website-moving-company-cover.svg"
+imageAlt: "Moving Company: what your website needs, covering local vs long-distance moves, estimates, USDOT number, and a quote form"
 ---
 
 A customer comparing movers is usually getting two or three quotes before choosing one. What does your website need to say so you make that short list? Your service area, whether you handle their kind of move, and how your pricing actually works.
