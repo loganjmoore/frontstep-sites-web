@@ -1492,6 +1492,27 @@
   "angle": "domain held hostage, setup fees, cancellation traps"
  },
  {
+  "slug": "website-locksmith",
+  "title": "Locksmith: what your website needs",
+  "cluster": "trades/locksmith",
+  "trade": "locksmith",
+  "angle": "the pages, details, and layout that make a local locksmith website earn a call, in order of importance"
+ },
+ {
+  "slug": "website-moving-company",
+  "title": "Moving Company: what your website needs",
+  "cluster": "trades/moving",
+  "trade": "moving company",
+  "angle": "the pages, details, and layout that make a local moving company website earn a quote request, in order of importance"
+ },
+ {
+  "slug": "website-appliance-repair",
+  "title": "Appliance Repair: what your website needs",
+  "cluster": "trades/appliance-repair",
+  "trade": "appliance repair",
+  "angle": "the pages, details, and layout that make a local appliance repair website earn a call, in order of importance"
+ },
+ {
   "slug": "locksmith-website-cost",
   "title": "Locksmith website cost in 2026: 4 pricing tiers",
   "cluster": "trades/locksmith",
