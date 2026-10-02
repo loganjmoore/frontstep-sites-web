@@ -1573,5 +1573,26 @@
   "title": "What Front Step Sites Does, Who It's For",
   "cluster": "guides",
   "angle": "Product explainer: what's included at $99/yr, who it fits, domain ownership, and how change requests work"
+ },
+ {
+  "slug": "moving-company-google-business-profile",
+  "title": "Moving Company Google Business Profile Setup",
+  "cluster": "trades/moving",
+  "trade": "moving company",
+  "angle": "GBP setup for movers: service area built from cities/zips instead of a radius, USDOT number placement, and weekend hours that match when moves get booked"
+ },
+ {
+  "slug": "locksmith-website-mistakes",
+  "title": "Locksmith website mistakes",
+  "cluster": "trades/locksmith",
+  "trade": "locksmith",
+  "angle": "Mistakes listicle: no license number, a radius instead of real service-area cities, overstated 24/7 claims, slow mobile load"
+ },
+ {
+  "slug": "appliance-repair-local-seo-checklist",
+  "title": "Local SEO checklist for appliance repair",
+  "cluster": "trades/appliance-repair",
+  "trade": "appliance repair",
+  "angle": "Checklist format: GBP completeness naming brands/types, NAP consistency, a page per appliance type, and honest same-day availability claims"
  }
 ]

@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img" aria-label="Cover image: Moving Company, what your website needs, covering service area, estimates, and USDOT number">
+  <rect width="1200" height="630" fill="#eceeec"/>
+  <rect x="46" y="46" width="1120" height="550" fill="#111312"/>
+  <rect x="40" y="40" width="1120" height="550" fill="#ffffff" stroke="#111312" stroke-width="3"/>
+  <g transform="translate(1030,66)">
+    <rect width="34" height="34" fill="#ffd60a"/>
+    <path d="M6 27h22v-5H17v-5h-5v-5H6z" fill="#111312"/>
+  </g>
+  <text x="80" y="98" font-family="Arial, sans-serif" font-size="22" font-weight="700" letter-spacing="2" fill="#474d4b">FRONT STEP SITES BLOG</text>
+  <text x="78" y="238" font-family="Arial, sans-serif" font-size="52" font-weight="800" fill="#111312">Moving Company</text>
+  <text x="80" y="290" font-family="Arial, sans-serif" font-size="36" font-weight="700" fill="#474d4b">what your website needs</text>
+  <g transform="translate(80,360)">
+    <rect x="0" y="0" width="34" height="34" fill="#ffd60a" stroke="#111312" stroke-width="2"/>
+    <path d="M7 18l6 6 14-16" fill="none" stroke="#111312" stroke-width="3"/>
+    <text x="48" y="25" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#111312">Local vs. long-distance moves</text>
+  </g>
+  <g transform="translate(80,412)">
+    <rect x="0" y="0" width="34" height="34" fill="#ffd60a" stroke="#111312" stroke-width="2"/>
+    <path d="M7 18l6 6 14-16" fill="none" stroke="#111312" stroke-width="3"/>
+    <text x="48" y="25" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#111312">How your estimates work</text>
+  </g>
+  <g transform="translate(80,464)">
+    <rect x="0" y="0" width="34" height="34" fill="#ffd60a" stroke="#111312" stroke-width="2"/>
+    <path d="M7 18l6 6 14-16" fill="none" stroke="#111312" stroke-width="3"/>
+    <text x="48" y="25" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#111312">USDOT number, if interstate</text>
+  </g>
+  <g transform="translate(80,516)">
+    <rect x="0" y="0" width="34" height="34" fill="#ffd60a" stroke="#111312" stroke-width="2"/>
+    <path d="M7 18l6 6 14-16" fill="none" stroke="#111312" stroke-width="3"/>
+    <text x="48" y="25" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#111312">A simple quote-request form</text>
+  </g>
+</svg>
