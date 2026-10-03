@@ -611,7 +611,11 @@ function main() {
   writeFileSync(join(WEB, "sitemap.xml"), sitemap);
 
   // feed.xml (RSS 2.0), newest post first
-  const feedItems = [...articles].sort((a, b) => (a.updated < b.updated ? 1 : a.updated > b.updated ? -1 : 0));
+  // Ties on date go to the entry later in topics.json, so the newest-added posts lead.
+  const feedItems = articles
+    .map((a, i) => ({ a, i }))
+    .sort((x, y) => (x.a.updated < y.a.updated ? 1 : x.a.updated > y.a.updated ? -1 : y.i - x.i))
+    .map((x) => x.a);
   const rssDate = (iso) => {
     const m = String(iso).match(/^(\d{4})-(\d{2})-(\d{2})/);
     if (!m) return new Date().toUTCString();
