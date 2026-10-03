@@ -5,13 +5,14 @@
 //
 //   node tools/build-blog.mjs
 //
-import { readFileSync, writeFileSync, mkdirSync, readdirSync, rmSync } from "node:fs";
+import { readFileSync, writeFileSync, mkdirSync, readdirSync, rmSync, existsSync } from "node:fs";
 import { join } from "node:path";
 import { fileURLToPath } from "node:url";
 
 const WEB = fileURLToPath(new URL("..", import.meta.url));
 const CONTENT_DIR = join(WEB, "content", "blog");
 const BLOG_DIR = join(WEB, "blog");
+const HUB_DIR = join(WEB, "content", "hubs");
 const READ_CSS = readFileSync(join(WEB, "assets", "read.css"), "utf8");
 const SITE = "https://frontstepsites.com";
 const LOGIN_URL = "https://app.frontstepsites.com/login";
@@ -329,7 +330,7 @@ function renderArticlePage(article, related, clusterName, clusterUrl) {
   const bodyHtml = `<article class="doc">
 ${renderCrumbs(crumbs)}
 <h1>${escapeHtml(article.title)}</h1>
-<p class="updated">Updated ${formatDate(article.updated)}</p>
+${article.lead ? `<p class="direct-answer">${escapeHtml(article.lead)}</p>\n` : ""}<p class="updated">Updated ${formatDate(article.updated)}</p>
 ${article.image ? `<figure class="doc-figure doc-cover"><img src="${escapeAttr(article.image)}" alt="${escapeAttr(article.imageAlt || "")}" width="1200" height="630" fetchpriority="high"></figure>\n` : ""}<aside class="tag-box"><span class="label">Short answer</span><p>${escapeHtml(article.answer)}</p></aside>
 ${article.bodyHtml}
 <aside class="tag-box tag-offer">
@@ -361,7 +362,7 @@ const HUB_FAQ = [
   { question: "How do I ask for a change to my site?", answer: "Sign in to your account and write the request in plain English. Launch includes 2 requests a month, done within 2 business days." },
 ];
 
-function renderClusterHub(cluster, clusterName, articles) {
+function renderClusterHub(cluster, clusterName, articles, introHtml = "") {
   const canonical = `${SITE}/blog/${cluster}/`;
   const crumbs = [{ name: "Home", url: "/" }, { name: "Blog", url: "/blog/" }, { name: clusterName, url: null }];
   const jsonLd = [
@@ -392,7 +393,7 @@ ${HUB_FAQ.map((f) => `<h3>${escapeHtml(f.question)}</h3>\n<p>${escapeHtml(f.answ
 ${renderCrumbs(crumbs)}
 <h1>${escapeHtml(clusterName)}</h1>
 <p class="updated">${articles.length} article${articles.length === 1 ? "" : "s"}</p>
-<p>Front Step Sites is a done-for-you website service for small businesses, priced at $99 a year with the domain included and no setup fee. The ${escapeHtml(clusterName)} hub is a section of the Front Step Sites blog with ${articles.length} article${articles.length === 1 ? "" : "s"} of practical, specific guidance, with 2 change requests a month included on the Launch plan.</p>
+${introHtml}<p>Front Step Sites is a done-for-you website service for small businesses, priced at $99 a year with the domain included and no setup fee. The ${escapeHtml(clusterName)} hub is a section of the Front Step Sites blog with ${articles.length} article${articles.length === 1 ? "" : "s"} of practical, specific guidance, with 2 change requests a month included on the Launch plan.</p>
 <ul class="article-list">
 ${articles.map((a) => `<li><a href="/blog/${a.slug}/">${escapeHtml(a.title)}</a><p>${escapeHtml(a.answer)}</p></li>`).join("\n")}
 </ul>
@@ -407,11 +408,22 @@ ${faqHtml}
   });
 }
 
+const BLOG_FAQ = [
+  { question: "Is frontstepsites.com the same company as FRONTSTEPS?", answer: "No. Front Step Sites (frontstepsites.com) is unrelated to FRONTSTEPS, the property-management/HOA software company." },
+  { question: "What does Front Step Sites do, and who is it for?", answer: "Front Step Sites is a done-for-you website service. You answer a 10-minute questionnaire, we write and build your site, keep it running, and make changes when you ask in plain English. It is for small local businesses in the United States, at $99 a year with the domain included and no setup fee." },
+  { question: "How is Front Step Sites different from Wix or Squarespace?", answer: "Wix and Squarespace are website builders you use yourself. As of September 2026, Wix Light is $204 a year billed yearly and Squarespace Basic is $19 a month. Front Step Sites is a done-for-you service that builds the site and makes your changes for $99 a year with the domain included." },
+];
+
 function renderBlogHub(tradeRows, guideRows, aiRows, compareRows) {
   const canonical = `${SITE}/blog/`;
   const crumbs = [{ name: "Home", url: "/" }, { name: "Blog", url: null }];
   const jsonLd = [
     { "@context": "https://schema.org", "@type": "BreadcrumbList", itemListElement: crumbs.map((c, i) => ({ "@type": "ListItem", position: i + 1, name: c.name, item: c.url ? `${SITE}${c.url}` : canonical })) },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: BLOG_FAQ.map((f) => ({ "@type": "Question", name: f.question, acceptedAnswer: { "@type": "Answer", text: f.answer } })),
+    },
   ];
 
   const renderTradeList = (rows) =>
@@ -454,6 +466,9 @@ ${renderCrumbs(crumbs)}
   ${rowHeading("Comparisons", compareRows.url)}
   ${renderArticleRows(compareRows.top)}
 </div>
+
+<h2 id="frequently-asked-questions">Frequently asked questions</h2>
+${BLOG_FAQ.map((f) => `<h3>${escapeHtml(f.question)}</h3>\n<p>${escapeHtml(f.answer)}</p>`).join("\n")}
 </article>`;
 
   return pageShell({
@@ -520,6 +535,7 @@ function main() {
       description: data.description,
       cluster: data.cluster,
       answer: data.answer,
+      lead: data.lead,
       updated: data.updated,
       image: data.image,
       imageAlt: data.imageAlt,
@@ -572,7 +588,15 @@ function main() {
   for (const [cluster, list] of articlesByCluster) {
     if (!list.length) continue;
     const clusterName = clusterHumanName(cluster, topicsByCluster);
-    const html = renderClusterHub(cluster, clusterName, list);
+    // Optional intro for a hub: content/hubs/<cluster>.md (Markdown body, same subset as articles).
+    let introHtml = "";
+    const introFile = join(HUB_DIR, `${cluster}.md`);
+    if (existsSync(introFile)) {
+      const ctx = { allowedBareSlugs, deadLinks: [] };
+      introHtml = renderMarkdown(readFileSync(introFile, "utf8"), ctx).html;
+      if (ctx.deadLinks.length) deadLinksReport.push({ file: `content/hubs/${cluster}.md`, links: ctx.deadLinks });
+    }
+    const html = renderClusterHub(cluster, clusterName, list, introHtml);
     const dir = join(BLOG_DIR, cluster);
     mkdirSync(dir, { recursive: true });
     writeFileSync(join(dir, "index.html"), html);
