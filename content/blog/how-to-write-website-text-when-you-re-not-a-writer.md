@@ -7,7 +7,7 @@ answer: "Write your website text the way you explain your work to a new customer
 updated: "2026-09-26"
 ---
 
-How do you write website text when writing is not your job? Start with the answers you give customers every week, then put them in an order a new visitor can follow. You do not need a clever slogan before you can explain what your business does.
+How do you write website text when writing is not your job? Website copy is a plain explanation of what you do, where you work, and how a customer can reach you. Start with the answers you give customers every week, then put them in an order a new visitor can follow. You do not need a clever slogan before you can explain what your business does.
 
 ## Collect answers before you write paragraphs
 

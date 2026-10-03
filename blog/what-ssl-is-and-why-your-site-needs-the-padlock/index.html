@@ -8,7 +8,7 @@
 <link rel="canonical" href="https://frontstepsites.com/blog/what-ssl-is-and-why-your-site-needs-the-padlock/">
 <link rel="alternate" type="application/rss+xml" title="Front Step Sites blog" href="https://frontstepsites.com/feed.xml">
 <meta name="google-site-verification" content="o99-pefOA6pR2C5f_pPemZCLI9MPywug-MAAubRePjQ" />
-<script type="text/javascript">(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window, document, "clarity", "script", "yqkzhoosjo");</script>
+<script type="text/javascript">window.addEventListener("load",function(){(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window, document, "clarity", "script", "yqkzhoosjo");});</script>
 <meta property="og:title" content="What SSL is and why your site needs it | Front Step Sites">
 <meta property="og:description" content="Understand SSL, HTTPS, browser warnings, and certificate renewal in plain English, including why a secure connection may no longer show a padlock icon.">
 <meta property="og:type" content="article">
@@ -58,6 +58,7 @@ footer.site a{color:var(--ink)}
 .crumbs a:hover{text-decoration:underline}
 .crumbs .sep{margin:0 .4rem}
 .doc .updated{color:var(--ink-2);font-size:.92rem;margin:.1rem 0 1.3rem}
+.doc .direct-answer{font-size:1.15rem;font-weight:600;margin:0 0 .6rem;max-width:60ch}
 
 /* blog: short-answer and offer tags. Already inside the .doc card, so no
    border/shadow of their own (that would nest card-on-card): a left ink bar
@@ -120,7 +121,7 @@ footer.site a{color:var(--ink)}
 <h1>What SSL is and why your site needs it</h1>
 <p class="updated">Updated September 26, 2026</p>
 <aside class="tag-box"><span class="label">Short answer</span><p>SSL is the familiar name for the certificate setup that enables an encrypted HTTPS connection to your website; modern connections use TLS. Your site needs working HTTPS, although browsers do not all display a padlock. Ask your provider to include certificate setup and renewal, and treat browser security warnings as problems to investigate promptly.</p></aside>
-<p>Someone says your website needs SSL and a padlock, but you are not sure what you are supposed to buy or check. Is this an expensive extra or a normal part of running a business website? You need working HTTPS, and you should expect your provider to explain how certificates and renewals are handled.</p>
+<p>Someone says your website needs SSL and a padlock, but you are not sure what you are supposed to buy or check. An SSL certificate is a small piece of setup that lets your site run on HTTPS, the encrypted version of your web address. Is this an expensive extra or a normal part of running a business website? You need working HTTPS, and you should expect your provider to explain how certificates and renewals are handled.</p>
 <h2 id="understand-the-connection-in-plain-english">Understand the connection in plain English</h2>
 <p>When a visitor opens your website, their browser exchanges information with the server that provides the page. HTTPS protects that connection using encryption. The familiar term SSL is still used in sales conversations, although modern secure connections use TLS, its successor.</p>
 <p>A certificate helps the browser verify the site it is connecting to. It must be valid for the address being visited and work with the site's setup. Mozilla's <a href="https://developer.mozilla.org/en-US/docs/Glossary/TLS">TLS overview</a> explains the relationship between the certificate and the secure connection.</p>

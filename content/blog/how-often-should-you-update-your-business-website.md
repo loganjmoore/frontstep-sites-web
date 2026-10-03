@@ -7,7 +7,7 @@ answer: Update your business website whenever a customer-facing fact changes, es
 updated: 2026-09-26
 ---
 
-How often should you update your business website when you already have a full work schedule? Change important facts as soon as they change, then use a regular check to catch anything you missed. The aim is to keep customers correctly informed and able to contact you.
+How often should you update your business website when you already have a full work schedule? A website update is a change that keeps a page accurate, such as new hours, a new price, or a service you no longer offer. Change important facts as soon as they change, then use a regular check to catch anything you missed. The aim is to keep customers correctly informed and able to contact you.
 
 ## Fix changes that affect today's customer first
 

@@ -1576,7 +1576,7 @@
  },
  {
   "slug": "moving-company-google-business-profile",
-  "title": "Moving Company Google Business Profile Setup",
+  "title": "Moving Company Google Business Profile",
   "cluster": "trades/moving",
   "trade": "moving company",
   "angle": "GBP setup for movers: service area built from cities/zips instead of a radius, USDOT number placement, and weekend hours that match when moves get booked"
@@ -1594,5 +1594,23 @@
   "cluster": "trades/appliance-repair",
   "trade": "appliance repair",
   "angle": "Checklist format: GBP completeness naming brands/types, NAP consistency, a page per appliance type, and honest same-day availability claims"
+ },
+ {
+  "slug": "google-sites-alternatives-for-a-business",
+  "title": "Google Sites alternatives for a business",
+  "cluster": "compare",
+  "angle": "Google Sites against a DIY builder and a done-for-you site on yearly cost, who edits, page descriptions, forms, and leaving"
+ },
+ {
+  "slug": "can-you-run-a-business-website-on-canva",
+  "title": "Can you run a business website on Canva?",
+  "cluster": "compare",
+  "angle": "what Canva Websites can and can't do for a local business: one page per site, domain, blog, forms, and search control"
+ },
+ {
+  "slug": "how-to-create-a-small-business-website",
+  "title": "How to create a small business website",
+  "cluster": "guides",
+  "angle": "the nine steps in order, with rough hours and who does each one"
  }
 ]
