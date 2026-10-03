@@ -445,7 +445,7 @@ function renderBlogHub(tradeRows, guideRows, aiRows, compareRows) {
   const bodyHtml = `<article class="doc">
 ${renderCrumbs(crumbs)}
 <h1>The Front Step Sites blog</h1>
-<p>Straight answers for small business owners about websites, local search, and getting found by customers. No jargon, no filler, checkable facts.</p>
+<p>Front Step Sites is a done-for-you website service for small local businesses. This blog gives straight answers for owners about websites, local search, and getting found by customers. No jargon, no filler, checkable facts.</p>
 
 <div class="hub-rail">
   <h2>For your trade</h2>
