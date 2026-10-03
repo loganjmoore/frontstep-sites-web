@@ -134,6 +134,22 @@ section.white{background:var(--tag)}
 .lists li{margin:.25rem 0}
 .promise{margin-top:20px;border-top:2px solid var(--ink);padding-top:12px;font-weight:600;max-width:60ch}
 
+/* Plan comparison extends the existing packing-list vocabulary. */
+.plan-compare{display:grid;gap:40px;margin-top:28px;align-items:start}
+@media(min-width:860px){.plan-compare{grid-template-columns:1fr 1.3fr}}
+.plan-table{width:100%;border-collapse:collapse;background:var(--tag);font-size:1rem}
+.plan-table caption{text-align:left;font-weight:700;margin-bottom:12px}
+.plan-table th,.plan-table td{padding:12px 8px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
+.plan-table thead th{border-bottom:2px solid var(--ink)}
+.plan-table small{display:block;font-size:1rem;font-weight:400;color:var(--ink-2)}
+.plan-compare label{display:block;font-weight:700;margin-bottom:6px}
+.plan-compare input{display:block;width:100%;max-width:320px;min-height:48px;border:1.5px solid var(--ink);border-radius:3px;font:inherit;padding:10px 12px;background:var(--tag);color:var(--ink)}
+.plan-compare .hint{color:var(--ink-2);margin:8px 0 16px}
+.plan-compare .btn{margin-top:16px}
+.cost-result{margin-top:20px;padding-top:16px;border-top:2px solid var(--ink)}
+.cost-result ul{padding-left:20px;margin-top:8px}
+.cost-result[hidden]{display:none}
+
 /* leaving: the real button */
 .leave{display:grid;gap:40px;align-items:center}
 @media(min-width:860px){.leave{grid-template-columns:1fr 1fr}}
@@ -196,6 +212,7 @@ footer p{color:var(--ink-2);font-size:.92rem}
     </a>
     <nav aria-label="Page">
       <a class="hide-sm" href="#box">What you get</a>
+      <a class="hide-sm" href="#plans">Compare plans</a>
       <a class="hide-sm" href="#leaving">Leaving</a>
       <a class="hide-sm" href="/blog/">Blog</a>
       <a class="btn btn-primary" href="https://app.frontstepsites.com/get-started">Get started</a>
@@ -307,7 +324,7 @@ footer p{color:var(--ink-2);font-size:.92rem}
   <div class="wrap grow">
     <div>
       <h2 id="grow-h">Change things a lot?</h2>
-      <p class="lead" style="margin-top:.8rem">Grow is for owners who update often: weekly specials, new photos, events. Unlimited requests, done the same business day.</p>
+      <p class="lead" style="margin-top:.8rem">Grow includes everything in Launch, with unlimited requests done the same business day. It replaces Launch; you do not pay for both.</p>
       <div class="slot" style="margin-top:28px"><div class="rail" aria-hidden="true" style="display:block"></div>
         <article class="tag ours">
           <span class="hole" aria-hidden="true"></span>
@@ -348,6 +365,37 @@ footer p{color:var(--ink-2);font-size:.92rem}
 </section>
 
 <svg class="barcode" aria-hidden="true"><use href="#bars"/></svg>
+<section id="plans" class="white" aria-labelledby="plans-h">
+  <div class="wrap">
+    <h2 id="plans-h">What will your year cost?</h2>
+    <p class="lead" style="margin-top:.8rem">Launch covers up to 2 change requests a month. Choose Grow if you need more requests or same-day changes. Every plan includes your website, hosting and one domain.</p>
+    <div class="plan-compare">
+      <form id="cost-form">
+        <label for="current-cost">Your current website cost per month ($)</label>
+        <input id="current-cost" name="current-cost" type="number" min="0" max="1000000" step="0.01" inputmode="decimal" required aria-describedby="cost-hint">
+        <p class="hint" id="cost-hint">Optional comparison. Use your own hosting, domain and maintenance costs. Divide an annual bill by 12. Enter 0 if you have no website.</p>
+        <button class="btn btn-primary" type="submit">Compare my annual cost</button>
+        <div id="cost-result" class="cost-result" role="status" aria-live="polite" hidden></div>
+        <noscript><p>The plan totals are shown here. To compare your own cost, multiply your monthly cost by 12.</p></noscript>
+      </form>
+      <div>
+        <table class="plan-table">
+          <caption>Choose one plan. Grow replaces Launch.</caption>
+          <thead><tr><th scope="col">Plan</th><th scope="col">Billed</th><th scope="col">12-month total</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">Launch<small>2 requests/month</small></th><td>$99 yearly</td><td>$99<small>$8.25/month equivalent</small></td></tr>
+            <tr><th scope="row">Grow monthly<small>Unlimited requests</small></th><td>$29 monthly</td><td>$348<small>12 monthly payments</small></td></tr>
+            <tr><th scope="row">Grow yearly<small>Unlimited requests</small></th><td>$290 yearly</td><td>$290<small>$24.17/month equivalent</small></td></tr>
+          </tbody>
+        </table>
+        <p class="hint">Yearly Grow costs $58 less than 12 monthly payments. Monthly equivalents are for comparison; yearly plans are billed in one payment.</p>
+        <p class="hint">Plan prices exclude extra domains and quoted custom work, such as booking, payments or a store. Checkout shows any applicable tax. This compares prices, not features or expected customer revenue.</p>
+        <a class="btn btn-secondary" href="https://app.frontstepsites.com/get-started">Start Launch for $99/year</a>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section id="leaving" class="white" aria-labelledby="leave-h">
   <div class="wrap leave">
     <div>
@@ -425,5 +473,6 @@ document.getElementById("move").addEventListener("click", function () {
   this.textContent = "Code sent";
 });
 </script>
+<script type="module" src="/assets/plan-cost.mjs"></script>
 </body>
 </html>
