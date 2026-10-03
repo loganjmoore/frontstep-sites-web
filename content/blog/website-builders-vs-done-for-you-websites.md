@@ -7,7 +7,7 @@ answer: A done-for-you site starts at $99 a year with the domain included, and a
 updated: 2026-10-03
 ---
 
-Should you build your business website yourself or pay someone to handle it? A builder makes sense when you have the interest and time to use it; a done-for-you service makes sense when you want help getting the work finished. The important difference is who does the writing, checking, and updating after you choose a design.
+Should you build your business website yourself or pay someone to handle it? A website builder is a do-it-yourself tool for making your own pages, and a done-for-you website is a site a provider designs, writes, and maintains for you. A builder makes sense when you have the interest and time to use it; a done-for-you service makes sense when you want help getting the work finished. The important difference is who does the writing, checking, and updating after you choose a design.
 
 ## Start with what your customers need to do
 

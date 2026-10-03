@@ -7,7 +7,7 @@ answer: "Aim for the main visible content to load within 2.5 seconds, the good t
 updated: "2026-09-26"
 ---
 
-How fast should your small business website load before you need to fix it? Aim for a page that quickly shows useful information and lets someone call, book, or request a quote without waiting or fighting moving buttons. A speed score helps you find problems, but the customer's task is the reason to solve them.
+How fast should your small business website load before you need to fix it? Page speed is a measure of how long a visitor waits before a page shows what they came for. Aim for a page that quickly shows useful information and lets someone call, book, or request a quote without waiting or fighting moving buttons. A speed score helps you find problems, but the customer's task is the reason to solve them.
 
 ## Use a clear target without confusing it with everything loading
 
