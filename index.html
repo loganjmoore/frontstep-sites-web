@@ -93,12 +93,12 @@ header nav a.hide-sm{display:none}
 
 /* try-it bar */
 .try{background:var(--tag);border:1.5px solid var(--ink);margin-top:8px;padding:18px;display:grid;gap:12px}
-@media(min-width:860px){.try{grid-template-columns:auto 1fr 1fr auto;align-items:end}}
+@media(min-width:860px){.try{grid-template-columns:auto minmax(0,1fr) minmax(0,1fr) minmax(0,1fr) auto;align-items:end}}
 .try h3{font-stretch:85%;font-size:1.3rem;line-height:1.1;max-width:14ch}
 .field{display:grid;gap:4px}
 .field span{font-size:.78rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase}
-input{font:inherit;min-height:48px;padding:0 .8rem;border:1.5px solid var(--ink);border-radius:3px;background:#fff;width:100%}
-input:focus{outline:3px solid var(--ink);outline-offset:1px}
+input,.try select{font:inherit;min-height:48px;padding:0 .8rem;border:1.5px solid var(--ink);border-radius:3px;background:#fff;width:100%}
+input:focus,.try select:focus{outline:3px solid var(--ink);outline-offset:1px}
 .try small{grid-column:1/-1;color:var(--ink-2);font-size:.85rem}
 
 .barcode{display:block;width:100%;height:26px;margin:0;color:var(--ink);opacity:.9}
@@ -136,12 +136,14 @@ section.white{background:var(--tag)}
 
 /* Plan comparison extends the existing packing-list vocabulary. */
 .plan-compare{display:grid;gap:40px;margin-top:28px;align-items:start}
+.plan-compare>*{min-width:0}
 @media(min-width:860px){.plan-compare{grid-template-columns:1fr 1.3fr}}
 .plan-table{width:100%;border-collapse:collapse;background:var(--tag);font-size:1rem}
 .plan-table caption{text-align:left;font-weight:700;margin-bottom:12px}
 .plan-table th,.plan-table td{padding:12px 8px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
 .plan-table thead th{border-bottom:2px solid var(--ink)}
 .plan-table small{display:block;font-size:1rem;font-weight:400;color:var(--ink-2)}
+@media(max-width:359px){.plan-table,.plan-table small{font-size:.875rem}.plan-table th,.plan-table td{padding:12px 6px}}
 .plan-compare label{display:block;font-weight:700;margin-bottom:6px}
 .plan-compare input{display:block;width:100%;max-width:320px;min-height:48px;border:1.5px solid var(--ink);border-radius:3px;font:inherit;padding:10px 12px;background:var(--tag);color:var(--ink)}
 .plan-compare .hint{color:var(--ink-2);margin:8px 0 16px}
@@ -272,9 +274,11 @@ footer p{color:var(--ink-2);font-size:.92rem}
     <form class="try" id="try" action="/plumber/" method="get">
       <h3>See it with your name on it</h3>
       <label class="field"><span>Business name</span><input name="n" autocomplete="organization" placeholder="Bob's Plumbing" required maxlength="60"></label>
+      <label class="field"><span>Trade</span><select id="sample-trade" disabled><option value="/plumber/">Plumbing</option><option value="/roofer/">Roofing</option><option value="/landscaper/">Landscaping</option><option value="/cleaner/">Cleaning</option><option value="/painter/">Painting</option><option value="/hvac/">HVAC</option></select></label>
       <label class="field"><span>Town</span><input name="c" autocomplete="address-level2" placeholder="Tulsa" maxlength="40"></label>
       <button class="btn btn-primary" type="submit">Show me</button>
-      <small>Opens a sample plumbing site with your business on it. Yours is built for your trade, with your photos and prices.</small>
+      <small>Opens a sample for your selected trade with your business name and town. Services are examples; your real site uses the details you approve.</small>
+      <noscript><small>The form opens the plumbing sample. Other samples: <a href="/roofer/">Roofing</a>, <a href="/landscaper/">Landscaping</a>, <a href="/cleaner/">Cleaning</a>, <a href="/painter/">Painting</a>, <a href="/hvac/">HVAC</a>.</small></noscript>
     </form>
   </div>
   <svg class="barcode" style="margin-top:80px" aria-hidden="true"><use href="#bars"/></svg>
@@ -481,6 +485,9 @@ footer p{color:var(--ink-2);font-size:.92rem}
 </footer>
 
 <script>
+var sampleTrade = document.getElementById("sample-trade");
+sampleTrade.disabled = false;
+document.getElementById("try").addEventListener("submit", function () { this.action = sampleTrade.value; });
 document.getElementById("yr").textContent = new Date().getFullYear();
 document.getElementById("move").addEventListener("click", function () {
   var p = document.getElementById("portal");
