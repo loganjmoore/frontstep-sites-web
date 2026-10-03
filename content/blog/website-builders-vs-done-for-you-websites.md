@@ -37,6 +37,8 @@ Compare written scopes, not just the biggest price on the page. A builder subscr
 
 [Front Step Sites](/) is a done-for-you website service for small businesses in the United States. As one example, it costs $99 a year with the domain included and no setup fee, and the Launch plan includes two change requests a month, live within two business days. Those are useful details to compare with your expected workload, rather than assuming every service handles changes the same way.
 
+For a side-by-side look at two common builders, read [Front Step Sites vs. Wix](/blog/front-step-sites-vs-wix-for-a-small-business-website/) and [Front Step Sites vs. Squarespace](/blog/front-step-sites-vs-squarespace-for-a-local-business/).
+
 | | DIY builder | Front Step Sites Launch |
 | --- | --- | --- |
 | Price | Wix Light from $17/mo; Squarespace Basic $19/mo billed annually | $99/yr, domain included, no setup fee |

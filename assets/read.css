@@ -39,6 +39,7 @@ footer.site a{color:var(--ink)}
 .crumbs a:hover{text-decoration:underline}
 .crumbs .sep{margin:0 .4rem}
 .doc .updated{color:var(--ink-2);font-size:.92rem;margin:.1rem 0 1.3rem}
+.doc .direct-answer{font-size:1.15rem;font-weight:600;margin:0 0 .6rem;max-width:60ch}
 
 /* blog: short-answer and offer tags. Already inside the .doc card, so no
    border/shadow of their own (that would nest card-on-card): a left ink bar

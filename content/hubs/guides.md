@@ -1,0 +1,3 @@
+## What these guides cover
+
+The guides explain the practical side of a small business website: what hosting and domains are, who should handle the building and the edits, how to check the basics on a phone, and how to keep your business listings matching. Start with [website builders vs done-for-you websites](/blog/website-builders-vs-done-for-you-websites/) to decide who does the work. Then compare the two options in detail: [Front Step Sites vs. Wix](/blog/front-step-sites-vs-wix-for-a-small-business-website/) and [Front Step Sites vs. Squarespace](/blog/front-step-sites-vs-squarespace-for-a-local-business/). For how AI assistants find and quote local businesses, see the [AI search hub](/blog/ai-search/).
