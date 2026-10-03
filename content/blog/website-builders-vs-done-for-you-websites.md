@@ -31,6 +31,10 @@ Try a small exercise before committing. Draft a service page explaining what you
 
 A done-for-you provider can take on agreed parts of that work, but you still supply accurate business information and approve the result. Ask who writes the text and who checks it. You are the person who knows whether your crew installs fence gates, repairs them, or only replaces whole fences.
 
+## Do you need HTML to have a website?
+
+No. A small business does not need to write HTML to get a working site. A builder uses menus and an editor in place of code, and a done-for-you provider writes the words and builds the pages for you. For the wider trade-offs, read [done-for-you website vs building it yourself](/blog/done-for-you-website-vs-building-it-yourself/).
+
 ## Compare the bill with the responsibilities
 
 Compare written scopes, not just the biggest price on the page. A builder subscription buys access to a product. A service agreement can include people doing work for you, but the scope needs to say which work.

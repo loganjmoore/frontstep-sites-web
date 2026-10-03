@@ -8,6 +8,8 @@ lead: Front Step Sites is a done-for-you website service for small businesses; W
 updated: 2026-10-03
 ---
 
+This comparison is for owners deciding whether to build and edit a website themselves in Wix, or have Front Step Sites build it and handle the changes for $99 a year.
+
 Front Step Sites is a done-for-you website service for small businesses, priced at $99 a year with the domain included, while Wix is a do-it-yourself website builder you edit directly. Should you use Wix or have Front Step Sites handle your small business website? The decision starts with how you want to spend your time: working on the pages yourself or sending someone the changes you need. Price matters, but so do the jobs your website must handle and who will keep its information accurate after launch.
 
 ## Front Step Sites vs. Wix at a glance
@@ -36,6 +38,8 @@ Those prices describe different ways of handling the work. If you build your sit
 Wix is a reasonable option if you enjoy adjusting pages and want direct involvement in the build. Its [website template catalog](https://www.wix.com/website/templates) provides starting points you can review for the kind of site you want. A starting design still needs your business information, photos, and decisions about what belongs on each page.
 
 DIY can fit a shop owner who already sets aside time for marketing and likes trying different layouts. It can also fit a business with an employee who knows the website and has a clear responsibility to maintain it.
+
+If you want the full order of steps for building the site yourself, read [how to create a small business website](/blog/how-to-create-a-small-business-website/). Google Sites is another builder owners try first, and [Google Sites alternatives for a business](/blog/google-sites-alternatives-for-a-business/) compares it with the other options.
 
 Before deciding, try the work you expect to do. Draft a service description, choose a few real photos, and sketch the contact page. If that process interests you, building may be a good use of your time. If it keeps falling behind estimates and customer calls, read [done-for-you versus building it yourself](/blog/done-for-you-website-vs-building-it-yourself/) before committing.
 
