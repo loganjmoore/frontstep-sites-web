@@ -7,7 +7,7 @@ answer: "The biggest website contract red flags are unclear domain control, vagu
 updated: 2026-09-26
 ---
 
-How do you tell whether a website contract protects a workable arrangement or leaves you stuck? Read it against ordinary situations: adding a service, fixing the phone number, disputing a charge, or moving to someone else. You want clear answers before the first invoice, while you can still compare your options.
+How do you tell whether a website contract protects a workable arrangement or leaves you stuck? A website contract is the written agreement that sets what you get, what you pay, and how you can leave. Read it against ordinary situations: adding a service, fixing the phone number, disputing a charge, or moving to someone else. You want clear answers before the first invoice, while you can still compare your options.
 
 ## Red flag: nobody will say who controls the domain
 

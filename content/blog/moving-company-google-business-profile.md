@@ -1,5 +1,5 @@
 ---
-title: "Moving Company Google Business Profile Setup"
+title: "Moving Company Google Business Profile"
 description: "Set up a moving company Google Business Profile with the right service area, your USDOT number, and honest weekend hours, using Google's own rules."
 slug: "moving-company-google-business-profile"
 cluster: "trades/moving"

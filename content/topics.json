@@ -1576,7 +1576,7 @@
  },
  {
   "slug": "moving-company-google-business-profile",
-  "title": "Moving Company Google Business Profile Setup",
+  "title": "Moving Company Google Business Profile",
   "cluster": "trades/moving",
   "trade": "moving company",
   "angle": "GBP setup for movers: service area built from cities/zips instead of a radius, USDOT number placement, and weekend hours that match when moves get booked"

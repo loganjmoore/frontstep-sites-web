@@ -7,7 +7,7 @@ answer: "SSL is the familiar name for the certificate setup that enables an encr
 updated: "2026-09-26"
 ---
 
-Someone says your website needs SSL and a padlock, but you are not sure what you are supposed to buy or check. Is this an expensive extra or a normal part of running a business website? You need working HTTPS, and you should expect your provider to explain how certificates and renewals are handled.
+Someone says your website needs SSL and a padlock, but you are not sure what you are supposed to buy or check. An SSL certificate is a small piece of setup that lets your site run on HTTPS, the encrypted version of your web address. Is this an expensive extra or a normal part of running a business website? You need working HTTPS, and you should expect your provider to explain how certificates and renewals are handled.
 
 ## Understand the connection in plain English
 
