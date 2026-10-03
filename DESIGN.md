@@ -132,3 +132,5 @@ This system governs Front Step Sites' own surfaces: the one-pager, printables, a
 - Don't invent testimonials, ratings, customer counts, or logos. None exist yet.
 - Don't use em dashes in copy. Periods and commas.
 - Don't round tag corners or put gradients on tags; a tag is paper. The steel rail's sheen is the only gradient.
+
+Scoped plan handoff: retain existing pricing composition and native secondary buttons. Three actions state plan and billed interval; wrap rather than compress on phones. Existing subscribers get sign-in guidance. Never silently route Grow to Launch. Portal deploy/configuration precedes these links; no new claims about live payments.
