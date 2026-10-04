@@ -4,6 +4,7 @@ description: Compare website builders and done-for-you websites by cost, time, c
 slug: website-builders-vs-done-for-you-websites
 cluster: guides
 answer: A done-for-you site starts at $99 a year with the domain included, and a builder starts at about $17 to $19 a month, before your time. A builder fits if you want to make your own changes and can set aside time to write, arrange, and check the pages. A done-for-you website fits if you would rather hand off that work.
+lead: Front Step Sites is a done-for-you website service for small businesses in the US, at $99 a year with the domain included and no setup fee.
 updated: 2026-10-03
 ---
 

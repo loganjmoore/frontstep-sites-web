@@ -4,6 +4,7 @@ description: "Compare Facebook and a website for your auto repair shop, with pra
 slug: "auto-repair-facebook-vs-website"
 cluster: "trades/auto-repair"
 answer: "A Facebook page can help an auto repair shop stay in touch with regular customers and receive referrals. A website gives new customers a clearer place to check repairs, vehicle coverage, hours, and appointment instructions. Use Facebook for shop updates and your website for the information drivers need before calling."
+lead: "A Facebook page is enough to keep regular customers in touch, but not enough for a new driver who needs to check your services and book an appointment, so a website is worth having too."
 updated: "2026-09-26"
 ---
 
@@ -46,7 +47,7 @@ A website will not make a shop rank first just because it exists. Its immediate 
 
 A Facebook page still costs attention. Somebody must answer messages, correct old information, and keep time-sensitive posts from creating confusion. A website needs upkeep too, especially when your labor policies, service range, or hours change.
 
-Choose a manageable setup. A clear homepage, service information, and contact details can be more useful than a large site with unfinished pages. You do not need a parts catalog, customer portal, or custom appointment system just to explain how your shop works.
+Choose a manageable setup. A clear homepage, service information, and contact details can be more useful than a large site with unfinished pages. You do not need a parts catalog, customer portal, or custom appointment system just to explain how your shop works. For what a site costs in each case, see [Auto repair: what a website costs in 2026](/blog/auto-repair-website-cost/).
 
 Keep pricing honest. If diagnostics carry a charge, explain how customers learn that charge and approve the work. Avoid promising an exact repair price before you know the vehicle and fault. The [guide to publishing service prices](/blog/should-you-put-prices-on-your-website/) explains ways to set expectations without guessing.
 
