@@ -3,6 +3,7 @@ title: "Best web builder sites for a small business, compared"
 description: "Wix, Squarespace, and Google Sites compared on price, who makes edits, and fit, plus when a done-for-you site is the better choice. Checked October 2026."
 slug: "best-web-builder-sites-for-a-small-business"
 cluster: "compare"
+lead: "A website builder is a self-serve tool for making and editing your own site, and this comparison is for small business owners choosing between Wix, Squarespace, Google Sites, and a done-for-you site."
 answer: "The best web builder for a small business is the one you will keep up to date. Wix and Squarespace are the best-known paid builders, at $204 and $228 a year as we checked them, and you do all the editing. If you would rather hand off the edits, a done-for-you site at $99 a year with the domain included is the third option to weigh."
 updated: "2026-10-04"
 image: "/assets/blog/best-web-builder-sites-for-a-small-business-cover.svg"
@@ -42,7 +43,7 @@ The trade-off is control. You cannot make a change yourself at 9 p.m., and you w
 
 ## Which builder fits which owner?
 
-- Pick Wix or Squarespace if you like the editor and can give the site a regular hour each week. Our side-by-side for [Wix](/blog/front-step-sites-vs-wix-for-a-small-business-website/) and for [Squarespace](/blog/front-step-sites-vs-squarespace-for-a-local-business/) shows where each one asks more of you.
+- Pick Wix or Squarespace if you like the editor and can give the site a regular hour each week. Our side-by-side for [Wix](/blog/front-step-sites-vs-wix-for-a-small-business-website/) and for [Squarespace](/blog/front-step-sites-vs-squarespace-for-a-local-business/) shows where each one asks more of you. If you want the steps for building the site yourself, read [how to create a small business website](/blog/how-to-create-a-small-business-website/).
 - Pick Google Sites for a handful of simple pages you can publish this week. Read [Google Sites alternatives for a business](/blog/google-sites-alternatives-for-a-business/) before you commit, because the limits matter more once the site grows past a few pages.
 - Pick a done-for-you site if you know what you want to say but do not want to build or edit the pages yourself.
 

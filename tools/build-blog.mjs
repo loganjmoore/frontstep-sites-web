@@ -625,8 +625,8 @@ function main() {
     top: topPicks(cluster),
   });
 
-  // topics.json lists new posts last, so the last three built articles are the newest.
-  const latestRows = articles.slice(-3).reverse();
+  // topics.json lists new posts last, so the last six built articles are the newest.
+  const latestRows = articles.slice(-6).reverse();
 
   writeFileSync(join(BLOG_DIR, "index.html"), renderBlogHub(tradeRows, hubRow("guides"), hubRow("ai-search"), hubRow("compare"), latestRows));
 
