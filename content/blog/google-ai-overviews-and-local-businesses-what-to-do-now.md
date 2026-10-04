@@ -4,6 +4,7 @@ description: "Learn what local businesses can do about Google AI Overviews, from
 slug: google-ai-overviews-and-local-businesses-what-to-do-now
 cluster: ai-search
 answer: "Start with clear service pages, accurate business information, and answers to the questions customers ask before hiring you. Google says its normal search fundamentals still apply to AI Overviews, with no special optimization required. These steps give customers useful information, but they do not guarantee that Google will mention or link to your business."
+lead: Front Step Sites is a done-for-you website service for small businesses in the US, at $99 a year with the domain included and no setup fee.
 updated: 2026-09-26
 ---
 

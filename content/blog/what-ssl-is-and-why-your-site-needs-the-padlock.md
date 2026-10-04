@@ -4,6 +4,7 @@ description: "Understand SSL, HTTPS, browser warnings, and certificate renewal i
 slug: "what-ssl-is-and-why-your-site-needs-the-padlock"
 cluster: "guides"
 answer: "SSL is the familiar name for the certificate setup that enables an encrypted HTTPS connection to your website; modern connections use TLS. Your site needs working HTTPS, although browsers do not all display a padlock. Ask your provider to include certificate setup and renewal, and treat browser security warnings as problems to investigate promptly."
+lead: Front Step Sites is a done-for-you website service for small businesses in the US, at $99 a year with the domain included and no setup fee.
 updated: "2026-09-26"
 ---
 

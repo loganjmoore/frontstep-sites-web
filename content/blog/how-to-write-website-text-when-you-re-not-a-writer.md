@@ -4,6 +4,7 @@ description: "Write clear website text using the words you already say to custom
 slug: "how-to-write-website-text-when-you-re-not-a-writer"
 cluster: "guides"
 answer: "Write your website text the way you explain your work to a new customer. Say what you do, where you work, what the customer can expect, and how to contact you. Start with notes from real conversations, organize them by page, and replace broad claims with details you can honestly support."
+lead: Front Step Sites is a done-for-you website service for small businesses in the US, at $99 a year with the domain included and no setup fee.
 updated: "2026-09-26"
 ---
 

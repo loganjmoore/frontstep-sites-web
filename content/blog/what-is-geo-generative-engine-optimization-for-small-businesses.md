@@ -4,6 +4,7 @@ description: "Understand GEO for small businesses, how it relates to local SEO, 
 slug: "what-is-geo-generative-engine-optimization-for-small-businesses"
 cluster: "ai-search"
 answer: "GEO means generative engine optimization: improving the information about your business so AI search tools can understand it and potentially use it in answers. For a local business, the useful work overlaps with ordinary SEO: accurate service details, clear answers, accessible pages, and consistent listings. None of it guarantees a recommendation."
+lead: Front Step Sites is a done-for-you website service for small businesses in the US, at $99 a year with the domain included and no setup fee.
 updated: "2026-09-26"
 ---
 

@@ -55,7 +55,8 @@ function formatDate(iso) {
   return `${month} ${Number(d)}, ${y}`;
 }
 function firstSentence(text) {
-  const m = String(text).match(/^[^.!?]*[.!?]/);
+  // A terminator only ends the sentence when whitespace or the end follows it, so "llms.txt" and "2.5" survive.
+  const m = String(text).match(/^.*?[.!?](?=\s|$)/s);
   return (m ? m[0] : text).trim();
 }
 function stripMd(text) {
