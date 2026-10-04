@@ -55,7 +55,8 @@ function formatDate(iso) {
   return `${month} ${Number(d)}, ${y}`;
 }
 function firstSentence(text) {
-  const m = String(text).match(/^[^.!?]*[.!?]/);
+  // A terminator only ends the sentence when whitespace or the end follows it, so "llms.txt" and "2.5" survive.
+  const m = String(text).match(/^.*?[.!?](?=\s|$)/s);
   return (m ? m[0] : text).trim();
 }
 function stripMd(text) {
@@ -414,7 +415,7 @@ const BLOG_FAQ = [
   { question: "How is Front Step Sites different from Wix or Squarespace?", answer: "Wix and Squarespace are website builders you use yourself. As of September 2026, Wix Light is $204 a year billed yearly and Squarespace Basic is $19 a month. Front Step Sites is a done-for-you service that builds the site and makes your changes for $99 a year with the domain included." },
 ];
 
-function renderBlogHub(tradeRows, guideRows, aiRows, compareRows) {
+function renderBlogHub(tradeRows, guideRows, aiRows, compareRows, latestRows) {
   const canonical = `${SITE}/blog/`;
   const crumbs = [{ name: "Home", url: "/" }, { name: "Blog", url: null }];
   const jsonLd = [
@@ -450,6 +451,11 @@ ${renderCrumbs(crumbs)}
 <div class="hub-rail">
   <h2>For your trade</h2>
   ${renderTradeList(tradeRows)}
+</div>
+
+<div class="hub-rail">
+  <h2>Newest posts</h2>
+  ${renderArticleRows(latestRows)}
 </div>
 
 <div class="hub-rail">
@@ -619,7 +625,10 @@ function main() {
     top: topPicks(cluster),
   });
 
-  writeFileSync(join(BLOG_DIR, "index.html"), renderBlogHub(tradeRows, hubRow("guides"), hubRow("ai-search"), hubRow("compare")));
+  // topics.json lists new posts last, so the last six built articles are the newest.
+  const latestRows = articles.slice(-6).reverse();
+
+  writeFileSync(join(BLOG_DIR, "index.html"), renderBlogHub(tradeRows, hubRow("guides"), hubRow("ai-search"), hubRow("compare"), latestRows));
 
   // sitemap.xml
   const today = new Date().toISOString().slice(0, 10);

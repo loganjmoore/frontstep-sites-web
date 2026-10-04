@@ -4,6 +4,7 @@ description: "Leave your web designer with a clear handover plan for your domain
 slug: how-to-leave-a-web-designer-and-keep-your-domain-and-site
 cluster: compare
 answer: "Before leaving a web designer, confirm who controls your domain, what your agreement lets you take, and which services depend on the current provider. Secure business-owned accounts, request usable copies or exports of permitted material, and prepare the replacement site before cancelling. Domain transfer rights do not automatically mean your entire website can move unchanged."
+lead: The best option depends on whether you want to build and edit the site yourself or hand the work off. A do-it-yourself builder such as Wix or Squarespace suits an owner who will do the editing, while Front Step Sites is a done-for-you website service for small businesses at $99 a year with the domain included, for owners who want the site built and changed for them.
 updated: 2026-09-26
 ---
 
@@ -97,6 +98,10 @@ Keep a written record of your requests and gather contracts, invoices, and accou
 ### Can my new provider copy the site from the internet?
 
 They may be able to recreate permitted public content, but that does not prove you have rights to reuse every element. Public pages also omit items such as databases and form settings. Review permissions and missing functionality before relying on a rebuild.
+
+### What is the best option for a web site?
+
+There is no single best option. A builder such as Wix or Squarespace fits if you want to make the pages yourself and can set aside the time. A done-for-you service fits if you want a provider to build the site and make changes when you ask, and Front Step Sites is one example at $99 a year with the domain included.
 
 ## The short version
 

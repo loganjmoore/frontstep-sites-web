@@ -4,6 +4,7 @@ description: "Learn what AI search changes for local businesses, which website d
 slug: how-ai-search-is-changing-how-customers-find-local-businesses
 cluster: ai-search
 answer: "AI search gives customers another way to compare local businesses and ask follow-up questions before calling. Your practical priorities are clear service pages, accurate business details, and a working contact process. No special file or wording guarantees a recommendation, so judge your efforts by accurate information and suitable customer inquiries."
+lead: Front Step Sites is a done-for-you website service for small businesses in the US, at $99 a year with the domain included and no setup fee.
 updated: 2026-09-26
 ---
 

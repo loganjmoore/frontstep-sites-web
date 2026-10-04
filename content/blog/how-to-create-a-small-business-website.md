@@ -9,7 +9,7 @@ image: "/assets/blog/how-to-create-a-small-business-website-cover.svg"
 imageAlt: "Cover for How to create a small business website: nine steps from domain to launch, with rough hours for each"
 ---
 
-You want a website that tells customers who you are, what you do, and how to reach you. You don't need a designer to get there, but you do need an order of operations. Choose the builder first and you'll end up redoing work once you find out what the site has to say.
+A small business website is a set of pages that tells customers who you are, what you do, and how to reach you. You don't need a designer to build one, but you do need an order of operations. Choose the builder first and you'll end up redoing work once you find out what the site has to say.
 
 ## What are the steps, in order?
 

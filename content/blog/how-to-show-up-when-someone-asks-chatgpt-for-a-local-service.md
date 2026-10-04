@@ -4,6 +4,7 @@ description: "Help customers and AI search understand your local business with c
 slug: how-to-show-up-when-someone-asks-chatgpt-for-a-local-service
 cluster: ai-search
 answer: "Start with accurate, accessible information about your services, service area, hours, and contact details. Keep your business listings consistent, collect genuine reviews, and ask your website provider to check search access and structured data. These steps make your business easier to understand and verify, but they do not guarantee that ChatGPT will recommend you."
+lead: Front Step Sites is a done-for-you website service for small businesses in the US, at $99 a year with the domain included and no setup fee.
 updated: 2026-09-26
 ---
 

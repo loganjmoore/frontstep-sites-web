@@ -4,6 +4,7 @@ description: "Move your business domain with a clear plan for account access, tr
 slug: "how-to-move-a-domain-to-a-new-provider"
 cluster: "guides"
 answer: "To move a domain to a new registrar, confirm access and transfer eligibility, protect the existing website and email settings, unlock the domain, and use its authorization code at the new provider. A domain transfer does not move website files or mailboxes. Keep old services active until you have verified the transfer and every service that depends on the domain."
+lead: Front Step Sites is a done-for-you website service for small businesses in the US, at $99 a year with the domain included and no setup fee.
 updated: "2026-09-26"
 ---
 

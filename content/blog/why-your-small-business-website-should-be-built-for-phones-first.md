@@ -4,6 +4,7 @@ description: "Build a small business website customers can use on their phones, 
 slug: "why-your-small-business-website-should-be-built-for-phones-first"
 cluster: "guides"
 answer: "Your small business website should be built for phones first because a customer may need to check your services, find your hours, or call while away from a computer. Start with readable text, clear service areas, easy call buttons, and short forms. Then check those tasks on a real phone before approving the site."
+lead: Front Step Sites is a done-for-you website service for small businesses in the US, at $99 a year with the domain included and no setup fee.
 updated: "2026-09-26"
 ---
 

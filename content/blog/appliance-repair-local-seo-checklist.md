@@ -1,6 +1,6 @@
 ---
 title: "Local SEO checklist for appliance repair"
-description: "A practical local SEO checklist for appliance repair shops: Google Business Profile, NAP consistency, brand and appliance-type pages, and honest same-day claims."
+description: "A practical local SEO checklist for appliance repair shops: Google Business Profile, NAP consistency, appliance-type pages, and honest same-day claims."
 slug: "appliance-repair-local-seo-checklist"
 cluster: "trades/appliance-repair"
 answer: "A local SEO checklist for an appliance repair business covers four things: a complete Google Business Profile that names the brands and appliance types you fix, your business name, address, and phone matching exactly across every listing, a page for each appliance type you service, and same-day or next-day availability stated honestly rather than as a vague promise."

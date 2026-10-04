@@ -4,6 +4,7 @@ description: Compare website builders and done-for-you websites by cost, time, c
 slug: website-builders-vs-done-for-you-websites
 cluster: guides
 answer: A done-for-you site starts at $99 a year with the domain included, and a builder starts at about $17 to $19 a month, before your time. A builder fits if you want to make your own changes and can set aside time to write, arrange, and check the pages. A done-for-you website fits if you would rather hand off that work.
+lead: Front Step Sites is a done-for-you website service for small businesses in the US, at $99 a year with the domain included and no setup fee.
 updated: 2026-10-03
 ---
 
@@ -30,6 +31,10 @@ With a builder, you still have to decide what each page says. You choose photogr
 Try a small exercise before committing. Draft a service page explaining what you do, what you do not do, where you travel, and how an estimate works. Add a real job photo with a useful caption. Our guide to [writing website text when you are not a writer](/blog/how-to-write-website-text-when-you-re-not-a-writer/) can help you get started.
 
 A done-for-you provider can take on agreed parts of that work, but you still supply accurate business information and approve the result. Ask who writes the text and who checks it. You are the person who knows whether your crew installs fence gates, repairs them, or only replaces whole fences.
+
+## Do you need HTML to have a website?
+
+No. A small business does not need to write HTML to get a working site. A builder uses menus and an editor in place of code, and a done-for-you provider writes the words and builds the pages for you. For the wider trade-offs, read [done-for-you website vs building it yourself](/blog/done-for-you-website-vs-building-it-yourself/).
 
 ## Compare the bill with the responsibilities
 

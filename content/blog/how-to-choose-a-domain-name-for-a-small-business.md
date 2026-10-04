@@ -4,6 +4,7 @@ description: "Choose a small business domain that is easy to say, spell, and kee
 slug: "how-to-choose-a-domain-name-for-a-small-business"
 cluster: "guides"
 answer: "Choose a domain that closely matches your business name and is easy to say, spell, and remember. Prefer a simple address over a string of services and towns. Check for confusingly similar businesses, review renewal terms, and make sure the registration and account remain under your control rather than a designer’s personal account."
+lead: Front Step Sites is a done-for-you website service for small businesses in the US, at $99 a year with the domain included and no setup fee.
 updated: "2026-09-26"
 ---
 
