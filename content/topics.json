@@ -1612,5 +1612,23 @@
   "title": "How to create a small business website",
   "cluster": "guides",
   "angle": "the nine steps in order, with rough hours and who does each one"
+ },
+ {
+  "slug": "best-web-builder-sites-for-a-small-business",
+  "title": "Best web builder sites for a small business, compared",
+  "cluster": "compare",
+  "angle": "Wix, Squarespace, and Google Sites on price and who makes edits, with W3Techs market share and when a done-for-you site fits better"
+ },
+ {
+  "slug": "website-maker-or-done-for-you-three-year-cost",
+  "title": "Website maker or done-for-you? A three-year cost check",
+  "cluster": "compare",
+  "angle": "a three-year worksheet: builder subscriptions plus owner hours against a $99 a year done-for-you site, with break-even hours"
+ },
+ {
+  "slug": "how-to-make-a-google-site",
+  "title": "How to make a Google Site, step by step",
+  "cluster": "guides",
+  "angle": "the five steps from template to publish, then custom domains and who can connect them, from Google's own help pages"
  }
 ]
