@@ -7,7 +7,7 @@ answer: "Build your website yourself if you want direct editing control and can 
 updated: 2026-09-26
 ---
 
-Should you build your business website yourself or pay someone to handle it? Either can work, but the right choice depends on who will finish the job and keep the information correct afterward. Start with the work your site needs to do, then decide who has the time and skills to do it.
+Should you build your business website yourself or pay someone to handle it? A done-for-you website is a site that a service designs, builds, and maintains for you while you supply the business details. Either can work, but the right choice depends on who will finish the job and keep the information correct afterward. Start with the work your site needs to do, then decide who has the time and skills to do it.
 
 ## Write down the job before choosing the tool
 

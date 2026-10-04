@@ -9,7 +9,7 @@ image: "/assets/blog/can-you-run-a-business-website-on-canva-cover.svg"
 imageAlt: "Cover for Can you run a business website on Canva: a single Canva page versus a multi-page business site"
 ---
 
-Canva is where many owners already make flyers, menus, and business cards, so making a website there feels like the obvious next step. The question is whether a single Canva page can do the job a local business needs a website to do. It can hold a brochure. It can't hold the rest of your business.
+Canva is where many owners already make flyers, menus, and business cards, so making a website there feels like the obvious next step. Canva Websites is a page builder inside Canva that publishes one page from its templates. The question is whether a single Canva page can do the job a local business needs a website to do. It can hold a brochure. It can't hold the rest of your business.
 
 ## What can Canva Websites do well?
 
