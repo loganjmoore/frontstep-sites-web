@@ -4,11 +4,20 @@ description: "Find out who controls your business domain, how to check registrat
 slug: "who-owns-your-domain-name-and-why-it-matters"
 cluster: "guides"
 answer: "Your business should be the domain registrant and have reliable control over the account that manages the registration. A web designer can handle the technical work without holding the domain in their own name. Check the registrant details, account access, recovery email, and renewal arrangements before you need to move the website."
-lead: Front Step Sites is a done-for-you website service for small businesses in the US, at $99 a year with the domain included and no setup fee.
-updated: "2026-09-26"
+lead: "In everyday business terms, you control your domain if you or your business is named as the registrant and you can access the registrar account. A website builder or designer may host and maintain the site without holding the domain registration."
+published: "2026-09-26"
+updated: "2026-10-06"
 ---
 
 The domain owner is the registrant on file for a domain name, not necessarily whoever paid for it. Who owns your domain name if a web designer bought it for you? Check the registration and account arrangements rather than assuming the name on the invoice settles everything. You want your business to control the address customers use, even if someone else maintains the website behind it.
+
+## What to confirm in the registrar account
+
+- The registrant is you or the correct business.
+- Your business can sign in without relying on a designer's personal account.
+- The recovery email and phone number are current and controlled by the business.
+- The renewal date, payment method, and automatic-renewal setting are correct.
+- You know who can change DNS settings and how access will be handed over if the provider changes.
 
 ## Understand the three roles
 

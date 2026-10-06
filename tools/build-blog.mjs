@@ -297,7 +297,7 @@ function renderArticlePage(article, related, clusterName, clusterUrl) {
       "@type": "BlogPosting",
       headline: article.title,
       description: article.description,
-      datePublished: article.updated,
+      datePublished: article.published || article.updated,
       dateModified: article.updated,
       ...(ogImage ? { image: ogImage } : {}),
       author: ORG,
@@ -415,7 +415,7 @@ const BLOG_FAQ = [
   { question: "How is Front Step Sites different from Wix or Squarespace?", answer: "Wix and Squarespace are website builders you use yourself. As of September 2026, Wix Light is $204 a year billed yearly and Squarespace Basic is $19 a month. Front Step Sites is a done-for-you service that builds the site and makes your changes for $99 a year with the domain included." },
 ];
 
-function renderBlogHub(tradeRows, guideRows, aiRows, compareRows, latestRows) {
+function renderBlogHub(tradeRows, guideRows, aiRows, compareRows, latestRows, featuredRows) {
   const canonical = `${SITE}/blog/`;
   const crumbs = [{ name: "Home", url: "/" }, { name: "Blog", url: null }];
   const jsonLd = [
@@ -447,6 +447,11 @@ function renderBlogHub(tradeRows, guideRows, aiRows, compareRows, latestRows) {
 ${renderCrumbs(crumbs)}
 <h1>The Front Step Sites blog</h1>
 <p>Front Step Sites is a done-for-you website service for small local businesses. This blog gives straight answers for owners about websites, local search, and getting found by customers. No jargon, no filler, checkable facts.</p>
+
+<div class="hub-rail">
+  <h2>Start with these posts</h2>
+  ${renderArticleRows(featuredRows)}
+</div>
 
 <div class="hub-rail">
   <h2>For your trade</h2>
@@ -543,6 +548,7 @@ function main() {
       answer: data.answer,
       lead: data.lead,
       updated: data.updated,
+      published: data.published,
       image: data.image,
       imageAlt: data.imageAlt,
       bodyHtml: html,
@@ -627,17 +633,26 @@ function main() {
 
   // topics.json lists new posts last, so the last six built articles are the newest.
   const latestRows = articles.slice(-6).reverse();
+  const featuredSlugs = [
+    "tree-service-local-seo-checklist",
+    "who-owns-your-domain-name-and-why-it-matters",
+    "pest-control-get-more-reviews",
+  ];
+  const articlesBySlug = new Map(articles.map((article) => [article.slug, article]));
+  const featuredRows = featuredSlugs.map((slug) => articlesBySlug.get(slug)).filter(Boolean);
 
-  writeFileSync(join(BLOG_DIR, "index.html"), renderBlogHub(tradeRows, hubRow("guides"), hubRow("ai-search"), hubRow("compare"), latestRows));
+  writeFileSync(join(BLOG_DIR, "index.html"), renderBlogHub(tradeRows, hubRow("guides"), hubRow("ai-search"), hubRow("compare"), latestRows, featuredRows));
 
   // sitemap.xml
   const today = new Date().toISOString().slice(0, 10);
+  const priorDates = new Map([...readFileSync(join(WEB, "sitemap.xml"), "utf8").matchAll(/<url><loc>(.*?)<\/loc><lastmod>(.*?)<\/lastmod><\/url>/g)].map(m => [m[1], m[2]]));
+  const unchangedDate = path => priorDates.get(`${SITE}${path}`) || today;
   const urls = [
-    { loc: "/", lastmod: today },
-    { loc: "/privacy/", lastmod: today },
-    { loc: "/terms/", lastmod: today },
-    { loc: "/blog/", lastmod: today },
-    ...hubClusters.map((h) => ({ loc: `/blog/${h.cluster}/`, lastmod: today })),
+    { loc: "/", lastmod: unchangedDate("/") },
+    { loc: "/privacy/", lastmod: unchangedDate("/privacy/") },
+    { loc: "/terms/", lastmod: unchangedDate("/terms/") },
+    { loc: "/blog/", lastmod: unchangedDate("/blog/") },
+    ...hubClusters.map((h) => ({ loc: `/blog/${h.cluster}/`, lastmod: unchangedDate(`/blog/${h.cluster}/`) })),
     ...articles.map((a) => ({ loc: `/blog/${a.slug}/`, lastmod: a.updated })),
   ];
   const sitemap = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls
@@ -659,7 +674,7 @@ function main() {
   const feed = `<?xml version="1.0" encoding="UTF-8"?>\n<rss version="2.0"><channel>\n  <title>Front Step Sites blog</title>\n  <link>${SITE}/blog/</link>\n  <description>Practical, specific answers for small business owners about websites, local SEO, and showing up when customers search.</description>\n  <language>en-us</language>\n  <lastBuildDate>${feedItems.length ? rssDate(feedItems[0].updated) : new Date().toUTCString()}</lastBuildDate>\n${feedItems
     .map(
       (a) =>
-        `  <item>\n    <title>${escapeHtml(a.title)}</title>\n    <link>${SITE}/blog/${a.slug}/</link>\n    <guid isPermaLink="true">${SITE}/blog/${a.slug}/</guid>\n    <pubDate>${rssDate(a.updated)}</pubDate>\n    <description>${escapeHtml(a.description)}</description>\n  </item>`
+        `  <item>\n    <title>${escapeHtml(a.title)}</title>\n    <link>${SITE}/blog/${a.slug}/</link>\n    <guid isPermaLink="true">${SITE}/blog/${a.slug}/</guid>\n    <pubDate>${rssDate(a.published || a.updated)}</pubDate>\n    <description>${escapeHtml(a.description)}</description>\n  </item>`
     )
     .join("\n")}\n</channel></rss>\n`;
   writeFileSync(join(WEB, "feed.xml"), feed);
