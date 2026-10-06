@@ -103,6 +103,22 @@ test("flagged articles define their subject near the top", () => {
   assert.match(pest, /A pest control review request is an optional invitation/);
 });
 
+test("AI strategy articles lead with the requested direct answers and related links", () => {
+  const pest = read("blog/pest-control-get-more-reviews/index.html");
+  assert.match(pest, /<h2 id="how-to-get-more-google-reviews-for-pest-control">How to get more Google reviews for pest control<\/h2>/);
+  assert.match(pest, /Pest control customers leave reviews when you ask by text within an hour of the job and make the link a single tap\./);
+
+  const cleaning = read("blog/cleaning-local-seo-checklist/index.html");
+  assert.match(cleaning, /<h2 id="local-seo-for-cleaning-companies-the-short-version">Local SEO for cleaning companies: the short version<\/h2>/);
+  assert.match(cleaning, /Local SEO for a cleaning company starts with accurate business details/);
+
+  const garage = read("blog/garage-door-local-seo-checklist/index.html");
+  assert.match(garage, /<h2 id="local-seo-for-garage-door-companies-the-short-version">Local SEO for garage door companies: the short version<\/h2>/);
+  assert.match(garage, /Start garage door local SEO with accurate business details/);
+  assert.match(garage, /href="\/blog\/garage-door-google-business-profile\/"/);
+  assert.match(garage, /href="\/blog\/garage-door-get-more-reviews\/"/);
+});
+
 test("llms.txt lists every canonical URL in the sitemap", () => {
   const llms = read("llms.txt");
   const sitemap = read("sitemap.xml");
