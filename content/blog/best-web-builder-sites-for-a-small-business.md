@@ -5,14 +5,25 @@ slug: "best-web-builder-sites-for-a-small-business"
 cluster: "compare"
 lead: "A website builder is a self-serve tool for making and editing your own site, and this comparison is for small business owners choosing between Wix, Squarespace, Google Sites, and a done-for-you site."
 answer: "The best web builder for a small business is the one you will keep up to date. Wix and Squarespace are the best-known paid builders, at $204 and $228 a year as we checked them, and you do all the editing. If you would rather hand off the edits, a done-for-you site at $99 a year with the domain included is the third option to weigh."
-updated: "2026-10-04"
+sitePlanner: true
+published: "2026-10-04"
+updated: "2026-10-06"
 image: "/assets/blog/best-web-builder-sites-for-a-small-business-cover.svg"
 imageAlt: "Cover for best web builder sites for a small business: Wix at $204 a year, Squarespace at $228 a year, and a done-for-you site at $99 a year with the domain included"
 ---
 
 The best web builder for a small business is the one you will keep up to date. For most owners that means choosing between a self-serve builder like Wix or Squarespace, or a done-for-you site where someone else makes the edits. Google Sites is the quickest to try if you already have a Google account, and it works best for a few simple pages.
 
-## How do you choose between a builder and a done-for-you site?
+## Best web builder sites, ranked by small-business fit
+
+1. **Wix:** Best for owners who want the most freedom to arrange pages themselves.
+2. **Squarespace:** Best for owners who prefer structured, polished templates.
+3. **Google Sites:** Best for publishing a few simple pages quickly.
+4. **Done-for-you site:** Best alternative when you want the finished site and future edits handled for you.
+
+The ranking favors self-serve builders because that is what this list compares. If your priority is spending less time in an editor, move the done-for-you option to the top.
+
+## Compare the options side by side
 
 Start with who will make the edits. A builder puts that work on you: writing the text, uploading photos, and checking the page on a phone after every change. A done-for-you site moves most of that work to the provider, and you supply the facts and approve the result.
 

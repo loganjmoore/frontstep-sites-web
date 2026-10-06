@@ -228,6 +228,20 @@ function brandSvg() {
   return `<svg viewBox="0 0 34 34" aria-hidden="true"><rect width="34" height="34" fill="#ffd60a"/><path d="M6 27h22v-5H17v-5h-5v-5H6z" fill="#111312"/></svg>`;
 }
 
+const SITE_PLAN_CSS = `
+/* interactive article demo */
+.site-plan{margin:1.5rem 0 2rem;padding:1.15rem;border:1.5px solid var(--ink);background:var(--tag)}
+.site-plan h2{margin-top:0}
+.site-plan form{display:grid;gap:.85rem;margin-top:1rem}
+.site-plan label{display:grid;gap:.3rem;font-weight:700}
+.site-plan input,.site-plan select{width:100%;min-height:46px;padding:.55rem .65rem;border:1.5px solid var(--ink);border-radius:3px;background:#fff;color:var(--ink);font:inherit}
+.site-plan .btn{justify-self:start;background:var(--yellow);color:var(--ink)}
+.site-plan-output{margin-top:1rem;padding-top:1rem;border-top:1.5px dashed var(--ink)}
+.site-plan-output h3{margin-top:0}
+.site-plan-output ol{margin-bottom:.8rem}
+@media(min-width:760px){.site-plan form{grid-template-columns:1fr 1fr}.site-plan label:last-of-type{grid-column:1/-1}.site-plan .btn{grid-column:1/-1}}
+`;
+
 function pageShell({ title, description, canonical, ogType = "website", ogImage, preloadImage, bodyHtml, jsonLd = [] }) {
   const fontHref = "https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&display=optional";
   return `<!DOCTYPE html>
@@ -249,7 +263,7 @@ ${ogImage ? `<meta property="og:image" content="${escapeAttr(ogImage)}">\n` : ""
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="${fontHref}" rel="stylesheet" media="print" onload="this.media='all'">
 <noscript><link href="${fontHref}" rel="stylesheet"></noscript>
-<style>${READ_CSS}</style>
+<style>${READ_CSS}${bodyHtml.includes('id="site-plan-builder"') ? SITE_PLAN_CSS : ""}</style>
 ${jsonLd.map(jsonLdScript).join("\n")}
 </head>
 <body>
@@ -268,10 +282,46 @@ ${bodyHtml}
   <span>Front Step Sites &middot; <a href="mailto:hello@frontstepsites.com">hello@frontstepsites.com</a></span>
   <span><a href="/blog/">Blog</a> &middot; <a href="/privacy/">Privacy</a> &middot; <a href="/terms/">Terms</a> &middot; <a href="${LOGIN_URL}">Customer sign in</a></span>
   <span class="disambig">Front Step Sites (frontstepsites.com) is unrelated to FRONTSTEPS, the property-management/HOA software company.</span>
-</div></footer>
+</div></footer>${bodyHtml.includes('id="site-plan-builder"') ? `
+<script>
+(function () {
+  var form = document.getElementById("site-plan-builder");
+  var output = document.getElementById("site-plan-output");
+  if (!form || !output) return;
+  form.addEventListener("submit", function (event) {
+    event.preventDefault();
+    var data = new FormData(form);
+    var business = String(data.get("business") || "local business").trim() || "local business";
+    var area = String(data.get("area") || "your service area").trim() || "your service area";
+    var action = String(data.get("action") || "request a quote");
+    output.innerHTML = "<h3>Your starter site plan</h3><ol><li><strong>Homepage:</strong> Say what your " + escapeText(business) + " does in " + escapeText(area) + " and make it easy to " + escapeText(action) + ".</li><li><strong>Services:</strong> Give each main service its own plain-language explanation.</li><li><strong>About:</strong> Show who does the work and why customers can trust the business.</li><li><strong>Contact:</strong> Repeat the service area, hours, and the next step.</li></ol><p>This is a planning demo. A builder or provider still needs your real services, photos, policies, and contact details.</p>";
+    output.hidden = false;
+    output.focus();
+  });
+  function escapeText(value) {
+    var span = document.createElement("span");
+    span.textContent = value;
+    return span.innerHTML;
+  }
+})();
+</script>` : ""}
 </body>
 </html>
 `;
+}
+
+function renderSitePlanBuilder() {
+  return `<section class="site-plan" aria-labelledby="site-plan-title">
+  <h2 id="site-plan-title">Try the site-plan builder</h2>
+  <p>Enter three details to turn a blank website into a practical four-page starting plan. Nothing is sent or saved.</p>
+  <form id="site-plan-builder">
+    <label>Business type<input name="business" autocomplete="organization-title" required placeholder="Tree service"></label>
+    <label>Service area<input name="area" autocomplete="address-level2" required placeholder="Tulsa and nearby towns"></label>
+    <label>Main customer action<select name="action"><option>call the business</option><option>request a quote</option><option>book an appointment</option><option>visit the location</option></select></label>
+    <button class="btn" type="submit">Build my starter plan</button>
+  </form>
+  <div id="site-plan-output" class="site-plan-output" tabindex="-1" hidden aria-live="polite"></div>
+</section>`;
 }
 
 // crumbs: array of {name, url|null}. url === null means "current page", rendered as plain text.
@@ -332,7 +382,7 @@ function renderArticlePage(article, related, clusterName, clusterUrl) {
 ${renderCrumbs(crumbs)}
 <h1>${escapeHtml(article.title)}</h1>
 ${article.lead ? `<p class="direct-answer">${escapeHtml(article.lead)}</p>\n` : ""}<p class="updated">Updated ${formatDate(article.updated)}</p>
-${article.image ? `<figure class="doc-figure doc-cover"><img src="${escapeAttr(article.image)}" alt="${escapeAttr(article.imageAlt || "")}" width="1200" height="630" fetchpriority="high"></figure>\n` : ""}<aside class="tag-box"><span class="label">Short answer</span><p>${escapeHtml(article.answer)}</p></aside>
+${article.image ? `<figure class="doc-figure doc-cover"><img src="${escapeAttr(article.image)}" alt="${escapeAttr(article.imageAlt || "")}" width="1200" height="630" fetchpriority="high"></figure>\n` : ""}<aside class="tag-box"><span class="label">Short answer</span><p>${escapeHtml(article.answer)}</p></aside>${article.sitePlanner === "true" ? `\n${renderSitePlanBuilder()}` : ""}
 ${article.bodyHtml}
 <aside class="tag-box tag-offer">
   <span class="label">Front Step Sites &middot; Launch</span>
@@ -551,6 +601,7 @@ function main() {
       published: data.published,
       image: data.image,
       imageAlt: data.imageAlt,
+      sitePlanner: data.sitePlanner,
       bodyHtml: html,
       faqItems,
     });

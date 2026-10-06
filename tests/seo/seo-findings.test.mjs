@@ -1,6 +1,7 @@
 import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 import test from "node:test";
+import vm from "node:vm";
 
 const read = (path) => readFileSync(new URL(`../../${path}`, import.meta.url), "utf8");
 
@@ -15,7 +16,7 @@ test("homepage preserves buyer CTA and excludes unrelated query FAQs", () => {
 
 test("priority article and hub changes are present in generated HTML", () => {
   const tree = read("blog/tree-service-local-seo-checklist/index.html");
-  assert.match(tree, /Local SEO for a tree service means/);
+  assert.match(tree, /Tree service local SEO is the work of/);
   assert.match(tree, /<h2 id="local-seo-checklist-for-tree-services">Local SEO checklist for tree services<\/h2>/);
   assert.match(tree, /<ol>/);
   assert.match(tree, /href="\/blog\/trades\/tree-service\/"/);
@@ -38,6 +39,68 @@ test("priority article and hub changes are present in generated HTML", () => {
     "who-owns-your-domain-name-and-why-it-matters",
     "pest-control-get-more-reviews",
   ]) assert.match(blog, new RegExp(`/blog/${slug}/`));
+});
+
+test("intent-mismatch articles lead with the requested formats", () => {
+  for (const slug of [
+    "website-builders-vs-done-for-you-websites",
+    "best-web-builder-sites-for-a-small-business",
+  ]) {
+    const html = read(`blog/${slug}/index.html`);
+    assert.match(html, /id="site-plan-builder"/);
+    assert.match(html, /Build my starter plan/);
+    assert.match(html, /<ol>/);
+    assert.match(html, /<table>/);
+  }
+
+  for (const slug of [
+    "website-maker-or-done-for-you-three-year-cost",
+    "website-subscription-vs-one-time-website-build",
+    "auto-repair-facebook-vs-website",
+  ]) assert.match(read(`blog/${slug}/index.html`), /<table>/);
+
+  const home = read("index.html");
+  assert.match(home, /A website is a set of linked pages on a domain name/);
+  assert.match(home, /How a small-business website is created/);
+  assert.match(home, /<ol class="start">/);
+});
+
+test("site-plan demo produces a useful plan without injecting input", () => {
+  const html = read("blog/website-builders-vs-done-for-you-websites/index.html");
+  const script = [...html.matchAll(/<script>([\s\S]*?)<\/script>/g)]
+    .map((match) => match[1])
+    .find((source) => source.includes("site-plan-builder"));
+  assert.ok(script);
+
+  let submit;
+  const form = { addEventListener: (name, handler) => { if (name === "submit") submit = handler; } };
+  const output = { hidden: true, innerHTML: "", focus() {} };
+  const values = new Map([
+    ["business", "Tree <img src=x onerror=alert(1)> service"],
+    ["area", "Tulsa"],
+    ["action", "request a quote"],
+  ]);
+  const document = {
+    getElementById: (id) => id === "site-plan-builder" ? form : output,
+    createElement: () => ({
+      set textContent(value) { this.innerHTML = String(value).replaceAll("&", "&amp;").replaceAll("<", "&lt;").replaceAll(">", "&gt;"); },
+    }),
+  };
+  vm.runInNewContext(script, { document, FormData: class { get(name) { return values.get(name); } } });
+  submit({ preventDefault() {} });
+
+  assert.equal(output.hidden, false);
+  assert.match(output.innerHTML, /Your starter site plan/);
+  assert.match(output.innerHTML, /Tree &lt;img src=x onerror=alert\(1\)&gt; service/);
+  assert.doesNotMatch(output.innerHTML, /<img src=x/);
+});
+
+test("flagged articles define their subject near the top", () => {
+  const tree = read("blog/tree-service-local-seo-checklist/index.html");
+  assert.match(tree, /Tree service local SEO is the work of/);
+
+  const pest = read("blog/pest-control-get-more-reviews/index.html");
+  assert.match(pest, /A pest control review request is an optional invitation/);
 });
 
 test("llms.txt lists every canonical URL in the sitemap", () => {
