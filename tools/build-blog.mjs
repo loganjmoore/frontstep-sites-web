@@ -415,7 +415,7 @@ const BLOG_FAQ = [
   { question: "How is Front Step Sites different from Wix or Squarespace?", answer: "Wix and Squarespace are website builders you use yourself. As of September 2026, Wix Light is $204 a year billed yearly and Squarespace Basic is $19 a month. Front Step Sites is a done-for-you service that builds the site and makes your changes for $99 a year with the domain included." },
 ];
 
-function renderBlogHub(tradeRows, guideRows, aiRows, compareRows, latestRows) {
+function renderBlogHub(tradeRows, guideRows, aiRows, compareRows, latestRows, featuredRows) {
   const canonical = `${SITE}/blog/`;
   const crumbs = [{ name: "Home", url: "/" }, { name: "Blog", url: null }];
   const jsonLd = [
@@ -447,6 +447,11 @@ function renderBlogHub(tradeRows, guideRows, aiRows, compareRows, latestRows) {
 ${renderCrumbs(crumbs)}
 <h1>The Front Step Sites blog</h1>
 <p>Front Step Sites is a done-for-you website service for small local businesses. This blog gives straight answers for owners about websites, local search, and getting found by customers. No jargon, no filler, checkable facts.</p>
+
+<div class="hub-rail">
+  <h2>Start with these posts</h2>
+  ${renderArticleRows(featuredRows)}
+</div>
 
 <div class="hub-rail">
   <h2>For your trade</h2>
@@ -627,8 +632,15 @@ function main() {
 
   // topics.json lists new posts last, so the last six built articles are the newest.
   const latestRows = articles.slice(-6).reverse();
+  const featuredSlugs = [
+    "tree-service-local-seo-checklist",
+    "who-owns-your-domain-name-and-why-it-matters",
+    "pest-control-get-more-reviews",
+  ];
+  const articlesBySlug = new Map(articles.map((article) => [article.slug, article]));
+  const featuredRows = featuredSlugs.map((slug) => articlesBySlug.get(slug)).filter(Boolean);
 
-  writeFileSync(join(BLOG_DIR, "index.html"), renderBlogHub(tradeRows, hubRow("guides"), hubRow("ai-search"), hubRow("compare"), latestRows));
+  writeFileSync(join(BLOG_DIR, "index.html"), renderBlogHub(tradeRows, hubRow("guides"), hubRow("ai-search"), hubRow("compare"), latestRows, featuredRows));
 
   // sitemap.xml
   const today = new Date().toISOString().slice(0, 10);
