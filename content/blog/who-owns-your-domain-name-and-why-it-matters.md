@@ -5,6 +5,7 @@ slug: "who-owns-your-domain-name-and-why-it-matters"
 cluster: "guides"
 answer: "Your business should be the domain registrant and have reliable control over the account that manages the registration. A web designer can handle the technical work without holding the domain in their own name. Check the registrant details, account access, recovery email, and renewal arrangements before you need to move the website."
 lead: "In everyday business terms, you control your domain if you or your business is named as the registrant and you can access the registrar account. A website builder or designer may host and maintain the site without holding the domain registration."
+published: "2026-09-26"
 updated: "2026-10-06"
 ---
 

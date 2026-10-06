@@ -4,30 +4,13 @@ import test from "node:test";
 
 const read = (path) => readFileSync(new URL(`../../${path}`, import.meta.url), "utf8");
 
-test("homepage has one signup CTA and one merged FAQPage block", () => {
+test("homepage preserves buyer CTA and excludes unrelated query FAQs", () => {
   const html = read("index.html");
-  const signupLinks = html.match(/href="https:\/\/app\.frontstepsites\.com\/get-started"/g) || [];
-  assert.equal(signupLinks.length, 1);
-
-  const faqBlocks = [...html.matchAll(/<script type="application\/ld\+json">(.*?)<\/script>/gs)]
-    .map((match) => JSON.parse(match[1]))
-    .filter((value) => value["@type"] === "FAQPage");
-  assert.equal(faqBlocks.length, 1);
-
-  const questions = new Set(faqBlocks[0].mainEntity.map((entry) => entry.name));
-  for (const question of [
-    "What is the best option for best movie site free?",
-    "What is the best option for artificial intelligence websites?",
-    "What is the best option for define website?",
-    "What is the best option for what is a site?",
-    "What is the best option for what is website?",
-    "What is the best option for what are website?",
-    "What is the best option for musician website free?",
-  ]) {
-    assert.ok(questions.has(question), `missing FAQ question: ${question}`);
-    assert.match(html, new RegExp(`<summary>${question.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}</summary>`));
-  }
-  assert.match(html, /Front Step Sites is a done-for-you website service for small businesses/);
+  assert.ok((html.match(/href="https:\/\/app\.frontstepsites\.com\/get-started"/g) || []).length >= 1);
+  assert.doesNotMatch(html, /best movie site free|What is the best option for/);
+  const blocks = [...html.matchAll(/<script type="application\/ld\+json">(.*?)<\/script>/gs)].map(m => JSON.parse(m[1])).filter(v => v["@type"] === "FAQPage");
+  assert.equal(blocks.length, 1);
+  for (const entry of blocks[0].mainEntity) assert.ok(html.includes(`<summary>${entry.name}</summary>`));
 });
 
 test("priority article and hub changes are present in generated HTML", () => {
@@ -62,4 +45,17 @@ test("llms.txt lists every canonical URL in the sitemap", () => {
   const sitemap = read("sitemap.xml");
   const urls = [...sitemap.matchAll(/<loc>(.*?)<\/loc>/g)].map((match) => match[1]);
   for (const url of urls) assert.ok(llms.includes(url), `llms.txt is missing ${url}`);
+});
+
+test("updated articles retain original publication date", () => {
+  for (const slug of ["tree-service-local-seo-checklist", "who-owns-your-domain-name-and-why-it-matters"]) {
+    const html = read(`blog/${slug}/index.html`);
+    assert.match(html, /"datePublished":"2026-09-26"/);
+    assert.match(html, /"dateModified":"2026-10-06"/);
+  }
+});
+
+test("regeneration does not redate unchanged legal pages", () => {
+  const sitemap = read("sitemap.xml");
+  for (const page of ["privacy", "terms"]) assert.ok(sitemap.includes(`<loc>https://frontstepsites.com/${page}/</loc><lastmod>2026-10-04</lastmod>`));
 });

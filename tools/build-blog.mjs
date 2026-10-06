@@ -297,7 +297,7 @@ function renderArticlePage(article, related, clusterName, clusterUrl) {
       "@type": "BlogPosting",
       headline: article.title,
       description: article.description,
-      datePublished: article.updated,
+      datePublished: article.published || article.updated,
       dateModified: article.updated,
       ...(ogImage ? { image: ogImage } : {}),
       author: ORG,
@@ -548,6 +548,7 @@ function main() {
       answer: data.answer,
       lead: data.lead,
       updated: data.updated,
+      published: data.published,
       image: data.image,
       imageAlt: data.imageAlt,
       bodyHtml: html,
@@ -644,12 +645,14 @@ function main() {
 
   // sitemap.xml
   const today = new Date().toISOString().slice(0, 10);
+  const priorDates = new Map([...readFileSync(join(WEB, "sitemap.xml"), "utf8").matchAll(/<url><loc>(.*?)<\/loc><lastmod>(.*?)<\/lastmod><\/url>/g)].map(m => [m[1], m[2]]));
+  const unchangedDate = path => priorDates.get(`${SITE}${path}`) || today;
   const urls = [
-    { loc: "/", lastmod: today },
-    { loc: "/privacy/", lastmod: today },
-    { loc: "/terms/", lastmod: today },
-    { loc: "/blog/", lastmod: today },
-    ...hubClusters.map((h) => ({ loc: `/blog/${h.cluster}/`, lastmod: today })),
+    { loc: "/", lastmod: unchangedDate("/") },
+    { loc: "/privacy/", lastmod: unchangedDate("/privacy/") },
+    { loc: "/terms/", lastmod: unchangedDate("/terms/") },
+    { loc: "/blog/", lastmod: unchangedDate("/blog/") },
+    ...hubClusters.map((h) => ({ loc: `/blog/${h.cluster}/`, lastmod: unchangedDate(`/blog/${h.cluster}/`) })),
     ...articles.map((a) => ({ loc: `/blog/${a.slug}/`, lastmod: a.updated })),
   ];
   const sitemap = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls
@@ -671,7 +674,7 @@ function main() {
   const feed = `<?xml version="1.0" encoding="UTF-8"?>\n<rss version="2.0"><channel>\n  <title>Front Step Sites blog</title>\n  <link>${SITE}/blog/</link>\n  <description>Practical, specific answers for small business owners about websites, local SEO, and showing up when customers search.</description>\n  <language>en-us</language>\n  <lastBuildDate>${feedItems.length ? rssDate(feedItems[0].updated) : new Date().toUTCString()}</lastBuildDate>\n${feedItems
     .map(
       (a) =>
-        `  <item>\n    <title>${escapeHtml(a.title)}</title>\n    <link>${SITE}/blog/${a.slug}/</link>\n    <guid isPermaLink="true">${SITE}/blog/${a.slug}/</guid>\n    <pubDate>${rssDate(a.updated)}</pubDate>\n    <description>${escapeHtml(a.description)}</description>\n  </item>`
+        `  <item>\n    <title>${escapeHtml(a.title)}</title>\n    <link>${SITE}/blog/${a.slug}/</link>\n    <guid isPermaLink="true">${SITE}/blog/${a.slug}/</guid>\n    <pubDate>${rssDate(a.published || a.updated)}</pubDate>\n    <description>${escapeHtml(a.description)}</description>\n  </item>`
     )
     .join("\n")}\n</channel></rss>\n`;
   writeFileSync(join(WEB, "feed.xml"), feed);
