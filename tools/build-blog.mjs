@@ -300,7 +300,7 @@ function renderArticlePage(article, related, clusterName, clusterUrl) {
       datePublished: article.updated,
       dateModified: article.updated,
       ...(ogImage ? { image: ogImage } : {}),
-      author: ORG,
+      author: article.author ? { "@type": "Person", name: article.author } : ORG,
       publisher: ORG,
       mainEntityOfPage: { "@type": "WebPage", "@id": canonical },
     },
@@ -331,7 +331,7 @@ function renderArticlePage(article, related, clusterName, clusterUrl) {
   const bodyHtml = `<article class="doc">
 ${renderCrumbs(crumbs)}
 <h1>${escapeHtml(article.title)}</h1>
-${article.lead ? `<p class="direct-answer">${escapeHtml(article.lead)}</p>\n` : ""}<p class="updated">Updated ${formatDate(article.updated)}</p>
+${article.lead ? `<p class="direct-answer">${escapeHtml(article.lead)}</p>\n` : ""}<p class="updated">${article.author ? `By ${escapeHtml(article.author)} &middot; ` : ""}Updated ${formatDate(article.updated)}</p>
 ${article.image ? `<figure class="doc-figure doc-cover"><img src="${escapeAttr(article.image)}" alt="${escapeAttr(article.imageAlt || "")}" width="1200" height="630" fetchpriority="high"></figure>\n` : ""}<aside class="tag-box"><span class="label">Short answer</span><p>${escapeHtml(article.answer)}</p></aside>
 ${article.bodyHtml}
 <aside class="tag-box tag-offer">
@@ -542,6 +542,7 @@ function main() {
       cluster: data.cluster,
       answer: data.answer,
       lead: data.lead,
+      author: data.author,
       updated: data.updated,
       image: data.image,
       imageAlt: data.imageAlt,
