@@ -3,7 +3,7 @@ title: "7 Web Site Mistakes That Make Customers Hesitate"
 description: "Find seven common web site mistakes that hide your offer, break trust, frustrate phone visitors, or stop a customer from contacting your business."
 slug: "seven-web-site-mistakes-that-make-customers-hesitate"
 cluster: "guides"
-lead: "The most damaging web site mistakes make a customer pause: the page hides what the business does, buries contact details, breaks on a phone, loads slowly, or looks abandoned. Fix the decision path first, then work on decoration."
+lead: "A web site mistake is a problem that makes customers work harder to identify a business, confirm it fits, trust it, or make contact. The seven mistakes in this guide cover vague openings, hidden next steps, unclear service areas, weak mobile controls, slow pages, missing HTTPS, and stale information."
 answer: "The seven web site mistakes worth fixing first are a vague opening, a hidden next step, missing service-area details, weak mobile controls, slow or shifting pages, missing HTTPS, and stale information. A customer should be able to identify the business, confirm a fit, and contact it without guessing."
 published: "2026-10-07"
 updated: "2026-10-07"
@@ -12,7 +12,7 @@ image: "/assets/blog/seven-web-site-mistakes-that-make-customers-hesitate-cover.
 imageAlt: "Seven web site mistakes arranged as a practical audit from unclear message to stale business details"
 ---
 
-The most damaging web site mistakes make a customer pause: the page hides what the business does, buries contact details, breaks on a phone, loads slowly, or looks abandoned. Fix the decision path first, then work on decoration. A customer should be able to identify the business, confirm a fit, and make contact without guessing.
+A web site mistake is a problem that makes customers work harder to identify a business, confirm it fits, trust it, or make contact. The seven mistakes in this guide cover vague openings, hidden next steps, unclear service areas, weak mobile controls, slow pages, missing HTTPS, and stale information. Fix the decision path first, then work on decoration.
 
 ## Which web site mistakes deserve attention first?
 

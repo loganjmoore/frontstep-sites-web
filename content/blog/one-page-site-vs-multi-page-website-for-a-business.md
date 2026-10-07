@@ -3,7 +3,7 @@ title: "One-Page Site vs Multi-Page Website for a Business"
 description: "Compare a one-page site with a multi-page website by services, search visibility, upkeep, cost, and the questions local customers need answered."
 slug: "one-page-site-vs-multi-page-website-for-a-business"
 cluster: "compare"
-lead: "Choose a one-page site when the business has one main offer, one audience, and one action. Choose a multi-page website when customers need to compare several services, locations, staff members, or detailed answers before contacting you."
+lead: "A one-page site is a website that keeps its main business information at one URL. A multi-page website is a site that gives major subjects their own URLs. Choose between them based on how many distinct services and questions customers need to navigate."
 answer: "A one-page site fits one clear offer and a short decision, while a multi-page website fits several services or customer questions that deserve separate URLs. Start with the smallest structure that answers real buying questions, but do not compress distinct services into a page customers have to decode."
 published: "2026-10-07"
 updated: "2026-10-07"
@@ -12,7 +12,7 @@ image: "/assets/blog/one-page-site-vs-multi-page-website-for-a-business-cover.sv
 imageAlt: "Side-by-side comparison of a one-page business site and a six-page business website"
 ---
 
-Choose a one-page site when the business has one main offer, one audience, and one action. Choose a multi-page website when customers need to compare several services, locations, staff members, or detailed answers before contacting you. The right structure is the smallest one that answers real buying questions without forcing unrelated information into a long scroll.
+A one-page site is a website that keeps its main business information at one URL. A multi-page website is a site that gives major subjects their own URLs. Choose a one-page site when the business has one main offer, one audience, and one action. Choose a multi-page website when customers need to compare several services, locations, staff members, or detailed answers before contacting you.
 
 ## What is the difference between a one-page site and a multi-page website?
 
