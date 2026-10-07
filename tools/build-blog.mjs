@@ -66,6 +66,10 @@ function jsonLdScript(obj) {
   return `<script type="application/ld+json">${JSON.stringify(obj).replace(/</g, "\\u003c")}</script>`;
 }
 
+function clarityScript() {
+  return `<script>(function(c,l,a,r,i,t,y){var d=false;function s(){if(d)return;d=true;c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y)};["pointerdown","keydown","touchstart"].forEach(function(e){c.addEventListener(e,s,{once:true,passive:true})});c.addEventListener("load",function(){c.setTimeout(s,8000)},{once:true})})(window,document,"clarity","script","yqkzhoosjo");</script>`;
+}
+
 // ---------- front matter ----------
 
 const REQUIRED_FIELDS = ["title", "description", "slug", "cluster", "answer", "updated"];
@@ -254,7 +258,7 @@ function pageShell({ title, description, canonical, ogType = "website", ogImage,
 <link rel="canonical" href="${escapeAttr(canonical)}">
 <link rel="alternate" type="application/rss+xml" title="Front Step Sites blog" href="${SITE}/feed.xml">
 <meta name="google-site-verification" content="o99-pefOA6pR2C5f_pPemZCLI9MPywug-MAAubRePjQ" />
-<script type="text/javascript">window.addEventListener("load",function(){(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window, document, "clarity", "script", "yqkzhoosjo");});</script>
+${clarityScript()}
 <meta property="og:title" content="${escapeAttr(title)}">
 <meta property="og:description" content="${escapeAttr(description)}">
 <meta property="og:type" content="${escapeAttr(ogType)}">
