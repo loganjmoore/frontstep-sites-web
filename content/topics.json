@@ -1630,5 +1630,23 @@
   "title": "How to make a Google Site, step by step",
   "cluster": "guides",
   "angle": "the five steps from template to publish, then custom domains and who can connect them, from Google's own help pages"
+ },
+ {
+  "slug": "google-sites-launch-checklist-for-a-business-website",
+  "title": "Google Sites Launch Checklist for a Business Website",
+  "cluster": "guides",
+  "angle": "a 12-point pre-publish checklist covering the message, customer path, mobile preview, accessibility, sharing, search visibility, and custom domain"
+ },
+ {
+  "slug": "seven-web-site-mistakes-that-make-customers-hesitate",
+  "title": "7 Web Site Mistakes That Make Customers Hesitate",
+  "cluster": "guides",
+  "angle": "a fix-first audit of seven general business website mistakes, with mobile, performance, security, and stale-information checks"
+ },
+ {
+  "slug": "one-page-site-vs-multi-page-website-for-a-business",
+  "title": "One-Page Site vs Multi-Page Website for a Business",
+  "cluster": "compare",
+  "angle": "one-page and multi-page business website structures compared by offer, search topics, mobile use, maintenance, and a worked page plan"
  }
 ]
