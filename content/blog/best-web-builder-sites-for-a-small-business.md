@@ -48,7 +48,7 @@ The free domain covers year one only. Check the renewal price before year two, b
 
 ## When does a done-for-you site make more sense?
 
-A done-for-you site makes more sense when edits pile up faster than you can make them. Front Step Sites is $99 a year with the domain included, no setup fee, and 2 change requests a month on the Launch plan, done within 2 business days. The Grow plan is $29 a month or $290 a year, with unlimited changes the same business day and Google reviews shown on the site.
+A done-for-you site makes more sense when edits pile up faster than you can make them. Front Step Sites is a done-for-you website service for small businesses. It costs $99 a year with the domain included, no setup fee, and 2 change requests a month on the Launch plan, done within 2 business days. The Grow plan is $29 a month or $290 a year, with unlimited changes the same business day and Google reviews shown on the site.
 
 The trade-off is control. You cannot make a change yourself at 9 p.m., and you wait for each request to be finished. If you enjoy the editor and can spend an hour a week on the site, a builder gives you more say over every page.
 

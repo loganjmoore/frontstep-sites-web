@@ -14,6 +14,25 @@ test("homepage preserves buyer CTA and excludes unrelated query FAQs", () => {
   for (const entry of blocks[0].mainEntity) assert.ok(html.includes(`<summary>${entry.name}</summary>`));
 });
 
+test("AI visibility pages carry useful answers and plain product definitions", () => {
+  const home = read("index.html");
+  assert.match(home, /Front Step Sites is a done-for-you website service for small businesses/);
+  assert.match(home, /Do I need to know HTML or code\?/);
+  assert.match(home, /Do you build personal about-me sites\?/);
+
+  for (const slug of [
+    "best-web-builder-sites-for-a-small-business",
+    "website-builders-vs-done-for-you-websites",
+    "can-you-run-a-business-website-on-canva",
+  ]) {
+    const html = read(`blog/${slug}/index.html`);
+    assert.match(html, /Front Step Sites is a done-for-you website service for small businesses/);
+  }
+
+  assert.match(read("blog/website-builders-vs-done-for-you-websites/index.html"), /What is the best AI website builder\?/);
+  assert.match(read("blog/can-you-run-a-business-website-on-canva/index.html"), /Can I use Canva for a business website at all\?/);
+});
+
 test("priority article and hub changes are present in generated HTML", () => {
   const tree = read("blog/tree-service-local-seo-checklist/index.html");
   assert.match(tree, /Tree service local SEO is the work of/);
@@ -104,6 +123,10 @@ test("flagged articles define their subject near the top", () => {
 });
 
 test("AI strategy articles lead with the requested direct answers and related links", () => {
+  const plumbing = read("blog/plumbing-google-business-profile/index.html");
+  assert.match(plumbing, /<h2 id="plumbing-google-business-profile-the-short-version">Plumbing Google Business Profile: the short version<\/h2>/);
+  assert.match(plumbing, /To set up a plumbing Google Business Profile: claim the listing, pick the primary category Plumber, add your service area, hours and phone, then post a photo and ask your last five customers for a review\./);
+
   const pest = read("blog/pest-control-get-more-reviews/index.html");
   assert.match(pest, /<h2 id="how-to-get-more-google-reviews-for-pest-control">How to get more Google reviews for pest control<\/h2>/);
   assert.match(pest, /Pest control customers leave reviews when you ask by text within an hour of the job and make the link a single tap\./);
@@ -124,6 +147,43 @@ test("llms.txt lists every canonical URL in the sitemap", () => {
   const sitemap = read("sitemap.xml");
   const urls = [...sitemap.matchAll(/<loc>(.*?)<\/loc>/g)].map((match) => match[1]);
   for (const url of urls) assert.ok(llms.includes(url), `llms.txt is missing ${url}`);
+});
+
+test("flagged read pages defer analytics and avoid late font swaps", () => {
+  const paths = [
+    "privacy/index.html",
+    "terms/index.html",
+    "blog/index.html",
+    "blog/guides/index.html",
+    "blog/bing-places-and-apple-business-connect-the-listings-most-businesses-sk/index.html",
+    "blog/how-ai-search-is-changing-how-customers-find-local-businesses/index.html",
+    "blog/hvac-website-mistakes/index.html",
+    "blog/cleaning-homepage-copy/index.html",
+    "blog/how-to-leave-a-web-designer-and-keep-your-domain-and-site/index.html",
+    "blog/landscaping-local-seo-checklist/index.html",
+    "blog/landscaping-more-calls-from-google/index.html",
+    "blog/pest-control-google-business-profile/index.html",
+    "blog/pressure-washing-facebook-vs-website/index.html",
+    "blog/salon-blog-ideas/index.html",
+    "blog/trades/landscaping/index.html",
+    "blog/tree-service-facebook-vs-website/index.html",
+    "blog/website-contracts-red-flags-for-small-business-owners/index.html",
+    "blog/what-to-put-in-your-website-footer/index.html",
+    "blog/auto-repair-blog-ideas/index.html",
+    "blog/emergency-service-businesses-how-to-show-you-re-open-now/index.html",
+    "blog/plumbing-google-business-profile/index.html",
+    "blog/plumbing-website-mistakes/index.html",
+    "blog/restaurant-google-business-profile/index.html",
+    "blog/who-owns-your-domain-name-and-why-it-matters/index.html",
+    "blog/how-to-get-customers-to-leave-reviews-on-google-without-being-pushy/index.html",
+  ];
+
+  for (const path of paths) {
+    const html = read(path);
+    assert.match(html, /setTimeout\(s,8000\)/, `${path} should keep analytics out of the initial rendering path`);
+    assert.match(html, /display=optional/, `${path} should use the stable fallback when the webfont is late`);
+    assert.doesNotMatch(html, /display=swap/, `${path} should not swap fonts after first paint`);
+  }
 });
 
 test("updated articles retain original publication date", () => {

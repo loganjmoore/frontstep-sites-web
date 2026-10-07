@@ -58,7 +58,7 @@ The details decide whether a local business site works. Check for these before y
 - The same name, address, and phone number you use on your Google Business Profile.
 - A way to update your hours and prices without rebuilding the design.
 
-Front Step Sites builds that kind of multi-page site for $99 a year with the domain included, and you ask for changes in your account. Read [what Front Step Sites does and who it's for](/blog/what-front-step-sites-does-and-who-its-for/) before you decide, because it's a fit for some businesses and not others.
+Front Step Sites is a done-for-you website service for small businesses. It builds that kind of multi-page site for $99 a year with the domain included, and you ask for changes in your account. Read [what Front Step Sites does and who it's for](/blog/what-front-step-sites-does-and-who-its-for/) before you decide, because it's a fit for some businesses and not others.
 
 ## Frequently asked questions
 
