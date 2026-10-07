@@ -120,6 +120,24 @@ test("flagged articles define their subject near the top", () => {
 
   const pest = read("blog/pest-control-get-more-reviews/index.html");
   assert.match(pest, /A pest control review request is an optional invitation/);
+
+  const onePage = read("blog/one-page-site-vs-multi-page-website-for-a-business/index.html");
+  assert.match(onePage, /<h1>[^<]+<\/h1>\n<p class="direct-answer">A one-page site is a website/);
+
+  const mistakes = read("blog/seven-web-site-mistakes-that-make-customers-hesitate/index.html");
+  assert.match(mistakes, /<h1>[^<]+<\/h1>\n<p class="direct-answer">A web site mistake is a problem/);
+
+  const googleSites = read("blog/google-sites-launch-checklist-for-a-business-website/index.html");
+  assert.match(googleSites, /<h1>[^<]+<\/h1>\n<p class="direct-answer">A Google Sites launch checklist is a pre-publication check/);
+});
+
+test("homepage keeps third-party assets out of the initial rendering path", () => {
+  const home = read("index.html");
+  assert.match(home, /setTimeout\(s,8000\)/);
+  assert.match(home, /display=optional/);
+  assert.match(home, /rel="stylesheet" media="print" onload="this\.media='all'"/);
+  assert.doesNotMatch(home, /display=swap/);
+  assert.doesNotMatch(home, /<img\b/);
 });
 
 test("AI strategy articles lead with the requested direct answers and related links", () => {

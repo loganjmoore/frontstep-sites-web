@@ -3,7 +3,7 @@ title: "Google Sites Launch Checklist for a Business Website"
 description: "Use this Google Sites launch checklist to check your domain, mobile layout, contact path, search settings, accessibility, and business details."
 slug: "google-sites-launch-checklist-for-a-business-website"
 cluster: "guides"
-lead: "A Google Sites web page is ready for customers when it clearly names the business, works on a phone, offers a direct contact path, uses the right sharing setting, and opens at the intended domain. Run this 12-point checklist before you publish, then test the public version outside your Google account."
+lead: "A Google Sites launch checklist is a pre-publication check of a business site's message, contact path, mobile layout, accessibility, sharing, search setting, and domain. Run these 12 checks before you publish, then test the public version outside your Google account."
 answer: "Before launching a Google Site for a business, check the business name, service area, pages, phone and form links, mobile preview, image descriptions, sharing setting, search visibility, custom domain, and live public page. Google says only the site owner can connect a custom domain, and domain changes may take up to 48 hours."
 published: "2026-10-07"
 updated: "2026-10-07"
@@ -12,7 +12,7 @@ image: "/assets/blog/google-sites-launch-checklist-for-a-business-website-cover.
 imageAlt: "Twelve-point Google Sites launch checklist for a business website, grouped into message, customer path, mobile, and publishing checks"
 ---
 
-A Google Sites web page is ready for customers when it clearly names the business, works on a phone, offers a direct contact path, uses the right sharing setting, and opens at the intended domain. Run this 12-point checklist before you publish, then test the public version outside your Google account. [Google Sites Help](https://support.google.com/sites/answer/9068867) says only the site owner can connect a custom domain, and a domain change can take up to 48 hours to appear.
+A Google Sites launch checklist is a pre-publication check of a business site's message, contact path, mobile layout, accessibility, sharing, search setting, and domain. Run these 12 checks before you publish, then test the public version outside your Google account. [Google Sites Help](https://support.google.com/sites/answer/9068867) says only the site owner can connect a custom domain, and a domain change can take up to 48 hours to appear.
 
 ## What should you check before publishing a Google Site?
 
