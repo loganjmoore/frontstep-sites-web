@@ -175,7 +175,7 @@ function renderMarkdown(body, ctx) {
   for (const block of blocks) {
     if (block.type === "h2") {
       flushFaq();
-      inFaq = slugify(block.text) === "frequently-asked-questions";
+      inFaq = ["frequently-asked-questions", "what-are-the-frequently-asked-questions"].includes(slugify(block.text));
       let id = slugify(block.text) || "section";
       let unique = id, n = 2;
       while (usedIds.has(unique)) unique = `${id}-${n++}`;
@@ -350,7 +350,7 @@ function renderArticlePage(article, related, clusterName, clusterUrl) {
       datePublished: article.published || article.updated,
       dateModified: article.updated,
       ...(ogImage ? { image: ogImage } : {}),
-      author: ORG,
+      author: article.author ? { "@type": "Person", name: article.author } : ORG,
       publisher: ORG,
       mainEntityOfPage: { "@type": "WebPage", "@id": canonical },
     },
@@ -381,7 +381,7 @@ function renderArticlePage(article, related, clusterName, clusterUrl) {
   const bodyHtml = `<article class="doc">
 ${renderCrumbs(crumbs)}
 <h1>${escapeHtml(article.title)}</h1>
-${article.lead ? `<p class="direct-answer">${escapeHtml(article.lead)}</p>\n` : ""}<p class="updated">Updated ${formatDate(article.updated)}</p>
+${article.lead ? `<p class="direct-answer">${escapeHtml(article.lead)}</p>\n` : ""}<p class="updated">${article.author ? `By ${escapeHtml(article.author)} &middot; ` : ""}Updated ${formatDate(article.updated)}</p>
 ${article.image ? `<figure class="doc-figure doc-cover"><img src="${escapeAttr(article.image)}" alt="${escapeAttr(article.imageAlt || "")}" width="1200" height="630" fetchpriority="high"></figure>\n` : ""}<aside class="tag-box"><span class="label">Short answer</span><p>${escapeHtml(article.answer)}</p></aside>${article.sitePlanner === "true" ? `\n${renderSitePlanBuilder()}` : ""}
 ${article.bodyHtml}
 <aside class="tag-box tag-offer">
@@ -599,6 +599,7 @@ function main() {
       lead: data.lead,
       updated: data.updated,
       published: data.published,
+      author: data.author,
       image: data.image,
       imageAlt: data.imageAlt,
       sitePlanner: data.sitePlanner,
