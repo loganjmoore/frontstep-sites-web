@@ -67,7 +67,7 @@ function jsonLdScript(obj) {
 }
 
 function clarityScript() {
-  return `<script>(function(c,l,a,r,i,t,y){var d=false;function s(){if(d)return;d=true;c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y)};["pointerdown","keydown","touchstart"].forEach(function(e){c.addEventListener(e,s,{once:true,passive:true})});c.addEventListener("load",function(){c.setTimeout(s,8000)},{once:true})})(window,document,"clarity","script","yqkzhoosjo");</script>`;
+  return `<script>(function(c,l,a,r,i,t,y){var d=false,k="frontstep_analytics_consent";function o(){return navigator.globalPrivacyControl===true||["1","yes"].includes(navigator.doNotTrack||c.doNotTrack)}function g(){try{return !o()&&localStorage.getItem(k)==="accepted"}catch(e){return false}}function s(){if(d||!g())return;d=true;c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y)}function u(){if(g()){if(d)c[a]("consentv2",{ad_Storage:"denied",analytics_Storage:"granted"});else s()}else if(d){c[a]("consentv2",{ad_Storage:"denied",analytics_Storage:"denied"});c[a]("consent",false)}}["pointerdown","keydown","touchstart"].forEach(function(e){c.addEventListener(e,s,{once:true,passive:true})});c.addEventListener("load",function(){c.setTimeout(s,8000)},{once:true});c.addEventListener("website:analytics-consent",u)})(window,document,"clarity","script","yqkzhoosjo");</script>`;
 }
 
 // ---------- front matter ----------
@@ -106,6 +106,15 @@ function parseBlocks(md) {
   while (i < lines.length) {
     const line = lines[i];
     if (!line.trim()) { i++; continue; }
+    const fence = line.match(/^```([a-z0-9-]*)\s*$/i);
+    if (fence) {
+      const code = [];
+      i++;
+      while (i < lines.length && !/^```\s*$/.test(lines[i])) code.push(lines[i++]);
+      if (i < lines.length) i++;
+      blocks.push({ type: "code", language: fence[1], text: code.join("\n") });
+      continue;
+    }
     if (/^###\s+/.test(line)) { blocks.push({ type: "h3", text: line.replace(/^###\s+/, "").trim() }); i++; continue; }
     if (/^##\s+/.test(line)) { blocks.push({ type: "h2", text: line.replace(/^##\s+/, "").trim() }); i++; continue; }
     if (/^-\s+/.test(line)) {
@@ -209,6 +218,9 @@ function renderMarkdown(body, ctx) {
         .join("")}</tr></thead><tbody>${block.rows
         .map((r) => `<tr>${r.map((c) => `<td>${inline(c, ctx)}</td>`).join("")}</tr>`)
         .join("")}</tbody></table></div>\n`;
+    } else if (block.type === "code") {
+      const language = block.language ? ` class="language-${escapeAttr(block.language)}"` : "";
+      html += `<pre><code${language}>${escapeHtml(block.text)}</code></pre>\n`;
     }
   }
   flushFaq();
@@ -705,7 +717,7 @@ function main() {
   const unchangedDate = path => priorDates.get(`${SITE}${path}`) || today;
   const urls = [
     { loc: "/", lastmod: unchangedDate("/") },
-    { loc: "/privacy/", lastmod: unchangedDate("/privacy/") },
+    { loc: "/privacy/", lastmod: "2026-10-08" },
     { loc: "/terms/", lastmod: unchangedDate("/terms/") },
     { loc: "/blog/", lastmod: unchangedDate("/blog/") },
     ...hubClusters.map((h) => ({ loc: `/blog/${h.cluster}/`, lastmod: unchangedDate(`/blog/${h.cluster}/`) })),

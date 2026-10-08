@@ -170,6 +170,42 @@ test("AI strategy articles lead with the requested direct answers and related li
   assert.match(garage, /href="\/blog\/garage-door-get-more-reviews\/"/);
 });
 
+test("October 8 AI strategy changes are present in generated pages", () => {
+  const phone = read("blog/click-to-call-making-your-phone-number-work-on-every-page/index.html");
+  assert.match(phone, /<title>How to Make a Phone Number Clickable \(Click-to-Call\)<\/title>/);
+  assert.match(phone, /<code class="language-html">&lt;a href="tel:\+12025550147"&gt;Call \(202\) 555-0147&lt;\/a&gt;<\/code>/);
+  assert.match(phone, /<th>Where to add it<\/th><th>What the visitor sees<\/th><th>What to test<\/th>/);
+  assert.match(phone, /What is the correct HTML for a clickable phone number\?/);
+  assert.match(phone, /"datePublished":"2026-09-26","dateModified":"2026-10-08"/);
+
+  const schema = read("blog/structured-data-for-ai-search-what-small-businesses-need/index.html");
+  assert.match(schema, /<h1>Structured Data for AI Search: Small Business Guide<\/h1>/);
+  assert.match(schema, /<h2 id="a-small-business-json-ld-example">A small-business JSON-LD example<\/h2>/);
+  assert.match(schema, /"@type": "LocalBusiness"/);
+  assert.match(schema, /Does schema make ChatGPT cite my business\?/);
+  assert.match(schema, /Should a service-area business publish its home address\?/);
+
+  const restaurant = read("blog/restaurant-get-more-reviews/index.html");
+  assert.match(restaurant, /<h1>How Restaurants Can Get More Google Reviews<\/h1>/);
+  assert.match(restaurant, /<h2 id="set-up-your-google-review-link-and-qr-code">Set up your Google review link and QR code<\/h2>/);
+  assert.match(restaurant, /<strong>Read reviews<\/strong>/);
+  assert.match(restaurant, /Can a restaurant put a Google review QR code on receipts\?/);
+});
+
+test("first-party analytics choice uses the configured PostHog consent key", () => {
+  const config = JSON.parse(read("posthog-config.json"));
+  assert.equal(config.consentKey, "frontstep_analytics_consent");
+  assert.equal(config.consentKind, "accepted");
+  const ui = read("analytics-consent.js");
+  assert.match(ui, /Cookie settings/);
+  assert.match(ui, /Allow analytics/);
+  assert.match(ui, /Keep analytics off/);
+  assert.match(ui, /globalPrivacyControl/);
+  const home = read("index.html");
+  assert.match(home, /src="\/analytics-consent\.js"/);
+  assert.match(home, /src="\/posthog-web\.js"/);
+});
+
 test("llms.txt lists every canonical URL in the sitemap", () => {
   const llms = read("llms.txt");
   const sitemap = read("sitemap.xml");
@@ -224,5 +260,6 @@ test("updated articles retain original publication date", () => {
 
 test("regeneration does not redate unchanged legal pages", () => {
   const sitemap = read("sitemap.xml");
-  for (const page of ["privacy", "terms"]) assert.ok(sitemap.includes(`<loc>https://frontstepsites.com/${page}/</loc><lastmod>2026-10-04</lastmod>`));
+  assert.ok(sitemap.includes(`<loc>https://frontstepsites.com/privacy/</loc><lastmod>2026-10-08</lastmod>`));
+  assert.ok(sitemap.includes(`<loc>https://frontstepsites.com/terms/</loc><lastmod>2026-10-04</lastmod>`));
 });

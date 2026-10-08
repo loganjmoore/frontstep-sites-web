@@ -1,10 +1,11 @@
 ---
-title: "Structured data for AI search basics"
+title: "Structured Data for AI Search: Small Business Guide"
 description: "Understand local business structured data, current FAQ and review rules, and the checks that keep your website facts accurate for customers and search."
 slug: structured-data-for-ai-search-what-small-businesses-need
 cluster: ai-search
 answer: "Structured data labels facts on your website so software can interpret them more easily. A small business should start with accurate business details that match its visible pages, then check the result. There is no special AI schema that guarantees recommendations, and review or FAQ markup does not automatically produce extra search features."
-updated: 2026-09-26
+published: 2026-09-26
+updated: 2026-10-08
 ---
 
 Has someone told you that your website needs structured data to appear in AI answers? It can help describe your business in an organized format, but the sales pitch often runs ahead of what the markup does. Start with the facts you need to communicate, then ask your website provider to label them accurately.
@@ -12,6 +13,36 @@ Has someone told you that your website needs structured data to appear in AI ans
 ## Know what structured data actually adds
 
 Structured data is information added to a page in a format software can read. Think of it as attaching labels such as business name, telephone number, and opening hours to facts already explained on your website. The name of the shared vocabulary is Schema.org.
+
+## A small-business JSON-LD example
+
+Use this as a template, not as ready-to-publish business data. Replace every angle-bracket placeholder with a verified public fact, choose the most specific accurate LocalBusiness subtype when one exists, and remove any property that does not apply.
+
+```json
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "<VERIFIED PUBLIC BUSINESS NAME>",
+  "url": "https://<CANONICAL HOMEPAGE>/",
+  "telephone": "+1-<PUBLIC PHONE NUMBER>",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "<REAL CUSTOMER-FACING STREET ADDRESS>",
+    "addressLocality": "<CITY>",
+    "addressRegion": "<STATE>",
+    "postalCode": "<POSTAL CODE>",
+    "addressCountry": "US"
+  },
+  "openingHours": "<ACTUAL PUBLIC HOURS, FOR EXAMPLE Mo-Fr 08:00-17:00>",
+  "areaServed": "<GENUINE SERVICE AREA>"
+}
+```
+
+Before publishing, replace `LocalBusiness` with the [most specific accurate business type](/blog/local-business-schema-markup-explained-simply/) you can verify. Delete the entire `address` property when the business does not publicly receive customers there; never publish a private home address merely to fill the template.
+
+| Use | Omit | Verify |
+| --- | --- | --- |
+| Public name, canonical homepage, customer phone, actual hours, and genuine service area | Private addresses, inapplicable properties, and facts the business has not confirmed | Every value against the visible page and the business's current customer-facing information |
 
 For a local business, LocalBusiness is a relevant category, with more specific types available for some trades. Google's [local business documentation](https://developers.google.com/search/docs/appearance/structured-data/local-business) explains supported details and recommends the most specific suitable type.
 
@@ -56,6 +87,16 @@ Do not relabel your plumbing company as a product to chase stars. Do not create 
 
 If a provider proposes review markup, ask whose reviews are being described, where readers can see them, and which rule makes the page eligible. You can still work on [making your business website trustworthy](/blog/what-makes-a-local-business-website-trustworthy/) through accurate service details, real project photos, and genuine customer feedback. Those improvements do not depend on a special search display.
 
+## Validate the markup step by step
+
+1. Compare every value with the visible page. Structured data should label facts a visitor can confirm, not add a hidden second version of the business.
+2. Run the code through the Schema.org vocabulary validator to catch syntax, type, and property problems.
+3. Use Google's Rich Results Test when the selected markup is eligible for an applicable Google search feature; a pass is not a display guarantee.
+4. Test the published URL, not only pasted sample code, and confirm that the live rendered page contains the intended JSON-LD.
+5. Recheck the visible page and markup after hours, phone, address, or service-area details change.
+
+The [consistent business information guide](/blog/why-consistent-business-information-matters-for-ai-answers/) explains how to keep those facts aligned across the website and other public profiles.
+
 ## Ask for a live check and a maintenance plan
 
 Have your provider test the published page, not just a sample pasted into a tool. Google's local business guidance recommends its Rich Results Test and checking how the live page is seen through Search Console. A passing result is a technical check, not a promise that Google will display the feature.
@@ -65,6 +106,14 @@ Ask for a plain summary of what was found and what needs attention. Compare the 
 Then agree on who updates those details. A seasonal schedule change should trigger a check of the visible page and its structured data. Keep that responsibility with the person handling routine website changes so you are not maintaining a forgotten second version of your business.
 
 ## Frequently asked questions
+
+### Does schema make ChatGPT cite my business?
+
+No. Schema can help software interpret accurate facts, but it cannot make ChatGPT or another AI assistant cite, recommend, or rank a business.
+
+### Should a service-area business publish its home address?
+
+Not when the home address is private and customers are not served there. Omit the address instead of inventing or exposing one, and publish only a genuine service area the business can verify.
 
 ### Do I need to learn code to use structured data?
 

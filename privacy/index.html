@@ -7,13 +7,15 @@
 <meta name="description" content="What Front Step Sites collects, why, and who handles it. We never sell your information.">
 <link rel="canonical" href="https://frontstepsites.com/privacy/">
 <meta name="google-site-verification" content="o99-pefOA6pR2C5f_pPemZCLI9MPywug-MAAubRePjQ" />
-<script>(function(c,l,a,r,i,t,y){var d=false;function s(){if(d)return;d=true;c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y)};["pointerdown","keydown","touchstart"].forEach(function(e){c.addEventListener(e,s,{once:true,passive:true})});c.addEventListener("load",function(){c.setTimeout(s,8000)},{once:true})})(window,document,"clarity","script","yqkzhoosjo");</script>
+<script>(function(c,l,a,r,i,t,y){var d=false,k="frontstep_analytics_consent";function o(){return navigator.globalPrivacyControl===true||["1","yes"].includes(navigator.doNotTrack||c.doNotTrack)}function g(){try{return !o()&&localStorage.getItem(k)==="accepted"}catch(e){return false}}function s(){if(d||!g())return;d=true;c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y)}function u(){if(g()){if(d)c[a]("consentv2",{ad_Storage:"denied",analytics_Storage:"granted"});else s()}else if(d){c[a]("consentv2",{ad_Storage:"denied",analytics_Storage:"denied"});c[a]("consent",false)}}["pointerdown","keydown","touchstart"].forEach(function(e){c.addEventListener(e,s,{once:true,passive:true})});c.addEventListener("load",function(){c.setTimeout(s,8000)},{once:true});c.addEventListener("website:analytics-consent",u)})(window,document,"clarity","script","yqkzhoosjo");</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&display=optional" rel="stylesheet" media="print" onload="this.media='all'">
 <noscript><link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&display=optional" rel="stylesheet"></noscript>
 <link rel="stylesheet" href="/assets/read.css">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Front Step Sites","url":"https://frontstepsites.com/","description":"Done-for-you website service for small businesses in the United States","email":"hello@frontstepsites.com","founder":{"@type":"Person","name":"Logan Moore"}}</script>
+<script defer src="/analytics-consent.js"></script>
+<script defer src="/posthog-web.js"></script>
 </head>
 <body>
 <header class="site"><div class="wrap">
@@ -21,7 +23,7 @@
   <nav><a class="hide-sm" href="https://app.frontstepsites.com/login">Sign in</a><a class="btn" href="https://app.frontstepsites.com/get-started">Get started</a></nav>
 </div></header>
 <main class="read"><div class="wrap"><article class="doc">
-<p class="kicker">Last updated September 26, 2026</p>
+<p class="kicker">Last updated October 8, 2026</p>
 <h1>Privacy policy</h1>
 <p>Front Step Sites is a done-for-you website service for small businesses. This page explains what we collect, why, and who else touches it. Short version: we collect what we need to build your site and bill you, we never sell it, and you can ask us to delete it.</p>
 
@@ -33,6 +35,7 @@
 <li><strong>Domain registration details:</strong> the contact details the domain system requires (name, address, email, phone). They go to our registrar, NameSilo, with privacy protection turned on where the domain ending allows it.</li>
 <li><strong>Messages from your website:</strong> when a visitor fills in the contact form on your site, we email the message to you.</li>
 <li><strong>Basic technical logs:</strong> IP addresses and request times, used to keep the service secure and to stop spam.</li>
+<li><strong>Optional website analytics:</strong> if you choose Allow analytics, PostHog receives an anonymous identifier, page path, device category, referral channel, language, and the type of signup or contact link selected. It does not receive form values, account identifiers, session replay, autocaptured actions, or raw query strings. Microsoft Clarity also loads only after that choice to help us understand how public pages are used.</li>
 </ul>
 
 <h2>How we use it</h2>
@@ -55,6 +58,7 @@
 
 <h2>Your choices</h2>
 <ul>
+<li>Use the persistent <strong>Cookie settings</strong> button on any page to allow or decline optional analytics. We store that explicit choice in your browser under <code>frontstep_analytics_consent</code>. Choosing Keep analytics off, withdrawing a prior acceptance, enabling Global Privacy Control or Do Not Track, or blocking browser storage prevents PostHog capture. Withdrawal also clears the site's anonymous PostHog identifier and tells Clarity to remove its analytics cookies.</li>
 <li>See, correct, or delete your information: email <a href="mailto:hello@frontstepsites.com">hello@frontstepsites.com</a>.</li>
 <li>Cancel any time from the Billing page in your account.</li>
 <li>Take your domain with you any time. It's registered in your name.</li>

@@ -82,3 +82,5 @@ footer.site a{color:var(--ink)}
 .doc th,.doc td{text-align:left;padding:.6rem .8rem;border-bottom:1px solid var(--line)}
 .doc thead th{background:var(--ink);color:var(--tag);font-weight:700}
 .doc tbody tr:last-child td{border-bottom:0}
+.doc pre{max-width:100%;overflow-x:auto;margin:1.2rem 0 1.7rem;padding:1rem;border:1.5px solid var(--ink);background:var(--ink);color:var(--tag);font:0.9rem/1.55 ui-monospace,SFMono-Regular,Consolas,monospace;white-space:pre}
+.doc code{font-family:ui-monospace,SFMono-Regular,Consolas,monospace}

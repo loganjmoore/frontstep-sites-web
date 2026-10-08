@@ -23,8 +23,10 @@ function stamp(root) {
     const path = join(root, entry.name);
     if (entry.isDirectory()) stamp(path);
     else if (entry.name.endsWith('.html')) {
-      const html = readFileSync(path, 'utf8');
-      if (!html.includes('src="/posthog-web.js"') && /<\/head>/i.test(html)) writeFileSync(path, html.replace(/<\/head>/i, '<script defer src="/posthog-web.js"></script>\n</head>'));
+      let html = readFileSync(path, 'utf8');
+      if (!html.includes('src="/analytics-consent.js"') && /<\/head>/i.test(html)) html = html.replace(/<\/head>/i, '<script defer src="/analytics-consent.js"></script>\n</head>');
+      if (!html.includes('src="/posthog-web.js"') && /<\/head>/i.test(html)) html = html.replace(/<\/head>/i, '<script defer src="/posthog-web.js"></script>\n</head>');
+      writeFileSync(path, html);
     }
   }
 }
