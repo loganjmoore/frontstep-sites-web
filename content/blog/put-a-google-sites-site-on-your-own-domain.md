@@ -3,7 +3,7 @@ title: "How to Put a Google Sites Site on Your Own Domain"
 description: "Connect a Google Sites site to your own domain with ownership verification, DNS records, a www address, HTTPS checks, and a live test."
 slug: "put-a-google-sites-site-on-your-own-domain"
 cluster: "guides"
-lead: "To put a Google Sites site on your own domain, publish the site, verify domain ownership in Google Search Console, open Custom domains in Sites, enter a subdomain such as www, and add the DNS record Google gives you. Test the public address while signed out before you advertise it."
+lead: "A Google Sites custom domain is a business-controlled web address, such as www.example.com, connected to a published Google Site. To set one up, verify domain ownership, add Google's DNS record, and test the public address while signed out."
 answer: "Publish the Google Sites site, verify your domain in Search Console with the supplied TXT record, then use Settings, Custom domains to connect a subdomain such as www. Add the requested DNS record at your registrar, keep the published site public, and test HTTPS, both domain versions, navigation, calls, and forms while signed out."
 published: "2026-10-08"
 updated: "2026-10-08"
@@ -12,7 +12,7 @@ image: "/assets/blog/put-a-google-sites-site-on-your-own-domain-cover.svg"
 imageAlt: "Seven-step path from a Google Sites draft through DNS records to a secure custom business domain"
 ---
 
-To put a Google Sites site on your own domain, publish the site, verify domain ownership in Google Search Console, open Custom domains in Sites, enter a subdomain such as www, and add the DNS record Google gives you. Test the public address while signed out before you advertise it. Keep the registrar account and Google Site under business-controlled logins so the address can be repaired or moved later.
+A Google Sites custom domain is a business-controlled web address, such as www.example.com, connected to a published Google Site. To set one up, publish the site, verify domain ownership in Google Search Console, open Custom domains in Sites, enter the subdomain, and add the DNS record Google gives you. Test the public address while signed out before you advertise it, and keep the registrar account and Google Site under business-controlled logins so the address can be repaired or moved later.
 
 ## What do you need before connecting a Google Sites site?
 

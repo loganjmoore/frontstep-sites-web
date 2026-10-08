@@ -3,7 +3,7 @@ title: "What a Website Maker Does: A 12-Task Cost Example"
 description: "See what a website maker does in a 12-task example, including owner time, provider work, first-year cost, domain control, and updates."
 slug: "what-a-website-maker-does-12-task-example"
 cluster: "guides"
-lead: "A website maker can mean a do-it-yourself page-building tool or a person or service that builds the site for you. The useful comparison is the full list of work: collecting business facts, writing, building, testing, publishing, and making later updates."
+lead: "A website maker is a tool, person, or service that turns business information into published web pages. The useful comparison is the full list of work: collecting business facts, writing, building, testing, publishing, and making later updates."
 answer: "A website maker turns business information into published pages, but the phrase may describe software or a done-for-you service. A fair cost check assigns all 12 launch and upkeep tasks to someone, puts a value on the owner's time, and confirms who controls the domain when the work is finished."
 published: "2026-10-08"
 updated: "2026-10-08"
@@ -12,7 +12,7 @@ image: "/assets/blog/what-a-website-maker-does-12-task-example-cover.svg"
 imageAlt: "Twelve website-making tasks divided between a business owner, a do-it-yourself builder, and a done-for-you service"
 ---
 
-A website maker may be a do-it-yourself page-building tool, or it may be a person or service that builds the site for you. If you typed “website maker com,” read the exact web address before creating an account because the phrase does not identify one clear product. Compare the full job: collecting business facts, writing, building, testing, publishing, and making later updates.
+A website maker is a tool, person, or service that turns business information into published web pages. If you typed “website maker com,” read the exact web address before creating an account because the phrase does not identify one clear product. Compare the full job: collecting business facts, writing, building, testing, publishing, and making later updates.
 
 ## What does a website maker actually do?
 
