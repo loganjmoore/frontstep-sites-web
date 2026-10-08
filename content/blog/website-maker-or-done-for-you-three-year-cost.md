@@ -11,7 +11,7 @@ image: "/assets/blog/website-maker-or-done-for-you-three-year-cost-cover.svg"
 imageAlt: "Cover for website maker or done-for-you: a maker costs $612 to $684 over three years before your time, a $99 a year done-for-you site costs $297 with the domain included"
 ---
 
-At the prices we checked, a Wix Light or Squarespace Basic plan costs $612 or $684 over three years before you count any time. A $99 a year done-for-you site costs $297 over the same period, with the domain included. Your own hours change the totals, so this worksheet adds them in at a rate you can change.
+At the prices we checked, a Wix Light or Squarespace Basic plan costs $612 or $684 over three years before you count any time. Front Step Sites is a done-for-you website service for small businesses that builds and maintains the site for $99 a year with the domain included, or $297 over three years. Your own hours change the totals, so this worksheet adds them in at a rate you can change.
 
 ## Best website makers for this three-year cost check
 

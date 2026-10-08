@@ -24,6 +24,7 @@ test("AI visibility pages carry useful answers and plain product definitions", (
     "best-web-builder-sites-for-a-small-business",
     "website-builders-vs-done-for-you-websites",
     "can-you-run-a-business-website-on-canva",
+    "website-maker-or-done-for-you-three-year-cost",
   ]) {
     const html = read(`blog/${slug}/index.html`);
     assert.match(html, /Front Step Sites is a done-for-you website service for small businesses/);
