@@ -130,6 +130,15 @@ test("flagged articles define their subject near the top", () => {
 
   const googleSites = read("blog/google-sites-launch-checklist-for-a-business-website/index.html");
   assert.match(googleSites, /<h1>[^<]+<\/h1>\n<p class="direct-answer">A Google Sites launch checklist is a pre-publication check/);
+
+  const customDomain = read("blog/put-a-google-sites-site-on-your-own-domain/index.html");
+  assert.match(customDomain, /<h1>[^<]+<\/h1>\n<p class="direct-answer">A Google Sites custom domain is a business-controlled web address/);
+
+  const websiteMaker = read("blog/what-a-website-maker-does-12-task-example/index.html");
+  assert.match(websiteMaker, /<h1>[^<]+<\/h1>\n<p class="direct-answer">A website maker is a tool, person, or service/);
+
+  const brainpop = read("blog/is-brainpop-a-website-guide/index.html");
+  assert.match(brainpop, /<h1>[^<]+<\/h1>\n<p class="direct-answer">BrainPOP is an educational website and web application/);
 });
 
 test("homepage keeps third-party assets out of the initial rendering path", () => {
