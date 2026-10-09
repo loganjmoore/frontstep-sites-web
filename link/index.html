@@ -53,6 +53,7 @@ button.alt,a.alt{background:#fff;color:var(--ink)}
   <div class="out">
     <label>Demo link<input id="url" readonly></label>
     <div class="row"><button id="cu" type="button">Copy link</button><a class="btn alt" id="open" target="_blank" rel="noopener">Open it</a><span class="copied" id="ok1" hidden>Copied</span></div>
+    <p class="sub">Draft only. Verify the public details and check your suppression list before sending.</p>
     <label>Message (text, email, or Facebook)<textarea id="msg"></textarea></label>
     <div class="row"><button id="cm" type="button">Copy message</button><span class="copied" id="ok2" hidden>Copied</span></div>
   </div>
@@ -70,10 +71,10 @@ function build() {
   document.getElementById("url").value = url;
   document.getElementById("open").href = url;
   document.getElementById("msg").value =
-    "Hi" + (who ? " " + who : "") + ", I came across " + (n || "your business") + (c ? " in " + c : "") + " and noticed you don't have a website, so the \"near me\" searches go to whoever does.\n\n" +
+    "Hi" + (who ? " " + who : "") + ", I came across " + (n || "your business") + (c ? " in " + c : "") + ". I thought you might like to see a website layout for your business.\n\n" +
     "I made you a sample so you can see what yours could look like, with your name on it:\n" + url + "\n\n" +
     "I run Front Step Sites: done-for-you websites for small businesses, $99 a year with your domain included, no setup fee. You answer a few questions, the site gets built, and any change after that is one request away. Your domain is in your name, and you can leave any time.\n\n" +
-    "Want the real thing? Just reply and I'll take it from there.\nLogan, Front Step Sites";
+    "Want the real thing? Just reply and I'll take it from there.\nLogan, Front Step Sites\n\nNot interested? Reply no thanks and I will not contact you again.\nBrightPrompt, 3060 Mercer University Dr Ste 110 #157, Atlanta, GA 30341";
 }
 function copy(id, ok) {
   navigator.clipboard.writeText(document.getElementById(id).value).then(function () {
