@@ -5,14 +5,25 @@ slug: "best-web-builder-sites-for-a-small-business"
 cluster: "compare"
 lead: "A website builder is a self-serve tool for making and editing your own site, and this comparison is for small business owners choosing between Wix, Squarespace, Google Sites, and a done-for-you site."
 answer: "The best web builder for a small business is the one you will keep up to date. Wix and Squarespace are the best-known paid builders, at $204 and $228 a year as we checked them, and you do all the editing. If you would rather hand off the edits, a done-for-you site at $99 a year with the domain included is the third option to weigh."
-updated: "2026-10-04"
+sitePlanner: true
+published: "2026-10-04"
+updated: "2026-10-06"
 image: "/assets/blog/best-web-builder-sites-for-a-small-business-cover.svg"
 imageAlt: "Cover for best web builder sites for a small business: Wix at $204 a year, Squarespace at $228 a year, and a done-for-you site at $99 a year with the domain included"
 ---
 
 The best web builder for a small business is the one you will keep up to date. For most owners that means choosing between a self-serve builder like Wix or Squarespace, or a done-for-you site where someone else makes the edits. Google Sites is the quickest to try if you already have a Google account, and it works best for a few simple pages.
 
-## How do you choose between a builder and a done-for-you site?
+## Best web builder sites, ranked by small-business fit
+
+1. **Wix:** Best for owners who want the most freedom to arrange pages themselves.
+2. **Squarespace:** Best for owners who prefer structured, polished templates.
+3. **Google Sites:** Best for publishing a few simple pages quickly.
+4. **Done-for-you site:** Best alternative when you want the finished site and future edits handled for you.
+
+The ranking favors self-serve builders because that is what this list compares. If your priority is spending less time in an editor, move the done-for-you option to the top.
+
+## Compare the options side by side
 
 Start with who will make the edits. A builder puts that work on you: writing the text, uploading photos, and checking the page on a phone after every change. A done-for-you site moves most of that work to the provider, and you supply the facts and approve the result.
 
@@ -37,7 +48,7 @@ The free domain covers year one only. Check the renewal price before year two, b
 
 ## When does a done-for-you site make more sense?
 
-A done-for-you site makes more sense when edits pile up faster than you can make them. Front Step Sites is $99 a year with the domain included, no setup fee, and 2 change requests a month on the Launch plan, done within 2 business days. The Grow plan is $29 a month or $290 a year, with unlimited changes the same business day and Google reviews shown on the site.
+A done-for-you site makes more sense when edits pile up faster than you can make them. Front Step Sites is a done-for-you website service for small businesses. It costs $99 a year with the domain included, no setup fee, and 2 change requests a month on the Launch plan, done within 2 business days. The Grow plan is $29 a month or $290 a year, with unlimited changes the same business day and Google reviews shown on the site.
 
 The trade-off is control. You cannot make a change yourself at 9 p.m., and you wait for each request to be finished. If you enjoy the editor and can spend an hour a week on the site, a builder gives you more say over every page.
 

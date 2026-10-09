@@ -1632,6 +1632,42 @@
   "angle": "the five steps from template to publish, then custom domains and who can connect them, from Google's own help pages"
  },
  {
+  "slug": "google-sites-launch-checklist-for-a-business-website",
+  "title": "Google Sites Launch Checklist for a Business Website",
+  "cluster": "guides",
+  "angle": "a 12-point pre-publish checklist covering the message, customer path, mobile preview, accessibility, sharing, search visibility, and custom domain"
+ },
+ {
+  "slug": "seven-web-site-mistakes-that-make-customers-hesitate",
+  "title": "7 Web Site Mistakes That Make Customers Hesitate",
+  "cluster": "guides",
+  "angle": "a fix-first audit of seven general business website mistakes, with mobile, performance, security, and stale-information checks"
+ },
+ {
+  "slug": "one-page-site-vs-multi-page-website-for-a-business",
+  "title": "One-Page Site vs Multi-Page Website for a Business",
+  "cluster": "compare",
+  "angle": "one-page and multi-page business website structures compared by offer, search topics, mobile use, maintenance, and a worked page plan"
+ },
+ {
+  "slug": "is-brainpop-a-website-guide",
+  "title": "Is BrainPOP a Website? A Plain-English Guide for Owners",
+  "cluster": "guides",
+  "angle": "plain-English explanation of BrainPOP as a content website and web application, contrasted with a website builder and a local business website"
+ },
+ {
+  "slug": "what-a-website-maker-does-12-task-example",
+  "title": "What a Website Maker Does: A 12-Task Cost Example",
+  "cluster": "guides",
+  "angle": "worked one-year example showing the tasks, owner time, and provider responsibilities hidden behind the phrase website maker"
+ },
+ {
+  "slug": "put-a-google-sites-site-on-your-own-domain",
+  "title": "How to Put a Google Sites Site on Your Own Domain",
+  "cluster": "guides",
+  "angle": "how-to guide for verifying domain ownership, connecting a www address, handling DNS, and testing the public Google Sites site"
+ },
+ {
   "slug": "html-website-development-when-custom-code-fits",
   "title": "HTML Website Development: When Custom Code Fits",
   "cluster": "guides",

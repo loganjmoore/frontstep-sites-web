@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How to Put a Google Sites Site on Your Own Domain</title>
+<meta name="description" content="Connect a Google Sites site to your own domain with ownership verification, DNS records, a www address, HTTPS checks, and a live test.">
+<link rel="canonical" href="https://frontstepsites.com/blog/put-a-google-sites-site-on-your-own-domain/">
+<link rel="alternate" type="application/rss+xml" title="Front Step Sites blog" href="https://frontstepsites.com/feed.xml">
+<meta name="google-site-verification" content="o99-pefOA6pR2C5f_pPemZCLI9MPywug-MAAubRePjQ" />
+<script>(function(c,l,a,r,i,t,y){var d=false,k="frontstep_analytics_consent";function o(){return navigator.globalPrivacyControl===true||["1","yes"].includes(navigator.doNotTrack||c.doNotTrack)}function g(){try{return !o()&&localStorage.getItem(k)==="accepted"}catch(e){return false}}function s(){if(d||!g())return;d=true;c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y)}function u(){if(g()){if(d)c[a]("consentv2",{ad_Storage:"denied",analytics_Storage:"granted"});else s()}else if(d){c[a]("consentv2",{ad_Storage:"denied",analytics_Storage:"denied"});c[a]("consent",false)}}["pointerdown","keydown","touchstart"].forEach(function(e){c.addEventListener(e,s,{once:true,passive:true})});c.addEventListener("load",function(){c.setTimeout(s,8000)},{once:true});c.addEventListener("website:analytics-consent",u)})(window,document,"clarity","script","yqkzhoosjo");</script>
+<meta property="og:title" content="How to Put a Google Sites Site on Your Own Domain">
+<meta property="og:description" content="Connect a Google Sites site to your own domain with ownership verification, DNS records, a www address, HTTPS checks, and a live test.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://frontstepsites.com/blog/put-a-google-sites-site-on-your-own-domain/">
+<meta property="og:image" content="https://frontstepsites.com/assets/blog/put-a-google-sites-site-on-your-own-domain-cover.svg">
+<link rel="preload" as="image" href="/assets/blog/put-a-google-sites-site-on-your-own-domain-cover.svg" fetchpriority="high">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&display=optional" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&display=optional" rel="stylesheet"></noscript>
+<style>/* Read pages (privacy, terms, blog): the shelf-tag world, quiet. Tokens match /DESIGN.md. */
+:root{
+  --ink:#111312;--ink-2:#474d4b;--ground:#eceeec;--tag:#fff;--yellow:#ffd60a;
+  --rail:#a3aaa9;--rail-deep:#5d6563;--line:#cfd4d2;
+  --font:"Archivo","Arial Narrow",system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:var(--font);font-size:1.0625rem;line-height:1.65;color:var(--ink);background:var(--ground)}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--ink);outline-offset:2px;box-shadow:0 0 0 7px var(--yellow)}
+.wrap{width:min(1120px,100% - 32px);margin-inline:auto}
+header.site{padding:18px 0;border-bottom:1.5px solid var(--ink);background:var(--tag)}
+header.site .wrap{display:flex;align-items:center;justify-content:space-between;gap:1rem}
+.brand{display:flex;align-items:center;gap:.6rem;text-decoration:none;font-weight:800;font-stretch:85%;font-size:1.3rem}
+.brand svg{width:32px;height:32px}
+header.site nav{display:flex;gap:1.1rem;align-items:center;font-weight:600}
+header.site nav a:not(.btn){text-decoration:none}
+header.site nav a:not(.btn):hover{text-decoration:underline}
+.btn{display:inline-flex;align-items:center;min-height:44px;padding:0 1rem;border-radius:3px;background:var(--ink);color:var(--yellow);font-weight:700;text-decoration:none}
+.btn:hover{box-shadow:0 3px 0 var(--rail-deep)}
+@media(max-width:640px){header.site nav .hide-sm{display:none}}
+main.read{padding:48px 0 72px}
+.doc{background:var(--tag);border:1.5px solid var(--ink);box-shadow:0 2px 0 rgba(0,0,0,.18);padding:clamp(20px,4vw,44px);max-width:760px}
+.doc .kicker{font-size:.78rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-2)}
+.doc h1{font-stretch:80%;font-weight:800;font-size:clamp(2rem,5vw,3rem);line-height:1;margin:.4rem 0 .8rem;text-wrap:balance}
+.doc h2{font-stretch:85%;font-weight:800;font-size:1.5rem;line-height:1.15;margin:2rem 0 .5rem}
+.doc h3{font-weight:700;font-size:1.15rem;margin:1.4rem 0 .3rem}
+.doc p,.doc ul,.doc ol{margin:.7rem 0;max-width:65ch}
+.doc ul,.doc ol{padding-left:1.3rem}
+.doc li{margin:.3rem 0}
+.doc .meta{color:var(--ink-2);font-size:.95rem}
+footer.site{border-top:1.5px solid var(--ink);background:var(--tag);padding:28px 0;font-size:.95rem;color:var(--ink-2)}
+footer.site .wrap{display:flex;flex-wrap:wrap;gap:.6rem 1.4rem;justify-content:space-between;align-items:center}
+footer.site a{color:var(--ink)}
+
+/* blog: breadcrumb */
+.crumbs{font-size:.85rem;color:var(--ink-2);margin-bottom:.7rem}
+.crumbs a{color:var(--ink-2);text-decoration:none}
+.crumbs a:hover{text-decoration:underline}
+.crumbs .sep{margin:0 .4rem}
+.doc .updated{color:var(--ink-2);font-size:.92rem;margin:.1rem 0 1.3rem}
+.doc .direct-answer{font-size:1.15rem;font-weight:600;margin:0 0 .6rem;max-width:60ch}
+
+/* blog: short-answer and offer tags. Already inside the .doc card, so no
+   border/shadow of their own (that would nest card-on-card): a left ink bar
+   and a flat tint carry the "tag" identity instead. Yellow means ours. */
+.tag-box{border-left:4px solid var(--ink);background:var(--ground);padding:14px 18px;margin:0 0 1.7rem}
+.tag-box .label{display:block;font-size:.78rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;margin-bottom:.4rem}
+.tag-box p{margin:0;max-width:65ch}
+.tag-offer{border-left-color:var(--ink);background:var(--yellow);margin:2.2rem 0}
+.tag-offer p{font-weight:600;margin-bottom:.9rem}
+.tag-offer .btn{margin-top:0}
+
+/* blog: related articles and hub lists (plain rows, not icon cards) */
+.related{margin-top:2.2rem;border-top:2px solid var(--ink);padding-top:1.1rem}
+.related h2{font-stretch:85%;font-weight:800;font-size:1.2rem;margin-bottom:.7rem}
+.article-list,.related ul{list-style:none;padding:0;display:grid;gap:1.1rem;margin-top:.8rem}
+.article-list li,.related li{border-bottom:1px solid var(--line);padding-bottom:1.1rem}
+.article-list li:last-child,.related li:last-child{border-bottom:0;padding-bottom:0}
+.article-list a,.related a{font-weight:700;text-decoration:none;font-size:1.08rem}
+.article-list a:hover,.related a:hover{text-decoration:underline}
+.article-list p,.related p{color:var(--ink-2);margin:.3rem 0 0;max-width:65ch}
+
+.hub-rail{margin-top:2.4rem;border-top:2px solid var(--ink);padding-top:1.2rem}
+.hub-rail h2{font-stretch:85%;font-weight:800;font-size:1.3rem;margin-bottom:.8rem}
+.hub-rail h2 a{color:var(--ink);text-decoration:none}
+.hub-rail h2 a:hover{text-decoration:underline}
+.hub-list{list-style:none;padding:0;display:grid;gap:0}
+.hub-list li{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;padding:.7rem 0;border-bottom:1px solid var(--line)}
+.hub-list li:last-child{border-bottom:0}
+.hub-list a{font-weight:700;text-decoration:none;font-size:1.05rem}
+.hub-list a:hover{text-decoration:underline}
+.hub-list .count{color:var(--ink-2);font-size:.9rem;white-space:nowrap}
+.hub-list .muted{color:var(--ink-2);font-weight:600}
+
+/* blog: cover image and inline figures/tables */
+.doc-figure{margin:0 0 1.7rem}
+.doc-figure img{display:block;width:100%;height:auto;border:1.5px solid var(--ink)}
+.doc-cover{margin-top:.2rem}
+.table-wrap{overflow-x:auto;margin:1.2rem 0 1.7rem;border:1.5px solid var(--ink)}
+.doc table{width:100%;border-collapse:collapse;font-size:.98rem;table-layout:fixed}
+.doc th,.doc td{text-align:left;padding:.6rem .8rem;border-bottom:1px solid var(--line)}
+.doc thead th{background:var(--ink);color:var(--tag);font-weight:700}
+.doc tbody tr:last-child td{border-bottom:0}
+.doc pre{max-width:100%;overflow-x:auto;margin:1.2rem 0 1.7rem;padding:1rem;border:1.5px solid var(--ink);background:var(--ink);color:var(--tag);font:0.9rem/1.55 ui-monospace,SFMono-Regular,Consolas,monospace;white-space:pre}
+.doc code{font-family:ui-monospace,SFMono-Regular,Consolas,monospace}
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"How to Put a Google Sites Site on Your Own Domain","description":"Connect a Google Sites site to your own domain with ownership verification, DNS records, a www address, HTTPS checks, and a live test.","datePublished":"2026-10-08","dateModified":"2026-10-08","image":"https://frontstepsites.com/assets/blog/put-a-google-sites-site-on-your-own-domain-cover.svg","author":{"@type":"Person","name":"Logan Moore"},"publisher":{"@type":"Organization","name":"Front Step Sites","url":"https://frontstepsites.com/","description":"Front Step Sites (frontstepsites.com) is unrelated to FRONTSTEPS, the property-management/HOA software company."},"mainEntityOfPage":{"@type":"WebPage","@id":"https://frontstepsites.com/blog/put-a-google-sites-site-on-your-own-domain/"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://frontstepsites.com/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://frontstepsites.com/blog/"},{"@type":"ListItem","position":3,"name":"Website guides","item":"https://frontstepsites.com/blog/guides/"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Can I connect example.com without www to Google Sites?","acceptedAnswer":{"@type":"Answer","text":"Google Sites requires the custom URL to include a subdomain such as www. Use registrar forwarding to send the bare example.com address to www.example.com. Test both versions over HTTPS after the change."}},{"@type":"Question","name":"Why does my custom domain return to sites.google.com?","acceptedAnswer":{"@type":"Answer","text":"The published site may not be shared publicly, or the custom mapping may be incomplete. Google says the site must be shared with the world for published viewers or it can redirect to the sites.google.com URL. Check the publishing audience while signed out."}},{"@type":"Question","name":"Can an editor connect the domain?","acceptedAnswer":{"@type":"Answer","text":"Google says only the owner of a Google Site can connect it to a domain. If the correct business account is only an editor, transfer or update ownership before attempting the custom-domain step."}},{"@type":"Question","name":"Will connecting Google Sites break business email?","acceptedAnswer":{"@type":"Answer","text":"The intended TXT and CNAME additions should not replace mail records, but careless DNS edits can disrupt email. Keep existing MX records and unrelated TXT records unless your provider gives a specific reason to change them. Save a copy of the original DNS values before editing."}},{"@type":"Question","name":"How many custom domains can one Google Site use?","acceptedAnswer":{"@type":"Answer","text":"Google Sites Help says one site can connect up to five custom domains. A small business usually benefits from publishing one primary address consistently and forwarding reasonable variants to it."}}]}</script>
+<script defer src="/analytics-consent.js"></script>
+<script defer src="/posthog-web.js"></script>
+</head>
+<body>
+<header class="site"><div class="wrap">
+  <a class="brand" href="/" aria-label="Front Step Sites home"><svg viewBox="0 0 34 34" aria-hidden="true"><rect width="34" height="34" fill="#ffd60a"/><path d="M6 27h22v-5H17v-5h-5v-5H6z" fill="#111312"/></svg>Front Step Sites</a>
+  <nav>
+    <a class="hide-sm" href="/blog/">Blog</a>
+    <a class="hide-sm" href="https://app.frontstepsites.com/login">Sign in</a>
+    <a class="btn" href="https://app.frontstepsites.com/get-started">Get started</a>
+  </nav>
+</div></header>
+<main class="read"><div class="wrap">
+<article class="doc">
+<nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a><span class="sep">&rsaquo;</span><a href="/blog/">Blog</a><span class="sep">&rsaquo;</span><a href="/blog/guides/">Website guides</a></nav>
+<h1>How to Put a Google Sites Site on Your Own Domain</h1>
+<p class="direct-answer">A Google Sites custom domain is a business-controlled web address, such as www.example.com, connected to a published Google Site. To set one up, verify domain ownership, add Google's DNS record, and test the public address while signed out.</p>
+<p class="updated">By Logan Moore &middot; Updated October 8, 2026</p>
+<figure class="doc-figure doc-cover"><img src="/assets/blog/put-a-google-sites-site-on-your-own-domain-cover.svg" alt="Seven-step path from a Google Sites draft through DNS records to a secure custom business domain" width="1200" height="630" fetchpriority="high"></figure>
+<aside class="tag-box"><span class="label">Short answer</span><p>Publish the Google Sites site, verify your domain in Search Console with the supplied TXT record, then use Settings, Custom domains to connect a subdomain such as www. Add the requested DNS record at your registrar, keep the published site public, and test HTTPS, both domain versions, navigation, calls, and forms while signed out.</p></aside>
+<p>A Google Sites custom domain is a business-controlled web address, such as www.example.com, connected to a published Google Site. To set one up, publish the site, verify domain ownership in Google Search Console, open Custom domains in Sites, enter the subdomain, and add the DNS record Google gives you. Test the public address while signed out before you advertise it, and keep the registrar account and Google Site under business-controlled logins so the address can be repaired or moved later.</p>
+<h2 id="what-do-you-need-before-connecting-a-google-sites-site">What do you need before connecting a Google Sites site?</h2>
+<p>You need a published Google Site, ownership of a domain, access to its DNS settings, and the Google account that owns the site. Collect those four items before changing a record.</p>
+<p><a href="https://support.google.com/sites/answer/9068867">Google Sites Help</a> says only the site owner can connect a custom domain. An editor may be able to change pages without being allowed to finish this setup. Google also requires the custom URL to include a subdomain, such as www.example.com, rather than only example.com.</p>
+<p>Before you touch DNS, write down which account controls each part:</p>
+<div class="table-wrap"><table><thead><tr><th>Part</th><th>Account that should control it</th><th>Why it matters</th></tr></thead><tbody><tr><td>Google Site</td><td>Business owner or durable business account</td><td>Can publish and connect the site</td></tr><tr><td>Domain registrar</td><td>Business-controlled account</td><td>Can change DNS or move the domain</td></tr><tr><td>Search Console</td><td>Business-controlled Google account</td><td>Verifies domain ownership</td></tr><tr><td>Contact form or booking tool</td><td>Business-controlled account</td><td>Receives customer requests</td></tr></tbody></table></div>
+<p>If a former employee, agency, or volunteer controls one row, fix that access first. The guide to <a href="/blog/who-owns-your-domain-name-and-why-it-matters/">who owns your domain name</a> explains what to check before a move or renewal.</p>
+<h2 id="how-do-you-verify-the-domain-in-google-search-console">How do you verify the domain in Google Search Console?</h2>
+<p>You verify the domain by adding the TXT record supplied by Google Search Console to the domain’s DNS settings. The TXT value proves control without moving the website or email.</p>
+<p>Use this sequence:</p>
+<ol>
+<li>Open Google Search Console with the account that should retain access.</li>
+<li>Choose Add property and select the Domain option.</li>
+<li>Enter the bare domain, such as example.com, without https or www.</li>
+<li>Copy the TXT record Google supplies.</li>
+<li>Open the DNS panel at the domain registrar or DNS host.</li>
+<li>Add the TXT record exactly as shown.</li>
+<li>Return to Search Console and select Verify.</li>
+</ol>
+<p>Leave existing MX, TXT, CNAME, and other records alone unless the instructions identify a specific change. Email depends on DNS too. Replacing the whole record set for one website connection can interrupt mail.</p>
+<h2 id="how-do-you-add-the-custom-domain-inside-google-sites">How do you add the custom domain inside Google Sites?</h2>
+<p>You add the custom domain in the published site’s Settings panel under Custom domains. Enter the full subdomain you want visitors to use, follow the registrar instructions, and finish the setup after ownership is verified.</p>
+<p>Google’s current flow is Settings, Custom domains, Start setup, then the domain field. Use www.example.com unless you have a deliberate reason to use another label such as info.example.com. “www” is familiar and leaves the bare domain available for forwarding.</p>
+<p>Google Sites Help says one Google Site can connect up to five custom domains. That limit is useful for legitimate alternate addresses, but most small businesses should choose one primary public address. Multiple public versions mean more testing and more chances to print the wrong one.</p>
+<h2 id="which-dns-records-connect-a-google-sites-site">Which DNS records connect a Google Sites site?</h2>
+<p>The DNS connection usually uses one TXT record to verify ownership and one CNAME record to route a subdomain. Use the exact host and value displayed by Google and your registrar because field labels differ between providers.</p>
+<div class="table-wrap"><table><thead><tr><th>Record</th><th>Job</th><th>Illustrative host</th><th>Use this exact value?</th></tr></thead><tbody><tr><td>TXT</td><td>Proves domain control</td><td>@</td><td>No, copy Google’s value</td></tr><tr><td>CNAME</td><td>Points the www name to Google</td><td>www</td><td>No, follow the setup screen</td></tr><tr><td>Forwarding</td><td>Sends the bare domain to www</td><td>example.com</td><td>Configure at the registrar if supported</td></tr></tbody></table></div>
+<p>The table explains what the records do. Do not paste an example target from a blog post into live DNS. Use the actual fields shown by Google and your registrar.</p>
+<p>If the registrar automatically adds the full domain after the host field, enter only www where instructed. Entering www.example.com in a field that appends example.com can accidentally create www.example.com.example.com.</p>
+<h2 id="how-do-you-make-the-bare-domain-reach-the-www-site">How do you make the bare domain reach the www site?</h2>
+<p>You make the bare domain reach the www site by configuring domain forwarding at the registrar or DNS provider. Google Sites requires a subdomain for the custom URL, so visitors who type example.com need a separate route to www.example.com.</p>
+<p>Use a permanent redirect when the provider offers a clear choice, preserve the path if supported, and enable HTTPS forwarding if it is available. Then test these addresses individually:</p>
+<ul>
+<li>http://example.com</li>
+<li>https://example.com</li>
+<li>http://www.example.com</li>
+<li>https://www.example.com</li>
+</ul>
+<p>All four should settle on one secure primary address without a warning or loop. If the registrar does not provide suitable forwarding, ask its support team for the documented bare-domain method instead of inventing extra A records.</p>
+<h2 id="how-long-should-you-wait-before-changing-dns-again">How long should you wait before changing DNS again?</h2>
+<p>You should wait through the stated propagation window before repeatedly editing correct DNS records. Google Sites Help says domain changes can take up to 48 hours to become visible, even though they often appear sooner.</p>
+<p>Google’s troubleshooting section also sets a limit of 20 mappings per week for a URL. Repeatedly deleting and recreating the same setup can turn an ordinary delay into a separate limit problem. Record the time and exact values of the change, then check again from another network before editing.</p>
+<p>Use a private browser window or a phone on cellular data. Your home computer may temporarily keep an older DNS or browser result. A different network gives you a second view without another edit.</p>
+<h2 id="how-do-you-check-https-and-the-public-google-sites-page">How do you check HTTPS and the public Google Sites page?</h2>
+<p>You check HTTPS by opening the final custom address and confirming the browser shows a secure connection with no certificate warning. Then test the site as a customer while signed out of Google.</p>
+<p>Test it like a customer:</p>
+<ol>
+<li>Open the exact printed domain.</li>
+<li>Confirm the browser stays on the expected business address.</li>
+<li>Visit every navigation item.</li>
+<li>Tap the phone number on a phone.</li>
+<li>Submit the contact form with a labeled test inquiry.</li>
+<li>Confirm the inquiry reaches the correct account.</li>
+<li>Check the footer for the correct business details.</li>
+</ol>
+<p>HTTPS protects information in transit between the visitor and the site. The plain-English guide to <a href="/blog/what-ssl-is-and-why-your-site-needs-the-padlock/">what SSL is and why a site needs it</a> explains the padlock, certificate, and renewal pieces without treating the certificate as a search trick.</p>
+<h2 id="what-should-you-update-after-the-custom-address-works">What should you update after the custom address works?</h2>
+<p>After the custom address works, update the business places that still point to the old sites.google.com URL. Start with the Google Business Profile, major business listings, email signature, social profiles, invoices, and printed material.</p>
+<p>Change one public source at a time and click the saved link. Do not assume a form accepted the new address. A typo copied to five profiles creates five cleanup jobs.</p>
+<p>The domain connection alone does not make the site locally relevant. Pages still need accurate services, coverage, and contact details. The <a href="/blog/tree-service-local-seo-checklist/">tree service local SEO checklist</a> shows how those facts work together for a real trade without promising a ranking.</p>
+<h2 id="frequently-asked-questions">Frequently asked questions</h2>
+<h3 id="can-i-connect-example-com-without-www-to-google-sites">Can I connect example.com without www to Google Sites?</h3>
+<p>Google Sites requires the custom URL to include a subdomain such as www. Use registrar forwarding to send the bare example.com address to www.example.com. Test both versions over HTTPS after the change.</p>
+<h3 id="why-does-my-custom-domain-return-to-sites-google-com">Why does my custom domain return to sites.google.com?</h3>
+<p>The published site may not be shared publicly, or the custom mapping may be incomplete. Google says the site must be shared with the world for published viewers or it can redirect to the sites.google.com URL. Check the publishing audience while signed out.</p>
+<h3 id="can-an-editor-connect-the-domain">Can an editor connect the domain?</h3>
+<p>Google says only the owner of a Google Site can connect it to a domain. If the correct business account is only an editor, transfer or update ownership before attempting the custom-domain step.</p>
+<h3 id="will-connecting-google-sites-break-business-email">Will connecting Google Sites break business email?</h3>
+<p>The intended TXT and CNAME additions should not replace mail records, but careless DNS edits can disrupt email. Keep existing MX records and unrelated TXT records unless your provider gives a specific reason to change them. Save a copy of the original DNS values before editing.</p>
+<h3 id="how-many-custom-domains-can-one-google-site-use">How many custom domains can one Google Site use?</h3>
+<p>Google Sites Help says one site can connect up to five custom domains. A small business usually benefits from publishing one primary address consistently and forwarding reasonable variants to it.</p>
+<h2 id="the-short-version">The short version</h2>
+<p>Connect a Google Sites site with business-controlled accounts, Search Console verification, the custom-domain setup, and the exact DNS records Google provides. Forward the bare domain to the required subdomain, wait through the propagation window, and test the secure public page while signed out.</p>
+
+<aside class="tag-box tag-offer">
+  <span class="label">Front Step Sites &middot; Launch</span>
+  <p>$99/yr, domain included, no setup fee.</p>
+  <a class="btn" href="https://app.frontstepsites.com/get-started">Get started</a>
+</aside>
+<div class="related"><h2>Related articles</h2><ul><li><a href="/blog/how-to-choose-a-domain-name-for-a-small-business/">Choosing a domain name for your business</a><p>Choose a domain that closely matches your business name and is easy to say, spell, and remember. Prefer a simple address over a string of services and towns. Check for confusingly similar businesses, review renewal terms, and make sure the registration and account remain under your control rather than a designer’s personal account.</p></li><li><a href="/blog/who-owns-your-domain-name-and-why-it-matters/">Who owns your domain name?</a><p>Your business should be the domain registrant and have reliable control over the account that manages the registration. A web designer can handle the technical work without holding the domain in their own name. Check the registrant details, account access, recovery email, and renewal arrangements before you need to move the website.</p></li><li><a href="/blog/how-to-move-a-domain-to-a-new-provider/">How to move a domain to a new provider</a><p>To move a domain to a new registrar, confirm access and transfer eligibility, protect the existing website and email settings, unlock the domain, and use its authorization code at the new provider. A domain transfer does not move website files or mailboxes. Keep old services active until you have verified the transfer and every service that depends on the domain.</p></li><li><a href="/blog/what-website-hosting-is-in-plain-english/">What website hosting is, in plain English</a><p>Website hosting is the service that keeps your website available online and delivers its pages when someone visits. Your domain is the address people use to find it, while a website builder is a tool for creating and editing it. A small business needs a reliable arrangement and clear support responsibilities, not necessarily a complicated hosting plan.</p></li></ul></div>
+</article>
+</div></main>
+<footer class="site"><div class="wrap">
+  <span>Front Step Sites &middot; <a href="mailto:hello@frontstepsites.com">hello@frontstepsites.com</a></span>
+  <span><a href="/blog/">Blog</a> &middot; <a href="/privacy/">Privacy</a> &middot; <a href="/terms/">Terms</a> &middot; <a href="https://app.frontstepsites.com/login">Customer sign in</a></span>
+  <span class="disambig">Front Step Sites (frontstepsites.com) is unrelated to FRONTSTEPS, the property-management/HOA software company.</span>
+<address style="font-style: normal; font-size: 14px; line-height: 1.6; margin-top: 16px;"><strong>Mailing address</strong><br />3060 Mercer University Dr Ste 110<br />Atlanta, GA 30341</address></div></footer>
+</body>
+</html>

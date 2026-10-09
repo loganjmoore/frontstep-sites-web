@@ -5,10 +5,28 @@ slug: website-builders-vs-done-for-you-websites
 cluster: guides
 answer: A done-for-you site starts at $99 a year with the domain included, and a builder starts at about $17 to $19 a month, before your time. A builder fits if you want to make your own changes and can set aside time to write, arrange, and check the pages. A done-for-you website fits if you would rather hand off that work.
 lead: Front Step Sites is a done-for-you website service for small businesses in the US, at $99 a year with the domain included and no setup fee.
-updated: 2026-10-03
+sitePlanner: true
+published: 2026-10-03
+updated: 2026-10-06
 ---
 
 Should you build your business website yourself or pay someone to handle it? A website builder is a do-it-yourself tool for making your own pages, and a done-for-you website is a site a provider designs, writes, and maintains for you. A builder makes sense when you have the interest and time to use it; a done-for-you service makes sense when you want help getting the work finished. The important difference is who does the writing, checking, and updating after you choose a design.
+
+## Best website options for a small local business
+
+1. **Done-for-you service:** Best when you want someone else to write, build, and maintain the pages from your facts and approvals.
+2. **Wix:** Best when you want a flexible visual editor and plan to make every update yourself.
+3. **Squarespace:** Best when you want structured templates and plan to make every update yourself.
+4. **Google Sites:** Best for a basic site with only a few pages and simple requirements.
+
+| Option | What you get first | Who keeps it current |
+| --- | --- | --- |
+| Done-for-you service | A finished site based on your business information | The provider, within the agreed scope |
+| Wix | A builder, templates, and hosting | You |
+| Squarespace | A builder, templates, and hosting | You |
+| Google Sites | A basic page editor tied to a Google account | You |
+
+This ranking is for a typical local owner who wants a useful site finished and maintained. If direct editing control matters more, put Wix or Squarespace first. The plan builder above helps you define the pages before choosing the tool or service.
 
 ## Start with what your customers need to do
 

@@ -4,10 +4,22 @@ description: Compare a website subscription with a one-time build by checking on
 slug: website-subscription-vs-one-time-website-build
 cluster: compare
 answer: A website subscription can spread the work and cost into an ongoing service, while a one-time build pays for an agreed project. Neither label tells you the full cost. Compare domain renewal, hosting, future changes, and support, then confirm who handles each task and what you can take if you leave.
-updated: 2026-09-26
+published: 2026-09-26
+updated: 2026-10-06
 ---
 
 Should you pay a website subscription or buy a one-time website build? A subscription can fit if you want an ongoing service, while a one-time project can fit if you want a defined handoff. The useful comparison is what it will cost to keep the website working and accurate after launch.
+
+## Subscription and one-time build compared
+
+| Question | Website subscription | One-time website build |
+| --- | --- | --- |
+| What the first payment covers | Access or ongoing service, depending on the agreement | The defined build project |
+| What continues afterward | The recurring fee and included work | Domain, hosting, maintenance, and future changes still need a plan |
+| Who makes updates | The provider or you, depending on scope | You, staff, or separately paid help after handoff |
+| Best fit | Owners who want a continuing service | Owners who want a defined project and can manage the handoff |
+
+Neither model wins on its label. Compare the written scope, three-year cost, update process, ownership, and exit terms.
 
 ## Separate the build from the bills that follow
 

@@ -1,13 +1,34 @@
 ---
-title: "Restaurant: get more Google reviews"
-description: "Build a restaurant review routine that fits dine-in and takeout, uses neutral invitations, avoids rewards, and turns guest feedback into useful improvements."
+title: "How Restaurants Can Get More Google Reviews"
+description: "A policy-safe restaurant review routine for dine-in, takeout, and catering, with Google review links, QR codes, request wording, and reply steps."
 slug: "restaurant-get-more-reviews"
 cluster: "trades/restaurant"
 answer: "Invite restaurant guests to leave an honest Google review after they have experienced the meal and service. Use a small receipt message, a review link, or a brief invitation that does not pressure diners. Include dine-in and takeout guests fairly, avoid rewards or rating requests, and respond to feedback without exposing private booking or order details."
-updated: "2026-09-26"
+published: "2026-09-26"
+updated: "2026-10-08"
 ---
 
+## Set up your Google review link and QR code
+
+Use a computer browser for Google's current QR-code flow:
+
+1. Open the restaurant's Google Business Profile.
+2. Choose **Read reviews**.
+3. Choose **Get more reviews**.
+4. Copy the review link or download the QR code Google provides.
+5. Open the link or scan the code on a signed-out phone and confirm that it reaches the intended review prompt.
+6. For a multi-location restaurant, verify that each link and QR code lands on the correct location before printing or sending it.
+
+| Channel | Timing and neutral sample wording | Failure check |
+| --- | --- | --- |
+| Receipt | After payment: "You're welcome to share an honest Google review of your visit." | Scan the printed code and confirm it opens the correct location. |
+| Table card | Available after the meal: "Want to share your experience? Use this optional review link." | Make sure the review code cannot be confused with the menu or payment code. |
+| Takeout insert | Read after the guest has eaten: "If you'd like, share an honest review of your order." | Confirm the insert is not handed out only after compliments. |
+| Post-event follow-up | After a catering or private event, through an agreed channel: "You're welcome to share an honest review of the event." | Confirm the recipient agreed to that follow-up channel and can opt out. |
+
 How can your restaurant get more Google reviews without making servers deliver another sales pitch? Make the invitation easy to notice and easy to decline. Guests should be able to finish their meal, pay, and leave without feeling that a review is part of the bill.
+
+If inaccurate menu, hours, or ordering information is causing complaints, fix that source first with the [restaurant website guide](/blog/website-restaurant/).
 
 ## Ask after the dining experience has happened
 
@@ -72,6 +93,10 @@ The [restaurant website mistakes guide](/blog/restaurant-website-mistakes/) can 
 Track whether the invitation routine is being followed and whether recurring concerns are addressed. Do not treat a review count as proof of a particular search position or assume every new diner came because of a rating.
 
 ## Frequently asked questions
+
+### Can a restaurant put a Google review QR code on receipts?
+
+Yes. Google lists receipts as a place to share a review link or QR code. Keep the request optional and neutral, send every guest to the correct location, and never tie a reward or service recovery to posting a review.
 
 ### Can we offer a free appetizer for any honest review?
 

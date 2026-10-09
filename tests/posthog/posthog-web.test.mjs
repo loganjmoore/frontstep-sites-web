@@ -7,7 +7,7 @@ const source = readFileSync(new URL('../../posthog-web.js', import.meta.url), 'u
 function browser(overrides = {}) {
   const windowListeners = new Map(), documentListeners = new Map(), values = new Map(), session = new Map(), requests = [], nodes = [];
   const storage = (map) => ({ getItem: (k) => map.get(k) ?? null, setItem: (k, v) => map.set(k, v), removeItem: (k) => map.delete(k) });
-  const config = { key: 'phc_test', host: 'https://us.i.posthog.com', product: 'venuebill.com', surface: 'marketing', consentKey: 'site_consent', consentKind: 'accepted', ...overrides };
+  const config = { key: 'phc_test', host: 'https://us.i.posthog.com', product: 'venuebill.com', surface: 'marketing', hosts: ['venuebill.com', 'www.venuebill.com', 'app.venuebill.com'], consentKey: 'site_consent', consentKind: 'accepted', ...overrides };
   const context = { window: { addEventListener: (k, fn) => windowListeners.set(k, fn), dispatchEvent: e => { windowListeners.get(e.type)?.(e); return true; } }, document: {
     cookie: '', readyState: 'complete', referrer: 'https://google.com/search?q=private', documentElement: { lang: 'en' },
     addEventListener: (k, fn) => documentListeners.set(k, fn),
@@ -47,6 +47,10 @@ assert.equal(b.requests.at(-1).data.properties.page_path, '/:private');
 const link = { href: 'https://apps.apple.com/app/id123?token=secret' };
 b.documents.get('click')({ target: { closest: () => link } }); await tick();
 assert.deepEqual(b.requests.slice(-2).map((r) => r.data.event), ['cta_clicked', 'app_store_clicked']);
+const signup = { href: 'https://app.venuebill.com/get-started' };
+b.documents.get('click')({ target: { closest: () => signup } }); await tick();
+assert.equal(b.requests.at(-1).data.event, 'cta_clicked');
+assert.equal(b.requests.at(-1).data.properties.target, 'signup');
 const oldId = b.requests.at(-1).data.distinct_id;
 b.values.set('site_consent', 'declined'); b.windows.get('storage')();
 const count = b.requests.length;
@@ -58,6 +62,8 @@ assert.notEqual(b.requests.at(-1).data.distinct_id, oldId, 'Reaccept creates a f
 b.context.navigator.globalPrivacyControl = true; b.context.window.productAnalytics.refresh();
 b.context.window.productAnalytics.capture('signup_completed');
 assert.equal(b.requests.length, count + 1, 'GPC overrides stored consent');
+const dnt = browser(); dnt.values.set('site_consent', 'accepted'); dnt.context.navigator.doNotTrack = '1'; await tick();
+assert.equal(dnt.requests.length, 0, 'Do Not Track overrides stored consent');
 for (const config of [{ key: '' }, { host: 'https://untrusted.example' }, { product: 'pancakebudget.com' }]) {
   const disabled = browser(config); disabled.values.set('site_consent', 'accepted'); await tick();
   assert.equal(disabled.requests.length, 0);

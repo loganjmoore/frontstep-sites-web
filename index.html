@@ -8,7 +8,7 @@
 <link rel="canonical" href="https://frontstepsites.com/">
 <link rel="alternate" type="application/rss+xml" title="Front Step Sites blog" href="https://frontstepsites.com/feed.xml">
 <meta name="google-site-verification" content="o99-pefOA6pR2C5f_pPemZCLI9MPywug-MAAubRePjQ" />
-<script type="text/javascript">(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window, document, "clarity", "script", "yqkzhoosjo");</script>
+<script>(function(c,l,a,r,i,t,y){var d=false,k="frontstep_analytics_consent";function o(){return navigator.globalPrivacyControl===true||["1","yes"].includes(navigator.doNotTrack||c.doNotTrack)}function g(){try{return !o()&&localStorage.getItem(k)==="accepted"}catch(e){return false}}function s(){if(d||!g())return;d=true;c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y)}function u(){if(g()){if(d)c[a]("consentv2",{ad_Storage:"denied",analytics_Storage:"granted"});else s()}else if(d){c[a]("consentv2",{ad_Storage:"denied",analytics_Storage:"denied"});c[a]("consent",false)}}["pointerdown","keydown","touchstart"].forEach(function(e){c.addEventListener(e,s,{once:true,passive:true})});c.addEventListener("load",function(){c.setTimeout(s,8000)},{once:true});c.addEventListener("website:analytics-consent",u)})(window,document,"clarity","script","yqkzhoosjo");</script>
 <!--
 THESIS: the offer shelved like honest merchandise: price, unit price, what's in the box, no fine print. Refuses the SaaS builder landing page.
 OWN-WORLD: retail shelf tags on a steel rail; white card-stock tags with condensed black numerals, our tag in label yellow; unit-price boxes, barcode dividers; Archivo throughout. See /DESIGN.md.
@@ -18,7 +18,8 @@ FORM: shelf-tag world, diagnostic comparison-plate staging (seed d7f88bc8).
 -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&display=optional" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&display=optional" rel="stylesheet"></noscript>
 <style>
 :root{
   --ink:#111312;--ink-2:#474d4b;--ground:#eceeec;--tag:#fff;--yellow:#ffd60a;
@@ -180,6 +181,7 @@ footer p{color:var(--ink-2);font-size:.92rem}
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Front Step Sites","url":"https://frontstepsites.com/","description":"Front Step Sites (frontstepsites.com) builds $99/yr done-for-you websites for local service businesses in the United States and is unrelated to FRONTSTEPS, the property-management/HOA software company.","email":"hello@frontstepsites.com","founder":{"@type":"Person","name":"Logan Moore"}}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Do I own my website?","acceptedAnswer":{"@type":"Answer","text":"Yes. Your domain is registered in your name, and if you ever leave we send you your site's files. No fees to leave."}},{"@type":"Question","name":"Is this really cheaper than Wix?","acceptedAnswer":{"@type":"Answer","text":"Yes, from day one: $99 a year with your domain included, against about $204 a year for Wix Light billed yearly, where you still build and fix everything yourself."}},{"@type":"Question","name":"How do changes work?","acceptedAnswer":{"@type":"Answer","text":"Sign in and open a request, like \"change Saturday hours to 8 to 2\" or \"swap the top photo for this one\". We make the change, publish it, and reply to you. Launch includes 2 requests a month, live within 2 business days. Grow is unlimited and same-day."}},{"@type":"Question","name":"Who actually does the work?","acceptedAnswer":{"@type":"Answer","text":"We do, working under strict written rules for your site. That's how we keep it at $99. Every change is saved, so anything can be undone, and anything bigger than a small change gets a quote before it costs a cent."}},{"@type":"Question","name":"Is there any catch to leaving?","acceptedAnswer":{"@type":"Answer","text":"One, and it isn't ours: registries don't let any domain move in its first 60 days after it's registered or moved. After that, the button works any day of the year."}},{"@type":"Question","name":"What if I already have a domain?","acceptedAnswer":{"@type":"Answer","text":"We move it into your account at no extra cost (it stays in your name), or just point it at your new site. Either way nothing breaks."}},{"@type":"Question","name":"Where are you?","acceptedAnswer":{"@type":"Answer","text":"We work with businesses anywhere in the US, entirely online."}},{"@type":"Question","name":"What isn't included?","acceptedAnswer":{"@type":"Answer","text":"A full redesign, a new logo, an online store, booking, payments, or custom features. We'll quote those before anything costs extra."}},{"@type":"Question","name":"Is Front Step Sites the same company as FRONTSTEPS?","acceptedAnswer":{"@type":"Answer","text":"No. Front Step Sites (frontstepsites.com) is unrelated to FRONTSTEPS, the property-management/HOA software company."}},{"@type":"Question","name":"Do I need to know HTML or code?","acceptedAnswer":{"@type":"Answer","text":"No. You answer a 10-minute questionnaire, and we write the words and build the site. A hand-coded HTML site is a job for a web developer, and custom features are quoted before anything costs extra."}},{"@type":"Question","name":"Do you build personal about-me sites?","acceptedAnswer":{"@type":"Answer","text":"No. Front Step Sites is for local businesses. For a personal page, a simple site builder like Squarespace or Wix is the simpler choice."}}]}</script>
 <script defer src="/posthog-web.js"></script>
+<script defer src="/analytics-consent.js"></script>
 </head>
 <body>
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
@@ -209,6 +211,7 @@ footer p{color:var(--ink-2);font-size:.92rem}
 <section class="hero" style="padding-bottom:0" aria-labelledby="h1">
   <div class="wrap">
     <h1 id="h1">We build your website. We keep it running. You just ask.</h1>
+    <p class="lead">A website is a set of linked pages on a domain name that people open in a browser. A small-business website usually explains the services, service area, proof of work, and how to contact the business.</p>
     <p class="lead">Done-for-you websites for small businesses anywhere in the US. Answer a few questions and we build your site. After that, ask for any change in plain English and it gets done. Your domain is included.</p>
     <div class="hero-cta">
       <p>You get a finished site, your domain included, and changes made when you ask. $99 a year.</p>
@@ -386,20 +389,18 @@ footer p{color:var(--ink-2);font-size:.92rem}
 
 <section aria-labelledby="start-h">
   <div class="wrap">
-    <h2 id="start-h">How it starts</h2>
+    <h2 id="start-h">How a small-business website is created</h2>
     <ol class="start">
-      <li><span class="num">1</span><h3>A 10-minute questionnaire</h3><p>What you do, where you work, what customers ask. Add photos if you have them. That's all the work you do.</p></li>
-      <li><span class="num">2</span><h3>We build it, you approve it</h3><p>Your first draft usually arrives within a day. Ask for any change before it goes public.</p></li>
-      <li><span class="num">3</span><h3>It goes live</h3><p>You show up on Google with a real site. We keep it running; you get back to work.</p></li>
+      <li><span class="num">1</span><h3>Plan the pages and content</h3><p>Collect what you do, where you work, what customers ask, and the photos you can use. Front Step Sites gathers that in a 10-minute questionnaire.</p></li>
+      <li><span class="num">2</span><h3>Build and approve the site</h3><p>The words, page layout, links, and contact path are assembled into a draft. You check the facts and ask for changes before it is public.</p></li>
+      <li><span class="num">3</span><h3>Publish and maintain it</h3><p>The approved pages go live on your domain. After launch, keep the services, hours, photos, and contact details accurate.</p></li>
     </ol>
   </div>
 </section>
 
-<section aria-labelledby="what-h">
+<section aria-labelledby="maker-h">
   <div class="wrap">
-    <h2 id="what-h">What is a website?</h2>
-    <p class="lead" style="margin-top:.8rem">A website is a set of linked pages on a domain name, like yourbusiness.com, that customers open in a browser. For a local business, the pages say what you do, where you work, and how to reach you. <a href="/blog/what-website-hosting-is-in-plain-english/">Read what hosting and domains are</a>.</p>
-    <h2 id="maker-h" style="margin-top:2.4rem">What's the best website maker?</h2>
+    <h2 id="maker-h">What's the best website maker?</h2>
     <p class="lead" style="margin-top:.8rem">It depends on who does the work. A site builder such as Squarespace or Wix suits an owner who wants to make every change. Front Step Sites is a done-for-you service: we build your site from a 10-minute questionnaire, keep it running, and make changes when you ask. It's $99 a year with the domain included. <a href="/blog/website-builders-vs-done-for-you-websites/">Compare the two in detail</a>.</p>
   </div>
 </section>
@@ -429,7 +430,7 @@ footer p{color:var(--ink-2);font-size:.92rem}
   <div class="wrap">
     <a class="brand" href="/" aria-label="Front Step Sites home"><svg viewBox="0 0 34 34" aria-hidden="true"><rect width="34" height="34" fill="#ffd60a"/><path d="M6 27h22v-5H17v-5h-5v-5H6z" fill="#111312"/></svg>Front Step Sites</a>
     <p>Built and run by Logan Moore &middot; <a href="mailto:hello@frontstepsites.com">hello@frontstepsites.com</a> &middot; <a href="/blog/">Blog</a> &middot; <a href="https://app.frontstepsites.com/login">Customer sign in</a> &middot; <a href="/privacy/">Privacy</a> &middot; <a href="/terms/">Terms</a> &middot; Competitor prices checked September 2026 &middot; &copy; <span id="yr">2026</span></p>
-  </div>
+  <address style="font-style: normal; font-size: 14px; line-height: 1.6; margin-top: 16px;"><strong>Mailing address</strong><br />3060 Mercer University Dr Ste 110<br />Atlanta, GA 30341</address></div>
 </footer>
 
 <script>
