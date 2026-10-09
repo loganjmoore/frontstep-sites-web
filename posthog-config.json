@@ -8,9 +8,9 @@
     "www.frontstepsites.com",
     "app.frontstepsites.com"
   ],
-  "consentKey": "",
-  "consentKind": "",
+  "consentKey": "frontstep_analytics_consent",
+  "consentKind": "accepted",
   "sharedDomain": "frontstepsites.com",
-  "release": "",
-  "publicOnly": false
+  "publicOnly": false,
+  "release": ""
 }
