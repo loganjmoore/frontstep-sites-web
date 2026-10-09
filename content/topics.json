@@ -1666,5 +1666,23 @@
   "title": "How to Put a Google Sites Site on Your Own Domain",
   "cluster": "guides",
   "angle": "how-to guide for verifying domain ownership, connecting a www address, handling DNS, and testing the public Google Sites site"
+ },
+ {
+  "slug": "html-website-development-when-custom-code-fits",
+  "title": "HTML Website Development: When Custom Code Fits",
+  "cluster": "guides",
+  "angle": "a decision guide for choosing custom HTML only when a small business has requirements that a standard builder or managed site cannot meet"
+ },
+ {
+  "slug": "what-is-a-website-four-parts",
+  "title": "What Is a Website? The Four Parts in Plain English",
+  "cluster": "guides",
+  "angle": "a definition of a website through its four practical parts: domain, hosting, pages, and content"
+ },
+ {
+  "slug": "best-website-builder-three-questions",
+  "title": "Best Website Builder? Ask These 3 Questions",
+  "cluster": "compare",
+  "angle": "an ownership, updates, and exit scorecard that helps a small business choose a website builder without repeating a vendor ranking"
  }
 ]
