@@ -281,6 +281,8 @@ ${ogImage ? `<meta property="og:image" content="${escapeAttr(ogImage)}">\n` : ""
 <noscript><link href="${fontHref}" rel="stylesheet"></noscript>
 <style>${READ_CSS}${bodyHtml.includes('id="site-plan-builder"') ? SITE_PLAN_CSS : ""}</style>
 ${jsonLd.map(jsonLdScript).join("\n")}
+<script defer src="/analytics-consent.js"></script>
+<script defer src="/posthog-web.js"></script>
 </head>
 <body>
 <header class="site"><div class="wrap">
