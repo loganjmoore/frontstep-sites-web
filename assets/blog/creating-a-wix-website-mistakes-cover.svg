@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Creating a Wix website mistakes guide</title>
+  <desc id="desc">Eight website mistakes appear on a repair board with clear fix markers.</desc>
+  <rect width="1200" height="630" fill="#111312"/>
+  <rect x="54" y="48" width="1092" height="534" fill="#fff"/>
+  <rect x="54" y="48" width="286" height="534" fill="#ffd60a"/>
+  <text x="90" y="124" fill="#111312" font-family="Arial, sans-serif" font-size="24" font-weight="800">FIX EARLY</text>
+  <text x="90" y="252" fill="#111312" font-family="Arial, sans-serif" font-size="130" font-weight="900">8</text>
+  <text x="90" y="300" fill="#111312" font-family="Arial, sans-serif" font-size="28" font-weight="800">WIX WEBSITE</text>
+  <text x="90" y="336" fill="#111312" font-family="Arial, sans-serif" font-size="28" font-weight="800">MISTAKES</text>
+  <text x="382" y="144" fill="#111312" font-family="Arial, sans-serif" font-size="48" font-weight="800">A repair list for</text>
+  <text x="382" y="200" fill="#111312" font-family="Arial, sans-serif" font-size="48" font-weight="800">small business owners</text>
+  <g font-family="Arial, sans-serif" font-size="24" fill="#111312">
+    <line x1="382" y1="260" x2="1088" y2="260" stroke="#cfd4d2" stroke-width="3"/><text x="382" y="246">Goal before editor</text><text x="1042" y="246" font-weight="800">FIX</text>
+    <line x1="382" y1="332" x2="1088" y2="332" stroke="#cfd4d2" stroke-width="3"/><text x="382" y="318">Verify every claim</text><text x="1042" y="318" font-weight="800">FIX</text>
+    <line x1="382" y1="404" x2="1088" y2="404" stroke="#cfd4d2" stroke-width="3"/><text x="382" y="390">Test the live form</text><text x="1042" y="390" font-weight="800">FIX</text>
+    <line x1="382" y1="476" x2="1088" y2="476" stroke="#cfd4d2" stroke-width="3"/><text x="382" y="462">Name the site owner</text><text x="1042" y="462" font-weight="800">FIX</text>
+  </g>
+  <text x="382" y="535" fill="#474d4b" font-family="Arial, sans-serif" font-size="22" font-weight="700">FRONT STEP SITES · 2026</text>
+</svg>

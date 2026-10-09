@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Build a website with Wix launch checklist</title>
+  <desc id="desc">Eleven checked steps lead from a website draft to a published business site.</desc>
+  <rect width="1200" height="630" fill="#eceeec"/>
+  <rect x="58" y="52" width="1084" height="526" fill="#fff" stroke="#111312" stroke-width="4"/>
+  <rect x="58" y="52" width="1084" height="62" fill="#111312"/>
+  <circle cx="96" cy="83" r="9" fill="#ffd60a"/>
+  <circle cx="126" cy="83" r="9" fill="#fff"/>
+  <text x="166" y="93" fill="#fff" font-family="Arial, sans-serif" font-size="28" font-weight="700">PUBLISH CHECK</text>
+  <text x="92" y="188" fill="#111312" font-family="Arial, sans-serif" font-size="50" font-weight="800">Build with Wix.</text>
+  <text x="92" y="244" fill="#111312" font-family="Arial, sans-serif" font-size="50" font-weight="800">Check before launch.</text>
+  <text x="92" y="294" fill="#474d4b" font-family="Arial, sans-serif" font-size="24">11 practical checks for a small business website</text>
+  <g font-family="Arial, sans-serif" font-weight="700" font-size="22" fill="#111312">
+    <rect x="92" y="342" width="250" height="58" fill="#ffd60a" stroke="#111312" stroke-width="3"/><text x="112" y="379">01 ACCOUNT</text>
+    <rect x="360" y="342" width="250" height="58" fill="#fff" stroke="#111312" stroke-width="3"/><text x="380" y="379">04 PAGES</text>
+    <rect x="628" y="342" width="250" height="58" fill="#fff" stroke="#111312" stroke-width="3"/><text x="648" y="379">07 ACTIONS</text>
+    <rect x="896" y="342" width="214" height="58" fill="#fff" stroke="#111312" stroke-width="3"/><text x="916" y="379">10 GOOGLE</text>
+    <rect x="92" y="420" width="250" height="58" fill="#fff" stroke="#111312" stroke-width="3"/><text x="112" y="457">02 GOAL</text>
+    <rect x="360" y="420" width="250" height="58" fill="#ffd60a" stroke="#111312" stroke-width="3"/><text x="380" y="457">06 PHONE</text>
+    <rect x="628" y="420" width="250" height="58" fill="#fff" stroke="#111312" stroke-width="3"/><text x="648" y="457">08 DOMAIN</text>
+    <rect x="896" y="420" width="214" height="58" fill="#ffd60a" stroke="#111312" stroke-width="3"/><text x="916" y="457">11 LIVE</text>
+  </g>
+  <path d="M1008 513l25 25 51-61" fill="none" stroke="#111312" stroke-width="14" stroke-linecap="square"/>
+  <text x="92" y="540" fill="#111312" font-family="Arial, sans-serif" font-size="24" font-weight="700">FRONT STEP SITES</text>
+</svg>
