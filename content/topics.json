@@ -1684,5 +1684,23 @@
   "title": "Best Website Builder? Ask These 3 Questions",
   "cluster": "compare",
   "angle": "an ownership, updates, and exit scorecard that helps a small business choose a website builder without repeating a vendor ranking"
+ },
+ {
+  "slug": "build-a-website-with-wix-publish-checklist",
+  "title": "Build a Website With Wix: 11 Checks Before You Publish",
+  "cluster": "guides",
+  "angle": "a Wix-specific pre-publish checklist covering inputs, page purpose, phone testing, custom domain, Google Business Profile, and a scored live test"
+ },
+ {
+  "slug": "creating-a-wix-website-mistakes",
+  "title": "Creating a Wix Website: 8 Mistakes to Fix Early",
+  "cluster": "guides",
+  "angle": "a failure-prevention guide focused on wasted editing time, unverified generated copy, excess features, form delivery, and named upkeep ownership"
+ },
+ {
+  "slug": "wix-website-creation-diy-freelancer-managed",
+  "title": "Wix Website Creation: DIY, Freelancer, or Managed?",
+  "cluster": "compare",
+  "angle": "a working-relationship comparison of DIY Wix, a Wix freelancer project, and a managed website service across control, owner workload, cost, and exit"
  }
 ]
