@@ -4,7 +4,7 @@ description: "Compare auto detailing website costs, from DIY to hired help, and 
 slug: "auto-detailing-website-cost"
 cluster: "trades/auto-detailing"
 answer: "An auto detailing website can start at $99 a year with a done-for-you service, while a typical custom freelancer or agency project can run from a few thousand dollars to much more. Your biggest cost decisions are whether customers request quotes or book appointments, how packages are explained, and who keeps the site current."
-updated: "2026-09-26"
+updated: "2026-09-30"
 ---
 
 You want a website for your detailing business, but you need to know what you are actually paying for. A mobile detailer offering interior cleanups needs something different from a shop selling paint correction and ceramic coatings. Start with the customer's buying decision, then compare prices for the same work.
@@ -26,6 +26,12 @@ DIY fits when you want direct control and have time to write package description
 [Front Step Sites](/) costs $99 a year with the domain included and no setup fee. The domain is registered in your own name, and the $99 plan includes two change requests a month, made within two business days. That gives you a concrete baseline for comparing a managed website with doing the work yourself.
 
 Typical freelancer and agency projects can range from a few thousand dollars to substantially more as custom design, content, and connections to other systems expand. A freelancer can suit a defined project with one main contact. An agency may suit a larger shop coordinating several kinds of marketing. Ask each provider to separate initial work from ongoing charges.
+
+| Tier | Typical cost | Best for | Watch for |
+| --- | --- | --- | --- |
+| DIY builder | Wix Light $17/month billed yearly ($204/year), or Squarespace Basic $19/month | Owners with time to write package descriptions and maintain the site | You still arrange photos and keep package pricing current yourself |
+| Front Step Sites | $99/yr, domain included, no setup fee | An owner who wants ongoing changes without learning an editor | 2 change requests a month, made within two business days |
+| Freelancer/Agency | A few thousand dollars to substantially more, depending on scope | A custom design, a larger gallery, or a multi-location project | Wide price variation; get a written quote before you pay |
 
 ## Booking choices can change the scope
 

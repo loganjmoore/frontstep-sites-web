@@ -5,18 +5,27 @@
 //
 //   node tools/build-blog.mjs
 //
-import { readFileSync, writeFileSync, mkdirSync, readdirSync, rmSync } from "node:fs";
+import { readFileSync, writeFileSync, mkdirSync, readdirSync, rmSync, existsSync } from "node:fs";
 import { join } from "node:path";
 import { fileURLToPath } from "node:url";
 
 const WEB = fileURLToPath(new URL("..", import.meta.url));
 const CONTENT_DIR = join(WEB, "content", "blog");
 const BLOG_DIR = join(WEB, "blog");
+const HUB_DIR = join(WEB, "content", "hubs");
+const READ_CSS = readFileSync(join(WEB, "assets", "read.css"), "utf8");
 const SITE = "https://frontstepsites.com";
 const LOGIN_URL = "https://app.frontstepsites.com/login";
 const START_URL = "https://app.frontstepsites.com/get-started";
 
 const MONTHS = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+
+const ORG = {
+  "@type": "Organization",
+  name: "Front Step Sites",
+  url: `${SITE}/`,
+  description: "Front Step Sites (frontstepsites.com) is unrelated to FRONTSTEPS, the property-management/HOA software company.",
+};
 
 // ---------- small utilities ----------
 
@@ -46,7 +55,8 @@ function formatDate(iso) {
   return `${month} ${Number(d)}, ${y}`;
 }
 function firstSentence(text) {
-  const m = String(text).match(/^[^.!?]*[.!?]/);
+  // A terminator only ends the sentence when whitespace or the end follows it, so "llms.txt" and "2.5" survive.
+  const m = String(text).match(/^.*?[.!?](?=\s|$)/s);
   return (m ? m[0] : text).trim();
 }
 function stripMd(text) {
@@ -54,6 +64,10 @@ function stripMd(text) {
 }
 function jsonLdScript(obj) {
   return `<script type="application/ld+json">${JSON.stringify(obj).replace(/</g, "\\u003c")}</script>`;
+}
+
+function clarityScript() {
+  return `<script>(function(c,l,a,r,i,t,y){var d=false,k="frontstep_analytics_consent";function o(){return navigator.globalPrivacyControl===true||["1","yes"].includes(navigator.doNotTrack||c.doNotTrack)}function g(){try{return !o()&&localStorage.getItem(k)==="accepted"}catch(e){return false}}function s(){if(d||!g())return;d=true;c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y)}function u(){if(g()){if(d)c[a]("consentv2",{ad_Storage:"denied",analytics_Storage:"granted"});else s()}else if(d){c[a]("consentv2",{ad_Storage:"denied",analytics_Storage:"denied"});c[a]("consent",false)}}["pointerdown","keydown","touchstart"].forEach(function(e){c.addEventListener(e,s,{once:true,passive:true})});c.addEventListener("load",function(){c.setTimeout(s,8000)},{once:true});c.addEventListener("website:analytics-consent",u)})(window,document,"clarity","script","yqkzhoosjo");</script>`;
 }
 
 // ---------- front matter ----------
@@ -92,6 +106,15 @@ function parseBlocks(md) {
   while (i < lines.length) {
     const line = lines[i];
     if (!line.trim()) { i++; continue; }
+    const fence = line.match(/^```([a-z0-9-]*)\s*$/i);
+    if (fence) {
+      const code = [];
+      i++;
+      while (i < lines.length && !/^```\s*$/.test(lines[i])) code.push(lines[i++]);
+      if (i < lines.length) i++;
+      blocks.push({ type: "code", language: fence[1], text: code.join("\n") });
+      continue;
+    }
     if (/^###\s+/.test(line)) { blocks.push({ type: "h3", text: line.replace(/^###\s+/, "").trim() }); i++; continue; }
     if (/^##\s+/.test(line)) { blocks.push({ type: "h2", text: line.replace(/^##\s+/, "").trim() }); i++; continue; }
     if (/^-\s+/.test(line)) {
@@ -165,7 +188,7 @@ function renderMarkdown(body, ctx) {
   for (const block of blocks) {
     if (block.type === "h2") {
       flushFaq();
-      inFaq = slugify(block.text) === "frequently-asked-questions";
+      inFaq = ["frequently-asked-questions", "what-are-the-frequently-asked-questions"].includes(slugify(block.text));
       let id = slugify(block.text) || "section";
       let unique = id, n = 2;
       while (usedIds.has(unique)) unique = `${id}-${n++}`;
@@ -195,6 +218,9 @@ function renderMarkdown(body, ctx) {
         .join("")}</tr></thead><tbody>${block.rows
         .map((r) => `<tr>${r.map((c) => `<td>${inline(c, ctx)}</td>`).join("")}</tr>`)
         .join("")}</tbody></table></div>\n`;
+    } else if (block.type === "code") {
+      const language = block.language ? ` class="language-${escapeAttr(block.language)}"` : "";
+      html += `<pre><code${language}>${escapeHtml(block.text)}</code></pre>\n`;
     }
   }
   flushFaq();
@@ -218,7 +244,22 @@ function brandSvg() {
   return `<svg viewBox="0 0 34 34" aria-hidden="true"><rect width="34" height="34" fill="#ffd60a"/><path d="M6 27h22v-5H17v-5h-5v-5H6z" fill="#111312"/></svg>`;
 }
 
-function pageShell({ title, description, canonical, ogType = "website", ogImage, bodyHtml, jsonLd = [] }) {
+const SITE_PLAN_CSS = `
+/* interactive article demo */
+.site-plan{margin:1.5rem 0 2rem;padding:1.15rem;border:1.5px solid var(--ink);background:var(--tag)}
+.site-plan h2{margin-top:0}
+.site-plan form{display:grid;gap:.85rem;margin-top:1rem}
+.site-plan label{display:grid;gap:.3rem;font-weight:700}
+.site-plan input,.site-plan select{width:100%;min-height:46px;padding:.55rem .65rem;border:1.5px solid var(--ink);border-radius:3px;background:#fff;color:var(--ink);font:inherit}
+.site-plan .btn{justify-self:start;background:var(--yellow);color:var(--ink)}
+.site-plan-output{margin-top:1rem;padding-top:1rem;border-top:1.5px dashed var(--ink)}
+.site-plan-output h3{margin-top:0}
+.site-plan-output ol{margin-bottom:.8rem}
+@media(min-width:760px){.site-plan form{grid-template-columns:1fr 1fr}.site-plan label:last-of-type{grid-column:1/-1}.site-plan .btn{grid-column:1/-1}}
+`;
+
+function pageShell({ title, description, canonical, ogType = "website", ogImage, preloadImage, bodyHtml, jsonLd = [] }) {
+  const fontHref = "https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&display=optional";
   return `<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -228,15 +269,20 @@ function pageShell({ title, description, canonical, ogType = "website", ogImage,
 <meta name="description" content="${escapeAttr(description)}">
 <link rel="canonical" href="${escapeAttr(canonical)}">
 <link rel="alternate" type="application/rss+xml" title="Front Step Sites blog" href="${SITE}/feed.xml">
+<meta name="google-site-verification" content="o99-pefOA6pR2C5f_pPemZCLI9MPywug-MAAubRePjQ" />
+${clarityScript()}
 <meta property="og:title" content="${escapeAttr(title)}">
 <meta property="og:description" content="${escapeAttr(description)}">
 <meta property="og:type" content="${escapeAttr(ogType)}">
 <meta property="og:url" content="${escapeAttr(canonical)}">
-${ogImage ? `<meta property="og:image" content="${escapeAttr(ogImage)}">\n` : ""}<link rel="preconnect" href="https://fonts.googleapis.com">
+${ogImage ? `<meta property="og:image" content="${escapeAttr(ogImage)}">\n` : ""}${preloadImage ? `<link rel="preload" as="image" href="${escapeAttr(preloadImage)}" fetchpriority="high">\n` : ""}<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/assets/read.css">
+<link href="${fontHref}" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="${fontHref}" rel="stylesheet"></noscript>
+<style>${READ_CSS}${bodyHtml.includes('id="site-plan-builder"') ? SITE_PLAN_CSS : ""}</style>
 ${jsonLd.map(jsonLdScript).join("\n")}
+<script defer src="/analytics-consent.js"></script>
+<script defer src="/posthog-web.js"></script>
 </head>
 <body>
 <header class="site"><div class="wrap">
@@ -253,10 +299,47 @@ ${bodyHtml}
 <footer class="site"><div class="wrap">
   <span>Front Step Sites &middot; <a href="mailto:hello@frontstepsites.com">hello@frontstepsites.com</a></span>
   <span><a href="/blog/">Blog</a> &middot; <a href="/privacy/">Privacy</a> &middot; <a href="/terms/">Terms</a> &middot; <a href="${LOGIN_URL}">Customer sign in</a></span>
-</div></footer>
+  <span class="disambig">Front Step Sites (frontstepsites.com) is unrelated to FRONTSTEPS, the property-management/HOA software company.</span>
+<address style="font-style: normal; font-size: 14px; line-height: 1.6; margin-top: 16px;"><strong>Mailing address</strong><br />3060 Mercer University Dr Ste 110<br />Atlanta, GA 30341</address></div></footer>${bodyHtml.includes('id="site-plan-builder"') ? `
+<script>
+(function () {
+  var form = document.getElementById("site-plan-builder");
+  var output = document.getElementById("site-plan-output");
+  if (!form || !output) return;
+  form.addEventListener("submit", function (event) {
+    event.preventDefault();
+    var data = new FormData(form);
+    var business = String(data.get("business") || "local business").trim() || "local business";
+    var area = String(data.get("area") || "your service area").trim() || "your service area";
+    var action = String(data.get("action") || "request a quote");
+    output.innerHTML = "<h3>Your starter site plan</h3><ol><li><strong>Homepage:</strong> Say what your " + escapeText(business) + " does in " + escapeText(area) + " and make it easy to " + escapeText(action) + ".</li><li><strong>Services:</strong> Give each main service its own plain-language explanation.</li><li><strong>About:</strong> Show who does the work and why customers can trust the business.</li><li><strong>Contact:</strong> Repeat the service area, hours, and the next step.</li></ol><p>This is a planning demo. A builder or provider still needs your real services, photos, policies, and contact details.</p>";
+    output.hidden = false;
+    output.focus();
+  });
+  function escapeText(value) {
+    var span = document.createElement("span");
+    span.textContent = value;
+    return span.innerHTML;
+  }
+})();
+</script>` : ""}
 </body>
 </html>
 `;
+}
+
+function renderSitePlanBuilder() {
+  return `<section class="site-plan" aria-labelledby="site-plan-title">
+  <h2 id="site-plan-title">Try the site-plan builder</h2>
+  <p>Enter three details to turn a blank website into a practical four-page starting plan. Nothing is sent or saved.</p>
+  <form id="site-plan-builder">
+    <label>Business type<input name="business" autocomplete="organization-title" required placeholder="Tree service"></label>
+    <label>Service area<input name="area" autocomplete="address-level2" required placeholder="Tulsa and nearby towns"></label>
+    <label>Main customer action<select name="action"><option>call the business</option><option>request a quote</option><option>book an appointment</option><option>visit the location</option></select></label>
+    <button class="btn" type="submit">Build my starter plan</button>
+  </form>
+  <div id="site-plan-output" class="site-plan-output" tabindex="-1" hidden aria-live="polite"></div>
+</section>`;
 }
 
 // crumbs: array of {name, url|null}. url === null means "current page", rendered as plain text.
@@ -282,11 +365,11 @@ function renderArticlePage(article, related, clusterName, clusterUrl) {
       "@type": "BlogPosting",
       headline: article.title,
       description: article.description,
-      datePublished: article.updated,
+      datePublished: article.published || article.updated,
       dateModified: article.updated,
       ...(ogImage ? { image: ogImage } : {}),
-      author: { "@type": "Organization", name: "Front Step Sites", url: `${SITE}/` },
-      publisher: { "@type": "Organization", name: "Front Step Sites", url: `${SITE}/` },
+      author: article.author ? { "@type": "Person", name: article.author } : ORG,
+      publisher: ORG,
       mainEntityOfPage: { "@type": "WebPage", "@id": canonical },
     },
     {
@@ -316,8 +399,8 @@ function renderArticlePage(article, related, clusterName, clusterUrl) {
   const bodyHtml = `<article class="doc">
 ${renderCrumbs(crumbs)}
 <h1>${escapeHtml(article.title)}</h1>
-<p class="updated">Updated ${formatDate(article.updated)}</p>
-${article.image ? `<figure class="doc-figure doc-cover"><img src="${escapeAttr(article.image)}" alt="${escapeAttr(article.imageAlt || "")}" width="1200" height="630"></figure>\n` : ""}<aside class="tag-box"><span class="label">Short answer</span><p>${escapeHtml(article.answer)}</p></aside>
+${article.lead ? `<p class="direct-answer">${escapeHtml(article.lead)}</p>\n` : ""}<p class="updated">${article.author ? `By ${escapeHtml(article.author)} &middot; ` : ""}Updated ${formatDate(article.updated)}</p>
+${article.image ? `<figure class="doc-figure doc-cover"><img src="${escapeAttr(article.image)}" alt="${escapeAttr(article.imageAlt || "")}" width="1200" height="630" fetchpriority="high"></figure>\n` : ""}<aside class="tag-box"><span class="label">Short answer</span><p>${escapeHtml(article.answer)}</p></aside>${article.sitePlanner === "true" ? `\n${renderSitePlanBuilder()}` : ""}
 ${article.bodyHtml}
 <aside class="tag-box tag-offer">
   <span class="label">Front Step Sites &middot; Launch</span>
@@ -327,12 +410,15 @@ ${article.bodyHtml}
 ${relatedHtml}
 </article>`;
 
+  // Keep the <title> under 60 characters: drop the brand suffix when it would not fit.
+  const fullTitle = `${article.title} | Front Step Sites`;
   return pageShell({
-    title: `${article.title} | Front Step Sites`,
+    title: fullTitle.length < 60 ? fullTitle : article.title,
     description: article.description,
     canonical,
     ogType: "article",
     ogImage,
+    preloadImage: article.image,
     bodyHtml,
     jsonLd,
   });
@@ -345,7 +431,7 @@ const HUB_FAQ = [
   { question: "How do I ask for a change to my site?", answer: "Sign in to your account and write the request in plain English. Launch includes 2 requests a month, done within 2 business days." },
 ];
 
-function renderClusterHub(cluster, clusterName, articles) {
+function renderClusterHub(cluster, clusterName, articles, introHtml = "") {
   const canonical = `${SITE}/blog/${cluster}/`;
   const crumbs = [{ name: "Home", url: "/" }, { name: "Blog", url: "/blog/" }, { name: clusterName, url: null }];
   const jsonLd = [
@@ -376,7 +462,7 @@ ${HUB_FAQ.map((f) => `<h3>${escapeHtml(f.question)}</h3>\n<p>${escapeHtml(f.answ
 ${renderCrumbs(crumbs)}
 <h1>${escapeHtml(clusterName)}</h1>
 <p class="updated">${articles.length} article${articles.length === 1 ? "" : "s"}</p>
-<p>Front Step Sites is a done-for-you website service for small businesses, priced at $99 a year with the domain included and no setup fee. The ${escapeHtml(clusterName)} hub is a section of the Front Step Sites blog with ${articles.length} article${articles.length === 1 ? "" : "s"} of practical, specific guidance, with 2 change requests a month included on the Launch plan.</p>
+${introHtml}<p>Front Step Sites is a done-for-you website service for small businesses, priced at $99 a year with the domain included and no setup fee. The ${escapeHtml(clusterName)} hub is a section of the Front Step Sites blog with ${articles.length} article${articles.length === 1 ? "" : "s"} of practical, specific guidance, with 2 change requests a month included on the Launch plan.</p>
 <ul class="article-list">
 ${articles.map((a) => `<li><a href="/blog/${a.slug}/">${escapeHtml(a.title)}</a><p>${escapeHtml(a.answer)}</p></li>`).join("\n")}
 </ul>
@@ -391,11 +477,22 @@ ${faqHtml}
   });
 }
 
-function renderBlogHub(tradeRows, guideRows, aiRows, compareRows) {
+const BLOG_FAQ = [
+  { question: "Is frontstepsites.com the same company as FRONTSTEPS?", answer: "No. Front Step Sites (frontstepsites.com) is unrelated to FRONTSTEPS, the property-management/HOA software company." },
+  { question: "What does Front Step Sites do, and who is it for?", answer: "Front Step Sites is a done-for-you website service. You answer a 10-minute questionnaire, we write and build your site, keep it running, and make changes when you ask in plain English. It is for small local businesses in the United States, at $99 a year with the domain included and no setup fee." },
+  { question: "How is Front Step Sites different from Wix or Squarespace?", answer: "Wix and Squarespace are website builders you use yourself. As of September 2026, Wix Light is $204 a year billed yearly and Squarespace Basic is $19 a month. Front Step Sites is a done-for-you service that builds the site and makes your changes for $99 a year with the domain included." },
+];
+
+function renderBlogHub(tradeRows, guideRows, aiRows, compareRows, latestRows, featuredRows) {
   const canonical = `${SITE}/blog/`;
   const crumbs = [{ name: "Home", url: "/" }, { name: "Blog", url: null }];
   const jsonLd = [
     { "@context": "https://schema.org", "@type": "BreadcrumbList", itemListElement: crumbs.map((c, i) => ({ "@type": "ListItem", position: i + 1, name: c.name, item: c.url ? `${SITE}${c.url}` : canonical })) },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: BLOG_FAQ.map((f) => ({ "@type": "Question", name: f.question, acceptedAnswer: { "@type": "Answer", text: f.answer } })),
+    },
   ];
 
   const renderTradeList = (rows) =>
@@ -417,11 +514,21 @@ function renderBlogHub(tradeRows, guideRows, aiRows, compareRows) {
   const bodyHtml = `<article class="doc">
 ${renderCrumbs(crumbs)}
 <h1>The Front Step Sites blog</h1>
-<p>Straight answers for small business owners about websites, local search, and getting found by customers. No jargon, no filler, checkable facts.</p>
+<p>Front Step Sites is a done-for-you website service for small local businesses. This blog gives straight answers for owners about websites, local search, and getting found by customers. No jargon, no filler, checkable facts.</p>
+
+<div class="hub-rail">
+  <h2>Start with these posts</h2>
+  ${renderArticleRows(featuredRows)}
+</div>
 
 <div class="hub-rail">
   <h2>For your trade</h2>
   ${renderTradeList(tradeRows)}
+</div>
+
+<div class="hub-rail">
+  <h2>Newest posts</h2>
+  ${renderArticleRows(latestRows)}
 </div>
 
 <div class="hub-rail">
@@ -438,6 +545,9 @@ ${renderCrumbs(crumbs)}
   ${rowHeading("Comparisons", compareRows.url)}
   ${renderArticleRows(compareRows.top)}
 </div>
+
+<h2 id="frequently-asked-questions">Frequently asked questions</h2>
+${BLOG_FAQ.map((f) => `<h3>${escapeHtml(f.question)}</h3>\n<p>${escapeHtml(f.answer)}</p>`).join("\n")}
 </article>`;
 
   return pageShell({
@@ -504,9 +614,13 @@ function main() {
       description: data.description,
       cluster: data.cluster,
       answer: data.answer,
+      lead: data.lead,
       updated: data.updated,
+      published: data.published,
+      author: data.author,
       image: data.image,
       imageAlt: data.imageAlt,
+      sitePlanner: data.sitePlanner,
       bodyHtml: html,
       faqItems,
     });
@@ -556,7 +670,15 @@ function main() {
   for (const [cluster, list] of articlesByCluster) {
     if (!list.length) continue;
     const clusterName = clusterHumanName(cluster, topicsByCluster);
-    const html = renderClusterHub(cluster, clusterName, list);
+    // Optional intro for a hub: content/hubs/<cluster>.md (Markdown body, same subset as articles).
+    let introHtml = "";
+    const introFile = join(HUB_DIR, `${cluster}.md`);
+    if (existsSync(introFile)) {
+      const ctx = { allowedBareSlugs, deadLinks: [] };
+      introHtml = renderMarkdown(readFileSync(introFile, "utf8"), ctx).html;
+      if (ctx.deadLinks.length) deadLinksReport.push({ file: `content/hubs/${cluster}.md`, links: ctx.deadLinks });
+    }
+    const html = renderClusterHub(cluster, clusterName, list, introHtml);
     const dir = join(BLOG_DIR, cluster);
     mkdirSync(dir, { recursive: true });
     writeFileSync(join(dir, "index.html"), html);
@@ -579,16 +701,28 @@ function main() {
     top: topPicks(cluster),
   });
 
-  writeFileSync(join(BLOG_DIR, "index.html"), renderBlogHub(tradeRows, hubRow("guides"), hubRow("ai-search"), hubRow("compare")));
+  // topics.json lists new posts last, so the last six built articles are the newest.
+  const latestRows = articles.slice(-6).reverse();
+  const featuredSlugs = [
+    "tree-service-local-seo-checklist",
+    "who-owns-your-domain-name-and-why-it-matters",
+    "pest-control-get-more-reviews",
+  ];
+  const articlesBySlug = new Map(articles.map((article) => [article.slug, article]));
+  const featuredRows = featuredSlugs.map((slug) => articlesBySlug.get(slug)).filter(Boolean);
+
+  writeFileSync(join(BLOG_DIR, "index.html"), renderBlogHub(tradeRows, hubRow("guides"), hubRow("ai-search"), hubRow("compare"), latestRows, featuredRows));
 
   // sitemap.xml
   const today = new Date().toISOString().slice(0, 10);
+  const priorDates = new Map([...readFileSync(join(WEB, "sitemap.xml"), "utf8").matchAll(/<url><loc>(.*?)<\/loc><lastmod>(.*?)<\/lastmod><\/url>/g)].map(m => [m[1], m[2]]));
+  const unchangedDate = path => priorDates.get(`${SITE}${path}`) || today;
   const urls = [
-    { loc: "/", lastmod: today },
-    { loc: "/privacy/", lastmod: today },
-    { loc: "/terms/", lastmod: today },
-    { loc: "/blog/", lastmod: today },
-    ...hubClusters.map((h) => ({ loc: `/blog/${h.cluster}/`, lastmod: today })),
+    { loc: "/", lastmod: unchangedDate("/") },
+    { loc: "/privacy/", lastmod: "2026-10-08" },
+    { loc: "/terms/", lastmod: unchangedDate("/terms/") },
+    { loc: "/blog/", lastmod: unchangedDate("/blog/") },
+    ...hubClusters.map((h) => ({ loc: `/blog/${h.cluster}/`, lastmod: unchangedDate(`/blog/${h.cluster}/`) })),
     ...articles.map((a) => ({ loc: `/blog/${a.slug}/`, lastmod: a.updated })),
   ];
   const sitemap = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls
@@ -597,7 +731,11 @@ function main() {
   writeFileSync(join(WEB, "sitemap.xml"), sitemap);
 
   // feed.xml (RSS 2.0), newest post first
-  const feedItems = [...articles].sort((a, b) => (a.updated < b.updated ? 1 : a.updated > b.updated ? -1 : 0));
+  // Ties on date go to the entry later in topics.json, so the newest-added posts lead.
+  const feedItems = articles
+    .map((a, i) => ({ a, i }))
+    .sort((x, y) => (x.a.updated < y.a.updated ? 1 : x.a.updated > y.a.updated ? -1 : y.i - x.i))
+    .map((x) => x.a);
   const rssDate = (iso) => {
     const m = String(iso).match(/^(\d{4})-(\d{2})-(\d{2})/);
     if (!m) return new Date().toUTCString();
@@ -606,7 +744,7 @@ function main() {
   const feed = `<?xml version="1.0" encoding="UTF-8"?>\n<rss version="2.0"><channel>\n  <title>Front Step Sites blog</title>\n  <link>${SITE}/blog/</link>\n  <description>Practical, specific answers for small business owners about websites, local SEO, and showing up when customers search.</description>\n  <language>en-us</language>\n  <lastBuildDate>${feedItems.length ? rssDate(feedItems[0].updated) : new Date().toUTCString()}</lastBuildDate>\n${feedItems
     .map(
       (a) =>
-        `  <item>\n    <title>${escapeHtml(a.title)}</title>\n    <link>${SITE}/blog/${a.slug}/</link>\n    <guid isPermaLink="true">${SITE}/blog/${a.slug}/</guid>\n    <pubDate>${rssDate(a.updated)}</pubDate>\n    <description>${escapeHtml(a.description)}</description>\n  </item>`
+        `  <item>\n    <title>${escapeHtml(a.title)}</title>\n    <link>${SITE}/blog/${a.slug}/</link>\n    <guid isPermaLink="true">${SITE}/blog/${a.slug}/</guid>\n    <pubDate>${rssDate(a.published || a.updated)}</pubDate>\n    <description>${escapeHtml(a.description)}</description>\n  </item>`
     )
     .join("\n")}\n</channel></rss>\n`;
   writeFileSync(join(WEB, "feed.xml"), feed);
@@ -620,7 +758,7 @@ function main() {
   llmsLines.push("# Front Step Sites");
   llmsLines.push("");
   llmsLines.push(
-    "> Front Step Sites builds, hosts, and maintains websites for small businesses. Plans start at $99 a year with the domain included and no setup fee, and the domain is registered in the customer's own name. Customers ask for changes by writing in their account: 2 requests a month within 2 business days on the Launch plan, or unlimited requests the same business day on Grow ($29 a month or $290 a year), which also shows the customer's Google reviews on the site. New pages, blog posts, and local SEO setup are included, and customers can leave any time and take their domain with them, with no transfer fee."
+    "> Front Step Sites builds, hosts, and maintains websites for small businesses. Plans start at $99 a year with the domain included and no setup fee, and the domain is registered in the customer's own name. Customers ask for changes by writing in their account: 2 requests a month within 2 business days on the Launch plan, or unlimited requests the same business day on Grow ($29 a month or $290 a year), which also shows the customer's Google reviews on the site. New pages, blog posts, and local SEO setup are included, and customers can leave any time and take their domain with them, with no transfer fee. Front Step Sites (frontstepsites.com) is unrelated to FRONTSTEPS, the property-management/HOA software company."
   );
   llmsLines.push("");
   llmsLines.push("## Pages");

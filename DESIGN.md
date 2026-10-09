@@ -1,0 +1,3 @@
+# Front Step public site design contract
+
+Preserve the incumbent ink-and-paper palette, native HTML links/details, compact navigation, tag callouts and typography in index.html and tools/build-blog.mjs. The audience is local business owners deciding who will build and maintain their site. Keep pricing/ownership factual and signup controls visible. Articles answer the topic directly and link to the relevant next guide; unrelated query-shaped FAQs do not belong on the homepage. Reuse existing CSS without a redesign. Verify changed guides and signup navigation at 390px and desktop; no customer sites or signup submissions.

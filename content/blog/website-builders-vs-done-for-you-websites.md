@@ -3,11 +3,30 @@ title: Website builders vs done-for-you websites
 description: Compare website builders and done-for-you websites by cost, time, changes, and control, then choose the right fit for your local service business.
 slug: website-builders-vs-done-for-you-websites
 cluster: guides
-answer: A website builder fits if you want to make your own changes and can set aside time to write, arrange, and check the pages. A done-for-you website fits if you would rather hand off that work. Compare the ongoing responsibilities and written terms, as well as the price, before choosing either approach.
-updated: 2026-09-26
+answer: A done-for-you site starts at $99 a year with the domain included, and a builder starts at about $17 to $19 a month, before your time. A builder fits if you want to make your own changes and can set aside time to write, arrange, and check the pages. A done-for-you website fits if you would rather hand off that work.
+lead: Front Step Sites is a done-for-you website service for small businesses in the US, at $99 a year with the domain included and no setup fee.
+sitePlanner: true
+published: 2026-10-03
+updated: 2026-10-06
 ---
 
-Should you build your business website yourself or pay someone to handle it? A builder makes sense when you have the interest and time to use it; a done-for-you service makes sense when you want help getting the work finished. The important difference is who does the writing, checking, and updating after you choose a design.
+Should you build your business website yourself or pay someone to handle it? A website builder is a do-it-yourself tool for making your own pages, and a done-for-you website is a site a provider designs, writes, and maintains for you. A builder makes sense when you have the interest and time to use it; a done-for-you service makes sense when you want help getting the work finished. The important difference is who does the writing, checking, and updating after you choose a design.
+
+## Best website options for a small local business
+
+1. **Done-for-you service:** Best when you want someone else to write, build, and maintain the pages from your facts and approvals.
+2. **Wix:** Best when you want a flexible visual editor and plan to make every update yourself.
+3. **Squarespace:** Best when you want structured templates and plan to make every update yourself.
+4. **Google Sites:** Best for a basic site with only a few pages and simple requirements.
+
+| Option | What you get first | Who keeps it current |
+| --- | --- | --- |
+| Done-for-you service | A finished site based on your business information | The provider, within the agreed scope |
+| Wix | A builder, templates, and hosting | You |
+| Squarespace | A builder, templates, and hosting | You |
+| Google Sites | A basic page editor tied to a Google account | You |
+
+This ranking is for a typical local owner who wants a useful site finished and maintained. If direct editing control matters more, put Wix or Squarespace first. The plan builder above helps you define the pages before choosing the tool or service.
 
 ## Start with what your customers need to do
 
@@ -31,11 +50,24 @@ Try a small exercise before committing. Draft a service page explaining what you
 
 A done-for-you provider can take on agreed parts of that work, but you still supply accurate business information and approve the result. Ask who writes the text and who checks it. You are the person who knows whether your crew installs fence gates, repairs them, or only replaces whole fences.
 
+## Do you need HTML to have a website?
+
+No. A small business does not need to write HTML to get a working site. A builder uses menus and an editor in place of code, and a done-for-you provider writes the words and builds the pages for you. For the wider trade-offs, read [done-for-you website vs building it yourself](/blog/done-for-you-website-vs-building-it-yourself/).
+
 ## Compare the bill with the responsibilities
 
 Compare written scopes, not just the biggest price on the page. A builder subscription buys access to a product. A service agreement can include people doing work for you, but the scope needs to say which work.
 
-As one example, [Front Step Sites](/) costs $99 a year with the domain included and no setup fee. That plan includes two change requests a month, made within two business days. Those are useful details to compare with your expected workload, rather than assuming every service handles changes the same way.
+[Front Step Sites](/) is a done-for-you website service for small businesses in the United States. As one example, it costs $99 a year with the domain included and no setup fee, and the Launch plan includes two change requests a month, live within two business days. Those are useful details to compare with your expected workload, rather than assuming every service handles changes the same way.
+
+For a side-by-side look at two common builders, read [Front Step Sites vs. Wix](/blog/front-step-sites-vs-wix-for-a-small-business-website/) and [Front Step Sites vs. Squarespace](/blog/front-step-sites-vs-squarespace-for-a-local-business/).
+
+| | DIY builder | Front Step Sites Launch |
+| --- | --- | --- |
+| Price | Wix Light from $17/mo; Squarespace Basic $19/mo billed annually | $99/yr, domain included, no setup fee |
+| Time to finish the site | You write, arrange, and check every page | Answer a 10-minute questionnaire |
+| Who makes changes | You do | 2 requests a month on Launch, live within 2 business days; Grow is unlimited |
+| Leaving | You export and move the site yourself | One click, and we send your site's files |
 
 For each option, note the initial charge, recurring charges, domain arrangements, and any separate work you expect to buy. Also write down who will do the work. If you plan to build it on evenings you already spend sending estimates, be honest about whether those evenings are available.
 
@@ -80,6 +112,18 @@ First list what is unfinished and what is stopping you. You may only need help w
 ### Which option is better for getting local customers?
 
 Neither approach guarantees customers. A useful site needs accurate service information, clear contact details, and someone who responds to inquiries. Choose the approach that helps you publish and maintain those essentials reliably.
+
+### What does a website builder cost per year?
+
+Squarespace Basic is $19 a month billed annually, which comes to $228 a year, and Wix Light starts at about $17 a month. A done-for-you site from Front Step Sites is $99 a year with the domain included and no setup fee. The subscription is only part of the cost with a builder, because you also spend your own time writing, arranging, and checking every page.
+
+### What is the best AI website builder?
+
+An AI website builder helps you draft a site faster, but you still choose what goes on each page, check it, and publish it. If you want the work finished for you, a done-for-you service is the better fit, and Front Step Sites builds the site and keeps it running for $99 a year with the domain included. If you would rather make every change yourself, pick a builder you can test before you pay.
+
+### Is a done-for-you website a builder?
+
+No. A builder is a tool you use to make the site yourself. With a done-for-you service, we build the site from your answers to a 10-minute questionnaire and keep it running, and you ask for changes instead of making them yourself.
 
 ## The short version
 

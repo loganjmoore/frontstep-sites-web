@@ -4,10 +4,24 @@ description: Compare Front Step Sites and Squarespace for your local business, i
 slug: front-step-sites-vs-squarespace-for-a-local-business
 cluster: compare
 answer: Front Step Sites fits a local business owner who wants to request website changes rather than make them personally. Squarespace fits an owner who wants to build and edit their own site. Compare the price, your available time, and how often you need updates, then check that your chosen option handles your actual requirements.
-updated: 2026-09-26
+lead: Front Step Sites is a done-for-you website service for small businesses that want to hand off their website changes; Squarespace is a do-it-yourself website builder for owners who want to edit their own pages.
+updated: 2026-10-03
 ---
 
 Front Step Sites is a done-for-you website service for small businesses, priced at $99 a year with the domain included, while Squarespace is a do-it-yourself website builder you edit directly. Is Front Step Sites or Squarespace the better choice for your local business? Front Step Sites is worth considering if you want to hand off website work, while Squarespace is worth considering if you want to build and edit the pages yourself. The choice comes down to how you want the work done, as well as what you pay.
+
+## Front Step Sites vs. Squarespace at a glance
+
+| | Squarespace | Front Step Sites |
+|---|---|---|
+| Price/yr | $19/mo billed annually (about $228/yr) | $99/yr |
+| Setup fee | $0 | $0 |
+| Who builds the site | You build it yourself in the Squarespace editor | Built by Front Step Sites from your answers to a short questionnaire |
+| Who writes the copy | You | Front Step Sites writes it, and you approve it before it goes live |
+| Hosting and SSL | Not covered on this page; check Squarespace's current plan terms | Included |
+| Who fixes problems | You do | Front Step Sites keeps the site running; you ask for changes in your account |
+| Domain | Free for the first year on an annual plan, then renews separately | Included, registered in your name, no transfer fee to leave |
+| How changes are made | You edit it yourself in the Squarespace editor | Write a plain-English request in your account (2 a month on Launch) |
 
 ## Compare the stated prices carefully
 
@@ -57,7 +71,7 @@ Our guide to [who owns your domain name](/blog/who-owns-your-domain-name-and-why
 
 ## Choose according to the work you want to keep
 
-Squarespace may fit better when you want to manage the layout and content personally, enjoy making adjustments, and can reserve time for the website. It can also be a sensible choice if someone in your business already handles the site well. Do not replace a working process just because another option exists.
+Squarespace may fit better when you want to manage the layout and content personally, enjoy making adjustments, and can reserve time for the website. It can also be a sensible choice if someone in your business already handles the site well. Do not replace a working process just because another option exists. If your site is still a Google Site, the [Google Sites alternatives for a business](/blog/google-sites-alternatives-for-a-business/) guide compares the free option with the other two.
 
 Front Step Sites may fit better when you want to write a request, provide the necessary facts, and have website changes handled for you. Match the plan's request allowance and timing to the way your business runs.
 

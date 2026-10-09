@@ -4,10 +4,11 @@ description: "Build a small business website customers can use on their phones, 
 slug: "why-your-small-business-website-should-be-built-for-phones-first"
 cluster: "guides"
 answer: "Your small business website should be built for phones first because a customer may need to check your services, find your hours, or call while away from a computer. Start with readable text, clear service areas, easy call buttons, and short forms. Then check those tasks on a real phone before approving the site."
+lead: Front Step Sites is a done-for-you website service for small businesses in the US, at $99 a year with the domain included and no setup fee.
 updated: "2026-09-26"
 ---
 
-Why build your small business website for phones first if it already looks good on your laptop? A customer searching for help from a driveway or kitchen needs to find the right information and act on a small screen. Plan that experience first, then arrange the same useful information for larger screens.
+Why build your small business website for phones first if it already looks good on your laptop? Phones-first design is a way of planning a site around the small screen before the larger ones. A customer searching for help from a driveway or kitchen needs to find the right information and act on a small screen. Plan that experience first, then arrange the same useful information for larger screens.
 
 ## Put the customer's first question on the first screen
 

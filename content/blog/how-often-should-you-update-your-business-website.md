@@ -4,10 +4,11 @@ description: Use a practical website update schedule for hours, prices, seasonal
 slug: how-often-should-you-update-your-business-website
 cluster: guides
 answer: Update your business website whenever a customer-facing fact changes, especially your hours, prices, services, contact details, or availability. A monthly check is a useful routine for catching mistakes, with a deeper review before busy seasons. You do not need to rewrite good pages just to make the website look active.
+lead: Front Step Sites is a done-for-you website service for small businesses in the US, at $99 a year with the domain included and no setup fee.
 updated: 2026-09-26
 ---
 
-How often should you update your business website when you already have a full work schedule? Change important facts as soon as they change, then use a regular check to catch anything you missed. The aim is to keep customers correctly informed and able to contact you.
+How often should you update your business website when you already have a full work schedule? A website update is a change that keeps a page accurate, such as new hours, a new price, or a service you no longer offer. Change important facts as soon as they change, then use a regular check to catch anything you missed. The aim is to keep customers correctly informed and able to contact you.
 
 ## Fix changes that affect today's customer first
 

@@ -1492,6 +1492,27 @@
   "angle": "domain held hostage, setup fees, cancellation traps"
  },
  {
+  "slug": "website-locksmith",
+  "title": "Locksmith: what your website needs",
+  "cluster": "trades/locksmith",
+  "trade": "locksmith",
+  "angle": "the pages, details, and layout that make a local locksmith website earn a call, in order of importance"
+ },
+ {
+  "slug": "website-moving-company",
+  "title": "Moving Company: what your website needs",
+  "cluster": "trades/moving",
+  "trade": "moving company",
+  "angle": "the pages, details, and layout that make a local moving company website earn a quote request, in order of importance"
+ },
+ {
+  "slug": "website-appliance-repair",
+  "title": "Appliance Repair: what your website needs",
+  "cluster": "trades/appliance-repair",
+  "trade": "appliance repair",
+  "angle": "the pages, details, and layout that make a local appliance repair website earn a call, in order of importance"
+ },
+ {
   "slug": "locksmith-website-cost",
   "title": "Locksmith website cost in 2026: 4 pricing tiers",
   "cluster": "trades/locksmith",
@@ -1511,5 +1532,157 @@
   "cluster": "trades/appliance-repair",
   "trade": "appliance repair",
   "angle": "DIY/freelancer/agency/Front Step Sites price-tier table for appliance repair websites, plus brand/model service pages and same-day availability messaging"
+ },
+ {
+  "slug": "locksmith-google-business-profile",
+  "title": "Locksmith Google Business Profile Setup",
+  "cluster": "trades/locksmith",
+  "trade": "locksmith",
+  "angle": "GBP setup for a mobile locksmith trade: service area built from cities/zips instead of a radius, honest 24/7 emergency hours, and where the state license number goes"
+ },
+ {
+  "slug": "moving-company-local-seo-checklist",
+  "title": "Local SEO checklist for moving companies",
+  "cluster": "trades/moving",
+  "trade": "moving company",
+  "angle": "Checklist format: GBP completeness, NAP consistency across listings, a service-area page per city, and reviews requested right after move day"
+ },
+ {
+  "slug": "appliance-repair-website-mistakes",
+  "title": "Appliance repair website mistakes",
+  "cluster": "trades/appliance-repair",
+  "trade": "appliance repair",
+  "angle": "Mistakes listicle: missing brand/model list, unclear service area, no same-day emergency messaging, slow mobile load"
+ },
+ {
+  "slug": "appliance-repair-google-business-profile",
+  "title": "Appliance Repair Google Business Profile",
+  "cluster": "trades/appliance-repair",
+  "trade": "appliance repair",
+  "angle": "Setup guide naming the specific GBP fields that matter: service-area list, brands and appliance types serviced, honest same-day/emergency availability"
+ },
+ {
+  "slug": "locksmith-local-seo-checklist",
+  "title": "Locksmith Local SEO Checklist",
+  "cluster": "trades/locksmith",
+  "trade": "locksmith",
+  "angle": "Checklist built around what's distinct for locksmiths: license number placement, 24/7 emergency honesty, service area, and review volume vs. the 4.5-star bar"
+ },
+ {
+  "slug": "what-front-step-sites-does-and-who-its-for",
+  "title": "What Front Step Sites Does, Who It's For",
+  "cluster": "guides",
+  "angle": "Product explainer: what's included at $99/yr, who it fits, domain ownership, and how change requests work"
+ },
+ {
+  "slug": "moving-company-google-business-profile",
+  "title": "Moving Company Google Business Profile",
+  "cluster": "trades/moving",
+  "trade": "moving company",
+  "angle": "GBP setup for movers: service area built from cities/zips instead of a radius, USDOT number placement, and weekend hours that match when moves get booked"
+ },
+ {
+  "slug": "locksmith-website-mistakes",
+  "title": "Locksmith website mistakes",
+  "cluster": "trades/locksmith",
+  "trade": "locksmith",
+  "angle": "Mistakes listicle: no license number, a radius instead of real service-area cities, overstated 24/7 claims, slow mobile load"
+ },
+ {
+  "slug": "appliance-repair-local-seo-checklist",
+  "title": "Local SEO checklist for appliance repair",
+  "cluster": "trades/appliance-repair",
+  "trade": "appliance repair",
+  "angle": "Checklist format: GBP completeness naming brands/types, NAP consistency, a page per appliance type, and honest same-day availability claims"
+ },
+ {
+  "slug": "google-sites-alternatives-for-a-business",
+  "title": "Google Sites alternatives for a business",
+  "cluster": "compare",
+  "angle": "Google Sites against a DIY builder and a done-for-you site on yearly cost, who edits, page descriptions, forms, and leaving"
+ },
+ {
+  "slug": "can-you-run-a-business-website-on-canva",
+  "title": "Can you run a business website on Canva?",
+  "cluster": "compare",
+  "angle": "what Canva Websites can and can't do for a local business: one page per site, domain, blog, forms, and search control"
+ },
+ {
+  "slug": "how-to-create-a-small-business-website",
+  "title": "How to create a small business website",
+  "cluster": "guides",
+  "angle": "the nine steps in order, with rough hours and who does each one"
+ },
+ {
+  "slug": "best-web-builder-sites-for-a-small-business",
+  "title": "Best web builder sites for a small business, compared",
+  "cluster": "compare",
+  "angle": "Wix, Squarespace, and Google Sites on price and who makes edits, with W3Techs market share and when a done-for-you site fits better"
+ },
+ {
+  "slug": "website-maker-or-done-for-you-three-year-cost",
+  "title": "Website maker or done-for-you? A three-year cost check",
+  "cluster": "compare",
+  "angle": "a three-year worksheet: builder subscriptions plus owner hours against a $99 a year done-for-you site, with break-even hours"
+ },
+ {
+  "slug": "how-to-make-a-google-site",
+  "title": "How to make a Google Site, step by step",
+  "cluster": "guides",
+  "angle": "the five steps from template to publish, then custom domains and who can connect them, from Google's own help pages"
+ },
+ {
+  "slug": "google-sites-launch-checklist-for-a-business-website",
+  "title": "Google Sites Launch Checklist for a Business Website",
+  "cluster": "guides",
+  "angle": "a 12-point pre-publish checklist covering the message, customer path, mobile preview, accessibility, sharing, search visibility, and custom domain"
+ },
+ {
+  "slug": "seven-web-site-mistakes-that-make-customers-hesitate",
+  "title": "7 Web Site Mistakes That Make Customers Hesitate",
+  "cluster": "guides",
+  "angle": "a fix-first audit of seven general business website mistakes, with mobile, performance, security, and stale-information checks"
+ },
+ {
+  "slug": "one-page-site-vs-multi-page-website-for-a-business",
+  "title": "One-Page Site vs Multi-Page Website for a Business",
+  "cluster": "compare",
+  "angle": "one-page and multi-page business website structures compared by offer, search topics, mobile use, maintenance, and a worked page plan"
+ },
+ {
+  "slug": "is-brainpop-a-website-guide",
+  "title": "Is BrainPOP a Website? A Plain-English Guide for Owners",
+  "cluster": "guides",
+  "angle": "plain-English explanation of BrainPOP as a content website and web application, contrasted with a website builder and a local business website"
+ },
+ {
+  "slug": "what-a-website-maker-does-12-task-example",
+  "title": "What a Website Maker Does: A 12-Task Cost Example",
+  "cluster": "guides",
+  "angle": "worked one-year example showing the tasks, owner time, and provider responsibilities hidden behind the phrase website maker"
+ },
+ {
+  "slug": "put-a-google-sites-site-on-your-own-domain",
+  "title": "How to Put a Google Sites Site on Your Own Domain",
+  "cluster": "guides",
+  "angle": "how-to guide for verifying domain ownership, connecting a www address, handling DNS, and testing the public Google Sites site"
+ },
+ {
+  "slug": "html-website-development-when-custom-code-fits",
+  "title": "HTML Website Development: When Custom Code Fits",
+  "cluster": "guides",
+  "angle": "a decision guide for choosing custom HTML only when a small business has requirements that a standard builder or managed site cannot meet"
+ },
+ {
+  "slug": "what-is-a-website-four-parts",
+  "title": "What Is a Website? The Four Parts in Plain English",
+  "cluster": "guides",
+  "angle": "a definition of a website through its four practical parts: domain, hosting, pages, and content"
+ },
+ {
+  "slug": "best-website-builder-three-questions",
+  "title": "Best Website Builder? Ask These 3 Questions",
+  "cluster": "compare",
+  "angle": "an ownership, updates, and exit scorecard that helps a small business choose a website builder without repeating a vendor ranking"
  }
 ]

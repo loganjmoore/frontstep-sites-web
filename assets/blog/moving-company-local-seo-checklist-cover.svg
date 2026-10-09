@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img" aria-label="Cover image: Local SEO checklist for moving companies, covering Google Business Profile, NAP consistency, service-area pages, and reviews">
+  <rect width="1200" height="630" fill="#eceeec"/>
+  <rect x="46" y="46" width="1120" height="550" fill="#111312"/>
+  <rect x="40" y="40" width="1120" height="550" fill="#ffffff" stroke="#111312" stroke-width="3"/>
+  <g transform="translate(1030,66)">
+    <rect width="34" height="34" fill="#ffd60a"/>
+    <path d="M6 27h22v-5H17v-5h-5v-5H6z" fill="#111312"/>
+  </g>
+  <text x="80" y="98" font-family="Arial, sans-serif" font-size="22" font-weight="700" letter-spacing="2" fill="#474d4b">FRONT STEP SITES BLOG</text>
+  <text x="78" y="238" font-family="Arial, sans-serif" font-size="52" font-weight="800" fill="#111312">Local SEO checklist</text>
+  <text x="80" y="290" font-family="Arial, sans-serif" font-size="36" font-weight="700" fill="#474d4b">for moving companies</text>
+  <g transform="translate(80,360)">
+    <rect x="0" y="0" width="34" height="34" fill="#ffd60a" stroke="#111312" stroke-width="2"/>
+    <path d="M7 18l6 6 14-16" fill="none" stroke="#111312" stroke-width="3"/>
+    <text x="48" y="25" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#111312">Google Business Profile</text>
+  </g>
+  <g transform="translate(80,412)">
+    <rect x="0" y="0" width="34" height="34" fill="#ffd60a" stroke="#111312" stroke-width="2"/>
+    <path d="M7 18l6 6 14-16" fill="none" stroke="#111312" stroke-width="3"/>
+    <text x="48" y="25" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#111312">Matching name, address, phone</text>
+  </g>
+  <g transform="translate(80,464)">
+    <rect x="0" y="0" width="34" height="34" fill="#ffd60a" stroke="#111312" stroke-width="2"/>
+    <path d="M7 18l6 6 14-16" fill="none" stroke="#111312" stroke-width="3"/>
+    <text x="48" y="25" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#111312">A page per city you serve</text>
+  </g>
+  <g transform="translate(80,516)">
+    <rect x="0" y="0" width="34" height="34" fill="#ffd60a" stroke="#111312" stroke-width="2"/>
+    <path d="M7 18l6 6 14-16" fill="none" stroke="#111312" stroke-width="3"/>
+    <text x="48" y="25" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#111312">Reviews requested after move day</text>
+  </g>
+</svg>

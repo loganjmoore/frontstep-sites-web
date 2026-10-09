@@ -4,7 +4,8 @@ description: "Understand website hosting, domains, and builders in plain English
 slug: "what-website-hosting-is-in-plain-english"
 cluster: "guides"
 answer: "Website hosting is the service that keeps your website available online and delivers its pages when someone visits. Your domain is the address people use to find it, while a website builder is a tool for creating and editing it. A small business needs a reliable arrangement and clear support responsibilities, not necessarily a complicated hosting plan."
-updated: "2026-09-26"
+lead: "Website hosting is the service that stores your site's files and delivers its pages to visitors when they open your address. A website is the collection of linked pages, text, and images that customers open in a browser, and it lives at a domain name like yourbusiness.com. For a local business, those pages say what you do, where you work, and how to reach you. Front Step Sites is a done-for-you website service for small businesses in the US, at $99 a year with the domain included and no setup fee."
+updated: "2026-10-03"
 ---
 
 Website hosting is the service that stores your site's files and delivers them to visitors. So why are you paying for it when you already own a domain name? Hosting is what makes your website available for people to visit. The domain gives them an address, but buying that address alone does not create your pages or keep them online.

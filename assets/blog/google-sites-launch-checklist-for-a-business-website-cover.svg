@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img" aria-label="Twelve-point Google Sites launch checklist for a business website">
+  <rect width="1200" height="630" fill="#eceeec"/>
+  <rect x="46" y="46" width="1120" height="550" fill="#111312"/>
+  <rect x="40" y="40" width="1120" height="550" fill="#fff" stroke="#111312" stroke-width="3"/>
+  <g transform="translate(1030 66)"><rect width="34" height="34" fill="#ffd60a"/><path d="M6 27h22v-5H17v-5h-5v-5H6z" fill="#111312"/></g>
+  <text x="80" y="98" font-family="Arial,sans-serif" font-size="22" font-weight="700" letter-spacing="2" fill="#474d4b">FRONT STEP SITES BLOG</text>
+  <text x="80" y="196" font-family="Arial,sans-serif" font-size="58" font-weight="800" fill="#111312">Google Sites</text>
+  <text x="80" y="258" font-family="Arial,sans-serif" font-size="44" font-weight="700" fill="#474d4b">business launch checklist</text>
+  <g font-family="Arial,sans-serif" font-size="20" fill="#111312">
+    <g transform="translate(80 332)"><rect width="245" height="160" fill="#fff" stroke="#111312" stroke-width="2"/><rect width="245" height="40" fill="#ffd60a"/><text x="16" y="27" font-size="16" font-weight="700" letter-spacing="1">MESSAGE</text><path d="M20 70l10 10 20-24M20 108l10 10 20-24M20 138l10 10 20-24" fill="none" stroke="#111312" stroke-width="4"/><text x="64" y="80">Business</text><text x="64" y="118">Service area</text><text x="64" y="148">Clear reason</text></g>
+    <g transform="translate(345 332)"><rect width="245" height="160" fill="#fff" stroke="#111312" stroke-width="2"/><rect width="245" height="40" fill="#eceeec"/><text x="16" y="27" font-size="16" font-weight="700" letter-spacing="1">CUSTOMER PATH</text><path d="M20 70l10 10 20-24M20 108l10 10 20-24M20 138l10 10 20-24" fill="none" stroke="#111312" stroke-width="4"/><text x="64" y="80">Phone</text><text x="64" y="118">Form</text><text x="64" y="148">Next step</text></g>
+    <g transform="translate(610 332)"><rect width="245" height="160" fill="#fff" stroke="#111312" stroke-width="2"/><rect width="245" height="40" fill="#eceeec"/><text x="16" y="27" font-size="16" font-weight="700" letter-spacing="1">MOBILE</text><path d="M20 70l10 10 20-24M20 108l10 10 20-24M20 138l10 10 20-24" fill="none" stroke="#111312" stroke-width="4"/><text x="64" y="80">Preview</text><text x="64" y="118">Image text</text><text x="64" y="148">Headings</text></g>
+    <g transform="translate(875 332)"><rect width="245" height="160" fill="#ffd60a" stroke="#111312" stroke-width="2"/><rect width="245" height="40" fill="#111312"/><text x="16" y="27" font-size="16" font-weight="700" letter-spacing="1" fill="#fff">PUBLISHING</text><path d="M20 70l10 10 20-24M20 108l10 10 20-24M20 138l10 10 20-24" fill="none" stroke="#111312" stroke-width="4"/><text x="64" y="80">Public</text><text x="64" y="118">Search</text><text x="64" y="148">Domain</text></g>
+  </g>
+  <text x="80" y="548" font-family="Arial,sans-serif" font-size="22" font-weight="700" fill="#474d4b">12 CHECKS · TEST THE LIVE PAGE SIGNED OUT</text>
+</svg>

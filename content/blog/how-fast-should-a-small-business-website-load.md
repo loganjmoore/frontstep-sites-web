@@ -4,10 +4,11 @@ description: "Learn what website speed targets mean for a small business, how to
 slug: "how-fast-should-a-small-business-website-load"
 cluster: "guides"
 answer: "Aim for the main visible content to load within 2.5 seconds, the good threshold for Google's Largest Contentful Paint measure. That is not a promise that every page element finishes loading then. Your business details, phone link, and booking route should also respond promptly and stay steady while customers use the page on a phone."
+lead: Front Step Sites is a done-for-you website service for small businesses in the US, at $99 a year with the domain included and no setup fee.
 updated: "2026-09-26"
 ---
 
-How fast should your small business website load before you need to fix it? Aim for a page that quickly shows useful information and lets someone call, book, or request a quote without waiting or fighting moving buttons. A speed score helps you find problems, but the customer's task is the reason to solve them.
+How fast should your small business website load before you need to fix it? Page speed is a measure of how long a visitor waits before a page shows what they came for. Aim for a page that quickly shows useful information and lets someone call, book, or request a quote without waiting or fighting moving buttons. A speed score helps you find problems, but the customer's task is the reason to solve them.
 
 ## Use a clear target without confusing it with everything loading
 

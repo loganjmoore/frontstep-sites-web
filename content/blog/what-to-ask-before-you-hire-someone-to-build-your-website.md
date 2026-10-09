@@ -3,8 +3,8 @@ title: "What to ask before you hire a web builder"
 description: "Ask these practical questions before hiring a website builder so you understand domain ownership, total costs, ongoing changes, launch checks, and leaving."
 slug: "what-to-ask-before-you-hire-someone-to-build-your-website"
 cluster: "compare"
-answer: "Before hiring someone to build your website, ask who controls the domain, exactly what the price covers, how future changes work, and what happens if you leave. Get the answers in writing alongside the page list and launch checks. A useful proposal should make the everyday working relationship as clear as the finished design."
-updated: 2026-09-26
+answer: "The best web builder depends on whether you want to run the site yourself. A builder like Squarespace or Wix suits an owner who will do the work, and Front Step Sites, a done-for-you service at $99 a year with the domain included, suits an owner who wants the site built and kept running. Before hiring anyone, ask who controls the domain, exactly what the price covers, how future changes work, and what happens if you leave, and get the answers in writing."
+updated: 2026-10-03
 ---
 
 What should you ask a website builder before agreeing to the work? You do not need to know how to code, but you should understand what you are buying and who will help after launch. Bring questions about ownership, costs, upkeep, and leaving to the first conversation, while changes to the proposal are still easy.
@@ -83,6 +83,10 @@ Ask for a written summary even when the project is small. It gives both sides th
 
 That depends on the agreement, so ask before hiring. Even when writing is included, you need to supply accurate service details and approve the final wording. A builder cannot safely guess your qualifications, service area, or availability.
 
+### What is the best web builder for a small business?
+
+It depends on who will do the work. A builder such as Squarespace or Wix lets you build and edit the site yourself, which suits an owner who has the time. Front Step Sites is a done-for-you service that builds the site and keeps it running for $99 a year with the domain included, which suits an owner who wants to ask for changes instead of making them.
+
 ### Should the lowest quote win?
 
 Only if it covers what you need and you understand the ongoing arrangement. Compare included work, your own time, update costs, and the exit process. A low starting price and a useful long-term fit are separate things to check.
@@ -91,4 +95,4 @@ Only if it covers what you need and you understand the ongoing arrangement. Comp
 
 Ask what you are getting, what you will keep control of, and what happens after launch. Get the costs, update process, and exit arrangements in writing. Test the site as a customer before approving it.
 
-[Front Step Sites](/) offers websites for $99 a year with the domain included, registered in your own name, and no setup fee.
+[Front Step Sites](/) is a done-for-you website service for small businesses in the United States. It offers websites for $99 a year with the domain included, registered in your own name, and no setup fee.

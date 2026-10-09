@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img" aria-label="Seven steps from Google Sites to a secure custom domain">
+  <rect width="1200" height="630" fill="#eceeec"/>
+  <rect x="46" y="46" width="1120" height="550" fill="#111312"/>
+  <rect x="40" y="40" width="1120" height="550" fill="#fff" stroke="#111312" stroke-width="3"/>
+  <g transform="translate(1030 66)"><rect width="34" height="34" fill="#ffd60a"/><path d="M6 27h22v-5H17v-5h-5v-5H6z" fill="#111312"/></g>
+  <text x="80" y="98" font-family="Arial,sans-serif" font-size="22" font-weight="700" letter-spacing="2" fill="#474d4b">FRONT STEP SITES BLOG</text>
+  <text x="80" y="182" font-family="Arial,sans-serif" font-size="53" font-weight="800" fill="#111312">Google Sites → your domain</text>
+  <text x="80" y="236" font-family="Arial,sans-serif" font-size="29" font-weight="700" fill="#474d4b">Verify, connect, wait, and test</text>
+  <g transform="translate(82 322)" font-family="Arial,sans-serif" font-size="17" font-weight="700" fill="#111312">
+    <path d="M40 54H950" stroke="#111312" stroke-width="5"/>
+    <g><circle cx="40" cy="54" r="29" fill="#ffd60a" stroke="#111312" stroke-width="2"/><text x="35" y="61">1</text><text x="10" y="111">Publish</text></g>
+    <g><circle cx="192" cy="54" r="29" fill="#fff" stroke="#111312" stroke-width="2"/><text x="187" y="61">2</text><text x="164" y="111">Own</text></g>
+    <g><circle cx="344" cy="54" r="29" fill="#fff" stroke="#111312" stroke-width="2"/><text x="339" y="61">3</text><text x="314" y="111">Verify</text></g>
+    <g><circle cx="496" cy="54" r="29" fill="#fff" stroke="#111312" stroke-width="2"/><text x="491" y="61">4</text><text x="472" y="111">Add</text></g>
+    <g><circle cx="648" cy="54" r="29" fill="#fff" stroke="#111312" stroke-width="2"/><text x="643" y="61">5</text><text x="626" y="111">DNS</text></g>
+    <g><circle cx="800" cy="54" r="29" fill="#fff" stroke="#111312" stroke-width="2"/><text x="795" y="61">6</text><text x="780" y="111">Wait</text></g>
+    <g><circle cx="952" cy="54" r="29" fill="#111312" stroke="#111312" stroke-width="2"/><text x="947" y="61" fill="#ffd60a">7</text><text x="932" y="111">Test</text></g>
+  </g>
+  <rect x="80" y="476" width="1000" height="48" fill="#111312"/>
+  <text x="103" y="508" font-family="Arial,sans-serif" font-size="22" font-weight="700" fill="#fff">www.example.com</text>
+  <rect x="945" y="487" width="108" height="26" fill="#ffd60a"/><text x="968" y="506" font-family="Arial,sans-serif" font-size="16" font-weight="800" fill="#111312">HTTPS</text>
+  <text x="80" y="558" font-family="Arial,sans-serif" font-size="22" font-weight="700" fill="#474d4b">BUSINESS-CONTROLLED ACCOUNTS FROM START TO FINISH</text>
+</svg>

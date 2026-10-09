@@ -1,0 +1,16 @@
+{
+  "key": "phc_rzsEPcKXHuAsgbJpU3CV4SayZG274HWxuqu66GqaKNiF",
+  "host": "https://us.i.posthog.com",
+  "product": "frontstepsites.com",
+  "surface": "marketing",
+  "hosts": [
+    "frontstepsites.com",
+    "www.frontstepsites.com",
+    "app.frontstepsites.com"
+  ],
+  "consentKey": "frontstep_analytics_consent",
+  "consentKind": "accepted",
+  "sharedDomain": "frontstepsites.com",
+  "publicOnly": false,
+  "release": ""
+}

@@ -4,10 +4,11 @@ description: "Spot website contract red flags before you sign, from unclear doma
 slug: website-contracts-red-flags-for-small-business-owners
 cluster: compare
 answer: "The biggest website contract red flags are unclear domain control, vague deliverables, charges you cannot predict, and an exit process the provider will not explain. Ask for those details in writing before paying. A setup fee or subscription is not automatically a bad deal, but you should understand what you receive, what keeps costing money, and what happens when you leave."
+lead: Front Step Sites is a done-for-you website service for small businesses in the US, at $99 a year with the domain included and no setup fee.
 updated: 2026-09-26
 ---
 
-How do you tell whether a website contract protects a workable arrangement or leaves you stuck? Read it against ordinary situations: adding a service, fixing the phone number, disputing a charge, or moving to someone else. You want clear answers before the first invoice, while you can still compare your options.
+How do you tell whether a website contract protects a workable arrangement or leaves you stuck? A website contract is the written agreement that sets what you get, what you pay, and how you can leave. Read it against ordinary situations: adding a service, fixing the phone number, disputing a charge, or moving to someone else. You want clear answers before the first invoice, while you can still compare your options.
 
 ## Red flag: nobody will say who controls the domain
 

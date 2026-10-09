@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img" aria-label="Cover image: website maker or done-for-you over three years, $612 to $684 for a builder before your time versus $297 with the domain included">
+  <rect width="1200" height="630" fill="#eceeec"/>
+  <rect x="46" y="46" width="1120" height="550" fill="#111312"/>
+  <rect x="40" y="40" width="1120" height="550" fill="#ffffff" stroke="#111312" stroke-width="3"/>
+  <g transform="translate(1030,66)">
+    <rect width="34" height="34" fill="#ffd60a"/>
+    <path d="M6 27h22v-5H17v-5h-5v-5H6z" fill="#111312"/>
+  </g>
+  <text x="80" y="98" font-family="Arial, sans-serif" font-size="22" font-weight="700" letter-spacing="2" fill="#474d4b">FRONT STEP SITES BLOG</text>
+  <text x="78" y="248" font-family="Arial, sans-serif" font-size="56" font-weight="800" fill="#111312">Maker or done-for-you?</text>
+  <text x="80" y="308" font-family="Arial, sans-serif" font-size="40" font-weight="700" fill="#474d4b">Three years, counted</text>
+  <g transform="translate(80,420)">
+    <rect x="0" y="0" width="325" height="130" fill="#ffffff" stroke="#111312" stroke-width="2"/>
+    <text x="18" y="34" font-family="Arial, sans-serif" font-size="16" font-weight="700" letter-spacing="1" fill="#111312">MAKER, 3 YEARS</text>
+    <text x="18" y="70" font-family="Arial, sans-serif" font-size="19" font-weight="600" fill="#474d4b">$612 to $684</text>
+    <text x="18" y="98" font-family="Arial, sans-serif" font-size="19" font-weight="600" fill="#474d4b">before your time</text>
+  </g>
+  <g transform="translate(435,420)">
+    <rect x="0" y="0" width="325" height="130" fill="#ffffff" stroke="#111312" stroke-width="2"/>
+    <text x="18" y="34" font-family="Arial, sans-serif" font-size="16" font-weight="700" letter-spacing="1" fill="#111312">YOUR HOURS</text>
+    <text x="18" y="70" font-family="Arial, sans-serif" font-size="19" font-weight="600" fill="#474d4b">48 at 12 + 1/mo</text>
+    <text x="18" y="98" font-family="Arial, sans-serif" font-size="19" font-weight="600" fill="#474d4b">at $40 an hour, editable</text>
+  </g>
+  <g transform="translate(790,420)">
+    <rect x="0" y="0" width="325" height="130" fill="#ffd60a" stroke="#111312" stroke-width="2"/>
+    <text x="18" y="34" font-family="Arial, sans-serif" font-size="16" font-weight="700" letter-spacing="1" fill="#111312">DONE-FOR-YOU</text>
+    <text x="18" y="70" font-family="Arial, sans-serif" font-size="19" font-weight="700" fill="#111312">$297 for 3 years</text>
+    <text x="18" y="98" font-family="Arial, sans-serif" font-size="19" font-weight="700" fill="#111312">domain included</text>
+  </g>
+</svg>

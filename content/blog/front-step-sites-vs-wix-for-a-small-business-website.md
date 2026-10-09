@@ -4,10 +4,26 @@ description: Compare Front Step Sites and Wix for a small business website, incl
 slug: front-step-sites-vs-wix-for-a-small-business-website
 cluster: compare
 answer: Front Step Sites fits owners who want to request website changes instead of building and editing the site themselves. Wix fits owners who want to work directly on their website and have time to maintain it. Compare the ongoing work as well as the price, then check that your chosen option supports the specific things your business needs.
-updated: 2026-09-26
+lead: Front Step Sites is a done-for-you website service for small businesses; Wix is a DIY website builder.
+updated: 2026-10-03
 ---
 
+This comparison is for owners deciding whether to build and edit a website themselves in Wix, or have Front Step Sites build it and handle the changes for $99 a year.
+
 Front Step Sites is a done-for-you website service for small businesses, priced at $99 a year with the domain included, while Wix is a do-it-yourself website builder you edit directly. Should you use Wix or have Front Step Sites handle your small business website? The decision starts with how you want to spend your time: working on the pages yourself or sending someone the changes you need. Price matters, but so do the jobs your website must handle and who will keep its information accurate after launch.
+
+## Front Step Sites vs. Wix at a glance
+
+| | Wix | Front Step Sites |
+|---|---|---|
+| Price/yr | About $204/yr ($17/mo billed yearly) | $99/yr |
+| Setup fee | $0 | $0 |
+| Who builds the site | You build it yourself in the Wix editor | Built by Front Step Sites from your answers to a short questionnaire |
+| Who writes the copy | You, with your own business information and photos | Front Step Sites writes it, and you approve it before it goes live |
+| Hosting and SSL | Not covered on this page; check Wix's current plan terms | Included |
+| Who fixes problems | You do | Front Step Sites keeps the site running; you ask for changes in your account |
+| Domain | Domain is a separate purchase | Included, registered in your name, no transfer fee to leave |
+| How changes are made | You edit it yourself in the Wix editor | Write a plain-English request in your account (2 a month on Launch) |
 
 ## Compare the published prices with the work involved
 
@@ -22,6 +38,8 @@ Those prices describe different ways of handling the work. If you build your sit
 Wix is a reasonable option if you enjoy adjusting pages and want direct involvement in the build. Its [website template catalog](https://www.wix.com/website/templates) provides starting points you can review for the kind of site you want. A starting design still needs your business information, photos, and decisions about what belongs on each page.
 
 DIY can fit a shop owner who already sets aside time for marketing and likes trying different layouts. It can also fit a business with an employee who knows the website and has a clear responsibility to maintain it.
+
+If you want the full order of steps for building the site yourself, read [how to create a small business website](/blog/how-to-create-a-small-business-website/). Google Sites is another builder owners try first, and [Google Sites alternatives for a business](/blog/google-sites-alternatives-for-a-business/) compares it with the other options.
 
 Before deciding, try the work you expect to do. Draft a service description, choose a few real photos, and sketch the contact page. If that process interests you, building may be a good use of your time. If it keeps falling behind estimates and customer calls, read [done-for-you versus building it yourself](/blog/done-for-you-website-vs-building-it-yourself/) before committing.
 

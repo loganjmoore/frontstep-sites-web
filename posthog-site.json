@@ -1,0 +1,14 @@
+{
+  "product": "frontstepsites.com",
+  "surface": "marketing",
+  "hosts": [
+    "frontstepsites.com",
+    "www.frontstepsites.com",
+    "app.frontstepsites.com"
+  ],
+  "consentKey": "frontstep_analytics_consent",
+  "consentKind": "accepted",
+  "publicDir": ".",
+  "distDir": "../dist",
+  "sharedDomain": "frontstepsites.com"
+}
