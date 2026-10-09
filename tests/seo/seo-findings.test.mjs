@@ -67,8 +67,8 @@ test("intent-mismatch articles lead with the requested formats", () => {
     "best-web-builder-sites-for-a-small-business",
   ]) {
     const html = read(`blog/${slug}/index.html`);
-    assert.match(html, /id="site-plan-builder"/);
-    assert.match(html, /Build my starter plan/);
+    assert.match(html, /data-website-resource="(?:starter|brief)"/);
+    assert.match(html, /src="\/assets\/website-resources.mjs"/);
     assert.match(html, /<ol>/);
     assert.match(html, /<table>/);
   }
@@ -85,34 +85,15 @@ test("intent-mismatch articles lead with the requested formats", () => {
   assert.match(home, /<ol class="start">/);
 });
 
-test("site-plan demo produces a useful plan without injecting input", () => {
-  const html = read("blog/website-builders-vs-done-for-you-websites/index.html");
-  const script = [...html.matchAll(/<script>([\s\S]*?)<\/script>/g)]
-    .map((match) => match[1])
-    .find((source) => source.includes("site-plan-builder"));
-  assert.ok(script);
-
-  let submit;
-  const form = { addEventListener: (name, handler) => { if (name === "submit") submit = handler; } };
-  const output = { hidden: true, innerHTML: "", focus() {} };
-  const values = new Map([
-    ["business", "Tree <img src=x onerror=alert(1)> service"],
-    ["area", "Tulsa"],
-    ["action", "request a quote"],
-  ]);
-  const document = {
-    getElementById: (id) => id === "site-plan-builder" ? form : output,
-    createElement: () => ({
-      set textContent(value) { this.innerHTML = String(value).replaceAll("&", "&amp;").replaceAll("<", "&lt;").replaceAll(">", "&gt;"); },
-    }),
-  };
-  vm.runInNewContext(script, { document, FormData: class { get(name) { return values.get(name); } } });
-  submit({ preventDefault() {} });
-
-  assert.equal(output.hidden, false);
-  assert.match(output.innerHTML, /Your starter site plan/);
-  assert.match(output.innerHTML, /Tree &lt;img src=x onerror=alert\(1\)&gt; service/);
-  assert.doesNotMatch(output.innerHTML, /<img src=x/);
+test("resource tools retain useful plans and safe output instead of the old planning-only demo", async () => {
+  const { aiWebsiteBrief } = await import('../../assets/website-resources.mjs');
+  const brief = JSON.parse(aiWebsiteBrief({ businessName:'Tree <img src=x onerror=alert(1)> service', trade:'Tree service', city:'Tulsa',state:'OK',contact:'202-555-0123',services:'Pruning' }));
+  assert.equal(brief.pagePlan.length,4);
+  assert.match(brief.pagePlan[0], /Homepage/);
+  const module = read('assets/website-resources.mjs');
+  assert.match(module, /code.textContent = content/);
+  assert.doesNotMatch(module, /output.innerHTML/);
+  assert.match(read('blog/website-builders-vs-done-for-you-websites/index.html'), /Download website brief/);
 });
 
 test("flagged articles define their subject near the top", () => {

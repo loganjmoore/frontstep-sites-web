@@ -1,13 +1,14 @@
 ---
+resourceTool: "starter"
 title: "Best web builder sites for a small business, compared"
 description: "Wix, Squarespace, and Google Sites compared on price, who makes edits, and fit, plus when a done-for-you site is the better choice. Checked October 2026."
 slug: "best-web-builder-sites-for-a-small-business"
 cluster: "compare"
 lead: "A website builder is a self-serve tool for making and editing your own site, and this comparison is for small business owners choosing between Wix, Squarespace, Google Sites, and a done-for-you site."
 answer: "The best web builder for a small business is the one you will keep up to date. Wix and Squarespace are the best-known paid builders, at $204 and $228 a year as we checked them, and you do all the editing. If you would rather hand off the edits, a done-for-you site at $99 a year with the domain included is the third option to weigh."
-sitePlanner: true
+sitePlanner: false
 published: "2026-10-04"
-updated: "2026-10-06"
+updated: "2026-10-09"
 image: "/assets/blog/best-web-builder-sites-for-a-small-business-cover.svg"
 imageAlt: "Cover for best web builder sites for a small business: Wix at $204 a year, Squarespace at $228 a year, and a done-for-you site at $99 a year with the domain included"
 ---
