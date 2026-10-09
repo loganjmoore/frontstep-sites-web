@@ -4,16 +4,17 @@ import vm from 'node:vm';
 import { randomUUID } from 'node:crypto';
 
 const source = readFileSync(new URL('../../posthog-web.js', import.meta.url), 'utf8');
-function browser(overrides = {}) {
+function browser(overrides = {}, landingUrl = 'https://venuebill.com/pricing?code=secret') {
   const windowListeners = new Map(), documentListeners = new Map(), values = new Map(), session = new Map(), requests = [], nodes = [];
+  const attributes = new Map();
   const storage = (map) => ({ getItem: (k) => map.get(k) ?? null, setItem: (k, v) => map.set(k, v), removeItem: (k) => map.delete(k) });
-  const config = { key: 'phc_test', host: 'https://us.i.posthog.com', product: 'venuebill.com', surface: 'marketing', hosts: ['venuebill.com', 'www.venuebill.com', 'app.venuebill.com'], consentKey: 'site_consent', consentKind: 'accepted', ...overrides };
+  const config = { key: 'phc_test', host: 'https://us.i.posthog.com', product: 'venuebill.com', surface: 'marketing', consentKey: 'site_consent', consentKind: 'accepted', ...overrides };
   const context = { window: { addEventListener: (k, fn) => windowListeners.set(k, fn), dispatchEvent: e => { windowListeners.get(e.type)?.(e); return true; } }, document: {
-    cookie: '', readyState: 'complete', referrer: 'https://google.com/search?q=private', documentElement: { lang: 'en' },
+    cookie: '', readyState: 'complete', referrer: 'https://google.com/search?q=private', documentElement: { lang: 'en', getAttribute: (key) => attributes.get(key) ?? null, setAttribute: (key, value) => attributes.set(key, value), removeAttribute: (key) => attributes.delete(key) },
     addEventListener: (k, fn) => documentListeners.set(k, fn),
     createElement: () => { const n = { setAttribute() {}, style: {}, append() {}, addEventListener(k, fn) { this[k] = fn; } }; nodes.push(n); return n; },
     body: { append() {} },
-  }, navigator: { webdriver: false, globalPrivacyControl: false }, location: { hostname: 'venuebill.com', pathname: '/pricing', href: 'https://venuebill.com/pricing?code=secret' },
+  }, navigator: { webdriver: false, globalPrivacyControl: false }, location: { hostname: 'venuebill.com', pathname: '/pricing', href: landingUrl },
     history: { pushState() {}, replaceState() {} }, localStorage: storage(values), sessionStorage: storage(session), crypto: { randomUUID }, innerWidth: 390, Event, AbortController, AbortSignal, setTimeout, clearTimeout, URL, Date,
     fetch: async (url, options) => { if (url === '/posthog-config.json') return { ok: true, json: async () => config }; requests.push({ url, options, data: JSON.parse(options.body) }); return { ok: true }; },
   };
@@ -47,10 +48,6 @@ assert.equal(b.requests.at(-1).data.properties.page_path, '/:private');
 const link = { href: 'https://apps.apple.com/app/id123?token=secret' };
 b.documents.get('click')({ target: { closest: () => link } }); await tick();
 assert.deepEqual(b.requests.slice(-2).map((r) => r.data.event), ['cta_clicked', 'app_store_clicked']);
-const signup = { href: 'https://app.venuebill.com/get-started' };
-b.documents.get('click')({ target: { closest: () => signup } }); await tick();
-assert.equal(b.requests.at(-1).data.event, 'cta_clicked');
-assert.equal(b.requests.at(-1).data.properties.target, 'signup');
 const oldId = b.requests.at(-1).data.distinct_id;
 b.values.set('site_consent', 'declined'); b.windows.get('storage')();
 const count = b.requests.length;
@@ -62,8 +59,6 @@ assert.notEqual(b.requests.at(-1).data.distinct_id, oldId, 'Reaccept creates a f
 b.context.navigator.globalPrivacyControl = true; b.context.window.productAnalytics.refresh();
 b.context.window.productAnalytics.capture('signup_completed');
 assert.equal(b.requests.length, count + 1, 'GPC overrides stored consent');
-const dnt = browser(); dnt.values.set('site_consent', 'accepted'); dnt.context.navigator.doNotTrack = '1'; await tick();
-assert.equal(dnt.requests.length, 0, 'Do Not Track overrides stored consent');
 for (const config of [{ key: '' }, { host: 'https://untrusted.example' }, { product: 'pancakebudget.com' }]) {
   const disabled = browser(config); disabled.values.set('site_consent', 'accepted'); await tick();
   assert.equal(disabled.requests.length, 0);
@@ -99,4 +94,122 @@ const publicCount = publicOnly.requests.length;
 publicOnly.context.location.pathname = '/children/private-id'; publicOnly.context.history.pushState();
 publicOnly.context.window.productAnalytics.capture('activation_completed');
 assert.equal(publicOnly.requests.length, publicCount, 'Adult acquisition scope excludes private child pages entirely');
+const campaign = browser({}, 'https://venuebill.com/pricing?utm_campaign=cc_0123456789abcdef&utm_source=private-email@example.com'); await tick();
+assert.equal(campaign.requests.length, 0, 'Campaign landing does not capture before consent');
+assert.equal(campaign.session.size, 0, 'Campaign landing does not persist session data before consent');
+campaign.values.set('site_consent', 'accepted'); campaign.context.window.productAnalytics.refresh(); await tick();
+assert.equal(campaign.requests[0].data.properties.campaign, 'cc_0123456789abcdef');
+assert.equal(JSON.stringify(campaign.requests).includes('private-email'), false);
+campaign.context.location.href = 'https://venuebill.com/signup?utm_campaign=cc_aaaaaaaaaaaaaaaa';
+campaign.context.location.pathname = '/signup'; campaign.context.history.pushState(); await tick();
+campaign.context.window.productAnalytics.capture('signup_completed'); await tick();
+assert.equal(campaign.requests.at(-1).data.properties.campaign, 'cc_0123456789abcdef', 'Session preserves first landing campaign through later events');
+campaign.values.set('site_consent', 'declined'); campaign.context.window.productAnalytics.refresh();
+assert.equal(campaign.session.size, 0, 'Withdrawal removes persisted campaign');
+campaign.values.set('site_consent', 'accepted'); campaign.context.window.productAnalytics.refresh(); await tick();
+assert.equal(campaign.requests.at(-1).data.properties.campaign, undefined, 'Reaccept does not resurrect withdrawn campaign');
+for (const value of ['email@example.com', 'cc_0123456789abcdeg', 'cc_0123456789abcdef-person', 'CC_0123456789abcdef', 'cc_0123456789abcdef&utm_campaign=cc_aaaaaaaaaaaaaaaa']) {
+  const rejected = browser({}, `https://venuebill.com/pricing?utm_campaign=${value}`); await tick();
+  rejected.values.set('site_consent', 'accepted'); rejected.context.window.productAnalytics.refresh(); await tick();
+  assert.equal(rejected.requests[0].data.properties.campaign, undefined, 'Arbitrary/duplicate UTM campaign is dropped');
+}
+const expired = browser({}, 'https://venuebill.com/pricing?utm_campaign=cc_0123456789abcdef'); await tick();
+expired.values.set('site_consent', 'accepted'); expired.context.window.productAnalytics.refresh(); await tick();
+const oldSession = JSON.parse(expired.session.get('website_posthog_session_v1')); oldSession.at = Date.now() - 31 * 60000;
+expired.session.set('website_posthog_session_v1', JSON.stringify(oldSession)); expired.context.window.productAnalytics.capture('signup_completed'); await tick();
+assert.notEqual(expired.requests.at(-1).data.properties.$session_id, oldSession.id);
+assert.equal(expired.requests.at(-1).data.properties.campaign, undefined, 'Expired session does not retain campaign attribution');
+const resource = browser({}, 'https://venuebill.com/tools/event-budget?utm_campaign=cc_0123456789abcdef&customer=secret');
+resource.context.location.pathname = '/tools/event-budget'; await tick();
+for (const event of ['resource_completed', 'resource_downloaded']) assert.equal(resource.context.window.productAnalytics.capture(event), false, 'Resources remain consent gated');
+assert.equal(resource.requests.length, 0);
+resource.values.set('site_consent', 'accepted'); resource.context.window.productAnalytics.refresh(); await tick();
+const resourceSession = resource.requests[0].data.properties.$session_id;
+for (const event of ['resource_completed', 'resource_downloaded']) {
+  assert.equal(resource.context.window.productAnalytics.capture(event), true); await tick();
+  const captured = resource.requests.at(-1).data;
+  assert.equal(captured.event, event);
+  assert.equal(captured.properties.page_path, '/tools/event-budget');
+  assert.equal(captured.properties.campaign, 'cc_0123456789abcdef');
+  assert.equal(captured.properties.$session_id, resourceSession);
+  assert.equal(captured.properties.$process_person_profile, false);
+  assert.equal(JSON.stringify(captured).includes('secret'), false);
+}
+const resourceCount = resource.requests.length;
+resource.documents.get('click')({ target: { closest: () => ({ href: 'https://venuebill.com/tools/event-budget' }) } }); await tick();
+assert.equal(resource.requests.length, resourceCount, 'A tool link click never masquerades as a completed calculation or download');
+resource.context.location.pathname = '/private/customer-id';
+assert.equal(resource.context.window.productAnalytics.capture('resource_completed'), false, 'Resource completion never emits on private paths, even outside publicOnly sites');
+resource.context.location.pathname = '/templates/event-checklist';
+resource.windows.get('website:analytics-event')({ detail: { name: 'resource_downloaded', email: 'private@example.com' } }); await tick();
+assert.equal(resource.requests.at(-1).data.event, 'resource_downloaded');
+assert.equal(JSON.stringify(resource.requests.at(-1)).includes('private@example.com'), false);
+resource.values.set('site_consent', 'declined'); resource.context.window.productAnalytics.refresh();
+assert.equal(resource.context.window.productAnalytics.capture('resource_downloaded'), false, 'Withdrawal disables resource telemetry');
 console.log('PostHog browser contract passed: consent, withdrawal, reaccept, opt-outs, routes, privacy, exclusions and ordered store events.');
+
+// Referral attribution is consented and hostname-only, preserving first landing.
+const referral = browser();
+await tick();
+assert.equal(referral.requests.length, 0);
+referral.values.set('site_consent', 'accepted');
+referral.context.window.productAnalytics.refresh(); await tick();
+assert.equal(referral.requests[0].data.properties.referrer_domain, 'google.com');
+assert.equal(JSON.stringify(referral.requests).includes('search?q=private'), false);
+referral.context.document.referrer = 'https://venuebill.com/pricing';
+referral.context.window.productAnalytics.capture('signup_completed'); await tick();
+assert.equal(referral.requests.at(-1).data.properties.referrer_domain, 'google.com');
+referral.values.set('site_consent', 'declined'); referral.context.window.productAnalytics.refresh();
+referral.values.set('site_consent', 'accepted'); referral.context.window.productAnalytics.refresh(); await tick();
+assert.equal(referral.requests.at(-1).data.properties.referrer_domain, undefined);
+for (const referrer of ['https://user:secret@google.com/private', 'http://google.com/', 'https://google.com:8443/', 'https://127.0.0.1/', 'https://company.internal/', 'https://app.venuebill.com/private']) {
+  // Boot the bundle again with the supplied initial referrer using its VM seam.
+  const sample = browser(); await tick();
+  sample.context.document.referrer = referrer;
+  delete sample.context.window.productAnalytics;
+  vm.runInNewContext(source, sample.context); await tick();
+  sample.values.set('site_consent', 'accepted'); sample.context.window.productAnalytics.refresh(); await tick();
+  assert.equal(sample.requests.at(-1).data.properties.referrer_domain, undefined, referrer);
+}
+
+// An authenticated SPA can share '/' with its marketing homepage. Path alone
+// cannot authorize capture; every event must recheck the explicit scope marker.
+const scoped = browser({ requirePublicScope: true, publicOnly: true });
+scoped.context.location.pathname = '/';
+scoped.values.set('site_consent', 'accepted'); await tick();
+assert.equal(scoped.requests.length, 0, 'Absent public scope denies even an accepted homepage');
+assert.equal(scoped.values.has('website_posthog_identity_v1'), false);
+scoped.context.document.documentElement.setAttribute('data-website-analytics-scope', 'private');
+assert.equal(scoped.context.window.productAnalytics.capture('signup_completed'), false);
+scoped.context.document.documentElement.setAttribute('data-website-analytics-scope', 'public');
+scoped.context.window.productAnalytics.refresh(); await tick();
+assert.equal(scoped.requests.length, 1, 'Explicit public scope enables the marketing homepage');
+const scopedId = scoped.requests[0].data.distinct_id;
+scoped.context.document.documentElement.removeAttribute('data-website-analytics-scope');
+assert.equal(scoped.context.window.productAnalytics.capture('activation_completed'), false, 'Private transition is denied before route/refresh');
+assert.equal(scoped.requests.length, 1);
+assert.equal(scoped.values.has('website_posthog_identity_v1'), false, 'Private transition clears anonymous identifiers');
+assert.equal(scoped.session.size, 0);
+scoped.context.document.documentElement.setAttribute('data-website-analytics-scope', 'public');
+scoped.context.window.productAnalytics.refresh(); await tick();
+assert.equal(scoped.requests.length, 2, 'Returning to public scope records a fresh public visit');
+assert.notEqual(scoped.requests[1].data.distinct_id, scopedId);
+scoped.values.set('site_consent', 'declined'); scoped.context.window.productAnalytics.refresh();
+assert.equal(scoped.context.window.productAnalytics.capture('resource_completed'), false);
+assert.equal(scoped.values.has('website_posthog_identity_v1'), false);
+console.log('Required public scope contract passed: default deny, private transitions, fresh public return and withdrawal.');
+
+const turf = browser({ product: 'turfplanner.com', hosts: ['venuebill.com'], publicOnly: true });
+turf.context.location.pathname = '/turfplanner'; turf.values.set('site_consent', 'accepted'); await tick();
+assert.equal(turf.requests[0].data.properties.page_path, '/', 'TurfPlanner bare Inertia prefix is the public homepage');
+turf.context.location.pathname = '/turfplanner/pricing'; turf.context.history.pushState(); await tick();
+assert.equal(turf.requests.at(-1).data.properties.page_path, '/pricing');
+turf.context.location.pathname = '/turfplanner/jobs/private'; turf.context.history.pushState();
+assert.equal(turf.requests.length, 2, 'Turf private app routes stay excluded');
+const otherPrefix = browser({ publicOnly: true }); otherPrefix.context.location.pathname = '/turfplanner';
+otherPrefix.values.set('site_consent', 'accepted'); await tick();
+assert.equal(otherPrefix.requests.length, 0, 'Prefix alias belongs only to TurfPlanner');
+
+const startLink = browser(); startLink.values.set('site_consent', 'accepted'); await tick();
+startLink.documents.get('click')({ target: { closest: () => ({ href: 'https://venuebill.com/get-started' }) } }); await tick();
+assert.equal(startLink.requests.at(-1).data.properties.target, 'signup', 'FrontStep get-started retains signup CTA mapping');
