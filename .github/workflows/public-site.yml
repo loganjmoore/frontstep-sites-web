@@ -13,6 +13,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
+      - run: node --test tests/posthog/*.test.mjs
       - run: node tools/build-blog.mjs
       - run: node --test tests/seo/*.test.mjs
       - run: git diff --exit-code -- blog feed.xml sitemap.xml robots.txt llms.txt
