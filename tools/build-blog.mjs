@@ -258,6 +258,14 @@ const SITE_PLAN_CSS = `
 @media(min-width:760px){.site-plan form{grid-template-columns:1fr 1fr}.site-plan label:last-of-type{grid-column:1/-1}.site-plan .btn{grid-column:1/-1}}
 `;
 
+const RESOURCE_CSS = `.site-plan iframe{width:100%;height:460px;border:1px solid var(--ink);background:#fff}
+.site-plan .resource-help{grid-column:1/-1;margin:0;font-size:.85rem}
+.site-plan pre{white-space:pre-wrap;overflow-wrap:anywhere;font-size:.85rem}
+.site-plan button:disabled{opacity:.55;cursor:not-allowed}
+.site-plan [role="alert"]{color:#9c241c}
+.site-plan a.btn{display:inline-flex;margin-top:1rem}
+.site-plan textarea{width:100%;padding:.55rem .65rem;border:1.5px solid var(--ink);border-radius:3px;background:#fff;color:var(--ink);font:inherit}
+`;
 function pageShell({ title, description, canonical, ogType = "website", ogImage, preloadImage, bodyHtml, jsonLd = [] }) {
   const fontHref = "https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&display=optional";
   return `<!DOCTYPE html>
@@ -279,7 +287,7 @@ ${ogImage ? `<meta property="og:image" content="${escapeAttr(ogImage)}">\n` : ""
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="${fontHref}" rel="stylesheet" media="print" onload="this.media='all'">
 <noscript><link href="${fontHref}" rel="stylesheet"></noscript>
-<style>${READ_CSS}${bodyHtml.includes('id="site-plan-builder"') ? SITE_PLAN_CSS : ""}</style>
+<style>${READ_CSS}${(bodyHtml.includes('id="site-plan-builder"') || bodyHtml.includes('data-website-resource=')) ? SITE_PLAN_CSS : ""}${bodyHtml.includes("data-website-resource=") ? RESOURCE_CSS : ""}</style>
 ${jsonLd.map(jsonLdScript).join("\n")}
 <script defer src="/analytics-consent.js"></script>
 <script defer src="/posthog-web.js"></script>
@@ -323,9 +331,38 @@ ${bodyHtml}
   }
 })();
 </script>` : ""}
-</body>
+${bodyHtml.includes("data-website-resource=") ? `<script type="module" src="/assets/website-resources.mjs"></script>\n` : ""}</body>
 </html>
 `;
+}
+
+function renderWebsiteResource(mode) {
+  if (!["starter", "brief"].includes(mode)) return "";
+  const starter = mode === "starter";
+  return `<section class="site-plan" data-website-resource="${mode}" aria-labelledby="website-resource-title">
+  <h2 id="website-resource-title">${starter ? "Build a downloadable website starter" : "Prepare a brief for an AI website builder"}</h2>
+  <p>${starter ? "Make a small HTML website from your own business details. Preview it here, then download a file you can open in a browser or edit." : "Turn your business details into a structured brief for an AI builder or a website provider. Download it, review it, and choose where to use it."}</p>
+  <p>${starter ? "This uses a fixed template; it does not call AI or publish a website." : "This generates a brief, not a website. No AI provider is called. FrontStep’s finished build uses its existing signed-in, active-plan workflow."} Your answers stay in this page and the file you download. They are not sent or saved. Optional analytics records only the public resource action.</p>
+  <form>
+    <label>Business name<input name="businessName" required maxlength="80" autocomplete="organization" placeholder="Example Tree Care"></label>
+    <label>Trade or business type<input name="trade" required maxlength="80" placeholder="Tree care"></label>
+    <label>City or service area<input name="city" required maxlength="100" placeholder="Tulsa"></label>
+    <label>State abbreviation<input name="state" required minlength="2" maxlength="2" pattern="[A-Za-z]{2}" placeholder="OK"></label>
+    <label>Customer phone or email<input name="contact" required maxlength="254" placeholder="202-555-0123"></label>
+    <label>Services, one per line<textarea name="services" aria-describedby="website-services-help" required maxlength="1000" rows="4" placeholder="Tree pruning&#10;Storm cleanup"></textarea></label>
+    <p class="resource-help" id="website-services-help">One to eight services, up to 150 characters per line and 1,000 characters total.</p>
+    <button class="btn" type="submit">${starter ? "Build my website starter" : "Build my website brief"}</button>
+  </form>
+  <p data-resource-error role="alert" tabindex="-1"></p>
+  <div data-resource-output class="site-plan-output" tabindex="-1" hidden>
+    <h3>${starter ? "Your website preview" : "Your website brief"}</h3>
+    ${starter ? '<iframe sandbox="" title="Your generated website preview"></iframe>' : '<div data-brief-summary></div><details><summary>View the full structured brief</summary><pre aria-label="Generated website brief"></pre></details>'}
+    <p>${starter ? "The file includes your services and a phone or email link. It has no contact-form delivery, booking, payment or hosting. Check every detail before publishing." : "Copy the full brief into your chosen builder, or upload the file if it supports JSON. Ask for a draft, then check every fact before publishing. This brief follows FrontStep’s existing business questionnaire fields. If you entered an email, add a customer phone number before completing that questionnaire. AI output still needs your review."}</p>
+    <button class="btn" data-resource-download type="button" disabled>${starter ? "Download website HTML" : "Download website brief"}</button>
+    <p>Prefer a finished site and ongoing changes? <a href="${START_URL}">Start with FrontStep’s existing plans</a>.</p>
+  </div>
+  <noscript><p>This local tool needs JavaScript. The guide below and our <a href="${START_URL}">existing signup flow</a> remain available.</p></noscript>
+  </section>`;
 }
 
 function renderSitePlanBuilder() {
@@ -401,7 +438,7 @@ ${renderCrumbs(crumbs)}
 <h1>${escapeHtml(article.title)}</h1>
 ${article.lead ? `<p class="direct-answer">${escapeHtml(article.lead)}</p>\n` : ""}<p class="updated">${article.author ? `By ${escapeHtml(article.author)} &middot; ` : ""}Updated ${formatDate(article.updated)}</p>
 ${article.image ? `<figure class="doc-figure doc-cover"><img src="${escapeAttr(article.image)}" alt="${escapeAttr(article.imageAlt || "")}" width="1200" height="630" fetchpriority="high"></figure>\n` : ""}<aside class="tag-box"><span class="label">Short answer</span><p>${escapeHtml(article.answer)}</p></aside>${article.sitePlanner === "true" ? `\n${renderSitePlanBuilder()}` : ""}
-${article.bodyHtml}
+${article.resourceTool ? renderWebsiteResource(article.resourceTool) + "\n" : ""}${article.bodyHtml}
 <aside class="tag-box tag-offer">
   <span class="label">Front Step Sites &middot; Launch</span>
   <p>$99/yr, domain included, no setup fee.</p>
@@ -621,6 +658,7 @@ function main() {
       image: data.image,
       imageAlt: data.imageAlt,
       sitePlanner: data.sitePlanner,
+      resourceTool: data.resourceTool,
       bodyHtml: html,
       faqItems,
     });
