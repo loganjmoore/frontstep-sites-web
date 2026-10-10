@@ -3,12 +3,12 @@ title: "Tree service website cost in 2026"
 description: "Understand tree service website costs, compare build options, and budget for clear service pages, credible crew details, and reliable estimate requests."
 slug: "tree-service-website-cost"
 cluster: "trades/tree-service"
-answer: "Prices checked October 10, 2026: Front Step Sites Launch is billed at $99 a year with one domain included; Wix Light is $17 a month billed annually ($204 a year), and Squarespace Basic is $19 a month billed annually ($228 a year)."
-lead: "Prices checked October 10, 2026: Front Step Sites Launch is billed at $99 a year with one domain included; Wix Light is $17 a month billed annually ($204 a year), and Squarespace Basic is $19 a month billed annually ($228 a year)."
+answer: "A tree service website should make routine estimates and urgent calls easy without overstating your availability or qualifications. Its cost depends on the content, support, and custom tools you need. Compare the total first-year and recurring bills, then prioritize clear service scope, genuine project evidence, domain control, and working contact options."
+published: "2026-09-26"
 updated: "2026-10-10"
 ---
 
-Those prices are starting paths, not equivalent scopes. A company handling planned pruning and stump grinding has different needs from a crew offering storm response, so compare the work included after comparing the annual bills.
+Website subscriptions and done-for-you services are different scopes. A company handling planned pruning and stump grinding has different needs from a crew offering storm response, so compare the work included after comparing the annual bills.
 
 ## Define what the website needs to help customers do
 
@@ -24,7 +24,7 @@ The [tree service website essentials](/blog/website-tree-service/) can help you 
 
 A builder subscription can suit an owner who is comfortable writing, arranging pages, and checking the finished site. You still need to gather photographs, explain the services, connect the domain, and make sure inquiries reach your office.
 
-Wix Light and Squarespace Basic are do-it-yourself subscription paths. Check the full proposed setup yourself before purchasing rather than assuming the subscription covers every related expense.
+Wix Light and Squarespace Basic are do-it-yourself subscription paths. Check the current [Wix plans](https://www.wix.com/plans) and [Squarespace pricing](https://www.squarespace.com/pricing) for your location and billing term. Compare the annual total, domain renewal, taxes and any extra tools rather than assuming the subscription covers every related expense.
 
 For a tree service, content collection deserves its own time budget. You may need permission for job photos, accurate crew descriptions, and confirmation of any credential or insurance statement. Those tasks remain necessary regardless of who arranges the pages.
 

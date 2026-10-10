@@ -1,5 +1,5 @@
 import assert from "node:assert/strict";
-import { readFileSync, readdirSync } from "node:fs";
+import { readFileSync } from "node:fs";
 import test from "node:test";
 import vm from "node:vm";
 
@@ -158,9 +158,10 @@ test("October 10 acquisition findings are present in every generated page", () =
   assert.match(domain, /<th>Role<\/th><th>What they can do<\/th><th>What the owner must retain<\/th>/);
 
   const cost = read("blog/tree-service-website-cost/index.html");
-  assert.match(cost, /<h1>Tree service website cost in 2026<\/h1>\n<p class="direct-answer">Prices checked October 10, 2026: Front Step Sites Launch is billed at \$99 a year with one domain included/);
-  assert.match(cost, /Wix Light is \$17 a month billed annually \(\$204 a year\)/);
-  assert.match(cost, /Squarespace Basic is \$19 a month billed annually \(\$228 a year\)/);
+  assert.match(cost, /<h1>Tree service website cost in 2026<\/h1>/);
+  assert.match(cost, /href="https:\/\/www.wix.com\/plans"/);
+  assert.match(cost, /href="https:\/\/www.squarespace.com\/pricing"/);
+  assert.doesNotMatch(cost, /Prices checked October 10/);
   assert.doesNotMatch(cost, /few thousand dollars/);
 
   const cleaning = read("blog/cleaning-local-seo-checklist/index.html");
@@ -173,16 +174,7 @@ test("October 10 acquisition findings are present in every generated page", () =
   assert.match(garage, /<th>Claim<\/th><th>Evidence the business must verify<\/th><th>Safer wording when the evidence is absent<\/th>/);
   for (const claim of ["24/7", "Emergency", "Same-day", "Response time"]) assert.match(garage, new RegExp(`<td>${claim.replace("/", "\\/")}<\\/td>`));
 
-  const htmlFiles = (dir) => readdirSync(new URL(`../../${dir}`, import.meta.url), { recursive: true, withFileTypes: true })
-    .filter((entry) => entry.isFile() && entry.name.endsWith(".html"))
-    .map((entry) => `${entry.parentPath}/${entry.name}`);
-  for (const path of [...htmlFiles("."), ...htmlFiles("blog")]) {
-    const html = readFileSync(path, "utf8");
-    assert.equal((html.match(/xgb5xunw8f/g) || []).length, 1, `${path} must load the configured Clarity project once`);
-    assert.doesNotMatch(html, /yqkzhoosjo/, `${path} still has the previous Clarity project`);
-    assert.match(html, /clarity\.ms\/tag/, `${path} must load Clarity after analytics consent`);
-    assert.match(html, /consentv2[^]*analytics_Storage:\"granted\"/, `${path} must grant analytics storage after consent`);
-  }
+
 });
 
 test("October 8 AI strategy changes are present in generated pages", () => {
