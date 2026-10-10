@@ -3,8 +3,9 @@ title: "Contact forms that get filled out"
 description: "Create a useful contact form with fewer fields, clear labels, sensible spam protection, and reliable delivery so customers can send an inquiry without fuss."
 slug: "contact-forms-that-actually-get-filled-out"
 cluster: "guides"
+lead: "A contact form is a set of website fields that lets a visitor send an inquiry to a business."
 answer: "A useful contact form asks only for the details needed to reply and decide the next step. Keep labels clear, make optional fields truly optional, explain what happens after submission, and provide a phone alternative. Test the whole route through to the receiving inbox, including errors, spam filtering, and staff follow-up."
-updated: "2026-09-26"
+updated: "2026-10-10"
 ---
 
 A customer opens your contact form, sees a long list of required boxes, and decides to come back later. What should you ask so a simple inquiry does not feel like filling out a job application? Start with the information you need for the first reply, then collect the rest during the conversation.

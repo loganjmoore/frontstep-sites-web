@@ -3,8 +3,9 @@ title: "How to write a service page that ranks"
 description: "Write a service page that answers local customers' questions, explains your work, shows honest proof, and makes the next step clear without keyword stuffing."
 slug: how-to-write-a-service-page-that-ranks-and-converts
 cluster: guides
+lead: "A service page is a website page that explains one service, where it is available, what the work involves, and how a customer can request it."
 answer: "A useful service page explains one service, where you provide it, what the job involves, and how to request help. Add real evidence, clear pricing guidance, and answers to the questions customers ask before booking. Use natural search terms, but write for the person deciding whether to call you."
-updated: 2026-09-26
+updated: 2026-10-10
 ---
 
 You want a service page that people can find on Google and that gives them a reason to call. That starts with answering the questions someone has about a particular job, rather than filling a page with sales claims. A useful page helps a customer recognize their situation, understand your offer, and take the next step.

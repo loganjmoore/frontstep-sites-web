@@ -140,6 +140,45 @@ test("flagged articles define their subject near the top", () => {
   assert.match(brainpop, /<h1>[^<]+<\/h1>\n<p class="direct-answer">BrainPOP is an educational website and web application/);
 });
 
+test("October 10 entity-definition findings use unique plain definitions immediately after the H1", () => {
+  const definitions = {
+    "how-to-make-a-google-site": "Google Sites is a website builder from Google for making simple pages, and this guide walks through making one step by step.",
+    "best-web-builder-sites-for-a-small-business": "A website builder is a self-serve tool for making and editing your own site, and this comparison is for small business owners choosing between Wix, Squarespace, Google Sites, and a done-for-you site.",
+    "click-to-call-making-your-phone-number-work-on-every-page": "Click-to-call is a phone link that opens a calling option on a supported device when a website visitor selects it.",
+    "contact-forms-that-actually-get-filled-out": "A contact form is a set of website fields that lets a visitor send an inquiry to a business.",
+    "how-to-write-an-about-page-for-a-local-business": "An About page is the part of a local business website that explains who runs the business, what it does, where it works, and what customers can expect.",
+    "should-you-put-prices-on-your-website": "Website pricing is the fixed amount, realistic range, or estimate process a business publishes to help customers understand what a service may cost.",
+    "how-to-take-photos-for-your-business-website-with-a-phone": "A business website photo is an image that shows customers the real people, work, place, or results behind a service.",
+    "service-area-pages-when-they-help-and-when-they-hurt": "A service area page is a website page that explains how a business provides a specific service in a town or area it genuinely covers.",
+    "nap-consistency-why-your-name-address-and-phone-must-match-everywhere": "NAP consistency is the use of accurate, recognizable business name, address, and phone information across a website and business listings.",
+    "local-business-schema-markup-explained-simply": "Local business schema markup is structured website data that labels details such as a business name, phone number, location, and opening hours for search engines.",
+    "how-to-set-up-google-search-console-for-a-small-business": "Google Search Console is a free Google service that reports how a verified website appears and performs in Google Search.",
+    "how-to-tell-if-your-website-is-getting-you-customers": "Website customer measurement is the process of connecting calls, forms, and search visits with suitable inquiries and completed work.",
+    "bing-places-and-apple-business-connect-the-listings-most-businesses-sk": "Bing Places and Apple Business Connect are services businesses use to manage details that may appear across Bing and Apple products.",
+    "yelp-nextdoor-and-angi-which-listings-are-worth-your-time": "Yelp, Nextdoor, and Angi are online services where customers may find, discuss, or contact local businesses.",
+    "how-to-reply-to-a-bad-review": "A bad-review reply is a short public response that acknowledges a concern without exposing customer details or arguing about the complaint.",
+    "blogging-for-local-businesses-does-it-still-work": "Local business blogging is the practice of publishing useful answers to customer questions that relate to the services the business actually provides.",
+    "how-to-write-a-service-page-that-ranks-and-converts": "A service page is a website page that explains one service, where it is available, what the work involves, and how a customer can request it.",
+    "website-accessibility-basics-for-small-businesses": "Website accessibility is the practice of making website information and controls usable by people with disabilities.",
+    "does-a-small-business-website-need-a-privacy-policy": "A website privacy policy is a statement explaining what personal information a site collects, how it uses that information, and which services receive it.",
+    "how-to-get-your-business-on-google-maps": "A Google Business Profile is the business listing an eligible company can claim or create to manage information shown on Google Maps and Search.",
+    "what-to-do-when-your-google-business-profile-gets-suspended": "A suspended Google Business Profile is a listing whose content or management access Google has restricted after a policy or eligibility review.",
+    "keywords-for-local-businesses-how-customers-actually-search": "Local business keywords are the words customers use to name a service, describe a problem, or specify the area where they need help.",
+    "what-a-website-redesign-should-cost-and-when-you-need-one": "A website redesign is a substantial change to a site's structure, content, or presentation made to solve a defined business or customer problem.",
+    "emergency-service-businesses-how-to-show-you-re-open-now": "Emergency-service availability is a business's accurate statement of when urgent calls are answered, which jobs are handled, and where service is offered.",
+    "how-to-add-a-google-map-to-your-website-the-right-way": "A website map is a linked or embedded map that helps customers locate a public business address or understand where service is available.",
+  };
+
+  assert.equal(new Set(Object.values(definitions)).size, 25);
+  for (const [slug, definition] of Object.entries(definitions)) {
+    const html = read(`blog/${slug}/index.html`);
+    assert.ok(
+      html.includes(`</h1>\n<p class="direct-answer">${definition}</p>`),
+      `${slug} should define its subject immediately after the H1`,
+    );
+  }
+});
+
 test("homepage keeps third-party assets out of the initial rendering path", () => {
   const home = read("index.html");
   assert.match(home, /setTimeout\(s,8000\)/);
@@ -157,6 +196,8 @@ test("AI strategy articles lead with the requested direct answers and related li
   const pest = read("blog/pest-control-get-more-reviews/index.html");
   assert.match(pest, /<h2 id="how-to-get-more-google-reviews-for-pest-control">How to get more Google reviews for pest control<\/h2>/);
   assert.match(pest, /Pest control customers leave reviews when you ask by text within an hour of the job and make the link a single tap\./);
+  assert.match(pest, /href="\/blog\/pest-control-google-business-profile\/"/);
+  assert.match(pest, /href="\/blog\/pest-control-local-seo-checklist\/"/);
 
   const cleaning = read("blog/cleaning-local-seo-checklist/index.html");
   assert.match(cleaning, /<h2 id="local-seo-for-cleaning-companies-the-short-version">Local SEO for cleaning companies: the short version<\/h2>/);
@@ -201,7 +242,7 @@ test("October 8 AI strategy changes are present in generated pages", () => {
   assert.match(phone, /<code class="language-html">&lt;a href="tel:\+12025550147"&gt;Call \(202\) 555-0147&lt;\/a&gt;<\/code>/);
   assert.match(phone, /<th>Where to add it<\/th><th>What the visitor sees<\/th><th>What to test<\/th>/);
   assert.match(phone, /What is the correct HTML for a clickable phone number\?/);
-  assert.match(phone, /"datePublished":"2026-09-26","dateModified":"2026-10-08"/);
+  assert.match(phone, /"datePublished":"2026-09-26","dateModified":"2026-10-10"/);
 
   const schema = read("blog/structured-data-for-ai-search-what-small-businesses-need/index.html");
   assert.match(schema, /<h1>Structured Data for AI Search: Small Business Guide<\/h1>/);

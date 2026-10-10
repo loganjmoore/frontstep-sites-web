@@ -3,8 +3,9 @@ title: "How to set up Google Search Console"
 description: "Set up Google Search Console, verify your business website, submit its sitemap, and learn which reports help you spot problems and useful searches."
 slug: how-to-set-up-google-search-console-for-a-small-business
 cluster: guides
+lead: "Google Search Console is a free Google service that reports how a verified website appears and performs in Google Search."
 answer: "Set up Google Search Console with a Google account your business controls, add your website, and verify ownership. Submit your sitemap, inspect your main pages, and review search performance over time. The tool helps you understand how your website appears in Google Search, but verification alone does not improve rankings or guarantee customers."
-updated: 2026-09-26
+updated: 2026-10-10
 ---
 
 You want to know whether Google can find your business website and which searches bring people to it. Google Search Console can help answer both questions. Start by connecting the site to an account you control, then focus on a few useful checks instead of every chart.

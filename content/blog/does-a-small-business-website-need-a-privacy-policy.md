@@ -3,8 +3,9 @@ title: Does a website need a privacy policy?
 description: Find out what to check about privacy policies, contact forms, tracking tools, and customer information before publishing your small business website.
 slug: does-a-small-business-website-need-a-privacy-policy
 cluster: guides
+lead: "A website privacy policy is a statement explaining what personal information a site collects, how it uses that information, and which services receive it."
 answer: If your website collects customer information, plan to explain that collection in a clear privacy policy and check which requirements apply to your business. Forms, booking tools, and tracking services all belong in that review. Ask a qualified lawyer about your situation, since your location, customers, and website features can affect the answer.
-updated: 2026-09-26
+updated: 2026-10-10
 ---
 
 Does your small business website need a privacy policy if it only has a few pages and a contact form? Start by finding out what information the site and its connected services collect. Then check with your state and a qualified lawyer about the notices and choices your particular business needs.
