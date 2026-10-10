@@ -1,5 +1,5 @@
 import assert from "node:assert/strict";
-import { readFileSync } from "node:fs";
+import { readFileSync, readdirSync } from "node:fs";
 import test from "node:test";
 import vm from "node:vm";
 
@@ -43,8 +43,8 @@ test("priority article and hub changes are present in generated HTML", () => {
   assert.match(tree, /href="\/blog\/tree-service-get-more-reviews\/"/);
 
   const domain = read("blog/who-owns-your-domain-name-and-why-it-matters/index.html");
-  assert.match(domain, /you control your domain if you or your business is named as the registrant/);
-  assert.match(domain, /What to confirm in the registrar account/);
+  assert.match(domain, /Operational control of a domain belongs with the registrant named in the registration agreement/);
+  assert.match(domain, /Who controls the domain: registrant vs\. manager/);
 
   const guides = read("blog/guides/index.html");
   for (const slug of [
@@ -151,6 +151,40 @@ test("AI strategy articles lead with the requested direct answers and related li
   assert.match(garage, /href="\/blog\/garage-door-get-more-reviews\/"/);
 });
 
+test("October 10 acquisition findings are present in every generated page", () => {
+  const domain = read("blog/who-owns-your-domain-name-and-why-it-matters/index.html");
+  assert.match(domain, /<h1>Who owns your domain name\?<\/h1>\n<p class="direct-answer">Operational control of a domain belongs with the registrant named in the registration agreement/);
+  assert.match(domain, /<h2 id="who-controls-the-domain-registrant-vs-manager">Who controls the domain: registrant vs\. manager<\/h2>/);
+  assert.match(domain, /<th>Role<\/th><th>What they can do<\/th><th>What the owner must retain<\/th>/);
+
+  const cost = read("blog/tree-service-website-cost/index.html");
+  assert.match(cost, /<h1>Tree service website cost in 2026<\/h1>\n<p class="direct-answer">Prices checked October 10, 2026: Front Step Sites Launch is billed at \$99 a year with one domain included/);
+  assert.match(cost, /Wix Light is \$17 a month billed annually \(\$204 a year\)/);
+  assert.match(cost, /Squarespace Basic is \$19 a month billed annually \(\$228 a year\)/);
+  assert.doesNotMatch(cost, /few thousand dollars/);
+
+  const cleaning = read("blog/cleaning-local-seo-checklist/index.html");
+  assert.match(cleaning, /<h2 id="service-area-pages-for-cleaning-companies">Service-area pages for cleaning companies<\/h2>/);
+  assert.match(cleaning, /<th>Create a page when<\/th><th>Keep one coverage section when<\/th>/);
+  assert.match(cleaning, /href="\/blog\/service-area-pages-when-they-help-and-when-they-hurt\/"/);
+
+  const garage = read("blog/garage-door-local-seo-checklist/index.html");
+  assert.match(garage, /<h2 id="emergency-and-same-day-garage-door-wording">Emergency and same-day garage door wording<\/h2>/);
+  assert.match(garage, /<th>Claim<\/th><th>Evidence the business must verify<\/th><th>Safer wording when the evidence is absent<\/th>/);
+  for (const claim of ["24/7", "Emergency", "Same-day", "Response time"]) assert.match(garage, new RegExp(`<td>${claim.replace("/", "\\/")}<\\/td>`));
+
+  const htmlFiles = (dir) => readdirSync(new URL(`../../${dir}`, import.meta.url), { recursive: true, withFileTypes: true })
+    .filter((entry) => entry.isFile() && entry.name.endsWith(".html"))
+    .map((entry) => `${entry.parentPath}/${entry.name}`);
+  for (const path of [...htmlFiles("."), ...htmlFiles("blog")]) {
+    const html = readFileSync(path, "utf8");
+    assert.equal((html.match(/xgb5xunw8f/g) || []).length, 1, `${path} must load the configured Clarity project once`);
+    assert.doesNotMatch(html, /yqkzhoosjo/, `${path} still has the previous Clarity project`);
+    assert.match(html, /clarity\.ms\/tag/, `${path} must load Clarity after analytics consent`);
+    assert.match(html, /consentv2[^]*analytics_Storage:\"granted\"/, `${path} must grant analytics storage after consent`);
+  }
+});
+
 test("October 8 AI strategy changes are present in generated pages", () => {
   const phone = read("blog/click-to-call-making-your-phone-number-work-on-every-page/index.html");
   assert.match(phone, /<title>How to Make a Phone Number Clickable \(Click-to-Call\)<\/title>/);
@@ -232,11 +266,13 @@ test("flagged read pages defer analytics and avoid late font swaps", () => {
 });
 
 test("updated articles retain original publication date", () => {
-  for (const slug of ["tree-service-local-seo-checklist", "who-owns-your-domain-name-and-why-it-matters"]) {
-    const html = read(`blog/${slug}/index.html`);
-    assert.match(html, /"datePublished":"2026-09-26"/);
-    assert.match(html, /"dateModified":"2026-10-06"/);
-  }
+  const tree = read("blog/tree-service-local-seo-checklist/index.html");
+  assert.match(tree, /"datePublished":"2026-09-26"/);
+  assert.match(tree, /"dateModified":"2026-10-06"/);
+
+  const domain = read("blog/who-owns-your-domain-name-and-why-it-matters/index.html");
+  assert.match(domain, /"datePublished":"2026-09-26"/);
+  assert.match(domain, /"dateModified":"2026-10-10"/);
 });
 
 test("regeneration does not redate unchanged legal pages", () => {
