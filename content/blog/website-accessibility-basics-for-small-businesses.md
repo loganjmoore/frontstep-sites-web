@@ -5,6 +5,7 @@ slug: "website-accessibility-basics-for-small-businesses"
 cluster: "guides"
 lead: "Website accessibility is the practice of making website information and controls usable by people with disabilities."
 answer: "Website accessibility means people with disabilities can read your information and use your website. Start by checking readable text, clear contrast, useful image descriptions, labeled forms, and keyboard access. Test the steps customers actually take, such as finding a service and requesting an estimate, then fix anything that blocks them."
+published: "2026-09-26"
 updated: "2026-10-10"
 ---
 

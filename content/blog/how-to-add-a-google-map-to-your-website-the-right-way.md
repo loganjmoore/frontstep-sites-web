@@ -5,6 +5,7 @@ slug: how-to-add-a-google-map-to-your-website-the-right-way
 cluster: guides
 lead: "A website map is a linked or embedded map that helps customers locate a public business address or understand where service is available."
 answer: "Add a Google Map by sharing the correct business listing and placing either its link or its embed on your contact page. Keep your address and directions in ordinary text beside it. Use a simple link when a map adds little value or slows the page, and never expose a private home address just to display a pin."
+published: 2026-09-26
 updated: 2026-10-10
 ---
 

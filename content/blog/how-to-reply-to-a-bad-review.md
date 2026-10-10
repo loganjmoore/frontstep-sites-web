@@ -5,6 +5,7 @@ slug: how-to-reply-to-a-bad-review
 cluster: guides
 lead: "A bad-review reply is a short public response that acknowledges a concern without exposing customer details or arguing about the complaint."
 answer: Reply to a bad review by acknowledging the concern, checking what happened, and offering a clear way to talk privately. Keep the response short, factual, and free of customer details. If the review breaks the platform's rules, report it, but do not assume a complaint will be removed because you disagree.
+published: 2026-09-26
 updated: 2026-10-10
 ---
 

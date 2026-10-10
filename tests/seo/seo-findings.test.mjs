@@ -331,3 +331,14 @@ test("regeneration does not redate unchanged legal pages", () => {
   assert.ok(sitemap.includes(`<loc>https://frontstepsites.com/privacy/</loc><lastmod>2026-10-08</lastmod>`));
   assert.ok(sitemap.includes(`<loc>https://frontstepsites.com/terms/</loc><lastmod>2026-10-04</lastmod>`));
 });
+
+ test("revised October 10 guides keep September publication in schema and RSS", () => {
+  const feed = read("feed.xml");
+  for (const slug of ["bing-places-and-apple-business-connect-the-listings-most-businesses-sk", "blogging-for-local-businesses-does-it-still-work"]) {
+    const html = read(`blog/${slug}/index.html`);
+    assert.match(html, /"datePublished":"2026-09-26","dateModified":"2026-10-10"/);
+    const item = feed.split("<item>").find((entry) => entry.includes(`/blog/${slug}/`));
+    assert.ok(item, `${slug} remains discoverable in RSS`);
+    assert.match(item, /<pubDate>Sat, 26 Sep 2026 12:00:00 GMT<\/pubDate>/);
+  }
+});

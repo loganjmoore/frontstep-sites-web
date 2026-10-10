@@ -5,6 +5,7 @@ slug: "contact-forms-that-actually-get-filled-out"
 cluster: "guides"
 lead: "A contact form is a set of website fields that lets a visitor send an inquiry to a business."
 answer: "A useful contact form asks only for the details needed to reply and decide the next step. Keep labels clear, make optional fields truly optional, explain what happens after submission, and provide a phone alternative. Test the whole route through to the receiving inbox, including errors, spam filtering, and staff follow-up."
+published: "2026-09-26"
 updated: "2026-10-10"
 ---
 

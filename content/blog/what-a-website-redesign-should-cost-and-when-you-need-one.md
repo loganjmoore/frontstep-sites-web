@@ -5,6 +5,7 @@ slug: what-a-website-redesign-should-cost-and-when-you-need-one
 cluster: guides
 lead: "A website redesign is a substantial change to a site's structure, content, or presentation made to solve a defined business or customer problem."
 answer: A website redesign should cost what it takes to solve a clear business problem, with the work and ongoing costs spelled out before you agree. Typical custom freelancer projects often cost a few thousand dollars, but a basic replacement can cost much less. Fix broken contact details or weak service descriptions before assuming you need a full rebuild.
+published: 2026-09-26
 updated: 2026-10-10
 ---
 

@@ -5,6 +5,7 @@ slug: how-to-get-your-business-on-google-maps
 cluster: guides
 lead: "A Google Business Profile is the business listing an eligible company can claim or create to manage information shown on Google Maps and Search."
 answer: "To get your business on Google Maps, find and claim its existing Google Business Profile or create one if none exists, then complete Google's verification process. Use your real business details and choose the right setup for a storefront or a business that visits customers. Verification lets you manage the profile; it does not guarantee a particular ranking."
+published: 2026-09-26
 updated: 2026-10-10
 ---
 

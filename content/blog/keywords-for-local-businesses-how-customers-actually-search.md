@@ -5,6 +5,7 @@ slug: "keywords-for-local-businesses-how-customers-actually-search"
 cluster: "guides"
 lead: "Local business keywords are the words customers use to name a service, describe a problem, or specify the area where they need help."
 answer: "Local business keywords are the words customers use to find a service, describe a problem, or check whether a business serves their area. Start with your actual services, the towns you cover, and questions from real inquiries. Use those words in helpful pages instead of repeating a phrase or building a page for every variation."
+published: "2026-09-26"
 updated: "2026-10-10"
 ---
 

@@ -5,6 +5,7 @@ slug: emergency-service-businesses-how-to-show-you-re-open-now
 cluster: guides
 lead: "Emergency-service availability is a business's accurate statement of when urgent calls are answered, which jobs are handled, and where service is offered."
 answer: "Show emergency availability by stating your actual service hours, the urgent jobs you handle, and the areas you cover beside an easy-to-use phone number. Keep your website and business listings consistent. Only claim round-the-clock service if you provide it, and explain whether an after-hours call reaches dispatch, an on-call technician, or voicemail."
+published: 2026-09-26
 updated: 2026-10-10
 ---
 

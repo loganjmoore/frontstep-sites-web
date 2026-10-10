@@ -5,6 +5,7 @@ slug: how-to-take-photos-for-your-business-website-with-a-phone
 cluster: guides
 lead: "A business website photo is an image that shows customers the real people, work, place, or results behind a service."
 answer: "You can take useful business website photos with a phone by cleaning the lens, using steady natural light, and showing real people and finished work. Plan the shots around questions customers ask, keep before-and-after views consistent, and get permission before sharing customer property or faces. Save the originals and check how each photo looks on your website."
+published: 2026-09-26
 updated: 2026-10-10
 ---
 

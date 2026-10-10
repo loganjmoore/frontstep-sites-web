@@ -5,6 +5,7 @@ slug: how-to-tell-if-your-website-is-getting-you-customers
 cluster: guides
 lead: "Website customer measurement is the process of connecting calls, forms, and search visits with suitable inquiries and completed work."
 answer: "To tell whether your website brings customers, connect website inquiries with the jobs you actually book. Keep a simple record of calls and forms, ask new customers how they found you, and use Search Console to see which searches bring visits. Count suitable inquiries and completed work separately, because a visit or phone button tap is not a sale."
+published: 2026-09-26
 updated: 2026-10-10
 ---
 

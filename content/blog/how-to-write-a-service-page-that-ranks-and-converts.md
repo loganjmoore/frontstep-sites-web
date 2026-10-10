@@ -5,6 +5,7 @@ slug: how-to-write-a-service-page-that-ranks-and-converts
 cluster: guides
 lead: "A service page is a website page that explains one service, where it is available, what the work involves, and how a customer can request it."
 answer: "A useful service page explains one service, where you provide it, what the job involves, and how to request help. Add real evidence, clear pricing guidance, and answers to the questions customers ask before booking. Use natural search terms, but write for the person deciding whether to call you."
+published: 2026-09-26
 updated: 2026-10-10
 ---
 

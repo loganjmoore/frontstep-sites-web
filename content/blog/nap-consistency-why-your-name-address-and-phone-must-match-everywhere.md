@@ -5,6 +5,7 @@ slug: nap-consistency-why-your-name-address-and-phone-must-match-everywhere
 cluster: guides
 lead: "NAP consistency is the use of accurate, recognizable business name, address, and phone information across a website and business listings."
 answer: "NAP consistency means using accurate, recognizable business name, address, and phone information wherever customers find you. Start with your website and major listings, then correct old numbers, former locations, and duplicate entries. Matching the underlying facts matters more than identical punctuation, and consistency does not mean publishing a private home address."
+published: 2026-09-26
 updated: 2026-10-10
 ---
 
