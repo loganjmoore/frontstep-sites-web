@@ -16,7 +16,14 @@ test("homepage preserves buyer CTA and excludes unrelated query FAQs", () => {
 
 test("AI visibility pages carry useful answers and plain product definitions", () => {
   const home = read("index.html");
-  assert.match(home, /Front Step Sites is a done-for-you website service for small businesses/);
+  const entityDefinition = "Front Step Sites is a done-for-you website service for small businesses";
+  assert.match(home, new RegExp(entityDefinition));
+  assert.ok(home.indexOf(entityDefinition) < home.indexOf('<div class="shelf"'), "entity definition should precede the homepage offer shelf");
+  assert.match(home, /<h2>What we do<\/h2>/);
+  assert.match(home, /<h2>What we do not do<\/h2>/);
+  for (const href of ["/blog/guides/", "/blog/compare/", "/blog/ai-search/"]) {
+    assert.match(home, new RegExp(`href="${href}"`));
+  }
   assert.match(home, /Do I need to know HTML or code\?/);
   assert.match(home, /Do you build personal about-me sites\?/);
 
