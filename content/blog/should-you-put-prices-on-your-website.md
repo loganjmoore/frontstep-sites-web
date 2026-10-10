@@ -3,8 +3,10 @@ title: "Should you put prices on your website?"
 description: "Decide which prices belong on your business website, how to explain estimates and starting rates, and what to include so customers can compare fairly."
 slug: "should-you-put-prices-on-your-website"
 cluster: "guides"
+lead: "Website pricing is the fixed amount, realistic range, or estimate process a business publishes to help customers understand what a service may cost."
 answer: "Yes, put prices on your website when you can explain what the customer gets for that amount. Use fixed prices for clearly defined work, realistic ranges for variable jobs, and an estimate process for work that needs inspection. State the limits beside the price so customers do not mistake a starting rate for a complete quote."
-updated: "2026-09-26"
+published: "2026-09-26"
+updated: "2026-10-10"
 ---
 
 Should you put prices on your website if every job is a little different? Usually, you can share something useful without promising a final bill before you have seen the work. The goal is to help a customer understand the likely commitment and decide whether to call.

@@ -3,9 +3,10 @@ title: "How to Make a Phone Number Clickable (Click-to-Call)"
 description: "Add and test a click-to-call phone link on every page, with the correct tel format, mobile placement, hours, accessibility, and a real completed-call check."
 slug: "click-to-call-making-your-phone-number-work-on-every-page"
 cluster: "guides"
+lead: "Click-to-call is a phone link that opens a calling option on a supported device when a website visitor selects it."
 answer: "Click-to-call turns your website phone number into a link that opens a calling option on a supported device. Put it where customers decide to contact you, show the readable number, and test the destination on real phones. Keep your hours clear and remember that a recorded click does not prove someone completed a call or booked work."
 published: "2026-09-26"
-updated: "2026-10-08"
+updated: "2026-10-10"
 ---
 
 ```html

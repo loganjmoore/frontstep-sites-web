@@ -3,8 +3,10 @@ title: "Writing an About page for your business"
 description: "Write an About page that tells local customers who you are, where you work, and what to expect, with honest examples and a practical drafting checklist."
 slug: "how-to-write-an-about-page-for-a-local-business"
 cluster: "guides"
+lead: "An About page is the part of a local business website that explains who runs the business, what it does, where it works, and what customers can expect."
 answer: "Write your About page around the questions a customer has before contacting you: who runs the business, what work you do, where you work, and what hiring you feels like. Add a real photo, a few checkable details, and a clear next step. Keep your history brief and relevant."
-updated: "2026-09-26"
+published: "2026-09-26"
+updated: "2026-10-10"
 ---
 
 What should you put on your About page when your business is small and your story feels ordinary? Start with the people, the work, and the details a local customer would want before calling. You do not need an impressive origin story to explain who will show up and how you handle a job.
