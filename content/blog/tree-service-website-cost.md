@@ -4,10 +4,11 @@ description: "Understand tree service website costs, compare build options, and 
 slug: "tree-service-website-cost"
 cluster: "trades/tree-service"
 answer: "A tree service website should make routine estimates and urgent calls easy without overstating your availability or qualifications. Its cost depends on the content, support, and custom tools you need. Compare the total first-year and recurring bills, then prioritize clear service scope, genuine project evidence, domain control, and working contact options."
-updated: "2026-09-26"
+published: "2026-09-26"
+updated: "2026-10-10"
 ---
 
-How much should a tree service pay for a website? Enough to explain its work clearly and help the right customer reach the right person. A company handling planned pruning and stump grinding has different needs from a crew offering storm response, so compare the work included before comparing prices.
+Website subscriptions and done-for-you services are different scopes. A company handling planned pruning and stump grinding has different needs from a crew offering storm response, so compare the work included after comparing the annual bills.
 
 ## Define what the website needs to help customers do
 
@@ -23,7 +24,7 @@ The [tree service website essentials](/blog/website-tree-service/) can help you 
 
 A builder subscription can suit an owner who is comfortable writing, arranging pages, and checking the finished site. You still need to gather photographs, explain the services, connect the domain, and make sure inquiries reach your office.
 
-As of September 2026, Wix Light costs $17 a month billed yearly, or $204 a year, and Squarespace Basic costs $19 a month. Treat these as subscription reference prices. Check the full proposed setup yourself before purchasing rather than assuming the subscription covers every related expense.
+Wix Light and Squarespace Basic are do-it-yourself subscription paths. Check the current [Wix plans](https://www.wix.com/plans) and [Squarespace pricing](https://www.squarespace.com/pricing) for your location and billing term. Compare the annual total, domain renewal, taxes and any extra tools rather than assuming the subscription covers every related expense.
 
 For a tree service, content collection deserves its own time budget. You may need permission for job photos, accurate crew descriptions, and confirmation of any credential or insurance statement. Those tasks remain necessary regardless of who arranges the pages.
 
@@ -35,7 +36,7 @@ A straightforward done-for-you service can fit a local crew with clear service n
 
 Front Step Sites costs $99 a year with the domain included and no setup fee. The domain is registered in your name, and the plan includes two change requests a month, made within two business days. New pages, blog posts, and local SEO setup are included, with change requests made by writing in your account.
 
-For a typical custom freelancer or agency project, a broad planning range is often a few thousand dollars, with larger projects costing more. That is not a quote for your company. The scope, content work, and ongoing support determine whether the proposal is useful.
+For a custom freelancer or agency project, request a quote that separates the scope, content work, and ongoing support so you can compare it with a subscription or done-for-you plan.
 
 Custom work may suit a company with substantial municipal or commercial bid information, several genuinely distinct operating locations, or an established office system that needs integration. Ask the provider to explain those deliverables separately from the basic website.
 

@@ -1,0 +1,13 @@
+# Front Step PR49 draft review — October 10
+
+The proposed Clarity project change reused the existing acceptance choice for a different unverified project. Restore the published loader and project byte-for-byte in the generator and every static page; no new collection scope or project ownership is claimed. Keep the four useful article proposals for separate source/rendered review.
+
+The proposed tree-service answer asserted fresh October 10 price verification without current location/billing evidence. Remove that assertion and unsupported universal competitor totals; direct readers to the official current prices and compare annual cost, domain renewal, taxes and extra tools. The existing practical cost answer and original publication date remain. The article's request for a scoped custom quote replaces an unsourced broad estimate.
+
+Distribution job6185 was also diagnosed read-only: stored historical Drifta resource URLs under /templates/ return404, while the current /resources/grocery-shopping-list-template/ and robots.txt return200. This is stale delivered-source URL verification, not a current homepage outage or authentication failure. No source URL or receipt was rewritten and no distribution/outreach was sent.
+
+This draft is not production delivery or measured acquisition/signup lift. Final changed-surface factual and rendered review remains required before merge.
+
+Review evidence: ICANN https://www.icann.org/resources/pages/domain-name-registration-process-2023-11-02-en identifies the registrant as the holder of registration rights; https://www.icann.org/en/groups/ssac/documents/sac-044-en.pdf covers registration-account protection. The proposed checklist concerns operational access and delegated management, not a legal ownership adjudication. Official competitor price references are https://www.wix.com/plans and https://www.squarespace.com/pricing; no fixed October 10 price is asserted.
+
+All four isolated local pages rendered at 390px with one H1 and body width390; authored tables remained contained at312px. Screenshot: /tmp/frontstep-49-domain-390-20261010.png. No analytics choice was accepted or provider capture sent. Build produced252articles/22hubs without dead links;21existing tests passed. The tree-service article had relied on the generator fallback publication date; adding explicit September26 publication prevents its revised October10 date from becoming a false RSS publication date. The PostHog-only disclosure is restored entirely to its published base, excluding the proposed extra replay loader there. Final exact-head CI and keyboard/desktop journey checks remain pending; PR stays draft.
