@@ -32,6 +32,7 @@ test("AI visibility pages carry useful answers and plain product definitions", (
 
   assert.match(read("blog/website-builders-vs-done-for-you-websites/index.html"), /What is the best AI website builder\?/);
   assert.match(read("blog/can-you-run-a-business-website-on-canva/index.html"), /Can I use Canva for a business website at all\?/);
+  assert.match(read("blog/html-website-development-when-custom-code-fits/index.html"), /Front Step Sites is a done-for-you website service for standard small-business sites, not a custom HTML development shop/);
 });
 
 test("priority article and hub changes are present in generated HTML", () => {
@@ -97,6 +98,16 @@ test("resource tools retain useful plans and safe output instead of the old plan
 });
 
 test("flagged articles define their subject near the top", () => {
+  const definitions = {
+    "best-website-builder-three-questions": "A website builder is a service",
+    "what-is-a-website-four-parts": "A website is a collection",
+    "html-website-development-when-custom-code-fits": "HTML website development is the work",
+  };
+  for (const [slug, definition] of Object.entries(definitions)) {
+    const html = read(`blog/${slug}/index.html`);
+    assert.match(html, new RegExp(`<h1>[^<]+<\\/h1>\\n<p class="direct-answer">${definition}`));
+  }
+
   const tree = read("blog/tree-service-local-seo-checklist/index.html");
   assert.match(tree, /Tree service local SEO is the work of/);
 
