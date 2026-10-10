@@ -60,6 +60,20 @@ header nav a.hide-sm{display:none}
 .hero .lead{margin-top:1rem}
 .hero-cta{display:flex;flex-wrap:wrap;align-items:center;gap:12px 20px;margin-top:1.2rem}
 .hero-cta p{margin:0;font-weight:700;max-width:36ch}
+.offer-scope{margin-top:24px;border-top:2px solid var(--ink);border-bottom:1px solid var(--ink);display:grid}
+.scope-part{padding:14px 0}
+.scope-part + .scope-part{border-top:1px solid var(--line)}
+.scope-part h2{font-size:1rem;line-height:1.2;max-width:none;letter-spacing:0}
+.scope-part ul{margin-top:7px;padding-left:1.1rem;color:var(--ink-2)}
+.scope-part li{margin-top:3px}
+.hub-links{border-top:1px solid var(--line);padding:12px 0;display:flex;flex-wrap:wrap;gap:6px 18px;font-weight:700}
+.hub-links span{color:var(--ink-2);font-weight:600}
+@media(min-width:720px){
+  .offer-scope{grid-template-columns:1fr 1fr}
+  .scope-part{padding-right:20px}
+  .scope-part + .scope-part{border-top:0;border-left:1px solid var(--line);padding-left:20px}
+  .hub-links{grid-column:1/-1}
+}
 .shelf{position:relative;margin-top:40px;padding-bottom:36px}
 .shelf .tags{display:grid;gap:40px;align-items:start;position:relative;z-index:1}
 @media(min-width:860px){.shelf .tags{grid-template-columns:1fr 1.22fr 1fr;gap:28px}}
@@ -211,15 +225,33 @@ footer p{color:var(--ink-2);font-size:.92rem}
 <section class="hero" style="padding-bottom:0" aria-labelledby="h1">
   <div class="wrap">
     <h1 id="h1">We build your website. We keep it running. You just ask.</h1>
-    <p class="lead">A website is a set of linked pages on a domain name that people open in a browser. A small-business website usually explains the services, service area, proof of work, and how to contact the business.</p>
-    <p class="lead">Done-for-you websites for small businesses anywhere in the US. Answer a few questions and we build your site. After that, ask for any change in plain English and it gets done. Your domain is included.</p>
+    <p class="lead">Front Step Sites is a done-for-you website service for small businesses in the United States: we build, host, and maintain your site on the $99/yr Launch plan, with a domain included.</p>
     <div class="hero-cta">
-      <p>You get a finished site, your domain included, and changes made when you ask. $99 a year.</p>
       <a class="btn btn-primary" href="https://app.frontstepsites.com/get-started">Start your site</a>
     </div>
-    <p class="lead">Front Step Sites is a done-for-you website service for small businesses in the United States, priced at $99 a year with the domain included.</p>
-    <p class="lead">How Front Step Sites compares: Wix Light is a do-it-yourself builder, so you build, edit, and fix the site yourself for $17 a month billed yearly ($204 a year, as of September 2026). Squarespace Basic is also a builder you run yourself, at $19 a month as of September 2026. Front Step Sites builds, hosts, and maintains the site for $99 a year with the domain included, and you ask for changes in plain English.</p>
-    <p class="lead">Front Step Sites (frontstepsites.com) is unrelated to FRONTSTEPS, the property-management/HOA software company.</p>
+
+    <div class="offer-scope" aria-label="What Front Step Sites does and does not do">
+      <div class="scope-part">
+        <h2>What we do</h2>
+        <ul>
+          <li>Write, build, host, and maintain your business website.</li>
+          <li>Register the included domain in your name and make changes when you ask.</li>
+        </ul>
+      </div>
+      <div class="scope-part">
+        <h2>What we do not do</h2>
+        <ul>
+          <li>Give you a do-it-yourself site builder to learn.</li>
+          <li>Include stores, booking, payments, logos, or custom features in Launch. We quote those first.</li>
+        </ul>
+      </div>
+      <nav class="hub-links" aria-label="Website learning hubs">
+        <span>Learn before you choose:</span>
+        <a href="/blog/guides/">Website guides</a>
+        <a href="/blog/compare/">Website comparisons</a>
+        <a href="/blog/ai-search/">AI search guides</a>
+      </nav>
+    </div>
 
     <div class="shelf" aria-label="Price comparison">
       <div class="rail" aria-hidden="true"></div>
@@ -390,6 +422,7 @@ footer p{color:var(--ink-2);font-size:.92rem}
 <section aria-labelledby="start-h">
   <div class="wrap">
     <h2 id="start-h">How a small-business website is created</h2>
+    <p class="lead" style="margin-top:.8rem">A website is a set of linked pages on a domain name that people open in a browser. A small-business website usually explains the services, service area, proof of work, and how to contact the business.</p>
     <ol class="start">
       <li><span class="num">1</span><h3>Plan the pages and content</h3><p>Collect what you do, where you work, what customers ask, and the photos you can use. Front Step Sites gathers that in a 10-minute questionnaire.</p></li>
       <li><span class="num">2</span><h3>Build and approve the site</h3><p>The words, page layout, links, and contact path are assembled into a draft. You check the facts and ask for changes before it is public.</p></li>
