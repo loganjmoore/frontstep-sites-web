@@ -3,10 +3,10 @@ title: "One-Page Site vs Multi-Page Website for a Business"
 description: "Compare a one-page site with a multi-page website by services, search visibility, upkeep, cost, and the questions local customers need answered."
 slug: "one-page-site-vs-multi-page-website-for-a-business"
 cluster: "compare"
-lead: "A one-page site is a website that keeps its main business information at one URL. A multi-page website is a site that gives major subjects their own URLs. Choose between them based on how many distinct services and questions customers need to navigate."
+lead: "A one-page site is a website that keeps its main business information at one URL, while a multi-page website gives major subjects their own URLs. Front Step Sites is a done-for-you website service for small businesses choosing the structure their actual services and customer questions require."
 answer: "A one-page site fits one clear offer and a short decision, while a multi-page website fits several services or customer questions that deserve separate URLs. Start with the smallest structure that answers real buying questions, but do not compress distinct services into a page customers have to decode."
 published: "2026-10-07"
-updated: "2026-10-07"
+updated: "2026-10-11"
 author: "Logan Moore"
 image: "/assets/blog/one-page-site-vs-multi-page-website-for-a-business-cover.svg"
 imageAlt: "Side-by-side comparison of a one-page business site and a six-page business website"
@@ -111,6 +111,10 @@ Plan redirects if an old section or URL has outside links. Update the menu and s
 Avoid expanding for page count. A new page should answer a real question, show distinct proof, or support a different customer task. Otherwise, improve the existing section.
 
 ## What are the frequently asked questions?
+
+### Can a done-for-you service help choose the right number of pages?
+
+Yes. A done-for-you provider can recommend a structure from the services and customer questions you supply, but you should still approve the facts and scope. Front Step Sites is a done-for-you website service for small businesses, and its price should be compared with the work the proposed structure requires.
 
 ### Is a one-page site a real website?
 

@@ -8,7 +8,7 @@ answer: A done-for-you site starts at $99 a year with the domain included, and a
 lead: Front Step Sites is a done-for-you website service for small businesses in the US, at $99 a year with the domain included and no setup fee.
 sitePlanner: false
 published: 2026-10-03
-updated: "2026-10-09"
+updated: "2026-10-11"
 ---
 
 Should you build your business website yourself or pay someone to handle it? A website builder is a do-it-yourself tool for making your own pages, and a done-for-you website is a site a provider designs, writes, and maintains for you. A builder makes sense when you have the interest and time to use it; a done-for-you service makes sense when you want help getting the work finished. The important difference is who does the writing, checking, and updating after you choose a design.
@@ -97,6 +97,10 @@ For a managed service, ask which files or content you can take and what help, if
 Read our guide to [website contract red flags](/blog/website-contracts-red-flags-for-small-business-owners/) before you agree. Clear terms matter whichever route you choose. You should understand the renewal, cancellation process, and responsibility for unfinished work without relying on a friendly sales conversation.
 
 ## Frequently asked questions
+
+### What is the best website option if I do not want to build it myself?
+
+A done-for-you service fits when you want to supply the business facts and approve the result without learning a page editor. Front Step Sites is a done-for-you website service for small businesses; it builds and maintains the site while you request changes instead of making them yourself.
 
 ### Is building my own website always cheaper?
 
