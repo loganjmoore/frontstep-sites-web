@@ -140,6 +140,66 @@ test("flagged articles define their subject near the top", () => {
   assert.match(brainpop, /<h1>[^<]+<\/h1>\n<p class="direct-answer">BrainPOP is an educational website and web application/);
 });
 
+test("October 11 citability pages define their subject immediately after the H1", () => {
+  const definitions = {
+    "tree-service-local-seo-checklist": "Tree service local SEO is the work of",
+    "pest-control-get-more-reviews": "A pest control review request is an optional invitation",
+    "what-to-put-in-your-website-footer": "A website footer is the section at the bottom of a site",
+    "seasonal-marketing-for-local-service-businesses": "Seasonal marketing is the practice of",
+    "how-to-get-customers-to-leave-reviews-on-google-without-being-pushy": "A Google review request is an optional invitation",
+    "what-makes-a-local-business-website-trustworthy": "A trustworthy local business website is a site",
+    "how-to-handle-leads-from-your-website-fast": "Website lead handling is the process of",
+    "should-your-business-use-a-com": "A .com is a top-level domain ending",
+    "how-to-switch-website-providers-without-losing-google-rankings": "A website provider switch is the move",
+    "how-to-create-a-small-business-website": "A small business website is a set of pages",
+    "google-sites-launch-checklist-for-a-business-website": "A Google Sites launch checklist is a pre-publication check",
+    "seven-web-site-mistakes-that-make-customers-hesitate": "A web site mistake is a problem",
+    "website-subscription-vs-one-time-website-build": "A website subscription is an ongoing service",
+    "is-a-99-website-worth-it": "A $99 website is a low-cost website offer",
+    "what-to-ask-before-you-hire-someone-to-build-your-website": "A web builder is a person, company, or tool",
+    "google-sites-alternatives-for-a-business": "Google Sites is a free website builder",
+    "can-you-run-a-business-website-on-canva": "Canva Websites is a page builder inside Canva",
+    "one-page-site-vs-multi-page-website-for-a-business": "A one-page site is a website",
+    "faq-pages-that-answer-customers-and-ai-search": "An FAQ page is a collection of direct answers",
+    "why-consistent-business-information-matters-for-ai-answers": "Consistent business information is the same accurate",
+    "writing-website-content-ai-assistants-can-quote": "Website content for AI assistants is public page copy",
+    "structured-data-for-ai-search-what-small-businesses-need": "Structured data is machine-readable markup",
+    "how-reviews-influence-ai-recommendations-of-local-businesses": "A local business review is a customer's public account",
+    "voice-search-for-local-businesses-what-still-matters": "Voice search is the use of a spoken request",
+    "what-llms-txt-is-and-whether-a-small-business-needs-one": "An llms.txt file is an optional reading guide",
+  };
+
+  assert.equal(Object.keys(definitions).length, 25);
+  assert.equal(new Set(Object.values(definitions)).size, 25);
+  for (const [slug, definition] of Object.entries(definitions)) {
+    const html = read("blog/" + slug + "/index.html");
+    assert.ok(
+      html.includes("</h1>\n<p class=\"direct-answer\">" + definition),
+      slug + " should define its subject immediately after the H1",
+    );
+  }
+});
+
+test("cleaning Business Profile guide has the requested setup checklist", () => {
+  const html = read("blog/cleaning-google-business-profile/index.html");
+  assert.match(html, /<title>Cleaning Company Google Business Profile Checklist<\/title>/);
+  assert.match(html, /<meta name="description" content="Follow a truthful cleaning company profile setup sequence covering eligibility, service areas, categories, services, hours, photos, your website, and reviews\.">/);
+  assert.match(html, /<h1>Google Business Profile for Cleaning Companies: Setup Checklist<\/h1>\n<p class="direct-answer">Your cleaning company Google Business Profile should explain/);
+  assert.match(html, /<h2 id="cleaning-company-profile-setup-order">Cleaning company profile setup order<\/h2>/);
+  assert.match(html, /<div class="table-wrap mobile-wide-table"><table><thead><tr><th>Step<\/th><th>What to enter<\/th><th>What to verify<\/th><th>Common mistake<\/th>/);
+  const checklist = html.split('<h2 id="cleaning-company-profile-setup-order">')[1].split("Source note:")[0];
+  assert.equal((checklist.match(/<tbody><tr>|<\/tr><tr>/g) || []).length, 7);
+  assert.match(html, /support\.google\.com<\/a> was rechecked on October 11, 2026/);
+  assert.match(html, /<link rel="canonical" href="https:\/\/frontstepsites\.com\/blog\/cleaning-google-business-profile\/">/);
+  assert.match(html, /href="https:\/\/app\.frontstepsites\.com\/get-started"/);
+  assert.match(html, /"datePublished":"2026-09-26","dateModified":"2026-10-11"/);
+  const faq = [...html.matchAll(/<script type="application\/ld\+json">(.*?)<\/script>/gs)]
+    .map((match) => JSON.parse(match[1]))
+    .find((value) => value["@type"] === "FAQPage");
+  assert.equal(faq.mainEntity.length, 4);
+  assert.match(read("sitemap.xml"), /https:\/\/frontstepsites\.com\/blog\/cleaning-google-business-profile\/<\/loc><lastmod>2026-10-11/);
+});
+
 test("October 10 entity-definition findings use unique plain definitions immediately after the H1", () => {
   const definitions = {
     "how-to-make-a-google-site": "Google Sites is a website builder from Google for making simple pages, and this guide walks through making one step by step.",

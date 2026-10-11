@@ -4,7 +4,9 @@ description: "Learn how customer reviews can inform AI recommendations, what rem
 slug: "how-reviews-influence-ai-recommendations-of-local-businesses"
 cluster: "ai-search"
 answer: "Reviews can supply information that AI tools use when describing or recommending local businesses, but access and selection differ by tool. There is no universal review count or star rating that guarantees inclusion. Ask customers for honest feedback, leave the wording to them, and keep your own service information accurate."
-updated: "2026-09-26"
+lead: "A local business review is a customer's public account and rating of an experience, which may supply evidence used in search results or AI-generated answers."
+published: "2026-09-26"
+updated: "2026-10-11"
 ---
 
 Will more reviews make an AI assistant recommend your business? Reviews can matter, but you cannot turn a certain number of stars into a guaranteed place in an answer. The useful work is to make honest customer feedback easy to leave and to understand what that feedback says about your service.

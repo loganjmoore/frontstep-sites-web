@@ -4,12 +4,14 @@ description: "Canva can make a one-page brochure site, but a local business need
 slug: "can-you-run-a-business-website-on-canva"
 cluster: "compare"
 answer: "Yes for a one-page brochure, no for most of what a local business needs from a site. Canva Websites builds one page per site, so a business with a home page, service pages, an about page, and a contact page ends up linking several separate sites together. You buy the domain separately, and the blogging and SEO tools are limited."
-updated: "2026-10-03"
+lead: "Canva Websites is a page builder inside Canva that publishes one page from its templates."
+published: "2026-10-03"
+updated: "2026-10-11"
 image: "/assets/blog/can-you-run-a-business-website-on-canva-cover.svg"
 imageAlt: "Cover for Can you run a business website on Canva: a single Canva page versus a multi-page business site"
 ---
 
-Canva is where many owners already make flyers, menus, and business cards, so making a website there feels like the obvious next step. Canva Websites is a page builder inside Canva that publishes one page from its templates. The question is whether a single Canva page can do the job a local business needs a website to do. It can hold a brochure. It can't hold the rest of your business.
+Canva is where many owners already make flyers, menus, and business cards, so making a website there feels like the obvious next step. The question is whether a single Canva page can do the job a local business needs a website to do. It can hold a brochure. It can't hold the rest of your business.
 
 ## What can Canva Websites do well?
 

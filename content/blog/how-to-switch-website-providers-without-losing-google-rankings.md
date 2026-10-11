@@ -4,7 +4,9 @@ description: "Move your business website with a clear plan for page addresses, c
 slug: how-to-switch-website-providers-without-losing-google-rankings
 cluster: guides
 answer: "Keep your existing domain, page addresses, and useful content wherever possible when switching website providers. Map any changed addresses to relevant replacement pages with permanent redirects, test the new site before launch, and monitor Search Console afterward. These steps reduce avoidable problems, but no provider can promise that rankings will stay unchanged during a move."
-updated: 2026-09-26
+lead: "A website provider switch is the move from one hosting, builder, or management service to another while preserving the domain and useful page addresses where possible."
+published: 2026-09-26
+updated: 2026-10-11
 ---
 
 You want a better website provider without undoing the search visibility your business has already earned. The safest starting point is to preserve what customers and Google already use: your domain, useful pages, and their addresses. Treat the switch as a planned handover, with someone responsible for checking every important page.

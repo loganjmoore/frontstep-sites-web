@@ -4,8 +4,9 @@ description: "Find out what llms.txt does, why it is optional for a local busine
 slug: what-llms-txt-is-and-whether-a-small-business-needs-one
 cluster: ai-search
 answer: "An llms.txt file is an optional guide that points AI tools toward useful information on a website. It is a proposal, not a requirement for a local business website. Add one if it is simple to maintain and has a clear purpose, but fix missing services, incorrect business details, and broken contact forms first."
-lead: No, a small business does not need an llms.txt file. It is an optional reading guide for AI tools, and Google says it does not affect your rankings in Google Search.
-updated: 2026-09-26
+lead: "An llms.txt file is an optional reading guide that points AI tools toward selected website content. A small business does not need one, and Google says it does not affect rankings in Google Search."
+published: 2026-09-26
+updated: 2026-10-11
 ---
 
 Do you need an llms.txt file so AI assistants can find your business? For a typical local service website, it is an optional extra rather than an urgent repair. Before paying for one, understand what it describes, who would use it, and how you will keep it accurate.

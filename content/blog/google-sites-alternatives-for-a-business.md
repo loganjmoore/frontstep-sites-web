@@ -4,12 +4,14 @@ description: "Google Sites is free but thin for a business. Compare it with a DI
 slug: "google-sites-alternatives-for-a-business"
 cluster: "compare"
 answer: "Google Sites is free, but it can't set a custom meta description on each page, so Google writes the search snippet for you. Wix Light ($204 a year) and Squarespace Basic (about $228 a year) are the usual paid alternatives, and you do all the editing. Front Step Sites is $99 a year with the domain included, and you ask for changes in your account."
-updated: "2026-10-03"
+lead: "Google Sites is a free website builder that comes with a Google account, while its business alternatives include paid do-it-yourself builders and done-for-you website services."
+published: "2026-10-03"
+updated: "2026-10-11"
 image: "/assets/blog/google-sites-alternatives-for-a-business-cover.svg"
 imageAlt: "Cover for Google Sites alternatives for a business: free and thin, DIY builders about $200 a year, done-for-you $99 a year with the domain included"
 ---
 
-If you already have a Google Site, you're probably wondering whether it's good enough for a business or whether it's time to move. Google Sites is a free website builder that comes with a Google account. You want a site that looks like a real company, shows up when someone searches your trade, and doesn't eat your evenings. Here's how the three options stack up.
+If you already have a Google Site, you're probably wondering whether it's good enough for a business or whether it's time to move. You want a site that looks like a real company, shows up when someone searches your trade, and doesn't eat your evenings. Here's how the three options stack up.
 
 ## Why does Google Sites fall short for a business?
 
