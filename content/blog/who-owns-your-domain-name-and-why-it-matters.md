@@ -9,6 +9,10 @@ published: "2026-09-26"
 updated: "2026-10-11"
 ---
 
+## How to check who owns your domain
+
+Use a WHOIS or registration-data lookup to identify the registrar, then sign in to the registrar account and confirm the registrant details, recovery methods, and renewal settings there. Public lookup results may hide personal details, so account access and registration records are the stronger check. If you plan to transfer the registration, follow the [step-by-step domain move guide](/blog/how-to-move-a-domain-to-a-new-provider/) before changing or canceling services.
+
 ## Who controls the domain: registrant vs. manager
 
 | Role | What they can do | What the owner must retain |

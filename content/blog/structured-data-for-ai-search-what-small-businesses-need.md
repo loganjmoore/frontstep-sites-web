@@ -5,11 +5,17 @@ slug: structured-data-for-ai-search-what-small-businesses-need
 cluster: ai-search
 answer: "Structured data labels facts on your website so software can interpret them more easily. A small business should start with accurate business details that match its visible pages, then check the result. There is no special AI schema that guarantees recommendations, and review or FAQ markup does not automatically produce extra search features."
 published: 2026-09-26
-lead: "Structured data is machine-readable markup that labels facts on a web page so search engines and other software can interpret them more consistently."
+lead: "Structured data is machine-readable markup that labels facts on a web page so search engines and other software can interpret them more consistently. A small local business should start with LocalBusiness, FAQPage, and Service schema where each type matches information that visitors can see on the page."
 updated: 2026-10-11
 ---
 
 Has someone told you that your website needs structured data to appear in AI answers? It can help describe your business in an organized format, but the sales pitch often runs ahead of what the markup does. Start with the facts you need to communicate, then ask your website provider to label them accurately.
+
+## Which schema types to add first
+
+1. **LocalBusiness:** Describe verified public details about the business, using a more specific subtype when one accurately fits.
+2. **Service:** Describe a genuine service on the page where customers can read about that service.
+3. **FAQPage:** Label questions and answers only when those same questions and complete answers are visible on the page.
 
 ## Know what structured data actually adds
 
