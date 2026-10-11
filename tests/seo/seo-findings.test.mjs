@@ -336,7 +336,7 @@ test("first-party analytics choice uses the configured PostHog consent key", () 
   assert.match(home, /src="\/posthog-web\.js"/);
 });
 
-test("every public HTML page loads the configured Clarity project once after consent", () => {
+test("every public HTML page preserves the previously published Clarity project behind consent", () => {
   const paths = [
     "index.html",
     "posthog-privacy.html",
@@ -346,10 +346,10 @@ test("every public HTML page loads the configured Clarity project once after con
   assert.ok(paths.length >= 278, "the check should cover the full crawled page set");
   for (const path of paths) {
     const html = read(path);
-    assert.equal((html.match(/xgb5xunw8f/g) || []).length, 1, `${path} must name the Clarity project once`);
-    assert.doesNotMatch(html, /yqkzhoosjo/, `${path} still names the previous Clarity project`);
+    assert.equal((html.match(/yqkzhoosjo/g) || []).length, 1, `${path} must name the Clarity project once`);
+    assert.doesNotMatch(html, /xgb5xunw8f/, `${path} must not switch to an unverified shared project`);
     assert.match(html, /clarity\.ms\/tag\//, `${path} must install the Clarity tag`);
-    assert.match(html, /consentv2[^]*analytics_Storage:"granted"/, `${path} must grant analytics storage after consent`);
+    assert.match(html, /if\(d\|\|!g\(\)\)return/, `${path} must retain its consent gate`);
   }
 });
 
