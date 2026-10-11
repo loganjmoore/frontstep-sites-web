@@ -385,6 +385,25 @@ test("October 11 direct-answer findings define the subject immediately after the
   assert.match(aiCheck, /<h1>Check what AI assistants say about you<\/h1>\n<p class="direct-answer">An AI-assistant business check is /);
 });
 
+test("October 11 AI strategy pages include the requested schema guidance and reciprocal links", () => {
+  const structured = read("blog/structured-data-for-ai-search-what-small-businesses-need/index.html");
+  assert.match(structured, /<h1>Structured Data for AI Search: Small Business Guide<\/h1>\n<p class="direct-answer">Structured data is [^<]*LocalBusiness, FAQPage, and Service schema/);
+  assert.match(structured, /<h2 id="which-schema-types-to-add-first">Which schema types to add first<\/h2>\n<ol>/);
+  for (const schemaType of ["LocalBusiness", "Service", "FAQPage"]) {
+    assert.match(structured, new RegExp(`<li><strong>${schemaType}:<\\/strong>`));
+  }
+
+  const domain = read("blog/who-owns-your-domain-name-and-why-it-matters/index.html");
+  assert.match(domain, /<h2 id="how-to-check-who-owns-your-domain">How to check who owns your domain<\/h2>/);
+  assert.match(domain, /WHOIS or registration-data lookup/);
+  assert.match(domain, /href="\/blog\/how-to-move-a-domain-to-a-new-provider\/"/);
+
+  const phone = read("blog/click-to-call-making-your-phone-number-work-on-every-page/index.html");
+  const form = read("blog/contact-forms-that-actually-get-filled-out/index.html");
+  assert.match(phone, /href="\/blog\/contact-forms-that-actually-get-filled-out\/"/);
+  assert.match(form, /href="\/blog\/click-to-call-making-your-phone-number-work-on-every-page\/"/);
+});
+
 test("llms.txt lists every canonical URL in the sitemap", () => {
   const llms = read("llms.txt");
   const sitemap = read("sitemap.xml");
