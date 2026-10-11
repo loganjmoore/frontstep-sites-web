@@ -1,9 +1,13 @@
 import assert from "node:assert/strict";
-import { readFileSync } from "node:fs";
+import { readFileSync, readdirSync } from "node:fs";
 import test from "node:test";
 import vm from "node:vm";
 
 const read = (path) => readFileSync(new URL(`../../${path}`, import.meta.url), "utf8");
+const htmlFiles = (dir) => readdirSync(new URL(`../../${dir}/`, import.meta.url), { withFileTypes: true })
+  .flatMap((entry) => entry.isDirectory()
+    ? htmlFiles(`${dir}/${entry.name}`)
+    : entry.name.endsWith(".html") ? [`${dir}/${entry.name}`] : []);
 
 test("homepage preserves buyer CTA and excludes unrelated query FAQs", () => {
   const html = read("index.html");
@@ -51,7 +55,7 @@ test("priority article and hub changes are present in generated HTML", () => {
   assert.match(tree, /href="\/blog\/tree-service-get-more-reviews\/"/);
 
   const domain = read("blog/who-owns-your-domain-name-and-why-it-matters/index.html");
-  assert.match(domain, /Operational control of a domain belongs with the registrant named in the registration agreement/);
+  assert.match(domain, /Domain ownership is the registration right held by the registrant named in the registrar agreement/);
   assert.match(domain, /Who controls the domain: registrant vs\. manager/);
 
   const guides = read("blog/guides/index.html");
@@ -203,8 +207,8 @@ test("cleaning Business Profile guide has the requested setup checklist", () => 
 test("October 10 entity-definition findings use unique plain definitions immediately after the H1", () => {
   const definitions = {
     "how-to-make-a-google-site": "Google Sites is a website builder from Google for making simple pages, and this guide walks through making one step by step.",
-    "best-web-builder-sites-for-a-small-business": "A website builder is a self-serve tool for making and editing your own site, and this comparison is for small business owners choosing between Wix, Squarespace, Google Sites, and a done-for-you site.",
-    "click-to-call-making-your-phone-number-work-on-every-page": "Click-to-call is a phone link that opens a calling option on a supported device when a website visitor selects it.",
+    "best-web-builder-sites-for-a-small-business": "A website builder is a self-serve tool for making and editing your own site. Front Step Sites is a done-for-you website service for small businesses that would rather request changes than use a builder themselves.",
+    "click-to-call-making-your-phone-number-work-on-every-page": "Click-to-call is a phone link that opens a calling option on a supported device, and its HTML destination uses the tel:+12025550147 format.",
     "contact-forms-that-actually-get-filled-out": "A contact form is a set of website fields that lets a visitor send an inquiry to a business.",
     "how-to-write-an-about-page-for-a-local-business": "An About page is the part of a local business website that explains who runs the business, what it does, where it works, and what customers can expect.",
     "should-you-put-prices-on-your-website": "Website pricing is the fixed amount, realistic range, or estimate process a business publishes to help customers understand what a service may cost.",
@@ -272,7 +276,7 @@ test("AI strategy articles lead with the requested direct answers and related li
 
 test("October 10 acquisition findings are present in every generated page", () => {
   const domain = read("blog/who-owns-your-domain-name-and-why-it-matters/index.html");
-  assert.match(domain, /<h1>Who owns your domain name\?<\/h1>\n<p class="direct-answer">Operational control of a domain belongs with the registrant named in the registration agreement/);
+  assert.match(domain, /<h1>Who owns your domain name\?<\/h1>\n<p class="direct-answer">Domain ownership is the registration right held by the registrant named in the registrar agreement/);
   assert.match(domain, /<h2 id="who-controls-the-domain-registrant-vs-manager">Who controls the domain: registrant vs\. manager<\/h2>/);
   assert.match(domain, /<th>Role<\/th><th>What they can do<\/th><th>What the owner must retain<\/th>/);
 
@@ -302,7 +306,7 @@ test("October 8 AI strategy changes are present in generated pages", () => {
   assert.match(phone, /<code class="language-html">&lt;a href="tel:\+12025550147"&gt;Call \(202\) 555-0147&lt;\/a&gt;<\/code>/);
   assert.match(phone, /<th>Where to add it<\/th><th>What the visitor sees<\/th><th>What to test<\/th>/);
   assert.match(phone, /What is the correct HTML for a clickable phone number\?/);
-  assert.match(phone, /"datePublished":"2026-09-26","dateModified":"2026-10-10"/);
+  assert.match(phone, /"datePublished":"2026-09-26","dateModified":"2026-10-11"/);
 
   const schema = read("blog/structured-data-for-ai-search-what-small-businesses-need/index.html");
   assert.match(schema, /<h1>Structured Data for AI Search: Small Business Guide<\/h1>/);
@@ -330,6 +334,55 @@ test("first-party analytics choice uses the configured PostHog consent key", () 
   const home = read("index.html");
   assert.match(home, /src="\/analytics-consent\.js"/);
   assert.match(home, /src="\/posthog-web\.js"/);
+});
+
+test("every public HTML page loads the configured Clarity project once after consent", () => {
+  const paths = [
+    "index.html",
+    "posthog-privacy.html",
+    ...["blog", "cleaner", "hvac", "landscaper", "link", "painter", "plumber", "privacy", "roofer", "terms"]
+      .flatMap(htmlFiles),
+  ];
+  assert.ok(paths.length >= 278, "the check should cover the full crawled page set");
+  for (const path of paths) {
+    const html = read(path);
+    assert.equal((html.match(/xgb5xunw8f/g) || []).length, 1, `${path} must name the Clarity project once`);
+    assert.doesNotMatch(html, /yqkzhoosjo/, `${path} still names the previous Clarity project`);
+    assert.match(html, /clarity\.ms\/tag\//, `${path} must install the Clarity tag`);
+    assert.match(html, /consentv2[^]*analytics_Storage:"granted"/, `${path} must grant analytics storage after consent`);
+  }
+});
+
+test("AI visibility articles answer a natural product-fit question with matching FAQ schema", () => {
+  const questions = {
+    "what-a-website-maker-does-12-task-example": "Can Front Step Sites make my website for me?",
+    "website-builders-vs-done-for-you-websites": "What is the best website option if I do not want to build it myself?",
+    "best-web-builder-sites-for-a-small-business": "What is the alternative to using a website builder myself?",
+    "website-subscription-vs-one-time-website-build": "Is Front Step Sites a subscription or a one-time build?",
+    "one-page-site-vs-multi-page-website-for-a-business": "Can a done-for-you service help choose the right number of pages?",
+  };
+  for (const [slug, question] of Object.entries(questions)) {
+    const html = read(`blog/${slug}/index.html`);
+    assert.match(html, /<p class="direct-answer">[^<]*Front Step Sites is /, `${slug} needs a plain product definition near the top`);
+    assert.match(html, new RegExp(`<h3 id="[^"]+">${question.replace(/[?]/g, "\\?")}<\\/h3>`));
+    const faq = [...html.matchAll(/<script type="application\/ld\+json">(.*?)<\/script>/gs)]
+      .map((match) => JSON.parse(match[1]))
+      .find((value) => value["@type"] === "FAQPage");
+    assert.ok(faq, `${slug} needs one FAQPage block`);
+    assert.ok(faq.mainEntity.some((entry) => entry.name === question), `${slug} schema must match the visible question`);
+  }
+});
+
+test("October 11 direct-answer findings define the subject immediately after the H1", () => {
+  const phone = read("blog/click-to-call-making-your-phone-number-work-on-every-page/index.html");
+  assert.match(phone, /<h1>How to Make a Phone Number Clickable \(Click-to-Call\)<\/h1>\n<p class="direct-answer">Click-to-call is [^<]*tel:\+12025550147 format\.<\/p>/);
+  assert.match(phone, /<pre><code class="language-html">&lt;a href="tel:\+12025550147"&gt;Call \(202\) 555-0147&lt;\/a&gt;<\/code><\/pre>/);
+
+  const domain = read("blog/who-owns-your-domain-name-and-why-it-matters/index.html");
+  assert.match(domain, /<h1>Who owns your domain name\?<\/h1>\n<p class="direct-answer">Domain ownership is /);
+
+  const aiCheck = read("blog/how-to-check-what-ai-assistants-say-about-your-business/index.html");
+  assert.match(aiCheck, /<h1>Check what AI assistants say about you<\/h1>\n<p class="direct-answer">An AI-assistant business check is /);
 });
 
 test("llms.txt lists every canonical URL in the sitemap", () => {
@@ -383,7 +436,7 @@ test("updated articles retain original publication date", () => {
 
   const domain = read("blog/who-owns-your-domain-name-and-why-it-matters/index.html");
   assert.match(domain, /"datePublished":"2026-09-26"/);
-  assert.match(domain, /"dateModified":"2026-10-10"/);
+  assert.match(domain, /"dateModified":"2026-10-11"/);
 });
 
 test("regeneration does not redate unchanged legal pages", () => {

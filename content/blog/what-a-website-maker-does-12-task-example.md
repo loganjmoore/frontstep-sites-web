@@ -3,10 +3,10 @@ title: "What a Website Maker Does: A 12-Task Cost Example"
 description: "See what a website maker does in a 12-task example, including owner time, provider work, first-year cost, domain control, and updates."
 slug: "what-a-website-maker-does-12-task-example"
 cluster: "guides"
-lead: "A website maker is a tool, person, or service that turns business information into published web pages. The useful comparison is the full list of work: collecting business facts, writing, building, testing, publishing, and making later updates."
+lead: "A website maker is a tool, person, or service that turns business information into published web pages. Front Step Sites is a done-for-you website service for small businesses that handles the making and upkeep after the owner supplies accurate business facts."
 answer: "A website maker turns business information into published pages, but the phrase may describe software or a done-for-you service. A fair cost check assigns all 12 launch and upkeep tasks to someone, puts a value on the owner's time, and confirms who controls the domain when the work is finished."
 published: "2026-10-08"
-updated: "2026-10-08"
+updated: "2026-10-11"
 author: "Logan Moore"
 image: "/assets/blog/what-a-website-maker-does-12-task-example-cover.svg"
 imageAlt: "Twelve website-making tasks divided between a business owner, a do-it-yourself builder, and a done-for-you service"
@@ -114,6 +114,10 @@ Ask these questions in writing:
 Page count deserves context. The [one-page versus multi-page website comparison](/blog/one-page-site-vs-multi-page-website-for-a-business/) explains when extra pages answer distinct customer questions and when they add upkeep without helping.
 
 ## Frequently asked questions
+
+### Can Front Step Sites make my website for me?
+
+Yes. Front Step Sites is a done-for-you website service for small businesses, rather than a self-serve builder. You supply accurate business facts and approve the result; the service writes, builds, publishes, and handles changes within the selected plan.
 
 ### Is a website maker the same as a website developer?
 

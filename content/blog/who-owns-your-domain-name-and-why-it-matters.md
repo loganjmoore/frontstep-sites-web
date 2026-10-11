@@ -4,9 +4,9 @@ description: "Find out who controls your business domain, how to check registrat
 slug: "who-owns-your-domain-name-and-why-it-matters"
 cluster: "guides"
 answer: "Your business should be the domain registrant and have reliable control over the account that manages the registration. A web designer can handle the technical work without holding the domain in their own name. Check the registrant details, account access, recovery email, and renewal arrangements before you need to move the website."
-lead: "Operational control of a domain belongs with the registrant named in the registration agreement, and the business also needs independent access to the registrar account and its recovery methods. Paying an invoice or having a designer manage DNS does not transfer ownership."
+lead: "Domain ownership is the registration right held by the registrant named in the registrar agreement, while practical control also requires independent access to the registrar account and its recovery methods. Paying an invoice or having a designer manage DNS does not transfer ownership."
 published: "2026-09-26"
-updated: "2026-10-10"
+updated: "2026-10-11"
 ---
 
 ## Who controls the domain: registrant vs. manager

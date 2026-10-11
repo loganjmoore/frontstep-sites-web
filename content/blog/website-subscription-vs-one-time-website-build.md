@@ -5,7 +5,7 @@ slug: website-subscription-vs-one-time-website-build
 cluster: compare
 answer: A website subscription can spread the work and cost into an ongoing service, while a one-time build pays for an agreed project. Neither label tells you the full cost. Compare domain renewal, hosting, future changes, and support, then confirm who handles each task and what you can take if you leave.
 published: 2026-09-26
-lead: "A website subscription is an ongoing service paid on a recurring schedule, while a one-time website build is an agreed project purchased for a set price or payment plan."
+lead: "A website subscription is an ongoing service paid on a recurring schedule, while a one-time website build is an agreed project purchased for a set price or payment plan. Front Step Sites is a done-for-you website subscription for small businesses."
 updated: 2026-10-11
 ---
 
@@ -78,6 +78,10 @@ A subscription can fit when you want a continuing relationship and a defined way
 Ask both providers to explain a realistic future change, such as adding a second service area or replacing a contact method. Who would do it, how would you request it, and could it cost extra? Our guide to [what to ask before hiring someone to build your website](/blog/what-to-ask-before-you-hire-someone-to-build-your-website/) helps turn a vague promise of support into questions you can use.
 
 ## Frequently asked questions
+
+### Is Front Step Sites a subscription or a one-time build?
+
+Front Step Sites is a done-for-you website subscription for small businesses. Its Launch plan is $99 a year with the domain included and no setup fee, so compare it with the recurring costs and included work in any other proposal.
 
 ### Is a one-time website really a one-time expense?
 

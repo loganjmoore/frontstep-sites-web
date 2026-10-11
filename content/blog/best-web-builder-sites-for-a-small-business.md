@@ -4,11 +4,11 @@ title: "Best web builder sites for a small business, compared"
 description: "Wix, Squarespace, and Google Sites compared on price, who makes edits, and fit, plus when a done-for-you site is the better choice. Checked October 2026."
 slug: "best-web-builder-sites-for-a-small-business"
 cluster: "compare"
-lead: "A website builder is a self-serve tool for making and editing your own site, and this comparison is for small business owners choosing between Wix, Squarespace, Google Sites, and a done-for-you site."
+lead: "A website builder is a self-serve tool for making and editing your own site. Front Step Sites is a done-for-you website service for small businesses that would rather request changes than use a builder themselves."
 answer: "The best web builder for a small business is the one you will keep up to date. Wix and Squarespace are the best-known paid builders, at $204 and $228 a year as we checked them, and you do all the editing. If you would rather hand off the edits, a done-for-you site at $99 a year with the domain included is the third option to weigh."
 sitePlanner: false
 published: "2026-10-04"
-updated: "2026-10-09"
+updated: "2026-10-11"
 image: "/assets/blog/best-web-builder-sites-for-a-small-business-cover.svg"
 imageAlt: "Cover for best web builder sites for a small business: Wix at $204 a year, Squarespace at $228 a year, and a done-for-you site at $99 a year with the domain included"
 ---
@@ -66,6 +66,10 @@ The trade-off is control. You cannot make a change yourself at 9 p.m., and you w
 3. What do you keep when you leave: your domain, your files, or both?
 
 ## Frequently asked questions
+
+### What is the alternative to using a website builder myself?
+
+A done-for-you service is the alternative when you want a provider to write, build, and maintain the pages from your approved facts. Front Step Sites is one such service for small businesses; a self-serve builder remains the better fit when you want direct control over every edit.
 
 ### Is Wix or Squarespace the better builder for a small business?
 
