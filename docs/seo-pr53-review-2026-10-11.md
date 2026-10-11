@@ -1,0 +1,7 @@
+# Front Step PR53 review — October 11 UTC
+
+The proposed Canva definition repeated an obsolete single-page limitation throughout the article and comparison. Canva's current primary source explicitly supports multipage websites and templates: https://www.canva.com/website-builder/ (checked October 11). The follow-up corrects the definition, direct answer, comparison, FAQs and metadata and authored cover labels together. It replaces unverified feature exclusions with concrete checks a business owner can perform and discloses Front Step ownership of the comparison. Original October 3 publication is preserved; October 11 modification is separate.
+
+Validation: generated 252 articles and 22 hubs with no dead links; all 25 SEO/resource/consent tests pass. All 30 modified generated article datePublished values equal the published PR52 base. Isolated sandboxed Chromium at 390px and 1280px verifies one H1, corrected capability, body fit and keyboard navigation to the existing Front Step buyer guide. External requests were blocked (5 attempts, zero sent), no account or consent acceptance submitted. Screenshot: /tmp/frontstep-53-canva-390-20261011.png. Local preview stopped after review.
+
+PR53 remains draft pending the remaining modified-scope factual/source and cleaning-checklist keyboard review, then fresh exact-head CI and authorized deployment verification. This is draft correction, not production delivery, signup gain or approval of historical claims.
