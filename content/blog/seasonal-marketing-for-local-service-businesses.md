@@ -4,7 +4,9 @@ description: "Plan seasonal website and business profile updates around real dem
 slug: "seasonal-marketing-for-local-service-businesses"
 cluster: "guides"
 answer: "Seasonal marketing means updating your website and business listings before customers need a particular service. Start with your own booking history, local conditions, and available crew time. Promote work you can deliver, explain the booking window, and keep hours and offers current so the information matches what happens when someone contacts you."
-updated: "2026-09-26"
+lead: "Seasonal marketing is the practice of promoting timely services before customers need them while keeping offers, availability, and business information accurate."
+published: "2026-09-26"
+updated: "2026-10-11"
 ---
 
 What should you change on your website when your busy season is approaching? Start with the service customers will need next, the work you want to book, and the capacity you actually have. A useful seasonal update answers a timely question instead of just swapping in a holiday picture.

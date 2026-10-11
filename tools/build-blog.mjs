@@ -213,7 +213,8 @@ function renderMarkdown(body, ctx) {
     } else if (block.type === "img") {
       html += `<figure class="doc-figure"><img src="${escapeAttr(block.src)}" alt="${escapeAttr(block.alt)}" loading="lazy"></figure>\n`;
     } else if (block.type === "table") {
-      html += `<div class="table-wrap"><table><thead><tr>${block.headers
+      const mobileClass = ctx.mobileWideTable && block.headers.length === 4 ? " mobile-wide-table" : "";
+      html += `<div class="table-wrap${mobileClass}"><table><thead><tr>${block.headers
         .map((h) => `<th>${inline(h, ctx)}</th>`)
         .join("")}</tr></thead><tbody>${block.rows
         .map((r) => `<tr>${r.map((c) => `<td>${inline(c, ctx)}</td>`).join("")}</tr>`)
@@ -287,7 +288,7 @@ ${ogImage ? `<meta property="og:image" content="${escapeAttr(ogImage)}">\n` : ""
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="${fontHref}" rel="stylesheet" media="print" onload="this.media='all'">
 <noscript><link href="${fontHref}" rel="stylesheet"></noscript>
-<style>${READ_CSS}${(bodyHtml.includes('id="site-plan-builder"') || bodyHtml.includes('data-website-resource=')) ? SITE_PLAN_CSS : ""}${bodyHtml.includes("data-website-resource=") ? RESOURCE_CSS : ""}</style>
+<style>${READ_CSS}${bodyHtml.includes("mobile-wide-table") ? "@media(max-width:600px){.doc .mobile-wide-table table{min-width:44rem}}" : ""}${(bodyHtml.includes('id="site-plan-builder"') || bodyHtml.includes('data-website-resource=')) ? SITE_PLAN_CSS : ""}${bodyHtml.includes("data-website-resource=") ? RESOURCE_CSS : ""}</style>
 ${jsonLd.map(jsonLdScript).join("\n")}
 <script defer src="/analytics-consent.js"></script>
 <script defer src="/posthog-web.js"></script>
@@ -400,7 +401,7 @@ function renderArticlePage(article, related, clusterName, clusterUrl) {
     {
       "@context": "https://schema.org",
       "@type": "BlogPosting",
-      headline: article.title,
+      headline: article.h1 || article.title,
       description: article.description,
       datePublished: article.published || article.updated,
       dateModified: article.updated,
@@ -435,7 +436,7 @@ function renderArticlePage(article, related, clusterName, clusterUrl) {
 
   const bodyHtml = `<article class="doc">
 ${renderCrumbs(crumbs)}
-<h1>${escapeHtml(article.title)}</h1>
+<h1>${escapeHtml(article.h1 || article.title)}</h1>
 ${article.lead ? `<p class="direct-answer">${escapeHtml(article.lead)}</p>\n` : ""}<p class="updated">${article.author ? `By ${escapeHtml(article.author)} &middot; ` : ""}Updated ${formatDate(article.updated)}</p>
 ${article.image ? `<figure class="doc-figure doc-cover"><img src="${escapeAttr(article.image)}" alt="${escapeAttr(article.imageAlt || "")}" width="1200" height="630" fetchpriority="high"></figure>\n` : ""}<aside class="tag-box"><span class="label">Short answer</span><p>${escapeHtml(article.answer)}</p></aside>${article.sitePlanner === "true" ? `\n${renderSitePlanBuilder()}` : ""}
 ${article.resourceTool ? renderWebsiteResource(article.resourceTool) + "\n" : ""}${article.bodyHtml}
@@ -640,7 +641,7 @@ function main() {
   const deadLinksReport = [];
 
   for (const { file, data, body } of parsedArticles) {
-    const ctx = { allowedBareSlugs, deadLinks: [] };
+    const ctx = { allowedBareSlugs, deadLinks: [], mobileWideTable: data.mobileWideTable === "true" };
     const { html, faqItems } = renderMarkdown(body, ctx);
     if (ctx.deadLinks.length) {
       deadLinksReport.push({ file, links: ctx.deadLinks });
@@ -648,6 +649,7 @@ function main() {
     articles.push({
       slug: data.slug,
       title: data.title,
+      h1: data.h1,
       description: data.description,
       cluster: data.cluster,
       answer: data.answer,

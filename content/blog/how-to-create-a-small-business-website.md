@@ -4,12 +4,14 @@ description: "Nine steps to create a small business website, in order, with roug
 slug: "how-to-create-a-small-business-website"
 cluster: "guides"
 answer: "To create a small business website, choose and register a domain, pick hosting or a builder, write a few pages, add photos and a contact form, link your Google Business Profile, then test on a phone and launch. A do-it-yourself owner can work through the list in roughly 9 to 15 hours (my estimate), and the writing takes the most time."
-updated: "2026-10-03"
+lead: "A small business website is a set of pages that tells customers who you are, what you do, and how to reach you."
+published: "2026-10-03"
+updated: "2026-10-11"
 image: "/assets/blog/how-to-create-a-small-business-website-cover.svg"
 imageAlt: "Cover for How to create a small business website: nine steps from domain to launch, with rough hours for each"
 ---
 
-A small business website is a set of pages that tells customers who you are, what you do, and how to reach you. You don't need a designer to build one, but you do need an order of operations. Choose the builder first and you'll end up redoing work once you find out what the site has to say.
+You don't need a designer to build a small business website, but you do need an order of operations. Choose the builder first and you'll end up redoing work once you find out what the site has to say.
 
 ## What are the steps, in order?
 

@@ -1,13 +1,31 @@
 ---
-title: "Cleaning: Google Business Profile guide"
-description: "Set up a clear Google Business Profile for your cleaning company, with accurate service areas, cleaning services, useful photos, hours, and review replies."
+title: "Cleaning Company Google Business Profile Checklist"
+h1: "Google Business Profile for Cleaning Companies: Setup Checklist"
+description: "Follow a truthful cleaning company profile setup sequence covering eligibility, service areas, categories, services, hours, photos, your website, and reviews."
 slug: "cleaning-google-business-profile"
 cluster: "trades/cleaning"
 answer: "Your cleaning company Google Business Profile should explain which homes or workplaces you clean, where you travel, and how a customer requests an estimate. Use accurate business details, list services you actually provide, and add photos with permission. Keep hours, website information, and replies current so customers know what to expect."
-updated: "2026-09-26"
+lead: "Your cleaning company Google Business Profile should explain which homes or workplaces you clean, where you travel, and how a customer requests an estimate. Use accurate business details, list services you actually provide, and add photos with permission. Keep hours, website information, and replies current so customers know what to expect."
+mobileWideTable: "true"
+published: "2026-09-26"
+updated: "2026-10-11"
 ---
 
 A homeowner searches for "move out cleaning near me," while an office manager needs cleaners after the staff leaves. Does your Google Business Profile make clear whether you handle either job? Set it up around the work you actually want, then maintain it as carefully as your cleaning schedule.
+
+## Cleaning company profile setup order
+
+| Step | What to enter | What to verify | Common mistake |
+|---|---|---|---|
+| 1. Confirm eligibility and ownership | The real business name and an account the business controls | The business meets customers in person at a qualifying location or travels to them, and there is no existing profile to claim | Creating a duplicate or leaving ownership with a former worker |
+| 2. Choose a truthful primary category | The available category that best describes the main cleaning work | The category matches the work customers actually hire the company to do | Adding keywords to the business name or choosing an inaccurate category for reach |
+| 3. Configure the address or service area | A customer-facing address, a service area, or both, according to how the business operates | Customers are received at any displayed address during stated hours; otherwise the address is hidden and the service area is specific and accurate | Showing a home, virtual office, or crew base as a storefront when customers are not received there |
+| 4. List only real services | Cleaning services the company currently provides | Each service name and description matches the actual scope and any separate quote requirements | Listing every possible cleaning task as included in every visit |
+| 5. Check whether hours apply | Regular customer-facing hours and special hours when appropriate; Google says appointment-only businesses should not provide hours | The profile follows Google’s guidance for how customers are received, rather than listing crew working times | Claiming 24-hour availability because a crew sometimes cleans at night |
+| 6. Add permission-cleared photos | Current photos of the team, equipment, or completed work | The business has permission to publish them and no private details are visible | Uploading customer spaces, records, or addresses without checking the frame and permission |
+| 7. Test the contact route | The business website and phone number, with a clear path to request an estimate | Both open the correct current destination on a phone and the estimate route completes successfully | Linking an old site, wrong listing, disconnected number, or broken form |
+
+Source note: Google Business Profile Help at [support.google.com](https://support.google.com/business/answer/3038177?hl=en) was rechecked on October 11, 2026. Its current guidance requires accurate real-world business information, permits a service-area profile for a cleaning business that travels to customers, says to hide an address where customers are not received, and calls for regular customer-facing hours where applicable. It says businesses that operate only by appointment should not provide hours. Google's current service, photo, website, phone, and review guidance is reflected in the checks below.
 
 ## Establish the correct business and location
 
@@ -39,7 +57,7 @@ List places your team can realistically reach. A recurring route that works well
 
 Think through the questions customers actually ask: Do you serve the apartment buildings downtown? Can you clean a small office in the next town? Are rural properties outside your usual route considered individually? Give honest answers rather than advertising everywhere within driving distance.
 
-Keep published hours accurate and explain scheduling on the website. If you operate only by appointment, check Google's current hours guidance for that setup instead of inventing walk-in opening times. If office cleaning happens after normal business hours but estimates are handled during the day, make that difference clear. Do not suggest a person answers the phone all night just because a crew works evenings.
+Keep published hours accurate and explain scheduling on the website. Google says businesses that operate only by appointment should not provide hours. Explain appointment scheduling on your website instead of inventing walk-in opening times. If office cleaning happens after normal business hours but estimates are handled during the day, make that difference clear. Do not suggest a person answers the phone all night just because a crew works evenings.
 
 Update holiday availability and temporary closures when your schedule changes. An owner searching during a move needs to know whether a request will be handled, not simply that your company exists.
 
