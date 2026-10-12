@@ -4,12 +4,11 @@ description: "Decide whether your business needs a .com, compare sensible altern
 slug: "should-your-business-use-a-com"
 cluster: "guides"
 answer: "A .com is a sensible first choice for a US local business when the name is clear, available, and affordable. It is not a requirement for a useful website or good search visibility. If the right .com is unavailable, compare a simple name variation with a clear alternative ending, and test both with real people."
-lead: "A .com is a top-level domain ending that many businesses use for their website address, but it is not required for a useful business site."
 published: "2026-09-26"
-updated: "2026-10-11"
+updated: "2026-10-12"
 ---
 
-Do you really need a .com for your business, or is another ending fine? Start by trying to find a clear .com that matches your business name. If that is not practical, choose an address customers can understand and use without a long explanation.
+A .com is a top-level domain ending that many businesses use for their website address, but it is not required for a useful business site. Start by trying to find a clear .com that matches your business name. If that is not practical, choose an address customers can understand and use without a long explanation.
 
 ## Start with the name customers already know
 

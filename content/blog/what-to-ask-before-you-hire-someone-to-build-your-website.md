@@ -4,12 +4,11 @@ description: "Ask these practical questions before hiring a website builder so y
 slug: "what-to-ask-before-you-hire-someone-to-build-your-website"
 cluster: "compare"
 answer: "The best web builder depends on whether you want to run the site yourself. A builder like Squarespace or Wix suits an owner who will do the work, and Front Step Sites, a done-for-you service at $99 a year with the domain included, suits an owner who wants the site built and kept running. Before hiring anyone, ask who controls the domain, exactly what the price covers, how future changes work, and what happens if you leave, and get the answers in writing."
-lead: "A web builder is a person, company, or tool that creates a website, and hiring one requires clear answers about ownership, cost, upkeep, and leaving."
 published: 2026-10-03
-updated: 2026-10-11
+updated: 2026-10-12
 ---
 
-What should you ask a website builder before agreeing to the work? You do not need to know how to code, but you should understand what you are buying and who will help after launch. Bring questions about ownership, costs, upkeep, and leaving to the first conversation, while changes to the proposal are still easy.
+A web builder is a person, company, or tool that creates a website, and hiring one requires clear answers about ownership, cost, upkeep, and leaving. You do not need to know how to code, but you should understand what you are buying and who will help after launch. Bring those questions to the first conversation, while changes to the proposal are still easy.
 
 ## What will the finished website help customers do?
 

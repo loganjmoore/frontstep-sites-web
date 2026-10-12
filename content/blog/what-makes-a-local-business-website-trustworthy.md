@@ -4,12 +4,11 @@ description: "Build customer confidence with real photos, clear business details
 slug: what-makes-a-local-business-website-trustworthy
 cluster: guides
 answer: "A trustworthy local business website makes it easy to check who you are, what you do, where you work, and what happens when someone contacts you. Use real photos, accurate credentials, genuine customer feedback, and clear pricing information where possible. Keep your promises modest and specific, then make sure your phone number, forms, and business details work as expected."
-lead: "A trustworthy local business website is a site that lets customers verify who runs the business, what it does, where it works, and how contact will be handled."
 published: 2026-09-26
-updated: 2026-10-11
+updated: 2026-10-12
 ---
 
-What makes someone comfortable enough to call a business they have never used? Your website needs to answer the ordinary doubts that come before booking. Customers should be able to see who is responsible, whether you handle their job, and what they can expect next.
+A trustworthy local business website is a site that lets customers verify who runs the business, what it does, where it works, and how contact will be handled. It needs to answer the ordinary doubts that come before booking. Customers should be able to see who is responsible, whether the business handles their job, and what they can expect next.
 
 ## Show who is behind the business
 

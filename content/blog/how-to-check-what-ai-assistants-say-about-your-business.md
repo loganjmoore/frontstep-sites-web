@@ -3,13 +3,12 @@ title: "Check what AI assistants say about you"
 description: "Run a practical check of AI answers about your business, save the questions and sources, and fix wrong details without mistaking one answer for a ranking."
 slug: how-to-check-what-ai-assistants-say-about-your-business
 cluster: ai-search
-lead: "An AI-assistant business check is a repeatable review of what an assistant says about a company, which sources it shows, and whether those claims match the company's current public facts."
 answer: "Ask a short, repeatable set of customer questions, save the answers and source links, and compare each business fact with your current records. Fix incorrect source pages first, then check again. Treat a missing recommendation differently from a wrong phone number, and do not assume one conversation represents what every customer sees."
 published: 2026-09-26
-updated: 2026-10-11
+updated: 2026-10-12
 ---
 
-You want to know whether AI assistants describe your business correctly and whether they mention you when someone needs your services. A few searches can reveal useful problems, but random prompts quickly become a time sink. Use a small, repeatable check that ends with a correction list.
+An AI-assistant business check is a repeatable review of what an assistant says about a company, which sources it shows, and whether those claims match the company's current public facts. A few searches can reveal useful problems, but random prompts quickly become a time sink. Use a small, repeatable check that ends with a correction list.
 
 ## Prepare the facts you will check against
 

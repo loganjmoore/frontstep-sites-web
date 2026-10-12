@@ -4,12 +4,11 @@ description: See what a $99 website should include, how the Front Step Sites pla
 slug: is-a-99-website-worth-it
 cluster: compare
 answer: A $99 website can be worth it when it covers your actual business needs, has clear ongoing costs, and gives customers a useful way to understand your services. Front Step Sites charges $99 a year with the domain included and no setup fee. Check the change allowance, ownership terms, and required features before deciding that the low price is enough.
-lead: "A $99 website is a low-cost website offer whose value depends on the included pages, domain, hosting, changes, support, and ownership terms."
 published: 2026-09-26
-updated: 2026-10-11
+updated: 2026-10-12
 ---
 
-A $99 website sounds inexpensive, but what are you actually buying? The answer depends on whether that price covers the work you need and whether customers can use the result. Start by checking the offer, then judge it against a normal day in your business.
+A $99 website is a low-cost website offer whose value depends on the included pages, domain, hosting, changes, support, and ownership terms. Check whether that price covers the work you need and whether customers can use the result, then judge the offer against a normal day in your business.
 
 ## Get clear about what the price means
 
