@@ -6,7 +6,7 @@ cluster: "compare"
 lead: "A website maker is a tool you use to build and edit your own site, and this worksheet compares three years of one with a done-for-you site."
 answer: "A website maker is a tool you use to build and edit your own site, and a done-for-you site is one a provider builds and keeps running for you. Over three years at the prices we checked, Wix Light costs $612 and Squarespace Basic costs $684 before your time, while a $99 a year done-for-you site costs $297 with the domain included."
 published: "2026-10-04"
-updated: "2026-10-06"
+updated: "2026-10-12"
 image: "/assets/blog/website-maker-or-done-for-you-three-year-cost-cover.svg"
 imageAlt: "Cover for website maker or done-for-you: a maker costs $612 to $684 over three years before your time, a $99 a year done-for-you site costs $297 with the domain included"
 ---
@@ -25,7 +25,7 @@ At the prices we checked, a Wix Light or Squarespace Basic plan costs $612 or $6
 | Squarespace Basic | $684 at the price checked | You edit | Structured templates |
 | Done-for-you plan | $297, domain included | Provider edits | Less owner time in an editor |
 
-These are not universal rankings. They are a shortlist for the two decisions this worksheet measures: cash cost and who does the work.
+These are not universal rankings. They are a shortlist for the two decisions this worksheet measures: cash cost and who does the work. For a wider view that also includes Google Sites, use our [best web builder sites comparison](/blog/best-web-builder-sites-for-a-small-business/).
 
 ## What does a website maker cost over three years?
 
