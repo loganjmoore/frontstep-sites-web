@@ -85,11 +85,28 @@ test("intent-mismatch articles lead with the requested formats", () => {
     assert.match(html, /<table>/);
   }
 
+  const builderHub = read("blog/best-web-builder-sites-for-a-small-business/index.html");
+  assert.match(builderHub, /<th>Option<\/th><th>Price as we checked it<\/th><th>Who makes edits<\/th><th>Fits best<\/th>/);
+  for (const option of ["Wix", "Squarespace", "Google Sites", "Done-for-you site"]) {
+    assert.match(builderHub, new RegExp(`<td>${option}<\\/td>`));
+  }
+
   for (const slug of [
     "website-maker-or-done-for-you-three-year-cost",
     "website-subscription-vs-one-time-website-build",
     "auto-repair-facebook-vs-website",
   ]) assert.match(read(`blog/${slug}/index.html`), /<table>/);
+
+  for (const slug of [
+    "best-website-builder-three-questions",
+    "website-maker-or-done-for-you-three-year-cost",
+  ]) {
+    assert.match(
+      read(`blog/${slug}/index.html`),
+      /href="\/blog\/best-web-builder-sites-for-a-small-business\/"/,
+      `${slug} should link to the builder comparison hub`,
+    );
+  }
 
   const home = read("index.html");
   assert.match(home, /A website is a set of linked pages on a domain name/);
