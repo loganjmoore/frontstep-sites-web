@@ -4,12 +4,11 @@ description: Ask for Google reviews with a simple, optional request, a working r
 slug: how-to-get-customers-to-leave-reviews-on-google-without-being-pushy
 cluster: guides
 answer: Ask customers for an honest Google review after they have experienced your service, and give them a direct review link or QR code. Make the request optional and let them choose their own words and rating. Use a consistent process without filtering for happy customers, offering rewards, or chasing people who do not respond.
-lead: "A Google review request is an optional invitation for a customer to describe their experience publicly in their own words and rating."
 published: 2026-09-26
-updated: 2026-10-11
+updated: 2026-10-12
 ---
 
-You want more Google reviews, but you do not want customers to feel cornered at the end of a job. Make it easy to leave an honest review and just as easy to decline. A brief request with a working link is enough to give someone the choice.
+A Google review request is an optional invitation for a customer to describe their experience publicly in their own words and rating. Make it easy to leave an honest review and just as easy to decline. A brief request with a working link is enough to give someone the choice.
 
 ## Ask at a useful point in the customer journey
 

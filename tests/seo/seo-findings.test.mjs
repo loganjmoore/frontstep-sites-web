@@ -161,7 +161,7 @@ test("flagged articles define their subject near the top", () => {
   assert.match(brainpop, /<h1>[^<]+<\/h1>\n<p class="direct-answer">BrainPOP is an educational website and web application/);
 });
 
-test("October 11 citability pages define their subject immediately after the H1", () => {
+test("citability pages put plain subject definitions in extractable article text", () => {
   const definitions = {
     "tree-service-local-seo-checklist": "Tree service local SEO is the work of",
     "pest-control-get-more-reviews": "A pest control review request is an optional invitation",
@@ -188,15 +188,39 @@ test("October 11 citability pages define their subject immediately after the H1"
     "how-reviews-influence-ai-recommendations-of-local-businesses": "A local business review is a customer's public account",
     "voice-search-for-local-businesses-what-still-matters": "Voice search is the use of a spoken request",
     "what-llms-txt-is-and-whether-a-small-business-needs-one": "An llms.txt file is an optional reading guide",
+    "how-to-check-what-ai-assistants-say-about-your-business": "An AI-assistant business check is a repeatable review",
   };
 
-  assert.equal(Object.keys(definitions).length, 25);
-  assert.equal(new Set(Object.values(definitions)).size, 25);
+  const bodyDefinitions = new Set([
+    "what-to-put-in-your-website-footer",
+    "seasonal-marketing-for-local-service-businesses",
+    "how-to-get-customers-to-leave-reviews-on-google-without-being-pushy",
+    "what-makes-a-local-business-website-trustworthy",
+    "how-to-handle-leads-from-your-website-fast",
+    "should-your-business-use-a-com",
+    "how-to-switch-website-providers-without-losing-google-rankings",
+    "is-a-99-website-worth-it",
+    "what-to-ask-before-you-hire-someone-to-build-your-website",
+    "faq-pages-that-answer-customers-and-ai-search",
+    "why-consistent-business-information-matters-for-ai-answers",
+    "writing-website-content-ai-assistants-can-quote",
+    "structured-data-for-ai-search-what-small-businesses-need",
+    "how-reviews-influence-ai-recommendations-of-local-businesses",
+    "voice-search-for-local-businesses-what-still-matters",
+    "what-llms-txt-is-and-whether-a-small-business-needs-one",
+    "how-to-check-what-ai-assistants-say-about-your-business",
+  ]);
+
+  assert.equal(Object.keys(definitions).length, 26);
+  assert.equal(new Set(Object.values(definitions)).size, 26);
+  assert.equal(bodyDefinitions.size, 17);
   for (const [slug, definition] of Object.entries(definitions)) {
     const html = read("blog/" + slug + "/index.html");
     assert.ok(
-      html.includes("</h1>\n<p class=\"direct-answer\">" + definition),
-      slug + " should define its subject immediately after the H1",
+      html.includes(bodyDefinitions.has(slug)
+        ? "</aside>\n<p>" + definition
+        : "</h1>\n<p class=\"direct-answer\">" + definition),
+      slug + " should define its subject near the top in the intended content region",
     );
   }
 });
@@ -390,7 +414,7 @@ test("AI visibility articles answer a natural product-fit question with matching
   }
 });
 
-test("October 11 direct-answer findings define the subject immediately after the H1", () => {
+test("October 11 definition findings remain in their intended content regions", () => {
   const phone = read("blog/click-to-call-making-your-phone-number-work-on-every-page/index.html");
   assert.match(phone, /<h1>How to Make a Phone Number Clickable \(Click-to-Call\)<\/h1>\n<p class="direct-answer">Click-to-call is [^<]*tel:\+12025550147 format\.<\/p>/);
   assert.match(phone, /<pre><code class="language-html">&lt;a href="tel:\+12025550147"&gt;Call \(202\) 555-0147&lt;\/a&gt;<\/code><\/pre>/);
@@ -399,12 +423,12 @@ test("October 11 direct-answer findings define the subject immediately after the
   assert.match(domain, /<h1>Who owns your domain name\?<\/h1>\n<p class="direct-answer">Domain ownership is /);
 
   const aiCheck = read("blog/how-to-check-what-ai-assistants-say-about-your-business/index.html");
-  assert.match(aiCheck, /<h1>Check what AI assistants say about you<\/h1>\n<p class="direct-answer">An AI-assistant business check is /);
+  assert.match(aiCheck, /<\/aside>\n<p>An AI-assistant business check is /);
 });
 
 test("October 11 AI strategy pages include the requested schema guidance and reciprocal links", () => {
   const structured = read("blog/structured-data-for-ai-search-what-small-businesses-need/index.html");
-  assert.match(structured, /<h1>Structured Data for AI Search: Small Business Guide<\/h1>\n<p class="direct-answer">Structured data is [^<]*LocalBusiness, FAQPage, and Service schema/);
+  assert.match(structured, /<\/aside>\n<p>Structured data is [^<]*LocalBusiness, FAQPage, and Service schema/);
   assert.match(structured, /<h2 id="which-schema-types-to-add-first">Which schema types to add first<\/h2>\n<ol>/);
   for (const schemaType of ["LocalBusiness", "Service", "FAQPage"]) {
     assert.match(structured, new RegExp(`<li><strong>${schemaType}:<\\/strong>`));
