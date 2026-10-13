@@ -4,7 +4,7 @@ description: "Build a plumber website that answers customer questions, shows you
 slug: website-plumbing
 cluster: trades/plumbing
 answer: "A plumber website needs a working call button, clear service hours, the towns you cover, and plain descriptions of the jobs you take. Put those details before company history or decoration. Add real job photos, honest pricing guidance, and a short request form so customers can decide whether you are the right plumber to call."
-updated: 2026-09-26
+updated: 2026-10-13
 ---
 
 What does your plumbing website need so someone with a leaking water heater actually calls you? Start with your phone number, availability, service area, and the problems you fix. A customer should be able to find those answers before reading your company story or scrolling through job photos.
@@ -42,7 +42,7 @@ List your core towns in plain text near the top of the homepage. Then give custo
 
 Explain boundaries that affect booking. Perhaps you offer routine appointments across the county but limit evening emergency visits to nearby towns. If travel charges apply outside your usual area, tell people before they request a visit.
 
-Keep the business name, phone number, and hours accurate wherever customers find you. Use the [Google Business Profile guide for plumbers](/blog/plumbing-google-business-profile/) when reviewing the details shown alongside your website.
+Keep the business name, phone number, and hours accurate wherever customers find you. Use the [Google Business Profile for plumbers guide](/blog/plumbing-google-business-profile/) when reviewing the details shown alongside your website.
 
 Avoid creating a page for every surrounding town with only the place name changed. A town page is more useful when you can describe actual work there, show a permitted job photo, or explain a real scheduling difference.
 

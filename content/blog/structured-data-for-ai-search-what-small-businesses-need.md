@@ -16,6 +16,8 @@ Structured data is machine-readable markup that labels facts on a web page so se
 2. **Service:** Describe a genuine service on the page where customers can read about that service.
 3. **FAQPage:** Label questions and answers only when those same questions and complete answers are visible on the page.
 
+Use the [plain-language local business schema guide](/blog/local-business-schema-markup-explained-simply/) to choose and verify the business type before publishing it.
+
 ## Know what structured data actually adds
 
 Structured data is information added to a page in a format software can read. Think of it as attaching labels such as business name, telephone number, and opening hours to facts already explained on your website. The name of the shared vocabulary is Schema.org.

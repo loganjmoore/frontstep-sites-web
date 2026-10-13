@@ -5,12 +5,12 @@ slug: "plumbing-google-business-profile"
 cluster: "trades/plumbing"
 answer: "To set up a plumbing Google Business Profile: claim the listing, pick the primary category Plumber, add your service area, hours and phone, then post a photo and ask your last five customers for a review."
 published: "2026-09-26"
-updated: "2026-10-07"
+updated: "2026-10-13"
 ---
 
-## Plumbing Google Business Profile: the short version
+## Google Business Profile for plumbers: the short version
 
-A homeowner searching for an emergency plumber needs to know whether you can help with the water spreading across their kitchen floor. Someone comparing water heater installers has different questions about equipment and estimates. Your Google Business Profile should help both people understand what your plumbing company actually does.
+A Google Business Profile for plumbers should state the real service area, customer-facing hours, phone number, and plumbing work offered, then support those facts with current job photos and honest reviews. A homeowner searching for an emergency plumber needs to know whether you can help with the water spreading across their kitchen floor. Someone comparing water heater installers has different questions about equipment and estimates. Your profile should help both people understand what your plumbing company actually does.
 
 ## Get your business identity and coverage right
 

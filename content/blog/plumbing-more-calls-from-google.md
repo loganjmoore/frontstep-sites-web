@@ -4,7 +4,7 @@ description: "Get more plumbing calls from Google with a clear service area, use
 slug: "plumbing-more-calls-from-google"
 cluster: "trades/plumbing"
 answer: "Focus on an accurate Google Business Profile, pages that explain the plumbing jobs you take, and a steady habit of asking customers for honest reviews. Make your phone number easy to use and state your real availability. These steps help customers choose you, but they cannot guarantee rankings or a particular number of calls."
-updated: "2026-09-26"
+updated: "2026-10-13"
 ---
 
 You want your phone to ring when someone nearby needs a plumber, whether their toilet is overflowing or their water heater has stopped working. Start by making your services, coverage, and availability clear on Google and your website. Then check that those calls reach someone who can actually book the work.
@@ -25,7 +25,7 @@ Pick the closest available category to your main plumbing work. Add useful servi
 
 Google describes local results in terms of relevance, distance, and prominence. Your location relative to the searcher matters, so adding distant towns is not a promise of visibility there. See [Google's local ranking guidance](https://support.google.com/business/answer/7091?hl=en).
 
-Use your [plumbing Business Profile guide](/blog/plumbing-google-business-profile/) for a more detailed upkeep routine. Set a reminder to check the profile after a phone change, holiday schedule change, or shift in the territory your technicians cover.
+Use the [Google Business Profile for plumbers guide](/blog/plumbing-google-business-profile/) for a more detailed upkeep routine. Set a reminder to check the profile after a phone change, holiday schedule change, or shift in the territory your technicians cover.
 
 ## Give each important plumbing problem a useful page
 

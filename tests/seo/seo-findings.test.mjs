@@ -295,7 +295,7 @@ test("homepage keeps third-party assets out of the initial rendering path", () =
 
 test("AI strategy articles lead with the requested direct answers and related links", () => {
   const plumbing = read("blog/plumbing-google-business-profile/index.html");
-  assert.match(plumbing, /<h2 id="plumbing-google-business-profile-the-short-version">Plumbing Google Business Profile: the short version<\/h2>/);
+  assert.match(plumbing, /<h2 id="google-business-profile-for-plumbers-the-short-version">Google Business Profile for plumbers: the short version<\/h2>/);
   assert.match(plumbing, /To set up a plumbing Google Business Profile: claim the listing, pick the primary category Plumber, add your service area, hours and phone, then post a photo and ask your last five customers for a review\./);
 
   const pest = read("blog/pest-control-get-more-reviews/index.html");
@@ -313,6 +313,26 @@ test("AI strategy articles lead with the requested direct answers and related li
   assert.match(garage, /Start garage door local SEO with accurate business details/);
   assert.match(garage, /href="\/blog\/garage-door-google-business-profile\/"/);
   assert.match(garage, /href="\/blog\/garage-door-get-more-reviews\/"/);
+});
+
+test("October 13 ranking and AI strategy pages include the requested decision answers and internal links", () => {
+  const builders = read("blog/website-builders-vs-done-for-you-websites/index.html");
+  assert.match(builders, /<h2 id="best-website-builders-or-a-done-for-you-service">Best website builders or a done-for-you service\?<\/h2>/);
+  assert.match(builders, /The best website builders for a small local business are the ones the owner can keep accurate after launch\./);
+  assert.match(builders, /<h2 id="when-a-done-for-you-site-beats-a-builder">When a done-for-you site beats a builder<\/h2>/);
+  assert.match(builders, /href="\/blog\/best-web-builder-sites-for-a-small-business\/">best website builder comparison for a small business<\/a>/);
+  assert.match(read("blog/best-website-builder-three-questions/index.html"), /href="\/blog\/website-builders-vs-done-for-you-websites\/">best website builders and done-for-you options<\/a>/);
+
+  const plumbing = read("blog/plumbing-google-business-profile/index.html");
+  assert.match(plumbing, /A Google Business Profile for plumbers should state the real service area, customer-facing hours, phone number, and plumbing work offered/);
+  for (const slug of ["website-plumbing", "plumbing-more-calls-from-google"]) {
+    assert.match(read(`blog/${slug}/index.html`), /href="\/blog\/plumbing-google-business-profile\/">Google Business Profile for plumbers guide<\/a>/);
+  }
+
+  const schema = read("blog/structured-data-for-ai-search-what-small-businesses-need/index.html");
+  assert.match(schema, /<h2 id="which-schema-types-to-add-first">Which schema types to add first<\/h2>/);
+  assert.match(schema, /<ol>[\s\S]*LocalBusiness:[\s\S]*Service:[\s\S]*FAQPage:[\s\S]*<\/ol>/);
+  assert.match(schema, /href="\/blog\/local-business-schema-markup-explained-simply\/">plain-language local business schema guide<\/a>/);
 });
 
 test("October 10 acquisition findings are present in every generated page", () => {
