@@ -6,18 +6,24 @@ cluster: "trades/pest-control"
 answer: "Ask pest control customers for honest reviews at a clear service milestone, after they can describe the visit or agreed follow-up. Keep requests optional and discreet, provide a direct link, and invite customers consistently regardless of satisfaction. Never exchange discounts for reviews or tie follow-up service to changing a rating."
 lead: "A pest control review request is an optional invitation for a customer to describe the service publicly in their own words. Send it at a clear service milestone, keep sensitive details private, and never attach a reward or required rating."
 published: "2026-09-26"
-updated: "2026-10-10"
+updated: "2026-10-13"
 ---
 
 ## How to get more Google reviews for pest control
 
-Pest control customers leave reviews when you ask by text within an hour of the job and make the link a single tap.
+Ask for an honest review once the customer can describe the service milestone you have chosen. Keep the invitation optional and provide a direct review link, as Google's [review request guidance](https://support.google.com/business/answer/3474122?hl=en) recommends.
 
 A pest control visit can be a sensitive thing to review publicly. Customers may appreciate the technician but feel uncomfortable discussing a bed bug concern or rodent activity at their business. Your review process should make honest feedback easy while leaving them in control of what they share.
 
 ## Choose a milestone that matches the service
 
 An inspection, an initial treatment, and a follow-up visit are different experiences. Decide what the customer has actually had time to assess before asking for feedback. A request sent before the technician arrives tells them nothing about the service.
+
+Use a consistent review moment that fits the work:
+
+1. **After treatment completion:** Ask once the customer has received the completed-service update and knows what happens next.
+2. **After a follow-up visit:** Ask after the customer can describe both the original visit and the follow-up without implying a guaranteed result.
+3. **After a recurring plan renewal:** Ask the customer who has enough experience with the ongoing service to comment on communication, punctuality, and reporting.
 
 For an inspection, a customer may be able to comment on communication and the explanation of findings after the visit. For a treatment plan with agreed follow-up, choose a consistent point that lets them describe the process fairly. Do not imply that a review request means a pest problem has been fully resolved.
 
