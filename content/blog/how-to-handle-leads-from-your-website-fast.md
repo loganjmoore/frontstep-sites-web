@@ -96,4 +96,4 @@ Say so clearly and provide an honest availability window if you know it. Update 
 
 ## The short version
 
-Fast lead handling starts with reliable delivery, clear ownership, and an honest reply window. Confirm receipt, answer the actual job question, and record the next action until the request is resolved. [Front Step Sites](/) includes four coherent marketing updates per Central calendar month on its $99 a year plan, made within two business days, so you can request updates to your website's contact information and availability wording.
+Fast lead handling starts with reliable delivery, clear ownership, and an honest reply window. Confirm receipt, answer the actual job question, and record the next action until the request is resolved. [Front Step Sites](/) includes four coherent marketing updates per Central calendar month on its $99 a year plan, so you can request updates to your website's contact information and availability wording.

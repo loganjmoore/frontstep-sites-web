@@ -3,13 +3,13 @@ title: "Local SEO checklist for appliance repair"
 description: "A practical local SEO checklist for appliance repair shops: Google Business Profile, NAP consistency, appliance-type pages, and honest same-day claims."
 slug: "appliance-repair-local-seo-checklist"
 cluster: "trades/appliance-repair"
-answer: "A local SEO checklist for an appliance repair business covers four things: a complete Google Business Profile that names the brands and appliance types you fix, your business name, address, and phone matching exactly across every listing, a page for each appliance type you service, and same-day or next-day availability stated honestly rather than as a vague promise."
+answer: "A local SEO checklist for an appliance repair business covers four things: a complete Google Business Profile that names the brands and appliance types you fix, your business name, address, and phone matching exactly across every listing, a page for each appliance type you service, or next-day availability stated honestly rather than as a vague promise."
 updated: "2026-10-02"
 image: "/assets/blog/appliance-repair-local-seo-checklist-cover.svg"
-imageAlt: "A local SEO checklist for appliance repair covering Google Business Profile, NAP consistency, appliance-type pages, and same-day honesty"
+imageAlt: "A local SEO checklist for appliance repair covering Google Business Profile, NAP consistency, appliance-type pages, honesty"
 ---
 
-A local SEO checklist for an appliance repair business covers four areas: a complete Google Business Profile that actually names what you fix, a consistent business name, address, and phone number everywhere you're listed, a real page for each appliance type you service, and same-day availability stated honestly. Work through them in that order, since a vague profile undermines everything built on top of it.
+A local SEO checklist for an appliance repair business covers four areas: a complete Google Business Profile that actually names what you fix, a consistent business name, address, and phone number everywhere you're listed, a real page for each appliance type you service, availability stated honestly. Work through them in that order, since a vague profile undermines everything built on top of it.
 
 ## Is your Google Business Profile complete and specific?
 
@@ -73,4 +73,4 @@ Whenever your brand list, service area, or turnaround time changes, and at least
 
 ## The short version
 
-An appliance repair business's local SEO comes down to a Google Business Profile that names real brands and appliance types, business details that match everywhere, a real page per appliance type, and same-day claims that are actually true. Work through them in that order and the rest tends to follow. [Front Step Sites](/) builds the appliance-type pages and profile setup into a $99-a-year website, domain included.
+An appliance repair business's local SEO comes down to a Google Business Profile that names real brands and appliance types, business details that match everywhere, a real page per appliance type, claims that are actually true. Work through them in that order and the rest tends to follow. [Front Step Sites](/) builds the appliance-type pages and profile setup into a $99-a-year website, domain included.

@@ -33,7 +33,7 @@ For a solo painter with simple needs, that work may be manageable. If your eveni
 
 A done-for-you service can make sense when you need a straightforward website and prefer to send changes to someone else. Check the exact update allowance, delivery terms, domain arrangement, and recurring bill. A lower starting cost means little if routine edits are unclear.
 
-Front Step Sites is $99 a year with the domain included and no setup fee. The domain is registered in your name, and that plan includes four coherent marketing updates per Central calendar month, made within two business days. New pages, blog posts, and local SEO setup are included; customers request changes by writing in their account.
+Front Step Sites is $99 a year with the domain included and no setup fee. The domain is registered in your name, and that plan includes four coherent marketing updates per Central calendar month. New pages, blog posts, and local SEO setup are included; customers request changes by writing in their account.
 
 A typical custom freelancer or agency project often costs a few thousand dollars, with more extensive work costing more. Treat that as a broad planning range, not a quote. Ask each provider what their proposal actually covers.
 

@@ -99,4 +99,4 @@ Keep a basic structure, but acknowledge the actual concern in each response. A r
 
 ## The short version
 
-Check the facts, acknowledge the concern, and offer a practical next step. Protect private information and follow through on what you promise. Use the complaint to correct any misleading information on your website. For ongoing website changes, [Front Step Sites](/) includes four coherent marketing updates per Central calendar month on its $99 yearly plan, made within two business days.
+Check the facts, acknowledge the concern, and offer a practical next step. Protect private information and follow through on what you promise. Use the complaint to correct any misleading information on your website. For ongoing website changes, [Front Step Sites](/) includes four coherent marketing updates per Central calendar month on its $99 yearly plan.

@@ -26,7 +26,7 @@ The table below covers the three choices most owners weigh. The cells marked "ch
 | | Google Sites | DIY builder (Wix Light or Squarespace Basic) | Done-for-you (Front Step Sites) |
 |---|---|---|---|
 | Cost per year | Free, plus your domain | $204 (Wix Light, billed yearly) or about $228 (Squarespace Basic at $19 a month) | $99, domain included, no setup fee |
-| Who makes changes | You | You, whenever you have time | You ask in your account: 2 requests a month on the $99 plan, done within 2 business days |
+| Who makes changes | You | You, whenever you have time | You ask in your account: four coherent marketing updates per Central calendar month on the $99 plan |
 | Page descriptions | No custom meta descriptions (per nDash) | Check before buying | Ask before you sign |
 | Forms | Embed a Google Form | Check before buying | Ask before you sign |
 | Leaving | Check before relying on it | Check before buying | Take your domain with you, no transfer fee |
@@ -41,7 +41,7 @@ A yearly price hides the real gap, since you pay it every year. Here are three y
 - Wix Light: $612 ($204 a year)
 - Squarespace Basic: $684 (about $228 a year)
 - Front Step Sites, $99 plan: $297, domain included
-- Front Step Sites, Grow plan: $870 ($290 a year), with unlimited changes the same business day and your Google reviews shown on the site
+- Front Step Sites, Grow plan: $870 ($290 a year), with four marketing updates per Central calendar month and your Google reviews shown on the site
 
 The $99 plan is the cheapest paid option here, but it caps changes at two a month. If you update your hours, menu, or service list often, the Grow plan's price is the one that matches how you work.
 

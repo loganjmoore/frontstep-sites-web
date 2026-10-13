@@ -97,4 +97,4 @@ Start with anything that prevents someone from reading essential information or 
 
 Make essential information readable, describe useful images, label forms, and test your site with a keyboard. Follow a complete customer task to find barriers that a quick glance misses. Keep checking after website changes.
 
-If you want someone to handle website changes, [Front Step Sites](/) includes four coherent marketing updates per Central calendar month on the $99 annual plan, made within two business days.
+If you want someone to handle website changes, [Front Step Sites](/) includes four coherent marketing updates per Central calendar month on the $99 annual plan.

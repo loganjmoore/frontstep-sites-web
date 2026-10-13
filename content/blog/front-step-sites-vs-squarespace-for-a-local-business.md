@@ -21,7 +21,7 @@ Front Step Sites is a done-for-you website service for small businesses, priced 
 | Hosting and SSL | Not covered on this page; check Squarespace's current plan terms | Included |
 | Who fixes problems | You do | Front Step Sites keeps the site running; you ask for changes in your account |
 | Domain | Free for the first year on an annual plan, then renews separately | Included, registered in your name, no transfer fee to leave |
-| How changes are made | You edit it yourself in the Squarespace editor | Write a plain-English request in your account (2 a month on Launch) |
+| How changes are made | You edit it yourself in the Squarespace editor | Write a plain-English request in your account (four per Central calendar month on Launch) |
 
 ## Compare the stated prices carefully
 
@@ -41,9 +41,9 @@ If you choose a done-for-you approach, you still need to provide the facts. Writ
 
 ## Match the change process to your working week
 
-On the Front Step Sites $99 plan, you get four coherent marketing updates per Central calendar month, made within two business days. You ask for changes by writing in your account. Consider whether that request process and pace fit your normal needs.
+On the Front Step Sites $99 plan, you get four coherent marketing updates per Central calendar month. You ask for changes by writing in your account. Consider whether that request process and pace fit your normal needs.
 
-The Grow plan is $29/month or $290/year. It includes four coherent marketing updates per Central calendar month with same-business-day turnaround and Google reviews shown on the site. New pages, blog posts, and local SEO setup are included. Choose based on work you expect to need, rather than assuming a larger plan is automatically necessary.
+The Grow plan is $29/month or $290/year. It includes four coherent marketing updates per Central calendar month and Google reviews shown on the site. New pages, blog posts, and local SEO setup are included. Choose based on work you expect to need, rather than assuming a larger plan is automatically necessary.
 
 For a DIY approach, decide who will actually make edits when business gets busy. If you want to adjust wording yourself as you think of it, working in a builder may suit you better. If updates tend to sit on your list until you can ask someone else, a request-based service may fit better.
 
@@ -89,7 +89,7 @@ No, a trades business can reasonably choose a builder when someone wants to mana
 
 ### Which Front Step Sites plan fits occasional updates?
 
-The $99 plan includes four coherent marketing updates per Central calendar month, made within two business days. Compare that with the changes you expect, such as new hours or replacing job photos. If you need more changes or faster turnaround, consider whether Grow's terms match those needs.
+The $99 plan includes four coherent marketing updates per Central calendar month. Compare that with the changes you expect, such as new hours or replacing job photos. If you want Google reviews shown on your site, consider whether Grow's terms match those needs.
 
 ### Will switching providers bring more customers?
 

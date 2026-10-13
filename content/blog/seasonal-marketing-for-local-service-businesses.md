@@ -97,4 +97,4 @@ Explain that weather can affect relevant outdoor appointments and describe how y
 
 Plan seasonal updates around real customer needs, local conditions, and the work you can accept. Keep your service page, listings, and hours consistent, then remove temporary messages when they expire. Use each season's questions to make the next update more useful.
 
-[Front Step Sites](/) includes four coherent marketing updates per Central calendar month on its $99 yearly plan, made within two business days.
+[Front Step Sites](/) includes four coherent marketing updates per Central calendar month on its $99 yearly plan.

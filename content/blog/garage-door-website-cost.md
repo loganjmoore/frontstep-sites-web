@@ -25,7 +25,7 @@ A DIY builder can work if you have time to write the content, edit photos, and t
 
 As of September 2026, Wix Light is $17/month billed yearly, or $204/year. Squarespace Basic is $19/month as of September 2026. Those figures describe the named plans; check the total for your required setup before buying, rather than assuming every possible expense is covered.
 
-A done-for-you arrangement fits an owner who wants to request changes without managing the editor. [Front Step Sites](/) costs $99 a year with the domain included and no setup fee; the $99 plan includes 4 coherent marketing updates per Central calendar month, made within 2 business days.
+A done-for-you arrangement fits an owner who wants to request changes without managing the editor. [Front Step Sites](/) costs $99 a year with the domain included and no setup fee; the $99 plan includes 4 coherent marketing updates per Central calendar month.
 
 Compare the practical update process. Who removes an unavailable door option, changes holiday hours, or clarifies a service-call policy? Our [DIY versus done-for-you comparison](/blog/done-for-you-website-vs-building-it-yourself/) explains the time side of that choice.
 

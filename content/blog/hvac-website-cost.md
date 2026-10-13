@@ -92,4 +92,4 @@ Ask who handles changes, what counts as a request, and how quickly approved upda
 
 Price the HVAC website you actually need, including the copy and future updates. Compare matching scopes and test repair and replacement enquiries before calling the project finished. Keep ownership and renewal terms clear.
 
-[Front Step Sites](/) offers a website for $99 a year with the domain included, no setup fee, and four coherent marketing updates per Central calendar month made within two business days.
+[Front Step Sites](/) offers a website for $99 a year with the domain included, no setup fee, and four coherent marketing updates per Central calendar month.

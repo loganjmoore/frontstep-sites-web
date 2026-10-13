@@ -56,7 +56,7 @@ The best website maker is the one with an update process your business will actu
 
 Then test one realistic update before you buy. Change a phone number, add a short service section, replace a photo, and inspect the result on a phone. Time the whole job, including finding the login and fixing spacing. If someone else handles changes, ask where requests go, how many are included, and what turnaround is promised.
 
-Here is a worked example for a two-person service business. The owner expects two updates each month. At 20 minutes per self-serve update, that is 24 updates and 8 hours a year. A managed plan that includes two requests a month also covers 24 requests a year, so the decision becomes whether the owner wants to spend those 8 hours in an editor or send clear requests and wait for completion.
+Here is a worked example for a two-person service business. The owner expects two updates each month. At 20 minutes per self-serve update, that is 24 updates and 8 hours a year. A managed plan that includes four coherent marketing updates per Central calendar month also covers 24 requests a year, so the decision becomes whether the owner wants to spend those 8 hours in an editor or send clear requests and wait for completion.
 
 | Update check | Self-serve builder | Managed website service |
 | --- | --- | --- |

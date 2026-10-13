@@ -50,7 +50,7 @@ Keep commercial work distinct when you offer it. A business with a loading-bay p
 
 Use natural page titles that name the service and your actual area. The [guide to service pages](/blog/how-to-write-a-service-page-that-ranks-and-converts/) can help you organize the explanation without repeating a search phrase in every paragraph.
 
-## Emergency and same-day garage door wording
+## Emergency garage door wording
 
 Treat availability language as an operating promise. Verify each claim against how calls are answered, how jobs are dispatched, and what the team can deliver across the stated service area.
 

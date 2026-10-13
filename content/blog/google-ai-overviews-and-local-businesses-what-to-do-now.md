@@ -96,4 +96,4 @@ Check the service page for the work you most want to book. Correct the contact d
 
 Make your services and business facts easy to understand and verify. Answer real booking questions, maintain your profile, and check whether generated answers describe you accurately. No package or page format can promise an AI Overview mention.
 
-If you want help keeping your website current, [Front Step Sites](/) includes four coherent marketing updates per Central calendar month on its $99-a-year plan, made within two business days.
+If you want help keeping your website current, [Front Step Sites](/) includes four coherent marketing updates per Central calendar month on its $99-a-year plan.

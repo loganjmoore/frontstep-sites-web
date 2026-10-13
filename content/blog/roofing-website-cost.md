@@ -29,7 +29,7 @@ A freelancer is worth considering when you want more individual copy, layout, or
 
 An agency can fit a company with several real locations, a larger photography library, and more complex enquiry routing. Those projects can run from several thousand dollars into much larger budgets. Make sure the extra work solves an actual business need rather than adding pages your staff will never maintain.
 
-A basic option is [Front Step Sites](/), at $99 a year with the domain included and no setup fee. The domain is registered in the customer's own name, and the annual plan includes four coherent marketing updates per Central calendar month made within two business days.
+A basic option is [Front Step Sites](/), at $99 a year with the domain included and no setup fee. The domain is registered in the customer's own name, and the annual plan includes four coherent marketing updates per Central calendar month.
 
 ## Understand what makes roofing content cost more
 

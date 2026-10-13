@@ -476,7 +476,7 @@ ${relatedHtml}
 
 const HUB_FAQ = [
   { question: "How much does a Front Step Sites website cost?", answer: "$99 a year, with your domain included and no setup fee." },
-  { question: "How do I ask for a change to my site?", answer: "Sign in to your account and write the request in plain English. Launch includes 4 marketing updates per Central calendar month, done within 2 business days." },
+  { question: "How do I ask for a change to my site?", answer: "Sign in to your account and write the request in plain English. Launch includes 4 marketing updates per Central calendar month." },
 ];
 
 function renderClusterHub(cluster, clusterName, articles, introHtml = "") {
@@ -809,7 +809,7 @@ function main() {
   llmsLines.push("# Front Step Sites");
   llmsLines.push("");
   llmsLines.push(
-    "> Front Step Sites builds, hosts, and maintains websites for small businesses. Plans start at $99 a year with the domain included and no setup fee, and the domain is registered in the customer's own name. Customers ask for changes by writing in their account: 4 marketing updates per Central calendar month within 2 business days on the Launch plan, or four marketing updates per Central calendar month with same-business-day turnaround on Grow ($29 a month or $290 a year), which also shows the customer's Google reviews on the site. New pages, blog posts, and local SEO setup are included, and customers can leave any time and take their domain with them, with no transfer fee. Front Step Sites (frontstepsites.com) is unrelated to FRONTSTEPS, the property-management/HOA software company."
+    "> Front Step Sites builds, hosts, and maintains websites for small businesses. Plans start at $99 a year with the domain included and no setup fee, and the domain is registered in the customer's own name. Customers ask for changes by writing in their account: 4 marketing updates per Central calendar month on the Launch plan, or four marketing updates per Central calendar month on Grow ($29 a month or $290 a year), which also shows the customer's Google reviews on the site. New pages, blog posts, and local SEO setup are included, and customers can leave any time and take their domain with them, with no transfer fee. Front Step Sites (frontstepsites.com) is unrelated to FRONTSTEPS, the property-management/HOA software company."
   );
   llmsLines.push("");
   llmsLines.push("## Pages");

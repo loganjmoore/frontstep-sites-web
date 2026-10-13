@@ -14,7 +14,7 @@ A $99 website is a low-cost website offer whose value depends on the included pa
 
 For Front Step Sites, $99 means $99 a year, with the domain included and no setup fee. It is an annual service price, not a one-time purchase that removes every future website responsibility.
 
-The $99 plan includes 4 coherent marketing updates per Central calendar month, made within 2 business days. You ask for changes by writing in your account. New pages, blog posts, and local SEO setup are included.
+The $99 plan includes 4 coherent marketing updates per Central calendar month. You ask for changes by writing in your account. New pages, blog posts, and local SEO setup are included.
 
 The domain is registered in your own name. You can leave any time and take your domain, with no transfer fee. Keep those specific facts in mind when comparing offers that use a similar headline price but may describe a different purchase.
 
@@ -40,9 +40,9 @@ Our guide to [what makes a local business website trustworthy](/blog/what-makes-
 
 Look at the updates you expect to need, including seasonal ones. A painter may add photographs after finishing an exterior project, while a lawn care company may need to explain spring cleanups and fall leaf removal at different times.
 
-The relevant question is whether 4 coherent marketing updates per Central calendar month, made within 2 business days, fit your pattern. Keep a running note of likely updates. Include changes to hours, services, service areas, photographs, and any dated offers.
+The relevant question is whether 4 coherent marketing updates per Central calendar month, fit your pattern. Keep a running note of likely updates. Include changes to hours, services, service areas, photographs, and any dated offers.
 
-If you need faster turnaround, the Grow plan costs $29 a month or $290 a year. It includes four coherent marketing updates per Central calendar month with same-business-day turnaround and Google reviews shown on the site.
+If you want Google reviews shown on your site, the Grow plan costs $29 a month or $290 a year. It includes four coherent marketing updates per Central calendar month and Google reviews shown on the site.
 
 Choose based on the work you expect to request. Ask how a larger set of edits would be handled before assuming it fits inside a particular allowance. Our guide to [how often to update your business website](/blog/how-often-should-you-update-your-business-website/) can help you identify useful changes instead of changing things just to keep busy.
 
@@ -82,7 +82,7 @@ The Front Step Sites price is $99 a year, with the domain included and no setup 
 
 ### Are changes included in the $99 plan?
 
-Yes, the plan includes 4 coherent marketing updates per Central calendar month, made within 2 business days. You request them by writing in your account. Ask how your particular request fits if you are planning a larger revision.
+Yes, the plan includes 4 coherent marketing updates per Central calendar month. You request them by writing in your account. Ask how your particular request fits if you are planning a larger revision.
 
 ### Will the website put my business first on Google?
 
