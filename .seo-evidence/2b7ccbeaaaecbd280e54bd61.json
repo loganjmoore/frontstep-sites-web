@@ -1,0 +1,57 @@
+{
+  "version": 1,
+  "verifier": "seo-worker-v1",
+  "postFile": "content/blog/website-hosting-and-maintenance-what-99-covers.md",
+  "artifact": ".seo-evidence/2b7ccbeaaaecbd280e54bd61.json",
+  "verifiedAt": "2026-10-13T20:24:47.446Z",
+  "sourceFiles": [
+    {
+      "path": "index.html",
+      "sha256": "9a07a774d75809acb086a035590eecd199d692892927e9200ef4a0fd34486da0",
+      "excerpt": "<p class=\"lead\">Front Step Sites is a done-for-you website service for small businesses in the United States: we build, host, and maintain your site on the $99/yr Launch plan, with a domain included.</p>"
+    },
+    {
+      "path": "index.html",
+      "sha256": "9a07a774d75809acb086a035590eecd199d692892927e9200ef4a0fd34486da0",
+      "excerpt": "<span class=\"hole\" aria-hidden=\"true\"></span><header><span class=\"label\">Building your site</span><b>$0<small>no setup fee</small></b></header>\n        <ul>\n          <li>A 10-minute questionnaire. We write every word.</li>\n          <li>Built for phones first</li>\n          <li>Contact form that lands in your email</li>\n          <li>Linked to your Google Business Profile</li>\n          <li>Domain registered in your name</li>\n          <li>You approve it before it goes live</li>\n        </ul>"
+    },
+    {
+      "path": "index.html",
+      "sha256": "9a07a774d75809acb086a035590eecd199d692892927e9200ef4a0fd34486da0",
+      "excerpt": "<span class=\"hole\" aria-hidden=\"true\"></span><header><span class=\"label\">Launch, every year</span><b>$99<small>/yr</small></b></header>\n        <ul>\n          <li>Your domain, included and in your name</li>\n          <li>Hosting and SSL that never go to sleep</li>\n          <li>2 change requests a month</li>\n          <li>Changes live within 2 business days</li>\n          <li>Blog posts written for your area</li>\n          <li>Local SEO: Google-friendly setup for your town and services</li>\n          <li>Renewals handled, nothing to remember</li>\n        </ul>"
+    },
+    {
+      "path": "index.html",
+      "sha256": "9a07a774d75809acb086a035590eecd199d692892927e9200ef4a0fd34486da0",
+      "excerpt": "<details><summary>How do changes work?</summary><p>Sign in and open a request, like \"change Saturday hours to 8 to 2\" or \"swap the top photo for this one\". We make the change, publish it, and reply to you. Launch includes 2 requests a month, live within 2 business days. Grow is unlimited and same-day.</p></details>"
+    },
+    {
+      "path": "index.html",
+      "sha256": "9a07a774d75809acb086a035590eecd199d692892927e9200ef4a0fd34486da0",
+      "excerpt": "<details><summary>What isn't included?</summary><p>A full redesign, a new logo, an online store, booking, payments, or custom features. We'll quote those before anything costs extra.</p></details>"
+    }
+  ],
+  "example": {
+    "description": "Three current annual Launch payments added to produce a reproducible three-year subscription total.",
+    "operation": "sum",
+    "inputs": [
+      99,
+      99,
+      99
+    ],
+    "result": 297,
+    "excerpt": "The Front Step Sites Launch plan costs $297 over three years at the current published rate: $99 + $99 + $99 = $297. The domain is included each year, so this example has no separate domain-renewal line.",
+    "reproducedBy": "worker arithmetic"
+  },
+  "references": [
+    {
+      "url": "https://csrc.nist.gov/pubs/sp/800/40/r4/final",
+      "status": 200,
+      "sha256": "c9d9ba469d0fa3451249dd9f71a38ad48293eca52e7f9118d8fa581508b4b2ba",
+      "sourceExcerpt": "Preventive maintenance through enterprise patch management helps prevent compromises, data breaches, operational disruptions, and other adverse events.",
+      "supportingClaim": "The National Institute of Standards and Technology calls patching a critical part of preventive maintenance and says it helps prevent compromises, data breaches, operational disruptions, and other adverse events in its [enterprise patch management guidance](https://csrc.nist.gov/pubs/sp/800/40/r4/final).",
+      "primarySourceRationale": "This is NIST Computer Security Resource Center's final public HTTPS page for NIST Special Publication 800-40 Revision 4. The exact excerpt appears in the page's abstract and supports only the general patch-management statement linked in the post."
+    }
+  ],
+  "claimRationale": "The checked-in product page supports the current $99 annual price, $0 setup fee, included domain, hosting, SSL, renewals, 2 monthly change requests, 2-business-day timing, and listed exclusions. Adding the same current annual price three times gives $99 + $99 + $99 = $297. This is a reproducible current-rate illustration, not proof of future pricing, savings against another provider, rankings, leads, uptime, security outcomes, or the value of an owner's time. The NIST reference supports only the general reason patching belongs in maintenance; it does not endorse Front Step Sites or establish this plan's maintenance scope."
+}
