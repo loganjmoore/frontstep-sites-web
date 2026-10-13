@@ -128,6 +128,32 @@ test("priority article and hub changes are present in generated HTML", () => {
   ]) assert.match(blog, new RegExp(`/blog/${slug}/`));
 });
 
+test("October 13 AI strategy changes are present in their citation surfaces", () => {
+  const domain = read("blog/who-owns-your-domain-name-and-why-it-matters/index.html");
+  assert.match(domain, /How to check who owns your domain right now/);
+  assert.match(domain, /<ol>/);
+  for (const detail of ["registrar account", "WHOIS or registry lookup", "hosting account separately", "renewal date"]) {
+    assert.match(domain, new RegExp(detail, "i"));
+  }
+  for (const slug of ["how-to-choose-a-domain-name-for-a-small-business", "how-to-move-a-domain-to-a-new-provider"]) {
+    assert.match(domain, new RegExp(`href="/blog/${slug}/"`));
+  }
+
+  const schema = read("blog/structured-data-for-ai-search-what-small-businesses-need/index.html");
+  assert.match(schema, /Which schema types to use and when/);
+  for (const type of ["LocalBusiness", "Service", "FAQPage", "BreadcrumbList"]) {
+    assert.match(schema, new RegExp(`<td>${type}<\\/td>`));
+  }
+  assert.match(schema, /Schema does not guarantee rich results or AI citations/);
+  assert.match(schema, /href="\/blog\/local-business-schema-markup-explained-simply\/"/);
+
+  const clickToCallHref = /href="\/blog\/click-to-call-making-your-phone-number-work-on-every-page\/"/;
+  assert.match(read("blog/contact-forms-that-actually-get-filled-out/index.html"), clickToCallHref);
+  for (const hub of ["plumbing", "tree-service", "hvac"]) {
+    assert.match(read(`blog/trades/${hub}/index.html`), clickToCallHref);
+  }
+});
+
 test("intent-mismatch articles lead with the requested formats", () => {
   for (const slug of [
     "website-builders-vs-done-for-you-websites",
@@ -484,14 +510,14 @@ test("October 11 definition findings remain in their intended content regions", 
 test("October 11 AI strategy pages include the requested schema guidance and reciprocal links", () => {
   const structured = read("blog/structured-data-for-ai-search-what-small-businesses-need/index.html");
   assert.match(structured, /<\/aside>\n<p>Structured data is [^<]*LocalBusiness, FAQPage, and Service schema/);
-  assert.match(structured, /<h2 id="which-schema-types-to-add-first">Which schema types to add first<\/h2>\n<ol>/);
+  assert.match(structured, /<h2 id="which-schema-types-to-use-and-when">Which schema types to use and when<\/h2>/);
   for (const schemaType of ["LocalBusiness", "Service", "FAQPage"]) {
-    assert.match(structured, new RegExp(`<li><strong>${schemaType}:<\\/strong>`));
+    assert.match(structured, new RegExp(`<td>${schemaType}<\\/td>`));
   }
 
   const domain = read("blog/who-owns-your-domain-name-and-why-it-matters/index.html");
-  assert.match(domain, /<h2 id="how-to-check-who-owns-your-domain">How to check who owns your domain<\/h2>/);
-  assert.match(domain, /WHOIS or registration-data lookup/);
+  assert.match(domain, /<h2 id="how-to-check-who-owns-your-domain-right-now">How to check who owns your domain right now<\/h2>/);
+  assert.match(domain, /WHOIS or registry lookup/);
   assert.match(domain, /href="\/blog\/how-to-move-a-domain-to-a-new-provider\/"/);
 
   const phone = read("blog/click-to-call-making-your-phone-number-work-on-every-page/index.html");
@@ -551,7 +577,7 @@ test("updated articles retain original publication date", () => {
 
   const domain = read("blog/who-owns-your-domain-name-and-why-it-matters/index.html");
   assert.match(domain, /"datePublished":"2026-09-26"/);
-  assert.match(domain, /"dateModified":"2026-10-11"/);
+  assert.match(domain, /"dateModified":"2026-10-13"/);
 });
 
 test("regeneration does not redate unchanged legal pages", () => {
