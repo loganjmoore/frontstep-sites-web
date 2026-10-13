@@ -12,10 +12,65 @@ const htmlFiles = (dir) => readdirSync(new URL(`../../${dir}/`, import.meta.url)
 test("homepage preserves buyer CTA and excludes unrelated query FAQs", () => {
   const html = read("index.html");
   assert.ok((html.match(/href="https:\/\/app\.frontstepsites\.com\/get-started"/g) || []).length >= 1);
+  assert.ok((html.match(/Start Launch — \$99\/yr/g) || []).length >= 2);
+  assert.match(html, /Next: secure checkout for the \$99\/year Launch plan; after payment, sign in and complete the 10-minute business questionnaire\./);
   assert.doesNotMatch(html, /best movie site free|What is the best option for/);
   const blocks = [...html.matchAll(/<script type="application\/ld\+json">(.*?)<\/script>/gs)].map(m => JSON.parse(m[1])).filter(v => v["@type"] === "FAQPage");
   assert.equal(blocks.length, 1);
   for (const entry of blocks[0].mainEntity) assert.ok(html.includes(`<summary>${entry.name}</summary>`));
+});
+
+test("October 13 ranking and acquisition findings are present in rendered pages", () => {
+  const home = read("index.html");
+  assert.match(home, /<h2 id="website-definition">What is a website\?<\/h2>/);
+  assert.match(home, /<h2 id="best-website-creators">Best website creators for a small business<\/h2>/);
+  for (const creator of ["Front Step Sites", "Wix", "Squarespace", "Google Sites"]) {
+    assert.match(home, new RegExp(`<td>${creator}<\\/td>`));
+  }
+
+  const builders = read("blog/website-builders-vs-done-for-you-websites/index.html");
+  assert.match(builders, /Best website builders and services for a small local business/);
+  assert.match(builders, /What does an AI website builder do\?/);
+  assert.match(builders, /website development in HTML and custom code fits/);
+
+  const ranked = read("blog/best-website-builder-three-questions/index.html");
+  assert.match(ranked, /<h1>Best Website Builders for Small Businesses, Ranked<\/h1>/);
+  assert.match(ranked, /<h2 id="best-website-builders-ranked-for-a-small-business">/);
+  assert.match(ranked, /<th>Rank and option<\/th><th>Price confirmed in our guides<\/th><th>Main feature<\/th><th>Testing notes<\/th>/);
+  assert.match(ranked, /What should you test in an AI website builder\?/);
+
+  const canva = read("blog/can-you-run-a-business-website-on-canva/index.html");
+  assert.match(canva, /Canva Websites review: pros, cons, and verdict/);
+  for (const label of ["Pros:", "Cons:", "Verdict:"]) assert.match(canva, new RegExp(`<strong>${label}<\\/strong>`));
+
+  const html = read("blog/html-website-development-when-custom-code-fits/index.html");
+  assert.match(html, /What does website development in HTML mean\?/);
+});
+
+test("October 13 trade journeys use the shared paid-path copy and factual checklists", () => {
+  const tree = read("blog/website-tree-service/index.html");
+  assert.match(tree, /data-website-resource="starter"/);
+  assert.match(tree, /fictional\/private preview/);
+  assert.match(tree, /What a tree service website needs before launch/);
+  assert.match(tree, /<th>Page or proof<\/th><th>Business facts the owner supplies<\/th><th>Customer action to test<\/th>/);
+  assert.match(tree, /Start Launch — \$99\/yr/);
+  assert.equal((tree.match(/Start Launch — \$99\/yr/g) || []).length, 2, "tree page should have one header CTA and one in-content CTA");
+
+  const plumbing = read("blog/plumbing-google-business-profile/index.html");
+  assert.match(plumbing, /<title>Google Business Profile for Plumbers: Setup Checklist<\/title>/);
+  assert.match(plumbing, /<h1>Google Business Profile for Plumbers: Setup Checklist<\/h1>/);
+  assert.match(plumbing, /<h2 id="plumber-google-business-profile-setup-checklist">/);
+  assert.match(plumbing, /<th>Setting<\/th><th>What the plumbing business supplies<\/th><th>Public check<\/th>/);
+  assert.match(plumbing, /What Google Business Profile category should a plumber use\?/);
+  const faq = [...plumbing.matchAll(/<script type="application\/ld\+json">(.*?)<\/script>/gs)]
+    .map((match) => JSON.parse(match[1]))
+    .find((value) => value["@type"] === "FAQPage");
+  assert.ok(faq.mainEntity.some((item) => item.name === "What Google Business Profile category should a plumber use?"));
+
+  for (const path of ["blog/website-tree-service/index.html", "blog/plumbing-google-business-profile/index.html"]) {
+    const rendered = read(path);
+    assert.match(rendered, /Next: secure checkout for the \$99\/year Launch plan; after payment, sign in and complete the 10-minute business questionnaire\./);
+  }
 });
 
 test("AI visibility pages carry useful answers and plain product definitions", () => {
@@ -295,8 +350,8 @@ test("homepage keeps third-party assets out of the initial rendering path", () =
 
 test("AI strategy articles lead with the requested direct answers and related links", () => {
   const plumbing = read("blog/plumbing-google-business-profile/index.html");
-  assert.match(plumbing, /<h2 id="plumbing-google-business-profile-the-short-version">Plumbing Google Business Profile: the short version<\/h2>/);
-  assert.match(plumbing, /To set up a plumbing Google Business Profile: claim the listing, pick the primary category Plumber, add your service area, hours and phone, then post a photo and ask your last five customers for a review\./);
+  assert.match(plumbing, /<h2 id="plumber-google-business-profile-setup-checklist">Plumber Google Business Profile setup checklist<\/h2>/);
+  assert.match(plumbing, /To set up a Google Business Profile for a plumber, claim or create the correct listing, use Plumber as the primary category/);
 
   const pest = read("blog/pest-control-get-more-reviews/index.html");
   assert.match(pest, /<h2 id="how-to-get-more-google-reviews-for-pest-control">How to get more Google reviews for pest control<\/h2>/);

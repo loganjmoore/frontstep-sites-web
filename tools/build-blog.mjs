@@ -17,6 +17,8 @@ const READ_CSS = readFileSync(join(WEB, "assets", "read.css"), "utf8");
 const SITE = "https://frontstepsites.com";
 const LOGIN_URL = "https://app.frontstepsites.com/login";
 const START_URL = "https://app.frontstepsites.com/get-started";
+const START_LABEL = "Start Launch \u2014 $99/yr";
+const START_EXPECTATION = "Next: secure checkout for the $99/year Launch plan; after payment, sign in and complete the 10-minute business questionnaire.";
 
 const MONTHS = ["January","February","March","April","May","June","July","August","September","October","November","December"];
 
@@ -117,6 +119,7 @@ function parseBlocks(md) {
     }
     if (/^###\s+/.test(line)) { blocks.push({ type: "h3", text: line.replace(/^###\s+/, "").trim() }); i++; continue; }
     if (/^##\s+/.test(line)) { blocks.push({ type: "h2", text: line.replace(/^##\s+/, "").trim() }); i++; continue; }
+    if (line.trim() === "{{launch-cta}}") { blocks.push({ type: "launchCta" }); i++; continue; }
     if (/^-\s+/.test(line)) {
       const items = [];
       while (i < lines.length && /^-\s+/.test(lines[i])) { items.push(lines[i].replace(/^-\s+/, "").trim()); i++; }
@@ -213,7 +216,7 @@ function renderMarkdown(body, ctx) {
     } else if (block.type === "img") {
       html += `<figure class="doc-figure"><img src="${escapeAttr(block.src)}" alt="${escapeAttr(block.alt)}" loading="lazy"></figure>\n`;
     } else if (block.type === "table") {
-      const mobileClass = ctx.mobileWideTable && block.headers.length === 4 ? " mobile-wide-table" : "";
+      const mobileClass = ctx.mobileWideTable ? " mobile-wide-table" : "";
       html += `<div class="table-wrap${mobileClass}"><table><thead><tr>${block.headers
         .map((h) => `<th>${inline(h, ctx)}</th>`)
         .join("")}</tr></thead><tbody>${block.rows
@@ -222,6 +225,8 @@ function renderMarkdown(body, ctx) {
     } else if (block.type === "code") {
       const language = block.language ? ` class="language-${escapeAttr(block.language)}"` : "";
       html += `<pre><code${language}>${escapeHtml(block.text)}</code></pre>\n`;
+    } else if (block.type === "launchCta") {
+      html += `${renderLaunchCta()}\n`;
     }
   }
   flushFaq();
@@ -243,6 +248,15 @@ function clusterHumanName(cluster, topicsByCluster) {
 
 function brandSvg() {
   return `<svg viewBox="0 0 34 34" aria-hidden="true"><rect width="34" height="34" fill="#ffd60a"/><path d="M6 27h22v-5H17v-5h-5v-5H6z" fill="#111312"/></svg>`;
+}
+
+function renderLaunchCta() {
+  return `<aside class="tag-box tag-offer">
+  <span class="label">Front Step Sites &middot; Launch</span>
+  <p>$99/yr, domain included, no setup fee.</p>
+  <a class="btn" href="${START_URL}">${START_LABEL}</a>
+  <p>${START_EXPECTATION}</p>
+</aside>`;
 }
 
 const SITE_PLAN_CSS = `
@@ -299,7 +313,7 @@ ${jsonLd.map(jsonLdScript).join("\n")}
   <nav>
     <a class="hide-sm" href="/blog/">Blog</a>
     <a class="hide-sm" href="${LOGIN_URL}">Sign in</a>
-    <a class="btn" href="${START_URL}">Get started</a>
+    <a class="btn" href="${START_URL}">${START_LABEL}</a>
   </nav>
 </div></header>
 <main class="read"><div class="wrap">
@@ -342,7 +356,7 @@ function renderWebsiteResource(mode) {
   const starter = mode === "starter";
   return `<section class="site-plan" data-website-resource="${mode}" aria-labelledby="website-resource-title">
   <h2 id="website-resource-title">${starter ? "Build a downloadable website starter" : "Prepare a brief for an AI website builder"}</h2>
-  <p>${starter ? "Make a small HTML website from your own business details. Preview it here, then download a file you can open in a browser or edit." : "Turn your business details into a structured brief for an AI builder or a website provider. Download it, review it, and choose where to use it."}</p>
+  <p>${starter ? "Use a made-up business or your own business name, service area, contact route, and real services to make a private local preview. Then download an HTML file you can open in a browser or edit." : "Turn your business details into a structured brief for an AI builder or a website provider. Download it, review it, and choose where to use it."}</p>
   <p>${starter ? "This uses a fixed template; it does not call AI or publish a website." : "This generates a brief, not a website. No AI provider is called. FrontStep’s finished build uses its existing signed-in, active-plan workflow."} Your answers stay in this page and the file you download. They are not sent or saved. Optional analytics records only the public resource action.</p>
   <form>
     <label>Business name<input name="businessName" required maxlength="80" autocomplete="organization" placeholder="Example Tree Care"></label>
@@ -440,11 +454,7 @@ ${renderCrumbs(crumbs)}
 ${article.lead ? `<p class="direct-answer">${escapeHtml(article.lead)}</p>\n` : ""}<p class="updated">${article.author ? `By ${escapeHtml(article.author)} &middot; ` : ""}Updated ${formatDate(article.updated)}</p>
 ${article.image ? `<figure class="doc-figure doc-cover"><img src="${escapeAttr(article.image)}" alt="${escapeAttr(article.imageAlt || "")}" width="1200" height="630" fetchpriority="high"></figure>\n` : ""}<aside class="tag-box"><span class="label">Short answer</span><p>${escapeHtml(article.answer)}</p></aside>${article.sitePlanner === "true" ? `\n${renderSitePlanBuilder()}` : ""}
 ${article.resourceTool ? renderWebsiteResource(article.resourceTool) + "\n" : ""}${article.bodyHtml}
-<aside class="tag-box tag-offer">
-  <span class="label">Front Step Sites &middot; Launch</span>
-  <p>$99/yr, domain included, no setup fee.</p>
-  <a class="btn" href="${START_URL}">Get started</a>
-</aside>
+${article.launchCtaInBody === "true" ? "" : renderLaunchCta()}
 ${relatedHtml}
 </article>`;
 
@@ -661,6 +671,7 @@ function main() {
       imageAlt: data.imageAlt,
       sitePlanner: data.sitePlanner,
       resourceTool: data.resourceTool,
+      launchCtaInBody: data.launchCtaInBody,
       bodyHtml: html,
       faqItems,
     });
