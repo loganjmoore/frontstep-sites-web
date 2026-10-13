@@ -25,7 +25,7 @@ As of September 2026, Wix Light is $17/month billed yearly, or $204/year, and Sq
 
 DIY can suit you if you enjoy arranging pages and are willing to maintain them. You still need to write service descriptions, select photos, test the contact form, and correct out-of-date details. Consider whether you will realistically do that after a day of repairs.
 
-[Front Step Sites](/) is $99 a year with the domain included and no setup fee. The domain is registered in your own name, and the $99 plan includes two change requests a month, made within two business days. Changes are requested by writing in your account.
+[Front Step Sites](/) is $99 a year with the domain included and no setup fee. The domain is registered in your own name, and the $99 plan includes four coherent marketing updates per Central calendar month, made within two business days. Changes are requested by writing in your account.
 
 Typical custom freelancer and agency projects range from a few thousand dollars to considerably more, depending on the work. A freelancer may be a good fit for a specific design and content project. An agency may make sense when you need broader marketing coordination alongside the website. Ask for the website portion and ongoing services to be described separately.
 

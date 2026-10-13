@@ -98,4 +98,4 @@ Check whether the listing itself needs correction and use Google's available cor
 
 ## The short version
 
-Use the correct listing, choose a link or embed based on customer needs, and keep directions readable without the map. Check the destination on a phone and protect addresses that are not open to customers. For a website whose details you can keep current, [Front Step Sites](/) includes two change requests a month on its $99-a-year plan, completed within two business days.
+Use the correct listing, choose a link or embed based on customer needs, and keep directions readable without the map. Check the destination on a phone and protect addresses that are not open to customers. For a website whose details you can keep current, [Front Step Sites](/) includes four coherent marketing updates per Central calendar month on its $99-a-year plan, completed within two business days.

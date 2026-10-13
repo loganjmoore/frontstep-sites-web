@@ -29,7 +29,7 @@ Front Step Sites is a done-for-you website service for small businesses, priced 
 
 As of September 2026, Wix Light is $17/month billed yearly ($204/year). Front Step Sites is $99 a year with the domain included and no setup fee. Use those figures as a starting point, then check the current purchase terms before choosing.
 
-Front Step Sites also offers the Grow plan at $29/month or $290/year. Grow includes unlimited changes the same business day and Google reviews shown on the site. The $99 plan includes two change requests a month, made within two business days.
+Front Step Sites also offers the Grow plan at $29/month or $290/year. Grow includes four coherent marketing updates per Central calendar month with same-business-day turnaround and Google reviews shown on the site. The $99 plan includes four coherent marketing updates per Central calendar month, made within two business days.
 
 Those prices describe different ways of handling the work. If you build your site yourself, your budget also needs room for your own time. If you request changes from someone else, you need to supply clear instructions and review the result. Neither option removes your responsibility to confirm that the services, prices, and hours are right.
 
@@ -49,7 +49,7 @@ Front Step Sites fits an owner who would rather describe a change than spend tim
 
 Think about your normal month. A lawn care business might need a spring cleanup page and a change to its service area. A repair shop might need to remove a discontinued service and update holiday hours. The relevant question is how often those requests happen and how quickly you need them completed.
 
-The $99 plan allows two change requests a month, made within two business days. Grow allows unlimited changes the same business day. Match the plan to your actual pace instead of assuming every business needs the same amount of updating. Neither turnaround should be confused with a promise that a website will produce a particular number of calls.
+The $99 plan allows four coherent marketing updates per Central calendar month, made within two business days. Grow allows four coherent marketing updates per Central calendar month with same-business-day turnaround. Match the plan to your actual pace instead of assuming every business needs the same amount of updating. Neither turnaround should be confused with a promise that a website will produce a particular number of calls.
 
 ## Write down your required customer actions first
 

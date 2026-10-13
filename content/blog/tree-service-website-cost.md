@@ -34,7 +34,7 @@ DIY can work if someone will maintain the website after launch. If changing a st
 
 A straightforward done-for-you service can fit a local crew with clear service needs. Ask what content and updates are included, how you request changes, and who controls the domain. Get the answer in writing so the starting price is meaningful.
 
-Front Step Sites costs $99 a year with the domain included and no setup fee. The domain is registered in your name, and the plan includes two change requests a month, made within two business days. New pages, blog posts, and local SEO setup are included, with change requests made by writing in your account.
+Front Step Sites costs $99 a year with the domain included and no setup fee. The domain is registered in your name, and the plan includes four coherent marketing updates per Central calendar month, made within two business days. New pages, blog posts, and local SEO setup are included, with change requests made by writing in your account.
 
 For a custom freelancer or agency project, request a quote that separates the scope, content work, and ongoing support so you can compare it with a subscription or done-for-you plan.
 

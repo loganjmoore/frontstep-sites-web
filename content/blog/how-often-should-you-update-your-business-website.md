@@ -105,4 +105,4 @@ Start with the specific problems customers face. Incorrect hours or an old photo
 
 ## The short version
 
-Update important facts immediately, check the site monthly, and prepare seasonal changes before customers need them. Add photos and answers when they make the business easier to understand. Check the live result after every update. With [Front Step Sites](/), the $99 yearly plan includes two change requests a month, made within two business days.
+Update important facts immediately, check the site monthly, and prepare seasonal changes before customers need them. Add photos and answers when they make the business easier to understand. Check the live result after every update. With [Front Step Sites](/), the $99 yearly plan includes four coherent marketing updates per Central calendar month, made within two business days.

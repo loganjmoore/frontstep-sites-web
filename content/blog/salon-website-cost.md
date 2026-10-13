@@ -33,7 +33,7 @@ Think about maintenance during a busy week. Who removes a departing stylist's bo
 
 A managed website may fit an owner who wants to send change requests instead of editing pages. Compare the change allowance and turnaround with the rhythm of your business. A stable barbershop menu may need fewer updates than a salon frequently changing staff pages and service descriptions.
 
-[Front Step Sites](/) costs $99 a year with the domain included and no setup fee. The domain is registered in your name. The $99 plan includes two change requests a month, made within two business days. Grow costs $29 a month or $290 a year for unlimited changes the same business day and Google reviews shown on the site.
+[Front Step Sites](/) costs $99 a year with the domain included and no setup fee. The domain is registered in your name. The $99 plan includes four coherent marketing updates per Central calendar month, made within two business days. Grow costs $29 a month or $290 a year for four coherent marketing updates per Central calendar month with same-business-day turnaround and Google reviews shown on the site.
 
 New pages, blog posts, and local SEO setup are included. Customers request changes by writing in their account and can leave any time with their domain, without a transfer fee. Confirm your particular booking needs rather than assuming the website service replaces your salon's operating software.
 

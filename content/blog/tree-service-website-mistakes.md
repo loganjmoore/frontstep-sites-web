@@ -89,4 +89,4 @@ Often the first useful changes are clearer text, corrected contact details, and 
 
 ## The short version
 
-Make tree services, assessment steps, coverage, and availability clear. Use accurate qualifications and real project evidence, then test the path from a customer's phone to your office. [Front Step Sites](/) includes two change requests a month, made within two business days, on its $99-a-year plan with the domain included.
+Make tree services, assessment steps, coverage, and availability clear. Use accurate qualifications and real project evidence, then test the path from a customer's phone to your office. [Front Step Sites](/) includes four coherent marketing updates per Central calendar month, made within two business days, on its $99-a-year plan with the domain included.

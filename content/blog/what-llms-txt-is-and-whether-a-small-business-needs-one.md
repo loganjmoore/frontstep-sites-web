@@ -92,4 +92,4 @@ Yes, if the purpose is clear and upkeep is simple. Read it for accuracy and conf
 
 An llms.txt file can provide a guide for tools that use the proposal, but it is optional for a local business. Correct your public information and test your contact process first. Add the file only when its purpose and maintenance are clear. For the wider picture, see the [AI search guides](/blog/ai-search/).
 
-If your priority is keeping the website itself current, [Front Step Sites](/) includes two change requests a month on its $99 a year plan, domain included.
+If your priority is keeping the website itself current, [Front Step Sites](/) includes four coherent marketing updates per Central calendar month on its $99 a year plan, domain included.

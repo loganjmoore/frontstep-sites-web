@@ -33,7 +33,7 @@ Compare the time commitment using your real schedule. Who will update holiday ho
 
 A managed website can make sense when you want someone else to handle the site and routine changes. Compare the change allowance, response time, domain arrangement, and process for leaving. Ask whether the pages you need and any special booking requirements fit the service.
 
-[Front Step Sites](/) is $99 a year with the domain included and no setup fee; the domain is registered in your name. That plan includes two change requests a month, made within two business days. Grow is $29 a month or $290 a year for unlimited changes the same business day and Google reviews shown on the site. New pages, blog posts, and local SEO setup are included. Customers request changes by writing in their account and can leave any time with their domain, without a transfer fee.
+[Front Step Sites](/) is $99 a year with the domain included and no setup fee; the domain is registered in your name. That plan includes four coherent marketing updates per Central calendar month, made within two business days. Grow is $29 a month or $290 a year for four coherent marketing updates per Central calendar month with same-business-day turnaround and Google reviews shown on the site. New pages, blog posts, and local SEO setup are included. Customers request changes by writing in their account and can leave any time with their domain, without a transfer fee.
 
 For any managed option, discuss your shop's needs explicitly. A service page and a link to an existing appointment system are different from a custom integration. Get agreement on the actual workflow rather than assuming a general website offer covers every repair-shop system.
 

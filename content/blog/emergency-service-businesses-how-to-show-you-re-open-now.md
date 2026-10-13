@@ -94,4 +94,4 @@ Tell callers the current situation and give only an arrival estimate you can sup
 
 State when you answer, when you can send help, and which urgent jobs you cover. Keep those facts consistent across the website, listings, and phone greeting. Test the call path before a customer needs it in a hurry.
 
-[Front Step Sites](/) includes two change requests a month on its $99-a-year plan, made within two business days.
+[Front Step Sites](/) includes four coherent marketing updates per Central calendar month on its $99-a-year plan, made within two business days.

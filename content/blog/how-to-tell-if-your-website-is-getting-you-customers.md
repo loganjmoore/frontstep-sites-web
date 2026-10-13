@@ -93,4 +93,4 @@ It may have helped the customer decide to contact you. Record the referral as th
 
 ## The short version
 
-Measure the path from inquiry to booked work, and use traffic reports to explain what happens before contact. Keep honest source notes, test your forms and phone links, and improve the stage where suitable customers get stuck. [Front Step Sites](/) includes two change requests a month on its $99 annual plan, made within two business days.
+Measure the path from inquiry to booked work, and use traffic reports to explain what happens before contact. Keep honest source notes, test your forms and phone links, and improve the stage where suitable customers get stuck. [Front Step Sites](/) includes four coherent marketing updates per Central calendar month on its $99 annual plan, made within two business days.

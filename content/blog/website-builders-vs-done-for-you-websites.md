@@ -63,7 +63,7 @@ No. A small business does not need to write HTML to get a working site. A builde
 
 Compare written scopes, not just the biggest price on the page. A builder subscription buys access to a product. A service agreement can include people doing work for you, but the scope needs to say which work.
 
-[Front Step Sites](/) is a done-for-you website service for small businesses in the United States. As one example, it costs $99 a year with the domain included and no setup fee, and the Launch plan includes two change requests a month, live within two business days. Those are useful details to compare with your expected workload, rather than assuming every service handles changes the same way.
+[Front Step Sites](/) is a done-for-you website service for small businesses in the United States. As one example, it costs $99 a year with the domain included and no setup fee, and the Launch plan includes four coherent marketing updates per Central calendar month, live within two business days. Those are useful details to compare with your expected workload, rather than assuming every service handles changes the same way.
 
 For a side-by-side look at two common builders, read [Front Step Sites vs. Wix](/blog/front-step-sites-vs-wix-for-a-small-business-website/) and [Front Step Sites vs. Squarespace](/blog/front-step-sites-vs-squarespace-for-a-local-business/).
 
@@ -71,7 +71,7 @@ For a side-by-side look at two common builders, read [Front Step Sites vs. Wix](
 | --- | --- | --- |
 | Price | Wix Light from $17/mo; Squarespace Basic $19/mo billed annually | $99/yr, domain included, no setup fee |
 | Time to finish the site | You write, arrange, and check every page | Answer a 10-minute questionnaire |
-| Who makes changes | You do | 2 requests a month on Launch, live within 2 business days; Grow is unlimited |
+| Who makes changes | You do | 4 marketing updates per Central calendar month on Launch, live within 2 business days; Grow includes four marketing updates per Central calendar month |
 | Leaving | You export and move the site yourself | One click, and we send your site's files |
 
 For each option, note the initial charge, recurring charges, domain arrangements, and any separate work you expect to buy. Also write down who will do the work. If you plan to build it on evenings you already spend sending estimates, be honest about whether those evenings are available.

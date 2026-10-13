@@ -86,4 +86,4 @@ Check after changes to your hours, phone number, location, or services, and when
 
 ## The short version
 
-Local voice search still calls for accurate hours, a clear service area, and an easy way to reach you. Answer real customer questions and check the information people receive after you change business details. Focus on corrections you can verify instead of promises about being the first recommendation. If you would rather request website updates than make them yourself, [Front Step Sites](/) includes two change requests a month on its $99 annual plan, with the domain included.
+Local voice search still calls for accurate hours, a clear service area, and an easy way to reach you. Answer real customer questions and check the information people receive after you change business details. Focus on corrections you can verify instead of promises about being the first recommendation. If you would rather request website updates than make them yourself, [Front Step Sites](/) includes four coherent marketing updates per Central calendar month on its $99 annual plan, with the domain included.

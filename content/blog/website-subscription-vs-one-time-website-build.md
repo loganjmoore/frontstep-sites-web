@@ -55,9 +55,9 @@ Use our guide to [how often to update your business website](/blog/how-often-sho
 
 ## Understand what an ongoing service includes
 
-Front Step Sites is one example of a website subscription. It costs $99 a year with the domain included and no setup fee. The domain is registered in the customer's own name, and the plan includes two change requests a month, made within two business days.
+Front Step Sites is one example of a website subscription. It costs $99 a year with the domain included and no setup fee. The domain is registered in the customer's own name, and the plan includes four coherent marketing updates per Central calendar month, made within two business days.
 
-The Grow plan is $29/month or $290/year for unlimited changes the same business day and Google reviews shown on the site. New pages, blog posts, and local SEO setup are included. Customers request changes by writing in their account.
+The Grow plan is $29/month or $290/year for four coherent marketing updates per Central calendar month with same-business-day turnaround and Google reviews shown on the site. New pages, blog posts, and local SEO setup are included. Customers request changes by writing in their account.
 
 Compare those terms with the list you made, then do the same for any other service. Included work is useful when it matches work you need. If you already have someone who keeps the website current, paying a separate provider to do those same edits may not be your preferred arrangement.
 

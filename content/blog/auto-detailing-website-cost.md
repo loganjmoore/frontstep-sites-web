@@ -23,7 +23,7 @@ As of September 2026, Wix Light costs $17/month billed yearly, or $204/year, and
 
 DIY fits when you want direct control and have time to write package descriptions, arrange images, and check the site on your phone. Your subscription does not do those jobs for you. Count the evenings you will spend maintaining the site alongside the money you pay.
 
-[Front Step Sites](/) costs $99 a year with the domain included and no setup fee. The domain is registered in your own name, and the $99 plan includes two change requests a month, made within two business days. That gives you a concrete baseline for comparing a managed website with doing the work yourself.
+[Front Step Sites](/) costs $99 a year with the domain included and no setup fee. The domain is registered in your own name, and the $99 plan includes four coherent marketing updates per Central calendar month, made within two business days. That gives you a concrete baseline for comparing a managed website with doing the work yourself.
 
 Typical freelancer and agency projects can range from a few thousand dollars to substantially more as custom design, content, and connections to other systems expand. A freelancer can suit a defined project with one main contact. An agency may suit a larger shop coordinating several kinds of marketing. Ask each provider to separate initial work from ongoing charges.
 
