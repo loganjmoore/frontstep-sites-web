@@ -130,6 +130,8 @@ test("priority article and hub changes are present in generated HTML", () => {
 
 test("October 13 AI strategy changes are present in their citation surfaces", () => {
   const pestReviews = read("blog/pest-control-get-more-reviews/index.html");
+  assert.doesNotMatch(pestReviews, /within an hour of the job/);
+  assert.match(pestReviews, /Keep the invitation optional and provide a direct review link/);
   assert.match(pestReviews, /<p class="direct-answer">A pest control review request is an optional invitation/);
   assert.match(pestReviews, /<ol>\s*<li><strong>After treatment completion:<\/strong>/);
   for (const moment of ["After treatment completion", "After a follow-up visit", "After a recurring plan renewal"]) {
@@ -391,7 +393,7 @@ test("AI strategy articles lead with the requested direct answers and related li
 
   const pest = read("blog/pest-control-get-more-reviews/index.html");
   assert.match(pest, /<h2 id="how-to-get-more-google-reviews-for-pest-control">How to get more Google reviews for pest control<\/h2>/);
-  assert.match(pest, /Pest control customers leave reviews when you ask by text within an hour of the job and make the link a single tap\./);
+  assert.match(pest, /Ask for an honest review once the customer can describe the service milestone you have chosen\./);
   assert.match(pest, /href="\/blog\/pest-control-google-business-profile\/"/);
   assert.match(pest, /href="\/blog\/pest-control-local-seo-checklist\/"/);
 
