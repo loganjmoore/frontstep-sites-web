@@ -6,12 +6,22 @@ cluster: "compare"
 answer: "Yes. Canva supports multipage websites, so needing service, about and contact pages does not rule it out. Before choosing it, test your domain, customer enquiry path and ongoing updates in the plan you intend to use. The decision is whether you want to maintain the site yourself or pay a service to do that work."
 lead: "Canva Websites is a page builder inside Canva with one-page and multipage website templates."
 published: "2026-10-03"
-updated: "2026-10-11"
+updated: "2026-10-13"
 image: "/assets/blog/can-you-run-a-business-website-on-canva-cover.svg"
 imageAlt: "Cover for Can you run a business website on Canva"
 ---
 
 Canva is where many owners already make flyers, menus and business cards, so building a website there may be a familiar next step. A useful business site still needs to help a customer understand your services and contact you. Test that journey before you commit to any builder.
+
+## Canva Websites review: pros, cons, and verdict
+
+**Pros:** Canva has a familiar drag-and-drop editor, supports one-page and multipage sites, and lets an owner reuse approved words, images, graphics, and video from their Canva work. It can fit a simple brochure site when the same person is willing to maintain it.
+
+**Cons:** The owner still has to write and verify the service details, test the contact route, check domain and renewal arrangements, inspect each important page's title and description, and keep the published site current. A familiar design editor does not remove those business and maintenance jobs.
+
+**Verdict:** Canva Websites works best for an owner who already likes Canva, needs a straightforward site, and can test the exact publishing and update workflow in the intended plan. A done-for-you service fits better when writing, building, and ongoing edits are work the owner wants to hand off.
+
+Examples should be tested with the owner's real needs rather than copied from an unrelated showcase. A solo service business can prototype a home, services, about, and contact journey; a business that needs booking, payment, a large catalogue, or unusual data should prove those requirements in a sample before choosing Canva.
 
 ## Can Canva build a multipage business website?
 

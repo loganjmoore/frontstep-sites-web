@@ -53,6 +53,12 @@ header nav a.hide-sm{display:none}
 .btn-on-dark{background:var(--yellow);color:var(--ink);border-color:var(--yellow)}
 .btn-on-dark:hover{box-shadow:0 3px 0 var(--rail)}
 .btn-secondary:hover{background:var(--ground)}
+@media(max-width:520px){
+  header .wrap{gap:.6rem}
+  .brand{font-size:1.05rem;gap:.4rem}
+  .brand svg{width:30px;height:30px}
+  header .btn{padding:0 .7rem;font-size:.88rem}
+}
 
 /* hero + shelf */
 .hero{padding:20px 0 0}
@@ -74,6 +80,16 @@ header nav a.hide-sm{display:none}
   .scope-part + .scope-part{border-top:0;border-left:1px solid var(--line);padding-left:20px}
   .hub-links{grid-column:1/-1}
 }
+.website-basics h2 + p{margin-top:.8rem}
+.website-basics p{max-width:65ch;color:var(--ink-2)}
+.website-basics h2:not(:first-child){margin-top:2.5rem}
+.creator-list{margin:1.2rem 0 1.5rem;padding-left:1.4rem;max-width:70ch}
+.creator-list li{margin:.55rem 0}
+.creator-table{overflow-x:auto;margin-top:1rem}
+.creator-table table{width:100%;min-width:680px;border-collapse:collapse;background:var(--tag);border:1.5px solid var(--ink)}
+.creator-table th,.creator-table td{padding:.75rem;text-align:left;vertical-align:top;border-bottom:1px solid var(--line)}
+.creator-table th{background:var(--yellow);font-size:.88rem}
+.creator-table tr:last-child td{border-bottom:0}
 .shelf{position:relative;margin-top:40px;padding-bottom:36px}
 .shelf .tags{display:grid;gap:40px;align-items:start;position:relative;z-index:1}
 @media(min-width:860px){.shelf .tags{grid-template-columns:1fr 1.22fr 1fr;gap:28px}}
@@ -216,7 +232,7 @@ footer p{color:var(--ink-2);font-size:.92rem}
       <a class="hide-sm" href="#box">What you get</a>
       <a class="hide-sm" href="#leaving">Leaving</a>
       <a class="hide-sm" href="/blog/">Blog</a>
-      <a class="btn btn-primary" href="https://app.frontstepsites.com/get-started">Get started</a>
+      <a class="btn btn-primary" href="https://app.frontstepsites.com/get-started">Start Launch — $99/yr</a>
     </nav>
   </div>
 </header>
@@ -227,7 +243,8 @@ footer p{color:var(--ink-2);font-size:.92rem}
     <h1 id="h1">We build your website. We keep it running. You just ask.</h1>
     <p class="lead">Front Step Sites is a done-for-you website service for small businesses in the United States: we build, host, and maintain your site on the $99/yr Launch plan, with a domain included.</p>
     <div class="hero-cta">
-      <a class="btn btn-primary" href="https://app.frontstepsites.com/get-started">Start your site</a>
+      <a class="btn btn-primary" href="https://app.frontstepsites.com/get-started">Start Launch — $99/yr</a>
+      <p>Next: secure checkout for the $99/year Launch plan; after payment, sign in and complete the 10-minute business questionnaire.</p>
     </div>
 
     <div class="offer-scope" aria-label="What Front Step Sites does and does not do">
@@ -301,6 +318,34 @@ footer p{color:var(--ink-2);font-size:.92rem}
     </form>
   </div>
   <svg class="barcode" style="margin-top:80px" aria-hidden="true"><use href="#bars"/></svg>
+</section>
+
+<section class="website-basics" aria-labelledby="website-definition">
+  <div class="wrap">
+    <h2 id="website-definition">What is a website?</h2>
+    <p>A website is a set of linked pages on a domain name that people open in a browser. A small-business website usually explains what the business does, where it works, and how a customer can call or send an inquiry. Read <a href="/blog/what-is-a-website-four-parts/">the four parts of a website</a> for a plain-English explanation.</p>
+
+    <h2 id="best-website-creators">Best website creators for a small business</h2>
+    <p>The best website creator depends on who will build and update the pages. This ranking is for a local owner who wants a useful business site finished and kept current; owners who want to edit every detail themselves may rank the self-serve builders first.</p>
+    <ol class="creator-list">
+      <li><strong>Front Step Sites:</strong> best for handing off the writing, build, hosting, and routine changes.</li>
+      <li><strong>Wix:</strong> best for an owner who wants a flexible visual editor and will make each update.</li>
+      <li><strong>Squarespace:</strong> best for an owner who wants structured templates and will make each update.</li>
+      <li><strong>Google Sites:</strong> best for a few simple pages tied to a Google account.</li>
+    </ol>
+    <div class="creator-table" role="region" aria-label="Website creator comparison" tabindex="0">
+      <table>
+        <thead><tr><th>Creator</th><th>Price confirmed in our guides</th><th>Best-fit feature</th><th>Test before choosing</th></tr></thead>
+        <tbody>
+          <tr><td>Front Step Sites</td><td>$99/year, domain included</td><td>Done-for-you build and maintenance</td><td>Review the questionnaire, included changes, and exit terms</td></tr>
+          <tr><td>Wix</td><td>Light from $17/month billed yearly, checked September 2026</td><td>Flexible self-serve editor</td><td>Make a service update and check the published mobile page</td></tr>
+          <tr><td>Squarespace</td><td>Basic $19/month billed annually</td><td>Structured self-serve templates</td><td>Change navigation, contact details, and a service page</td></tr>
+          <tr><td>Google Sites</td><td>Google account, no plan to pick</td><td>Simple pages published quickly</td><td>Check domain setup, page titles, contact route, and mobile navigation</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>For more detail, compare the <a href="/blog/best-web-builder-sites-for-a-small-business/">best website builders for a small business</a> and the work involved in <a href="/blog/website-builders-vs-done-for-you-websites/">website builders versus done-for-you websites</a>.</p>
+  </div>
 </section>
 
 <section id="box" class="white" aria-labelledby="box-h">

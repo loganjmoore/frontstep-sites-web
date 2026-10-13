@@ -18,7 +18,13 @@ header.site nav a:not(.btn){text-decoration:none}
 header.site nav a:not(.btn):hover{text-decoration:underline}
 .btn{display:inline-flex;align-items:center;min-height:44px;padding:0 1rem;border-radius:3px;background:var(--ink);color:var(--yellow);font-weight:700;text-decoration:none}
 .btn:hover{box-shadow:0 3px 0 var(--rail-deep)}
-@media(max-width:640px){header.site nav .hide-sm{display:none}}
+@media(max-width:640px){
+  header.site nav .hide-sm{display:none}
+  header.site .wrap{gap:.5rem}
+  header.site .brand{gap:.35rem;font-size:.95rem}
+  header.site .brand svg{width:28px;height:28px}
+  header.site .btn{padding:0 .6rem;font-size:.82rem;white-space:nowrap}
+}
 main.read{padding:48px 0 72px}
 .doc{background:var(--tag);border:1.5px solid var(--ink);box-shadow:0 2px 0 rgba(0,0,0,.18);padding:clamp(20px,4vw,44px);max-width:760px}
 .doc .kicker{font-size:.78rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-2)}

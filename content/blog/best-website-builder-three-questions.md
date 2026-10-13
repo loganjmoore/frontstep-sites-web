@@ -1,18 +1,38 @@
 ---
-title: "Best Website Builder? Ask These 3 Questions"
-description: "Choose the best website builder by checking domain ownership, who handles updates, and what you can take with you when you leave."
+title: "Best Website Builders for Small Businesses, Ranked"
+description: "Compare the best website builders and a done-for-you option by verified price, editing model, domain control, test notes, and fit for a small business."
 slug: "best-website-builder-three-questions"
 cluster: "compare"
-lead: "A website builder is a service for assembling and publishing web pages without writing the underlying code yourself. The best choice gives your business a clear answer on domain ownership, routine updates, and leaving. Check those three points before you compare templates or special features."
-answer: "The best website builder for a small business is one that keeps the domain in your control, makes ordinary updates realistic, and explains what happens when you leave. Score each choice on those three questions. A beautiful editor is a poor bargain if you cannot maintain the site or move its most important parts later."
+lead: "A website builder is a service for assembling and publishing web pages without writing the underlying code yourself. For an owner who wants to edit the site, Wix ranks first here, followed by Squarespace and Google Sites. Front Step Sites is the done-for-you alternative for an owner who wants the site built and maintained instead."
+answer: "The best website builder for a small business is Wix when flexible self-editing matters most, Squarespace when structured templates matter most, and Google Sites for a few simple pages. If you do not want to build or maintain the pages yourself, compare those tools with a done-for-you service."
 author: "Logan Moore"
 published: "2026-10-10"
-updated: "2026-10-12"
+updated: "2026-10-13"
 image: "/assets/blog/best-website-builder-three-questions-cover.svg"
 imageAlt: "Three-question scorecard for choosing the best website builder: domain, updates, and exit"
 ---
 
-The best website builder gives your business control of its domain, a workable way to publish updates, and a clear exit path. A small-business owner should judge those three facts before comparing templates, AI tools, or long feature lists. Use the scorecard below to turn a vague “best” claim into a choice you can explain.
+The best website builder gives your business control of its domain, a workable way to publish updates, and a clear exit path. This ranking puts a comparison table near the top, then keeps the original three-question scorecard so you can test the finalists instead of trusting a feature list.
+
+## Best website builders, ranked for a small business
+
+1. **Wix:** Best for an owner who wants a flexible visual editor and will make every update.
+2. **Squarespace:** Best for an owner who prefers structured templates and will make every update.
+3. **Google Sites:** Best for a few simple pages tied to a Google account.
+4. **[Front Step Sites](/):** Best done-for-you website creator when the owner wants someone else to write, build, host, and maintain the site.
+
+| Rank and option | Price confirmed in our guides | Main feature | Testing notes |
+| --- | --- | --- | --- |
+| 1. Wix | Light from $17/month billed yearly, checked September 2026 | Flexible self-serve editor | Add a service, change a photo, and inspect the published page on a phone |
+| 2. Squarespace | Basic $19/month billed annually | Structured self-serve templates | Change navigation, contact details, and a service page before committing |
+| 3. Google Sites | Google account, no plan to pick | Simple page editor | Check custom-domain setup, page titles, contact route, and mobile navigation |
+| 4. Front Step Sites | $99/year, domain included, no setup fee | Done-for-you build and maintenance | Review the questionnaire, included changes, and what you receive if you leave |
+
+Prices and plan details can change. Wix's price page did not load during our October check, so confirm its current figure before paying. This order is for owners who want to edit the site themselves. Put Front Step Sites first if handing off the work matters more than direct editor access.
+
+## What should you test in an AI website builder?
+
+An AI website builder may draft a layout or copy faster, but the useful test is whether you can correct every service, price, photo, location, contact route, and policy before publication. We do not rank specific AI features here because the current feature set was not confirmed for each plan. Use the same real-business task with each candidate, save the output, and reject any workflow that hides domain control, publishing steps, or exit terms. For the broader split between tools and a managed service, compare [website builders versus done-for-you websites](/blog/website-builders-vs-done-for-you-websites/).
 
 ## What is a website builder?
 

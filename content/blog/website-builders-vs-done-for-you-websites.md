@@ -8,12 +8,12 @@ answer: A done-for-you site starts at $99 a year with the domain included, and a
 lead: Front Step Sites is a done-for-you website service for small businesses in the US, at $99 a year with the domain included and no setup fee.
 sitePlanner: false
 published: 2026-10-03
-updated: "2026-10-11"
+updated: "2026-10-13"
 ---
 
 Should you build your business website yourself or pay someone to handle it? A website builder is a do-it-yourself tool for making your own pages, and a done-for-you website is a site a provider designs, writes, and maintains for you. A builder makes sense when you have the interest and time to use it; a done-for-you service makes sense when you want help getting the work finished. The important difference is who does the writing, checking, and updating after you choose a design.
 
-## Best website options for a small local business
+## Best website builders and services for a small local business
 
 1. **Done-for-you service:** Best when you want someone else to write, build, and maintain the pages from your facts and approvals.
 2. **Wix:** Best when you want a flexible visual editor and plan to make every update yourself.
@@ -28,6 +28,10 @@ Should you build your business website yourself or pay someone to handle it? A w
 | Google Sites | A basic page editor tied to a Google account | You |
 
 This ranking is for a typical local owner who wants a useful site finished and maintained. If direct editing control matters more, put Wix or Squarespace first. The brief builder above helps you define the pages before choosing the tool or service.
+
+## What does an AI website builder do?
+
+An AI website builder can draft layouts and words from a prompt, but the owner still has to confirm every service, price, photo, contact route, and policy before publishing. The best website builder AI workflow is one you can test with real business facts, correct when it guesses, and maintain after launch. If the site needs a business-specific workflow instead of standard pages, read when [website development in HTML and custom code fits](/blog/html-website-development-when-custom-code-fits/).
 
 ## Start with what your customers need to do
 

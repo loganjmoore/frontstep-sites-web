@@ -6,7 +6,7 @@ cluster: "guides"
 lead: "A website is a collection of linked web pages and files that people open under one domain name. A small-business website combines four practical parts: the domain, hosting, pages, and the content customers read or use."
 answer: "A website is a group of connected web pages and resources published under a shared domain name. The domain is its human-readable address, hosting delivers its files, pages organize the information, and content supplies the words, images, forms, and other material visitors use."
 author: "Logan Moore"
-updated: "2026-10-06"
+updated: "2026-10-13"
 image: "/assets/blog/what-is-a-website-four-parts-cover.svg"
 imageAlt: "Diagram showing the four parts of a website: domain, hosting, pages, and content"
 ---
@@ -80,7 +80,7 @@ A small-business website usually does not need custom software when its main job
 
 It also does not need a page for every town when each page would repeat the same vague text. One accurate service-area explanation can be more useful. New pages earn their place by answering a different question, describing a real service, or supporting a distinct customer action.
 
-Ownership is simpler than technical sophistication. Know who controls the domain, who updates the content, and who receives form messages. The [builder versus done-for-you guide](/blog/website-builders-vs-done-for-you-websites/) can help you choose who handles the work after launch.
+Ownership is simpler than technical sophistication. Know who controls the domain, who updates the content, and who receives form messages. The [builder versus done-for-you guide](/blog/website-builders-vs-done-for-you-websites/) can help you choose who handles the work after launch. If you would rather hand off the writing, build, hosting, and updates, see the [done-for-you website creator from Front Step Sites](/).
 
 ## Frequently asked questions
 

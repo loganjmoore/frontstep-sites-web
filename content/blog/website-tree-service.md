@@ -3,9 +3,24 @@ title: "Tree service: what your website needs"
 description: "A tree service website should explain removals, pruning, stump work, access, and cleanup so local property owners know when to call and what to expect."
 slug: "website-tree-service"
 cluster: "trades/tree-service"
+resourceTool: "starter"
+launchCtaInBody: "true"
 answer: "A tree service website should separate urgent damage calls from planned pruning, removal, and stump work. Show your service area, real projects, and verifiable qualifications, then explain assessment, access, and cleanup. Make the phone number easy to use and avoid promising an arrival time, diagnosis, or removal price before you understand the job."
-updated: "2026-09-26"
+updated: "2026-10-13"
 ---
+
+## What a tree service website needs before launch
+
+The starter above is a fictional/private preview, not a customer example. Enter a made-up business or your own facts and real services. It creates a preview and downloadable file on this device; it does not publish a site, change an account, send the form data, or intentionally persist the answers. Your browser may restore form values on refresh as normal page state.
+
+| Page or proof | Business facts the owner supplies | Customer action to test |
+| --- | --- | --- |
+| Homepage | Real tree services, service area, ordinary and urgent contact routes, and honest availability | On a phone, identify the right service and use the intended call or estimate route |
+| Service pages | Actual removal, pruning, stump, storm, or consultation work and what each estimate covers | Open the relevant service from navigation and return without losing the contact route |
+| Project proof | Approved project photos, accurate captions, cleanup scope, and current verifiable qualifications | Confirm each photo and claim matches a real record and reveals no private customer detail |
+| Contact or estimate route | Reachable phone or email, service area, safe photo guidance, and the response process | Send a labeled test inquiry or place a test call and confirm the business receives it |
+
+{{launch-cta}}
 
 One visitor has a fallen limb blocking a driveway; another wants a large backyard tree assessed before planning a patio. What should your tree service website show to help both people? Give them separate, clear routes to urgent contact and planned estimates, with enough detail to understand the work you actually handle.
 

@@ -37,7 +37,13 @@ header.site nav a:not(.btn){text-decoration:none}
 header.site nav a:not(.btn):hover{text-decoration:underline}
 .btn{display:inline-flex;align-items:center;min-height:44px;padding:0 1rem;border-radius:3px;background:var(--ink);color:var(--yellow);font-weight:700;text-decoration:none}
 .btn:hover{box-shadow:0 3px 0 var(--rail-deep)}
-@media(max-width:640px){header.site nav .hide-sm{display:none}}
+@media(max-width:640px){
+  header.site nav .hide-sm{display:none}
+  header.site .wrap{gap:.5rem}
+  header.site .brand{gap:.35rem;font-size:.95rem}
+  header.site .brand svg{width:28px;height:28px}
+  header.site .btn{padding:0 .6rem;font-size:.82rem;white-space:nowrap}
+}
 main.read{padding:48px 0 72px}
 .doc{background:var(--tag);border:1.5px solid var(--ink);box-shadow:0 2px 0 rgba(0,0,0,.18);padding:clamp(20px,4vw,44px);max-width:760px}
 .doc .kicker{font-size:.78rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-2)}
@@ -103,8 +109,27 @@ footer.site a{color:var(--ink)}
 .doc tbody tr:last-child td{border-bottom:0}
 .doc pre{max-width:100%;overflow-x:auto;margin:1.2rem 0 1.7rem;padding:1rem;border:1.5px solid var(--ink);background:var(--ink);color:var(--tag);font:0.9rem/1.55 ui-monospace,SFMono-Regular,Consolas,monospace;white-space:pre}
 .doc code{font-family:ui-monospace,SFMono-Regular,Consolas,monospace}
+
+/* interactive article demo */
+.site-plan{margin:1.5rem 0 2rem;padding:1.15rem;border:1.5px solid var(--ink);background:var(--tag)}
+.site-plan h2{margin-top:0}
+.site-plan form{display:grid;gap:.85rem;margin-top:1rem}
+.site-plan label{display:grid;gap:.3rem;font-weight:700}
+.site-plan input,.site-plan select{width:100%;min-height:46px;padding:.55rem .65rem;border:1.5px solid var(--ink);border-radius:3px;background:#fff;color:var(--ink);font:inherit}
+.site-plan .btn{justify-self:start;background:var(--yellow);color:var(--ink)}
+.site-plan-output{margin-top:1rem;padding-top:1rem;border-top:1.5px dashed var(--ink)}
+.site-plan-output h3{margin-top:0}
+.site-plan-output ol{margin-bottom:.8rem}
+@media(min-width:760px){.site-plan form{grid-template-columns:1fr 1fr}.site-plan label:last-of-type{grid-column:1/-1}.site-plan .btn{grid-column:1/-1}}
+.site-plan iframe{width:100%;height:460px;border:1px solid var(--ink);background:#fff}
+.site-plan .resource-help{grid-column:1/-1;margin:0;font-size:.85rem}
+.site-plan pre{white-space:pre-wrap;overflow-wrap:anywhere;font-size:.85rem}
+.site-plan button:disabled{opacity:.55;cursor:not-allowed}
+.site-plan [role="alert"]{color:#9c241c}
+.site-plan a.btn{display:inline-flex;margin-top:1rem}
+.site-plan textarea{width:100%;padding:.55rem .65rem;border:1.5px solid var(--ink);border-radius:3px;background:#fff;color:var(--ink);font:inherit}
 </style>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"Tree service: what your website needs","description":"A tree service website should explain removals, pruning, stump work, access, and cleanup so local property owners know when to call and what to expect.","datePublished":"2026-09-26","dateModified":"2026-09-26","author":{"@type":"Organization","name":"Front Step Sites","url":"https://frontstepsites.com/","description":"Front Step Sites (frontstepsites.com) is unrelated to FRONTSTEPS, the property-management/HOA software company."},"publisher":{"@type":"Organization","name":"Front Step Sites","url":"https://frontstepsites.com/","description":"Front Step Sites (frontstepsites.com) is unrelated to FRONTSTEPS, the property-management/HOA software company."},"mainEntityOfPage":{"@type":"WebPage","@id":"https://frontstepsites.com/blog/website-tree-service/"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"Tree service: what your website needs","description":"A tree service website should explain removals, pruning, stump work, access, and cleanup so local property owners know when to call and what to expect.","datePublished":"2026-10-13","dateModified":"2026-10-13","author":{"@type":"Organization","name":"Front Step Sites","url":"https://frontstepsites.com/","description":"Front Step Sites (frontstepsites.com) is unrelated to FRONTSTEPS, the property-management/HOA software company."},"publisher":{"@type":"Organization","name":"Front Step Sites","url":"https://frontstepsites.com/","description":"Front Step Sites (frontstepsites.com) is unrelated to FRONTSTEPS, the property-management/HOA software company."},"mainEntityOfPage":{"@type":"WebPage","@id":"https://frontstepsites.com/blog/website-tree-service/"}}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://frontstepsites.com/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://frontstepsites.com/blog/"},{"@type":"ListItem","position":3,"name":"Tree Service","item":"https://frontstepsites.com/blog/trades/tree-service/"}]}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Should I put storm cleanup on the homepage year-round?","acceptedAnswer":{"@type":"Answer","text":"Yes, if it is a service you actually provide, with accurate availability. Keep the urgent contact route distinct from routine estimate requests. Remove claims about immediate response when you cannot support them."}},{"@type":"Question","name":"Can I quote tree removal from photos?","acceptedAnswer":{"@type":"Answer","text":"Photos may help you understand an inquiry, but they may not show the access and site conditions needed for a firm price. Explain your own assessment process honestly. Never encourage a customer to approach a hazardous tree for a better picture."}},{"@type":"Question","name":"Do I need separate pages for stump grinding and removal?","acceptedAnswer":{"@type":"Answer","text":"Separate pages help when you offer both and have enough useful information to explain each. At minimum, separate the scope clearly on your main service page. Customers should understand whether stump work is included before accepting an estimate."}}]}</script>
 <script defer src="/analytics-consent.js"></script>
@@ -116,15 +141,48 @@ footer.site a{color:var(--ink)}
   <nav>
     <a class="hide-sm" href="/blog/">Blog</a>
     <a class="hide-sm" href="https://app.frontstepsites.com/login">Sign in</a>
-    <a class="btn" href="https://app.frontstepsites.com/get-started">Get started</a>
+    <a class="btn" href="https://app.frontstepsites.com/get-started">Start Launch — $99/yr</a>
   </nav>
 </div></header>
 <main class="read"><div class="wrap">
 <article class="doc">
 <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a><span class="sep">&rsaquo;</span><a href="/blog/">Blog</a><span class="sep">&rsaquo;</span><a href="/blog/trades/tree-service/">Tree Service</a></nav>
 <h1>Tree service: what your website needs</h1>
-<p class="updated">Updated September 26, 2026</p>
+<p class="updated">Updated October 13, 2026</p>
 <aside class="tag-box"><span class="label">Short answer</span><p>A tree service website should separate urgent damage calls from planned pruning, removal, and stump work. Show your service area, real projects, and verifiable qualifications, then explain assessment, access, and cleanup. Make the phone number easy to use and avoid promising an arrival time, diagnosis, or removal price before you understand the job.</p></aside>
+<section class="site-plan" data-website-resource="starter" aria-labelledby="website-resource-title">
+  <h2 id="website-resource-title">Build a downloadable website starter</h2>
+  <p>Use a made-up business or your own business name, service area, contact route, and real services to make a private local preview. Then download an HTML file you can open in a browser or edit.</p>
+  <p>This uses a fixed template; it does not call AI or publish a website. Your answers stay in this page and the file you download. They are not sent or saved. Optional analytics records only the public resource action.</p>
+  <form>
+    <label>Business name<input name="businessName" required maxlength="80" autocomplete="organization" placeholder="Example Tree Care"></label>
+    <label>Trade or business type<input name="trade" required maxlength="80" placeholder="Tree care"></label>
+    <label>City or service area<input name="city" required maxlength="100" placeholder="Tulsa"></label>
+    <label>State abbreviation<input name="state" required minlength="2" maxlength="2" pattern="[A-Za-z]{2}" placeholder="OK"></label>
+    <label>Customer phone or email<input name="contact" required maxlength="254" placeholder="202-555-0123"></label>
+    <label>Services, one per line<textarea name="services" aria-describedby="website-services-help" required maxlength="1000" rows="4" placeholder="Tree pruning&#10;Storm cleanup"></textarea></label>
+    <p class="resource-help" id="website-services-help">One to eight services, up to 150 characters per line and 1,000 characters total.</p>
+    <button class="btn" type="submit">Build my website starter</button>
+  </form>
+  <p data-resource-error role="alert" tabindex="-1"></p>
+  <div data-resource-output class="site-plan-output" tabindex="-1" hidden>
+    <h3>Your website preview</h3>
+    <iframe sandbox="" title="Your generated website preview"></iframe>
+    <p>The file includes your services and a phone or email link. It has no contact-form delivery, booking, payment or hosting. Check every detail before publishing.</p>
+    <button class="btn" data-resource-download type="button" disabled>Download website HTML</button>
+    <p>Prefer a finished site and ongoing changes? <a href="https://app.frontstepsites.com/get-started">Start with FrontStep’s existing plans</a>.</p>
+  </div>
+  <noscript><p>This local tool needs JavaScript. The guide below and our <a href="https://app.frontstepsites.com/get-started">existing signup flow</a> remain available.</p></noscript>
+  </section>
+<h2 id="what-a-tree-service-website-needs-before-launch">What a tree service website needs before launch</h2>
+<p>The starter above is a fictional/private preview, not a customer example. Enter a made-up business or your own facts and real services. It creates a preview and downloadable file on this device; it does not publish a site, change an account, send the form data, or intentionally persist the answers. Your browser may restore form values on refresh as normal page state.</p>
+<div class="table-wrap"><table><thead><tr><th>Page or proof</th><th>Business facts the owner supplies</th><th>Customer action to test</th></tr></thead><tbody><tr><td>Homepage</td><td>Real tree services, service area, ordinary and urgent contact routes, and honest availability</td><td>On a phone, identify the right service and use the intended call or estimate route</td></tr><tr><td>Service pages</td><td>Actual removal, pruning, stump, storm, or consultation work and what each estimate covers</td><td>Open the relevant service from navigation and return without losing the contact route</td></tr><tr><td>Project proof</td><td>Approved project photos, accurate captions, cleanup scope, and current verifiable qualifications</td><td>Confirm each photo and claim matches a real record and reveals no private customer detail</td></tr><tr><td>Contact or estimate route</td><td>Reachable phone or email, service area, safe photo guidance, and the response process</td><td>Send a labeled test inquiry or place a test call and confirm the business receives it</td></tr></tbody></table></div>
+<aside class="tag-box tag-offer">
+  <span class="label">Front Step Sites &middot; Launch</span>
+  <p>$99/yr, domain included, no setup fee.</p>
+  <a class="btn" href="https://app.frontstepsites.com/get-started">Start Launch — $99/yr</a>
+  <p>Next: secure checkout for the $99/year Launch plan; after payment, sign in and complete the 10-minute business questionnaire.</p>
+</aside>
 <p>One visitor has a fallen limb blocking a driveway; another wants a large backyard tree assessed before planning a patio. What should your tree service website show to help both people? Give them separate, clear routes to urgent contact and planned estimates, with enough detail to understand the work you actually handle.</p>
 <h2 id="make-the-first-screen-useful-in-a-hurry">Make the first screen useful in a hurry</h2>
 <p>Start with your main services and the towns you cover. A headline such as "Tree removal, pruning, and stump grinding in your area" works only if you provide all those services. Put a working phone button beside it and a separate option to request a planned estimate.</p>
@@ -161,11 +219,7 @@ footer.site a{color:var(--ink)}
 <h2 id="the-short-version">The short version</h2>
 <p>Make urgent contact easy while giving planned tree work a clear estimate process. Explain services, qualifications, access, and cleanup with evidence you can support. If you want help putting those details online, <a href="/">Front Step Sites</a> offers websites for $99 a year with the domain included and no setup fee.</p>
 
-<aside class="tag-box tag-offer">
-  <span class="label">Front Step Sites &middot; Launch</span>
-  <p>$99/yr, domain included, no setup fee.</p>
-  <a class="btn" href="https://app.frontstepsites.com/get-started">Get started</a>
-</aside>
+
 <div class="related"><h2>Related articles</h2><ul><li><a href="/blog/tree-service-website-cost/">Tree service website cost in 2026</a><p>A tree service website should make routine estimates and urgent calls easy without overstating your availability or qualifications. Its cost depends on the content, support, and custom tools you need. Compare the total first-year and recurring bills, then prioritize clear service scope, genuine project evidence, domain control, and working contact options.</p></li><li><a href="/blog/tree-service-more-calls-from-google/">Tree service: get more calls from Google</a><p>To get more suitable tree service calls from Google, keep your Business Profile accurate and give pruning, removal, stump work, and storm response clear explanations. Show real project experience and ask for honest reviews. Make coverage, availability, and assessment steps easy to find so customers understand whether to call now or request a planned visit.</p></li><li><a href="/blog/tree-service-google-business-profile/">Tree service: Google Business Profile</a><p>A tree service Google Business Profile should distinguish removal, pruning, stump work, and urgent storm inquiries while accurately describing your coverage and hours. Show genuine projects and current credentials without overstating them. Keep your contact route clear, explain what requires an assessment, and review the listing regularly as your services and availability change.</p></li><li><a href="/blog/tree-service-local-seo-checklist/">Local SEO checklist for tree services</a><p>Local SEO for a tree service starts with accurate listings and useful pages for removal, pruning, stump grinding, and any other work you actually offer. Describe your real coverage, show relevant projects, and request honest reviews. Check the phone and estimate routes so people who find you can reach the right person.</p></li></ul></div>
 </article>
 </div></main>
@@ -174,5 +228,6 @@ footer.site a{color:var(--ink)}
   <span><a href="/blog/">Blog</a> &middot; <a href="/privacy/">Privacy</a> &middot; <a href="/terms/">Terms</a> &middot; <a href="https://app.frontstepsites.com/login">Customer sign in</a></span>
   <span class="disambig">Front Step Sites (frontstepsites.com) is unrelated to FRONTSTEPS, the property-management/HOA software company.</span>
 <address style="font-style: normal; font-size: 14px; line-height: 1.6; margin-top: 16px;"><strong>Mailing address</strong><br />3060 Mercer University Dr Ste 110<br />Atlanta, GA 30341</address></div></footer>
+<script type="module" src="/assets/website-resources.mjs"></script>
 </body>
 </html>
