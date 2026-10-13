@@ -129,6 +129,16 @@ test("priority article and hub changes are present in generated HTML", () => {
 });
 
 test("October 13 AI strategy changes are present in their citation surfaces", () => {
+  const pestReviews = read("blog/pest-control-get-more-reviews/index.html");
+  assert.match(pestReviews, /<p class="direct-answer">A pest control review request is an optional invitation/);
+  assert.match(pestReviews, /<ol>\s*<li><strong>After treatment completion:<\/strong>/);
+  for (const moment of ["After treatment completion", "After a follow-up visit", "After a recurring plan renewal"]) {
+    assert.match(pestReviews, new RegExp(moment));
+  }
+  for (const slug of ["pest-control-local-seo-checklist", "pest-control-google-business-profile"]) {
+    assert.match(pestReviews, new RegExp(`href="/blog/${slug}/"`));
+  }
+
   const domain = read("blog/who-owns-your-domain-name-and-why-it-matters/index.html");
   assert.match(domain, /How to check who owns your domain right now/);
   assert.match(domain, /<ol>/);
