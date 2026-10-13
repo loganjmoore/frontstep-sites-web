@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img" aria-label="Website hosting and maintenance cost breakdown showing a $99 yearly plan split across domain, hosting and SSL, and routine changes">
+  <rect width="1200" height="630" fill="#eceeec"/>
+  <rect x="46" y="46" width="1120" height="550" fill="#111312"/>
+  <rect x="40" y="40" width="1120" height="550" fill="#ffffff" stroke="#111312" stroke-width="3"/>
+  <g transform="translate(1030,66)">
+    <rect width="34" height="34" fill="#ffd60a"/>
+    <path d="M6 27h22v-5H17v-5h-5v-5H6z" fill="#111312"/>
+  </g>
+  <text x="80" y="98" font-family="Arial, sans-serif" font-size="22" font-weight="700" letter-spacing="2" fill="#474d4b">FRONT STEP SITES BLOG</text>
+  <text x="78" y="214" font-family="Arial, sans-serif" font-size="54" font-weight="800" fill="#111312">Hosting + maintenance</text>
+  <text x="80" y="276" font-family="Arial, sans-serif" font-size="40" font-weight="700" fill="#474d4b">What $99 a year covers</text>
+  <g transform="translate(80,374)">
+    <rect width="280" height="145" fill="#ffffff" stroke="#111312" stroke-width="2"/>
+    <text x="20" y="39" font-family="Arial, sans-serif" font-size="17" font-weight="700" letter-spacing="1" fill="#111312">DOMAIN</text>
+    <text x="20" y="82" font-family="Arial, sans-serif" font-size="23" font-weight="700" fill="#111312">Included</text>
+    <text x="20" y="113" font-family="Arial, sans-serif" font-size="18" fill="#474d4b">Registered in your name</text>
+  </g>
+  <g transform="translate(390,374)">
+    <rect width="330" height="145" fill="#ffffff" stroke="#111312" stroke-width="2"/>
+    <text x="20" y="39" font-family="Arial, sans-serif" font-size="17" font-weight="700" letter-spacing="1" fill="#111312">HOSTING + SSL</text>
+    <text x="20" y="82" font-family="Arial, sans-serif" font-size="23" font-weight="700" fill="#111312">Included</text>
+    <text x="20" y="113" font-family="Arial, sans-serif" font-size="18" fill="#474d4b">Renewals handled</text>
+  </g>
+  <g transform="translate(750,374)">
+    <rect width="365" height="145" fill="#ffd60a" stroke="#111312" stroke-width="2"/>
+    <text x="20" y="39" font-family="Arial, sans-serif" font-size="17" font-weight="700" letter-spacing="1" fill="#111312">ROUTINE CHANGES</text>
+    <text x="20" y="82" font-family="Arial, sans-serif" font-size="23" font-weight="700" fill="#111312">2 requests / month</text>
+    <text x="20" y="113" font-family="Arial, sans-serif" font-size="18" fill="#111312">Within 2 business days</text>
+  </g>
+</svg>
