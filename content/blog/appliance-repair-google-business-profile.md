@@ -29,7 +29,7 @@ Keep each service description within Google's working limits. Service names top 
 
 ## How do you show same-day or emergency availability honestly?
 
-Same-day availability belongs in two places: your special hours and your business description, and it should only say what's actually true on a normal week. If you run one truck service depends on how the schedule looks that morning, say "same-day service when available" rather than promising it outright. If you genuinely hold a slot open for urgent calls, like a flooding washer or a fridge that stopped cooling overnight, say that specifically instead of a generic "fast service" line.
+Same-day availability belongs in two places: your special hours and your business description, and it should only say what's actually true on a normal week. If you run one truck and same-day service depends on how the schedule looks that morning, say "same-day service when available" rather than promising it outright. If you genuinely hold a slot open for urgent calls, like a flooding washer or a fridge that stopped cooling overnight, say that specifically instead of a generic "fast service" line.
 
 Google doesn't have a dedicated "emergency repair" toggle for appliance businesses the way it does for some other categories, so this detail lives in your description and your posts. Use a post when you're intentionally holding extra same-day capacity, for example during a heat wave when refrigerator calls spike, and remove it once that's no longer true. A profile with a six-month-old "extra techs standing by this week" post reads as abandoned, not busy.
 

@@ -1,0 +1,107 @@
+{
+  "posts": [
+    {
+      "title": "Website Hosting and Maintenance: What $99 Covers",
+      "slug": "website-hosting-and-maintenance-what-99-covers",
+      "url": "https://frontstepsites.com/blog/website-hosting-and-maintenance-what-99-covers/",
+      "file": "content/blog/website-hosting-and-maintenance-what-99-covers.md",
+      "imagePath": "assets/blog/website-hosting-and-maintenance-what-99-covers-cover.svg",
+      "targetQuery": "website hosting and maintenance costs",
+      "evidenceRequest": {
+        "sourceFiles": [
+          {
+            "path": "index.html",
+            "excerpt": "<p class=\"lead\">Front Step Sites is a done-for-you website service for small businesses in the United States: we build, host, and maintain your site on the $99/yr Launch plan, with a domain included.</p>"
+          },
+          {
+            "path": "index.html",
+            "excerpt": "<span class=\"hole\" aria-hidden=\"true\"></span><header><span class=\"label\">Building your site</span><b>$0<small>no setup fee</small></b></header>\n        <ul>\n          <li>A 10-minute questionnaire. We write every word.</li>\n          <li>Built for phones first</li>\n          <li>Contact form that lands in your email</li>\n          <li>Linked to your Google Business Profile</li>\n          <li>Domain registered in your name</li>\n          <li>You approve it before it goes live</li>\n        </ul>"
+          },
+          {
+            "path": "index.html",
+            "excerpt": "<span class=\"hole\" aria-hidden=\"true\"></span><header><span class=\"label\">Launch, every year</span><b>$99<small>/yr</small></b></header>\n        <ul>\n          <li>Your domain, included and in your name</li>\n          <li>Hosting and SSL that never go to sleep</li>\n          <li>2 change requests a month</li>\n          <li>Changes live within 2 business days</li>\n          <li>Blog posts written for your area</li>\n          <li>Local SEO: Google-friendly setup for your town and services</li>\n          <li>Renewals handled, nothing to remember</li>\n        </ul>"
+          },
+          {
+            "path": "index.html",
+            "excerpt": "<details><summary>How do changes work?</summary><p>Sign in and open a request, like \"change Saturday hours to 8 to 2\" or \"swap the top photo for this one\". We make the change, publish it, and reply to you. Launch includes 2 requests a month, live within 2 business days. Grow is unlimited and same-day.</p></details>"
+          },
+          {
+            "path": "index.html",
+            "excerpt": "<details><summary>What isn't included?</summary><p>A full redesign, a new logo, an online store, booking, payments, or custom features. We'll quote those before anything costs extra.</p></details>"
+          }
+        ],
+        "example": {
+          "description": "Three current annual Launch payments added to produce a reproducible three-year subscription total.",
+          "operation": "sum",
+          "inputs": [
+            99,
+            99,
+            99
+          ],
+          "result": 297,
+          "excerpt": "The Front Step Sites Launch plan costs $297 over three years at the current published rate: $99 + $99 + $99 = $297. The domain is included each year, so this example has no separate domain-renewal line."
+        },
+        "references": [
+          {
+            "url": "https://csrc.nist.gov/pubs/sp/800/40/r4/final",
+            "supportingClaim": "The National Institute of Standards and Technology calls patching a critical part of preventive maintenance and says it helps prevent compromises, data breaches, operational disruptions, and other adverse events in its [enterprise patch management guidance](https://csrc.nist.gov/pubs/sp/800/40/r4/final).",
+            "sourceExcerpt": "Preventive maintenance through enterprise patch management helps prevent compromises, data breaches, operational disruptions, and other adverse events.",
+            "primarySourceRationale": "This is NIST Computer Security Resource Center's final public HTTPS page for NIST Special Publication 800-40 Revision 4. The exact excerpt appears in the page's abstract and supports only the general patch-management statement linked in the post."
+          }
+        ],
+        "claimRationale": "The checked-in product page supports the current $99 annual price, $0 setup fee, included domain, hosting, SSL, renewals, 2 monthly change requests, 2-business-day timing, and listed exclusions. Adding the same current annual price three times gives $99 + $99 + $99 = $297. This is a reproducible current-rate illustration, not proof of future pricing, savings against another provider, rankings, leads, uptime, security outcomes, or the value of an owner's time. The NIST reference supports only the general reason patching belongs in maintenance; it does not endorse Front Step Sites or establish this plan's maintenance scope."
+      }
+    },
+    {
+      "title": "Trade Business Website Examples: 8 Sections, in Order",
+      "slug": "trade-business-website-examples-8-sections-in-order",
+      "url": "https://frontstepsites.com/blog/trade-business-website-examples-8-sections-in-order/",
+      "file": "content/blog/trade-business-website-examples-8-sections-in-order.md",
+      "imagePath": "assets/blog/trade-business-website-examples-8-sections-in-order-cover.svg",
+      "targetQuery": "trade business website examples",
+      "evidenceRequest": {
+        "sourceFiles": [
+          {
+            "path": "content/blog/website-tree-service.md",
+            "excerpt": "| Page or proof | Business facts the owner supplies | Customer action to test |\n| --- | --- | --- |\n| Homepage | Real tree services, service area, ordinary and urgent contact routes, and honest availability | On a phone, identify the right service and use the intended call or estimate route |\n| Service pages | Actual removal, pruning, stump, storm, or consultation work and what each estimate covers | Open the relevant service from navigation and return without losing the contact route |\n| Project proof | Approved project photos, accurate captions, cleanup scope, and current verifiable qualifications | Confirm each photo and claim matches a real record and reveals no private customer detail |\n| Contact or estimate route | Reachable phone or email, service area, safe photo guidance, and the response process | Send a labeled test inquiry or place a test call and confirm the business receives it |"
+          },
+          {
+            "path": "content/blog/website-tree-service.md",
+            "excerpt": "One visitor has a fallen limb blocking a driveway; another wants a large backyard tree assessed before planning a patio. What should your tree service website show to help both people? Give them separate, clear routes to urgent contact and planned estimates, with enough detail to understand the work you actually handle."
+          },
+          {
+            "path": "content/blog/website-tree-service.md",
+            "excerpt": "Start with your main services and the towns you cover. A headline such as \"Tree removal, pruning, and stump grinding in your area\" works only if you provide all those services. Put a working phone button beside it and a separate option to request a planned estimate."
+          },
+          {
+            "path": "content/blog/website-tree-service.md",
+            "excerpt": "A useful website prepares the customer for an estimate without asking them to perform your inspection. Explain that you may need to see the tree, surrounding structures, and access route. Photos can provide context, but should be optional and taken only from a safe position."
+          },
+          {
+            "path": "content/blog/website-tree-service.md",
+            "excerpt": "Use real project photos that show the type of property and work you handle. A narrow side-yard removal gives different evidence from a cleared open lot. Explain the agreed scope in a short caption instead of relying on a dramatic image alone.\n\nGet permission before publishing a customer's property and avoid showing private details. Do not turn storm damage into a spectacle. A calm explanation of the completed work and cleanup can be more useful than a frightening image with a sales slogan.\n\nList insurance and credentials only when current and verifiable. Explain how a customer can request relevant proof before agreeing to work. Avoid vague badges that suggest a certification or endorsement you do not hold.\n\nUse genuine reviews without inventing quotations or editing them into a different meaning. The guide to [what makes a local website trustworthy](/blog/what-makes-a-local-business-website-trustworthy/) explains how plain evidence supports confidence. Showing who will assess the job and what happens next is useful even if your review collection is still small.\n\n## Explain cleanup, pricing, and the next step\n\nTree customers need to know what will remain after the crew leaves. Explain whether your proposed work includes hauling brush, cutting logs into manageable sections, removing wood, or leaving material as requested. Do not assume everyone wants the same outcome.\n\nMake stump work explicit in removal estimates. If it is separate, say so. Also clarify whether lawn repair or changes to the surrounding landscape are outside the agreed scope, rather than allowing the phrase \"complete removal\" to do too much work."
+          }
+        ],
+        "example": {
+          "description": "Source walkthrough connecting two tree-service customer situations to distinct urgent and planned website routes.",
+          "operation": "source_walkthrough",
+          "inputs": [],
+          "result": null,
+          "excerpt": "This trade website example proves that a page can be planned around two common customer situations without pretending a fictional business has customers. The source says: \"One visitor has a fallen limb blocking a driveway; another wants a large backyard tree assessed before planning a patio. What should your tree service website show to help both people? Give them separate, clear routes to urgent contact and planned estimates, with enough detail to understand the work you actually handle.\""
+        },
+        "references": [
+          {
+            "url": "https://developers.google.com/search/docs/crawling-indexing/mobile/mobile-sites-mobile-first-indexing",
+            "supportingClaim": "Google Search Central says Google uses the mobile version of a site's content, crawled with its smartphone agent, for indexing and ranking in its [mobile-first indexing guidance](https://developers.google.com/search/docs/crawling-indexing/mobile/mobile-sites-mobile-first-indexing).",
+            "sourceExcerpt": "Google uses the mobile version of a site's content, crawled with the smartphone agent, for indexing and ranking. This is called mobile-first indexing.",
+            "primarySourceRationale": "This is Google Search Central's final public HTTPS documentation page. The exact excerpt appears in the page's opening paragraph and supports only Google's description of its own mobile-first indexing behavior."
+          }
+        ],
+        "claimRationale": "The tracked tree-service guide supports the homepage, service, proof, contact, service-area, urgent-versus-planned, and mobile-test concepts used to synthesize the eight-section editorial order. It does not prove that eight is a universal or optimal count, that the order improves conversions or rankings, or that any fictional scenario is a customer result. The post therefore labels the example as a source-backed planning walkthrough and expressly claims no live customer site, screenshot, conversion study, calls, or performance outcome. Google's reference supports only mobile-first indexing behavior, not this proposed section order or any ranking guarantee. Representation note: the final two exact adjacent excerpts are represented by one complete contiguous source passage; every original excerpt is retained in full, including intervening source text. The original source-walkthrough excerpt remains a separate exact entry."
+      }
+    }
+  ],
+  "feed": "feed.xml",
+  "humanized": true,
+  "notes": "Loaded and applied the worker's rewrite-humanized SKILL.md directly because this session did not expose a callable Skill tool. Both posts were rewritten sentence by sentence and passed the banned-language search."
+}
