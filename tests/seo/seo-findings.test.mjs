@@ -104,14 +104,14 @@ test("AI visibility pages carry useful answers and plain product definitions", (
 test("priority article and hub changes are present in generated HTML", () => {
   const tree = read("blog/tree-service-local-seo-checklist/index.html");
   assert.match(tree, /<title>Tree Service Local SEO Checklist: What to Fix First<\/title>/);
-  assert.match(tree, /<meta name="description" content="Follow a prioritized tree service local SEO checklist: fix your Google Business Profile, review flow, service pages, citations, and schema in order\.">/);
+  assert.match(tree, /<meta name="description" content="Check tree service local SEO: accurate business listings, useful service pages, real coverage, honest reviews, contact routes, and matching schema\.">/);
   assert.match(tree, /<link rel="canonical" href="https:\/\/frontstepsites\.com\/blog\/tree-service-local-seo-checklist\/">/);
   assert.match(tree, /<h1>Tree Service Local SEO Checklist: What to Fix First<\/h1>/);
   assert.match(tree, /Tree service local SEO is the work of/);
-  assert.match(tree, /<h2 id="fix-tree-service-local-seo-in-this-order">Fix tree service local SEO in this order<\/h2>\n<ol>/);
-  const priorityList = tree.match(/<h2 id="fix-tree-service-local-seo-in-this-order">[\s\S]*?<ol>([\s\S]*?)<\/ol>/)?.[1] || "";
+  assert.doesNotMatch(tree, /Fix tree service local SEO in this order/);
+  const priorityList = tree.match(/<h2 id="local-seo-checklist-for-tree-services">[\s\S]*?<ol>([\s\S]*?)<\/ol>/)?.[1] || "";
   assert.equal((priorityList.match(/<li>/g) || []).length, 5);
-  assert.equal((priorityList.match(/<a href=/g) || []).length, 5);
+
   for (const href of [
     "/blog/tree-service-google-business-profile/",
     "/blog/tree-service-get-more-reviews/",
