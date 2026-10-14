@@ -562,6 +562,13 @@ test("llms.txt lists every canonical URL in the sitemap", () => {
   for (const url of urls) assert.ok(llms.includes(url), `llms.txt is missing ${url}`);
 });
 
+test("Canva catalog entry explains business fit while retaining direct answers elsewhere", () => {
+  const llms = read("llms.txt");
+  assert.ok(llms.includes("- [Can you run a business website on Canva?](https://frontstepsites.com/blog/can-you-run-a-business-website-on-canva/): Canva supports multipage websites. Use this checklist to decide whether its publishing, contact and maintenance workflow fits your local business."));
+  assert.ok(llms.includes("- [HTML Website Development: When Custom Code Fits](https://frontstepsites.com/blog/html-website-development-when-custom-code-fits/): HTML is the markup language that gives a web page its structure and meaning."));
+  assert.ok(llms.includes("- [Plumbing: what your website needs](https://frontstepsites.com/blog/website-plumbing/): A plumber website needs a working call button, clear service hours, the towns you cover, and plain descriptions of the jobs you take."));
+});
+
 test("flagged read pages defer analytics and avoid late font swaps", () => {
   const paths = [
     "privacy/index.html",
