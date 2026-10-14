@@ -1,0 +1,51 @@
+{
+  "version": 1,
+  "verifier": "seo-worker-v1",
+  "postFile": "content/blog/what-website-maintenance-includes-99-task-budget.md",
+  "artifact": ".seo-evidence/a10b68060129c1bc795d8ac0.json",
+  "verifiedAt": "2026-10-14T06:28:40.371Z",
+  "sourceFiles": [
+    {
+      "path": "index.html",
+      "sha256": "9a07a774d75809acb086a035590eecd199d692892927e9200ef4a0fd34486da0",
+      "excerpt": "<span class=\"hole\" aria-hidden=\"true\"></span><header><span class=\"label\">Building your site</span><b>$0<small>no setup fee</small></b></header>\n        <ul>\n          <li>A 10-minute questionnaire. We write every word.</li>\n          <li>Built for phones first</li>\n          <li>Contact form that lands in your email</li>\n          <li>Linked to your Google Business Profile</li>\n          <li>Domain registered in your name</li>\n          <li>You approve it before it goes live</li>\n        </ul>"
+    },
+    {
+      "path": "index.html",
+      "sha256": "9a07a774d75809acb086a035590eecd199d692892927e9200ef4a0fd34486da0",
+      "excerpt": "        <span class=\"hole\" aria-hidden=\"true\"></span><header><span class=\"label\">Launch, every year</span><b>$99<small>/yr</small></b></header>\n        <ul>\n          <li>Your domain, included and in your name</li>\n          <li>Hosting and SSL that never go to sleep</li>\n          <li>2 change requests a month</li>\n          <li>Changes live within 2 business days</li>\n          <li>Blog posts written for your area</li>\n          <li>Local SEO: Google-friendly setup for your town and services</li>\n          <li>Renewals handled, nothing to remember</li>"
+    },
+    {
+      "path": "index.html",
+      "sha256": "9a07a774d75809acb086a035590eecd199d692892927e9200ef4a0fd34486da0",
+      "excerpt": "<details><summary>How do changes work?</summary><p>Sign in and open a request, like \"change Saturday hours to 8 to 2\" or \"swap the top photo for this one\". We make the change, publish it, and reply to you. Launch includes 2 requests a month, live within 2 business days. Grow is unlimited and same-day.</p></details>"
+    },
+    {
+      "path": "index.html",
+      "sha256": "9a07a774d75809acb086a035590eecd199d692892927e9200ef4a0fd34486da0",
+      "excerpt": "<details><summary>What isn't included?</summary><p>A full redesign, a new logo, an online store, booking, payments, or custom features. We'll quote those before anything costs extra.</p></details>"
+    }
+  ],
+  "example": {
+    "description": "Two-month Launch change-request planning example",
+    "operation": "sum",
+    "inputs": [
+      2,
+      2
+    ],
+    "result": 4,
+    "excerpt": "For a two-month planning example, 2 requests in the first month plus 2 in the second month equals 4 available requests. That is 2 + 2 = 4, assuming the business has an eligible routine change for every slot and the plan terms stay the same.",
+    "reproducedBy": "worker arithmetic"
+  },
+  "references": [
+    {
+      "url": "https://csrc.nist.gov/pubs/sp/800/40/r4/final",
+      "status": 200,
+      "sha256": "d1bb11c9a79873836874405622c081ca7b011adb11e45f21fbf5c22fd50a0efa",
+      "sourceExcerpt": "Preventive maintenance through enterprise patch management helps prevent compromises, data breaches, operational disruptions, and other adverse events.",
+      "supportingClaim": "The National Institute of Standards and Technology says preventive maintenance through enterprise patch management helps prevent compromises, data breaches, operational disruptions, and other adverse events in its [enterprise patch management guidance](https://csrc.nist.gov/pubs/sp/800/40/r4/final).",
+      "primarySourceRationale": "This is NIST Computer Security Resource Center's final public HTTPS page for NIST Special Publication 800-40 Revision 4. The exact excerpt appears in the page's abstract and supports only the general patch-management statement linked in the post."
+    }
+  ],
+  "claimRationale": "The checked-in homepage supports the current $99 annual Launch price, $0 setup fee, included domain, hosting, SSL, renewals, 2 monthly change requests, 2-business-day timing, routine-change examples, and listed exclusions. Applying the published limit independently to two months gives 2 + 2 = 4 possible request slots. This is a planning illustration, not proof that requests roll over, that a customer used all 4 slots, that every submitted task qualifies, or that the price and terms will remain unchanged. It does not establish savings, rankings, leads, uptime, security outcomes, or the value of an owner's time. The NIST reference supports only the general reason patching belongs in maintenance; it does not endorse Front Step Sites, define the Launch plan, or prove that every small website has owner-managed software patches."
+}

@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img" aria-label="Eight-step plumber website customer path from leaking water heater search to phone call and confirmed next step">
+  <rect width="1200" height="630" fill="#eceeec"/>
+  <rect x="46" y="46" width="1120" height="550" fill="#111312"/>
+  <rect x="40" y="40" width="1120" height="550" fill="#ffffff" stroke="#111312" stroke-width="3"/>
+  <g transform="translate(1030,66)">
+    <rect width="34" height="34" fill="#ffd60a"/>
+    <path d="M6 27h22v-5H17v-5h-5v-5H6z" fill="#111312"/>
+  </g>
+  <text x="80" y="98" font-family="Arial, sans-serif" font-size="22" font-weight="700" letter-spacing="2" fill="#474d4b">FRONT STEP SITES BLOG</text>
+  <text x="78" y="204" font-family="Arial, sans-serif" font-size="52" font-weight="800" fill="#111312">Plumber website example</text>
+  <text x="80" y="264" font-family="Arial, sans-serif" font-size="38" font-weight="700" fill="#474d4b">8 steps from leak to call</text>
+  <g font-family="Arial, sans-serif" font-size="17" font-weight="700" fill="#111312">
+    <g transform="translate(80,344)"><rect width="245" height="58" fill="#ffd60a" stroke="#111312" stroke-width="2"/><text x="18" y="36">1  PROBLEM</text></g>
+    <g transform="translate(345,344)"><rect width="245" height="58" fill="#ffffff" stroke="#111312" stroke-width="2"/><text x="18" y="36">2  AREA</text></g>
+    <g transform="translate(610,344)"><rect width="245" height="58" fill="#ffffff" stroke="#111312" stroke-width="2"/><text x="18" y="36">3  CALL</text></g>
+    <g transform="translate(875,344)"><rect width="245" height="58" fill="#ffffff" stroke="#111312" stroke-width="2"/><text x="18" y="36">4  SERVICE</text></g>
+    <g transform="translate(80,422)"><rect width="245" height="58" fill="#ffffff" stroke="#111312" stroke-width="2"/><text x="18" y="36">5  VISIT</text></g>
+    <g transform="translate(345,422)"><rect width="245" height="58" fill="#ffffff" stroke="#111312" stroke-width="2"/><text x="18" y="36">6  PRICE</text></g>
+    <g transform="translate(610,422)"><rect width="245" height="58" fill="#ffffff" stroke="#111312" stroke-width="2"/><text x="18" y="36">7  PROOF</text></g>
+    <g transform="translate(875,422)"><rect width="245" height="58" fill="#ffd60a" stroke="#111312" stroke-width="2"/><text x="18" y="36">8  HANDOFF</text></g>
+  </g>
+  <path d="M80 526h1040" stroke="#111312" stroke-width="3"/>
+  <path d="M1098 514l22 12-22 12" fill="none" stroke="#111312" stroke-width="3"/>
+  <text x="80" y="564" font-family="Arial, sans-serif" font-size="18" font-weight="700" letter-spacing="1" fill="#474d4b">ONE CUSTOMER QUESTION, ONE CLEAR PATH</text>
+</svg>

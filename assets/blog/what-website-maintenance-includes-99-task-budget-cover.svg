@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img" aria-label="Website maintenance task budget showing a 99 dollar yearly plan, two monthly change slots, and separately quoted projects">
+  <rect width="1200" height="630" fill="#eceeec"/>
+  <rect x="46" y="46" width="1120" height="550" fill="#111312"/>
+  <rect x="40" y="40" width="1120" height="550" fill="#ffffff" stroke="#111312" stroke-width="3"/>
+  <g transform="translate(1030,66)">
+    <rect width="34" height="34" fill="#ffd60a"/>
+    <path d="M6 27h22v-5H17v-5h-5v-5H6z" fill="#111312"/>
+  </g>
+  <text x="80" y="98" font-family="Arial, sans-serif" font-size="22" font-weight="700" letter-spacing="2" fill="#474d4b">FRONT STEP SITES BLOG</text>
+  <text x="78" y="204" font-family="Arial, sans-serif" font-size="52" font-weight="800" fill="#111312">What maintenance includes</text>
+  <text x="80" y="266" font-family="Arial, sans-serif" font-size="38" font-weight="700" fill="#474d4b">A $99 yearly task budget</text>
+  <g transform="translate(80,354)" font-family="Arial, sans-serif">
+    <rect width="300" height="160" fill="#ffd60a" stroke="#111312" stroke-width="2"/>
+    <text x="22" y="44" font-size="18" font-weight="700" letter-spacing="1" fill="#111312">PLAN</text>
+    <text x="22" y="101" font-size="38" font-weight="800" fill="#111312">$99 / YEAR</text>
+    <text x="22" y="136" font-size="18" fill="#111312">Domain + hosting + SSL</text>
+  </g>
+  <g transform="translate(410,354)" font-family="Arial, sans-serif">
+    <rect width="300" height="160" fill="#ffffff" stroke="#111312" stroke-width="2"/>
+    <text x="22" y="44" font-size="18" font-weight="700" letter-spacing="1" fill="#111312">ROUTINE EDITS</text>
+    <text x="22" y="101" font-size="34" font-weight="800" fill="#111312">2 / MONTH</text>
+    <text x="22" y="136" font-size="18" fill="#474d4b">Within 2 business days</text>
+  </g>
+  <g transform="translate(740,354)" font-family="Arial, sans-serif">
+    <rect width="375" height="160" fill="#eceeec" stroke="#111312" stroke-width="2"/>
+    <text x="22" y="44" font-size="18" font-weight="700" letter-spacing="1" fill="#111312">LARGER PROJECTS</text>
+    <text x="22" y="101" font-size="34" font-weight="800" fill="#111312">QUOTED FIRST</text>
+    <text x="22" y="136" font-size="18" fill="#474d4b">Store, booking, redesign</text>
+  </g>
+</svg>

@@ -1,0 +1,53 @@
+{
+  "version": 1,
+  "verifier": "seo-worker-v1",
+  "postFile": "content/blog/plumber-website-example-eight-step-customer-path.md",
+  "artifact": ".seo-evidence/08495a931cbde25a6f27e186.json",
+  "verifiedAt": "2026-10-14T06:28:40.965Z",
+  "sourceFiles": [
+    {
+      "path": "content/blog/website-plumbing.md",
+      "sha256": "6b0e13472f7ad363e2f06056a6be60349101572bf9dee232470a60d2d7b93bb6",
+      "excerpt": "What does your plumbing website need so someone with a leaking water heater actually calls you? Start with your phone number, availability, service area, and the problems you fix. A customer should be able to find those answers before reading your company story or scrolling through job photos."
+    },
+    {
+      "path": "content/blog/website-plumbing.md",
+      "sha256": "6b0e13472f7ad363e2f06056a6be60349101572bf9dee232470a60d2d7b93bb6",
+      "excerpt": "\"Full-service plumbing solutions\" leaves the customer doing the work. A backed-up kitchen sink, a toilet that keeps running, and a water heater with no hot water are different reasons to call. Name them in words you hear on the phone.\n\nStart with a short service list. Depending on your work, that might include:\n\n- Clogged sink and shower drains.\n- Toilet repairs and replacements.\n- Leaking pipes and fixture repairs.\n- Tank and tankless water heater service.\n- Sewer line inspections and repairs.\n- Sump pump repairs and replacements.\n\nOnly include work you perform. If you do residential service but not restaurant grease lines or commercial plumbing, say so. That helps both you and the caller avoid a wasted conversation."
+    },
+    {
+      "path": "content/blog/website-plumbing.md",
+      "sha256": "6b0e13472f7ad363e2f06056a6be60349101572bf9dee232470a60d2d7b93bb6",
+      "excerpt": "Customers want to know what happens after they call. Give them a short sequence: describe the problem, confirm the address and availability, arrange the visit, then discuss the proposed work and price. Adjust that sequence to match how your business operates.\n\nYou do not need to publish one price for every possible leak. You should explain whether you charge a service-call or diagnostic fee, when you provide an estimate, and whether after-hours visits have different charges. Publish actual fees where you can keep them current.\n\nFor a drain clearing page, explain that access and the condition of the line can affect the work. For a water heater replacement, explain that you need to assess the existing installation before confirming the scope. Specific explanations are more helpful than \"Call for our best price.\""
+    },
+    {
+      "path": "content/blog/website-plumbing.md",
+      "sha256": "6b0e13472f7ad363e2f06056a6be60349101572bf9dee232470a60d2d7b93bb6",
+      "excerpt": "Use clear photos of your team, service vehicle, and finished work. A tidy under-sink repair or completed water heater installation can give a customer something concrete to look at. Add a short caption describing the job and the problem you addressed.\n\nGet permission before showing a customer's property. Keep addresses, family photos, and other identifying details out of the frame. You can describe a general service area without naming the homeowner or posting their street.\n\nDisplay credentials accurately and keep them current. Avoid vague badges that imply an approval you do not hold. If you show customer reviews, use real wording and make the source clear rather than turning a few comments into an invented satisfaction score."
+    },
+    {
+      "path": "content/blog/website-plumbing.md",
+      "sha256": "6b0e13472f7ad363e2f06056a6be60349101572bf9dee232470a60d2d7b93bb6",
+      "excerpt": "Ask for the person's name, contact details, town, and a short description of the job. Make photos optional. Explain when you normally reply and that submitting the form does not confirm an appointment.\n\nBefore you call the site finished, check it like a customer:\n\n1. Open it on your phone using a cellular connection.\n2. Find a service and check whether your town is covered.\n3. Tap the phone number and confirm the digits.\n4. Send a test request and verify that it reaches you.\n5. Check that the confirmation message explains what happens next."
+    }
+  ],
+  "example": {
+    "description": "Source walkthrough of the plumber customer's page path",
+    "operation": "source_walkthrough",
+    "inputs": [],
+    "result": null,
+    "excerpt": "This plumber website example uses the site's tracked plumbing guide as its source, then walks through the customer path described there. The source says: \"What does your plumbing website need so someone with a leaking water heater actually calls you? Start with your phone number, availability, service area, and the problems you fix. A customer should be able to find those answers before reading your company story or scrolling through job photos.\"",
+    "reproducedBy": "worker source inspection"
+  },
+  "references": [
+    {
+      "url": "https://developers.google.com/search/docs/crawling-indexing/mobile/mobile-sites-mobile-first-indexing",
+      "status": 200,
+      "sha256": "9c41525873157bae313635aae75c50c24231b6df1ec3edf03a726a43825b4677",
+      "sourceExcerpt": "Google uses the mobile version of a site's content, crawled with the smartphone agent, for indexing and ranking. This is called mobile-first indexing.",
+      "supportingClaim": "Google Search Central states, \"Google uses the mobile version of a site's content, crawled with the smartphone agent, for indexing and ranking\" in its [mobile-first indexing guidance](https://developers.google.com/search/docs/crawling-indexing/mobile/mobile-sites-mobile-first-indexing).",
+      "primarySourceRationale": "This is Google Search Central's final public HTTPS documentation page. The exact excerpt appears in the page's opening paragraph and supports only Google's description of its own mobile-first indexing behavior."
+    }
+  ],
+  "claimRationale": "The tracked plumbing guide supports the problem, service-area, availability, contact, service-choice, visit, pricing-process, proof, privacy, credential, request-form, and phone-test concepts used to synthesize the eight-section editorial path. It does not prove that eight is a universal or optimal count, that this order improves rankings or conversions, or that the neutral leaking-water-heater scenario is a real customer result. The post therefore identifies the example as a planning walkthrough and expressly claims no live customer site, screenshot, testimonial, license, price, calls, or performance outcome. Google supports only the statement about its own mobile-first indexing behavior; it does not endorse this section order or promise a ranking."
+}

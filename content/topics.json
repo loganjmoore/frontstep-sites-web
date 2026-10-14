@@ -1696,5 +1696,17 @@
   "title": "Website Hosting and Maintenance: What $99 Covers",
   "cluster": "guides",
   "angle": "a first-hand scope and three-year cost breakdown of the published $99 Launch plan, separating hosting, maintenance, changes, and excluded custom work"
+ },
+ {
+  "slug": "plumber-website-example-eight-step-customer-path",
+  "title": "Plumber Website Example: 8 Steps From Leak to Call",
+  "cluster": "guides",
+  "angle": "a source-backed plumber customer path through eight website sections, distinct from the generic tree-service example and without invented customer results"
+ },
+ {
+  "slug": "what-website-maintenance-includes-99-task-budget",
+  "title": "What Website Maintenance Includes: A $99 Task Budget",
+  "cluster": "guides",
+  "angle": "a maintenance-task and exclusion checklist using the published Launch scope, with a two-month change-request budget instead of another three-year cost comparison"
  }
 ]
