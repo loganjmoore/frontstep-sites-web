@@ -103,7 +103,24 @@ test("AI visibility pages carry useful answers and plain product definitions", (
 
 test("priority article and hub changes are present in generated HTML", () => {
   const tree = read("blog/tree-service-local-seo-checklist/index.html");
+  assert.match(tree, /<title>Tree Service Local SEO Checklist: What to Fix First<\/title>/);
+  assert.match(tree, /<meta name="description" content="Check tree service local SEO: accurate business listings, useful service pages, real coverage, honest reviews, contact routes, and matching schema\.">/);
+  assert.match(tree, /<link rel="canonical" href="https:\/\/frontstepsites\.com\/blog\/tree-service-local-seo-checklist\/">/);
+  assert.match(tree, /<h1>Tree Service Local SEO Checklist: What to Fix First<\/h1>/);
   assert.match(tree, /Tree service local SEO is the work of/);
+  assert.doesNotMatch(tree, /Fix tree service local SEO in this order/);
+  const priorityList = tree.match(/<h2 id="local-seo-checklist-for-tree-services">[\s\S]*?<ol>([\s\S]*?)<\/ol>/)?.[1] || "";
+  assert.equal((priorityList.match(/<li>/g) || []).length, 5);
+
+  for (const href of [
+    "/blog/tree-service-google-business-profile/",
+    "/blog/tree-service-get-more-reviews/",
+    "/blog/website-tree-service/",
+    "/blog/nap-consistency-why-your-name-address-and-phone-must-match-everywhere/",
+    "/blog/local-business-schema-markup-explained-simply/",
+  ]) {
+    assert.match(priorityList, new RegExp(`<a href="${href}">`));
+  }
   assert.match(tree, /<h2 id="local-seo-checklist-for-tree-services">Local SEO checklist for tree services<\/h2>/);
   assert.match(tree, /<ol>/);
   assert.match(tree, /href="\/blog\/trades\/tree-service\/"/);
@@ -386,6 +403,17 @@ test("homepage keeps third-party assets out of the initial rendering path", () =
   assert.doesNotMatch(home, /<img\b/);
 });
 
+test("Google Sites next steps link from the matching publishing and domain instructions", () => {
+  const html = read("blog/how-to-make-a-google-site/index.html");
+  const publish = html.slice(html.indexOf('<h2 id="how-do-you-publish-and-pick-an-address">'), html.indexOf('<h2 id="can-you-use-your-own-domain-with-a-google-site">'));
+  const domain = html.slice(html.indexOf('<h2 id="can-you-use-your-own-domain-with-a-google-site">'), html.indexOf('<h2 id="when-is-a-google-site-enough-for-a-business">'));
+  assert.match(publish, /href="\/blog\/google-sites-launch-checklist-for-a-business-website\/"/);
+  assert.match(domain, /href="\/blog\/put-a-google-sites-site-on-your-own-domain\/"/);
+  assert.doesNotMatch(html, /id="when-is-a-google-site-the-wrong-choice"/);
+  assert.match(html, /"datePublished":"2026-10-04"/);
+  assert.match(html, /"dateModified":"2026-10-14"/);
+});
+
 test("AI strategy articles lead with the requested direct answers and related links", () => {
   const plumbing = read("blog/plumbing-google-business-profile/index.html");
   assert.match(plumbing, /<h2 id="plumber-google-business-profile-setup-checklist">Plumber Google Business Profile setup checklist<\/h2>/);
@@ -545,6 +573,13 @@ test("llms.txt lists every canonical URL in the sitemap", () => {
   for (const url of urls) assert.ok(llms.includes(url), `llms.txt is missing ${url}`);
 });
 
+test("Canva catalog entry explains business fit while retaining direct answers elsewhere", () => {
+  const llms = read("llms.txt");
+  assert.ok(llms.includes("- [Can you run a business website on Canva?](https://frontstepsites.com/blog/can-you-run-a-business-website-on-canva/): Canva supports multipage websites. Use this checklist to decide whether its publishing, contact and maintenance workflow fits your local business."));
+  assert.ok(llms.includes("- [HTML Website Development: When Custom Code Fits](https://frontstepsites.com/blog/html-website-development-when-custom-code-fits/): HTML is the markup language that gives a web page its structure and meaning."));
+  assert.ok(llms.includes("- [Plumbing: what your website needs](https://frontstepsites.com/blog/website-plumbing/): A plumber website needs a working call button, clear service hours, the towns you cover, and plain descriptions of the jobs you take."));
+});
+
 test("flagged read pages defer analytics and avoid late font swaps", () => {
   const paths = [
     "privacy/index.html",
@@ -585,7 +620,7 @@ test("flagged read pages defer analytics and avoid late font swaps", () => {
 test("updated articles retain original publication date", () => {
   const tree = read("blog/tree-service-local-seo-checklist/index.html");
   assert.match(tree, /"datePublished":"2026-09-26"/);
-  assert.match(tree, /"dateModified":"2026-10-06"/);
+  assert.match(tree, /"dateModified":"2026-10-14"/);
 
   const domain = read("blog/who-owns-your-domain-name-and-why-it-matters/index.html");
   assert.match(domain, /"datePublished":"2026-09-26"/);
