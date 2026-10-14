@@ -103,7 +103,24 @@ test("AI visibility pages carry useful answers and plain product definitions", (
 
 test("priority article and hub changes are present in generated HTML", () => {
   const tree = read("blog/tree-service-local-seo-checklist/index.html");
+  assert.match(tree, /<title>Tree Service Local SEO Checklist: What to Fix First<\/title>/);
+  assert.match(tree, /<meta name="description" content="Follow a prioritized tree service local SEO checklist: fix your Google Business Profile, review flow, service pages, citations, and schema in order\.">/);
+  assert.match(tree, /<link rel="canonical" href="https:\/\/frontstepsites\.com\/blog\/tree-service-local-seo-checklist\/">/);
+  assert.match(tree, /<h1>Tree Service Local SEO Checklist: What to Fix First<\/h1>/);
   assert.match(tree, /Tree service local SEO is the work of/);
+  assert.match(tree, /<h2 id="fix-tree-service-local-seo-in-this-order">Fix tree service local SEO in this order<\/h2>\n<ol>/);
+  const priorityList = tree.match(/<h2 id="fix-tree-service-local-seo-in-this-order">[\s\S]*?<ol>([\s\S]*?)<\/ol>/)?.[1] || "";
+  assert.equal((priorityList.match(/<li>/g) || []).length, 5);
+  assert.equal((priorityList.match(/<a href=/g) || []).length, 5);
+  for (const href of [
+    "/blog/tree-service-google-business-profile/",
+    "/blog/tree-service-get-more-reviews/",
+    "/blog/website-tree-service/",
+    "/blog/nap-consistency-why-your-name-address-and-phone-must-match-everywhere/",
+    "/blog/local-business-schema-markup-explained-simply/",
+  ]) {
+    assert.match(priorityList, new RegExp(`<a href="${href}">`));
+  }
   assert.match(tree, /<h2 id="local-seo-checklist-for-tree-services">Local SEO checklist for tree services<\/h2>/);
   assert.match(tree, /<ol>/);
   assert.match(tree, /href="\/blog\/trades\/tree-service\/"/);
@@ -585,7 +602,7 @@ test("flagged read pages defer analytics and avoid late font swaps", () => {
 test("updated articles retain original publication date", () => {
   const tree = read("blog/tree-service-local-seo-checklist/index.html");
   assert.match(tree, /"datePublished":"2026-09-26"/);
-  assert.match(tree, /"dateModified":"2026-10-06"/);
+  assert.match(tree, /"dateModified":"2026-10-14"/);
 
   const domain = read("blog/who-owns-your-domain-name-and-why-it-matters/index.html");
   assert.match(domain, /"datePublished":"2026-09-26"/);
