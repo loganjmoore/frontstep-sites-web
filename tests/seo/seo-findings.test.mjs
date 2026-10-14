@@ -357,7 +357,7 @@ test("cleaning Business Profile guide has the requested setup checklist", () => 
 
 test("October 10 entity-definition findings use unique plain definitions immediately after the H1", () => {
   const definitions = {
-    "how-to-make-a-google-site": "Google Sites is a website builder from Google for making simple pages. It fits a business that needs a few-page brochure site and wants to handle its own updates.",
+    "how-to-make-a-google-site": "Google Sites is a website builder from Google for making simple pages, and this guide walks through making one step by step.",
     "best-web-builder-sites-for-a-small-business": "A website builder is a self-serve tool for making and editing your own site. Front Step Sites is a done-for-you website service for small businesses that would rather request changes than use a builder themselves.",
     "click-to-call-making-your-phone-number-work-on-every-page": "Click-to-call is a phone link that opens a calling option on a supported device, and its HTML destination uses the tel:+12025550147 format.",
     "contact-forms-that-actually-get-filled-out": "A contact form is a set of website fields that lets a visitor send an inquiry to a business.",
@@ -403,16 +403,18 @@ test("homepage keeps third-party assets out of the initial rendering path", () =
   assert.doesNotMatch(home, /<img\b/);
 });
 
-test("AI strategy articles lead with the requested direct answers and related links", () => {
-  const googleSite = read("blog/how-to-make-a-google-site/index.html");
-  assert.match(googleSite, /<h1>How to make a Google Site, step by step<\/h1>\n<p class="direct-answer">Google Sites is a website builder from Google for making simple pages\. It fits a business that needs a few-page brochure site and wants to handle its own updates\.<\/p>/);
-  assert.match(googleSite, /<h2 id="when-is-a-google-site-the-wrong-choice">When is a Google Site the wrong choice\?<\/h2>/);
-  for (const slug of [
-    "google-sites-alternatives-for-a-business",
-    "google-sites-launch-checklist-for-a-business-website",
-    "put-a-google-sites-site-on-your-own-domain",
-  ]) assert.match(googleSite, new RegExp(`href="/blog/${slug}/"`));
+test("Google Sites next steps link from the matching publishing and domain instructions", () => {
+  const html = read("blog/how-to-make-a-google-site/index.html");
+  const publish = html.slice(html.indexOf('<h2 id="how-do-you-publish-and-pick-an-address">'), html.indexOf('<h2 id="can-you-use-your-own-domain-with-a-google-site">'));
+  const domain = html.slice(html.indexOf('<h2 id="can-you-use-your-own-domain-with-a-google-site">'), html.indexOf('<h2 id="when-is-a-google-site-enough-for-a-business">'));
+  assert.match(publish, /href="\/blog\/google-sites-launch-checklist-for-a-business-website\/"/);
+  assert.match(domain, /href="\/blog\/put-a-google-sites-site-on-your-own-domain\/"/);
+  assert.doesNotMatch(html, /id="when-is-a-google-site-the-wrong-choice"/);
+  assert.match(html, /"datePublished":"2026-10-04"/);
+  assert.match(html, /"dateModified":"2026-10-14"/);
+});
 
+test("AI strategy articles lead with the requested direct answers and related links", () => {
   const plumbing = read("blog/plumbing-google-business-profile/index.html");
   assert.match(plumbing, /<h2 id="plumber-google-business-profile-setup-checklist">Plumber Google Business Profile setup checklist<\/h2>/);
   assert.match(plumbing, /To set up a Google Business Profile for a plumber, claim or create the correct listing, use Plumber as the primary category/);
