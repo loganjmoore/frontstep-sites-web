@@ -1,15 +1,23 @@
 ---
-title: "Local SEO checklist for tree services"
-description: "Check your tree service local SEO with practical steps for business listings, removal and pruning pages, real projects, reviews, and working contact links."
+title: "Tree Service Local SEO Checklist: What to Fix First"
+description: "Follow a prioritized tree service local SEO checklist: fix your Google Business Profile, review flow, service pages, citations, and schema in order."
 slug: "tree-service-local-seo-checklist"
 cluster: "trades/tree-service"
 answer: "Local SEO for a tree service starts with accurate listings and useful pages for removal, pruning, stump grinding, and any other work you actually offer. Describe your real coverage, show relevant projects, and request honest reviews. Check the phone and estimate routes so people who find you can reach the right person."
 lead: "Tree service local SEO is the work of making a tree business easy to find and understand in the places nearby customers search. Keep your business details accurate, explain the tree work and areas you actually cover, and make every call or estimate path work."
 published: "2026-09-26"
-updated: "2026-10-06"
+updated: "2026-10-14"
 ---
 
 People searching for "stump grinding near me" need different information from someone searching for "storm damaged tree removal." Does your online presence make those differences clear? This checklist helps you organize a tree service business around real work and local coverage without creating fake locations or promising a search position.
+
+## Fix tree service local SEO in this order
+
+1. Start with your [Google Business Profile categories and service areas](/blog/tree-service-google-business-profile/) so the listing reflects the work and coverage you actually offer.
+2. Set a consistent [review flow after the job handoff](/blog/tree-service-get-more-reviews/) that asks every customer for honest feedback without incentives or rating prompts.
+3. Build useful [tree service pages for each distinct service](/blog/website-tree-service/) before publishing extra location or blog pages.
+4. Correct your [business name, address, and phone citations](/blog/nap-consistency-why-your-name-address-and-phone-must-match-everywhere/) on the listings that customers use.
+5. Add [local business schema](/blog/local-business-schema-markup-explained-simply/) only after the visible business details are accurate and consistent.
 
 ## Local SEO checklist for tree services
 
