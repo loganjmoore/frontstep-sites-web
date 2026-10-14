@@ -403,6 +403,17 @@ test("homepage keeps third-party assets out of the initial rendering path", () =
   assert.doesNotMatch(home, /<img\b/);
 });
 
+test("Google Sites next steps link from the matching publishing and domain instructions", () => {
+  const html = read("blog/how-to-make-a-google-site/index.html");
+  const publish = html.slice(html.indexOf('<h2 id="how-do-you-publish-and-pick-an-address">'), html.indexOf('<h2 id="can-you-use-your-own-domain-with-a-google-site">'));
+  const domain = html.slice(html.indexOf('<h2 id="can-you-use-your-own-domain-with-a-google-site">'), html.indexOf('<h2 id="when-is-a-google-site-enough-for-a-business">'));
+  assert.match(publish, /href="\/blog\/google-sites-launch-checklist-for-a-business-website\/"/);
+  assert.match(domain, /href="\/blog\/put-a-google-sites-site-on-your-own-domain\/"/);
+  assert.doesNotMatch(html, /id="when-is-a-google-site-the-wrong-choice"/);
+  assert.match(html, /"datePublished":"2026-10-04"/);
+  assert.match(html, /"dateModified":"2026-10-14"/);
+});
+
 test("AI strategy articles lead with the requested direct answers and related links", () => {
   const plumbing = read("blog/plumbing-google-business-profile/index.html");
   assert.match(plumbing, /<h2 id="plumber-google-business-profile-setup-checklist">Plumber Google Business Profile setup checklist<\/h2>/);

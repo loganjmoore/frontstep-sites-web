@@ -5,7 +5,8 @@ slug: "how-to-make-a-google-site"
 cluster: "guides"
 lead: "Google Sites is a website builder from Google for making simple pages, and this guide walks through making one step by step."
 answer: "To make a Google Site, open Google Sites while signed in to your Google account, choose a template under Start a new site, type a name, add your pages, and click Publish at the top right. Your first address starts with sites.google.com, and you can connect your own domain later if you are the site's owner."
-updated: "2026-10-04"
+published: "2026-10-04"
+updated: "2026-10-14"
 image: "/assets/blog/how-to-make-a-google-site-cover.svg"
 imageAlt: "Cover for how to make a Google Site, step by step: five steps from template to publish, and a custom domain that only the site owner can connect"
 ---
@@ -34,9 +35,13 @@ Write each service page around the job a customer would search for. A plumber mi
 
 When you publish, you can choose the web address. Every published site gets a URL under sites.google.com, such as sites.google.com/view/your-site-name. Keep the name short and plain. Customers will type it from a card, a truck, or a flyer, so a clear name matters more than a clever one.
 
+Before you share the address with customers, work through the [Google Sites launch checklist](/blog/google-sites-launch-checklist-for-a-business-website/).
+
 ## Can you use your own domain with a Google Site?
 
 Yes, with two conditions. First, Google's custom domain help says only the owner of the site can connect a domain. Second, you need a domain you can point at the site through your registrar. Google's steps are to open Settings, choose Custom domains, enter your domain, and follow the on-screen instructions. Google also says changes can take up to 48 hours to become visible on the Internet.
+
+Use our guide to [putting a Google Sites site on your own domain](/blog/put-a-google-sites-site-on-your-own-domain/) to follow the ownership, DNS and HTTPS checks.
 
 | Question | Default address | Custom domain |
 | --- | --- | --- |
