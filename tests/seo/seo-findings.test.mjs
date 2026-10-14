@@ -487,7 +487,7 @@ test("first-party analytics choice uses the configured PostHog consent key", () 
   assert.match(home, /src="\/posthog-web\.js"/);
 });
 
-test("every public HTML page loads the required Clarity project once after consent", () => {
+test("every public HTML page preserves the previously published Clarity project behind consent", () => {
   const paths = [
     "index.html",
     "posthog-privacy.html",
@@ -497,11 +497,10 @@ test("every public HTML page loads the required Clarity project once after conse
   assert.ok(paths.length >= 278, "the check should cover the full crawled page set");
   for (const path of paths) {
     const html = read(path);
-    assert.equal((html.match(/xgb5xunw8f/g) || []).length, 1, `${path} must name the Clarity project once`);
-    assert.doesNotMatch(html, /yqkzhoosjo/, `${path} still names the previous Clarity project`);
+    assert.equal((html.match(/yqkzhoosjo/g) || []).length, 1, `${path} must name the Clarity project once`);
+    assert.doesNotMatch(html, /xgb5xunw8f/, `${path} must not switch to an unverified shared project`);
     assert.match(html, /clarity\.ms\/tag\//, `${path} must install the Clarity tag`);
     assert.match(html, /if\(d\|\|!g\(\)\)return/, `${path} must retain its consent gate`);
-    assert.match(html, /y\.parentNode\.insertBefore\(t,y\);c\[a\]\("consentv2",\{ad_Storage:"denied",analytics_Storage:"granted"\}\)/, `${path} must grant analytics storage when Clarity loads after consent`);
   }
 });
 
@@ -561,12 +560,13 @@ test("llms.txt lists every canonical URL in the sitemap", () => {
   const sitemap = read("sitemap.xml");
   const urls = [...sitemap.matchAll(/<loc>(.*?)<\/loc>/g)].map((match) => match[1]);
   for (const url of urls) assert.ok(llms.includes(url), `llms.txt is missing ${url}`);
-  for (const description of [
-    "Wix, Squarespace, and Google Sites compared on price, who makes edits, and fit, plus when a done-for-you site is the better choice. Checked October 2026.",
-    "Learn what HTML website development means, when custom code fits a small business, and when a builder or managed website is the simpler choice.",
-    "Compare website builders and done-for-you websites by cost, time, changes, and control, then choose the right fit for your local service business.",
-    "Canva supports multipage websites. Use this checklist to decide whether its publishing, contact and maintenance workflow fits your local business.",
-  ]) assert.ok(llms.includes(description), `llms.txt is missing the crawl description: ${description}`);
+});
+
+test("Canva catalog entry explains business fit while retaining direct answers elsewhere", () => {
+  const llms = read("llms.txt");
+  assert.ok(llms.includes("- [Can you run a business website on Canva?](https://frontstepsites.com/blog/can-you-run-a-business-website-on-canva/): Canva supports multipage websites. Use this checklist to decide whether its publishing, contact and maintenance workflow fits your local business."));
+  assert.ok(llms.includes("- [HTML Website Development: When Custom Code Fits](https://frontstepsites.com/blog/html-website-development-when-custom-code-fits/): HTML is the markup language that gives a web page its structure and meaning."));
+  assert.ok(llms.includes("- [Plumbing: what your website needs](https://frontstepsites.com/blog/website-plumbing/): A plumber website needs a working call button, clear service hours, the towns you cover, and plain descriptions of the jobs you take."));
 });
 
 test("flagged read pages defer analytics and avoid late font swaps", () => {

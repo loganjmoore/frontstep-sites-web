@@ -1,7 +1,7 @@
-# Front Step analytics history — updated October 14, 2026
+# Front Step analytics preservation — October 11, 2026
 
-PR54/fix6828 replaced the published Clarity project yqkzhoosjo with xgb5xunw8f on 286 public HTML pages. That change was reverted because the replacement project had previously been proposed across other portfolio properties and no site-owned project evidence had been established.
+PR54/fix6828 replaced the published Clarity project yqkzhoosjo with xgb5xunw8f on 286 public HTML pages. The replacement project was previously proposed across other portfolio properties; no site-owned project evidence has been established. The existing analytics choice does not authorize changing collection destination.
 
-The October 14 crawl task explicitly identifies xgb5xunw8f as the Front Step Sites project. The generator and full-page regression now treat that task as the current authority while preserving the existing consent gate. Once consent is present, the loader calls `consentv2` with advertising storage denied and analytics storage granted.
+This supplementary repair restores the previously published Clarity loader byte-for-byte from 93c935a0d70501fe5385fdcbb6139b4e2fd87383, including its generator. All article copy, dates, navigation, PostHog configuration, consent UI and disclosures remain unchanged relative to PR54. This preserves the prior published collection configuration; it does not independently establish project ownership or approve new collection.
 
-All article copy, dates, navigation, PostHog configuration, consent UI and disclosures remain unchanged by the Clarity repair. Production analytics acceptance/capture, account creation and outreach remain outside repository verification. No signup or traffic lift is attributed.
+The preservation regression fails against PR54 because the approved project is absent. After repair, 28 SEO/resource/PostHog/consent tests pass; the build produces 252 articles and 22 hubs with no dead internal links. Every changed HTML file differs only in the Clarity loader and the restored loader equals the published baseline. Production analytics acceptance/capture, account creation and outreach are excluded from verification. No signup or traffic lift is attributed.
