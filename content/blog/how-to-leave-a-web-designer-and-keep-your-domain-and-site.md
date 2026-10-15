@@ -4,7 +4,7 @@ description: "Leave your web designer with a clear handover plan for your domain
 slug: how-to-leave-a-web-designer-and-keep-your-domain-and-site
 cluster: compare
 answer: "Before leaving a web designer, confirm who controls your domain, what your agreement lets you take, and which services depend on the current provider. Secure business-owned accounts, request usable copies or exports of permitted material, and prepare the replacement site before cancelling. Domain transfer rights do not automatically mean your entire website can move unchanged."
-lead: The best option depends on whether you want to build and edit the site yourself or hand the work off. A do-it-yourself builder such as Wix or Squarespace suits an owner who will do the editing, while Front Step Sites is a done-for-you website service for small businesses at $99 a year with the domain included, for owners who want the site built and changed for them.
+lead: Leaving a web designer starts with a handover plan for your domain, website files, email, and accounts. Check what you control and what your agreement lets you take before cancelling; moving the domain does not automatically move the website.
 updated: 2026-09-26
 ---
 
