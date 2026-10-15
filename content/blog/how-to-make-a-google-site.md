@@ -3,15 +3,19 @@ title: "How to make a Google Site, step by step"
 description: "How to make a Google Site: pick a template, name it, add pages, and publish. Then connect your own domain, and check Google's rules for who can do that."
 slug: "how-to-make-a-google-site"
 cluster: "guides"
-lead: "Google Sites is a website builder from Google for making simple pages, and this guide walks through making one step by step."
+lead: "Google Sites is Google's website builder for creating simple websites without writing code. It fits someone who needs only a few straightforward pages and is willing to build, publish, and update them through a Google account."
 answer: "To make a Google Site, open Google Sites while signed in to your Google account, choose a template under Start a new site, type a name, add your pages, and click Publish at the top right. Your first address starts with sites.google.com, and you can connect your own domain later if you are the site's owner."
 published: "2026-10-04"
-updated: "2026-10-14"
+updated: "2026-10-15"
 image: "/assets/blog/how-to-make-a-google-site-cover.svg"
 imageAlt: "Cover for how to make a Google Site, step by step: five steps from template to publish, and a custom domain that only the site owner can connect"
 ---
 
 To make a Google Site, open Google Sites, choose a template under "Start a new site," give it a name, add your content, and click Publish at the top right. Your published address starts with sites.google.com. You can connect your own domain later, but only if you own the site. The steps below follow Google's own help pages.
+
+## When is a Google Site the wrong choice?
+
+A Google Site is the wrong choice when you do not want to build and maintain the pages yourself or when a simple site cannot handle what customers need to do. Compare [Google Sites alternatives for a business](/blog/google-sites-alternatives-for-a-business/) before committing. If you keep Google Sites, use the [Google Sites launch checklist](/blog/google-sites-launch-checklist-for-a-business-website/) before sharing it and follow the guide to [put a Google Sites site on your own domain](/blog/put-a-google-sites-site-on-your-own-domain/) if you want customers to use your business address.
 
 ## How do you make a Google Site?
 
