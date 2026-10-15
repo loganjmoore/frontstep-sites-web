@@ -37,7 +37,7 @@ Before hiring, use these [questions for a website provider](/blog/what-to-ask-be
 
 Write down the recurring costs, any initial charge, and the work that falls outside the agreement. Ask about the domain, keeping the site available online, routine changes, and future pages. A low initial quote is difficult to compare if the ongoing responsibilities are missing.
 
-For a concrete done-for-you option, [Front Step Sites](/) costs $99 a year with the domain included and no setup fee. The domain is registered in the customer's own name. The $99 plan includes two change requests a month, made within two business days; new pages, blog posts, and local SEO setup are included.
+For a concrete done-for-you option, [Front Step Sites](/) costs $99 a year with the domain included and no setup fee. The domain is registered in the customer's own name. The $99 plan includes four coherent marketing updates per Central calendar month; new pages, blog posts, and local SEO setup are included.
 
 For a DIY option, inspect the current offer directly and write down what you would pay for the setup you need. Count your own time separately from the cash expense. You do not need to invent an hourly value: ask what other work would wait while you write and maintain the website.
 

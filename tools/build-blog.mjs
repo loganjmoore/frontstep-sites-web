@@ -476,7 +476,7 @@ ${relatedHtml}
 
 const HUB_FAQ = [
   { question: "How much does a Front Step Sites website cost?", answer: "$99 a year, with your domain included and no setup fee." },
-  { question: "How do I ask for a change to my site?", answer: "Sign in to your account and write the request in plain English. Launch includes 2 requests a month, done within 2 business days." },
+  { question: "How do I ask for a change to my site?", answer: "Sign in to your account and write the request in plain English. Launch includes 4 marketing updates per Central calendar month." },
 ];
 
 function renderClusterHub(cluster, clusterName, articles, introHtml = "") {
@@ -510,7 +510,7 @@ ${HUB_FAQ.map((f) => `<h3>${escapeHtml(f.question)}</h3>\n<p>${escapeHtml(f.answ
 ${renderCrumbs(crumbs)}
 <h1>${escapeHtml(clusterName)}</h1>
 <p class="updated">${articles.length} article${articles.length === 1 ? "" : "s"}</p>
-${introHtml}<p>Front Step Sites is a done-for-you website service for small businesses, priced at $99 a year with the domain included and no setup fee. The ${escapeHtml(clusterName)} hub is a section of the Front Step Sites blog with ${articles.length} article${articles.length === 1 ? "" : "s"} of practical, specific guidance, with 2 change requests a month included on the Launch plan.</p>${cluster.startsWith("trades/") ? '\n<p>When a customer is ready to call, use the <a href="/blog/click-to-call-making-your-phone-number-work-on-every-page/">click-to-call guide</a> to make the phone number work from every page.</p>' : ""}
+${introHtml}<p>Front Step Sites is a done-for-you website service for small businesses, priced at $99 a year with the domain included and no setup fee. The ${escapeHtml(clusterName)} hub is a section of the Front Step Sites blog with ${articles.length} article${articles.length === 1 ? "" : "s"} of practical, specific guidance, with 4 coherent marketing updates per Central calendar month included on the Launch plan.</p>${cluster.startsWith("trades/") ? '\n<p>When a customer is ready to call, use the <a href="/blog/click-to-call-making-your-phone-number-work-on-every-page/">click-to-call guide</a> to make the phone number work from every page.</p>' : ""}
 <ul class="article-list">
 ${articles.map((a) => `<li><a href="/blog/${a.slug}/">${escapeHtml(a.title)}</a><p>${escapeHtml(a.answer)}</p></li>`).join("\n")}
 </ul>
@@ -809,7 +809,7 @@ function main() {
   llmsLines.push("# Front Step Sites");
   llmsLines.push("");
   llmsLines.push(
-    "> Front Step Sites builds, hosts, and maintains websites for small businesses. Plans start at $99 a year with the domain included and no setup fee, and the domain is registered in the customer's own name. Customers ask for changes by writing in their account: 2 requests a month within 2 business days on the Launch plan, or unlimited requests the same business day on Grow ($29 a month or $290 a year), which also shows the customer's Google reviews on the site. New pages, blog posts, and local SEO setup are included, and customers can leave any time and take their domain with them, with no transfer fee. Front Step Sites (frontstepsites.com) is unrelated to FRONTSTEPS, the property-management/HOA software company."
+    "> Front Step Sites builds, hosts, and maintains websites for small businesses. Plans start at $99 a year with the domain included and no setup fee, and the domain is registered in the customer's own name. Customers ask for changes by writing in their account: 4 marketing updates per Central calendar month on the Launch plan, or four marketing updates per Central calendar month on Grow ($29 a month or $290 a year), which also shows the customer's Google reviews on the site. New pages, blog posts, and local SEO setup are included, and customers can leave any time and take their domain with them, with no transfer fee. Front Step Sites (frontstepsites.com) is unrelated to FRONTSTEPS, the property-management/HOA software company."
   );
   llmsLines.push("");
   llmsLines.push("## Pages");

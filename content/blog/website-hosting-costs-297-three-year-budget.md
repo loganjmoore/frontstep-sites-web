@@ -1,10 +1,10 @@
 ---
 title: "Website Hosting Costs: A $297 Three-Year Budget"
-description: "See what a $99 yearly website plan costs over three years, what hosting and maintenance include, and which projects still need a separate quote."
+description: "See what a $99 yearly website plan costs over three years, which marketing updates are included, and where the service scope ends."
 slug: "website-hosting-costs-297-three-year-budget"
 cluster: "guides"
-lead: "Website hosting and maintenance cost $297 over three years on the Front Step Sites Launch plan at its published $99 yearly price. That total includes the domain, hosting, SSL, renewals, and up to 2 change requests a month, while stores, booking, payments, full redesigns, and custom features need a separate quote."
-answer: "Website hosting and maintenance cost $297 over three years on the Front Step Sites Launch plan at its published $99 yearly price. That total includes the domain, hosting, SSL, renewals, and up to 2 change requests a month, while stores, booking, payments, full redesigns, and custom features need a separate quote."
+lead: "Website hosting and maintenance cost $297 over three years on the Front Step Sites Launch plan at its published $99 yearly price. That includes the domain, hosting, SSL, renewals, and four accepted coherent marketing updates per America/Chicago calendar month, with no rollover. Stores, booking systems, payment applications, and bespoke backend or database applications are outside the service."
+answer: "Website hosting and maintenance cost $297 over three years on the Front Step Sites Launch plan at its published $99 yearly price. That includes the domain, hosting, SSL, renewals, and four accepted coherent marketing updates per America/Chicago calendar month, with no rollover. Stores, booking systems, payment applications, and bespoke backend or database applications are outside the service."
 published: "2026-10-15"
 updated: "2026-10-15"
 author: "Logan Moore"
@@ -12,7 +12,7 @@ image: "/assets/blog/website-hosting-costs-297-three-year-budget-cover.svg"
 imageAlt: "Three yearly website bills of 99 dollars adding up to a 297 dollar three-year hosting and maintenance budget"
 ---
 
-Website hosting and maintenance cost $297 over three years on the Front Step Sites Launch plan at its published $99 yearly price. That total includes the domain, hosting, SSL, renewals, and up to 2 change requests a month. A store, booking system, payment feature, full redesign, or custom integration would need a separate quote.
+Website hosting and maintenance cost $297 over three years on the Front Step Sites Launch plan at its published $99 yearly price. That total includes the domain, hosting, SSL, renewals, and four accepted coherent marketing updates per America/Chicago calendar month, with no rollover. Marketing pages, contact forms, and blog posts fit the service. Stores, booking systems, payment applications, custom integrations, and bespoke backend or database applications are outside it. A full redesign or new logo may be quoted separately.
 
 ## How much do website hosting and maintenance cost for three years?
 
@@ -32,9 +32,9 @@ The earlier [three-year website maker cost check](/blog/website-maker-or-done-fo
 
 ## What does the $99 yearly website bill cover?
 
-The $99 yearly website bill covers the initial build, domain, hosting, SSL, renewals, and routine changes within the Launch limits. The domain is registered in the customer's name, and the plan includes 2 change requests a month completed within 2 business days.
+The $99 yearly website bill covers the initial build, domain, hosting, SSL, renewals, and marketing updates within the Launch limits. The domain is registered in the customer's name. New Launch and Grow plans include four accepted coherent marketing updates per America/Chicago calendar month. Grow is a standalone website plan with its own domain, hosting, and SSL. Existing paid unlimited contracts keep their entitlement.
 
-For the example tree service, one request could replace winter hours. Another could correct a phone number or add an approved project photo. These are ordinary changes to an existing site. Two requests a month provides as many as 24 request opportunities across 12 months when the owner has useful updates. There is no reason to invent work just to use the allowance.
+For the example tree service, one request could replace winter hours. Another could update a phone number or add an approved project photo. Each accepted request covers one coherent marketing update. The allowance resets at midnight on the first day of each month in America/Chicago, with no rollover. Requests declined as out of scope and withdrawals before work starts do not use the allowance; fixing our own error does not consume another update. Genuinely new scope does. There is no guaranteed turnaround time.
 
 The existing [guide to what the $99 plan covers](/blog/website-hosting-and-maintenance-what-99-covers/) lists the plan scope in detail. It also explains that the site starts from a 10-minute business questionnaire and is approved before launch.
 
@@ -48,7 +48,7 @@ Domain renewal still deserves attention even when a provider handles it. Keep th
 
 ## What website maintenance is included each year?
 
-Website maintenance in the Launch plan includes renewal handling and publishing up to 2 requested changes each month within 2 business days. It gives the owner a defined route for keeping business facts current without opening a site editor.
+Website maintenance in the Launch plan includes renewal handling and four accepted coherent marketing updates per America/Chicago calendar month. The owner can request updates and follow their status in the account without opening a site editor.
 
 Software maintenance depends on the technology behind a site. The National Institute of Standards and Technology says preventive maintenance through patch management helps prevent compromises, data breaches, operational disruptions, and other adverse events in its [enterprise patch management guidance](https://csrc.nist.gov/pubs/sp/800/40/r4/final). That guidance explains why software updates belong in a maintenance discussion; it does not endorse Front Step Sites or establish what the Launch plan maintains.
 
@@ -59,11 +59,11 @@ Imagine the tree service makes four ordinary changes during one year:
 - August: remove a service the crew no longer offers.
 - November: update the estimate email address and test the contact route.
 
-All four examples fit within the published monthly request limit when submitted in different months. Bigger revisions can fall outside routine maintenance. The owner describes the outcome in the account, and Front Step Sites identifies separately quoted work before it begins.
+All four examples fit within the published monthly allowance when submitted in different months. Bigger revisions can fall outside marketing updates. The owner describes the outcome in the account; a full redesign or new logo may be quoted before that design work begins.
 
 ## Which website costs are outside the $99 plan?
 
-Website costs outside the $99 plan include a full redesign or new logo, an online store, booking, payments, and custom features or integrations. Those projects change the site's design or behavior enough to need a separate scope and quote.
+Separate design work, such as a full redesign or new logo, may be quoted outside the $99 plan. Online stores, booking systems, payment applications, custom integrations, and bespoke backend or database applications are not offered. An ordinary link to a booking or payment provider the customer already uses is allowed.
 
 The line matters because “maintenance” can sound unlimited. Updating a service sentence takes a different scope from building an appointment calendar that checks staff availability. The same goes for replacing an approved photo and creating a new brand identity. Sort each requested job into the correct column before comparing prices.
 
@@ -71,8 +71,9 @@ The line matters because “maintenance” can sound unlimited. Updating a servi
 | --- | --- | --- |
 | Correct Saturday hours | Yes, within the request limit | Routine content change |
 | Replace one project photo | Yes, within the request limit | Routine content change |
-| Build online scheduling | Separate quote | New booking behavior |
-| Accept deposits on the site | Separate quote | Payment feature |
+| Build online scheduling | Not offered | Booking application |
+| Accept deposits on the site | Not offered | Payment application |
+| Link to an existing booking or payment provider | Yes, within the request allowance | Ordinary marketing-page link |
 | Replace the visual identity | Separate quote | Full redesign and logo work |
 
 If the business is considering a larger visual change, the guide to [website redesign costs](/blog/what-a-website-redesign-should-cost-and-when-you-need-one/) separates repair work from a true redesign.
@@ -104,20 +105,20 @@ For Front Step Sites, customers can leave and take their domain without a transf
 
 ### Is $99 the total price for the first year?
 
-Yes, under the current Launch terms. The initial build, domain, hosting, SSL, and listed maintenance are included, with no setup fee. Custom work outside the plan would be quoted separately.
+Yes, under the current Launch terms. The initial build, domain, hosting, SSL, and listed marketing updates are included, with no setup fee. A full redesign or new logo may be quoted separately; excluded applications are not offered.
 
 ### Does the three-year total include a domain every year?
 
 Yes. The $297 example has no added domain-renewal line because the domain is included in the annual plan. The domain is registered in the customer's name.
 
-### Are 24 website changes guaranteed each year?
+### Can unused website updates roll over to another month?
 
-Launch allows 2 change requests each month, which creates up to 24 monthly request opportunities in a 12-month year. The limit resets by month, and the published scope still determines what qualifies as a routine change.
+No. New Launch and Grow plans allow four accepted coherent marketing updates per America/Chicago calendar month, with no rollover. The allowance resets at midnight on the first day of each month. Existing paid unlimited contracts keep their entitlement.
 
 ### Is a booking system included in website maintenance?
 
-No. Booking, payments, stores, custom integrations, a full redesign, and a new logo require a separate quote under the current published terms.
+No. Booking systems, payment applications, stores, custom integrations, and bespoke backend or database applications are outside the service. Ordinary links to customer-owned providers are allowed. Only separate design work, such as a full redesign or new logo, may be quoted.
 
 ## The short version
 
-Write one list of the changes your business actually expects next year, then mark each item as included, owner-handled, or separately quoted. That small exercise turns a vague website price into a usable operating budget.
+Write one list of the changes your business actually expects next year, then mark each item as an included marketing update, owner-handled work, separately quoted design work, or outside the service. That small exercise turns a vague website price into a usable operating budget.

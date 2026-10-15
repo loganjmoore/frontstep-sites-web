@@ -33,15 +33,15 @@ Compare the time commitment using your real schedule. Who will update holiday ho
 
 A managed website can make sense when you want someone else to handle the site and routine changes. Compare the change allowance, response time, domain arrangement, and process for leaving. Ask whether the pages you need and any special booking requirements fit the service.
 
-[Front Step Sites](/) is $99 a year with the domain included and no setup fee; the domain is registered in your name. That plan includes two change requests a month, made within two business days. Grow is $29 a month or $290 a year for unlimited changes the same business day and Google reviews shown on the site. New pages, blog posts, and local SEO setup are included. Customers request changes by writing in their account and can leave any time with their domain, without a transfer fee.
+[Front Step Sites](/) is $99 a year with the domain included and no setup fee; the domain is registered in your name. That plan includes four coherent marketing updates per Central calendar month. Grow is $29 a month or $290 a year for four coherent marketing updates per Central calendar month and Google reviews shown on the site. New pages, blog posts, and local SEO setup are included. Customers request changes by writing in their account and can leave any time with their domain, without a transfer fee.
 
 For any managed option, discuss your shop's needs explicitly. A service page and a link to an existing appointment system are different from a custom integration. Get agreement on the actual workflow rather than assuming a general website offer covers every repair-shop system.
 
 | Tier | Typical cost | Best for | Watch for |
 | --- | --- | --- | --- |
 | DIY builder | Wix Light $17/month billed yearly ($204/year), or Squarespace Basic $19/month | Shop owners with time to write service pages and maintain them | You still choose vehicle-coverage details and keep hours current yourself |
-| Front Step Sites Launch | $99/yr, domain included, no setup fee | A shop that wants ongoing changes without learning an editor | 2 change requests a month, made within 2 business days |
-| Front Step Sites Grow | $29/mo or $290/yr | A shop that wants unlimited same-day changes, Google reviews shown on the site, and new pages, blog posts, or local SEO setup included | Costs more than Launch; worth it if you update the site often |
+| Front Step Sites Launch | $99/yr, domain included, no setup fee | A shop that wants ongoing changes without learning an editor | four coherent marketing updates per Central calendar month |
+| Front Step Sites Grow | $29/mo or $290/yr | A shop that wants four marketing updates per Central calendar month changes, Google reviews shown on the site, and new pages, blog posts, or local SEO setup included | Costs more than Launch; worth it if you update the site often |
 | Freelancer/Agency | A few thousand dollars to many thousands, depending on scope | A custom build, multiple locations, or a specific technical connection | Wide price variation; get a written quote before you pay |
 
 ## Know when a freelancer or agency earns the extra cost

@@ -77,7 +77,7 @@ Riverbend values the owner’s working time at $35 an hour. The owner estimates 
 
 The difference in this example is $321 for year one before adding any DIY software or domain charge. The number changes if the owner enjoys the work, builds faster, values the time differently, or needs custom features. It also changes if the provider’s scope leaves writing or updates with the owner.
 
-Front Step Sites states its Launch plan is $99 a year with the domain included and no setup fee. It includes two change requests a month, handled within two business days. Over one year, that is capacity for 24 requests if the owner uses both each month. That named limit makes the maintenance row measurable.
+Front Step Sites states its Launch plan is $99 a year with the domain included and no setup fee. It includes four coherent marketing updates per Central calendar month. Over one year, that is capacity for 48 accepted updates if the owner uses all four each month. That named limit makes the maintenance row measurable.
 
 For a subscription comparison across several years, use the separate [three-year website cost check](/blog/website-maker-or-done-for-you-three-year-cost/). The example here asks a different question: who handles the 12 jobs during one working year?
 
@@ -129,7 +129,7 @@ Google says the top-level domain does not determine search performance. A clear 
 
 ### How many update requests does the $99 plan include?
 
-Front Step Sites Launch includes two change requests a month, completed within two business days. That provides up to 24 requests over 12 months if both are used every month. Confirm what counts as one request before comparing it with an unlimited or pay-per-change offer.
+Front Step Sites Launch includes four coherent marketing updates per Central calendar month. That provides up to 48 accepted updates over 12 months if all four are used every month. Confirm what counts as one request before comparing it with an unlimited or pay-per-change offer.
 
 ### Should I count my own time as a website cost?
 

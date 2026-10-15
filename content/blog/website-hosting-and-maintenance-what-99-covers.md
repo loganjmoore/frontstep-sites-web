@@ -3,8 +3,8 @@ title: "Website Hosting and Maintenance: What $99 Covers"
 description: "See what $99 a year covers for hosting, maintenance, domains, and routine website changes, with a three-year cost example for a trade business."
 slug: "website-hosting-and-maintenance-what-99-covers"
 cluster: "guides"
-lead: "Website hosting and maintenance costs can be one bill or several, depending on who keeps the site online and who handles changes. Front Step Sites charges $99 a year for its Launch plan, including the domain, hosting, SSL, renewals, and 2 change requests a month."
-answer: "Compare website hosting and maintenance costs by the full scope rather than the hosting line alone. Front Step Sites' $99-a-year Launch plan includes the domain, hosting, SSL, renewals, and 2 change requests a month completed within 2 business days, with no setup fee."
+lead: "Website hosting and maintenance costs can be one bill or several, depending on who keeps the site online and who handles changes. Front Step Sites charges $99 a year for its Launch plan, including the domain, hosting, SSL, renewals, and four accepted coherent marketing updates per Central calendar month."
+answer: "Compare website hosting and maintenance costs by the full scope rather than the hosting line alone. Front Step Sites' $99-a-year Launch plan includes the domain, hosting, SSL, renewals, and four accepted coherent marketing updates per Central calendar month, with no setup fee."
 published: "2026-10-13"
 updated: "2026-10-13"
 author: "Logan Moore"
@@ -12,11 +12,11 @@ image: "/assets/blog/website-hosting-and-maintenance-what-99-covers-cover.svg"
 imageAlt: "Website hosting and maintenance cost breakdown showing a $99 yearly plan split across domain, hosting and SSL, and routine changes"
 ---
 
-Website hosting and maintenance costs can show up as one managed subscription or as separate bills for hosting, a domain, software care, and edits. Front Step Sites charges $99 a year for its Launch plan, including the domain, hosting, SSL, renewals, and 2 change requests a month completed within 2 business days. Compare a quote only after you know which jobs it covers.
+Website hosting and maintenance costs can show up as one managed subscription or as separate bills for hosting, a domain, software care, and edits. Front Step Sites charges $99 a year for its Launch plan, including the domain, hosting, SSL, renewals, and four accepted coherent marketing updates per Central calendar month. Compare a quote only after you know which jobs it covers.
 
 ## What does the $99 yearly website cost include?
 
-The $99 Front Step Sites Launch plan includes the initial build, a domain registered in the customer's name, hosting, SSL, renewals, and routine maintenance. There is no setup fee. The owner answers a 10-minute questionnaire, approves the site before launch, and can send 2 change requests per month.
+The $99 Front Step Sites Launch plan includes the initial build, a domain registered in the customer's name, hosting, SSL, renewals, and routine maintenance. There is no setup fee. The owner answers a 10-minute questionnaire, approves the site before launch, and can send four accepted coherent marketing updates per Central calendar month.
 
 The published scope breaks down into bills and tasks an owner might otherwise track separately:
 
@@ -26,7 +26,7 @@ The published scope breaks down into bills and tasks an owner might otherwise tr
 | Domain | Yes | The web address is included and registered in the customer's name |
 | Hosting and SSL | Yes | The site stays available over an encrypted HTTPS connection |
 | Renewals | Yes | The yearly domain and service renewal are handled |
-| Routine changes | Yes | Launch includes 2 requests a month, live within 2 business days |
+| Routine changes | Yes | Launch includes four accepted coherent marketing updates per Central calendar month |
 | Store, booking, payments, or custom features | No | These require a separate quote before work begins |
 
 This scope table reflects Front Step Sites. Ask another provider to mark the same rows so the comparison stays fair, since each company can bundle the work differently.
@@ -41,7 +41,7 @@ That difference matters when a proposal says "hosting included." Ask where conte
 
 ## What does website maintenance cover?
 
-Website maintenance covers agreed work that keeps the published site accurate and working. For this plan, that includes handling renewals and publishing up to 2 requested changes each month within 2 business days. A request might update Saturday hours, replace a project photo, or add a short service detail.
+Website maintenance covers agreed work that keeps the published site accurate and working. For this plan, that includes handling renewals and publishing up to four accepted coherent marketing updates per Central calendar month. A request might update Saturday hours, replace a project photo, or add a short service detail.
 
 Technical upkeep depends on the site's software. A static site has fewer moving parts than a plugin-heavy content management system, but its forms, links, domain settings, and published pages still need checking. The National Institute of Standards and Technology calls patching a critical part of preventive maintenance and says it helps prevent compromises, data breaches, operational disruptions, and other adverse events in its [enterprise patch management guidance](https://csrc.nist.gov/pubs/sp/800/40/r4/final). NIST's guidance explains why software updates belong in a maintenance discussion, though it does not endorse any website company or define what this plan maintains.
 
@@ -103,7 +103,7 @@ Yes. The Front Step Sites Launch plan includes the domain, and the site says it 
 
 ### Are unlimited website changes included?
 
-No. Launch includes 2 change requests a month completed within 2 business days. A business that needs more frequent changes should compare a larger plan or another maintenance arrangement.
+No. Launch includes four accepted coherent marketing updates per Central calendar month. A business that needs more frequent changes should compare a larger plan or another maintenance arrangement.
 
 ### Can a one-time website build have ongoing costs?
 

@@ -33,7 +33,7 @@ Plan for updates as well as launch. Who changes your seasonal service wording or
 
 A managed website may fit if you want someone else to make routine changes. Ask what happens when you add a pest service, change your service area, or need to clarify an inspection request. Response times and clear responsibilities matter alongside the annual price.
 
-[Front Step Sites](/) costs $99 a year with the domain included and no setup fee, with the domain registered in your name. The $99 plan includes two change requests a month, made within two business days. Grow is $29 a month or $290 a year for unlimited changes the same business day and Google reviews shown on the site.
+[Front Step Sites](/) costs $99 a year with the domain included and no setup fee, with the domain registered in your name. The $99 plan includes four coherent marketing updates per Central calendar month. Grow is $29 a month or $290 a year for four coherent marketing updates per Central calendar month and Google reviews shown on the site.
 
 New pages, blog posts, and local SEO setup are included. Customers ask for changes by writing in their account and can leave any time with their domain, without a transfer fee. Confirm the fit for your particular customer workflow before assuming a website service includes custom operational software.
 

@@ -25,7 +25,7 @@ As of September 2026, Wix Light costs $17/month billed yearly, or $204/year, and
 
 DIY can work if someone on your team will build and maintain the pages. That person must enter the menu, prepare photos, check phone layouts, and keep holiday hours current. A builder subscription does not remove those tasks from the restaurant's workload.
 
-[Front Step Sites](/) costs $99 a year with the domain included and no setup fee. The $99 plan includes two change requests a month, made within two business days. The Grow plan is $29/month or $290/year for unlimited changes the same business day and Google reviews shown on the site.
+[Front Step Sites](/) costs $99 a year with the domain included and no setup fee. The $99 plan includes four coherent marketing updates per Central calendar month. The Grow plan is $29/month or $290/year for four coherent marketing updates per Central calendar month and Google reviews shown on the site.
 
 Typical freelancer or agency projects can range from a few thousand dollars to substantially more. Original photography, a larger content project, custom design, and connections between systems can expand the work. A freelancer may suit a defined website project, while an agency may suit a restaurant coordinating broader marketing work. Request clear scopes rather than assuming the labels tell you what is included.
 

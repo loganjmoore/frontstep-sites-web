@@ -49,7 +49,7 @@ The done-for-you row is the $99 a year plan, with the domain included and no set
 
 A builder comes out cheaper only if the done-for-you route takes you more time than the builder route. The gap in subscriptions is $315 against Wix and $387 against Squarespace. At $40 an hour, that is about 8 hours and about 10 hours. So a builder would need your done-for-you route to cost you roughly 8 to 10 more hours over three years.
 
-The Launch plan covers 2 change requests a month. An owner who regularly needs more than that is looking at the next plan up, which is covered below. Unlimited changes cost more. Grow is $290 a year, or $870 over three years, with changes made the same business day. That is $258 more than Wix Light and $186 more than Squarespace Basic. At $40 an hour, Grow only wins if it saves you about 4.7 to 6.5 hours over three years, depending on which builder you compare it with.
+The Launch plan covers four coherent marketing updates per Central calendar month. Grow has the same four-update allowance, plus Google reviews shown on the site. Grow is $290 a year, or $870 over three years. That is $258 more than Wix Light and $186 more than Squarespace Basic. At $40 an hour, Grow only wins if it saves you about 4.7 to 6.5 hours over three years, depending on which builder you compare it with.
 
 ## Does a builder ever win?
 
@@ -73,7 +73,7 @@ Our step-by-step guide puts a basic site at 9 to 15 hours, with writing the copy
 
 ### What does a done-for-you site ask of me?
 
-You answer a 10-minute questionnaire and approve the site before it goes live. After that, you send change requests in your account. On the Launch plan, 2 requests a month are done within 2 business days.
+You answer a 10-minute questionnaire and approve the site before it goes live. After that, you send change requests in your account. On the Launch plan, four coherent marketing updates per Central calendar month are included.
 
 ### Does the three-year total include the domain?
 

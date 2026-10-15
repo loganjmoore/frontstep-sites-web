@@ -71,7 +71,7 @@ On a multi-page site, keep navigation consistent. Five plain menu labels often b
 
 A one-page site usually takes less owner time to review, while a multi-page website takes more because facts can appear in several places. The platform or provider determines the actual dollar cost. Page count alone does not tell you who writes, builds, hosts, or updates the site.
 
-Front Step Sites charges $99 a year for its Launch plan, with the domain included and no setup fee. The plan includes two change requests a month, completed within two business days. That price is the same product fact whether the initial business site needs one page or several straightforward pages; custom features such as payments or booking are a different scope.
+Front Step Sites charges $99 a year for its Launch plan, with the domain included and no setup fee. The plan includes four coherent marketing updates per Central calendar month. That price is the same product fact whether the initial business site needs one page or several straightforward pages; booking, payment, store and custom backend applications are not offered; links to existing providers are allowed.
 
 If you are choosing who will do the work, [website builders and done-for-you websites](/blog/website-builders-vs-done-for-you-websites/) compares control, editing, and responsibility. The [three-year website cost check](/blog/website-maker-or-done-for-you-three-year-cost/) adds subscription and owner-time examples.
 

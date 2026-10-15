@@ -99,4 +99,4 @@ Save the correction request and any support response, then check whether the pag
 
 Choose accurate business details, keep them in one reference document, and check the websites and listings customers use. Fix wrong locations and broken phone numbers first, then verify the public results. Protect private addresses and repeat the checklist whenever your business changes.
 
-If your website needs updated business details, [Front Step Sites](/) includes two change requests a month on its $99-a-year plan, with the domain included.
+If your website needs updated business details, [Front Step Sites](/) includes four coherent marketing updates per Central calendar month on its $99-a-year plan, with the domain included.

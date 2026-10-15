@@ -17,7 +17,7 @@ Front Step Sites builds a website specific to your trade, not a generic template
 
 ## How much does it cost, and what's actually included?
 
-The Launch plan is $99 a year with the domain included and no setup fee. That covers hosting, the domain registered in your own name, and local SEO setup, plus 2 change requests a month completed within 2 business days. A Grow plan is also available at $29 a month or $290 a year, for businesses that want unlimited change requests turned around the same business day, plus their Google reviews shown on the site.
+The Launch plan is $99 a year with the domain included and no setup fee. That covers hosting, the domain registered in your own name, and local SEO setup, plus four coherent marketing updates per Central calendar month. A Grow plan is also available at $29 a month or $290 a year, for businesses that want four marketing updates per Central calendar month, plus their Google reviews shown on the site.
 
 For comparison, as of September 2026 a Wix Light plan billed yearly runs $17 a month, or $204 a year, and Squarespace's Basic plan runs $19 a month. Both of those prices get you a page builder you still have to build and maintain yourself. The [Front Step Sites vs. Wix comparison](/blog/front-step-sites-vs-wix-for-a-small-business-website/) walks through that tradeoff in more detail: a lower starting price against hours of your own time spent building and fixing the site.
 
@@ -25,11 +25,11 @@ For comparison, as of September 2026 a Wix Light plan billed yearly runs $17 a m
 
 Front Step Sites fits a small business owner who wants a working website without becoming the person who maintains it. That's often a trade business, plumber, electrician, locksmith, HVAC company, or a local service like a salon, auto detailer, or cleaning company, where the owner's time is worth more spent on the job than on a page builder. About 73% to 83% of small businesses in the US now have a website, with the share rising from 64% in 2018, according to figures compiled by [Network Solutions' 2026 small business website statistics](https://www.networksolutions.com/blog/small-business-website-statistics/), which leaves a meaningful share of owners who still don't, often because building and maintaining one themselves never made it to the top of the list.
 
-It's not the right fit for a business that needs a full custom design with a unique layout, an online store with inventory and checkout, or a booking and payments system built into the site itself. Front Step Sites quotes that kind of work separately rather than pretending a $99-a-year plan covers it.
+We build a business-specific marketing site. Booking, payment, store and bespoke backend/database applications are not offered. We can link to your existing providers. A later full redesign or new logo needs a separate design quote.
 
 ## How do you actually get changes made?
 
-You sign in to your account and write the request the same way you'd describe it to a person: what you want changed, and where. A request like "swap the homepage photo for this one" or "add Saturday hours" gets made, published, and you get a reply when it's live. Launch includes 2 of those requests a month, done within 2 business days; Grow is unlimited and same-day. Every change is saved, so anything can be undone, and anything larger than a small change, a full redesign or a new feature, gets a price quote before it costs you anything.
+You sign in to your account and write the request the same way you'd describe it to a person: what you want changed, and where. A request like "swap the homepage photo for this one" or "add Saturday hours" gets made, published, and you get a reply when it's live. Launch includes four coherent marketing updates per Central calendar month; Grow includes four marketing updates per Central calendar month. Every change is saved, so anything can be undone, and a full redesign or new logo needs a separate design quote; booking, payment, store and backend applications are not offered.
 
 ## Do you own your domain and your site?
 
@@ -51,11 +51,11 @@ Front Step Sites does, working under written rules for how your site can change.
 
 ### Can I get a custom design instead of the standard trade template?
 
-A full custom design is outside the $99-a-year plan, since that plan depends on a consistent, trade-specific starting point. Larger design work gets quoted separately before it costs anything.
+A full custom design is outside the $99-a-year plan, while each initial marketing site is designed around the actual business. Larger design work gets quoted separately before it costs anything.
 
 ### What if I need an online store or booking system?
 
-Those aren't included in the base plan. Front Step Sites will quote that kind of feature separately if you need it, rather than trying to squeeze it into a $99-a-year site that wasn't built for it.
+We do not offer those applications on either plan. We can add an ordinary link to your customer-owned booking or payment provider.
 
 ### Is there a contract or a cancellation fee?
 
