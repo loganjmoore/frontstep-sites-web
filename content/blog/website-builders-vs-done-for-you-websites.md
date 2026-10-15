@@ -8,7 +8,7 @@ answer: A done-for-you site starts at $99 a year with the domain included, and a
 lead: Front Step Sites is a done-for-you website service for small businesses in the US, at $99 a year with the domain included and no setup fee.
 sitePlanner: false
 published: 2026-10-03
-updated: "2026-10-13"
+updated: "2026-10-15"
 ---
 
 Should you build your business website yourself or pay someone to handle it? A website builder is a do-it-yourself tool for making your own pages, and a done-for-you website is a site a provider designs, writes, and maintains for you. A builder makes sense when you have the interest and time to use it; a done-for-you service makes sense when you want help getting the work finished. The important difference is who does the writing, checking, and updating after you choose a design.
@@ -28,6 +28,17 @@ Should you build your business website yourself or pay someone to handle it? A w
 | Google Sites | A basic page editor tied to a Google account | You |
 
 This ranking is for a typical local owner who wants a useful site finished and maintained. If direct editing control matters more, put Wix or Squarespace first. The brief builder above helps you define the pages before choosing the tool or service.
+
+## What does a done-for-you site include that a builder does not?
+
+A builder may include website hosting or offer a domain, but you still use the builder and manage the site yourself. Front Step Sites' Launch plan instead bundles the site with the people doing the ongoing work:
+
+- **Domain:** Your domain is included and registered in your name.
+- **Hosting:** Hosting is included, and Front Step Sites keeps the site running.
+- **Updates:** You can request 2 changes a month, completed within 2 business days.
+- **Support:** You describe a change in plain English through your account, and Front Step Sites makes and publishes it.
+
+Read [what Front Step Sites does and who it is for](/blog/what-front-step-sites-does-and-who-its-for/) for the full scope, or use [is a $99 website worth it?](/blog/is-a-99-website-worth-it/) to compare the inclusions with the work your business needs.
 
 ## What does an AI website builder do?
 
