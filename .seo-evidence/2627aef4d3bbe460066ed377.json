@@ -1,0 +1,53 @@
+{
+  "version": 1,
+  "verifier": "seo-worker-v1",
+  "postFile": "content/blog/trade-website-example-tree-service-five-sections.md",
+  "artifact": ".seo-evidence/2627aef4d3bbe460066ed377.json",
+  "verifiedAt": "2026-10-15T06:33:13.507Z",
+  "sourceFiles": [
+    {
+      "path": "content/blog/website-tree-service.md",
+      "sha256": "b5c7f6ec1b55f9ab182ef27270e28778c051b8e950e2d70cf2ec741d5a4da171",
+      "excerpt": "| Page or proof | Business facts the owner supplies | Customer action to test |\n| --- | --- | --- |\n| Homepage | Real tree services, service area, ordinary and urgent contact routes, and honest availability | On a phone, identify the right service and use the intended call or estimate route |\n| Service pages | Actual removal, pruning, stump, storm, or consultation work and what each estimate covers | Open the relevant service from navigation and return without losing the contact route |\n| Project proof | Approved project photos, accurate captions, cleanup scope, and current verifiable qualifications | Confirm each photo and claim matches a real record and reveals no private customer detail |\n| Contact or estimate route | Reachable phone or email, service area, safe photo guidance, and the response process | Send a labeled test inquiry or place a test call and confirm the business receives it |"
+    },
+    {
+      "path": "content/blog/website-tree-service.md",
+      "sha256": "b5c7f6ec1b55f9ab182ef27270e28778c051b8e950e2d70cf2ec741d5a4da171",
+      "excerpt": "One visitor has a fallen limb blocking a driveway; another wants a large backyard tree assessed before planning a patio. What should your tree service website show to help both people? Give them separate, clear routes to urgent contact and planned estimates, with enough detail to understand the work you actually handle."
+    },
+    {
+      "path": "content/blog/website-tree-service.md",
+      "sha256": "b5c7f6ec1b55f9ab182ef27270e28778c051b8e950e2d70cf2ec741d5a4da171",
+      "excerpt": "Start with your main services and the towns you cover. A headline such as \"Tree removal, pruning, and stump grinding in your area\" works only if you provide all those services. Put a working phone button beside it and a separate option to request a planned estimate."
+    },
+    {
+      "path": "content/blog/website-tree-service.md",
+      "sha256": "b5c7f6ec1b55f9ab182ef27270e28778c051b8e950e2d70cf2ec741d5a4da171",
+      "excerpt": "A useful website prepares the customer for an estimate without asking them to perform your inspection. Explain that you may need to see the tree, surrounding structures, and access route. Photos can provide context, but should be optional and taken only from a safe position."
+    },
+    {
+      "path": "content/blog/website-tree-service.md",
+      "sha256": "b5c7f6ec1b55f9ab182ef27270e28778c051b8e950e2d70cf2ec741d5a4da171",
+      "excerpt": "Use real project photos that show the type of property and work you handle. A narrow side-yard removal gives different evidence from a cleared open lot. Explain the agreed scope in a short caption instead of relying on a dramatic image alone.\n\nGet permission before publishing a customer's property and avoid showing private details. Do not turn storm damage into a spectacle. A calm explanation of the completed work and cleanup can be more useful than a frightening image with a sales slogan.\n\nList insurance and credentials only when current and verifiable. Explain how a customer can request relevant proof before agreeing to work. Avoid vague badges that suggest a certification or endorsement you do not hold.\n\nUse genuine reviews without inventing quotations or editing them into a different meaning. The guide to [what makes a local website trustworthy](/blog/what-makes-a-local-business-website-trustworthy/) explains how plain evidence supports confidence. Showing who will assess the job and what happens next is useful even if your review collection is still small.\n\n## Explain cleanup, pricing, and the next step\n\nTree customers need to know what will remain after the crew leaves. Explain whether your proposed work includes hauling brush, cutting logs into manageable sections, removing wood, or leaving material as requested. Do not assume everyone wants the same outcome.\n\nMake stump work explicit in removal estimates. If it is separate, say so. Also clarify whether lawn repair or changes to the surrounding landscape are outside the agreed scope, rather than allowing the phrase \"complete removal\" to do too much work."
+    }
+  ],
+  "example": {
+    "description": "Source walkthrough connecting two tree-service customer situations to distinct urgent and planned website routes, then grouping the supported homepage jobs into five visible sections.",
+    "operation": "source_walkthrough",
+    "inputs": [],
+    "result": null,
+    "excerpt": "The site's source guide frames the underlying problem this way: “One visitor has a fallen limb blocking a driveway; another wants a large backyard tree assessed before planning a patio. What should your tree service website show to help both people? Give them separate, clear routes to urgent contact and planned estimates, with enough detail to understand the work you actually handle.”",
+    "reproducedBy": "worker source inspection"
+  },
+  "references": [
+    {
+      "url": "https://developers.google.com/search/docs/crawling-indexing/mobile/mobile-sites-mobile-first-indexing",
+      "status": 200,
+      "sha256": "36ceff1712de304d62fb3f2327456374f5b16c8778a8221069e25f3531ce1e1c",
+      "sourceExcerpt": "Google uses the mobile version of a site's content, crawled with the smartphone agent, for indexing and ranking. This is called mobile-first indexing.",
+      "supportingClaim": "[Google Search Central's mobile-first indexing guidance](https://developers.google.com/search/docs/crawling-indexing/mobile/mobile-sites-mobile-first-indexing) says Google uses the mobile version of a site's content for indexing and ranking.",
+      "primarySourceRationale": "This is Google Search Central's final public HTTPS documentation page. The exact excerpt appears in the page's opening paragraph and supports only Google's description of its own mobile-first indexing behavior."
+    }
+  ],
+  "claimRationale": "The tracked tree-service guide supports the homepage, services, proof, service-area, contact, urgent-versus-planned, assessment, cleanup, safety, and mobile-test concepts grouped into this five-section editorial walkthrough. It does not prove that five is a universal or optimal count, that this order improves conversions or rankings, or that any fictional scenario is a customer result. The post expressly identifies the example as a source-backed planning model with no live customer site, screenshot, conversion study, calls, or performance outcome. Google's reference supports only mobile-first indexing behavior, not this proposed section order or any ranking guarantee. The final long source excerpt is one complete contiguous passage so none of the intervening qualifications are omitted."
+}

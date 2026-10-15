@@ -1696,5 +1696,17 @@
   "title": "Website Hosting and Maintenance: What $99 Covers",
   "cluster": "guides",
   "angle": "a first-hand scope and three-year cost breakdown of the published $99 Launch plan, separating hosting, maintenance, changes, and excluded custom work"
+ },
+ {
+  "slug": "website-hosting-costs-297-three-year-budget",
+  "title": "Website Hosting Costs: A $297 Three-Year Budget",
+  "cluster": "guides",
+  "angle": "a bill-by-bill three-year operating budget for a tree service using the published Launch plan, with included work and separately quoted projects clearly separated"
+ },
+ {
+  "slug": "trade-website-example-tree-service-five-sections",
+  "title": "Trade Website Example: 5 Tree Service Sections",
+  "cluster": "guides",
+  "angle": "a five-section homepage walkthrough that follows one tree service customer path from the first screen to a useful inquiry without presenting a fictional customer site"
  }
 ]
