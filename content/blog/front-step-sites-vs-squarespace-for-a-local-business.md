@@ -25,7 +25,7 @@ Front Step Sites is a done-for-you website service for small businesses, priced 
 
 ## Compare the stated prices carefully
 
-Front Step Sites costs $99 a year with the domain included and no setup fee. Squarespace Basic is $19/month as of September 2026. Check the current checkout terms before purchasing, including billing arrangements and any separate services you need.
+Front Step Sites costs $99 a year with the domain included and no setup fee. For US customers paying in USD, [Squarespace Basic](https://www.squarespace.com/pricing) is $19/month billed annually as of September 2026. Check the current checkout terms before purchasing, including billing arrangements and any separate services you need.
 
 Do not turn those figures into a complete comparison without considering the work. List who will prepare the writing, select photographs, check the pages, and make later changes. Then identify which tasks you want to do yourself and which you would pay someone to handle.
 
@@ -81,7 +81,7 @@ For either choice, list requirements that go beyond ordinary pages and inquiries
 
 ### Is Front Step Sites cheaper than Squarespace?
 
-The stated prices are $99 a year for Front Step Sites and $19/month for Squarespace Basic as of September 2026. Front Step Sites includes the domain and has no setup fee. Compare the work and any additional services you need before deciding what the complete arrangement will cost.
+The stated prices are $99 a year for Front Step Sites and US$19/month billed annually for US Squarespace Basic customers as of September 2026. Front Step Sites includes the domain and has no setup fee. Compare the work and any additional services you need before deciding what the complete arrangement will cost.
 
 ### Is Squarespace a bad choice for a trades business?
 
