@@ -3,10 +3,10 @@ title: "How to make a Google Site, step by step"
 description: "How to make a Google Site: pick a template, name it, add pages, and publish. Then connect your own domain, and check Google's rules for who can do that."
 slug: "how-to-make-a-google-site"
 cluster: "guides"
-lead: "Google Sites is a website builder from Google for making simple pages, and this guide walks through making one step by step."
+lead: "Google Sites is Google's website builder for creating simple websites without writing code. It fits a business that needs only a few straightforward pages and has someone willing to build and update them; you choose a template, add the content, and publish from your Google account."
 answer: "To make a Google Site, open Google Sites while signed in to your Google account, choose a template under Start a new site, type a name, add your pages, and click Publish at the top right. Your first address starts with sites.google.com, and you can connect your own domain later if you are the site's owner."
 published: "2026-10-04"
-updated: "2026-10-14"
+updated: "2026-10-15"
 image: "/assets/blog/how-to-make-a-google-site-cover.svg"
 imageAlt: "Cover for how to make a Google Site, step by step: five steps from template to publish, and a custom domain that only the site owner can connect"
 ---
@@ -51,11 +51,9 @@ Use our guide to [putting a Google Sites site on your own domain](/blog/put-a-go
 
 Google's help adds that a Google Workspace account is not strictly required to use a custom domain. A Workspace plan does let you buy a new domain for the site. If you already own a domain, you can connect it from your existing registrar.
 
-## When is a Google Site enough for a business?
+## When is a Google Site the wrong choice?
 
-A Google Site suits a simple brochure site with a few pages, where you handle the updates yourself. Before you rely on it for customers, check the basics. The domain should be registered in your name, and you should know who holds the login. The site should also show the padlock in the browser. Our guide to [what SSL is and why your site needs the padlock](/blog/what-ssl-is-and-why-your-site-needs-the-padlock/) explains what that padlock means and why it matters.
-
-If you are still deciding whether Google Sites fits, read [Google Sites alternatives for a business](/blog/google-sites-alternatives-for-a-business/). It compares the free option with paid builders and a done-for-you service on the things that matter for a local business.
+A Google Site is the wrong choice when you do not want to build and update the pages yourself or when a simple brochure site cannot handle what customers need to do. Compare [Google Sites alternatives for a business](/blog/google-sites-alternatives-for-a-business/) before committing. If you keep Google Sites, use the [Google Sites launch checklist](/blog/google-sites-launch-checklist-for-a-business-website/) before sharing it and follow the separate guide to [put a Google Sites site on your own domain](/blog/put-a-google-sites-site-on-your-own-domain/).
 
 ## Frequently asked questions
 

@@ -8,7 +8,7 @@ answer: A done-for-you site starts at $99 a year with the domain included, and a
 lead: Front Step Sites is a done-for-you website service for small businesses in the US, at $99 a year with the domain included and no setup fee.
 sitePlanner: false
 published: 2026-10-03
-updated: "2026-10-13"
+updated: "2026-10-15"
 ---
 
 Should you build your business website yourself or pay someone to handle it? A website builder is a do-it-yourself tool for making your own pages, and a done-for-you website is a site a provider designs, writes, and maintains for you. A builder makes sense when you have the interest and time to use it; a done-for-you service makes sense when you want help getting the work finished. The important difference is who does the writing, checking, and updating after you choose a design.
@@ -28,6 +28,16 @@ Should you build your business website yourself or pay someone to handle it? A w
 | Google Sites | A basic page editor tied to a Google account | You |
 
 This ranking is for a typical local owner who wants a useful site finished and maintained. If direct editing control matters more, put Wix or Squarespace first. The brief builder above helps you define the pages before choosing the tool or service.
+
+## What does a done-for-you website include that a builder does not?
+
+A builder supplies the editing tool, while a done-for-you service assigns the website work to a provider. Front Step Sites' Launch plan is $99 a year and includes these five responsibilities:
+
+- [Domain](/blog/who-owns-your-domain-name-and-why-it-matters/): the domain is included and registered in the customer's name.
+- [Hosting](/blog/what-website-hosting-is-in-plain-english/): the provider keeps the pages available online, so there is no separate hosting bill.
+- [Maintenance](/blog/website-hosting-and-maintenance-what-99-covers/): routine upkeep, SSL, and renewals are handled within the published scope.
+- [Updates](/blog/how-often-should-you-update-your-business-website/): Launch includes four accepted coherent marketing updates per Central calendar month.
+- [Support](/blog/what-website-hosting-is-in-plain-english/): you have a provider responsible for agreed website issues instead of troubleshooting the hosting arrangement alone.
 
 ## What does an AI website builder do?
 
