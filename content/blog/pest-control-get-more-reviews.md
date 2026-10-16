@@ -21,7 +21,6 @@ Invite the customer to describe only the details they are comfortable sharing:
 
 - **Service type:** The general kind of visit, without asking them to publish a sensitive pest or property detail.
 - **Timeliness:** Whether the team arrived when expected and communicated clearly about the appointment.
-- **Technician name:** The technician's name, only when the customer wants to recognize that person publicly.
 
 The [general Google review request guide](/blog/how-to-get-customers-to-leave-reviews-on-google-without-being-pushy/) explains how to ask without pressure. Use the [bad review reply guide](/blog/how-to-reply-to-a-bad-review/) to respond without exposing private service details.
 
