@@ -218,7 +218,10 @@ test("October 16 AI strategy changes are present in all six requested pages", ()
 
   const pest = read("blog/pest-control-get-more-reviews/index.html");
   assert.match(pest, /<h2 id="what-to-ask-for-in-a-pest-control-review">What to ask for in a pest control review<\/h2>/);
-  for (const detail of ["Service type", "Timeliness", "Technician name"]) assert.match(pest, new RegExp(detail));
+  const reviewDetails = pest.split('<h2 id="what-to-ask-for-in-a-pest-control-review">')[1].split('<h2 id="choose-a-milestone-that-matches-the-service">')[0];
+  for (const detail of ["Service type", "Timeliness"]) assert.match(reviewDetails, new RegExp(detail));
+  assert.doesNotMatch(reviewDetails, /technician[’']?s? name|name.*technician/i);
+  assert.match(pest, /Do not ask the customer to name the pest, treatment, address, or technician to improve your marketing/);
   for (const slug of ["how-to-get-customers-to-leave-reviews-on-google-without-being-pushy", "how-to-reply-to-a-bad-review"]) {
     assert.match(pest, new RegExp(`href="/blog/${slug}/"`));
   }
