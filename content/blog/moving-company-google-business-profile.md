@@ -25,7 +25,7 @@ List the towns and zip codes you can genuinely staff a crew and truck for on sho
 
 ## Where does your USDOT number go on a Google Business Profile?
 
-Google has no dedicated field for a mover's USDOT number. Put it in your business description instead, since for-hire household goods movers that cross state lines must register with the Federal Motor Carrier Safety Administration and hold a USDOT number and MC operating authority, according to the [FMCSA](https://www.fmcsa.dot.gov/protect-your-move/movers-vs-brokers). A purely local, in-state operation is exempt, so if that's you, there's no number to add.
+Google has no dedicated field for a mover's USDOT number. Put it in your business description instead, since for-hire household goods movers that cross state lines must register with the Federal Motor Carrier Safety Administration and hold a USDOT number and MC operating authority, according to the [FMCSA](https://www.fmcsa.dot.gov/protect-your-move/movers-vs-brokers). An in-state operation is not automatically exempt: [FMCSA says some states require intrastate carriers to obtain a USDOT number](https://www.fmcsa.dot.gov/faq/do-intrastate-carriers-non-hazardous-materials-need-usdot-number). Check with your state Department of Transportation or responsible state agency.
 
 Showing the number costs nothing and gives a cautious customer, someone about to hand a stranger their household belongings, a way to verify you're not one of the rogue movers the FMCSA warns about. Don't invent a number you don't hold; it's checkable.
 
@@ -55,7 +55,7 @@ No. Google removed the radius option for service-area businesses, so you need to
 
 ### Do I need a USDOT number on my profile if I only move people locally?
 
-No. The USDOT and MC operating authority requirement applies to movers that cross state lines. A purely local, in-state operation is exempt and doesn't need to add one.
+It depends on your state. Some states require intrastate carriers to obtain a USDOT number even when their vehicle and cargo never cross state lines. Check with your state Department of Transportation or responsible state agency rather than assuming a local operation is exempt.
 
 ### Should I set special hours for weekends?
 
