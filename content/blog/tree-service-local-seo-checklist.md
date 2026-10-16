@@ -6,8 +6,15 @@ cluster: "trades/tree-service"
 answer: "Local SEO for a tree service starts with accurate listings and useful pages for removal, pruning, stump grinding, and any other work you actually offer. Describe your real coverage, show relevant projects, and request honest reviews. Check the phone and estimate routes so people who find you can reach the right person."
 lead: "Tree service local SEO is the work of making a tree business easy to find and understand in the places nearby customers search. Keep your business details accurate, explain the tree work and areas you actually cover, and make every call or estimate path work."
 published: "2026-09-26"
-updated: "2026-10-14"
+updated: "2026-10-16"
 ---
+
+## What to fix first
+
+1. Check that your [primary Google Business Profile category](/blog/tree-service-google-business-profile/) matches the main tree service you actually provide, then add only relevant additional categories.
+2. Build [service pages for the tree work you offer](/blog/website-tree-service/), starting with the jobs customers ask about most often.
+3. Make a consistent process to [ask customers for honest reviews](/blog/tree-service-get-more-reviews/) after a clear service milestone.
+4. Match your name, address, and phone number across the website and your [tree service Google Business Profile](/blog/tree-service-google-business-profile/).
 
 People searching for "stump grinding near me" need different information from someone searching for "storm damaged tree removal." Does your online presence make those differences clear? This checklist helps you organize a tree service business around real work and local coverage without creating fake locations or promising a search position.
 

@@ -6,7 +6,7 @@ cluster: "trades/pest-control"
 answer: "Ask pest control customers for honest reviews at a clear service milestone, after they can describe the visit or agreed follow-up. Keep requests optional and discreet, provide a direct link, and invite customers consistently regardless of satisfaction. Never exchange discounts for reviews or tie follow-up service to changing a rating."
 lead: "A pest control review request is an optional invitation for a customer to describe the service publicly in their own words. Send it at a clear service milestone, keep sensitive details private, and never attach a reward or required rating."
 published: "2026-09-26"
-updated: "2026-10-13"
+updated: "2026-10-16"
 ---
 
 ## How to get more Google reviews for pest control
@@ -14,6 +14,16 @@ updated: "2026-10-13"
 Ask for an honest review once the customer can describe the service milestone you have chosen. Keep the invitation optional and provide a direct review link, as Google's [review request guidance](https://support.google.com/business/answer/3474122?hl=en) recommends.
 
 A pest control visit can be a sensitive thing to review publicly. Customers may appreciate the technician but feel uncomfortable discussing a bed bug concern or rodent activity at their business. Your review process should make honest feedback easy while leaving them in control of what they share.
+
+## What to ask for in a pest control review
+
+Invite the customer to describe only the details they are comfortable sharing:
+
+- **Service type:** The general kind of visit, without asking them to publish a sensitive pest or property detail.
+- **Timeliness:** Whether the team arrived when expected and communicated clearly about the appointment.
+- **Technician name:** The technician's name, only when the customer wants to recognize that person publicly.
+
+The [general Google review request guide](/blog/how-to-get-customers-to-leave-reviews-on-google-without-being-pushy/) explains how to ask without pressure. Use the [bad review reply guide](/blog/how-to-reply-to-a-bad-review/) to respond without exposing private service details.
 
 ## Choose a milestone that matches the service
 

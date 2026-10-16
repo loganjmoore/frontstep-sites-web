@@ -5,19 +5,19 @@ slug: structured-data-for-ai-search-what-small-businesses-need
 cluster: ai-search
 answer: "Structured data labels facts on your website so software can interpret them more easily. A small business should start with accurate business details that match its visible pages, then check the result. There is no special AI schema that guarantees recommendations, and review or FAQ markup does not automatically produce extra search features."
 published: 2026-09-26
-updated: 2026-10-13
+updated: 2026-10-16
 ---
 
 Structured data is machine-readable markup that labels facts on a web page so search engines and other software can interpret them more consistently. A small local business should start with LocalBusiness, FAQPage, and Service schema where each type matches information that visitors can see on the page. The markup can describe a business in an organized format, but the sales pitch often runs ahead of what it does.
 
 ## Which schema types to use and when
 
-| Schema type | When to use it |
-| --- | --- |
-| LocalBusiness | On a local business page with verified public details, using a more specific subtype when one accurately fits. |
-| Service | On a page that visibly describes a genuine service the business provides. |
-| FAQPage | On a page where the same questions and complete answers are visible to visitors. |
-| BreadcrumbList | On a page with a visible breadcrumb trail that reflects the page's place in the site. |
+| Schema type | When to use it | Example |
+| --- | --- | --- |
+| LocalBusiness | On a local business page with verified public details, using a more specific subtype when one accurately fits. | A tree service homepage labels the same public business name, phone number, and hours shown to visitors. |
+| Service | On a page that visibly describes a genuine service the business provides. | A tree-removal page labels tree removal as the service described on that page. |
+| FAQPage | On a page where the same questions and complete answers are visible to visitors. | A visible FAQ asks how estimates work and gives the complete answer directly below it. |
+| BreadcrumbList | On a page with a visible breadcrumb trail that reflects the page's place in the site. | A tree-removal page shows and labels the trail Home, Services, Tree removal. |
 
 Schema does not guarantee rich results or AI citations. For a fuller field-by-field explanation, read the [local-business schema guide](/blog/local-business-schema-markup-explained-simply/).
 
