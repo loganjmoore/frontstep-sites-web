@@ -217,7 +217,9 @@ function renderMarkdown(body, ctx) {
       html += `<figure class="doc-figure"><img src="${escapeAttr(block.src)}" alt="${escapeAttr(block.alt)}" loading="lazy"></figure>\n`;
     } else if (block.type === "table") {
       const mobileClass = ctx.mobileWideTable ? " mobile-wide-table" : "";
-      html += `<div class="table-wrap${mobileClass}"><table><thead><tr>${block.headers
+      const readableClass = ctx.tableRegionLabel ? " readable-table" : "";
+      const regionAttrs = ctx.tableRegionLabel ? ` role="region" aria-label="${escapeAttr(ctx.tableRegionLabel)}" tabindex="0"` : "";
+      html += `<div class="table-wrap${mobileClass}${readableClass}"${regionAttrs}><table><thead><tr>${block.headers
         .map((h) => `<th>${inline(h, ctx)}</th>`)
         .join("")}</tr></thead><tbody>${block.rows
         .map((r) => `<tr>${r.map((c) => `<td>${inline(c, ctx)}</td>`).join("")}</tr>`)
@@ -302,7 +304,7 @@ ${ogImage ? `<meta property="og:image" content="${escapeAttr(ogImage)}">\n` : ""
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="${fontHref}" rel="stylesheet" media="print" onload="this.media='all'">
 <noscript><link href="${fontHref}" rel="stylesheet"></noscript>
-<style>${READ_CSS}${bodyHtml.includes("mobile-wide-table") ? "@media(max-width:600px){.doc .mobile-wide-table table{min-width:44rem}}" : ""}${(bodyHtml.includes('id="site-plan-builder"') || bodyHtml.includes('data-website-resource=')) ? SITE_PLAN_CSS : ""}${bodyHtml.includes("data-website-resource=") ? RESOURCE_CSS : ""}</style>
+<style>${READ_CSS}${bodyHtml.includes("readable-table") ? ".doc .readable-table table{min-width:40rem}.doc .readable-table th,.doc .readable-table td{overflow-wrap:anywhere}" : ""}${bodyHtml.includes("mobile-wide-table") ? "@media(max-width:600px){.doc .mobile-wide-table table{min-width:44rem}}" : ""}${(bodyHtml.includes('id="site-plan-builder"') || bodyHtml.includes('data-website-resource=')) ? SITE_PLAN_CSS : ""}${bodyHtml.includes("data-website-resource=") ? RESOURCE_CSS : ""}</style>
 ${jsonLd.map(jsonLdScript).join("\n")}
 <script defer src="/analytics-consent.js"></script>
 <script defer src="/posthog-web.js"></script>
@@ -651,7 +653,7 @@ function main() {
   const deadLinksReport = [];
 
   for (const { file, data, body } of parsedArticles) {
-    const ctx = { allowedBareSlugs, deadLinks: [], mobileWideTable: data.mobileWideTable === "true" };
+    const ctx = { allowedBareSlugs, deadLinks: [], mobileWideTable: data.mobileWideTable === "true", tableRegionLabel: data.tableRegionLabel || "" };
     const { html, faqItems } = renderMarkdown(body, ctx);
     if (ctx.deadLinks.length) {
       deadLinksReport.push({ file, links: ctx.deadLinks });
