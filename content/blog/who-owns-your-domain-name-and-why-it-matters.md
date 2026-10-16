@@ -6,17 +6,16 @@ cluster: "guides"
 answer: "Your business should be the domain registrant and have reliable control over the account that manages the registration. A web designer can handle the technical work without holding the domain in their own name. Check the registrant details, account access, recovery email, and renewal arrangements before you need to move the website."
 lead: "Domain ownership is the registration right held by the registrant named in the registrar agreement, while practical control also requires independent access to the registrar account and its recovery methods. Paying an invoice or having a designer manage DNS does not transfer ownership."
 published: "2026-09-26"
-updated: "2026-10-13"
+updated: "2026-10-16"
 ---
 
 ## How to check who owns your domain right now
 
-1. **Open the registrar account.** Confirm that the registrant is you or the correct business and that you control the login and recovery methods.
-2. **Check a WHOIS or registry lookup.** Use it to identify the registrar and registration status. Public results may hide personal details, so a hidden name is not proof that somebody else owns the domain.
-3. **Check the hosting account separately.** Website hosting may be managed by another company, and access to hosting or a website editor does not prove control of the domain registration.
-4. **Record the renewal date.** Confirm the payment method, automatic-renewal setting, and who receives renewal notices before the domain is close to expiring.
+1. **Run a WHOIS or registry lookup.** Use it to identify the registrar and registration status. Public results may hide personal details, so a hidden name is not proof that somebody else owns the domain.
+2. **Open the registrar account.** Confirm that the registrant is you or the correct business and that you control the login, recovery methods, and renewal settings.
+3. **Check the registrant email.** Make sure the account's current contact or recovery email belongs to the business and can receive messages without relying on a former employee or website provider.
 
-If you are still choosing an address, use the [domain-name choice guide](/blog/how-to-choose-a-domain-name-for-a-small-business/). If you plan to transfer an existing registration, follow the [step-by-step domain move guide](/blog/how-to-move-a-domain-to-a-new-provider/) before changing or canceling services.
+If you plan to transfer the registration, follow the [step-by-step domain move guide](/blog/how-to-move-a-domain-to-a-new-provider/). If the website is moving too, use the [switch-providers guide](/blog/how-to-switch-website-providers-without-losing-google-rankings/) before changing or canceling services.
 
 ## Who controls the domain: registrant vs. manager
 

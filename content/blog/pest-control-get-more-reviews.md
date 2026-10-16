@@ -6,7 +6,7 @@ cluster: "trades/pest-control"
 answer: "Ask pest control customers for honest reviews at a clear service milestone, after they can describe the visit or agreed follow-up. Keep requests optional and discreet, provide a direct link, and invite customers consistently regardless of satisfaction. Never exchange discounts for reviews or tie follow-up service to changing a rating."
 lead: "A pest control review request is an optional invitation for a customer to describe the service publicly in their own words. Send it at a clear service milestone, keep sensitive details private, and never attach a reward or required rating."
 published: "2026-09-26"
-updated: "2026-10-13"
+updated: "2026-10-16"
 ---
 
 ## How to get more Google reviews for pest control
@@ -14,6 +14,16 @@ updated: "2026-10-13"
 Ask for an honest review once the customer can describe the service milestone you have chosen. Keep the invitation optional and provide a direct review link, as Google's [review request guidance](https://support.google.com/business/answer/3474122?hl=en) recommends.
 
 A pest control visit can be a sensitive thing to review publicly. Customers may appreciate the technician but feel uncomfortable discussing a bed bug concern or rodent activity at their business. Your review process should make honest feedback easy while leaving them in control of what they share.
+
+## What to ask for in a pest control review
+
+Invite customers to describe details they are comfortable making public. Keep these prompts optional rather than giving them a script:
+
+- **Service type:** They can name the general kind of visit without revealing a pest or property detail they consider private.
+- **Timeliness:** They can describe whether the team arrived or communicated within the window the business actually provided.
+- **Technician name:** They can recognize a technician by name if they choose, but the request should never require it.
+
+Before sharing the review link, use the [pest control Google Business Profile guide](/blog/pest-control-google-business-profile/) to confirm that it opens the correct listing.
 
 ## Choose a milestone that matches the service
 
@@ -45,7 +55,7 @@ Do not ask the customer to name the pest, treatment, address, or technician to i
 
 ## Remove friction without controlling the opinion
 
-Use the review link for your correct profile and test it yourself. Make sure it does not lead to an old location or another company with a similar name. The [pest control profile guide](/blog/pest-control-google-business-profile/) can help you check the surrounding business information.
+Use the review link for your correct profile and test it yourself. Make sure it does not lead to an old location or another company with a similar name.
 
 The [pest control local SEO checklist](/blog/pest-control-local-seo-checklist/) covers the matching website, listing, and service-area checks that help customers find the right business before they reach the review link.
 

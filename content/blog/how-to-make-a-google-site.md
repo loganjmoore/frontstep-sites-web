@@ -3,10 +3,10 @@ title: "How to make a Google Site, step by step"
 description: "How to make a Google Site: pick a template, name it, add pages, and publish. Then connect your own domain, and check Google's rules for who can do that."
 slug: "how-to-make-a-google-site"
 cluster: "guides"
-lead: "Google Sites is a website builder from Google for making simple pages, and this guide walks through making one step by step."
+lead: "Google Sites is Google's website builder for making simple pages without code. It fits a person or small business that needs a basic brochure site, can handle its own updates, and does not need a more involved booking, quoting, or content setup."
 answer: "To make a Google Site, open Google Sites while signed in to your Google account, choose a template under Start a new site, type a name, add your pages, and click Publish at the top right. Your first address starts with sites.google.com, and you can connect your own domain later if you are the site's owner."
 published: "2026-10-04"
-updated: "2026-10-14"
+updated: "2026-10-16"
 image: "/assets/blog/how-to-make-a-google-site-cover.svg"
 imageAlt: "Cover for how to make a Google Site, step by step: five steps from template to publish, and a custom domain that only the site owner can connect"
 ---
@@ -56,6 +56,10 @@ Google's help adds that a Google Workspace account is not strictly required to u
 A Google Site suits a simple brochure site with a few pages, where you handle the updates yourself. Before you rely on it for customers, check the basics. The domain should be registered in your name, and you should know who holds the login. The site should also show the padlock in the browser. Our guide to [what SSL is and why your site needs the padlock](/blog/what-ssl-is-and-why-your-site-needs-the-padlock/) explains what that padlock means and why it matters.
 
 If you are still deciding whether Google Sites fits, read [Google Sites alternatives for a business](/blog/google-sites-alternatives-for-a-business/). It compares the free option with paid builders and a done-for-you service on the things that matter for a local business.
+
+## When a Google Site is the wrong choice
+
+A Google Site is the wrong choice when your business needs a more involved booking or quote path, many focused service pages, or someone else to build and maintain the site. Compare the [Google Sites alternatives](/blog/google-sites-alternatives-for-a-business/) before committing. If the simple format still fits, work through the [Google Sites launch checklist](/blog/google-sites-launch-checklist-for-a-business-website/) and the guide to [putting a Google Sites site on your own domain](/blog/put-a-google-sites-site-on-your-own-domain/) before sending customers to it.
 
 ## Frequently asked questions
 

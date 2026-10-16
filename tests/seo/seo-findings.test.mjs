@@ -108,20 +108,21 @@ test("priority article and hub changes are present in generated HTML", () => {
   assert.match(tree, /<link rel="canonical" href="https:\/\/frontstepsites\.com\/blog\/tree-service-local-seo-checklist\/">/);
   assert.match(tree, /<h1>Tree Service Local SEO Checklist: What to Fix First<\/h1>/);
   assert.match(tree, /Tree service local SEO is the work of/);
-  assert.doesNotMatch(tree, /Fix tree service local SEO in this order/);
-  const priorityList = tree.match(/<h2 id="local-seo-checklist-for-tree-services">[\s\S]*?<ol>([\s\S]*?)<\/ol>/)?.[1] || "";
-  assert.equal((priorityList.match(/<li>/g) || []).length, 5);
+  const priorityList = tree.match(/<h2 id="what-to-fix-first">[\s\S]*?<ol>([\s\S]*?)<\/ol>/)?.[1] || "";
+  assert.equal((priorityList.match(/<li>/g) || []).length, 4);
 
   for (const href of [
     "/blog/tree-service-google-business-profile/",
     "/blog/tree-service-get-more-reviews/",
     "/blog/website-tree-service/",
     "/blog/nap-consistency-why-your-name-address-and-phone-must-match-everywhere/",
-    "/blog/local-business-schema-markup-explained-simply/",
   ]) {
     assert.match(priorityList, new RegExp(`<a href="${href}">`));
   }
-  assert.match(tree, /<h2 id="local-seo-checklist-for-tree-services">Local SEO checklist for tree services<\/h2>/);
+  for (const priority of ["Google Business Profile categories", "Service pages", "Review count", "NAP consistency"]) {
+    assert.match(priorityList, new RegExp(`<strong>${priority}:<\\/strong>`));
+  }
+  assert.match(tree, /<h2 id="what-to-fix-first">What to fix first<\/h2>/);
   assert.match(tree, /<ol>/);
   assert.match(tree, /href="\/blog\/trades\/tree-service\/"/);
   assert.match(tree, /href="\/blog\/tree-service-get-more-reviews\/"/);
@@ -161,10 +162,10 @@ test("October 13 AI strategy changes are present in their citation surfaces", ()
   const domain = read("blog/who-owns-your-domain-name-and-why-it-matters/index.html");
   assert.match(domain, /How to check who owns your domain right now/);
   assert.match(domain, /<ol>/);
-  for (const detail of ["registrar account", "WHOIS or registry lookup", "hosting account separately", "renewal date"]) {
+  for (const detail of ["WHOIS or registry lookup", "registrar account", "registrant email"]) {
     assert.match(domain, new RegExp(detail, "i"));
   }
-  for (const slug of ["how-to-choose-a-domain-name-for-a-small-business", "how-to-move-a-domain-to-a-new-provider"]) {
+  for (const slug of ["how-to-move-a-domain-to-a-new-provider", "how-to-switch-website-providers-without-losing-google-rankings"]) {
     assert.match(domain, new RegExp(`href="/blog/${slug}/"`));
   }
 
@@ -357,7 +358,7 @@ test("cleaning Business Profile guide has the requested setup checklist", () => 
 
 test("October 10 entity-definition findings use unique plain definitions immediately after the H1", () => {
   const definitions = {
-    "how-to-make-a-google-site": "Google Sites is a website builder from Google for making simple pages, and this guide walks through making one step by step.",
+    "how-to-make-a-google-site": "Google Sites is Google's website builder for making simple pages without code. It fits a person or small business that needs a basic brochure site, can handle its own updates, and does not need a more involved booking, quoting, or content setup.",
     "best-web-builder-sites-for-a-small-business": "A website builder is a self-serve tool for making and editing your own site. Front Step Sites is a done-for-you website service for small businesses that would rather request changes than use a builder themselves.",
     "click-to-call-making-your-phone-number-work-on-every-page": "Click-to-call is a phone link that opens a calling option on a supported device, and its HTML destination uses the tel:+12025550147 format.",
     "contact-forms-that-actually-get-filled-out": "A contact form is a set of website fields that lets a visitor send an inquiry to a business.",
@@ -409,9 +410,12 @@ test("Google Sites next steps link from the matching publishing and domain instr
   const domain = html.slice(html.indexOf('<h2 id="can-you-use-your-own-domain-with-a-google-site">'), html.indexOf('<h2 id="when-is-a-google-site-enough-for-a-business">'));
   assert.match(publish, /href="\/blog\/google-sites-launch-checklist-for-a-business-website\/"/);
   assert.match(domain, /href="\/blog\/put-a-google-sites-site-on-your-own-domain\/"/);
-  assert.doesNotMatch(html, /id="when-is-a-google-site-the-wrong-choice"/);
+  const wrongChoice = html.slice(html.indexOf('<h2 id="when-a-google-site-is-the-wrong-choice">'), html.indexOf('<h2 id="frequently-asked-questions">'));
+  assert.match(wrongChoice, /href="\/blog\/google-sites-alternatives-for-a-business\/"/);
+  assert.match(wrongChoice, /href="\/blog\/google-sites-launch-checklist-for-a-business-website\/"/);
+  assert.match(wrongChoice, /href="\/blog\/put-a-google-sites-site-on-your-own-domain\/"/);
   assert.match(html, /"datePublished":"2026-10-04"/);
-  assert.match(html, /"dateModified":"2026-10-14"/);
+  assert.match(html, /"dateModified":"2026-10-16"/);
 });
 
 test("AI strategy articles lead with the requested direct answers and related links", () => {
@@ -422,6 +426,8 @@ test("AI strategy articles lead with the requested direct answers and related li
   const pest = read("blog/pest-control-get-more-reviews/index.html");
   assert.match(pest, /<h2 id="how-to-get-more-google-reviews-for-pest-control">How to get more Google reviews for pest control<\/h2>/);
   assert.match(pest, /Ask for an honest review once the customer can describe the service milestone you have chosen\./);
+  assert.match(pest, /<h2 id="what-to-ask-for-in-a-pest-control-review">What to ask for in a pest control review<\/h2>/);
+  for (const detail of ["Service type", "Timeliness", "Technician name"]) assert.match(pest, new RegExp(`<strong>${detail}:<\\/strong>`));
   assert.match(pest, /href="\/blog\/pest-control-google-business-profile\/"/);
   assert.match(pest, /href="\/blog\/pest-control-local-seo-checklist\/"/);
 
@@ -468,10 +474,11 @@ test("October 8 AI strategy changes are present in generated pages", () => {
   assert.match(phone, /<code class="language-html">&lt;a href="tel:\+12025550147"&gt;Call \(202\) 555-0147&lt;\/a&gt;<\/code>/);
   assert.match(phone, /<th>Where to add it<\/th><th>What the visitor sees<\/th><th>What to test<\/th>/);
   assert.match(phone, /What is the correct HTML for a clickable phone number\?/);
-  assert.match(phone, /"datePublished":"2026-09-26","dateModified":"2026-10-11"/);
+  assert.match(phone, /"datePublished":"2026-09-26","dateModified":"2026-10-16"/);
 
   const schema = read("blog/structured-data-for-ai-search-what-small-businesses-need/index.html");
   assert.match(schema, /<h1>Structured Data for AI Search: Small Business Guide<\/h1>/);
+  assert.match(schema, /<th>Schema type<\/th><th>Plain-English purpose<\/th>/);
   assert.match(schema, /<h2 id="a-small-business-json-ld-example">A small-business JSON-LD example<\/h2>/);
   assert.match(schema, /"@type": "LocalBusiness"/);
   assert.match(schema, /Does schema make ChatGPT cite my business\?/);
@@ -539,6 +546,9 @@ test("October 11 definition findings remain in their intended content regions", 
   const phone = read("blog/click-to-call-making-your-phone-number-work-on-every-page/index.html");
   assert.match(phone, /<h1>How to Make a Phone Number Clickable \(Click-to-Call\)<\/h1>\n<p class="direct-answer">Click-to-call is [^<]*tel:\+12025550147 format\.<\/p>/);
   assert.match(phone, /<pre><code class="language-html">&lt;a href="tel:\+12025550147"&gt;Call \(202\) 555-0147&lt;\/a&gt;<\/code><\/pre>/);
+  const quickTest = phone.match(/<h2 id="test-your-click-to-call-in-60-seconds">[\s\S]*?<ol>([\s\S]*?)<\/ol>/)?.[1] || "";
+  assert.equal((quickTest.match(/<li>/g) || []).length, 3);
+  assert.match(quickTest, /Google Business Profile/);
 
   const domain = read("blog/who-owns-your-domain-name-and-why-it-matters/index.html");
   assert.match(domain, /<h1>Who owns your domain name\?<\/h1>\n<p class="direct-answer">Domain ownership is /);
@@ -620,11 +630,11 @@ test("flagged read pages defer analytics and avoid late font swaps", () => {
 test("updated articles retain original publication date", () => {
   const tree = read("blog/tree-service-local-seo-checklist/index.html");
   assert.match(tree, /"datePublished":"2026-09-26"/);
-  assert.match(tree, /"dateModified":"2026-10-14"/);
+  assert.match(tree, /"dateModified":"2026-10-16"/);
 
   const domain = read("blog/who-owns-your-domain-name-and-why-it-matters/index.html");
   assert.match(domain, /"datePublished":"2026-09-26"/);
-  assert.match(domain, /"dateModified":"2026-10-13"/);
+  assert.match(domain, /"dateModified":"2026-10-16"/);
 });
 
 test("regeneration does not redate unchanged legal pages", () => {

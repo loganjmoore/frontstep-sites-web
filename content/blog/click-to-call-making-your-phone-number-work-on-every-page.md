@@ -6,7 +6,7 @@ cluster: "guides"
 lead: "Click-to-call is a phone link that opens a calling option on a supported device, and its HTML destination uses the tel:+12025550147 format."
 answer: "Click-to-call turns your website phone number into a link that opens a calling option on a supported device. Put it where customers decide to contact you, show the readable number, and test the destination on real phones. Keep your hours clear and remember that a recorded click does not prove someone completed a call or booked work."
 published: "2026-09-26"
-updated: "2026-10-11"
+updated: "2026-10-16"
 ---
 
 ```html
@@ -14,6 +14,12 @@ updated: "2026-10-11"
 ```
 
 The 555 number above is fictional. Replace both the readable number and the `tel:+1...` destination with the same real business number.
+
+## Test your click-to-call in 60 seconds
+
+1. Open the page on a phone and tap the visible phone number or call button.
+2. Check that the dialer or calling option opens with the intended number.
+3. Confirm that number matches the one on the business's Google Business Profile.
 
 | Where to add it | What the visitor sees | What to test |
 | --- | --- | --- |
