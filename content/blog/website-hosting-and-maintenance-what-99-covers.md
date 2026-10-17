@@ -26,10 +26,10 @@ The published scope breaks down into bills and tasks an owner might otherwise tr
 | Domain | Yes | The web address is included and registered in the customer's name |
 | Hosting and SSL | Yes | The site stays available over an encrypted HTTPS connection |
 | Renewals | Yes | The yearly domain and service renewal are handled |
-| Routine changes | Yes | Launch includes four accepted coherent marketing updates per Central calendar month |
-| Store, booking, payments, or custom features | No | These require a separate quote before work begins |
+| Routine changes | Yes | Launch includes four accepted coherent marketing updates per America/Chicago calendar month, with no rollover |
+| Store, booking, payment, or custom backend/database systems | No | These systems are not offered by Front Step Sites |
 
-This scope table reflects Front Step Sites. Ask another provider to mark the same rows so the comparison stays fair, since each company can bundle the work differently.
+Front Step Sites provides custom static marketing pages, blogs, and contact forms. This scope table reflects Front Step Sites. Ask another provider to mark the same rows so the comparison stays fair, since each company can bundle the work differently.
 
 ## What does website hosting pay for?
 
