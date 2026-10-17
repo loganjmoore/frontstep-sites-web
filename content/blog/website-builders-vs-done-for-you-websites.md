@@ -8,7 +8,7 @@ answer: A done-for-you site starts at $99 a year with the domain included, and a
 lead: Front Step Sites is a done-for-you website service for small businesses in the US, at $99 a year with the domain included and no setup fee.
 sitePlanner: false
 published: 2026-10-03
-updated: "2026-10-13"
+updated: "2026-10-17"
 ---
 
 Should you build your business website yourself or pay someone to handle it? A website builder is a do-it-yourself tool for making your own pages, and a done-for-you website is a site a provider designs, writes, and maintains for you. A builder makes sense when you have the interest and time to use it; a done-for-you service makes sense when you want help getting the work finished. The important difference is who does the writing, checking, and updating after you choose a design.
@@ -28,6 +28,15 @@ Should you build your business website yourself or pay someone to handle it? A w
 | Google Sites | A basic page editor tied to a Google account | You |
 
 This ranking is for a typical local owner who wants a useful site finished and maintained. If direct editing control matters more, put Wix or Squarespace first. The brief builder above helps you define the pages before choosing the tool or service.
+
+## What this done-for-you plan covers beyond a builder
+
+The Front Step Sites Launch plan costs $99 a year with no setup fee. It includes the business website, its domain, hosting, routine updates, and content edits. A self-serve builder may include hosting or a domain offer, but the owner still handles the writing and ongoing edits. The [website hosting and maintenance guide](/blog/website-hosting-and-maintenance-what-99-covers/) explains the published scope in detail.
+
+- **Domain:** One domain is included and registered in the customer's name.
+- **Hosting:** Hosting, SSL, and renewals are included in the annual price.
+- **Updates:** Four coherent marketing updates per Central calendar month are included.
+- **Content edits:** The owner requests changes in their account, including edits to marketing pages, contact forms, blog posts, photos, or other site content within the plan's scope.
 
 ## What does an AI website builder do?
 
