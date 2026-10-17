@@ -4,6 +4,20 @@ import test from "node:test";
 
 const read = (path) => readFileSync(new URL(`../../${path}`, import.meta.url), "utf8");
 
+test("hosting and maintenance scope excludes application systems without offering a separate quote", () => {
+  for (const path of [
+    "content/blog/website-hosting-and-maintenance-what-99-covers.md",
+    "blog/website-hosting-and-maintenance-what-99-covers/index.html",
+  ]) {
+    const article = read(path);
+    assert.match(article, /Store, booking, payment, or custom backend\/database systems/);
+    assert.match(article, /These systems are not offered by Front Step Sites/);
+    assert.match(article, /custom static marketing pages, blogs, and contact forms/);
+    assert.match(article, /four accepted coherent marketing updates per America\/Chicago calendar month, with no rollover/);
+    assert.doesNotMatch(article, /These require a separate quote before work begins/);
+  }
+});
+
 test("new three-year budget article preserves pricing and the accepted marketing scope", () => {
   for (const path of [
     "content/blog/website-hosting-costs-297-three-year-budget.md",
