@@ -585,7 +585,7 @@ test("every public HTML page preserves the previously published Clarity project 
   const paths = [
     "index.html",
     "posthog-privacy.html",
-    ...["blog", "cleaner", "hvac", "landscaper", "link", "painter", "plumber", "privacy", "roofer", "terms"]
+    ...["blog", "cleaner", "examples", "hvac", "landscaper", "link", "painter", "plumber", "privacy", "roofer", "terms"]
       .flatMap(htmlFiles),
   ];
   assert.ok(paths.length >= 278, "the check should cover the full crawled page set");
