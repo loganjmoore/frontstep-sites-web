@@ -66,6 +66,9 @@ header nav a.hide-sm{display:none}
 .hero .lead{margin-top:1rem}
 .hero-cta{display:flex;flex-wrap:wrap;align-items:center;gap:12px 20px;margin-top:1.2rem}
 .hero-cta p{margin:0;font-weight:700;max-width:36ch}
+.preview-help{margin-top:.8rem;max-width:70ch;color:var(--ink-2);font-size:.95rem}
+.sample-options{display:flex;flex-wrap:wrap;align-items:center;gap:12px 20px;margin-top:40px}
+.sample-options .preview-help{flex-basis:100%;margin-top:0}
 .offer-scope{margin-top:24px;border-top:2px solid var(--ink);border-bottom:1px solid var(--ink);display:grid}
 .scope-part{padding:14px 0}
 .scope-part + .scope-part{border-top:1px solid var(--line)}
@@ -245,7 +248,9 @@ footer p{color:var(--ink-2);font-size:.92rem}
     <div class="hero-cta">
       <a class="btn btn-primary" href="https://app.frontstepsites.com/get-started">Start Launch — $99/yr</a>
       <p>Next: secure checkout for the $99/year Launch plan; after payment, sign in and complete the 10-minute business questionnaire.</p>
+      <a class="btn btn-secondary" href="mailto:hello@frontstepsites.com?subject=Custom%20website%20preview%20inquiry&amp;body=Business%20name%3A%0D%0ACurrent%20website%20%28if%20any%29%3A%0D%0AServices%3A%0D%0ADesired%20look%3A" aria-describedby="preview-help">Request a custom preview</a>
     </div>
+    <p class="preview-help" id="preview-help">Email your business name, current website (if any), services, and desired look to discuss whether a preview is a fit.</p>
 
     <div class="offer-scope" aria-label="What Front Step Sites does and does not do">
       <div class="scope-part">
@@ -309,6 +314,12 @@ footer p{color:var(--ink-2);font-size:.92rem}
       </div>
     </div>
 
+    <div class="sample-options" aria-label="Sample and preview options">
+      <a class="btn btn-secondary" href="/plumber/">View sample</a>
+      <span>Example plumbing site; no business details needed.</span>
+      <a class="btn btn-secondary" href="mailto:hello@frontstepsites.com?subject=Custom%20website%20preview%20inquiry&amp;body=Business%20name%3A%0D%0ACurrent%20website%20%28if%20any%29%3A%0D%0AServices%3A%0D%0ADesired%20look%3A" aria-describedby="sample-preview-help">Request a custom preview</a>
+      <p class="preview-help" id="sample-preview-help">Email your business name, current website (if any), services, and desired look to discuss whether a preview is a fit.</p>
+    </div>
     <form class="try" id="try" action="/plumber/" method="get">
       <h3>See it with your name on it</h3>
       <label class="field"><span>Business name</span><input name="n" autocomplete="organization" placeholder="Bob's Plumbing" required maxlength="60"></label>
