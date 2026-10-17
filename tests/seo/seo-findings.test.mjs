@@ -14,7 +14,7 @@ test("homepage preserves buyer CTA and excludes unrelated query FAQs", () => {
   assert.ok((html.match(/href="https:\/\/app\.frontstepsites\.com\/get-started"/g) || []).length >= 1);
   assert.ok((html.match(/Start Launch — \$99\/yr/g) || []).length >= 2);
   assert.match(html, /Next: secure checkout for the \$99\/year Launch plan; after payment, sign in and complete the 10-minute business questionnaire\./);
-  assert.doesNotMatch(html, /best movie site free|What is the best option for/);
+  assert.doesNotMatch(html, /free streaming site|website for anime|best movie site free|musician website free|What is the best option for/i);
   const blocks = [...html.matchAll(/<script type="application\/ld\+json">(.*?)<\/script>/gs)].map(m => JSON.parse(m[1])).filter(v => v["@type"] === "FAQPage");
   assert.equal(blocks.length, 1);
   for (const entry of blocks[0].mainEntity) assert.ok(html.includes(`<summary>${entry.name}</summary>`));
@@ -45,6 +45,20 @@ test("October 13 ranking and acquisition findings are present in rendered pages"
 
   const html = read("blog/html-website-development-when-custom-code-fits/index.html");
   assert.match(html, /What does website development in HTML mean\?/);
+});
+
+test("ranking targets retain descriptive inbound links without homepage intent stuffing", () => {
+  const renderedBlog = htmlFiles("blog").map(read).join("\n");
+  for (const slug of [
+    "website-builders-vs-done-for-you-websites",
+    "best-web-builder-sites-for-a-small-business",
+    "website-maker-or-done-for-you-three-year-cost",
+    "can-you-run-a-business-website-on-canva",
+    "website-subscription-vs-one-time-website-build",
+    "one-page-site-vs-multi-page-website-for-a-business",
+  ]) {
+    assert.match(renderedBlog, new RegExp(`<a href="/blog/${slug}/">[^<]{5,}</a>`));
+  }
 });
 
 test("October 13 trade journeys use the shared paid-path copy and factual checklists", () => {
@@ -189,9 +203,17 @@ test("October 16 AI strategy changes are present in all six requested pages", ()
   assert.match(tree, /<h1>Tree Service Local SEO Checklist: What to Fix First<\/h1>/);
   const treePriority = tree.split('<h2 id="what-to-fix-first">')[1].split('<h2 id="local-seo-checklist-for-tree-services">')[0];
   assert.match(treePriority, /<ol>/);
-  for (const slug of ["tree-service-google-business-profile", "website-tree-service", "tree-service-get-more-reviews"]) {
+  const treePrioritySlugs = [
+    "tree-service-google-business-profile",
+    "nap-consistency-why-your-name-address-and-phone-must-match-everywhere",
+    "website-tree-service",
+    "tree-service-get-more-reviews",
+  ];
+  for (const slug of treePrioritySlugs) {
     assert.match(treePriority, new RegExp(`href="/blog/${slug}/"`));
   }
+  const treePriorityPositions = treePrioritySlugs.map((slug) => treePriority.indexOf(`/blog/${slug}/`));
+  assert.deepEqual(treePriorityPositions, [...treePriorityPositions].sort((a, b) => a - b));
 
   const domain = read("blog/who-owns-your-domain-name-and-why-it-matters/index.html");
   const ownershipCheck = domain.split('<h2 id="how-to-check-who-owns-your-domain-right-now">')[1].split('<h2 id="who-controls-the-domain-registrant-vs-manager">')[0];
@@ -228,8 +250,20 @@ test("October 16 AI strategy changes are present in all six requested pages", ()
 
   const phone = read("blog/click-to-call-making-your-phone-number-work-on-every-page/index.html");
   assert.match(phone, /<h2 id="test-your-click-to-call-in-60-seconds">Test your click-to-call in 60 seconds<\/h2>/);
-  assert.match(phone, /<ol>/);
-  for (const detail of ["Open the page on a phone", "tel:", "Google Business Profile"]) assert.match(phone, new RegExp(detail));
+  const phoneTest = phone.split('<h2 id="test-your-click-to-call-in-60-seconds">')[1].split("<table>")[0];
+  assert.match(phoneTest, /<ol>/);
+  for (const detail of ["Open the page on a phone", "Open the page on a desktop", "tel:", "Google Business Profile"]) {
+    assert.match(phoneTest, new RegExp(detail));
+  }
+  assert.match(phoneTest, /href="\/blog\/nap-consistency-why-your-name-address-and-phone-must-match-everywhere\/"/);
+
+  const builders = read("blog/website-builders-vs-done-for-you-websites/index.html");
+  const doneForYouScope = builders.split('<h2 id="what-this-done-for-you-plan-covers-beyond-a-builder">')[1].split('<h2 id="what-does-an-ai-website-builder-do">')[0];
+  assert.match(doneForYouScope, /\$99 a year/);
+  for (const detail of ["Domain:", "Hosting:", "Updates:", "Content edits:"]) {
+    assert.match(doneForYouScope, new RegExp(`<strong>${detail}<\\/strong>`));
+  }
+  assert.match(doneForYouScope, /href="\/blog\/website-hosting-and-maintenance-what-99-covers\/"/);
 });
 
 test("intent-mismatch articles lead with the requested formats", () => {
@@ -517,7 +551,7 @@ test("October 8 AI strategy changes are present in generated pages", () => {
   assert.match(phone, /<code class="language-html">&lt;a href="tel:\+12025550147"&gt;Call \(202\) 555-0147&lt;\/a&gt;<\/code>/);
   assert.match(phone, /<th>Where to add it<\/th><th>What the visitor sees<\/th><th>What to test<\/th>/);
   assert.match(phone, /What is the correct HTML for a clickable phone number\?/);
-  assert.match(phone, /"datePublished":"2026-09-26","dateModified":"2026-10-16"/);
+  assert.match(phone, /"datePublished":"2026-09-26","dateModified":"2026-10-17"/);
 
   const schema = read("blog/structured-data-for-ai-search-what-small-businesses-need/index.html");
   assert.match(schema, /<h1>Structured Data for AI Search: Small Business Guide<\/h1>/);
@@ -669,7 +703,7 @@ test("flagged read pages defer analytics and avoid late font swaps", () => {
 test("updated articles retain original publication date", () => {
   const tree = read("blog/tree-service-local-seo-checklist/index.html");
   assert.match(tree, /"datePublished":"2026-09-26"/);
-  assert.match(tree, /"dateModified":"2026-10-16"/);
+  assert.match(tree, /"dateModified":"2026-10-17"/);
 
   const domain = read("blog/who-owns-your-domain-name-and-why-it-matters/index.html");
   assert.match(domain, /"datePublished":"2026-09-26"/);
