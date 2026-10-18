@@ -74,6 +74,7 @@ for (const [slug, trade] of Object.entries(TRADES)) {
   page = replace(page, /<h1 id="h1">[\s\S]*?<\/h1>/, '<h1 id="h1">' + trade.title + '. <br>Your website.</h1>');
   page = replace(page, /<p class="lede">[\s\S]*?<\/p>/, '<p class="lede">A sample layout for a ' + trade.noun + '. The service ideas below are examples to confirm with the owner before publishing.</p>');
   page = replace(page, /<ul class="board">[\s\S]*?<\/ul>/, '<ul class="board">' + trade.services.map(service => '<li><h3>' + service + '</h3><div class="price">Ask about pricing</div></li>').join('\n') + '</ul>');
+  page = page.replaceAll('https://frontstepsites.com/plumber/', 'https://frontstepsites.com/' + slug + '/');
   page = page.replaceAll('Sample Plumbing Site', 'Sample ' + trade.word + ' Site').replaceAll('Sample plumbing website', 'Sample ' + trade.word.toLowerCase() + ' website').replaceAll('showing a plumbing layout', 'showing a ' + trade.noun + ' layout').replaceAll('Water heater leaking in the garage', 'Example enquiry');
   mkdirSync(slug, { recursive: true });
   writeFileSync(slug + '/index.html', page);
