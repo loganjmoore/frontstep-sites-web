@@ -140,6 +140,12 @@ test("priority article and hub changes are present in generated HTML", () => {
   assert.match(tree, /href="\/blog\/trades\/tree-service\/"/);
   assert.match(tree, /href="\/blog\/tree-service-get-more-reviews\/"/);
 
+  const treeProfile = read("blog/tree-service-google-business-profile/index.html");
+  assert.match(treeProfile, /<a href="\/blog\/tree-service-local-seo-checklist\/">local SEO checklist for a tree service<\/a>/);
+
+  const treeCalls = read("blog/tree-service-more-calls-from-google/index.html");
+  assert.match(treeCalls, /<a href="\/blog\/tree-service-local-seo-checklist\/">local SEO checklist for tree service companies<\/a>/);
+
   const domain = read("blog/who-owns-your-domain-name-and-why-it-matters/index.html");
   assert.match(domain, /Domain ownership is the registration right held by the registrant named in the registrar agreement/);
   assert.match(domain, /Who controls the domain: registrant vs\. manager/);
