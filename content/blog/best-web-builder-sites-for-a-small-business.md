@@ -1,26 +1,28 @@
 ---
 resourceTool: "starter"
-title: "Best web builder sites for a small business, compared"
-description: "Wix, Squarespace, and Google Sites compared on price, who makes edits, and fit, plus when a done-for-you site is the better choice. Checked October 2026."
+title: "What Is a Website? Best Web Builder Sites, Ranked"
+description: "A website is a set of linked pages at one domain. Learn how websites work, then compare Wix, Squarespace, Google Sites, and a done-for-you option."
 slug: "best-web-builder-sites-for-a-small-business"
 cluster: "compare"
-lead: "A website builder is a self-serve tool for making and editing your own site. Front Step Sites is a done-for-you website service for small businesses that would rather request changes than use a builder themselves."
+lead: "A website is a collection of linked pages and files published under one domain name. A website builder is a self-serve tool for creating and editing those pages without writing the underlying code yourself. Front Step Sites is a done-for-you website service for small businesses that would rather request changes than use a builder themselves."
 answer: "The best web builder for a small business is the one you will keep up to date. Wix and Squarespace are the best-known paid builders, at $204 and $228 a year as we checked them, and you do all the editing. If you would rather hand off the edits, a done-for-you site at $99 a year with the domain included is the third option to weigh."
 sitePlanner: false
 published: "2026-10-04"
-updated: "2026-10-11"
+updated: "2026-10-20"
 image: "/assets/blog/best-web-builder-sites-for-a-small-business-cover.svg"
 imageAlt: "Cover for best web builder sites for a small business: Wix at $204 a year, Squarespace at $228 a year, and a done-for-you site at $99 a year with the domain included"
 ---
 
-The best web builder for a small business is the one you will keep up to date. For most owners that means choosing between a self-serve builder like Wix or Squarespace, or a done-for-you site where someone else makes the edits. Google Sites is the quickest to try if you already have a Google account, and it works best for a few simple pages.
+A website is a collection of linked pages, images, and other files published under one domain name and opened in a web browser. The domain is the address, hosting delivers the files, pages organize the information, and content gives visitors something to read or use. A browser requests a page from the site's host, then displays its text, images, links, and forms.
+
+A website builder is one way to assemble and publish those parts without writing the underlying code yourself. The ranked list below compares three self-serve builders and a done-for-you alternative. For the fuller definition, including the difference between a page, browser, search engine, domain, and host, read [what a website is and how its four parts work](/blog/what-is-a-website-four-parts/).
 
 ## Best web builder sites, ranked by small-business fit
 
-1. **Wix:** Best for owners who want the most freedom to arrange pages themselves.
-2. **Squarespace:** Best for owners who prefer structured, polished templates.
-3. **Google Sites:** Best for publishing a few simple pages quickly.
-4. **Done-for-you site:** Best alternative when you want the finished site and future edits handled for you.
+1. **Wix:** Best for owners who want the most freedom to arrange pages themselves. **Verdict:** choose it when you have tested the editor with a real service page and want direct control of future changes.
+2. **Squarespace:** Best for owners who prefer structured, polished templates. **Verdict:** choose it when you value a more guided layout and are comfortable making every update.
+3. **Google Sites:** Best for publishing a few simple pages quickly. **Verdict:** choose it for a basic site only after checking its domain setup, page titles, contact route, and mobile navigation.
+4. **Done-for-you site:** Best alternative when you want the finished site and future edits handled for you. **Verdict:** choose it when avoiding the editor matters more than making same-night changes yourself.
 
 The ranking favors self-serve builders because that is what this list compares. If your priority is spending less time in an editor, move the done-for-you option to the top.
 
