@@ -6,7 +6,7 @@ cluster: "guides"
 lead: "A useful trade business website example leads with the service, area, and contact route, then explains services, shows verifiable proof, defines the service area, and ends with a short inquiry. This five-section tree service walkthrough shows what each section needs to accomplish without inventing a company, review, or customer result."
 answer: "A useful trade business website example leads with the service, area, and contact route, then explains services, shows verifiable proof, defines the service area, and ends with a short inquiry. This five-section tree service walkthrough shows what each section needs to accomplish without inventing a company, review, or customer result."
 published: "2026-10-15"
-updated: "2026-10-15"
+updated: "2026-10-20"
 author: "Logan Moore"
 image: "/assets/blog/trade-website-example-tree-service-five-sections-cover.svg"
 imageAlt: "Five stacked sections of a tree service website labeled hero, services, proof, service area, and contact"
@@ -29,6 +29,8 @@ That source supports two customer paths. It provides no evidence that this layou
 | 3 | Proof | Can I verify the claims I just read? | Review a real project or credential |
 | 4 | Service area | Will the crew travel to my property? | Confirm the town and access details |
 | 5 | Contact | What information should I send? | Submit a short request or call |
+
+After outlining the five sections, use the [tree service website guide](/blog/website-tree-service/) to plan the supporting pages, run the [tree service local SEO checklist](/blog/tree-service-local-seo-checklist/), and use the [tree service Google Business Profile guide](/blog/tree-service-google-business-profile/) to keep the listing's services, coverage, availability, and contact details consistent with the site.
 
 ## What should the hero section say first?
 

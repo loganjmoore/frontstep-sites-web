@@ -288,6 +288,32 @@ test("October 16 AI strategy changes are present in all six requested pages", ()
   assert.match(doneForYouScope, /href="\/blog\/website-hosting-and-maintenance-what-99-covers\/"/);
 });
 
+test("October 20 trade website example links into the tree-service cluster", () => {
+  const example = read("blog/trade-website-example-tree-service-five-sections/index.html");
+  const orderedSections = [
+    ["1", "Hero", "Call or request an assessment"],
+    ["2", "Services", "Open the relevant service detail"],
+    ["3", "Proof", "Review a real project or credential"],
+    ["4", "Service area", "Confirm the town and access details"],
+    ["5", "Contact", "Submit a short request or call"],
+  ];
+  let previousSectionPosition = -1;
+  for (const [position, section, action] of orderedSections) {
+    const rowStart = `<tr><td>${position}</td><td>${section}</td>`;
+    const sectionPosition = example.indexOf(rowStart);
+    assert.ok(sectionPosition > previousSectionPosition);
+    assert.match(example.slice(sectionPosition), new RegExp(`^${rowStart}<td>[^<]+<\\/td><td>${action}<\\/td><\\/tr>`));
+    previousSectionPosition = sectionPosition;
+  }
+  for (const slug of [
+    "website-tree-service",
+    "tree-service-local-seo-checklist",
+    "tree-service-google-business-profile",
+  ]) {
+    assert.match(example, new RegExp(`href="/blog/${slug}/"`));
+  }
+});
+
 test("intent-mismatch articles lead with the requested formats", () => {
   for (const slug of [
     "website-builders-vs-done-for-you-websites",
