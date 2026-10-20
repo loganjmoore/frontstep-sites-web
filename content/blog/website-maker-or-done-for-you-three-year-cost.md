@@ -1,29 +1,29 @@
 ---
-title: "Website maker or done-for-you? A three-year cost check"
-description: "Three-year cost check: Wix Light and Squarespace Basic run $612 to $684 before your time, while a $99 a year done-for-you site is $297 with the domain included."
+title: "Best Website Makers for Small Businesses: 3-Year Cost"
+description: "Ranked website makers for a small business, with checked pricing, pros, cons, and a three-year comparison of Wix, Squarespace, and done-for-you service."
 slug: "website-maker-or-done-for-you-three-year-cost"
 cluster: "compare"
-lead: "A website maker is a tool you use to build and edit your own site, and this worksheet compares three years of one with a done-for-you site."
+lead: "The best website maker depends on whether you value flexible self-editing, structured templates, or having a provider build and maintain the site for you. Compare the ranked options first, then check their three-year cost."
 answer: "A website maker is a tool you use to build and edit your own site, and a done-for-you site is one a provider builds and keeps running for you. Over three years at the prices we checked, Wix Light costs $612 and Squarespace Basic costs $684 before your time, while a $99 a year done-for-you site costs $297 with the domain included."
 published: "2026-10-04"
-updated: "2026-10-12"
+updated: "2026-10-20"
 image: "/assets/blog/website-maker-or-done-for-you-three-year-cost-cover.svg"
 imageAlt: "Cover for website maker or done-for-you: a maker costs $612 to $684 over three years before your time, a $99 a year done-for-you site costs $297 with the domain included"
 ---
 
 At the prices we checked, a Wix Light or Squarespace Basic plan costs $612 or $684 over three years before you count any time. Front Step Sites is a done-for-you website service for small businesses that builds and maintains the site for $99 a year with the domain included, or $297 over three years. Your own hours change the totals, so this worksheet adds them in at a rate you can change.
 
-## Best website makers for this three-year cost check
+## Best website makers for a small business, ranked
 
-1. **Wix Light:** Best for owners who want hands-on control and a flexible editor.
-2. **Squarespace Basic:** Best for owners who want a more structured template system.
-3. **Done-for-you site:** Best for owners who want to hand off the build and routine edits.
+1. **Wix Light:** Best for owners who want hands-on control and a flexible editor. **Pro:** you can arrange and update pages yourself. **Con:** you are also responsible for writing, publishing, and checking every change.
+2. **Squarespace Basic:** Best for owners who want a more structured template system. **Pro:** the templates put useful limits on page layout. **Con:** every service, photo, hours, and navigation update still belongs to you.
+3. **Front Step Sites:** Best for owners who want to hand off the build and routine edits. **Pro:** the $99 yearly price includes the domain, build, hosting, and four coherent marketing updates per Central calendar month. **Con:** you request changes instead of making them instantly in an editor.
 
-| Option | Three-year subscription | Editing model | Best reason to choose it |
+| Rank and option | Price checked | Main pro | Main con |
 | --- | --- | --- | --- |
-| Wix Light | $612 at the price checked | You edit | Flexible visual control |
-| Squarespace Basic | $684 at the price checked | You edit | Structured templates |
-| Done-for-you plan | $297, domain included | Provider edits | Less owner time in an editor |
+| 1. Wix Light | $204 a year; $612 over 3 years | Flexible visual control | You build, edit, and check the site |
+| 2. Squarespace Basic | $228 a year; $684 over 3 years | Structured templates | You make every update |
+| 3. Front Step Sites | $99 a year; $297 over 3 years, domain included | Provider builds and maintains it | Changes go through a request |
 
 These are not universal rankings. They are a shortlist for the two decisions this worksheet measures: cash cost and who does the work. For a wider view that also includes Google Sites, use our [best web builder sites comparison](/blog/best-web-builder-sites-for-a-small-business/).
 

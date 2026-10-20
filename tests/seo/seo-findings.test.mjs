@@ -20,13 +20,29 @@ test("homepage preserves buyer CTA and excludes unrelated query FAQs", () => {
   for (const entry of blocks[0].mainEntity) assert.ok(html.includes(`<summary>${entry.name}</summary>`));
 });
 
-test("October 13 ranking and acquisition findings are present in rendered pages", () => {
+test("homepage routes informational intent to purpose-built guides", () => {
   const home = read("index.html");
-  assert.match(home, /<h2 id="website-definition">What is a website\?<\/h2>/);
-  assert.match(home, /<h2 id="best-website-creators">Best website creators for a small business<\/h2>/);
-  for (const creator of ["Front Step Sites", "Wix", "Squarespace", "Google Sites"]) {
-    assert.match(home, new RegExp(`<td>${creator}<\\/td>`));
-  }
+  assert.match(home, /href="\/blog\/what-is-a-website-four-parts\/">What a website is<\/a>/);
+  assert.match(home, /href="\/blog\/how-to-create-a-small-business-website\/">How a website is created<\/a>/);
+  assert.match(home, /href="\/blog\/best-website-builder-three-questions\/">Best website builders, ranked<\/a>/);
+  assert.doesNotMatch(home, /class="website-basics"|id="start-h"|id="maker-h"/);
+});
+
+test("intent-mismatch articles lead with the requested primary formats", () => {
+  const builders = read("blog/best-web-builder-sites-for-a-small-business/index.html");
+  assert.match(builders, /<h1>What Is a Website\? Best Web Builder Sites, Ranked<\/h1>/);
+  assert.ok(builders.indexOf("A website is a collection of linked pages") < builders.indexOf("Best web builder sites, ranked"));
+  assert.match(builders, /<strong>Verdict:<\/strong>/);
+
+  const makers = read("blog/website-maker-or-done-for-you-three-year-cost/index.html");
+  assert.match(makers, /<h1>Best Website Makers for Small Businesses: 3-Year Cost<\/h1>/);
+  assert.match(makers, /Best website makers for a small business, ranked/);
+  assert.match(makers, /<strong>Pro:<\/strong>/);
+  assert.match(makers, /<strong>Con:<\/strong>/);
+  assert.match(makers, /<th>Rank and option<\/th><th>Price checked<\/th><th>Main pro<\/th><th>Main con<\/th>/);
+});
+
+test("October 13 ranking and acquisition findings are present in rendered pages", () => {
 
   const builders = read("blog/website-builders-vs-done-for-you-websites/index.html");
   assert.match(builders, /Best website builders and services for a small local business/);
@@ -98,7 +114,7 @@ test("AI visibility pages carry useful answers and plain product definitions", (
     assert.match(home, new RegExp(`href="${href}"`));
   }
   assert.match(home, /Do I need to know HTML or code\?/);
-  assert.match(home, /Do you build personal about-me sites\?/);
+  assert.doesNotMatch(home, /about-me sites/i);
 
   for (const slug of [
     "best-web-builder-sites-for-a-small-business",
@@ -308,9 +324,9 @@ test("intent-mismatch articles lead with the requested formats", () => {
   }
 
   const home = read("index.html");
-  assert.match(home, /A website is a set of linked pages on a domain name/);
-  assert.match(home, /How a small-business website is created/);
-  assert.match(home, /<ol class="start">/);
+  assert.match(home, /href="\/blog\/what-is-a-website-four-parts\/">What a website is<\/a>/);
+  assert.match(home, /href="\/blog\/how-to-create-a-small-business-website\/">How a website is created<\/a>/);
+  assert.match(home, /href="\/blog\/best-website-builder-three-questions\/">Best website builders, ranked<\/a>/);
 });
 
 test("resource tools retain useful plans and safe output instead of the old planning-only demo", async () => {
@@ -457,7 +473,7 @@ test("cleaning Business Profile guide has the requested setup checklist", () => 
 test("October 10 entity-definition findings use unique plain definitions immediately after the H1", () => {
   const definitions = {
     "how-to-make-a-google-site": "Google Sites is a website builder from Google for making simple pages. It fits someone who needs a small brochure or information site and is comfortable handling the content and updates.",
-    "best-web-builder-sites-for-a-small-business": "A website builder is a self-serve tool for making and editing your own site. Front Step Sites is a done-for-you website service for small businesses that would rather request changes than use a builder themselves.",
+    "best-web-builder-sites-for-a-small-business": "A website is a collection of linked pages and files published under one domain name. A website builder is a self-serve tool for creating and editing those pages without writing the underlying code yourself. Front Step Sites is a done-for-you website service for small businesses that would rather request changes than use a builder themselves.",
     "click-to-call-making-your-phone-number-work-on-every-page": "Click-to-call is a phone link that opens a calling option on a supported device, and its HTML destination uses the tel:+12025550147 format.",
     "contact-forms-that-actually-get-filled-out": "A contact form is a set of website fields that lets a visitor send an inquiry to a business.",
     "how-to-write-an-about-page-for-a-local-business": "An About page is the part of a local business website that explains who runs the business, what it does, where it works, and what customers can expect.",
