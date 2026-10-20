@@ -718,6 +718,12 @@ test("updated articles retain original publication date", () => {
   const domain = read("blog/who-owns-your-domain-name-and-why-it-matters/index.html");
   assert.match(domain, /"datePublished":"2026-09-26"/);
   assert.match(domain, /"dateModified":"2026-10-16"/);
+
+  const tutorial = read("blog/html-website-development-when-custom-code-fits/index.html");
+  assert.match(tutorial, /"datePublished":"2026-10-13","dateModified":"2026-10-20"/);
+  const item = read("feed.xml").split("<item>").find((entry) => entry.includes("/blog/html-website-development-when-custom-code-fits/"));
+  assert.ok(item, "HTML tutorial remains discoverable in RSS");
+  assert.match(item, /<pubDate>Tue, 13 Oct 2026 12:00:00 GMT<\/pubDate>/);
 });
 
 test("regeneration does not redate unchanged legal pages", () => {
