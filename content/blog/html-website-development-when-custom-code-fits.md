@@ -1,115 +1,234 @@
 ---
-title: "HTML Website Development: When Custom Code Fits"
-description: "Learn what HTML website development means, when custom code fits a small business, and when a builder or managed website is the simpler choice."
+title: "HTML Website Development: Build a Page Step by Step"
+description: "Build a complete HTML web page step by step, add CSS, test it on a phone, and learn when custom code fits a small-business website."
 slug: "html-website-development-when-custom-code-fits"
 cluster: "guides"
-lead: "HTML website development is the work of creating the structure and content of web pages with HTML, usually alongside CSS for appearance and JavaScript for behavior. A small business needs custom development when the site must perform a specific workflow that standard website tools cannot handle well. Front Step Sites is a done-for-you website service for standard small-business sites, not a custom HTML development shop."
-answer: "HTML is the markup language that gives a web page its structure and meaning. Custom HTML website development fits a small business when it needs unusual interactions, integrations, data handling, or complete control over the code. A builder or managed site is usually simpler for service pages, photos, phone links, and contact forms."
+lead: "HTML website development is the work of creating the structure and content of web pages with HTML, usually alongside CSS for appearance and JavaScript for behavior. This tutorial shows you how to build and test a complete one-page business website. Custom code fits when a site needs a specific workflow that standard website tools cannot handle well. Front Step Sites is a done-for-you website service for standard small-business sites, not a custom HTML development shop."
+answer: "HTML website development is the process of writing the structure of a web page, styling it with CSS, testing its links and layout, and publishing the files to a web host. You can build the starter page in this guide with a text editor and a web browser."
 author: "Logan Moore"
-updated: "2026-10-13"
+updated: "2026-10-20"
 image: "/assets/blog/html-website-development-when-custom-code-fits-cover.svg"
-imageAlt: "Decision path from standard business pages to custom HTML website development"
+imageAlt: "Steps for building and testing a small-business page with HTML and CSS"
 ---
 
-HTML website development is the work of structuring web-page content with HTML, then commonly adding CSS for appearance and JavaScript for interactive behavior. A small business needs custom HTML when its site must support a business-specific function that ordinary website tools cannot support cleanly. Standard service pages, photos, phone links, and contact forms rarely require a fully custom build.
+HTML website development starts with a plain text file that describes the page's headings, paragraphs, links, images, and sections. CSS controls the appearance, and JavaScript can add behavior when the page needs it. The six steps below produce a working one-page business website without a framework or website builder.
 
-## What does website development in HTML mean?
+## How do you build an HTML website step by step?
 
-HTML website development creates the meaningful structure of a web page with elements for headings, paragraphs, links, images, forms, navigation, and other content. HTML stands for HyperText Markup Language. It tells the browser what each piece of content is, while CSS controls much of how it looks and JavaScript can add changing or interactive behavior.
+1. Create a project folder and an index.html file.
+2. Add the HTML document structure and page information.
+3. Build the visible page with semantic HTML.
+4. Add a stylesheet for the layout and phone view.
+5. Open the page in a browser and test every action.
+6. Publish the files to a web host.
 
-MDN Web Docs calls HTML the most basic building block of the web and says it defines the meaning and structure of web content. The WHATWG HTML Standard says an HTML document has a defined syntax and a document element written as `html`. Both sources describe a standard used by browsers, rather than a particular design product.
+## Step 1: Create the project files
 
-“Custom HTML” usually means a developer has direct control over the page code. It does not guarantee that every line is original, and it does not automatically make a website faster, safer, or easier to use. Quality depends on the design, code, hosting, testing, and upkeep.
+Create a folder named `business-site`. Inside it, create two plain text files named `index.html` and `styles.css`. The finished folder should contain:
 
-## When does a small business need custom HTML?
+```text
+business-site/
+  index.html
+  styles.css
+```
 
-A small business needs custom HTML development when the website has a requirement that standard tools cannot meet without awkward workarounds. That may be a quoting rule used only by your shop, distributor data that must stay current, or a customer action tied to how you deliver the work.
+The name `index.html` matters because most web hosts look for that file when someone visits a folder or domain. Use a code editor or a plain text editor that does not add rich-text formatting.
 
-Custom development may fit when the site must:
+## Step 2: Add the HTML document structure
 
-- Calculate a quote from business-specific rules that change by service, size, or territory.
-- Connect to an internal scheduling, inventory, dispatch, or customer system with no dependable standard integration.
-- Give customers a secure account with records or actions unique to the business.
-- Process a multi-step application or configuration that cannot be represented by an ordinary form.
-- Meet a documented performance or accessibility requirement that a chosen tool cannot meet.
+Paste this foundation into `index.html`. Change the title and description so they accurately describe the business and service shown on the page.
 
-The requirement should be written as a task. “We want a modern custom website” is difficult to test. “A customer must select three job conditions, receive the correct service tier, and send the result into our dispatch system” describes behavior a developer can estimate and verify.
+```html
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Oak Street Handyman | Home Repairs in Tulsa</title>
+  <meta name="description" content="Oak Street Handyman provides small home repairs in Tulsa. Call to discuss your repair list.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+</body>
+</html>
+```
 
-## When is a website builder enough?
+The doctype tells the browser to use modern HTML rules. The language helps software interpret the text. The viewport line makes the layout use the width of a phone screen instead of pretending the screen is desktop-sized. The title and description identify this specific page for people and search engines.
 
-A website builder is enough when the site mainly publishes information and uses standard customer actions. A local service business often needs a home page, service pages, original photos, reviews it has permission to show, a tap-to-call number, and a contact form. Builders and managed website services already support those patterns.
+## Step 3: Build the visible page with semantic HTML
 
-An established pattern leaves less custom code to care for later. It also gives nontechnical owners an editor or a request process. The platform will control some design and technical choices, so check that those limits do not block a real requirement.
+Put the following code between the opening and closing `body` tags. Replace the example name, city, services, and phone number with verified business information before publishing.
 
-Write down what a visitor must do that the standard tool cannot handle. If the honest answer is “nothing,” spend the budget on accurate copy, useful photographs, testing, and updates. The [website builder versus done-for-you guide](/blog/website-builders-vs-done-for-you-websites/) compares the two common ways to handle that standard site.
+```html
+<header>
+  <a href="#main">Skip to main content</a>
+  <p>Oak Street Handyman</p>
+  <nav aria-label="Main navigation">
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
 
-## How do you decide between custom HTML and a builder?
+<main id="main">
+  <section class="hero">
+    <h1>Small home repairs in Tulsa</h1>
+    <p>Help with drywall patches, door adjustments, and fixture replacements.</p>
+    <a class="button" href="tel:+19185550123">Call (918) 555-0123</a>
+  </section>
 
-A custom-HTML decision gets clearer when you put every requirement in a table. Mark each one as standard, configurable, or genuinely custom. Then ask a developer who will own each custom part after launch.
+  <section id="services">
+    <h2>Home repair services</h2>
+    <ul>
+      <li>Drywall patching</li>
+      <li>Sticking door adjustments</li>
+      <li>Light fixture replacements</li>
+    </ul>
+  </section>
 
-Consider a six-page HVAC company website with seven requirements:
+  <section id="contact">
+    <h2>Discuss your repair list</h2>
+    <p>Call to explain the work, confirm the service area, and ask about availability.</p>
+    <a href="tel:+19185550123">(918) 555-0123</a>
+  </section>
+</main>
+
+<footer>
+  <p>Oak Street Handyman serves Tulsa, Oklahoma.</p>
+</footer>
+```
+
+Semantic elements such as `header`, `nav`, `main`, `section`, and `footer` state the purpose of each part. One descriptive `h1` names the page's main subject. Each later section starts with an `h2`. The phone links use the `tel:` scheme so a phone can start a call after the visitor taps and confirms.
+
+## Step 4: Add CSS for the layout and phone view
+
+Paste this CSS into `styles.css`. The rules keep the line length readable, give links a visible keyboard focus, and allow the layout to fit narrow screens.
+
+```css
+:root {
+  color: #17221b;
+  background: #f7f3e8;
+  font-family: system-ui, sans-serif;
+  line-height: 1.6;
+}
+
+body {
+  margin: 0;
+}
+
+header,
+main,
+footer {
+  width: min(100% - 2rem, 68rem);
+  margin-inline: auto;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-block: 1rem;
+}
+
+nav {
+  display: flex;
+  gap: 1rem;
+}
+
+section {
+  padding-block: 2.5rem;
+}
+
+.hero {
+  max-width: 44rem;
+}
+
+.button {
+  display: inline-block;
+  padding: 0.75rem 1rem;
+  color: white;
+  background: #174d32;
+  border-radius: 0.35rem;
+}
+
+a:focus-visible {
+  outline: 3px solid #b44b20;
+  outline-offset: 3px;
+}
+
+@media (max-width: 36rem) {
+  header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+```
+
+CSS changes presentation rather than meaning. Keep the HTML usable before adding decoration: the headings should stay in order, the text should remain readable, and each action should still be a real link or form control.
+
+## Step 5: Open and test the HTML website
+
+Double-click `index.html` to open the page in a browser. You do not need hosting to perform this first check. After every edit, save the file and refresh the browser.
+
+Test the page as a visitor would:
+
+1. Narrow the browser to about 390 pixels and confirm no text or navigation runs off the screen.
+2. Use the Tab key to reach every link and confirm the focused link has a visible outline.
+3. Select the Services and Contact links and confirm each one moves to the correct section.
+4. Test the phone link on a phone and confirm the displayed number matches the number offered to the dialer.
+5. Read the title shown in the browser tab and confirm it identifies the business, service, and location accurately.
+6. Replace every example fact before publishing; do not leave a sample phone number or service on a real business site.
+
+You can also run a local web server from the project folder if your computer has Python installed:
+
+```text
+python3 -m http.server 8000
+```
+
+Then open `http://localhost:8000` in the browser. A local server more closely matches how the files will load after publishing, but it does not make the page public.
+
+## Step 6: Publish the HTML files
+
+To publish the website, place `index.html` and `styles.css` together on a web host and connect the business's domain according to that host's instructions. Loading the public URL is part of the work: confirm the page uses HTTPS, the CSS loads, the phone link is correct, and the same tests from Step 5 still pass.
+
+HTML files do not process contact forms or store submissions by themselves. A working form needs a server-side endpoint or a form service, clear delivery handling, spam protection, and a tested success and failure path. Do not publish a form that appears to send but loses the visitor's message.
+
+## When does custom HTML fit a small business?
+
+Custom HTML fits when the website must perform a business-specific task that standard website tools cannot handle cleanly. Examples include a quote calculated from company rules, live inventory from a distributor, a secure customer account, or a multi-step application tied to an internal system.
+
+Write the unusual requirement as testable behavior. “A customer selects three job conditions, receives the correct service tier, and sends the result into dispatch” is specific enough to estimate and verify. “We want a custom modern website” is not.
+
+A website builder or managed service is usually enough when the site needs service pages, original photos, reviews the business has permission to show, phone links, and a standard contact form. The [website builder versus done-for-you guide](/blog/website-builders-vs-done-for-you-websites/) compares those choices.
+
+## How do you scope the custom parts?
+
+List each requirement and classify it as standard, configurable, or custom. A business can keep ordinary pages in a maintainable content system and commission only the function that genuinely needs custom code.
 
 | Requirement | Standard tool or custom work? | Reason |
 | --- | --- | --- |
-| 6 information pages | Standard | Normal page templates handle them |
+| Service pages | Standard | Normal page templates handle them |
 | Tap-to-call phone number | Standard | Basic link behavior |
-| Quote contact form | Standard | Common form fields and delivery |
-| Service-area map image | Standard | Ordinary image and text |
-| Seasonal banner | Standard | Routine content update |
-| Live equipment inventory from distributor data | Custom or specialized integration | External data must stay synchronized |
-| Load calculator using the company's rules | Custom | Business logic needs definition and testing |
+| Contact form | Standard | Common fields and delivery workflow |
+| Live distributor inventory | Custom or specialized integration | External data must stay synchronized |
+| Calculator using company rules | Custom | Business logic needs definition and testing |
 
-Five of the seven requirements are standard. Two may justify custom work, but they do not require every page to be custom. A developer could build only the integration and calculator while keeping the rest in a maintainable content system. You then have two custom pieces to explain and test instead of an entire custom site.
-
-## What should custom HTML development include?
-
-Custom HTML development should include the finished behavior, source-code handoff terms, hosting plan, testing responsibilities, and an upkeep arrangement. A folder of code is only one part of a working website. Someone still needs to publish it, monitor forms, renew the domain, make content changes, and repair problems.
-
-Ask for these items in the proposal:
-
-1. A list of pages and custom functions with acceptance checks.
-2. The technologies used and where the source code will be stored.
-3. The owner of the domain, hosting account, analytics, and connected services.
-4. Accessibility, phone-size, browser, form-delivery, and error-state testing.
-5. The process and price for routine changes after launch.
-6. What the business receives if the relationship ends.
-
-Google Search Central recommends semantic HTML because it helps Google and other users understand page content. Google also advises making a site secure, fast, accessible, and functional on all devices. Those are useful acceptance checks for custom work. They are not reasons by themselves to commission a custom system, since a well-made builder site can meet them too.
-
-## How should accessibility affect the choice?
-
-Accessibility should be a requirement for either custom HTML or a builder, with the chosen approach tested against the pages people use. Semantic headings, labeled form controls, keyboard operation, alternative text, visible focus, and readable contrast belong in the build and review process.
-
-The W3C Web Accessibility Initiative says normal-size text should have a contrast ratio of at least 4.5:1 under WCAG 2.2 Level AA, with 3:1 allowed for large text. That is a measurable check. A developer can test the actual foreground and background colors instead of describing the design as “accessible” without evidence.
-
-Custom code can give a developer more control, but it also creates more decisions to get right. A builder may provide accessible defaults, then allow an editor to weaken them with poor heading order, missing labels, or low-contrast colors. Test the published site, not the sales description.
-
-## What does HTML development cost to maintain?
-
-HTML development costs continue after launch whenever the custom code needs hosting, security work, browser fixes, integration updates, or content changes. There is no honest universal maintenance price because a static brochure and a customer portal have different failure modes. Ask for a one-year upkeep scenario based on the specific functions in the proposal.
-
-Separate ordinary content work from developer work. Changing a service paragraph should not require the same process as repairing a data connection. If every small edit needs a developer, include that dependency in the decision. [Website hosting in plain English](/blog/what-website-hosting-is-in-plain-english/) explains the recurring infrastructure separately from page changes.
-
-Also ask what happens if the original developer is unavailable. Source access, setup instructions, dependency records, and account ownership reduce the cost of that handoff. A custom site earns its extra complexity only while the business can continue operating it.
+Any custom proposal should state the finished behavior, source-code access, hosting plan, testing responsibilities, account ownership, and process for changes after launch. A folder of code is not the whole website operation.
 
 ## Frequently asked questions
-
-### Is an HTML website better for Google?
-
-HTML is the normal structure behind web pages, including pages produced by many builders. Directly writing HTML does not guarantee a ranking. Google recommends crawlable links, visible text, descriptive titles, useful metadata, and semantic HTML, all of which can be implemented in several kinds of website systems.
 
 ### Can HTML create a complete business website?
 
 HTML can structure a complete business website, with CSS and JavaScript commonly handling appearance and interactive behavior. Hosting, a domain, form processing, security, and updates still need arrangements. The [guide to creating a small-business website](/blog/how-to-create-a-small-business-website/) covers those surrounding steps.
 
+### Is an HTML website better for Google?
+
+HTML is the normal structure behind web pages, including pages produced by website builders. Writing HTML directly does not guarantee a ranking. Accurate content, descriptive titles, crawlable links, semantic structure, phone usability, speed, and maintenance matter regardless of the tool that produced the HTML.
+
 ### Is custom HTML faster than a website builder?
 
-Custom HTML can be lightweight, but speed depends on the whole page: images, fonts, scripts, hosting, and code quality. A careless custom page can be slow, while a restrained builder page can be quick. Test the finished URLs on phones instead of assuming the method decides the result.
+Custom HTML can be lightweight, but speed depends on the complete page: images, fonts, scripts, hosting, and code quality. Test the published URL on phones instead of assuming the development method decides the result.
 
 ### Can I edit a custom HTML website myself?
 
-You can edit custom HTML if you have source access and know the publishing process. Many owners prefer a content editor or a managed request process for routine changes. Ask the developer to demonstrate one real edit and deployment before handoff.
-
-## When should you choose custom HTML development?
-
-Take the proposal's most unusual feature and write one sentence describing who uses it, what it must do, and how you will test it. If the sentence exposes a real limitation in standard tools, get a custom estimate for that feature. If nobody can write the sentence, remove the feature from the first scope.
+You can edit custom HTML when you have source access and understand the publishing process. Ask the developer to demonstrate one real edit and deployment before handoff. Many owners prefer a content editor or a managed request process for routine changes.

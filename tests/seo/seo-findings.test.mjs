@@ -44,7 +44,7 @@ test("October 13 ranking and acquisition findings are present in rendered pages"
   for (const label of ["Pros:", "Cons:", "Verdict:"]) assert.match(canva, new RegExp(`<strong>${label}<\\/strong>`));
 
   const html = read("blog/html-website-development-when-custom-code-fits/index.html");
-  assert.match(html, /What does website development in HTML mean\?/);
+  assert.match(html, /How do you build an HTML website step by step\?/);
 });
 
 test("ranking targets retain descriptive inbound links without homepage intent stuffing", () => {
@@ -354,6 +354,16 @@ test("flagged articles define their subject near the top", () => {
   assert.match(brainpop, /<h1>[^<]+<\/h1>\n<p class="direct-answer">BrainPOP is an educational website and web application/);
 });
 
+test("HTML website development guide is a hands-on tutorial", () => {
+  const html = read("blog/html-website-development-when-custom-code-fits/index.html");
+  assert.match(html, /<h2 id="how-do-you-build-an-html-website-step-by-step">/);
+  assert.match(html, /<ol>\s*<li>Create a project folder and an index.html file.<\/li>/);
+  assert.match(html, /<h2 id="step-1-create-the-project-files">/);
+  assert.match(html, /<code class="language-html">&lt;!doctype html&gt;/);
+  assert.match(html, /<h2 id="step-6-publish-the-html-files">/);
+  assert.match(html, /<h2 id="when-does-custom-html-fit-a-small-business">/);
+});
+
 test("citability pages put plain subject definitions in extractable article text", () => {
   const definitions = {
     "tree-service-local-seo-checklist": "Tree service local SEO is the work of",
@@ -656,10 +666,10 @@ test("llms.txt lists every canonical URL in the sitemap", () => {
   for (const url of urls) assert.ok(llms.includes(url), `llms.txt is missing ${url}`);
 });
 
-test("Canva catalog entry explains business fit while retaining direct answers elsewhere", () => {
+test("catalog entries explain business fit while retaining direct answers elsewhere", () => {
   const llms = read("llms.txt");
   assert.ok(llms.includes("- [Can you run a business website on Canva?](https://frontstepsites.com/blog/can-you-run-a-business-website-on-canva/): Canva supports multipage websites. Use this checklist to decide whether its publishing, contact and maintenance workflow fits your local business."));
-  assert.ok(llms.includes("- [HTML Website Development: When Custom Code Fits](https://frontstepsites.com/blog/html-website-development-when-custom-code-fits/): HTML is the markup language that gives a web page its structure and meaning."));
+  assert.ok(llms.includes("- [HTML Website Development: Build a Page Step by Step](https://frontstepsites.com/blog/html-website-development-when-custom-code-fits/): HTML website development is the process of writing the structure of a web page, styling it with CSS, testing its links and layout, and publishing the files to a web host."));
   assert.ok(llms.includes("- [Plumbing: what your website needs](https://frontstepsites.com/blog/website-plumbing/): A plumber website needs a working call button, clear service hours, the towns you cover, and plain descriptions of the jobs you take."));
 });
 
