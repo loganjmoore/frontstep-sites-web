@@ -77,6 +77,8 @@ Check the contact path on your phone after changing pages or adding project phot
 
 Review the pages when your equipment access, service mix, or staffing changes. A site that still advertises a service you have stopped offering creates unnecessary conversations for both you and the customer.
 
+Work through the [local SEO checklist for tree service companies](/blog/tree-service-local-seo-checklist/) when you audit these details so the profile, service pages, coverage, reviews, and inquiry paths support the same customer journey.
+
 ## Frequently asked questions
 
 ### Should I advertise emergency tree work if I cannot answer overnight?
