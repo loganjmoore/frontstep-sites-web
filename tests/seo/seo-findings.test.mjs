@@ -314,6 +314,49 @@ test("October 20 trade website example links into the tree-service cluster", () 
   }
 });
 
+test("October 21 moving and locksmith AI strategy changes are present", () => {
+  const moving = read("blog/moving-company-local-seo-checklist/index.html");
+  assert.match(moving, /<title>Moving Company Local SEO Checklist: What to Fix First<\/title>/);
+  assert.match(moving, /<meta name="description" content="Use this moving company local SEO checklist to verify your Google profile, mover credentials, service areas, quote path, and review process in priority order\.">/);
+  assert.match(moving, /<link rel="canonical" href="https:\/\/frontstepsites\.com\/blog\/moving-company-local-seo-checklist\/">/);
+  assert.match(moving, /<h1>Moving Company Local SEO Checklist: What to Fix First<\/h1>/);
+  assert.match(moving, /"datePublished":"2026-10-01","dateModified":"2026-10-21"/);
+  assert.match(moving, /Fix the public facts and quote path first: correct the Google Business Profile and contact details, verify mover or broker credentials when they apply, separate the moving services customers can actually book, describe real coverage, test the mobile quote path, and request neutral reviews after completed work\./);
+  assert.match(moving, /<h2 id="what-to-fix-first">What to fix first<\/h2>/);
+  assert.match(moving, /class="table-wrap mobile-wide-table readable-table" role="region" aria-label="Moving company local SEO priority checklist" tabindex="0"/);
+  assert.match(moving, /<th>Priority<\/th><th>Evidence to collect<\/th><th>Pass condition<\/th><th>Next action<\/th>/);
+  for (const priority of [
+    "Business identity and profile",
+    "Applicable FMCSA status",
+    "Service and coverage pages",
+    "Mobile quote path",
+    "Review process",
+  ]) assert.match(moving, new RegExp("<td>" + priority + "<\\/td>"));
+  assert.match(moving, /Requirements depend on the operation and jurisdiction/);
+  assert.doesNotMatch(moving, /9,430|97%|one profile per business for its whole service area|page for every city or zip|review request a day or two later/i);
+
+  const locksmith = read("blog/locksmith-local-seo-checklist/index.html");
+  assert.match(locksmith, /<title>Locksmith Local SEO Checklist: What to Verify First<\/title>/);
+  assert.match(locksmith, /<meta name="description" content="Check locksmith local SEO with verified licensing, real dispatch hours, accurate service areas, clear service pages, working mobile calls, and neutral review requests\.">/);
+  assert.match(locksmith, /<link rel="canonical" href="https:\/\/frontstepsites\.com\/blog\/locksmith-local-seo-checklist\/">/);
+  assert.match(locksmith, /<h1>Locksmith Local SEO Checklist: What to Verify First<\/h1>/);
+  assert.match(locksmith, /"datePublished":"2026-10-02","dateModified":"2026-10-21"/);
+  assert.match(locksmith, /Verify trust and emergency-service facts before adding more pages: publish licensing only when current and applicable, make advertised hours match the real call and dispatch path, name only areas and locksmith services the business can serve, test the mobile phone route, and invite every eligible customer to leave an honest review without steering the rating\./);
+  assert.match(locksmith, /<h2 id="what-to-verify-before-you-advertise-emergency-locksmith-service">What to verify before you advertise emergency locksmith service<\/h2>/);
+  assert.match(locksmith, /class="table-wrap mobile-wide-table readable-table" role="region" aria-label="Emergency locksmith claim verification checklist" tabindex="0"/);
+  assert.match(locksmith, /<th>Claim<\/th><th>Evidence to verify<\/th><th>Safer wording until verified<\/th>/);
+  for (const claim of [
+    "License or registration",
+    "24/7 availability",
+    "Response time",
+    "Service area",
+    "Residential, automotive, or commercial scope",
+  ]) assert.match(locksmith, new RegExp("<td>" + claim.replace("/", "\\/") + "<\\/td>"));
+  assert.match(locksmith, /Licensing requirements vary by state and locality/);
+  assert.match(locksmith, /same neutral invitation to every eligible customer after a completed job/);
+  assert.doesNotMatch(locksmith, /13 states|over 70%|4\.5-star|40 reviews|new 5-star reviews|satisfied customer/i);
+});
+
 test("intent-mismatch articles lead with the requested formats", () => {
   for (const slug of [
     "website-builders-vs-done-for-you-websites",
