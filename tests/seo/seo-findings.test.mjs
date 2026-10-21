@@ -186,8 +186,8 @@ test("October 13 AI strategy changes are present in their citation surfaces", ()
   assert.doesNotMatch(pestReviews, /within an hour of the job/);
   assert.match(pestReviews, /Keep the invitation optional and provide a direct review link/);
   assert.match(pestReviews, /<p class="direct-answer">A pest control review request is an optional invitation/);
-  assert.match(pestReviews, /<ol>\s*<li><strong>After treatment completion:<\/strong>/);
-  for (const moment of ["After treatment completion", "After a follow-up visit", "After a recurring plan renewal"]) {
+  assert.match(pestReviews, /<ol>\s*<li><strong>At the completion handoff:<\/strong>/);
+  for (const moment of ["At the completion handoff", "After an agreed follow-up visit", "After a recurring-plan renewal"]) {
     assert.match(pestReviews, new RegExp(moment));
   }
   for (const slug of ["pest-control-local-seo-checklist", "pest-control-google-business-profile"]) {
@@ -223,7 +223,7 @@ test("October 16 AI strategy changes are present in all six requested pages", ()
   const tree = read("blog/tree-service-local-seo-checklist/index.html");
   assert.match(tree, /<title>Tree Service Local SEO Checklist: What to Fix First<\/title>/);
   assert.match(tree, /<h1>Tree Service Local SEO Checklist: What to Fix First<\/h1>/);
-  const treePriority = tree.split('<h2 id="what-to-fix-first">')[1].split('<h2 id="local-seo-checklist-for-tree-services">')[0];
+  const treePriority = tree.split('<h2 id="what-to-fix-first-in-order">')[1].split('<h2 id="local-seo-checklist-for-tree-services">')[0];
   assert.match(treePriority, /<ol>/);
   const treePrioritySlugs = [
     "tree-service-google-business-profile",
@@ -248,9 +248,10 @@ test("October 16 AI strategy changes are present in all six requested pages", ()
 
   const googleSite = read("blog/how-to-make-a-google-site/index.html");
   assert.match(googleSite, /<p class="direct-answer">Google Sites is a website builder from Google for making simple pages\. It fits someone who needs a small brochure or information site/);
-  const wrongChoice = googleSite.split('<h2 id="when-a-google-site-is-the-wrong-choice">')[1].split('<h2 id="how-do-you-make-a-google-site">')[0];
-  for (const slug of ["google-sites-alternatives-for-a-business", "google-sites-launch-checklist-for-a-business-website", "put-a-google-sites-site-on-your-own-domain"]) {
-    assert.match(wrongChoice, new RegExp(`href="/blog/${slug}/"`));
+  const optionFit = googleSite.split('<h2 id="which-option-fits-you">')[1].split('<h2 id="how-do-you-make-a-google-site">')[0];
+  assert.match(optionFit, /<table>/);
+  for (const slug of ["google-sites-alternatives-for-a-business", "put-a-google-sites-site-on-your-own-domain"]) {
+    assert.match(optionFit, new RegExp(`href="/blog/${slug}/"`));
   }
 
   const schema = read("blog/structured-data-for-ai-search-what-small-businesses-need/index.html");
@@ -286,6 +287,51 @@ test("October 16 AI strategy changes are present in all six requested pages", ()
     assert.match(doneForYouScope, new RegExp(`<strong>${detail}<\\/strong>`));
   }
   assert.match(doneForYouScope, /href="\/blog\/website-hosting-and-maintenance-what-99-covers\/"/);
+});
+
+test("October 21 acquisition changes are present in the first relevant block", () => {
+  const tree = read("blog/tree-service-local-seo-checklist/index.html");
+  const treePriority = tree.split('<h2 id="what-to-fix-first-in-order">What to fix first, in order</h2>')[1]
+    .split('<h2 id="local-seo-checklist-for-tree-services">')[0];
+  assert.equal((treePriority.match(/<li>/g) || []).length, 4);
+  for (const slug of ["tree-service-google-business-profile", "website-tree-service"]) {
+    assert.equal((treePriority.match(new RegExp(`href="/blog/${slug}/"`, "g")) || []).length, 1);
+  }
+
+  const googleSite = read("blog/how-to-make-a-google-site/index.html");
+  const optionFit = googleSite.split('<h2 id="which-option-fits-you">Which option fits you</h2>')[1]
+    .split('<h2 id="how-do-you-make-a-google-site">')[0];
+  assert.match(optionFit, /<th>Option<\/th><th>Best fit<\/th>/);
+  assert.match(optionFit, /<td>Google Sites<\/td>/);
+  assert.match(optionFit, /<td>Done-for-you build<\/td>/);
+  for (const slug of ["google-sites-alternatives-for-a-business", "put-a-google-sites-site-on-your-own-domain"]) {
+    assert.equal((optionFit.match(new RegExp(`href="/blog/${slug}/"`, "g")) || []).length, 1);
+  }
+
+  const domain = read("blog/who-owns-your-domain-name-and-why-it-matters/index.html");
+  const domainOpening = domain.split("</aside>")[1].split('<h2 id="how-to-check-who-owns-your-domain-right-now">')[0];
+  assert.match(domainOpening, /If a web designer registers a domain for you, the person or business named as the registrant holds the registration rights\./);
+  for (const slug of ["how-to-leave-a-web-designer-and-keep-your-domain-and-site", "how-to-move-a-domain-to-a-new-provider"]) {
+    assert.equal((domainOpening.match(new RegExp(`href="/blog/${slug}/"`, "g")) || []).length, 1);
+  }
+
+  const pest = read("blog/pest-control-get-more-reviews/index.html");
+  const requestOrder = pest.split('<h2 id="where-to-ask-in-order">Where to ask, in order</h2>')[1]
+    .split('<h2 id="what-to-ask-for-in-a-pest-control-review">')[0];
+  assert.match(requestOrder, /<ol>/);
+  for (const moment of ["At the completion handoff", "After an agreed follow-up visit", "After a recurring-plan renewal"]) {
+    assert.match(requestOrder, new RegExp(moment));
+  }
+  assert.equal((requestOrder.match(/href="\/blog\/how-to-get-customers-to-leave-reviews-on-google-without-being-pushy\/"/g) || []).length, 1);
+
+  const home = read("index.html");
+  const homeOpening = home.split('<section class="hero"')[1].split('<div class="shelf"')[0];
+  assert.match(homeOpening, /Front Step Sites is a done-for-you website service for small businesses in the United States/);
+  assert.match(homeOpening, /build, host, and maintain your site on the \$99\/yr Launch plan, with a domain included/);
+  for (const slug of ["what-front-step-sites-does-and-who-its-for", "website-hosting-and-maintenance-what-99-covers"]) {
+    assert.equal((home.match(new RegExp(`href="/blog/${slug}/"`, "g")) || []).length, 1);
+    assert.match(homeOpening, new RegExp(`href="/blog/${slug}/"`));
+  }
 });
 
 test("October 20 trade website example links into the tree-service cluster", () => {
@@ -645,9 +691,9 @@ test("Google Sites next steps link from the matching publishing and domain instr
   const domain = html.slice(html.indexOf('<h2 id="can-you-use-your-own-domain-with-a-google-site">'), html.indexOf('<h2 id="when-is-a-google-site-enough-for-a-business">'));
   assert.match(publish, /href="\/blog\/google-sites-launch-checklist-for-a-business-website\/"/);
   assert.match(domain, /href="\/blog\/put-a-google-sites-site-on-your-own-domain\/"/);
-  assert.match(html, /id="when-a-google-site-is-the-wrong-choice"/);
+  assert.match(html, /id="which-option-fits-you"/);
   assert.match(html, /"datePublished":"2026-10-04"/);
-  assert.match(html, /"dateModified":"2026-10-16"/);
+  assert.match(html, /"dateModified":"2026-10-21"/);
 });
 
 test("AI strategy articles lead with the requested direct answers and related links", () => {
@@ -860,7 +906,7 @@ test("updated articles retain original publication date", () => {
 
   const domain = read("blog/who-owns-your-domain-name-and-why-it-matters/index.html");
   assert.match(domain, /"datePublished":"2026-09-26"/);
-  assert.match(domain, /"dateModified":"2026-10-16"/);
+  assert.match(domain, /"dateModified":"2026-10-21"/);
 
   const tutorial = read("blog/html-website-development-when-custom-code-fits/index.html");
   assert.match(tutorial, /"datePublished":"2026-10-13","dateModified":"2026-10-20"/);

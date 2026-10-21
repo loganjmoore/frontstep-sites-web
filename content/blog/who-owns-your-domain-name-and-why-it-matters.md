@@ -6,8 +6,10 @@ cluster: "guides"
 answer: "Your business should be the domain registrant and have reliable control over the account that manages the registration. A web designer can handle the technical work without holding the domain in their own name. Check the registrant details, account access, recovery email, and renewal arrangements before you need to move the website."
 lead: "Domain ownership is the registration right held by the registrant named in the registrar agreement, while practical control also requires independent access to the registrar account and its recovery methods. Paying an invoice or having a designer manage DNS does not transfer ownership."
 published: "2026-09-26"
-updated: "2026-10-16"
+updated: "2026-10-21"
 ---
+
+If a web designer registers a domain for you, the person or business named as the registrant holds the registration rights. Your business should be the registrant and control the registrar account and recovery methods, even when the designer handles setup. Before ending the relationship, follow the [leaving a web designer checklist](/blog/how-to-leave-a-web-designer-and-keep-your-domain-and-site/); if the registration also needs a new registrar, use the [domain move guide](/blog/how-to-move-a-domain-to-a-new-provider/).
 
 ## How to check who owns your domain right now
 

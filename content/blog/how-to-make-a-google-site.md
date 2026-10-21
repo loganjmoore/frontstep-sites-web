@@ -3,20 +3,23 @@ title: "How to make a Google Site, step by step"
 description: "How to make a Google Site: pick a template, name it, add pages, and publish. Then connect your own domain, and check Google's rules for who can do that."
 slug: "how-to-make-a-google-site"
 cluster: "guides"
-tableRegionLabel: "Google Sites address comparison"
+tableRegionLabel: "Google Sites option and address comparisons"
 lead: "Google Sites is a website builder from Google for making simple pages. It fits someone who needs a small brochure or information site and is comfortable handling the content and updates."
 answer: "To make a Google Site, open Google Sites while signed in to your Google account, choose a template under Start a new site, type a name, add your pages, and click Publish at the top right. Your first address starts with sites.google.com, and you can connect your own domain later if you are the site's owner."
 published: "2026-10-04"
-updated: "2026-10-16"
+updated: "2026-10-21"
 image: "/assets/blog/how-to-make-a-google-site-cover.svg"
 imageAlt: "Cover for how to make a Google Site, step by step: five steps from template to publish, and a custom domain that only the site owner can connect"
 ---
 
 Google Sites is Google's website builder for simple pages that you create and publish from a Google account. It fits someone who needs a small brochure or information site and is comfortable handling the content and updates; to make one, choose a template, name it, add your pages, and click Publish.
 
-## When a Google Site is the wrong choice
+## Which option fits you
 
-A Google Site may be the wrong fit when the business needs more than a small site, wants someone else to manage updates, or needs a customer journey the builder cannot support clearly. Compare the [Google Sites alternatives for a business](/blog/google-sites-alternatives-for-a-business/) before committing. If you still choose Google Sites, use the [Google Sites launch checklist](/blog/google-sites-launch-checklist-for-a-business-website/) and the guide to [putting a Google Sites site on your own domain](/blog/put-a-google-sites-site-on-your-own-domain/) before sending customers to it.
+| Option | Best fit |
+| --- | --- |
+| Google Sites | A simple brochure or information site with a few pages, when you will write and manage it yourself. If you want your own address, follow the guide to [putting a Google Sites site on your own domain](/blog/put-a-google-sites-site-on-your-own-domain/). |
+| Done-for-you build | A business site when you want a provider to write, build, host, and maintain it. Compare the [Google Sites alternatives for a business](/blog/google-sites-alternatives-for-a-business/) before choosing. |
 
 ## How do you make a Google Site?
 
