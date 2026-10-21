@@ -9,7 +9,7 @@ published: "2026-09-26"
 updated: "2026-10-17"
 ---
 
-## What to fix first
+## What to fix first, in order
 
 1. Check that your [primary Google Business Profile category](/blog/tree-service-google-business-profile/) matches the main tree service you actually provide, then add only relevant additional categories.
 2. Match your name, address, and phone number across the website, your profile, and relevant listings. Use the [NAP consistency guide](/blog/nap-consistency-why-your-name-address-and-phone-must-match-everywhere/) to check each version.

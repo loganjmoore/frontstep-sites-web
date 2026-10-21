@@ -6,7 +6,7 @@ cluster: "trades/pest-control"
 answer: "Ask pest control customers for honest reviews at a clear service milestone, after they can describe the visit or agreed follow-up. Keep requests optional and discreet, provide a direct link, and invite customers consistently regardless of satisfaction. Never exchange discounts for reviews or tie follow-up service to changing a rating."
 lead: "A pest control review request is an optional invitation for a customer to describe the service publicly in their own words. Send it at a clear service milestone, keep sensitive details private, and never attach a reward or required rating."
 published: "2026-09-26"
-updated: "2026-10-16"
+updated: "2026-10-21"
 ---
 
 ## How to get more Google reviews for pest control
@@ -15,6 +15,14 @@ Ask for an honest review once the customer can describe the service milestone yo
 
 A pest control visit can be a sensitive thing to review publicly. Customers may appreciate the technician but feel uncomfortable discussing a bed bug concern or rodent activity at their business. Your review process should make honest feedback easy while leaving them in control of what they share.
 
+## Where to ask, in order
+
+Use the [general Google review request guide](/blog/how-to-get-customers-to-leave-reviews-on-google-without-being-pushy/) to keep each request optional and neutral.
+
+1. **At the completion handoff:** Ask after the initial treatment or inspection is complete and the customer understands what happens next.
+2. **After an agreed follow-up visit:** Ask when the customer can describe both the original visit and the follow-up without implying a guaranteed result.
+3. **After a recurring-plan renewal:** Ask after the customer has enough experience with ongoing visits to comment on communication, punctuality, and reporting.
+
 ## What to ask for in a pest control review
 
 Invite the customer to describe only the details they are comfortable sharing:
@@ -22,17 +30,11 @@ Invite the customer to describe only the details they are comfortable sharing:
 - **Service type:** The general kind of visit, without asking them to publish a sensitive pest or property detail.
 - **Timeliness:** Whether the team arrived when expected and communicated clearly about the appointment.
 
-The [general Google review request guide](/blog/how-to-get-customers-to-leave-reviews-on-google-without-being-pushy/) explains how to ask without pressure. Use the [bad review reply guide](/blog/how-to-reply-to-a-bad-review/) to respond without exposing private service details.
+Keep the request neutral and easy to decline. Use the [bad review reply guide](/blog/how-to-reply-to-a-bad-review/) to respond without exposing private service details.
 
 ## Choose a milestone that matches the service
 
 An inspection, an initial treatment, and a follow-up visit are different experiences. Decide what the customer has actually had time to assess before asking for feedback. A request sent before the technician arrives tells them nothing about the service.
-
-Use a consistent review moment that fits the work:
-
-1. **After treatment completion:** Ask once the customer has received the completed-service update and knows what happens next.
-2. **After a follow-up visit:** Ask after the customer can describe both the original visit and the follow-up without implying a guaranteed result.
-3. **After a recurring plan renewal:** Ask the customer who has enough experience with the ongoing service to comment on communication, punctuality, and reporting.
 
 For an inspection, a customer may be able to comment on communication and the explanation of findings after the visit. For a treatment plan with agreed follow-up, choose a consistent point that lets them describe the process fairly. Do not imply that a review request means a pest problem has been fully resolved.
 
