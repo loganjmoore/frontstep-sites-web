@@ -1,6 +1,6 @@
 ---
 title: "Locksmith Local SEO Checklist: What to Verify First"
-description: "Check locksmith local SEO with verified licensing, real dispatch hours, accurate service areas, clear service pages, working mobile calls, and neutral review requests."
+description: "Check locksmith local SEO with verified licensing, real dispatch hours, accurate service areas, service pages, tested call links, and neutral review requests."
 slug: "locksmith-local-seo-checklist"
 cluster: "trades/locksmith"
 answer: "Verify trust and emergency-service facts before adding more pages: publish licensing only when current and applicable, make advertised hours match the real call and dispatch path, name only areas and locksmith services the business can serve, test the mobile phone route, and invite every eligible customer to leave an honest review without steering the rating."

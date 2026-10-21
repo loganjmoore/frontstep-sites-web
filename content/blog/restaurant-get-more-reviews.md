@@ -5,7 +5,8 @@ slug: "restaurant-get-more-reviews"
 cluster: "trades/restaurant"
 answer: "Invite restaurant guests to leave an honest Google review after they have experienced the meal and service. Use a small receipt message, a review link, or a brief invitation that does not pressure diners. Include dine-in and takeout guests fairly, avoid rewards or rating requests, and respond to feedback without exposing private booking or order details."
 published: "2026-09-26"
-updated: "2026-10-08"
+updated: "2026-10-21"
+mobileWideTable: "true"
 ---
 
 ## Set up your Google review link and QR code
@@ -25,6 +26,19 @@ Use a computer browser for Google's current QR-code flow:
 | Table card | Available after the meal: "Want to share your experience? Use this optional review link." | Make sure the review code cannot be confused with the menu or payment code. |
 | Takeout insert | Read after the guest has eaten: "If you'd like, share an honest review of your order." | Confirm the insert is not handed out only after compliments. |
 | Post-event follow-up | After a catering or private event, through an agreed channel: "You're welcome to share an honest review of the event." | Confirm the recipient agreed to that follow-up channel and can opt out. |
+
+## Put the review routine into place in one shift
+
+| When | Owner | Action | Pass check |
+| --- | --- | --- | --- |
+| Before rollout | Manager | Retrieve the location's review link and QR code. | On a signed-out phone, both open the intended location. |
+| Before service | Manager | Define which completed dine-in, takeout, and catering experiences receive the same neutral invitation. | There are no incentives, satisfaction screening, or requested rating. |
+| Before the shift | Shift lead | Choose one clearly labeled delivery point and brief staff. | The review QR code is not mixed with menu or payment actions. |
+| After the completed experience | Server or cashier | Use the existing optional wording once. | The guest can decline without friction. |
+| After a complaint | Manager | Handle service recovery separately. | Do not ask for a review change or expose booking or order details. |
+| Weekly | Manager | Retest every active location link. | Every link reaches the correct location, and repeated menu, hours, ordering, or pickup-information problems are assigned for correction. |
+
+[Download the restaurant review routine CSV](/assets/restaurant-review-routine.csv)
 
 How can your restaurant get more Google reviews without making servers deliver another sales pitch? Make the invitation easy to notice and easy to decline. Guests should be able to finish their meal, pay, and leave without feeling that a review is part of the bill.
 

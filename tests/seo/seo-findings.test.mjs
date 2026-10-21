@@ -337,7 +337,7 @@ test("October 21 moving and locksmith AI strategy changes are present", () => {
 
   const locksmith = read("blog/locksmith-local-seo-checklist/index.html");
   assert.match(locksmith, /<title>Locksmith Local SEO Checklist: What to Verify First<\/title>/);
-  assert.match(locksmith, /<meta name="description" content="Check locksmith local SEO with verified licensing, real dispatch hours, accurate service areas, clear service pages, working mobile calls, and neutral review requests\.">/);
+  assert.match(locksmith, /<meta name="description" content="Check locksmith local SEO with verified licensing, real dispatch hours, accurate service areas, service pages, tested call links, and neutral review requests\.">/);
   assert.match(locksmith, /<link rel="canonical" href="https:\/\/frontstepsites\.com\/blog\/locksmith-local-seo-checklist\/">/);
   assert.match(locksmith, /<h1>Locksmith Local SEO Checklist: What to Verify First<\/h1>/);
   assert.match(locksmith, /"datePublished":"2026-10-02","dateModified":"2026-10-21"/);
@@ -355,6 +355,58 @@ test("October 21 moving and locksmith AI strategy changes are present", () => {
   assert.match(locksmith, /Licensing requirements vary by state and locality/);
   assert.match(locksmith, /same neutral invitation to every eligible customer after a completed job/);
   assert.doesNotMatch(locksmith, /13 states|over 70%|4\.5-star|40 reviews|new 5-star reviews|satisfied customer/i);
+});
+
+test("October 21 restaurant review routine and locksmith description findings are resolved", () => {
+  const restaurant = read("blog/restaurant-get-more-reviews/index.html");
+  assert.match(restaurant, /<title>How Restaurants Can Get More Google Reviews<\/title>/);
+  assert.match(restaurant, /<meta name="description" content="A policy-safe restaurant review routine for dine-in, takeout, and catering, with Google review links, QR codes, request wording, and reply steps\.">/);
+  assert.match(restaurant, /<link rel="canonical" href="https:\/\/frontstepsites\.com\/blog\/restaurant-get-more-reviews\/">/);
+  assert.match(restaurant, /<h1>How Restaurants Can Get More Google Reviews<\/h1>/);
+  assert.match(restaurant, /"datePublished":"2026-09-26","dateModified":"2026-10-21"/);
+  assert.match(restaurant, /<aside class="tag-box"><span class="label">Short answer<\/span><p>Invite restaurant guests to leave an honest Google review after they have experienced the meal and service\./);
+  for (const preservedText of [
+    "<strong>Read reviews</strong>",
+    "<strong>Get more reviews</strong>",
+    "Google prohibits incentives for reviews and selectively requesting positive reviews",
+    "<th>Channel</th><th>Timing and neutral sample wording</th><th>Failure check</th>",
+    "Can a restaurant put a Google review QR code on receipts?",
+    "Can we offer a free appetizer for any honest review?",
+    "Should servers ask guests to mention their names?",
+    "Can we ask takeout customers as well as dine-in guests?",
+  ]) assert.match(restaurant, new RegExp(preservedText.replace(/[?]/g, "\\?")));
+
+  const channelTableEnd = restaurant.indexOf("</table></div>") + "</table></div>".length;
+  const routineHeading = '<h2 id="put-the-review-routine-into-place-in-one-shift">Put the review routine into place in one shift</h2>';
+  const routineStart = restaurant.indexOf(routineHeading);
+  assert.equal(restaurant.slice(channelTableEnd, routineStart).trim(), "");
+  const routineEnd = restaurant.indexOf("</table></div>", routineStart) + "</table></div>".length;
+  const routine = restaurant.slice(routineStart, routineEnd);
+  assert.match(routine, /class="table-wrap mobile-wide-table"/);
+  assert.match(routine, /<th>When<\/th><th>Owner<\/th><th>Action<\/th><th>Pass check<\/th>/);
+  assert.equal((routine.match(/<tr>/g) || []).length - 1, 6);
+  for (const timing of ["Before rollout", "Before service", "Before the shift", "After the completed experience", "After a complaint", "Weekly"]) {
+    assert.match(routine, new RegExp(`<td>${timing}<\\/td>`));
+  }
+  for (const detail of [
+    "signed-out phone",
+    "no incentives, satisfaction screening, or requested rating",
+    "review QR code is not mixed with menu or payment actions",
+    "guest can decline without friction",
+    "Do not ask for a review change or expose booking or order details",
+    "pickup-information problems are assigned for correction",
+  ]) assert.match(routine, new RegExp(detail));
+  assert.match(restaurant.slice(routineEnd), /^\n<p><a href="\/assets\/restaurant-review-routine\.csv">Download the restaurant review routine CSV<\/a><\/p>/);
+  assert.match(restaurant, /Start Launch \u2014 \$99\/yr/);
+
+  const csv = read("assets/restaurant-review-routine.csv").trim().split(/\r?\n/);
+  assert.equal(csv[0], "When,Owner,Action,Pass check");
+  assert.equal(csv.length - 1, 6);
+
+  const locksmith = read("blog/locksmith-local-seo-checklist/index.html");
+  const description = locksmith.match(/<meta name="description" content="([^"]+)">/)?.[1] || "";
+  assert.equal(description, "Check locksmith local SEO with verified licensing, real dispatch hours, accurate service areas, service pages, tested call links, and neutral review requests.");
+  assert.ok(description.length < 160, `locksmith meta description is ${description.length} characters`);
 });
 
 test("intent-mismatch articles lead with the requested formats", () => {
