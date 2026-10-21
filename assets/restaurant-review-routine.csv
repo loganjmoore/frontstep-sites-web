@@ -1,0 +1,7 @@
+When,Owner,Action,Pass check
+Before rollout,Manager,Retrieve the location's review link and QR code.,"On a signed-out phone, both open the intended location."
+Before service,Manager,"Define which completed dine-in, takeout, and catering experiences receive the same neutral invitation.","There are no incentives, satisfaction screening, or requested rating."
+Before the shift,Shift lead,Choose one clearly labeled delivery point and brief staff.,The review QR code is not mixed with menu or payment actions.
+After the completed experience,Server or cashier,Use the existing optional wording once.,The guest can decline without friction.
+After a complaint,Manager,Handle service recovery separately.,Do not ask for a review change or expose booking or order details.
+Weekly,Manager,Retest every active location link.,"Every link reaches the correct location, and repeated menu, hours, ordering, or pickup-information problems are assigned for correction."
