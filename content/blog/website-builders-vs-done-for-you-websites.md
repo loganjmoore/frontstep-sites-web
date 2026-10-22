@@ -8,7 +8,7 @@ answer: A done-for-you site starts at $99 a year with the domain included, and a
 lead: Front Step Sites is a done-for-you website service for small businesses in the US, at $99 a year with the domain included and no setup fee.
 sitePlanner: false
 published: 2026-10-03
-updated: "2026-10-17"
+updated: "2026-10-21"
 ---
 
 Should you build your business website yourself or pay someone to handle it? A website builder is a do-it-yourself tool for making your own pages, and a done-for-you website is a site a provider designs, writes, and maintains for you. A builder makes sense when you have the interest and time to use it; a done-for-you service makes sense when you want help getting the work finished. The important difference is who does the writing, checking, and updating after you choose a design.
@@ -28,6 +28,16 @@ Should you build your business website yourself or pay someone to handle it? A w
 | Google Sites | A basic page editor tied to a Google account | You |
 
 This ranking is for a typical local owner who wants a useful site finished and maintained. If direct editing control matters more, put Wix or Squarespace first. The brief builder above helps you define the pages before choosing the tool or service.
+
+## What you actually get
+
+| Question | Builder subscription | Done-for-you build |
+| --- | --- | --- |
+| Who owns the domain? | Check the registrant and account. Paying for the subscription alone does not establish ownership. | The customer. Front Step Sites registers the included domain in the customer's name. |
+| Who maintains it? | You write, update, and check the pages. | Front Step Sites hosts and maintains the site, and you request included changes in your account. |
+| What happens when something breaks? | You troubleshoot it or contact the builder's support. | You ask Front Step Sites to fix it. Corrections to our work are included. |
+
+See [what Front Step Sites does and who it is for](/blog/what-front-step-sites-does-and-who-its-for/) for the full service scope.
 
 ## What this done-for-you plan covers beyond a builder
 
