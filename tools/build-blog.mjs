@@ -19,7 +19,6 @@ const LOGIN_URL = "https://app.frontstepsites.com/login";
 const START_URL = "https://app.frontstepsites.com/get-started";
 const START_LABEL = "Start Launch \u2014 $99/yr";
 const START_EXPECTATION = "Next: secure checkout for the $99/year Launch plan; after payment, sign in and complete the 10-minute business questionnaire.";
-const CLARITY_PROJECT_ID = "xgb5xunw8f";
 
 const MONTHS = ["January","February","March","April","May","June","July","August","September","October","November","December"];
 
@@ -70,7 +69,7 @@ function jsonLdScript(obj) {
 }
 
 function clarityScript() {
-  return `<script>(function(c,l,a,r,i,t,y){var d=false,k="frontstep_analytics_consent";function o(){return navigator.globalPrivacyControl===true||["1","yes"].includes(navigator.doNotTrack||c.doNotTrack)}function g(){try{return !o()&&localStorage.getItem(k)==="accepted"}catch(e){return false}}function s(){if(d||!g())return;d=true;c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);c[a]("consentv2",{ad_Storage:"denied",analytics_Storage:"granted"})}function u(){if(g()){if(d)c[a]("consentv2",{ad_Storage:"denied",analytics_Storage:"granted"});else s()}else if(d){c[a]("consentv2",{ad_Storage:"denied",analytics_Storage:"denied"});c[a]("consent",false)}}s();c.addEventListener("website:analytics-consent",u)})(window,document,"clarity","script","${CLARITY_PROJECT_ID}");</script>`;
+  return `<script>(function(c,l,a,r,i,t,y){var d=false,k="frontstep_analytics_consent";function o(){return navigator.globalPrivacyControl===true||["1","yes"].includes(navigator.doNotTrack||c.doNotTrack)}function g(){try{return !o()&&localStorage.getItem(k)==="accepted"}catch(e){return false}}function s(){if(d||!g())return;d=true;c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y)}function u(){if(g()){if(d)c[a]("consentv2",{ad_Storage:"denied",analytics_Storage:"granted"});else s()}else if(d){c[a]("consentv2",{ad_Storage:"denied",analytics_Storage:"denied"});c[a]("consent",false)}}["pointerdown","keydown","touchstart"].forEach(function(e){c.addEventListener(e,s,{once:true,passive:true})});c.addEventListener("load",function(){c.setTimeout(s,8000)},{once:true});c.addEventListener("website:analytics-consent",u)})(window,document,"clarity","script","yqkzhoosjo");</script>`;
 }
 
 // ---------- front matter ----------
