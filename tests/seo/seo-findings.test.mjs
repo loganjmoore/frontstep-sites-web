@@ -676,9 +676,10 @@ test("October 10 entity-definition findings use unique plain definitions immedia
   }
 });
 
-test("homepage keeps third-party assets out of the initial rendering path", () => {
+test("homepage consent-gates optional analytics and avoids late font swaps", () => {
   const home = read("index.html");
-  assert.match(home, /setTimeout\(s,8000\)/);
+  assert.match(home, /function s\(\)\{if\(d\|\|!g\(\)\)return/);
+  assert.match(home, /\}\}s\(\);c\.addEventListener\("website:analytics-consent",u\)/);
   assert.match(home, /display=optional/);
   assert.match(home, /rel="stylesheet" media="print" onload="this\.media='all'"/);
   assert.doesNotMatch(home, /display=swap/);
@@ -780,7 +781,7 @@ test("first-party analytics choice uses the configured PostHog consent key", () 
   assert.match(home, /src="\/posthog-web\.js"/);
 });
 
-test("every public HTML page preserves the previously published Clarity project behind consent", () => {
+test("every public HTML page loads the required Clarity project once after consent", () => {
   const paths = [
     "index.html",
     "posthog-privacy.html",
@@ -790,11 +791,61 @@ test("every public HTML page preserves the previously published Clarity project 
   assert.ok(paths.length >= 278, "the check should cover the full crawled page set");
   for (const path of paths) {
     const html = read(path);
-    assert.equal((html.match(/yqkzhoosjo/g) || []).length, 1, `${path} must name the Clarity project once`);
-    assert.doesNotMatch(html, /xgb5xunw8f/, `${path} must not switch to an unverified shared project`);
+    assert.equal((html.match(/xgb5xunw8f/g) || []).length, 1, `${path} must name the Clarity project once`);
+    assert.doesNotMatch(html, /yqkzhoosjo/, `${path} still names the previous Clarity project`);
     assert.match(html, /clarity\.ms\/tag\//, `${path} must install the Clarity tag`);
     assert.match(html, /if\(d\|\|!g\(\)\)return/, `${path} must retain its consent gate`);
+    assert.match(html, /y\.parentNode\.insertBefore\(t,y\);c\[a\]\("consentv2",\{ad_Storage:"denied",analytics_Storage:"granted"\}\)/, `${path} must grant analytics storage when Clarity first loads`);
+    assert.match(html, /\}\}s\(\);c\.addEventListener\("website:analytics-consent",u\)/, `${path} must load immediately for an existing consent choice`);
+    assert.doesNotMatch(html, /setTimeout\(s,8000\)|\["pointerdown","keydown","touchstart"\]/, `${path} must not delay an already-consented Clarity load`);
   }
+});
+
+test("Clarity loads once for existing or newly granted consent", () => {
+  const source = read("index.html").match(/<script>((?:\(function\(c,l,a,r,i,t,y\))[\s\S]*?xgb5xunw8f"\);)<\/script>/)?.[1];
+  assert.ok(source, "the Clarity bootstrap must be extractable from the document head");
+
+  function boot(initialChoice, globalPrivacyControl = false) {
+    let choice = initialChoice;
+    const handlers = {};
+    const inserted = [];
+    const anchor = { parentNode: { insertBefore(script) { inserted.push(script); } } };
+    const window = { doNotTrack: null, addEventListener(name, handler) { handlers[name] = handler; } };
+    const document = {
+      createElement() { return {}; },
+      getElementsByTagName() { return [anchor]; },
+    };
+    const navigator = { doNotTrack: null, globalPrivacyControl };
+    const localStorage = { getItem() { return choice; } };
+    vm.runInNewContext(source, { window, document, navigator, localStorage });
+    return { handlers, inserted, window, setChoice(value) { choice = value; } };
+  }
+
+  const accepted = boot("accepted");
+  assert.equal(accepted.inserted.length, 1);
+  assert.equal(accepted.inserted[0].src, "https://www.clarity.ms/tag/xgb5xunw8f");
+  assert.equal(accepted.window.clarity.q[0][0], "consentv2");
+  assert.equal(accepted.window.clarity.q[0][1].ad_Storage, "denied");
+  assert.equal(accepted.window.clarity.q[0][1].analytics_Storage, "granted");
+
+  const newlyAccepted = boot(null);
+  assert.equal(newlyAccepted.inserted.length, 0);
+  newlyAccepted.setChoice("accepted");
+  newlyAccepted.handlers["website:analytics-consent"]();
+  newlyAccepted.handlers["website:analytics-consent"]();
+  assert.equal(newlyAccepted.inserted.length, 1);
+
+  assert.equal(boot("accepted", true).inserted.length, 0, "Global Privacy Control must keep Clarity off");
+});
+
+test("website-builder comparison includes the requested three-point outcome table", () => {
+  const html = read("blog/website-builders-vs-done-for-you-websites/index.html");
+  const section = html.match(/<h2 id="what-you-actually-get">What you actually get<\/h2>([\s\S]*?)(?=<h2)/)?.[1];
+  assert.ok(section, "the plainly labeled comparison section must be rendered");
+  assert.match(section, /<th>Question<\/th><th>Builder subscription<\/th><th>Done-for-you build<\/th>/);
+  assert.equal((section.match(/<tr>/g) || []).length, 4, "the table must contain one header and exactly three comparison points");
+  for (const point of ["Who owns the domain?", "Who maintains it?", "What happens when something breaks?"]) assert.match(section, new RegExp(point.replace("?", "\\?")));
+  assert.equal((html.match(/href="\/blog\/what-front-step-sites-does-and-who-its-for\/"/g) || []).length, 1, "the article must link to the product-fit guide once");
 });
 
 test("AI visibility articles answer a natural product-fit question with matching FAQ schema", () => {
@@ -862,7 +913,7 @@ test("catalog entries explain business fit while retaining direct answers elsewh
   assert.ok(llms.includes("- [Plumbing: what your website needs](https://frontstepsites.com/blog/website-plumbing/): A plumber website needs a working call button, clear service hours, the towns you cover, and plain descriptions of the jobs you take."));
 });
 
-test("flagged read pages defer analytics and avoid late font swaps", () => {
+test("flagged read pages consent-gate analytics and avoid late font swaps", () => {
   const paths = [
     "privacy/index.html",
     "terms/index.html",
@@ -893,7 +944,8 @@ test("flagged read pages defer analytics and avoid late font swaps", () => {
 
   for (const path of paths) {
     const html = read(path);
-    assert.match(html, /setTimeout\(s,8000\)/, `${path} should keep analytics out of the initial rendering path`);
+    assert.match(html, /function s\(\)\{if\(d\|\|!g\(\)\)return/, `${path} should keep analytics behind the consent check`);
+    assert.match(html, /\}\}s\(\);c\.addEventListener\("website:analytics-consent",u\)/, `${path} should load analytics immediately when consent already exists`);
     assert.match(html, /display=optional/, `${path} should use the stable fallback when the webfont is late`);
     assert.doesNotMatch(html, /display=swap/, `${path} should not swap fonts after first paint`);
   }
