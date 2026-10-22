@@ -7,6 +7,7 @@ answer: "Invite restaurant guests to leave an honest Google review after they ha
 published: "2026-09-26"
 updated: "2026-10-21"
 mobileWideTable: "true"
+tableRegionLabel: "Restaurant review channels and shift routine"
 ---
 
 ## Set up your Google review link and QR code

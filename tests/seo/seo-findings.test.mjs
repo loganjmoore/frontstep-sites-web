@@ -428,7 +428,7 @@ test("October 21 restaurant review routine and locksmith description findings ar
   assert.equal(restaurant.slice(channelTableEnd, routineStart).trim(), "");
   const routineEnd = restaurant.indexOf("</table></div>", routineStart) + "</table></div>".length;
   const routine = restaurant.slice(routineStart, routineEnd);
-  assert.match(routine, /class="table-wrap mobile-wide-table"/);
+  assert.match(routine, /class="table-wrap mobile-wide-table readable-table" role="region" aria-label="Restaurant review channels and shift routine" tabindex="0"/);
   assert.match(routine, /<th>When<\/th><th>Owner<\/th><th>Action<\/th><th>Pass check<\/th>/);
   assert.equal((routine.match(/<tr>/g) || []).length - 1, 6);
   for (const timing of ["Before rollout", "Before service", "Before the shift", "After the completed experience", "After a complaint", "Weekly"]) {
@@ -930,4 +930,17 @@ test("regeneration does not redate unchanged legal pages", () => {
     assert.ok(item, `${slug} remains discoverable in RSS`);
     assert.match(item, /<pubDate>Sat, 26 Sep 2026 12:00:00 GMT<\/pubDate>/);
   }
+});
+
+
+test("restaurant review tables are named keyboard regions without changing the routine", () => {
+  const html = read("blog/restaurant-get-more-reviews/index.html");
+  const regions = [...html.matchAll(/<div class="table-wrap mobile-wide-table readable-table" role="region" aria-label="Restaurant review channels and shift routine" tabindex="0">([\s\S]*?)<\/table><\/div>/g)];
+  assert.equal(regions.length, 2);
+  assert.match(regions[0][1], /<th>Channel<\/th>/);
+  for (const heading of ["When", "Owner", "Action", "Pass check"]) {
+    assert.ok(regions[1][1].includes(`<th>${heading}</th>`));
+  }
+  assert.match(html, /href="\/assets\/restaurant-review-routine\.csv"/);
+  assert.match(html, /"dateModified":"2026-10-21"/);
 });
