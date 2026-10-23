@@ -6,7 +6,7 @@ cluster: guides
 lead: "NAP consistency is the use of accurate, recognizable business name, address, and phone information across a website and business listings."
 answer: "NAP consistency means using accurate, recognizable business name, address, and phone information wherever customers find you. Start with your website and major listings, then correct old numbers, former locations, and duplicate entries. Matching the underlying facts matters more than identical punctuation, and consistency does not mean publishing a private home address."
 published: 2026-09-26
-updated: 2026-10-10
+updated: 2026-10-23
 ---
 
 Does your business really need the same name, address, and phone number everywhere online? Yes, the facts should agree, so a customer can recognize you and reach the right place. An old shop address or disconnected number deserves your attention before a difference between “Street” and “St.”
@@ -50,6 +50,8 @@ Use a simple list with the page address, wrong detail, account owner, action tak
 Suppose you moved an appliance repair workshop but left your previous address on a parts supplier's referral page. A customer arriving there is a clearer loss than an obscure directory using an old abbreviation. Fix the page people rely on first.
 
 Our guide to [Bing and Apple business listings](/blog/bing-places-and-apple-business-connect-the-listings-most-businesses-sk/) covers two places worth including in this audit.
+
+If you are deciding which optional directories deserve time, use the guide to [Yelp, Nextdoor, and Angi listings](/blog/yelp-nextdoor-and-angi-which-listings-are-worth-your-time/) to check fit before creating or updating a profile.
 
 ## Correct the source and check the public result
 
