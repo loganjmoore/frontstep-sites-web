@@ -4,10 +4,20 @@ description: "Get more honest tree service reviews with a clear cleanup handoff,
 slug: "tree-service-get-more-reviews"
 cluster: "trades/tree-service"
 answer: "Ask for an honest Google review after a clear tree-work handoff, when the customer understands the removal, pruning, cleanup, and any remaining stump work. Use the same request process for customers regardless of whether they raised concerns. Provide a direct link, avoid incentives, and resolve service issues without tying that work to a review."
-updated: "2026-09-26"
+published: "2026-09-26"
+updated: "2026-10-23"
 ---
 
 When should you ask a tree service customer for a Google review? The moment the last branch comes down is not always the end of the job in the customer's eyes. Ask after a clear handoff that explains the completed work, the cleanup, and anything still scheduled.
+
+## What to do first, in order
+
+1. Confirm the agreed removal, pruning, hauling, cleanup, and stump work that is complete or still scheduled.
+2. Resolve or clearly record any open service concern without tying the resolution to a review.
+3. Find and test the direct review link for the tree service's actual Google Business Profile.
+4. Send the same short, optional request to comparable customers through a contact channel they already use with the business.
+5. Record that the request was sent and use no more than one restrained reminder.
+6. Review repeated customer questions, then use the [tree service local SEO checklist](/blog/tree-service-local-seo-checklist/) to correct the matching profile or website information.
 
 ## Define completion before you ask for feedback
 

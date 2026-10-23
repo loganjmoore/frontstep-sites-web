@@ -551,6 +551,29 @@ test("HTML website development guide is a hands-on tutorial", () => {
   assert.match(html, /<code class="language-html">&lt;!doctype html&gt;/);
   assert.match(html, /<h2 id="step-6-publish-the-html-files">/);
   assert.match(html, /<h2 id="when-does-custom-html-fit-a-small-business">/);
+
+  const definition = read("blog/what-is-a-website-four-parts/index.html");
+  assert.match(definition, /href="\/blog\/html-website-development-when-custom-code-fits\/">step-by-step HTML website development tutorial<\/a>/);
+});
+
+test("October 23 acquisition answers put the requested actions in order", () => {
+  const pest = read("blog/pest-control-local-seo-checklist/index.html");
+  const pestPriority = pest.split('<h2 id="what-to-fix-first">What to fix first</h2>')[1]
+    .split('<h2 id="confirm-the-business-facts-customers-see">')[0];
+  assert.equal((pestPriority.match(/<li>/g) || []).length, 6);
+  assert.equal((pestPriority.match(/href="\/blog\/pest-control-google-business-profile\/"/g) || []).length, 1);
+  for (const step of ["Correct the business name", "Give each important pest", "Check that coverage pages", "Test calls and inspection requests", "Add genuine work photos", "Measure suitable inquiries"]) {
+    assert.match(pestPriority, new RegExp(step));
+  }
+
+  const tree = read("blog/tree-service-get-more-reviews/index.html");
+  const treePriority = tree.split('<h2 id="what-to-do-first-in-order">What to do first, in order</h2>')[1]
+    .split('<h2 id="define-completion-before-you-ask-for-feedback">')[0];
+  assert.equal((treePriority.match(/<li>/g) || []).length, 6);
+  assert.equal((treePriority.match(/href="\/blog\/tree-service-local-seo-checklist\/"/g) || []).length, 1);
+  for (const step of ["Confirm the agreed removal", "Resolve or clearly record", "Find and test the direct review link", "Send the same short, optional request", "Record that the request was sent", "Review repeated customer questions"]) {
+    assert.match(treePriority, new RegExp(step));
+  }
 });
 
 test("citability pages put plain subject definitions in extractable article text", () => {
@@ -954,4 +977,3 @@ test("website-builder comparison includes the requested three-point outcome tabl
   for (const point of ["Who owns the domain?", "Who maintains it?", "What happens when something breaks?"]) assert.match(section, new RegExp(point.replace("?", "\\?")));
   assert.equal((html.match(/href="\/blog\/what-front-step-sites-does-and-who-its-for\/"/g) || []).length, 1, "the article must link to the product-fit guide once");
 });
-
