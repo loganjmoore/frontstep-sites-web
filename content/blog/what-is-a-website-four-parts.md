@@ -6,7 +6,8 @@ cluster: "guides"
 lead: "A website is a collection of linked web pages and files that people open under one domain name. A small-business website combines four practical parts: the domain, hosting, pages, and the content customers read or use."
 answer: "A website is a group of connected web pages and resources published under a shared domain name. The domain is its human-readable address, hosting delivers its files, pages organize the information, and content supplies the words, images, forms, and other material visitors use."
 author: "Logan Moore"
-updated: "2026-10-13"
+published: "2026-10-13"
+updated: "2026-10-23"
 image: "/assets/blog/what-is-a-website-four-parts-cover.svg"
 imageAlt: "Diagram showing the four parts of a website: domain, hosting, pages, and content"
 ---
@@ -56,7 +57,7 @@ Pages provide the containers and addresses, while content gives each page someth
 
 This difference becomes useful during planning. “We need a five-page website” describes size, but it says little about the work. “We need two service explanations, six original photos, current hours, three service-area details, and a tested quote form” describes what must be gathered and maintained.
 
-MDN says web pages are HTML documents that can include style information, scripts, and media. In a visitor's browser, those pieces become the page's structure, appearance, behavior, and assets. A builder or developer handles much of that assembly, but the business still needs to provide truthful source material.
+MDN says web pages are HTML documents that can include style information, scripts, and media. In a visitor's browser, those pieces become the page's structure, appearance, behavior, and assets. If you want to work directly with those files, the [step-by-step HTML website development tutorial](/blog/html-website-development-when-custom-code-fits/) shows how to create, style, test, and publish a small page. A builder or developer handles much of that assembly, but the business still needs to provide truthful source material.
 
 ## What does a small-business website need?
 
