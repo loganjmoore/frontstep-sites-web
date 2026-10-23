@@ -91,4 +91,4 @@ Start with inaccurate service scope, broken contact actions, and unclear coverag
 
 ## The short version
 
-Your cleaning website should make scope, coverage, pricing factors, and the next step easy to understand. Test it from a customer's phone through to the inquiry arriving in your office. [Front Step Sites](/) offers a $99 yearly website with the domain included and two change requests a month, made within two business days.
+Your cleaning website should make scope, coverage, pricing factors, and the next step easy to understand. Test it from a customer's phone through to the inquiry arriving in your office. [Front Step Sites](/) offers a $99 yearly website with the domain included and four coherent marketing updates per Central calendar month.

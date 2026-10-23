@@ -1,13 +1,35 @@
 ---
-title: "Click-to-call: your number on every page"
-description: "Make your website phone number easy to find and tap, with clear placement, correct telephone links, hours, and checks that separate clicks from real calls."
+title: "How to Make a Phone Number Clickable (Click-to-Call)"
+description: "Add and test a click-to-call phone link on every page, with the correct tel format, mobile placement, hours, accessibility, and a real completed-call check."
 slug: "click-to-call-making-your-phone-number-work-on-every-page"
 cluster: "guides"
+lead: "Click-to-call is a phone link that opens a calling option on a supported device, and its HTML destination uses the tel:+12025550147 format."
 answer: "Click-to-call turns your website phone number into a link that opens a calling option on a supported device. Put it where customers decide to contact you, show the readable number, and test the destination on real phones. Keep your hours clear and remember that a recorded click does not prove someone completed a call or booked work."
-updated: "2026-09-26"
+published: "2026-09-26"
+updated: "2026-10-17"
 ---
 
+```html
+<a href="tel:+12025550147">Call (202) 555-0147</a>
+```
+
+The 555 number above is fictional. Replace both the readable number and the `tel:+1...` destination with the same real business number.
+
+## Test your click-to-call in 60 seconds
+
+1. Open the page on a phone and tap the displayed phone number.
+2. Open the page on a desktop, activate the same link, and confirm that the readable number and its `tel:` destination match even if no calling app is installed.
+3. Compare that number with the one on the business's Google Business Profile. If they differ, use the [NAP consistency guide](/blog/nap-consistency-why-your-name-address-and-phone-must-match-everywhere/) to correct the website, profile, and other important listings.
+
+| Where to add it | What the visitor sees | What to test |
+| --- | --- | --- |
+| Header | Call (202) 555-0147 | The link stays visible and the destination matches the displayed number. |
+| Service-page decision point | Call about this service: (202) 555-0147 | The control opens the intended calling option without covering nearby content. |
+| Footer | Phone: (202) 555-0147 | The number remains readable, copyable, and correct on every page. |
+
 Can a customer tap the phone number on every page of your website and reach your business? A number that is visible is not necessarily a working phone link. Check both the placement and what actually happens after the tap, especially on the service pages customers visit directly.
+
+If calling is not practical for a visitor, give them an early alternative: the [contact form guide](/blog/contact-forms-that-actually-get-filled-out/) explains how to build a short inquiry route that people will actually use.
 
 ## Turn the number into a real telephone link
 
@@ -64,6 +86,10 @@ Do not assume that tracking requires recording conversations. Start with the inf
 Repeat the call check after changing phone providers, forwarding rules, website templates, or tracking tools. A link that worked at launch can become outdated when the surrounding setup changes.
 
 ## Frequently asked questions
+
+### What is the correct HTML for a clickable phone number?
+
+Use a real anchor link with readable phone text and a complete international `tel:` destination, such as `<a href="tel:+12025550147">Call (202) 555-0147</a>`. Replace the conspicuous fictional 555 number in both places with the same real business number.
 
 ### Does tapping a phone link always place the call immediately?
 

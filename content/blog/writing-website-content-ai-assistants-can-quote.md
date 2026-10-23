@@ -4,10 +4,11 @@ description: Write clear website answers that customers and AI assistants can un
 slug: writing-website-content-ai-assistants-can-quote
 cluster: ai-search
 answer: Write website content AI assistants can quote by answering a real customer question first, then adding specific facts and clear conditions. Use descriptive headings, readable text, and accurate business details. This makes your pages easier to understand and check, but no writing format can guarantee that an assistant will quote or recommend your business.
-updated: 2026-09-26
+published: 2026-09-26
+updated: 2026-10-12
 ---
 
-How do you write your website so an AI assistant can give someone a useful answer about your business? Start with the same information you would give a customer on the phone: what you do, where you work, and what happens next. Put that answer where people can find it, then explain the details without turning the page into a sales pitch.
+Website content for AI assistants is public page copy written with direct answers, specific facts, clear conditions, and descriptive headings that people and software can understand. Start with the same information you would give a customer on the phone: what you do, where you work, and what happens next. Put that answer where people can find it, then explain the details without turning the page into a sales pitch.
 
 ## Start with a question customers actually ask
 

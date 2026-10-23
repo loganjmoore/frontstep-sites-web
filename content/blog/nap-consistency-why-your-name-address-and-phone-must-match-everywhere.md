@@ -3,8 +3,10 @@ title: "NAP consistency for local businesses"
 description: "Learn how to check your business name, address, and phone across websites and listings, fix old details, and protect a home address while staying accurate."
 slug: nap-consistency-why-your-name-address-and-phone-must-match-everywhere
 cluster: guides
+lead: "NAP consistency is the use of accurate, recognizable business name, address, and phone information across a website and business listings."
 answer: "NAP consistency means using accurate, recognizable business name, address, and phone information wherever customers find you. Start with your website and major listings, then correct old numbers, former locations, and duplicate entries. Matching the underlying facts matters more than identical punctuation, and consistency does not mean publishing a private home address."
-updated: 2026-09-26
+published: 2026-09-26
+updated: 2026-10-10
 ---
 
 Does your business really need the same name, address, and phone number everywhere online? Yes, the facts should agree, so a customer can recognize you and reach the right place. An old shop address or disconnected number deserves your attention before a difference between “Street” and “St.”
@@ -97,4 +99,4 @@ Save the correction request and any support response, then check whether the pag
 
 Choose accurate business details, keep them in one reference document, and check the websites and listings customers use. Fix wrong locations and broken phone numbers first, then verify the public results. Protect private addresses and repeat the checklist whenever your business changes.
 
-If your website needs updated business details, [Front Step Sites](/) includes two change requests a month on its $99-a-year plan, with the domain included.
+If your website needs updated business details, [Front Step Sites](/) includes four coherent marketing updates per Central calendar month on its $99-a-year plan, with the domain included.

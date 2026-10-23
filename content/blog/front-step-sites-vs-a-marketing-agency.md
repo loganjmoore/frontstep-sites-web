@@ -13,10 +13,10 @@ Front Step Sites is a done-for-you website service for small businesses, priced 
 
 | | Front Step Sites | Marketing agency |
 |---|---|---|
-| Ongoing cost | $99/yr (Launch), or $29/mo ($290/yr) for unlimited same-day changes on Grow | Set by the agency's proposal; ask for it broken out from ad spend |
+| Ongoing cost | $99/yr (Launch), or $29/mo ($290/yr) for four marketing updates per Central calendar month changes on Grow | Set by the agency's proposal; ask for it broken out from ad spend |
 | Upfront cost | $0 setup fee | Varies; ask what's included before any ad spend starts |
 | Contract length | Ongoing subscription, cancel any time | Ask what happens after any introductory term |
-| Who handles changes | You submit requests in your account: 2 a month on Launch (2 business days) or unlimited same-day on Grow | Ask who on the team handles requests and how fast |
+| Who handles changes | You submit requests in your account: four per Central calendar month on Launch or four marketing updates per Central calendar month on Grow | Ask who on the team handles requests and how fast |
 
 ## Decide whether the problem is the website or the marketing
 
@@ -28,9 +28,9 @@ Write one sentence describing your need. For example: "People referred to us nee
 
 ## Know what the Front Step Sites plans include
 
-Front Step Sites costs $99 a year with the domain included and no setup fee. On that plan, you get 2 change requests a month, made within 2 business days. Customers request changes by writing in their account.
+Front Step Sites costs $99 a year with the domain included and no setup fee. On that plan, you get 4 coherent marketing updates per Central calendar month. Customers request changes by writing in their account.
 
-The Grow plan costs $29 a month or $290 a year. It includes unlimited changes the same business day and Google reviews shown on the site. New pages, blog posts, and local SEO setup are included.
+The Grow plan costs $29 a month or $290 a year. It includes four coherent marketing updates per Central calendar month and Google reviews shown on the site. New pages, blog posts, and local SEO setup are included.
 
 Choose around the updates you actually expect to request. A house cleaner might need an occasional service area correction or a new page explaining move-out cleaning. A landscaper changing available seasonal services may want more frequent updates. Write out those likely requests before choosing a plan.
 

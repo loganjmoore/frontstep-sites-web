@@ -3,8 +3,10 @@ title: "Blogging for local businesses: worth it?"
 description: "Find out which blog posts can help a local business, how to choose useful customer questions, and how to judge whether writing is worth your limited time."
 slug: blogging-for-local-businesses-does-it-still-work
 cluster: guides
+lead: "Local business blogging is the practice of publishing useful answers to customer questions that relate to the services the business actually provides."
 answer: "Blogging can still help a local business when a post answers a real customer's question and connects naturally to a service you provide. It is less useful when you publish generic tips just to fill a calendar. Fix your core service pages first, then write practical articles you can use in customer conversations and judge by relevant inquiries."
-updated: 2026-09-26
+published: 2026-09-26
+updated: 2026-10-10
 ---
 
 Is writing a blog worth your time when you already have jobs to finish and calls to return? It can be, but the subject matters more than the habit of publishing. A useful article helps a future customer make a decision or prepares an existing customer for work you already do.

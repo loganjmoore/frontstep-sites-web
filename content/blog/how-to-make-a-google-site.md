@@ -3,14 +3,23 @@ title: "How to make a Google Site, step by step"
 description: "How to make a Google Site: pick a template, name it, add pages, and publish. Then connect your own domain, and check Google's rules for who can do that."
 slug: "how-to-make-a-google-site"
 cluster: "guides"
-lead: "Google Sites is a website builder from Google for making simple pages, and this guide walks through making one step by step."
+tableRegionLabel: "Google Sites option and address comparisons"
+lead: "Google Sites is a website builder from Google for making simple pages. It fits someone who needs a small brochure or information site and is comfortable handling the content and updates."
 answer: "To make a Google Site, open Google Sites while signed in to your Google account, choose a template under Start a new site, type a name, add your pages, and click Publish at the top right. Your first address starts with sites.google.com, and you can connect your own domain later if you are the site's owner."
-updated: "2026-10-04"
+published: "2026-10-04"
+updated: "2026-10-21"
 image: "/assets/blog/how-to-make-a-google-site-cover.svg"
 imageAlt: "Cover for how to make a Google Site, step by step: five steps from template to publish, and a custom domain that only the site owner can connect"
 ---
 
-To make a Google Site, open Google Sites, choose a template under "Start a new site," give it a name, add your content, and click Publish at the top right. Your published address starts with sites.google.com. You can connect your own domain later, but only if you own the site. The steps below follow Google's own help pages.
+Google Sites is Google's website builder for simple pages that you create and publish from a Google account. It fits someone who needs a small brochure or information site and is comfortable handling the content and updates; to make one, choose a template, name it, add your pages, and click Publish.
+
+## Which option fits you
+
+| Option | Best fit |
+| --- | --- |
+| Google Sites | A simple brochure or information site with a few pages, when you will write and manage it yourself. If you want your own address, follow the guide to [putting a Google Sites site on your own domain](/blog/put-a-google-sites-site-on-your-own-domain/). |
+| Done-for-you build | A business site when you want a provider to write, build, host, and maintain it. Compare the [Google Sites alternatives for a business](/blog/google-sites-alternatives-for-a-business/) before choosing. |
 
 ## How do you make a Google Site?
 
@@ -34,9 +43,13 @@ Write each service page around the job a customer would search for. A plumber mi
 
 When you publish, you can choose the web address. Every published site gets a URL under sites.google.com, such as sites.google.com/view/your-site-name. Keep the name short and plain. Customers will type it from a card, a truck, or a flyer, so a clear name matters more than a clever one.
 
+Before you share the address with customers, work through the [Google Sites launch checklist](/blog/google-sites-launch-checklist-for-a-business-website/).
+
 ## Can you use your own domain with a Google Site?
 
 Yes, with two conditions. First, Google's custom domain help says only the owner of the site can connect a domain. Second, you need a domain you can point at the site through your registrar. Google's steps are to open Settings, choose Custom domains, enter your domain, and follow the on-screen instructions. Google also says changes can take up to 48 hours to become visible on the Internet.
+
+Use our guide to [putting a Google Sites site on your own domain](/blog/put-a-google-sites-site-on-your-own-domain/) to follow the ownership, DNS and HTTPS checks.
 
 | Question | Default address | Custom domain |
 | --- | --- | --- |

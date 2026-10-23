@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img" aria-label="Twelve tasks behind making a small business website">
+  <rect width="1200" height="630" fill="#eceeec"/>
+  <rect x="46" y="46" width="1120" height="550" fill="#111312"/>
+  <rect x="40" y="40" width="1120" height="550" fill="#fff" stroke="#111312" stroke-width="3"/>
+  <g transform="translate(1030 66)"><rect width="34" height="34" fill="#ffd60a"/><path d="M6 27h22v-5H17v-5h-5v-5H6z" fill="#111312"/></g>
+  <text x="80" y="98" font-family="Arial,sans-serif" font-size="22" font-weight="700" letter-spacing="2" fill="#474d4b">FRONT STEP SITES BLOG</text>
+  <text x="80" y="186" font-family="Arial,sans-serif" font-size="54" font-weight="800" fill="#111312">What does a website maker do?</text>
+  <text x="80" y="240" font-family="Arial,sans-serif" font-size="29" font-weight="700" fill="#474d4b">A 12-task first-year example</text>
+  <g transform="translate(80 294)" font-family="Arial,sans-serif">
+    <rect width="680" height="200" fill="#fff" stroke="#111312" stroke-width="2"/>
+    <g fill="#111312" font-size="18" font-weight="700">
+      <text x="24" y="36">01 Facts</text><text x="184" y="36">02 Offer</text><text x="344" y="36">03 Pages</text><text x="504" y="36">04 Writing</text>
+      <text x="24" y="86">05 Photos</text><text x="184" y="86">06 Design</text><text x="344" y="86">07 Build</text><text x="504" y="86">08 Phone test</text>
+      <text x="24" y="136">09 Form test</text><text x="184" y="136">10 Domain</text><text x="344" y="136">11 Publish</text><text x="504" y="136">12 Updates</text>
+    </g>
+    <rect x="24" y="162" width="632" height="12" fill="#eceeec"/><rect x="24" y="162" width="474" height="12" fill="#ffd60a"/>
+  </g>
+  <g transform="translate(800 294)" font-family="Arial,sans-serif">
+    <rect width="280" height="200" fill="#111312"/>
+    <text x="24" y="46" font-size="17" font-weight="700" letter-spacing="1" fill="#ffd60a">COUNT BOTH</text>
+    <text x="24" y="96" font-size="34" font-weight="800" fill="#fff">Invoice</text>
+    <text x="24" y="137" font-size="34" font-weight="800" fill="#fff">+ your time</text>
+    <text x="24" y="174" font-size="17" fill="#eceeec">Same scope. Honest total.</text>
+  </g>
+  <text x="80" y="548" font-family="Arial,sans-serif" font-size="22" font-weight="700" fill="#474d4b">ASSIGN EVERY JOB BEFORE COMPARING THE PRICE</text>
+</svg>

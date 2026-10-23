@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img" aria-label="BrainPOP website, website builder, and business website explained">
+  <rect width="1200" height="630" fill="#eceeec"/>
+  <rect x="46" y="46" width="1120" height="550" fill="#111312"/>
+  <rect x="40" y="40" width="1120" height="550" fill="#fff" stroke="#111312" stroke-width="3"/>
+  <g transform="translate(1030 66)"><rect width="34" height="34" fill="#ffd60a"/><path d="M6 27h22v-5H17v-5h-5v-5H6z" fill="#111312"/></g>
+  <text x="80" y="98" font-family="Arial,sans-serif" font-size="22" font-weight="700" letter-spacing="2" fill="#474d4b">FRONT STEP SITES BLOG</text>
+  <text x="80" y="190" font-family="Arial,sans-serif" font-size="56" font-weight="800" fill="#111312">Is BrainPOP a website?</text>
+  <text x="80" y="244" font-family="Arial,sans-serif" font-size="29" font-weight="700" fill="#474d4b">Three web terms, three different jobs</text>
+  <g font-family="Arial,sans-serif" fill="#111312">
+    <g transform="translate(80 310)"><rect width="310" height="174" fill="#ffd60a" stroke="#111312" stroke-width="2"/><text x="22" y="42" font-size="20" font-weight="800">BRAINPOP</text><text x="22" y="83" font-size="27" font-weight="800">Learn</text><text x="22" y="118" font-size="18">Lessons · quizzes · activities</text><path d="M244 72h38v38h-38zM252 80h22v22h-22z" fill="#fff" stroke="#111312" stroke-width="2"/></g>
+    <g transform="translate(425 310)"><rect width="310" height="174" fill="#eceeec" stroke="#111312" stroke-width="2"/><text x="22" y="42" font-size="20" font-weight="800">WEBSITE BUILDER</text><text x="22" y="83" font-size="27" font-weight="800">Create</text><text x="22" y="118" font-size="18">Edit · arrange · publish</text><path d="M248 70h38v42h-38zM254 78h26M254 88h19M254 98h23" fill="#fff" stroke="#111312" stroke-width="2"/></g>
+    <g transform="translate(770 310)"><rect width="310" height="174" fill="#111312" stroke="#111312" stroke-width="2"/><text x="22" y="42" font-size="20" font-weight="800" fill="#ffd60a">BUSINESS WEBSITE</text><text x="22" y="83" font-size="27" font-weight="800" fill="#fff">Decide</text><text x="22" y="118" font-size="18" fill="#fff">Call · quote · book · visit</text><path d="M246 77h38v25h-38zM254 103v12M276 103v12" fill="none" stroke="#ffd60a" stroke-width="4"/></g>
+  </g>
+  <text x="80" y="548" font-family="Arial,sans-serif" font-size="22" font-weight="700" fill="#474d4b">NAME THE VISITOR’S JOB BEFORE CHOOSING THE TOOL</text>
+</svg>

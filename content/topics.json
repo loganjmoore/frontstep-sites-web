@@ -1630,5 +1630,83 @@
   "title": "How to make a Google Site, step by step",
   "cluster": "guides",
   "angle": "the five steps from template to publish, then custom domains and who can connect them, from Google's own help pages"
+ },
+ {
+  "slug": "google-sites-launch-checklist-for-a-business-website",
+  "title": "Google Sites Launch Checklist for a Business Website",
+  "cluster": "guides",
+  "angle": "a 12-point pre-publish checklist covering the message, customer path, mobile preview, accessibility, sharing, search visibility, and custom domain"
+ },
+ {
+  "slug": "seven-web-site-mistakes-that-make-customers-hesitate",
+  "title": "7 Web Site Mistakes That Make Customers Hesitate",
+  "cluster": "guides",
+  "angle": "a fix-first audit of seven general business website mistakes, with mobile, performance, security, and stale-information checks"
+ },
+ {
+  "slug": "one-page-site-vs-multi-page-website-for-a-business",
+  "title": "One-Page Site vs Multi-Page Website for a Business",
+  "cluster": "compare",
+  "angle": "one-page and multi-page business website structures compared by offer, search topics, mobile use, maintenance, and a worked page plan"
+ },
+ {
+  "slug": "is-brainpop-a-website-guide",
+  "title": "Is BrainPOP a Website? A Plain-English Guide for Owners",
+  "cluster": "guides",
+  "angle": "plain-English explanation of BrainPOP as a content website and web application, contrasted with a website builder and a local business website"
+ },
+ {
+  "slug": "what-a-website-maker-does-12-task-example",
+  "title": "What a Website Maker Does: A 12-Task Cost Example",
+  "cluster": "guides",
+  "angle": "worked one-year example showing the tasks, owner time, and provider responsibilities hidden behind the phrase website maker"
+ },
+ {
+  "slug": "put-a-google-sites-site-on-your-own-domain",
+  "title": "How to Put a Google Sites Site on Your Own Domain",
+  "cluster": "guides",
+  "angle": "how-to guide for verifying domain ownership, connecting a www address, handling DNS, and testing the public Google Sites site"
+ },
+ {
+  "slug": "html-website-development-when-custom-code-fits",
+  "title": "HTML Website Development: When Custom Code Fits",
+  "cluster": "guides",
+  "angle": "a decision guide for choosing custom HTML only when a small business has requirements that a standard builder or managed site cannot meet"
+ },
+ {
+  "slug": "what-is-a-website-four-parts",
+  "title": "What Is a Website? The Four Parts in Plain English",
+  "cluster": "guides",
+  "angle": "a definition of a website through its four practical parts: domain, hosting, pages, and content"
+ },
+ {
+  "slug": "best-website-builder-three-questions",
+  "title": "Best Website Builder? Ask These 3 Questions",
+  "cluster": "compare",
+  "angle": "an ownership, updates, and exit scorecard that helps a small business choose a website builder without repeating a vendor ranking"
+ },
+ {
+  "slug": "trade-business-website-examples-8-sections-in-order",
+  "title": "Trade Business Website Examples: 8 Sections, in Order",
+  "cluster": "guides",
+  "angle": "a source-backed walkthrough of eight sections in a supported trade website, using the existing tree-service guide without inventing a customer"
+ },
+ {
+  "slug": "website-hosting-and-maintenance-what-99-covers",
+  "title": "Website Hosting and Maintenance: What $99 Covers",
+  "cluster": "guides",
+  "angle": "a first-hand scope and three-year cost breakdown of the published $99 Launch plan, separating hosting, maintenance, changes, and excluded custom work"
+ },
+ {
+  "slug": "website-hosting-costs-297-three-year-budget",
+  "title": "Website Hosting Costs: A $297 Three-Year Budget",
+  "cluster": "guides",
+  "angle": "a bill-by-bill three-year operating budget for a tree service using the published Launch plan, with included work and separately quoted projects clearly separated"
+ },
+ {
+  "slug": "trade-website-example-tree-service-five-sections",
+  "title": "Trade Website Example: 5 Tree Service Sections",
+  "cluster": "guides",
+  "angle": "a five-section homepage walkthrough that follows one tree service customer path from the first screen to a useful inquiry without presenting a fictional customer site"
  }
 ]

@@ -21,11 +21,11 @@ Front Step Sites is a done-for-you website service for small businesses, priced 
 | Hosting and SSL | Not covered on this page; check Squarespace's current plan terms | Included |
 | Who fixes problems | You do | Front Step Sites keeps the site running; you ask for changes in your account |
 | Domain | Free for the first year on an annual plan, then renews separately | Included, registered in your name, no transfer fee to leave |
-| How changes are made | You edit it yourself in the Squarespace editor | Write a plain-English request in your account (2 a month on Launch) |
+| How changes are made | You edit it yourself in the Squarespace editor | Write a plain-English request in your account (four per Central calendar month on Launch) |
 
 ## Compare the stated prices carefully
 
-Front Step Sites costs $99 a year with the domain included and no setup fee. Squarespace Basic is $19/month as of September 2026. Check the current checkout terms before purchasing, including billing arrangements and any separate services you need.
+Front Step Sites costs $99 a year with the domain included and no setup fee. For US customers paying in USD, [Squarespace Basic](https://www.squarespace.com/pricing) is $19/month billed annually as of September 2026. Check the current checkout terms before purchasing, including billing arrangements and any separate services you need.
 
 Do not turn those figures into a complete comparison without considering the work. List who will prepare the writing, select photographs, check the pages, and make later changes. Then identify which tasks you want to do yourself and which you would pay someone to handle.
 
@@ -41,9 +41,9 @@ If you choose a done-for-you approach, you still need to provide the facts. Writ
 
 ## Match the change process to your working week
 
-On the Front Step Sites $99 plan, you get two change requests a month, made within two business days. You ask for changes by writing in your account. Consider whether that request process and pace fit your normal needs.
+On the Front Step Sites $99 plan, you get four coherent marketing updates per Central calendar month. You ask for changes by writing in your account. Consider whether that request process and pace fit your normal needs.
 
-The Grow plan is $29/month or $290/year. It includes unlimited changes the same business day and Google reviews shown on the site. New pages, blog posts, and local SEO setup are included. Choose based on work you expect to need, rather than assuming a larger plan is automatically necessary.
+The Grow plan is $29/month or $290/year. It includes four coherent marketing updates per Central calendar month and Google reviews shown on the site. New pages, blog posts, and local SEO setup are included. Choose based on work you expect to need, rather than assuming a larger plan is automatically necessary.
 
 For a DIY approach, decide who will actually make edits when business gets busy. If you want to adjust wording yourself as you think of it, working in a builder may suit you better. If updates tend to sit on your list until you can ask someone else, a request-based service may fit better.
 
@@ -81,7 +81,7 @@ For either choice, list requirements that go beyond ordinary pages and inquiries
 
 ### Is Front Step Sites cheaper than Squarespace?
 
-The stated prices are $99 a year for Front Step Sites and $19/month for Squarespace Basic as of September 2026. Front Step Sites includes the domain and has no setup fee. Compare the work and any additional services you need before deciding what the complete arrangement will cost.
+The stated prices are $99 a year for Front Step Sites and US$19/month billed annually for US Squarespace Basic customers as of September 2026. Front Step Sites includes the domain and has no setup fee. Compare the work and any additional services you need before deciding what the complete arrangement will cost.
 
 ### Is Squarespace a bad choice for a trades business?
 
@@ -89,7 +89,7 @@ No, a trades business can reasonably choose a builder when someone wants to mana
 
 ### Which Front Step Sites plan fits occasional updates?
 
-The $99 plan includes two change requests a month, made within two business days. Compare that with the changes you expect, such as new hours or replacing job photos. If you need more changes or faster turnaround, consider whether Grow's terms match those needs.
+The $99 plan includes four coherent marketing updates per Central calendar month. Compare that with the changes you expect, such as new hours or replacing job photos. If you want Google reviews shown on your site, consider whether Grow's terms match those needs.
 
 ### Will switching providers bring more customers?
 
@@ -97,4 +97,4 @@ A provider change alone does not establish that. First identify the problem you 
 
 ## The short version
 
-Choose Squarespace if you want to build and edit your own website and have time to maintain it. Consider a request-based service if you prefer handing off that work. Check the scope, update process, and domain arrangements before deciding. [Front Step Sites](/) offers its $99 yearly plan with the domain included, no setup fee, and two change requests a month.
+Choose Squarespace if you want to build and edit your own website and have time to maintain it. Consider a request-based service if you prefer handing off that work. Check the scope, update process, and domain arrangements before deciding. [Front Step Sites](/) offers its $99 yearly plan with the domain included, no setup fee, and four coherent marketing updates per Central calendar month.

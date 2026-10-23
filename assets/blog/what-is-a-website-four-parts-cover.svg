@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img" aria-label="Diagram showing the four parts of a website: domain, hosting, pages, and content">
+  <rect width="1200" height="630" fill="#eceeec"/>
+  <rect x="46" y="46" width="1120" height="550" fill="#111312"/>
+  <rect x="40" y="40" width="1120" height="550" fill="#ffffff" stroke="#111312" stroke-width="3"/>
+  <g transform="translate(1060,66)"><rect width="34" height="34" fill="#ffd60a"/><path d="M6 27h22v-5H17v-5h-5v-5H6z" fill="#111312"/></g>
+  <text x="78" y="100" font-family="Arial, sans-serif" font-size="22" font-weight="700" letter-spacing="2" fill="#474d4b">FRONT STEP SITES BLOG</text>
+  <text x="78" y="196" font-family="Arial, sans-serif" font-size="56" font-weight="800" fill="#111312">What is a website?</text>
+  <text x="80" y="250" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#474d4b">Four parts, one working site.</text>
+  <path d="M195 405H1005" stroke="#111312" stroke-width="4"/>
+  <g font-family="Arial, sans-serif" text-anchor="middle">
+    <g transform="translate(195,405)"><circle r="70" fill="#ffd60a" stroke="#111312" stroke-width="3"/><text y="-4" font-size="22" font-weight="800" fill="#111312">DOMAIN</text><text y="25" font-size="16" font-weight="600" fill="#111312">address</text></g>
+    <g transform="translate(465,405)"><circle r="70" fill="#ffffff" stroke="#111312" stroke-width="3"/><text y="-4" font-size="22" font-weight="800" fill="#111312">HOSTING</text><text y="25" font-size="16" font-weight="600" fill="#474d4b">delivery</text></g>
+    <g transform="translate(735,405)"><circle r="70" fill="#ffffff" stroke="#111312" stroke-width="3"/><text y="-4" font-size="22" font-weight="800" fill="#111312">PAGES</text><text y="25" font-size="16" font-weight="600" fill="#474d4b">organization</text></g>
+    <g transform="translate(1005,405)"><circle r="70" fill="#111312"/><text y="-4" font-size="22" font-weight="800" fill="#ffffff">CONTENT</text><text y="25" font-size="16" font-weight="600" fill="#ffd60a">meaning</text></g>
+  </g>
+</svg>

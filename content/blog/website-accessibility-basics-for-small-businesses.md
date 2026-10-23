@@ -3,8 +3,10 @@ title: "Website accessibility basics"
 description: "Make your small business website easier to read and use with practical checks for text, color contrast, photos, keyboard navigation, and contact forms."
 slug: "website-accessibility-basics-for-small-businesses"
 cluster: "guides"
+lead: "Website accessibility is the practice of making website information and controls usable by people with disabilities."
 answer: "Website accessibility means people with disabilities can read your information and use your website. Start by checking readable text, clear contrast, useful image descriptions, labeled forms, and keyboard access. Test the steps customers actually take, such as finding a service and requesting an estimate, then fix anything that blocks them."
-updated: "2026-09-26"
+published: "2026-09-26"
+updated: "2026-10-10"
 ---
 
 Can every customer read your services and ask for an appointment on your website? Someone may use enlarged text, a keyboard instead of a mouse, or a screen reader that reads the page aloud. Basic accessibility work starts by making those ordinary customer tasks possible.
@@ -95,4 +97,4 @@ Start with anything that prevents someone from reading essential information or 
 
 Make essential information readable, describe useful images, label forms, and test your site with a keyboard. Follow a complete customer task to find barriers that a quick glance misses. Keep checking after website changes.
 
-If you want someone to handle website changes, [Front Step Sites](/) includes two change requests a month on the $99 annual plan, made within two business days.
+If you want someone to handle website changes, [Front Step Sites](/) includes four coherent marketing updates per Central calendar month on the $99 annual plan.

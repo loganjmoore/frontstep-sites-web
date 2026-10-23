@@ -4,16 +4,17 @@ description: See what a $99 website should include, how the Front Step Sites pla
 slug: is-a-99-website-worth-it
 cluster: compare
 answer: A $99 website can be worth it when it covers your actual business needs, has clear ongoing costs, and gives customers a useful way to understand your services. Front Step Sites charges $99 a year with the domain included and no setup fee. Check the change allowance, ownership terms, and required features before deciding that the low price is enough.
-updated: 2026-09-26
+published: 2026-09-26
+updated: 2026-10-12
 ---
 
-A $99 website sounds inexpensive, but what are you actually buying? The answer depends on whether that price covers the work you need and whether customers can use the result. Start by checking the offer, then judge it against a normal day in your business.
+A $99 website is a low-cost website offer whose value depends on the included pages, domain, hosting, changes, support, and ownership terms. Check whether that price covers the work you need and whether customers can use the result, then judge the offer against a normal day in your business.
 
 ## Get clear about what the price means
 
 For Front Step Sites, $99 means $99 a year, with the domain included and no setup fee. It is an annual service price, not a one-time purchase that removes every future website responsibility.
 
-The $99 plan includes 2 change requests a month, made within 2 business days. You ask for changes by writing in your account. New pages, blog posts, and local SEO setup are included.
+The $99 plan includes 4 coherent marketing updates per Central calendar month. You ask for changes by writing in your account. New pages, blog posts, and local SEO setup are included.
 
 The domain is registered in your own name. You can leave any time and take your domain, with no transfer fee. Keep those specific facts in mind when comparing offers that use a similar headline price but may describe a different purchase.
 
@@ -39,9 +40,9 @@ Our guide to [what makes a local business website trustworthy](/blog/what-makes-
 
 Look at the updates you expect to need, including seasonal ones. A painter may add photographs after finishing an exterior project, while a lawn care company may need to explain spring cleanups and fall leaf removal at different times.
 
-The relevant question is whether 2 change requests a month, made within 2 business days, fit your pattern. Keep a running note of likely updates. Include changes to hours, services, service areas, photographs, and any dated offers.
+The relevant question is whether 4 coherent marketing updates per Central calendar month, fit your pattern. Keep a running note of likely updates. Include changes to hours, services, service areas, photographs, and any dated offers.
 
-If you need more frequent updates, the Grow plan costs $29 a month or $290 a year. It includes unlimited changes the same business day and Google reviews shown on the site.
+If you want Google reviews shown on your site, the Grow plan costs $29 a month or $290 a year. It includes four coherent marketing updates per Central calendar month and Google reviews shown on the site.
 
 Choose based on the work you expect to request. Ask how a larger set of edits would be handled before assuming it fits inside a particular allowance. Our guide to [how often to update your business website](/blog/how-often-should-you-update-your-business-website/) can help you identify useful changes instead of changing things just to keep busy.
 
@@ -81,7 +82,7 @@ The Front Step Sites price is $99 a year, with the domain included and no setup 
 
 ### Are changes included in the $99 plan?
 
-Yes, the plan includes 2 change requests a month, made within 2 business days. You request them by writing in your account. Ask how your particular request fits if you are planning a larger revision.
+Yes, the plan includes 4 coherent marketing updates per Central calendar month. You request them by writing in your account. Ask how your particular request fits if you are planning a larger revision.
 
 ### Will the website put my business first on Google?
 

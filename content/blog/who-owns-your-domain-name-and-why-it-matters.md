@@ -4,11 +4,36 @@ description: "Find out who controls your business domain, how to check registrat
 slug: "who-owns-your-domain-name-and-why-it-matters"
 cluster: "guides"
 answer: "Your business should be the domain registrant and have reliable control over the account that manages the registration. A web designer can handle the technical work without holding the domain in their own name. Check the registrant details, account access, recovery email, and renewal arrangements before you need to move the website."
-lead: Front Step Sites is a done-for-you website service for small businesses in the US, at $99 a year with the domain included and no setup fee.
-updated: "2026-09-26"
+lead: "Domain ownership is the registration right held by the registrant named in the registrar agreement, while practical control also requires independent access to the registrar account and its recovery methods. Paying an invoice or having a designer manage DNS does not transfer ownership."
+published: "2026-09-26"
+updated: "2026-10-21"
 ---
 
-The domain owner is the registrant on file for a domain name, not necessarily whoever paid for it. Who owns your domain name if a web designer bought it for you? Check the registration and account arrangements rather than assuming the name on the invoice settles everything. You want your business to control the address customers use, even if someone else maintains the website behind it.
+If a web designer registers a domain for you, the person or business named as the registrant holds the registration rights. Your business should be the registrant and control the registrar account and recovery methods, even when the designer handles setup. Before ending the relationship, follow the [leaving a web designer checklist](/blog/how-to-leave-a-web-designer-and-keep-your-domain-and-site/); if the registration also needs a new registrar, use the [domain move guide](/blog/how-to-move-a-domain-to-a-new-provider/).
+
+## How to check who owns your domain right now
+
+1. **Check a WHOIS or registry lookup.** Use it to identify the registrar and registration status. Public results may hide personal details, so a hidden name is not proof that somebody else owns the domain.
+2. **Open the registrar account.** Confirm that the registrant is you or the correct business, that you control the login and recovery methods, and that the renewal date and payment details are current.
+3. **Check the hosting account separately, along with DNS records.** Hosting or website-editor access does not prove control of the registration. Record who can change the DNS entries that connect the domain to the website, email, and other services.
+
+If you are still choosing an address, use the [domain-name choice guide](/blog/how-to-choose-a-domain-name-for-a-small-business/). If you plan to transfer an existing registration, follow the [step-by-step domain move guide](/blog/how-to-move-a-domain-to-a-new-provider/) before changing or canceling services.
+
+## Who controls the domain: registrant vs. manager
+
+| Role | What they can do | What the owner must retain |
+| --- | --- | --- |
+| Registrant | Holds the registration rights under the registrar agreement | The business or owner must be named correctly and keep the agreement and renewal records |
+| Registrar-account manager | Can renew, transfer, lock, or update the domain and may be able to change DNS | An independent login plus control of account recovery, multi-factor authentication, and billing notices |
+| Web designer or DNS manager | Can point the domain at hosting, email, and other services when access is delegated | The ability to remove delegated access without losing the registrar account or its recovery methods |
+
+## What to confirm in the registrar account
+
+- The registrant is you or the correct business.
+- Your business can sign in without relying on a designer's personal account.
+- The recovery email and phone number are current and controlled by the business.
+- The renewal date, payment method, and automatic-renewal setting are correct.
+- You know who can change DNS settings and how access will be handed over if the provider changes.
 
 ## Understand the three roles
 

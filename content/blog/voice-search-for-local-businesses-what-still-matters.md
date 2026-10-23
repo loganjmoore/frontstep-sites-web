@@ -4,10 +4,11 @@ description: Help nearby customers find accurate hours, services, and phone numb
 slug: voice-search-for-local-businesses-what-still-matters
 cluster: ai-search
 answer: For local voice search, focus on accurate business listings, clear service descriptions, current hours, and a working phone number. Answer the questions someone would ask aloud, such as whether you handle their problem or serve their town. No special wording guarantees a recommendation, so check the facts customers receive and keep the underlying sources current.
-updated: 2026-09-26
+published: 2026-09-26
+updated: 2026-10-12
 ---
 
-What should you do so someone asking their phone for a nearby business can find you? Start by making your hours, location or service area, and phone number accurate wherever you publish them. Then make your website answer the next question, such as whether you repair a broken spring, accept walk-ins, or handle a furnace that will not start.
+Voice search is the use of a spoken request to ask a phone, speaker, car system, or other assistant for information such as a nearby local business. Start by making your hours, location or service area, and phone number accurate wherever you publish them. Then make your website answer the next question, such as whether you repair a broken spring, accept walk-ins, or handle a furnace that will not start.
 
 ## Treat voice as a way to ask a useful question
 
@@ -85,4 +86,4 @@ Check after changes to your hours, phone number, location, or services, and when
 
 ## The short version
 
-Local voice search still calls for accurate hours, a clear service area, and an easy way to reach you. Answer real customer questions and check the information people receive after you change business details. Focus on corrections you can verify instead of promises about being the first recommendation. If you would rather request website updates than make them yourself, [Front Step Sites](/) includes two change requests a month on its $99 annual plan, with the domain included.
+Local voice search still calls for accurate hours, a clear service area, and an easy way to reach you. Answer real customer questions and check the information people receive after you change business details. Focus on corrections you can verify instead of promises about being the first recommendation. If you would rather request website updates than make them yourself, [Front Step Sites](/) includes four coherent marketing updates per Central calendar month on its $99 annual plan, with the domain included.

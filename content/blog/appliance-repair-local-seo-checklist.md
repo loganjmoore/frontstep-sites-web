@@ -73,4 +73,4 @@ Whenever your brand list, service area, or turnaround time changes, and at least
 
 ## The short version
 
-An appliance repair business's local SEO comes down to a Google Business Profile that names real brands and appliance types, business details that match everywhere, a real page per appliance type, and same-day claims that are actually true. Work through them in that order and the rest tends to follow. [Front Step Sites](/) builds the appliance-type pages and profile setup into a $99-a-year website, domain included.
+An appliance repair business's local SEO comes down to a Google Business Profile that names real brands and appliance types, business details that match everywhere, a real page per appliance type, claims that are actually true. Work through them in that order and the rest tends to follow. [Front Step Sites](/) builds the appliance-type pages and profile setup into a $99-a-year website, domain included.

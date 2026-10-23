@@ -1,16 +1,31 @@
 ---
-title: "Website maker or done-for-you? A three-year cost check"
-description: "Three-year cost check: Wix Light and Squarespace Basic run $612 to $684 before your time, while a $99 a year done-for-you site is $297 with the domain included."
+title: "Best Website Makers for Small Businesses: 3-Year Cost"
+description: "Ranked website makers for a small business, with checked pricing, pros, cons, and a three-year comparison of Wix, Squarespace, and done-for-you service."
 slug: "website-maker-or-done-for-you-three-year-cost"
 cluster: "compare"
-lead: "A website maker is a tool you use to build and edit your own site, and this worksheet compares three years of one with a done-for-you site."
+lead: "The best website maker depends on whether you value flexible self-editing, structured templates, or having a provider build and maintain the site for you. Compare the ranked options first, then check their three-year cost."
 answer: "A website maker is a tool you use to build and edit your own site, and a done-for-you site is one a provider builds and keeps running for you. Over three years at the prices we checked, Wix Light costs $612 and Squarespace Basic costs $684 before your time, while a $99 a year done-for-you site costs $297 with the domain included."
-updated: "2026-10-04"
+published: "2026-10-04"
+updated: "2026-10-20"
 image: "/assets/blog/website-maker-or-done-for-you-three-year-cost-cover.svg"
 imageAlt: "Cover for website maker or done-for-you: a maker costs $612 to $684 over three years before your time, a $99 a year done-for-you site costs $297 with the domain included"
 ---
 
-At the prices we checked, a Wix Light or Squarespace Basic plan costs $612 or $684 over three years before you count any time. A $99 a year done-for-you site costs $297 over the same period, with the domain included. Your own hours change the totals, so this worksheet adds them in at a rate you can change.
+At the prices we checked, a Wix Light or Squarespace Basic plan costs $612 or $684 over three years before you count any time. Front Step Sites is a done-for-you website service for small businesses that builds and maintains the site for $99 a year with the domain included, or $297 over three years. Your own hours change the totals, so this worksheet adds them in at a rate you can change.
+
+## Best website makers for a small business, ranked
+
+1. **Wix Light:** Best for owners who want hands-on control and a flexible editor. **Pro:** you can arrange and update pages yourself. **Con:** you are also responsible for writing, publishing, and checking every change.
+2. **Squarespace Basic:** Best for owners who want a more structured template system. **Pro:** the templates put useful limits on page layout. **Con:** every service, photo, hours, and navigation update still belongs to you.
+3. **Front Step Sites:** Best for owners who want to hand off the build and routine edits. **Pro:** the $99 yearly price includes the domain, build, hosting, and four coherent marketing updates per Central calendar month. **Con:** you request changes instead of making them instantly in an editor.
+
+| Rank and option | Price checked | Main pro | Main con |
+| --- | --- | --- | --- |
+| 1. Wix Light | $204 a year; $612 over 3 years | Flexible visual control | You build, edit, and check the site |
+| 2. Squarespace Basic | $228 a year; $684 over 3 years | Structured templates | You make every update |
+| 3. Front Step Sites | $99 a year; $297 over 3 years, domain included | Provider builds and maintains it | Changes go through a request |
+
+These are not universal rankings. They are a shortlist for the two decisions this worksheet measures: cash cost and who does the work. For a wider view that also includes Google Sites, use our [best web builder sites comparison](/blog/best-web-builder-sites-for-a-small-business/).
 
 ## What does a website maker cost over three years?
 
@@ -34,7 +49,7 @@ The done-for-you row is the $99 a year plan, with the domain included and no set
 
 A builder comes out cheaper only if the done-for-you route takes you more time than the builder route. The gap in subscriptions is $315 against Wix and $387 against Squarespace. At $40 an hour, that is about 8 hours and about 10 hours. So a builder would need your done-for-you route to cost you roughly 8 to 10 more hours over three years.
 
-The Launch plan covers 2 change requests a month. An owner who regularly needs more than that is looking at the next plan up, which is covered below. Unlimited changes cost more. Grow is $290 a year, or $870 over three years, with changes made the same business day. That is $258 more than Wix Light and $186 more than Squarespace Basic. At $40 an hour, Grow only wins if it saves you about 4.7 to 6.5 hours over three years, depending on which builder you compare it with.
+The Launch plan covers four coherent marketing updates per Central calendar month. Grow has the same four-update allowance, plus Google reviews shown on the site. Grow is $290 a year, or $870 over three years. That is $258 more than Wix Light and $186 more than Squarespace Basic. At $40 an hour, Grow only wins if it saves you about 4.7 to 6.5 hours over three years, depending on which builder you compare it with.
 
 ## Does a builder ever win?
 
@@ -58,7 +73,7 @@ Our step-by-step guide puts a basic site at 9 to 15 hours, with writing the copy
 
 ### What does a done-for-you site ask of me?
 
-You answer a 10-minute questionnaire and approve the site before it goes live. After that, you send change requests in your account. On the Launch plan, 2 requests a month are done within 2 business days.
+You answer a 10-minute questionnaire and approve the site before it goes live. After that, you send change requests in your account. On the Launch plan, four coherent marketing updates per Central calendar month are included.
 
 ### Does the three-year total include the domain?
 

@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img" aria-label="Three-question scorecard for choosing the best website builder: domain, updates, and exit">
+  <rect width="1200" height="630" fill="#eceeec"/>
+  <rect x="46" y="46" width="1120" height="550" fill="#111312"/>
+  <rect x="40" y="40" width="1120" height="550" fill="#ffffff" stroke="#111312" stroke-width="3"/>
+  <g transform="translate(1060,66)"><rect width="34" height="34" fill="#ffd60a"/><path d="M6 27h22v-5H17v-5h-5v-5H6z" fill="#111312"/></g>
+  <text x="78" y="100" font-family="Arial, sans-serif" font-size="22" font-weight="700" letter-spacing="2" fill="#474d4b">FRONT STEP SITES BLOG</text>
+  <text x="78" y="198" font-family="Arial, sans-serif" font-size="56" font-weight="800" fill="#111312">Best website builder?</text>
+  <text x="80" y="252" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#474d4b">Ask these before you compare templates.</text>
+  <g transform="translate(80,330)">
+    <rect width="300" height="170" fill="#ffd60a" stroke="#111312" stroke-width="3"/>
+    <text x="24" y="48" font-family="Arial, sans-serif" font-size="20" font-weight="800" fill="#111312">01</text>
+    <text x="24" y="92" font-family="Arial, sans-serif" font-size="28" font-weight="800" fill="#111312">DOMAIN</text>
+    <text x="24" y="130" font-family="Arial, sans-serif" font-size="20" font-weight="600" fill="#111312">Who controls it?</text>
+  </g>
+  <g transform="translate(430,330)">
+    <rect width="300" height="170" fill="#ffffff" stroke="#111312" stroke-width="3"/>
+    <text x="24" y="48" font-family="Arial, sans-serif" font-size="20" font-weight="800" fill="#474d4b">02</text>
+    <text x="24" y="92" font-family="Arial, sans-serif" font-size="28" font-weight="800" fill="#111312">UPDATES</text>
+    <text x="24" y="130" font-family="Arial, sans-serif" font-size="20" font-weight="600" fill="#474d4b">Who makes them?</text>
+  </g>
+  <g transform="translate(780,330)">
+    <rect width="300" height="170" fill="#111312"/>
+    <text x="24" y="48" font-family="Arial, sans-serif" font-size="20" font-weight="800" fill="#ffd60a">03</text>
+    <text x="24" y="92" font-family="Arial, sans-serif" font-size="28" font-weight="800" fill="#ffffff">EXIT</text>
+    <text x="24" y="130" font-family="Arial, sans-serif" font-size="20" font-weight="600" fill="#ffffff">What can you take?</text>
+  </g>
+</svg>

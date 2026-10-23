@@ -33,7 +33,7 @@ Be honest about your available time. If you spend evenings organizing keys, supp
 
 A managed service can suit a cleaning owner who wants to request changes instead of editing pages. Compare what happens when you add a town, change your minimum visit, or introduce a move-in cleaning service. Routine updates are part of the cost decision.
 
-[Front Step Sites](/) costs $99 a year with the domain included and no setup fee. The domain is registered in your name. The $99 plan includes two change requests a month, made within two business days. Grow costs $29 a month or $290 a year for unlimited changes the same business day and Google reviews shown on the site.
+[Front Step Sites](/) costs $99 a year with the domain included and no setup fee. The domain is registered in your name. The $99 plan includes four coherent marketing updates per Central calendar month. Grow costs $29 a month or $290 a year for four coherent marketing updates per Central calendar month and Google reviews shown on the site.
 
 New pages, blog posts, and local SEO setup are included. Customers request changes by writing in their account and can leave any time with their domain, without a transfer fee. Ask about your particular cleaning workflow before assuming a general website offer includes custom dispatch or pricing software.
 

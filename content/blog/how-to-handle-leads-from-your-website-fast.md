@@ -4,10 +4,11 @@ description: "Set up a practical routine for website inquiries, missed calls, an
 slug: how-to-handle-leads-from-your-website-fast
 cluster: guides
 answer: "Send website inquiries to a place someone checks, assign a person to respond, and set an honest response expectation. Use an automatic receipt to confirm delivery, then follow with a useful personal reply. Keep a simple record of each inquiry, its next action, and who is responsible for following up."
-updated: 2026-09-26
+published: 2026-09-26
+updated: 2026-10-12
 ---
 
-How do you answer website leads quickly when you are already on a job? You need a clear route from the form or missed call to a person who can take the next step. Start with a simple routine that works during your actual working day, then add automation only where it helps.
+Website lead handling is the process of receiving an inquiry, assigning responsibility, replying with a useful next step, and tracking the follow-up. You need a clear route from the form or missed call to a person who can take the next step. Start with a simple routine that works during your actual working day, then add automation only where it helps.
 
 ## Make sure each inquiry reaches someone
 
@@ -95,4 +96,4 @@ Say so clearly and provide an honest availability window if you know it. Update 
 
 ## The short version
 
-Fast lead handling starts with reliable delivery, clear ownership, and an honest reply window. Confirm receipt, answer the actual job question, and record the next action until the request is resolved. [Front Step Sites](/) includes two change requests a month on its $99 a year plan, made within two business days, so you can request updates to your website's contact information and availability wording.
+Fast lead handling starts with reliable delivery, clear ownership, and an honest reply window. Confirm receipt, answer the actual job question, and record the next action until the request is resolved. [Front Step Sites](/) includes four coherent marketing updates per Central calendar month on its $99 a year plan, so you can request updates to your website's contact information and availability wording.

@@ -102,4 +102,4 @@ There is no dependable timetable you can use to promise a recommendation. Check 
 
 Make your services, location, availability, and contact details easy to verify. Keep listings accurate, publish useful answers, and check access to your public pages. These are practical improvements with value even when an AI recommendation remains uncertain.
 
-If you need help keeping those details current, [Front Step Sites](/) includes two change requests a month on its $99 yearly plan, made within two business days.
+If you need help keeping those details current, [Front Step Sites](/) includes four coherent marketing updates per Central calendar month on its $99 yearly plan.

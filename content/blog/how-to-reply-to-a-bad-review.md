@@ -3,8 +3,10 @@ title: How to reply to a bad review
 description: Learn how to reply to a bad review with calm wording, useful examples, and a clear next step that protects customer privacy and helps future customers.
 slug: how-to-reply-to-a-bad-review
 cluster: guides
+lead: "A bad-review reply is a short public response that acknowledges a concern without exposing customer details or arguing about the complaint."
 answer: Reply to a bad review by acknowledging the concern, checking what happened, and offering a clear way to talk privately. Keep the response short, factual, and free of customer details. If the review breaks the platform's rules, report it, but do not assume a complaint will be removed because you disagree.
-updated: 2026-09-26
+published: 2026-09-26
+updated: 2026-10-10
 ---
 
 Someone has left a bad review of your business, and you want to answer without making things worse. Start by checking the job record and writing a calm reply with one useful next step. The reply should help the customer and show future customers how you handle a problem.
@@ -97,4 +99,4 @@ Keep a basic structure, but acknowledge the actual concern in each response. A r
 
 ## The short version
 
-Check the facts, acknowledge the concern, and offer a practical next step. Protect private information and follow through on what you promise. Use the complaint to correct any misleading information on your website. For ongoing website changes, [Front Step Sites](/) includes two change requests a month on its $99 yearly plan, made within two business days.
+Check the facts, acknowledge the concern, and offer a practical next step. Protect private information and follow through on what you promise. Use the complaint to correct any misleading information on your website. For ongoing website changes, [Front Step Sites](/) includes four coherent marketing updates per Central calendar month on its $99 yearly plan.

@@ -3,8 +3,10 @@ title: "Fix a suspended Google Business Profile"
 description: "Follow a practical Google Business Profile suspension checklist: review the reason, fix policy problems, gather evidence, and submit a clear appeal to Google."
 slug: what-to-do-when-your-google-business-profile-gets-suspended
 cluster: guides
+lead: "A suspended Google Business Profile is a listing whose content or management access Google has restricted after a policy or eligibility review."
 answer: "If your Google Business Profile is suspended, review the stated policy issue before appealing. Correct inaccurate or ineligible information, gather documents that support the real business, and use Google's official appeals process. Keep your existing profile, record what you submit, and avoid anyone promising guaranteed reinstatement or a fixed recovery date."
-updated: 2026-09-26
+published: 2026-09-26
+updated: 2026-10-10
 ---
 
 Your Google Business Profile has been suspended, and you need to know what to do next. Start by finding the stated reason and checking your information against Google's rules. A careful correction and a supported appeal give Google something concrete to review; creating replacement listings does not fix the original problem.

@@ -3,8 +3,10 @@ title: "Emergency businesses: show you're open"
 description: "Show emergency customers when you can help with accurate hours, clear service areas, working call buttons, and honest wording about after-hours availability."
 slug: emergency-service-businesses-how-to-show-you-re-open-now
 cluster: guides
+lead: "Emergency-service availability is a business's accurate statement of when urgent calls are answered, which jobs are handled, and where service is offered."
 answer: "Show emergency availability by stating your actual service hours, the urgent jobs you handle, and the areas you cover beside an easy-to-use phone number. Keep your website and business listings consistent. Only claim round-the-clock service if you provide it, and explain whether an after-hours call reaches dispatch, an on-call technician, or voicemail."
-updated: 2026-09-26
+published: 2026-09-26
+updated: 2026-10-10
 ---
 
 When someone searches for an emergency plumber or a garage door company open now, they need to know whether you can help tonight. A large phone number is useful, but it does not explain who answers or whether a technician can attend. Put those answers near the top of the page and make sure they match what happens when someone calls.
@@ -92,4 +94,4 @@ Tell callers the current situation and give only an arrival estimate you can sup
 
 State when you answer, when you can send help, and which urgent jobs you cover. Keep those facts consistent across the website, listings, and phone greeting. Test the call path before a customer needs it in a hurry.
 
-[Front Step Sites](/) includes two change requests a month on its $99-a-year plan, made within two business days.
+[Front Step Sites](/) includes four coherent marketing updates per Central calendar month on its $99-a-year plan.

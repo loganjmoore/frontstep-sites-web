@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img" aria-label="One-page site and six-page business website shown side by side">
+  <rect width="1200" height="630" fill="#eceeec"/>
+  <rect x="46" y="46" width="1120" height="550" fill="#111312"/>
+  <rect x="40" y="40" width="1120" height="550" fill="#fff" stroke="#111312" stroke-width="3"/>
+  <g transform="translate(1030 66)"><rect width="34" height="34" fill="#ffd60a"/><path d="M6 27h22v-5H17v-5h-5v-5H6z" fill="#111312"/></g>
+  <text x="80" y="98" font-family="Arial,sans-serif" font-size="22" font-weight="700" letter-spacing="2" fill="#474d4b">FRONT STEP SITES BLOG</text>
+  <text x="80" y="196" font-family="Arial,sans-serif" font-size="53" font-weight="800" fill="#111312">One page or many?</text>
+  <text x="80" y="250" font-family="Arial,sans-serif" font-size="38" font-weight="700" fill="#474d4b">Choose by the customer’s decision</text>
+  <g transform="translate(80 318)">
+    <rect width="430" height="200" fill="#ffd60a" stroke="#111312" stroke-width="2"/>
+    <text x="22" y="38" font-family="Arial,sans-serif" font-size="18" font-weight="700" letter-spacing="1">ONE-PAGE SITE</text>
+    <rect x="22" y="60" width="386" height="24" fill="#111312"/><rect x="22" y="96" width="386" height="18" fill="#fff" stroke="#111312"/><rect x="22" y="126" width="386" height="18" fill="#fff" stroke="#111312"/><rect x="22" y="156" width="180" height="24" fill="#111312"/>
+  </g>
+  <text x="548" y="432" font-family="Arial,sans-serif" font-size="34" font-weight="800" fill="#111312">VS</text>
+  <g transform="translate(630 318)" fill="#fff" stroke="#111312" stroke-width="2">
+    <rect width="150" height="92"/><rect x="170" width="150" height="92"/><rect x="340" width="150" height="92"/><rect y="108" width="150" height="92"/><rect x="170" y="108" width="150" height="92"/><rect x="340" y="108" width="150" height="92"/>
+  </g>
+  <g transform="translate(630 318)" font-family="Arial,sans-serif" font-size="15" font-weight="700" fill="#111312"><text x="14" y="28">HOME</text><text x="184" y="28">SERVICE 1</text><text x="354" y="28">SERVICE 2</text><text x="14" y="136">SERVICE 3</text><text x="184" y="136">ABOUT</text><text x="354" y="136">CONTACT</text></g>
+  <text x="630" y="548" font-family="Arial,sans-serif" font-size="18" font-weight="700" letter-spacing="1" fill="#474d4b">MULTI-PAGE WEBSITE</text>
+</svg>

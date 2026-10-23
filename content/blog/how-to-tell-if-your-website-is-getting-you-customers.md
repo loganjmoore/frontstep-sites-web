@@ -3,8 +3,10 @@ title: "Is your website getting you customers?"
 description: "Track calls, contact forms, search visits, and booked jobs with a simple routine that shows whether your business website brings useful customer inquiries."
 slug: how-to-tell-if-your-website-is-getting-you-customers
 cluster: guides
+lead: "Website customer measurement is the process of connecting calls, forms, and search visits with suitable inquiries and completed work."
 answer: "To tell whether your website brings customers, connect website inquiries with the jobs you actually book. Keep a simple record of calls and forms, ask new customers how they found you, and use Search Console to see which searches bring visits. Count suitable inquiries and completed work separately, because a visit or phone button tap is not a sale."
-updated: 2026-09-26
+published: 2026-09-26
+updated: 2026-10-10
 ---
 
 Your website gets visits, but is it getting you customers? The useful answer sits in your call records, inquiry messages, and booked jobs. You can build a clearer picture without spending your evenings sorting through complicated reports.
@@ -91,4 +93,4 @@ It may have helped the customer decide to contact you. Record the referral as th
 
 ## The short version
 
-Measure the path from inquiry to booked work, and use traffic reports to explain what happens before contact. Keep honest source notes, test your forms and phone links, and improve the stage where suitable customers get stuck. [Front Step Sites](/) includes two change requests a month on its $99 annual plan, made within two business days.
+Measure the path from inquiry to booked work, and use traffic reports to explain what happens before contact. Keep honest source notes, test your forms and phone links, and improve the stage where suitable customers get stuck. [Front Step Sites](/) includes four coherent marketing updates per Central calendar month on its $99 annual plan.

@@ -23,14 +23,14 @@ As of September 2026, Wix Light costs $17/month billed yearly, or $204/year, and
 
 DIY fits when you want direct control and have time to write package descriptions, arrange images, and check the site on your phone. Your subscription does not do those jobs for you. Count the evenings you will spend maintaining the site alongside the money you pay.
 
-[Front Step Sites](/) costs $99 a year with the domain included and no setup fee. The domain is registered in your own name, and the $99 plan includes two change requests a month, made within two business days. That gives you a concrete baseline for comparing a managed website with doing the work yourself.
+[Front Step Sites](/) costs $99 a year with the domain included and no setup fee. The domain is registered in your own name, and the $99 plan includes four coherent marketing updates per Central calendar month. That gives you a concrete baseline for comparing a managed website with doing the work yourself.
 
 Typical freelancer and agency projects can range from a few thousand dollars to substantially more as custom design, content, and connections to other systems expand. A freelancer can suit a defined project with one main contact. An agency may suit a larger shop coordinating several kinds of marketing. Ask each provider to separate initial work from ongoing charges.
 
 | Tier | Typical cost | Best for | Watch for |
 | --- | --- | --- | --- |
 | DIY builder | Wix Light $17/month billed yearly ($204/year), or Squarespace Basic $19/month | Owners with time to write package descriptions and maintain the site | You still arrange photos and keep package pricing current yourself |
-| Front Step Sites | $99/yr, domain included, no setup fee | An owner who wants ongoing changes without learning an editor | 2 change requests a month, made within two business days |
+| Front Step Sites | $99/yr, domain included, no setup fee | An owner who wants ongoing changes without learning an editor | four coherent marketing updates per Central calendar month |
 | Freelancer/Agency | A few thousand dollars to substantially more, depending on scope | A custom design, a larger gallery, or a multi-location project | Wide price variation; get a written quote before you pay |
 
 ## Booking choices can change the scope

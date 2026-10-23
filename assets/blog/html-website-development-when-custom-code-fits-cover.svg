@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img" aria-label="Decision path from standard business pages to custom HTML website development">
+  <rect width="1200" height="630" fill="#eceeec"/>
+  <rect x="46" y="46" width="1120" height="550" fill="#111312"/>
+  <rect x="40" y="40" width="1120" height="550" fill="#ffffff" stroke="#111312" stroke-width="3"/>
+  <g transform="translate(1060,66)"><rect width="34" height="34" fill="#ffd60a"/><path d="M6 27h22v-5H17v-5h-5v-5H6z" fill="#111312"/></g>
+  <text x="78" y="100" font-family="Arial, sans-serif" font-size="22" font-weight="700" letter-spacing="2" fill="#474d4b">FRONT STEP SITES BLOG</text>
+  <text x="78" y="190" font-family="Arial, sans-serif" font-size="50" font-weight="800" fill="#111312">HTML website development</text>
+  <text x="80" y="242" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#474d4b">When does custom code fit?</text>
+  <g transform="translate(80,325)">
+    <rect width="350" height="150" fill="#ffffff" stroke="#111312" stroke-width="3"/>
+    <text x="26" y="44" font-family="Arial, sans-serif" font-size="18" font-weight="800" fill="#474d4b">STANDARD NEEDS</text>
+    <text x="26" y="84" font-family="Arial, sans-serif" font-size="22" font-weight="700" fill="#111312">Pages, photos, calls, forms</text>
+    <text x="26" y="119" font-family="Arial, sans-serif" font-size="18" font-weight="600" fill="#474d4b">Use a builder or managed site</text>
+  </g>
+  <path d="M455 400H625" stroke="#111312" stroke-width="5"/><path d="M615 387l22 13-22 13" fill="none" stroke="#111312" stroke-width="5"/>
+  <g transform="translate(665,325)">
+    <rect width="415" height="150" fill="#ffd60a" stroke="#111312" stroke-width="3"/>
+    <text x="26" y="44" font-family="Arial, sans-serif" font-size="18" font-weight="800" fill="#111312">SPECIFIC WORKFLOW</text>
+    <text x="26" y="84" font-family="Arial, sans-serif" font-size="22" font-weight="700" fill="#111312">Rules, data, integrations</text>
+    <text x="26" y="119" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#111312">Consider custom HTML</text>
+  </g>
+  <text x="80" y="540" font-family="monospace" font-size="22" font-weight="700" fill="#111312">&lt;main&gt; solve the requirement &lt;/main&gt;</text>
+</svg>

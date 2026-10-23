@@ -1,11 +1,26 @@
 ---
-title: "Plumbing: Google Business Profile guide"
-description: "Build a useful Google Business Profile for your plumbing company with accurate services, honest emergency hours, real job photos, and a simple upkeep routine."
+title: "Google Business Profile for Plumbers: Setup Checklist"
+h1: "Google Business Profile for Plumbers: Setup Checklist"
+description: "Set up a plumber's Google Business Profile with the right category, service area, hours, services, photos, reviews, and a final public-listing check."
 slug: "plumbing-google-business-profile"
 cluster: "trades/plumbing"
-answer: "A useful plumbing Google Business Profile tells customers which problems you handle, where you travel, and when someone can answer. Start with accurate business details, then add your actual plumbing services and job photos. Keep emergency availability honest, answer customer questions, and connect the profile to a website that explains how to book."
-updated: "2026-09-26"
+mobileWideTable: "true"
+lead: "To set up a Google Business Profile for a plumber, claim or create the correct listing, use Plumber as the primary category when it accurately describes the business, configure the real service area or customer-facing location, add reachable hours, phone, services and approved photos, complete Google's verification, then inspect the public listing. Ask for honest reviews after a consistent completed-service milestone, not only from customers expected to be positive."
+answer: "To set up a Google Business Profile for a plumber, claim or create the correct listing, use Plumber as the primary category when it accurately describes the business, configure the real service area or customer-facing location, add reachable hours, phone, services and approved photos, complete Google's verification, then inspect the public listing. Ask for honest reviews after a consistent completed-service milestone, not only from customers expected to be positive."
+published: "2026-09-26"
+updated: "2026-10-13"
 ---
+
+## Plumber Google Business Profile setup checklist
+
+| Setting | What the plumbing business supplies | Public check |
+| --- | --- | --- |
+| Ownership and verification | The existing correct listing or a new eligible profile, controlled through a business account | Search the business name and phone, confirm the right listing appears, and verify the business controls it |
+| Category and services | Plumber as the primary category when accurate, plus only substantial real services and relevant secondary categories | Read the public category and service list and remove work the business does not provide |
+| Address or service area | A real customer-facing location or the actual territory served, with a private home address hidden when customers are not served there | Check Maps and the public profile from another device to confirm the address or service area is represented correctly |
+| Hours and emergency availability | Reachable customer-facing hours and a truthful explanation of after-hours dispatch | Call during and outside listed hours and confirm the greeting matches the published availability |
+| Phone and website | A monitored phone number and the correct secure website page | Tap both links on a phone, place a test call, and confirm the website repeats the same services and coverage |
+| Photos and reviews | Approved real-work photos and a consistent request for honest reviews after completed service | Inspect each public photo for private details and confirm review requests are not limited to customers expected to be positive |
 
 A homeowner searching for an emergency plumber needs to know whether you can help with the water spreading across their kitchen floor. Someone comparing water heater installers has different questions about equipment and estimates. Your Google Business Profile should help both people understand what your plumbing company actually does.
 
@@ -67,6 +82,10 @@ Give one person a short recurring checklist: verify the number and hours, look f
 Keep a separate note of calls you couldn't serve. Repeated requests for septic work when you only handle indoor plumbing may reveal unclear wording. Use the [plumbing local SEO checklist](/blog/plumbing-local-seo-checklist/) when you are ready to check the wider set of business listings and website pages.
 
 ## Frequently asked questions
+
+### What Google Business Profile category should a plumber use?
+
+Choose Plumber as the primary category when it accurately describes the business, and confirm that the category is currently available in the profile interface. Add secondary categories only for substantial work the business really performs; do not add categories only to reach more searches.
 
 ### Can I have a profile if I run the business from home?
 

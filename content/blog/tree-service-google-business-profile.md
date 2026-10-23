@@ -67,6 +67,8 @@ Reply to reviews without sharing addresses, disputes with neighbors, or private 
 
 Schedule a regular public-view check. Confirm the phone works, the website opens the right page, and your hours and services still match the operation. Keep notes of changes so your office and crew are giving customers the same information.
 
+Use the [local SEO checklist for a tree service](/blog/tree-service-local-seo-checklist/) to review the website, listings, service-area details, reviews, and contact routes together instead of treating the profile as a separate project.
+
 ## Frequently asked questions
 
 ### Should I list emergency service if I am sometimes unavailable?

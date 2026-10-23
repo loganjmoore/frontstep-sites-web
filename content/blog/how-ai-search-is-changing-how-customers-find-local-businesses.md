@@ -86,4 +86,4 @@ Check any cited pages, including old versions of your service descriptions and l
 
 AI search adds ways for people to investigate your business before making contact. Clear services, current facts, and useful answers are practical work you can do today. Watch for inaccurate claims and measure the inquiries that turn into suitable jobs.
 
-If you want help keeping your website current, [Front Step Sites](/) includes two change requests a month on its $99 a year plan, with the domain included.
+If you want help keeping your website current, [Front Step Sites](/) includes four coherent marketing updates per Central calendar month on its $99 a year plan, with the domain included.

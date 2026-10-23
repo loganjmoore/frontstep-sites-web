@@ -3,8 +3,10 @@ title: "Local business schema markup, explained"
 description: "Learn what local business schema markup does, which details to include, and how to check your website without getting buried in confusing technical terms."
 slug: "local-business-schema-markup-explained-simply"
 cluster: "guides"
+lead: "Local business schema markup is structured website data that labels details such as a business name, phone number, location, and opening hours for search engines."
 answer: "Local business schema markup is a set of labels in your website that helps search engines understand your business details. It can describe your name, phone number, location, and opening hours. Start with accurate information customers can also read on the page, then have your website provider add and test the matching markup."
-updated: "2026-09-26"
+published: "2026-09-26"
+updated: "2026-10-10"
 ---
 
 Someone told you that your website needs schema markup, but what are you actually buying? Think of it as a labeled business information card that a search engine can read. It helps describe your business, but it cannot make up for an incorrect phone number or a page that never explains your services.

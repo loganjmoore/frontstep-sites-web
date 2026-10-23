@@ -4,10 +4,11 @@ description: "Build a useful business website footer with clear contact details,
 slug: what-to-put-in-your-website-footer
 cluster: guides
 answer: "Put your business name, main phone number, honest hours, service area or customer-facing address, and useful navigation in your website footer. Add links to relevant policies and a clear contact option. Keep it readable on a phone, and make sure its details agree with your contact page and business listings."
-updated: 2026-09-26
+published: 2026-09-26
+updated: 2026-10-12
 ---
 
-What should go at the bottom of your business website? Your footer should help someone who has finished reading and still needs your number, location, hours, or next step. Treat it as a useful closing set of details, not a storage space for everything that did not fit elsewhere.
+A website footer is the section at the bottom of a site that repeats essential business details, navigation, policies, and a clear contact route. Your footer should help someone who has finished reading and still needs your number, location, hours, or next step. Treat it as a useful closing set of details, not a storage space for everything that did not fit elsewhere.
 
 ## Start with your name and a working phone number
 

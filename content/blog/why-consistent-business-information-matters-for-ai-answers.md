@@ -4,10 +4,11 @@ description: "Keep your name, phone, hours, and services accurate across your we
 slug: why-consistent-business-information-matters-for-ai-answers
 cluster: ai-search
 answer: "Consistent business information gives customers and systems checking public sources fewer conflicting facts to sort through. Keep your business name, phone, location or service area, hours, and services current wherever you publish them. This reduces avoidable confusion, but it does not guarantee accurate AI answers or prove that every assistant uses the same sources."
-updated: 2026-09-26
+published: 2026-09-26
+updated: 2026-10-12
 ---
 
-An AI answer gives out your old phone number or says you are open on Sunday when you are not. You changed your website months ago, so where is that information coming from? Start by checking the public sources for conflicting facts, then correct the places you control.
+Consistent business information is the same accurate name, phone, location or service area, hours, and service details across the public sources a customer may check. When an AI answer gives out an old phone number or incorrect hours, start by checking those public sources for conflicting facts, then correct the places you control.
 
 ## Understand the problem without guessing how AI ranks you
 

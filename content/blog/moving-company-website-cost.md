@@ -26,7 +26,7 @@ Here's how the usual paths to a moving company website compare:
 | DIY builder | A monthly plan fee, paid by you | An owner with time to keep service areas and pricing pages current | You maintain every update yourself, including seasonal availability |
 | Freelancer | Often a few thousand dollars for a custom build | A mover who wants a one-off custom design with a clear, written scope | Get the exact page list in writing before quoting; scope creep is common |
 | Agency | Often a few thousand dollars and up, sometimes bundled with marketing | A company folding the website into a bigger ad and branding push | Ask for a line-item breakdown of website work versus ad spend |
-| Front Step Sites | $99/yr, domain included, no setup fee | An owner who wants to request changes without learning a website editor | 2 change requests a month included; unlimited same-day changes on the $29/mo Grow plan |
+| Front Step Sites | $99/yr, domain included, no setup fee | An owner who wants to request changes without learning a website editor | four coherent marketing updates per Central calendar month included; four marketing updates per Central calendar month on the $29/mo Grow plan |
 
 Treat the freelancer and agency figures as planning ranges. A one-page moving company site costs less to build than one with separate local, long-distance, and commercial-moving pages, real photos of your crew and trucks, and a working quote-request form. Give every bidder the same scope so the quotes you get back are actually comparable.
 

@@ -4,10 +4,23 @@ description: Compare a website subscription with a one-time build by checking on
 slug: website-subscription-vs-one-time-website-build
 cluster: compare
 answer: A website subscription can spread the work and cost into an ongoing service, while a one-time build pays for an agreed project. Neither label tells you the full cost. Compare domain renewal, hosting, future changes, and support, then confirm who handles each task and what you can take if you leave.
-updated: 2026-09-26
+published: 2026-09-26
+lead: "A website subscription is an ongoing service paid on a recurring schedule, while a one-time website build is an agreed project purchased for a set price or payment plan. Front Step Sites is a done-for-you website subscription for small businesses."
+updated: 2026-10-11
 ---
 
 Should you pay a website subscription or buy a one-time website build? A subscription can fit if you want an ongoing service, while a one-time project can fit if you want a defined handoff. The useful comparison is what it will cost to keep the website working and accurate after launch.
+
+## Subscription and one-time build compared
+
+| Question | Website subscription | One-time website build |
+| --- | --- | --- |
+| What the first payment covers | Access or ongoing service, depending on the agreement | The defined build project |
+| What continues afterward | The recurring fee and included work | Domain, hosting, maintenance, and future changes still need a plan |
+| Who makes updates | The provider or you, depending on scope | You, staff, or separately paid help after handoff |
+| Best fit | Owners who want a continuing service | Owners who want a defined project and can manage the handoff |
+
+Neither model wins on its label. Compare the written scope, three-year cost, update process, ownership, and exit terms.
 
 ## Separate the build from the bills that follow
 
@@ -42,9 +55,9 @@ Use our guide to [how often to update your business website](/blog/how-often-sho
 
 ## Understand what an ongoing service includes
 
-Front Step Sites is one example of a website subscription. It costs $99 a year with the domain included and no setup fee. The domain is registered in the customer's own name, and the plan includes two change requests a month, made within two business days.
+Front Step Sites is one example of a website subscription. It costs $99 a year with the domain included and no setup fee. The domain is registered in the customer's own name, and the plan includes four coherent marketing updates per Central calendar month.
 
-The Grow plan is $29/month or $290/year for unlimited changes the same business day and Google reviews shown on the site. New pages, blog posts, and local SEO setup are included. Customers request changes by writing in their account.
+The Grow plan is $29/month or $290/year for four coherent marketing updates per Central calendar month and Google reviews shown on the site. New pages, blog posts, and local SEO setup are included. Customers request changes by writing in their account.
 
 Compare those terms with the list you made, then do the same for any other service. Included work is useful when it matches work you need. If you already have someone who keeps the website current, paying a separate provider to do those same edits may not be your preferred arrangement.
 
@@ -65,6 +78,10 @@ A subscription can fit when you want a continuing relationship and a defined way
 Ask both providers to explain a realistic future change, such as adding a second service area or replacing a contact method. Who would do it, how would you request it, and could it cost extra? Our guide to [what to ask before hiring someone to build your website](/blog/what-to-ask-before-you-hire-someone-to-build-your-website/) helps turn a vague promise of support into questions you can use.
 
 ## Frequently asked questions
+
+### Is Front Step Sites a subscription or a one-time build?
+
+Front Step Sites is a done-for-you website subscription for small businesses. Its Launch plan is $99 a year with the domain included and no setup fee, so compare it with the recurring costs and included work in any other proposal.
 
 ### Is a one-time website really a one-time expense?
 
