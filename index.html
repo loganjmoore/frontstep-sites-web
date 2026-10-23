@@ -200,6 +200,23 @@ details p{padding:0 0 1.1rem;color:var(--ink-2);max-width:65ch}
 footer{padding:40px 0 56px;border-top:2px solid var(--ink)}
 footer .wrap{display:flex;flex-wrap:wrap;gap:1rem 2rem;justify-content:space-between;align-items:center}
 footer p{color:var(--ink-2);font-size:.92rem}
+.plan-compare{display:grid;gap:40px;margin-top:28px;align-items:start}
+.plan-compare>*{min-width:0}
+@media(min-width:860px){.plan-compare{grid-template-columns:1fr 1.3fr}}
+.plan-table{width:100%;border-collapse:collapse;background:var(--tag);font-size:1rem}
+.plan-table caption{text-align:left;font-weight:700;margin-bottom:12px}
+.plan-table th,.plan-table td{padding:12px 8px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
+.plan-table thead th{border-bottom:2px solid var(--ink)}
+.plan-table small{display:block;font-size:1rem;font-weight:400;color:var(--ink-2)}
+@media(max-width:359px){.plan-table,.plan-table small{font-size:.875rem}.plan-table th,.plan-table td{padding:12px 6px}}
+.plan-compare label{display:block;font-weight:700;margin-bottom:6px}
+.plan-compare input{display:block;width:100%;max-width:320px;min-height:48px;border:1.5px solid var(--ink);border-radius:3px;font:inherit;padding:10px 12px;background:var(--tag);color:var(--ink)}
+.plan-compare .hint{color:var(--ink-2);margin:8px 0 16px}
+.plan-compare .btn{margin-top:16px}
+.cost-result{margin-top:20px;padding-top:16px;border-top:2px solid var(--ink)}
+.cost-result ul{padding-left:20px;margin-top:8px}
+.cost-result[hidden]{display:none}
+.plan-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:16px}
 </style>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Front Step Sites","url":"https://frontstepsites.com/","description":"Front Step Sites (frontstepsites.com) builds $99/yr done-for-you websites for local service businesses in the United States and is unrelated to FRONTSTEPS, the property-management/HOA software company.","email":"hello@frontstepsites.com","founder":{"@type":"Person","name":"Logan Moore"}}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Do I own my website?","acceptedAnswer":{"@type":"Answer","text":"Yes. Your domain is registered in your name, and if you ever leave we send you your site's files. No fees to leave."}},{"@type":"Question","name":"Is this really cheaper than Wix?","acceptedAnswer":{"@type":"Answer","text":"Yes, from day one: $99 a year with your domain included, against about $204 a year for Wix Light billed yearly, where you still build and fix everything yourself."}},{"@type":"Question","name":"How do changes work?","acceptedAnswer":{"@type":"Answer","text":"Sign in and open a request, like \"change Saturday hours to 8 to 2\" or \"swap the top photo for this one\". We make the change, publish it, and reply to you. Launch includes four coherent marketing updates per Central calendar month. Grow includes four marketing updates per Central calendar month."}},{"@type":"Question","name":"Who actually does the work?","acceptedAnswer":{"@type":"Answer","text":"We do, working under strict written rules for your site. That's how we keep it at $99. Every change is saved, so anything can be undone, and a full redesign or new logo needs a separate design quote. Booking, payment, store and backend/database applications are not offered."}},{"@type":"Question","name":"Is there any catch to leaving?","acceptedAnswer":{"@type":"Answer","text":"One, and it isn't ours: registries don't let any domain move in its first 60 days after it's registered or moved. After that, the button works any day of the year."}},{"@type":"Question","name":"What if I already have a domain?","acceptedAnswer":{"@type":"Answer","text":"We move it into your account at no extra cost (it stays in your name), or just point it at your new site. Either way nothing breaks."}},{"@type":"Question","name":"Where are you?","acceptedAnswer":{"@type":"Answer","text":"We work with businesses anywhere in the US, entirely online."}},{"@type":"Question","name":"What isn't included?","acceptedAnswer":{"@type":"Answer","text":"A full redesign or new logo needs a separate design quote. We do not offer booking, payment, store, or bespoke backend/database applications. We can link to your existing providers."}},{"@type":"Question","name":"Is Front Step Sites the same company as FRONTSTEPS?","acceptedAnswer":{"@type":"Answer","text":"No. Front Step Sites (frontstepsites.com) is unrelated to FRONTSTEPS, the property-management/HOA software company."}},{"@type":"Question","name":"Do I need to know HTML or code?","acceptedAnswer":{"@type":"Answer","text":"No. You answer a 10-minute questionnaire, and we write the words and build the site. A hand-coded HTML site is a job for a web developer, and separate design work is quoted before anything costs extra; backend applications are not offered."}}]}</script>
@@ -413,6 +430,41 @@ footer p{color:var(--ink-2);font-size:.92rem}
   </div>
 </section>
 
+<section id="plans" class="white" aria-labelledby="plans-h">
+  <div class="wrap">
+    <h2 id="plans-h">What will your year cost?</h2>
+    <p class="lead" style="margin-top:.8rem">Compare the published plan prices with your own website spending. Both Launch and Grow include four marketing updates per Central calendar month; their scope is described above.</p>
+    <div class="plan-compare">
+      <form id="cost-form">
+        <label for="current-cost">Your current website cost per month ($)</label>
+        <input id="current-cost" disabled type="number" min="0" max="1000000" step="0.01" inputmode="decimal" required aria-describedby="cost-hint">
+        <p class="hint" id="cost-hint">Optional comparison. Use your own hosting, domain and maintenance costs. Divide an annual bill by 12. Enter 0 if you have no website.</p>
+        <button class="btn btn-primary" type="submit" disabled>Compare my annual cost</button>
+        <div id="cost-result" class="cost-result" role="status" aria-live="polite" hidden></div>
+        <noscript><p>The plan totals are shown here. To compare your own cost, multiply your monthly cost by 12.</p></noscript>
+      </form>
+      <div>
+        <table class="plan-table">
+          <caption>Choose one plan. Grow replaces Launch.</caption>
+          <thead><tr><th scope="col">Plan</th><th scope="col">Billed</th><th scope="col">12-month total</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">Launch<small>4 marketing updates/month</small></th><td>$99 yearly</td><td>$99<small>$8.25/month equivalent</small></td></tr>
+            <tr><th scope="row">Grow monthly<small>4 marketing updates/month</small></th><td>$29 monthly</td><td>$348<small>12 monthly payments</small></td></tr>
+            <tr><th scope="row">Grow yearly<small>4 marketing updates/month</small></th><td>$290 yearly</td><td>$290<small>$24.17/month equivalent</small></td></tr>
+          </tbody>
+        </table>
+        <p class="hint">Yearly Grow costs $58 less than 12 monthly payments. Monthly equivalents are for comparison; yearly plans are billed in one payment.</p>
+        <p class="hint">These totals compare the advertised subscription prices before any applicable tax or separately quoted work. Booking, payment, store and custom backend applications are outside this service. This compares prices, not features or expected customer revenue.</p>
+        <div class="plan-actions">
+          <a class="btn btn-secondary" href="https://app.frontstepsites.com/get-started">Start Launch — $99/yr</a>
+          <a class="btn btn-secondary" href="#grow-h">Review Grow scope and billing</a>
+        </div>
+        <p class="hint">Already subscribed? <a href="https://app.frontstepsites.com/login">Sign in to manage billing</a> instead of starting another plan.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
 <svg class="barcode" aria-hidden="true"><use href="#bars"/></svg>
 <section id="leaving" class="white" aria-labelledby="leave-h">
   <div class="wrap leave">
@@ -464,6 +516,8 @@ footer p{color:var(--ink-2);font-size:.92rem}
 </section>
 </main>
 
+
+
 <footer>
   <div class="wrap">
     <a class="brand" href="/" aria-label="Front Step Sites home"><svg viewBox="0 0 34 34" aria-hidden="true"><rect width="34" height="34" fill="#ffd60a"/><path d="M6 27h22v-5H17v-5h-5v-5H6z" fill="#111312"/></svg>Front Step Sites</a>
@@ -482,5 +536,6 @@ document.getElementById("move").addEventListener("click", function () {
   this.textContent = "Code sent";
 });
 </script>
+<script type="module" src="/assets/plan-cost.mjs"></script>
 </body>
 </html>
