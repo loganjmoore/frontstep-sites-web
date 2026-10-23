@@ -1,7 +1,8 @@
 export function compareAnnualCost(monthly) {
   // Integer cents keep a customer's decimal input exact through the comparison.
-  const cents = Math.round(Number(monthly) * 100);
-  if (String(monthly).trim() === '' || !Number.isFinite(cents) || cents < 0 || cents > 100000000) return null;
+  const numeric = Number(monthly);
+  const cents = Math.round(numeric * 100);
+  if (String(monthly).trim() === '' || numeric < 0 || !Number.isFinite(cents) || cents < 0 || cents > 100000000) return null;
   const annual = cents * 12;
   return { annual, plans: [
     { name: 'Launch', total: 9900, difference: annual - 9900 },
@@ -33,4 +34,6 @@ if (typeof document !== 'undefined') {
     output.replaceChildren(heading, list);
     output.hidden = false;
   });
+  input.disabled = false;
+  form.querySelector('button').disabled = false;
 }

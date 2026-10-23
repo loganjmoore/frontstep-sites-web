@@ -437,9 +437,9 @@ footer p{color:var(--ink-2);font-size:.92rem}
     <div class="plan-compare">
       <form id="cost-form">
         <label for="current-cost">Your current website cost per month ($)</label>
-        <input id="current-cost" name="current-cost" type="number" min="0" max="1000000" step="0.01" inputmode="decimal" required aria-describedby="cost-hint">
+        <input id="current-cost" disabled type="number" min="0" max="1000000" step="0.01" inputmode="decimal" required aria-describedby="cost-hint">
         <p class="hint" id="cost-hint">Optional comparison. Use your own hosting, domain and maintenance costs. Divide an annual bill by 12. Enter 0 if you have no website.</p>
-        <button class="btn btn-primary" type="submit">Compare my annual cost</button>
+        <button class="btn btn-primary" type="submit" disabled>Compare my annual cost</button>
         <div id="cost-result" class="cost-result" role="status" aria-live="polite" hidden></div>
         <noscript><p>The plan totals are shown here. To compare your own cost, multiply your monthly cost by 12.</p></noscript>
       </form>
