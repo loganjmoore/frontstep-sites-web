@@ -760,6 +760,11 @@ function main() {
     "tree-service-local-seo-checklist",
     "who-owns-your-domain-name-and-why-it-matters",
     "pest-control-get-more-reviews",
+    "why-consistent-business-information-matters-for-ai-answers",
+    "why-your-small-business-website-should-be-built-for-phones-first",
+    "writing-website-content-ai-assistants-can-quote",
+    "yelp-nextdoor-and-angi-which-listings-are-worth-your-time",
+    "html-website-development-when-custom-code-fits",
   ];
   const articlesBySlug = new Map(articles.map((article) => [article.slug, article]));
   const featuredRows = featuredSlugs.map((slug) => articlesBySlug.get(slug)).filter(Boolean);

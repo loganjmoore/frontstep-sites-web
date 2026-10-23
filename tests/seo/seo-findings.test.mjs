@@ -878,6 +878,65 @@ test("llms.txt lists every canonical URL in the sitemap", () => {
   for (const url of urls) assert.ok(llms.includes(url), `llms.txt is missing ${url}`);
 });
 
+test("October 23 indexation targets have canonical, sitemap, robots, and requested discovery paths", () => {
+  const sitemap = read("sitemap.xml");
+  const robots = read("robots.txt");
+  const blogIndex = read("blog/index.html");
+  const slugs = [
+    "what-website-hosting-is-in-plain-english",
+    "who-owns-your-domain-name-and-why-it-matters",
+    "why-consistent-business-information-matters-for-ai-answers",
+    "why-your-small-business-website-should-be-built-for-phones-first",
+    "writing-website-content-ai-assistants-can-quote",
+    "yelp-nextdoor-and-angi-which-listings-are-worth-your-time",
+    "best-website-builder-three-questions",
+    "html-website-development-when-custom-code-fits",
+    "is-brainpop-a-website-guide",
+  ];
+
+  assert.match(robots, /User-agent: \*\nAllow: \/\n/);
+  for (const slug of slugs) {
+    const url = `https://frontstepsites.com/blog/${slug}/`;
+    const html = read(`blog/${slug}/index.html`);
+    assert.ok(sitemap.includes(`<loc>${url}</loc>`), `${slug} must be in the sitemap`);
+    assert.ok(html.includes(`<link rel="canonical" href="${url}">`), `${slug} needs its self-canonical`);
+    assert.doesNotMatch(html, /<meta[^>]+(?:name|property)="(?:robots|googlebot)"[^>]+noindex/i);
+  }
+
+  for (const slug of [
+    "what-website-hosting-is-in-plain-english",
+    "why-consistent-business-information-matters-for-ai-answers",
+    "why-your-small-business-website-should-be-built-for-phones-first",
+    "writing-website-content-ai-assistants-can-quote",
+    "yelp-nextdoor-and-angi-which-listings-are-worth-your-time",
+    "best-website-builder-three-questions",
+    "html-website-development-when-custom-code-fits",
+  ]) assert.ok(blogIndex.includes(`href="/blog/${slug}/"`), `${slug} needs a blog-index link`);
+
+  const requiredLinks = [
+    ["blog/website-hosting-costs-297-three-year-budget/index.html", "what-website-hosting-is-in-plain-english"],
+    ["blog/ai-search/index.html", "why-consistent-business-information-matters-for-ai-answers"],
+    ["blog/ai-search/index.html", "writing-website-content-ai-assistants-can-quote"],
+    ["blog/structured-data-for-ai-search-what-small-businesses-need/index.html", "writing-website-content-ai-assistants-can-quote"],
+    ["blog/nap-consistency-why-your-name-address-and-phone-must-match-everywhere/index.html", "yelp-nextdoor-and-angi-which-listings-are-worth-your-time"],
+    ["blog/compare/index.html", "best-website-builder-three-questions"],
+    ["blog/guides/index.html", "html-website-development-when-custom-code-fits"],
+  ];
+  for (const [source, slug] of requiredLinks) {
+    assert.ok(read(source).includes(`href="/blog/${slug}/"`), `${source} must link to ${slug}`);
+  }
+  assert.match(read("blog/trades/plumbing/index.html"), /href="\/blog\/plumbing-facebook-vs-website\/"/);
+  assert.match(read("blog/plumbing-facebook-vs-website/index.html"), /href="\/blog\/why-your-small-business-website-should-be-built-for-phones-first\/"/);
+
+  for (const page of ["privacy", "terms"]) {
+    const url = `https://frontstepsites.com/${page}/`;
+    const html = read(`${page}/index.html`);
+    assert.ok(sitemap.includes(`<loc>${url}</loc>`));
+    assert.ok(html.includes(`<link rel="canonical" href="${url}">`));
+    assert.doesNotMatch(html, /<meta[^>]+(?:name|property)="(?:robots|googlebot)"[^>]+noindex/i);
+  }
+});
+
 test("catalog entries explain business fit while retaining direct answers elsewhere", () => {
   const llms = read("llms.txt");
   assert.ok(llms.includes("- [Can you run a business website on Canva?](https://frontstepsites.com/blog/can-you-run-a-business-website-on-canva/): Canva supports multipage websites. Use this checklist to decide whether its publishing, contact and maintenance workflow fits your local business."));
