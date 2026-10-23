@@ -43,7 +43,7 @@ A yearly price hides the real gap, since you pay it every year. Here are three y
 - Front Step Sites, $99 plan: $297, domain included
 - Front Step Sites, Grow plan: $870 ($290 a year), with four marketing updates per Central calendar month and your Google reviews shown on the site
 
-The $99 plan is the cheapest paid option here, but it caps changes at two a month. If you update your hours, menu, or service list often, the Grow plan's price is the one that matches how you work.
+Launch and Grow both include four coherent marketing updates per Central calendar month. Grow adds Google reviews shown on the site; choose it for that feature rather than for a higher update allowance.
 
 ## What should you ask any builder before you pay?
 
