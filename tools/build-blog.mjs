@@ -122,6 +122,7 @@ function parseBlocks(md) {
     if (line.trim() === "{{trade-example-walkthrough}}") { blocks.push({ type: "tradeExampleWalkthrough" }); i++; continue; }
     if (line.trim() === "{{cleaning-example-walkthrough}}") { blocks.push({ type: "cleaningExampleWalkthrough" }); i++; continue; }
     if (line.trim() === "{{plumber-example-walkthrough}}") { blocks.push({ type: "plumberExampleWalkthrough" }); i++; continue; }
+    if (line.trim() === "{{plumber-profile-readiness}}") { blocks.push({ type: "plumberProfileReadiness" }); i++; continue; }
     if (line.trim() === "{{launch-cta}}") { blocks.push({ type: "launchCta" }); i++; continue; }
     if (/^-\s+/.test(line)) {
       const items = [];
@@ -234,6 +235,8 @@ function renderMarkdown(body, ctx) {
       html += `${renderTradeExampleWalkthrough()}\n`;
     } else if (block.type === "cleaningExampleWalkthrough") {
       html += `${renderCleaningExampleWalkthrough()}\n`;
+    } else if (block.type === "plumberProfileReadiness") {
+      html += renderPlumberProfileReadiness();
     } else if (block.type === "plumberExampleWalkthrough") {
       html += `${renderPlumberExampleWalkthrough()}\n`;
     } else if (block.type === "launchCta") {
@@ -368,6 +371,29 @@ function renderCleaningExampleWalkthrough() {
 </section>`;
 }
 
+function renderPlumberProfileReadiness() {
+  const checks = ['Ownership and verification', 'Category and services', 'Address or service area', 'Hours and emergency availability', 'Phone and website', 'Photos and reviews'];
+  return `<section class="profile-check" id="plumber-profile-check" aria-labelledby="profile-check-heading">
+  <h2 id="profile-check-heading">Plumber profile readiness check</h2>
+  <p>Your own progress, not a Google verification result. This checklist does not inspect or update your listing.</p>
+  <fieldset id="profile-check-fields" disabled><legend>Checks you have carried out</legend>
+  ${checks.map((label, i) => `<label><input data-profile-check type="checkbox" name="profile-check-${i + 1}"> <span>${label}</span></label>`).join('\n')}
+  </fieldset>
+  <p id="profile-check-count" role="status" aria-live="polite">0 of 6 public checks complete</p>
+  <p id="profile-check-result">Use the setup table above to carry out each check, then mark your progress here.</p>
+  <p id="profile-check-storage">Only these six checkmarks are saved on this device; no listing details are collected or sent.</p>
+  <button class="btn" id="profile-check-reset" type="button" disabled>Reset this check</button>
+  <noscript><p>JavaScript is needed to save and count checkmarks. The setup table above remains available without it.</p></noscript>
+  <p><a href="/plumber/">See these details on a fictional plumber site</a></p>
+</section><script src="/assets/plumber-profile-check.js" defer></script>`;
+}
+
+const PROFILE_CHECK_CSS = `.profile-check{margin:2rem 0;padding:1.15rem;border:1.5px solid var(--ink);background:var(--tag)}
+.profile-check h2{margin-top:0}.profile-check fieldset{min-width:0;border:0;padding:0;margin:1rem 0}
+.profile-check legend{font-weight:700;margin-bottom:.5rem}.profile-check label{display:flex;align-items:center;gap:.7rem;min-height:44px;margin:.3rem 0;cursor:pointer}
+.profile-check input{flex:none;width:20px;height:20px;accent-color:var(--ink)}.profile-check .btn{font:inherit;min-height:44px;cursor:pointer}
+`;
+
 const SITE_PLAN_CSS = `
 /* interactive article demo */
 .site-plan{margin:1.5rem 0 2rem;padding:1.15rem;border:1.5px solid var(--ink);background:var(--tag)}
@@ -433,7 +459,7 @@ ${ogImage ? `<meta property="og:image" content="${escapeAttr(ogImage)}">\n` : ""
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="${fontHref}" rel="stylesheet" media="print" onload="this.media='all'">
 <noscript><link href="${fontHref}" rel="stylesheet"></noscript>
-<style>${READ_CSS}${bodyHtml.includes("readable-table") ? ".doc .readable-table table{min-width:40rem}.doc .readable-table th,.doc .readable-table td{overflow-wrap:anywhere}" : ""}${bodyHtml.includes("mobile-wide-table") ? "@media(max-width:600px){.doc .mobile-wide-table table{min-width:44rem}}" : ""}${(bodyHtml.includes('id="site-plan-builder"') || bodyHtml.includes('data-website-resource=')) ? SITE_PLAN_CSS : ""}${bodyHtml.includes("data-website-resource=") ? RESOURCE_CSS : ""}${hasTradeExamples ? TRADE_EXAMPLES_CSS : ""}${bodyHtml.includes('class="cleaning-example"') ? CLEANING_EXAMPLE_CSS : ""}</style>
+<style>${READ_CSS}${bodyHtml.includes("readable-table") ? ".doc .readable-table table{min-width:40rem}.doc .readable-table th,.doc .readable-table td{overflow-wrap:anywhere}" : ""}${bodyHtml.includes("mobile-wide-table") ? "@media(max-width:600px){.doc .mobile-wide-table table{min-width:44rem}}" : ""}${(bodyHtml.includes('id="site-plan-builder"') || bodyHtml.includes('data-website-resource=')) ? SITE_PLAN_CSS : ""}${bodyHtml.includes("data-website-resource=") ? RESOURCE_CSS : ""}${hasTradeExamples ? TRADE_EXAMPLES_CSS : ""}${bodyHtml.includes('id="plumber-profile-check"') ? PROFILE_CHECK_CSS : ""}${bodyHtml.includes('class="cleaning-example"') ? CLEANING_EXAMPLE_CSS : ""}</style>
 ${jsonLd.map(jsonLdScript).join("\n")}
 <script defer src="/analytics-consent.js"></script>
 <script defer src="/posthog-web.js"></script>
