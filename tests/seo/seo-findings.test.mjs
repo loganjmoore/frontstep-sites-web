@@ -190,6 +190,35 @@ test("AI visibility pages carry useful answers and plain product definitions", (
   assert.match(read("blog/html-website-development-when-custom-code-fits/index.html"), /Front Step Sites is a done-for-you website service for standard small-business sites, not a custom HTML development shop/);
 });
 
+test("October 24 product explainer and Canva limits match the verified journeys", () => {
+  const explainer = read("blog/what-front-step-sites-does-and-who-its-for/index.html");
+  assert.match(explainer, /answer the business questionnaire, review the site we build for your trade, and approve it before publication/);
+  assert.match(explainer, /The "Get started" button opens secure checkout for the \$99\/year Launch plan/);
+  assert.match(explainer, /href="\/plumber\/">fictional plumbing sample<\/a>/);
+  assert.doesNotMatch(explainer, /live this week|shows a sample site|2 business days|same-day|unlimited (?:changes|updates)/i);
+
+  const canva = read("blog/can-you-run-a-business-website-on-canva/index.html");
+  assert.match(canva, /<h2 id="canva-websites-limits-to-check-verified-october-24-2026">Canva Websites limits to check \(verified October 24, 2026\)<\/h2>/);
+  assert.match(canva, /<div class="table-wrap mobile-wide-table">/);
+  for (const fact of [
+    "Up to 45 pages",
+    "Up to five published sites",
+    "Unlimited published sites",
+    "Up to five connected domains",
+    "Design up to 20, but publish up to 10",
+    "Publish up to 20",
+  ]) assert.ok(canva.includes(`<td>${fact}</td>`), `missing Canva limit: ${fact}`);
+
+  const faq = [...canva.matchAll(/<script type="application\/ld\+json">(.*?)<\/script>/gs)]
+    .map((match) => JSON.parse(match[1]))
+    .find((value) => value["@type"] === "FAQPage");
+  const question = "Is Canva Websites free, and what are the current limits?";
+  const answer = "Canva Free can publish up to five sites on the free my.canva.site domain, with as many as 45 pages per multipage site and up to 10 published sections per page. Eligible paid plans can publish unlimited sites on that free domain, publish up to 20 sections per page, and connect up to five externally purchased domains. Re-check Canva's help pages before publishing because these limits can change.";
+  assert.equal(faq.mainEntity.find((item) => item.name === question)?.acceptedAnswer.text, answer);
+  assert.match(canva, new RegExp(`<h3[^>]*>${question.replace("?", "\\?")}<\\/h3>\\n<p>${answer.replace(/[.*+?^${}()|[\\]\\]/g, "\\$&")}<\\/p>`));
+  assert.match(canva, /"datePublished":"2026-10-03","dateModified":"2026-10-24"/);
+});
+
 test("priority article and hub changes are present in generated HTML", () => {
   const tree = read("blog/tree-service-local-seo-checklist/index.html");
   assert.match(tree, /<title>Tree Service Local SEO Checklist: What to Fix First<\/title>/);
