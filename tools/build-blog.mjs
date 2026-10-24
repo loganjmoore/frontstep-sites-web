@@ -121,6 +121,7 @@ function parseBlocks(md) {
     if (/^##\s+/.test(line)) { blocks.push({ type: "h2", text: line.replace(/^##\s+/, "").trim() }); i++; continue; }
     if (line.trim() === "{{trade-example-walkthrough}}") { blocks.push({ type: "tradeExampleWalkthrough" }); i++; continue; }
     if (line.trim() === "{{cleaning-example-walkthrough}}") { blocks.push({ type: "cleaningExampleWalkthrough" }); i++; continue; }
+    if (line.trim() === "{{plumber-example-walkthrough}}") { blocks.push({ type: "plumberExampleWalkthrough" }); i++; continue; }
     if (line.trim() === "{{launch-cta}}") { blocks.push({ type: "launchCta" }); i++; continue; }
     if (/^-\s+/.test(line)) {
       const items = [];
@@ -233,6 +234,8 @@ function renderMarkdown(body, ctx) {
       html += `${renderTradeExampleWalkthrough()}\n`;
     } else if (block.type === "cleaningExampleWalkthrough") {
       html += `${renderCleaningExampleWalkthrough()}\n`;
+    } else if (block.type === "plumberExampleWalkthrough") {
+      html += `${renderPlumberExampleWalkthrough()}\n`;
     } else if (block.type === "launchCta") {
       html += `${renderLaunchCta()}\n`;
     }
@@ -322,6 +325,31 @@ function renderTradeExampleWalkthrough() {
 </section>`;
 }
 
+function renderPlumberExampleWalkthrough() {
+  return `<section class="trade-examples" aria-labelledby="plumber-example-title">
+  <h2 id="plumber-example-title">Walk through a fictional plumber website</h2>
+  <p class="example-label">Fictional sample: no customer, endorsement, or result is represented</p>
+  <figure class="doc-figure">
+    <a href="/plumber/?p=2025550147" aria-label="Open the fictional plumber website with a sample phone number"><img src="/assets/blog/trade-examples-plumbing-owned-20261024.jpg" alt="Fictional plumber website sample showing the first screen, service navigation, and sample business identity" width="960" height="720" loading="lazy" decoding="async"></a>
+    <figcaption>This is a Front Step Sites product sample, not a customer website.</figcaption>
+  </figure>
+  <p><strong>Your task:</strong> Confirm that the sample names the service, exposes a phone route when a sample number is supplied, explains the form boundary, and completes a sample inquiry.</p>
+  <div class="table-wrap" role="region" aria-label="Fictional plumber website inspection guide" tabindex="0"><table><thead><tr><th>What to inspect</th><th>What the sample demonstrates</th></tr></thead><tbody>
+    <tr><td>First screen</td><td>Names plumbing service and uses a clearly fictional sample identity.</td></tr>
+    <tr><td>Services</td><td>Shows service ideas for the owner to confirm, not claims about a real plumber.</td></tr>
+    <tr><td>Service area</td><td>Shows no service area by default; a fictional town appears only when supplied.</td></tr>
+    <tr><td>Contact route</td><td>Turns the supplied sample number into a phone route and states that the preview form sends and stores nothing.</td></tr>
+  </tbody></table></div>
+  <p><a class="btn example-link" href="/plumber/?p=2025550147">Open the fictional plumber sample</a></p>
+</section>
+<aside class="tag-box tag-offer">
+  <span class="label">Front Step Sites &middot; Launch</span>
+  <p>$99/year, domain included, no setup fee.</p>
+  <a class="btn" href="${START_URL}">Start my plumber website</a>
+  <p>${START_EXPECTATION}</p>
+</aside>`;
+}
+
 function renderCleaningExampleWalkthrough() {
   return `<section class="cleaning-example" aria-labelledby="cleaning-example-title">
   <h2 id="cleaning-example-title">See the checklist in a fictional cleaning website</h2>
@@ -369,8 +397,9 @@ const TRADE_EXAMPLES_CSS = `.trade-examples{margin:2rem 0}
 .trade-example h3{font-size:1.35rem;margin:.45rem 0 .55rem}
 .trade-example h4{font-size:1rem;margin:1rem 0 .35rem}
 .trade-example ul{margin-bottom:1.1rem}
-.trade-example .example-label{display:inline-block;background:var(--yellow);font-size:.82rem;font-weight:800;line-height:1.35;margin:0;padding:.35rem .5rem;max-width:34ch}
+.trade-example .example-label,.trade-examples>.example-label{display:inline-block;background:var(--yellow);font-size:.82rem;font-weight:800;line-height:1.35;margin:0 0 1rem;padding:.35rem .5rem;max-width:34ch}
 .trade-example .example-link{margin-top:.2rem}
+.trade-examples>figure figcaption{color:var(--ink-2);font-size:.9rem;margin-top:.45rem}
 .example-map table{min-width:42rem}
 @media(min-width:720px){.trade-example-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 `;

@@ -1,11 +1,15 @@
 ---
-title: "Plumbing: what your website needs"
-description: "Build a plumber website that answers customer questions, shows your service area, and makes calling easy, with a practical checklist you can use today."
+title: "Plumber Website Checklist and Working Example (2026)"
+description: "Follow a practical plumber website checklist, then inspect a fictional working sample for service, area, phone, and form decisions."
 slug: website-plumbing
 cluster: trades/plumbing
 answer: "A plumber website needs a working call button, clear service hours, the towns you cover, and plain descriptions of the jobs you take. Put those details before company history or decoration. Add real job photos, honest pricing guidance, and a short request form so customers can decide whether you are the right plumber to call."
-updated: 2026-09-26
+published: 2026-09-26
+updated: 2026-10-24
+launchCtaInBody: true
 ---
+
+{{plumber-example-walkthrough}}
 
 What does your plumbing website need so someone with a leaking water heater actually calls you? Start with your phone number, availability, service area, and the problems you fix. A customer should be able to find those answers before reading your company story or scrolling through job photos.
 
