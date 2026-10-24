@@ -39,7 +39,7 @@ Start with who will make the edits. A builder puts that work on you: writing the
 | Google Sites | No separate website plan to select with a Google account | You, in the Google Sites editor | A few simple pages, fast | Basic page controls; custom-domain setup needs separate checks |
 | Front Step Sites | $99 a year, domain included, no setup fee | Front Step Sites, from your requests | Owners who want the edits handled | Four coherent marketing updates per Central calendar month |
 
-The Squarespace figures come from its pricing page, which lists Basic at $19 a month billed annually and $25 a month billed monthly. The Wix price page would not load during our October check, so confirm its current price before you buy.
+Checked October 24, 2026: [Wix’s official plan guide](https://www.wix.com/blog/how-much-is-a-wix-website) lists Light at $17 a month for a yearly subscription paid in full ($204 a year), with 2 GB of storage and a domain for the first year. [Squarespace’s pricing page](https://www.squarespace.com/pricing) lists Basic at $19 a month billed annually ($228 a year) or $25 billed monthly. These displayed-dollar reference prices are not a local checkout quote; your region, currency, taxes, renewal prices, and current plan terms may differ.
 
 ## Which website builder do most websites use?
 
