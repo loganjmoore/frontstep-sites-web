@@ -120,6 +120,7 @@ function parseBlocks(md) {
     if (/^###\s+/.test(line)) { blocks.push({ type: "h3", text: line.replace(/^###\s+/, "").trim() }); i++; continue; }
     if (/^##\s+/.test(line)) { blocks.push({ type: "h2", text: line.replace(/^##\s+/, "").trim() }); i++; continue; }
     if (line.trim() === "{{trade-example-walkthrough}}") { blocks.push({ type: "tradeExampleWalkthrough" }); i++; continue; }
+    if (line.trim() === "{{cleaning-example-walkthrough}}") { blocks.push({ type: "cleaningExampleWalkthrough" }); i++; continue; }
     if (line.trim() === "{{launch-cta}}") { blocks.push({ type: "launchCta" }); i++; continue; }
     if (/^-\s+/.test(line)) {
       const items = [];
@@ -230,6 +231,8 @@ function renderMarkdown(body, ctx) {
       html += `<pre><code${language}>${escapeHtml(block.text)}</code></pre>\n`;
     } else if (block.type === "tradeExampleWalkthrough") {
       html += `${renderTradeExampleWalkthrough()}\n`;
+    } else if (block.type === "cleaningExampleWalkthrough") {
+      html += `${renderCleaningExampleWalkthrough()}\n`;
     } else if (block.type === "launchCta") {
       html += `${renderLaunchCta()}\n`;
     }
@@ -319,6 +322,24 @@ function renderTradeExampleWalkthrough() {
 </section>`;
 }
 
+function renderCleaningExampleWalkthrough() {
+  return `<section class="cleaning-example" aria-labelledby="cleaning-example-title">
+  <h2 id="cleaning-example-title">See the checklist in a fictional cleaning website</h2>
+  <p class="example-label">Fictional example — no customer, endorsement, or result is represented</p>
+  <figure class="doc-figure">
+    <a href="/examples/cleaning/" aria-label="Open the fictional cleaning website shown"><img src="/assets/blog/trade-examples-cleaning-owned-20261024.jpg" alt="Fictional cleaning website with separate recurring care, detailed reset, and moving-home service choices." width="960" height="720" loading="lazy" decoding="async"></a>
+    <figcaption>Our fictional cleaning website shows how the checklist can become a customer journey.</figcaption>
+  </figure>
+  <ul>
+    <li><strong>Distinct needs:</strong> recurring care, a detailed reset, and moving-home work each get a clear path.</li>
+    <li><strong>Useful preparation:</strong> practical questions replace fabricated reviews, credentials, or results.</li>
+    <li><strong>Private local preview:</strong> the example brief creates a preview in the browser and sends or saves nothing.</li>
+  </ul>
+  <p><a class="btn" href="/examples/cleaning/">Walk through the fictional cleaning website</a></p>
+  <p>Want a site for your real cleaning company? <a href="${START_URL}">Start your own Front Step Sites website</a>.</p>
+</section>`;
+}
+
 const SITE_PLAN_CSS = `
 /* interactive article demo */
 .site-plan{margin:1.5rem 0 2rem;padding:1.15rem;border:1.5px solid var(--ink);background:var(--tag)}
@@ -353,6 +374,12 @@ const TRADE_EXAMPLES_CSS = `.trade-examples{margin:2rem 0}
 .example-map table{min-width:42rem}
 @media(min-width:720px){.trade-example-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 `;
+const CLEANING_EXAMPLE_CSS = `.cleaning-example{margin:2rem 0;border-top:3px solid var(--ink);padding-top:1rem}
+.cleaning-example>h2{margin-top:0}
+.cleaning-example .example-label{display:inline-block;background:var(--yellow);font-size:.82rem;font-weight:800;line-height:1.35;margin:.2rem 0 1rem;padding:.35rem .5rem;max-width:34ch}
+.cleaning-example figcaption{color:var(--ink-2);font-size:.9rem;margin-top:.45rem}
+.cleaning-example .btn{margin-top:.2rem}
+`;
 function pageShell({ title, description, canonical, ogType = "website", ogImage, preloadImage, bodyHtml, jsonLd = [] }) {
   const fontHref = "https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&display=optional";
   const hasTradeExamples = bodyHtml.includes('class="trade-examples"');
@@ -377,7 +404,7 @@ ${ogImage ? `<meta property="og:image" content="${escapeAttr(ogImage)}">\n` : ""
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="${fontHref}" rel="stylesheet" media="print" onload="this.media='all'">
 <noscript><link href="${fontHref}" rel="stylesheet"></noscript>
-<style>${READ_CSS}${bodyHtml.includes("readable-table") ? ".doc .readable-table table{min-width:40rem}.doc .readable-table th,.doc .readable-table td{overflow-wrap:anywhere}" : ""}${bodyHtml.includes("mobile-wide-table") ? "@media(max-width:600px){.doc .mobile-wide-table table{min-width:44rem}}" : ""}${(bodyHtml.includes('id="site-plan-builder"') || bodyHtml.includes('data-website-resource=')) ? SITE_PLAN_CSS : ""}${bodyHtml.includes("data-website-resource=") ? RESOURCE_CSS : ""}${hasTradeExamples ? TRADE_EXAMPLES_CSS : ""}</style>
+<style>${READ_CSS}${bodyHtml.includes("readable-table") ? ".doc .readable-table table{min-width:40rem}.doc .readable-table th,.doc .readable-table td{overflow-wrap:anywhere}" : ""}${bodyHtml.includes("mobile-wide-table") ? "@media(max-width:600px){.doc .mobile-wide-table table{min-width:44rem}}" : ""}${(bodyHtml.includes('id="site-plan-builder"') || bodyHtml.includes('data-website-resource=')) ? SITE_PLAN_CSS : ""}${bodyHtml.includes("data-website-resource=") ? RESOURCE_CSS : ""}${hasTradeExamples ? TRADE_EXAMPLES_CSS : ""}${bodyHtml.includes('class="cleaning-example"') ? CLEANING_EXAMPLE_CSS : ""}</style>
 ${jsonLd.map(jsonLdScript).join("\n")}
 <script defer src="/analytics-consent.js"></script>
 <script defer src="/posthog-web.js"></script>

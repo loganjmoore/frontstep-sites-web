@@ -1,11 +1,11 @@
 ---
-title: "Cleaning: local SEO checklist"
-description: "Use this local SEO checklist to improve your cleaning website and listings, with clear service pages, real coverage areas, useful photos, and honest reviews."
+title: "Local SEO for Cleaning Companies: 2026 Checklist"
+description: "Check business details, Google Business Profile, service pages, service area, reviews, mobile contact, and whether SEO brings suitable cleaning inquiries."
 slug: "cleaning-local-seo-checklist"
 cluster: "trades/cleaning"
 answer: "Local SEO for a cleaning company starts with accurate business details, clearly described services, and honest local coverage. Check your Google profile, website, and other listings for contradictions. Then improve pages for recurring, deep, move-out, or office cleaning, make inquiries easy, and ask customers for feedback without exposing private household or workplace details."
 published: "2026-09-26"
-updated: "2026-10-10"
+updated: "2026-10-24"
 ---
 
 ## Local SEO for cleaning companies: the short version
@@ -35,6 +35,8 @@ For each main service, answer these questions:
 - What condition or access information affects the estimate?
 - Which locations can you serve?
 - How does the customer request the next step?
+
+{{cleaning-example-walkthrough}}
 
 Make recurring home cleaning distinct from an initial deep clean. Explain whether a move-out property needs to be empty and whether inside appliances are part of the scope. On office pages, discuss walkthroughs, work schedules, and who provides consumable supplies if that is relevant.
 
