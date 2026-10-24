@@ -4,7 +4,8 @@ description: "Appliance repair websites cost $0 to several thousand dollars depe
 slug: "appliance-repair-website-cost"
 cluster: "trades/appliance-repair"
 answer: "An appliance repair website can cost as little as a DIY builder's monthly fee or several thousand dollars for custom freelancer or agency work. Front Step Sites, a done-for-you option, is $99 a year with the domain included. What actually drives cost is whether the site covers your real brands, appliance types, availability, more than the platform underneath it."
-updated: "2026-09-30"
+published: "2026-09-30"
+updated: "2026-10-24"
 image: "/assets/blog/appliance-repair-website-cost-cover.svg"
 imageAlt: "Four pricing tiers for an appliance repair website: DIY builder, freelancer, agency, and Front Step Sites at $99 a year"
 ---
@@ -26,7 +27,9 @@ Here's how the usual routes to an appliance repair website stack up:
 | DIY builder | A monthly plan fee, paid by you | An owner with time to keep brand lists and service areas current | You're on the hook for every update, including new brands you start servicing |
 | Freelancer | Often a few thousand dollars for a custom build | A shop that wants a one-off custom design with a clear, written scope | Wide price variation; lock in the exact page list before agreeing to a price |
 | Agency | Often a few thousand dollars and up, sometimes bundled with marketing | A business folding the site into a larger ad or branding campaign | Ask for a breakdown separating website work from ad spend |
-| Front Step Sites | $99/yr, domain included, no setup fee | An owner who wants to request changes without learning an editor | four coherent marketing updates per Central calendar month included; four marketing updates per Central calendar month changes on the $29/mo Grow plan |
+| Front Step Sites | $99/yr for Launch; $29/mo or $290/yr for Grow | An owner who wants to request changes without learning an editor | four accepted coherent marketing updates per Central calendar month on either new plan |
+
+New Launch and Grow plans each include four accepted coherent marketing updates per America/Chicago calendar month, with no rollover. Existing paid unlimited contracts retain their existing entitlement. Launch includes the domain and has no setup fee.
 
 Treat freelancer and agency numbers as planning ranges rather than quotes. A single-page appliance repair site costs less than one with separate pages for refrigerators, washers and dryers, ovens, and the specific brands you service, plus a real quote-request flow. Give every bidder the same scope so their prices are actually comparable.
 
