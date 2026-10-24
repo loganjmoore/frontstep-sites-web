@@ -8,7 +8,7 @@ mobileWideTable: "true"
 lead: "To set up a Google Business Profile for a plumber, claim or create the correct listing, use Plumber as the primary category when it accurately describes the business, configure the real service area or customer-facing location, add reachable hours, phone, services and approved photos, complete Google's verification, then inspect the public listing. Ask for honest reviews after a consistent completed-service milestone, not only from customers expected to be positive."
 answer: "To set up a Google Business Profile for a plumber, claim or create the correct listing, use Plumber as the primary category when it accurately describes the business, configure the real service area or customer-facing location, add reachable hours, phone, services and approved photos, complete Google's verification, then inspect the public listing. Ask for honest reviews after a consistent completed-service milestone, not only from customers expected to be positive."
 published: "2026-09-26"
-updated: "2026-10-13"
+updated: "2026-10-24"
 ---
 
 ## Plumber Google Business Profile setup checklist
@@ -21,6 +21,8 @@ updated: "2026-10-13"
 | Hours and emergency availability | Reachable customer-facing hours and a truthful explanation of after-hours dispatch | Call during and outside listed hours and confirm the greeting matches the published availability |
 | Phone and website | A monitored phone number and the correct secure website page | Tap both links on a phone, place a test call, and confirm the website repeats the same services and coverage |
 | Photos and reviews | Approved real-work photos and a consistent request for honest reviews after completed service | Inspect each public photo for private details and confirm review requests are not limited to customers expected to be positive |
+
+{{plumber-profile-readiness}}
 
 A homeowner searching for an emergency plumber needs to know whether you can help with the water spreading across their kitchen floor. Someone comparing water heater installers has different questions about equipment and estimates. Your Google Business Profile should help both people understand what your plumbing company actually does.
 
