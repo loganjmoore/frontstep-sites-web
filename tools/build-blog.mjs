@@ -119,6 +119,7 @@ function parseBlocks(md) {
     }
     if (/^###\s+/.test(line)) { blocks.push({ type: "h3", text: line.replace(/^###\s+/, "").trim() }); i++; continue; }
     if (/^##\s+/.test(line)) { blocks.push({ type: "h2", text: line.replace(/^##\s+/, "").trim() }); i++; continue; }
+    if (line.trim() === "{{trade-example-walkthrough}}") { blocks.push({ type: "tradeExampleWalkthrough" }); i++; continue; }
     if (line.trim() === "{{launch-cta}}") { blocks.push({ type: "launchCta" }); i++; continue; }
     if (/^-\s+/.test(line)) {
       const items = [];
@@ -227,6 +228,8 @@ function renderMarkdown(body, ctx) {
     } else if (block.type === "code") {
       const language = block.language ? ` class="language-${escapeAttr(block.language)}"` : "";
       html += `<pre><code${language}>${escapeHtml(block.text)}</code></pre>\n`;
+    } else if (block.type === "tradeExampleWalkthrough") {
+      html += `${renderTradeExampleWalkthrough()}\n`;
     } else if (block.type === "launchCta") {
       html += `${renderLaunchCta()}\n`;
     }
@@ -261,6 +264,53 @@ function renderLaunchCta() {
 </aside>`;
 }
 
+function renderTradeExampleWalkthrough() {
+  return `<section class="trade-examples" aria-labelledby="trade-examples-title">
+  <h2 id="trade-examples-title">Two trade website examples you can use</h2>
+  <p>These are working, fictional Front Step Sites samples. Use them to test a customer task and inspect the page decisions, not as evidence of a customer or result.</p>
+  <div class="trade-example-grid">
+    <article class="trade-example">
+      <p class="example-label">Fictional example — no customer or result is represented</p>
+      <h3>Plumbing sample</h3>
+      <p><strong>Customer task:</strong> Preview a plumbing identity and complete a local sample inquiry.</p>
+      <p><strong>Interaction:</strong> The sample form checks for a name and phone number, then shows a preview confirmation. Nothing is sent or stored.</p>
+      <h4>Three page decisions</h4>
+      <ul>
+        <li>The van-livery opening can use a supplied business name, town, phone number, and color.</li>
+        <li>Unknown phone and location details stay hidden instead of becoming invented claims.</li>
+        <li>Service ideas are clearly labeled as examples for the owner to confirm.</li>
+      </ul>
+      <a class="btn example-link" href="/plumber/">Try the plumbing sample</a>
+    </article>
+    <article class="trade-example">
+      <p class="example-label">Fictional example — no customer or result is represented</p>
+      <h3>Cleaning design</h3>
+      <p><strong>Customer task:</strong> Compare cleaning needs and preview the questions a visitor would hand off.</p>
+      <p><strong>Interaction:</strong> The cleaning brief lets a visitor choose an example cleaning type and preview a question. No request is sent, saved, or booked.</p>
+      <h4>Three page decisions</h4>
+      <ul>
+        <li>The service menu separates recurring care, a detailed reset, and moving-home work.</li>
+        <li>Practical preparation questions replace made-up reviews or credentials.</li>
+        <li>The brief states its limits before the visitor enters an example question.</li>
+      </ul>
+      <a class="btn example-link" href="/examples/cleaning/">Open the cleaning design</a>
+    </article>
+  </div>
+  <h3>What each example demonstrates</h3>
+  <div class="table-wrap example-map" role="region" aria-label="Capabilities demonstrated by the plumbing and cleaning examples" tabindex="0"><table>
+    <thead><tr><th>Customer need</th><th>Plumbing sample</th><th>Cleaning design</th></tr></thead>
+    <tbody>
+      <tr><td>Urgent call</td><td>Not demonstrated</td><td>Not demonstrated</td></tr>
+      <tr><td>Planned estimate</td><td>Sample inquiry preview</td><td>Example brief preview</td></tr>
+      <tr><td>Service scope</td><td>Four example plumbing jobs</td><td>Three example cleaning types</td></tr>
+      <tr><td>Service area</td><td>Not demonstrated on the default sample</td><td>Not demonstrated</td></tr>
+      <tr><td>Proof</td><td>Not demonstrated</td><td>Not demonstrated</td></tr>
+      <tr><td>Inquiry handoff</td><td>Local confirmation; nothing sent</td><td>Local brief result; nothing sent</td></tr>
+    </tbody>
+  </table></div>
+</section>`;
+}
+
 const SITE_PLAN_CSS = `
 /* interactive article demo */
 .site-plan{margin:1.5rem 0 2rem;padding:1.15rem;border:1.5px solid var(--ink);background:var(--tag)}
@@ -283,8 +333,23 @@ const RESOURCE_CSS = `.site-plan iframe{width:100%;height:460px;border:1px solid
 .site-plan a.btn{display:inline-flex;margin-top:1rem}
 .site-plan textarea{width:100%;padding:.55rem .65rem;border:1.5px solid var(--ink);border-radius:3px;background:#fff;color:var(--ink);font:inherit}
 `;
+const TRADE_EXAMPLES_CSS = `.trade-examples{margin:2rem 0}
+.trade-examples>h2{margin-top:0}
+.trade-example-grid{display:grid;gap:1.5rem;margin:1.4rem 0 1.8rem}
+.trade-example{border-top:3px solid var(--ink);padding-top:1rem}
+.trade-example h3{font-size:1.35rem;margin:.45rem 0 .55rem}
+.trade-example h4{font-size:1rem;margin:1rem 0 .35rem}
+.trade-example ul{margin-bottom:1.1rem}
+.trade-example .example-label{display:inline-block;background:var(--yellow);font-size:.82rem;font-weight:800;line-height:1.35;margin:0;padding:.35rem .5rem;max-width:34ch}
+.trade-example .example-link{margin-top:.2rem}
+.example-map table{min-width:42rem}
+@media(min-width:720px){.trade-example-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+`;
 function pageShell({ title, description, canonical, ogType = "website", ogImage, preloadImage, bodyHtml, jsonLd = [] }) {
   const fontHref = "https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&display=optional";
+  const hasTradeExamples = bodyHtml.includes('class="trade-examples"');
+  const headerCtaUrl = hasTradeExamples ? "/plumber/" : START_URL;
+  const headerCtaLabel = hasTradeExamples ? "Try the plumbing sample" : START_LABEL;
   return `<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -304,7 +369,7 @@ ${ogImage ? `<meta property="og:image" content="${escapeAttr(ogImage)}">\n` : ""
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="${fontHref}" rel="stylesheet" media="print" onload="this.media='all'">
 <noscript><link href="${fontHref}" rel="stylesheet"></noscript>
-<style>${READ_CSS}${bodyHtml.includes("readable-table") ? ".doc .readable-table table{min-width:40rem}.doc .readable-table th,.doc .readable-table td{overflow-wrap:anywhere}" : ""}${bodyHtml.includes("mobile-wide-table") ? "@media(max-width:600px){.doc .mobile-wide-table table{min-width:44rem}}" : ""}${(bodyHtml.includes('id="site-plan-builder"') || bodyHtml.includes('data-website-resource=')) ? SITE_PLAN_CSS : ""}${bodyHtml.includes("data-website-resource=") ? RESOURCE_CSS : ""}</style>
+<style>${READ_CSS}${bodyHtml.includes("readable-table") ? ".doc .readable-table table{min-width:40rem}.doc .readable-table th,.doc .readable-table td{overflow-wrap:anywhere}" : ""}${bodyHtml.includes("mobile-wide-table") ? "@media(max-width:600px){.doc .mobile-wide-table table{min-width:44rem}}" : ""}${(bodyHtml.includes('id="site-plan-builder"') || bodyHtml.includes('data-website-resource=')) ? SITE_PLAN_CSS : ""}${bodyHtml.includes("data-website-resource=") ? RESOURCE_CSS : ""}${hasTradeExamples ? TRADE_EXAMPLES_CSS : ""}</style>
 ${jsonLd.map(jsonLdScript).join("\n")}
 <script defer src="/analytics-consent.js"></script>
 <script defer src="/posthog-web.js"></script>
@@ -315,7 +380,7 @@ ${jsonLd.map(jsonLdScript).join("\n")}
   <nav>
     <a class="hide-sm" href="/blog/">Blog</a>
     <a class="hide-sm" href="${LOGIN_URL}">Sign in</a>
-    <a class="btn" href="${START_URL}">${START_LABEL}</a>
+    <a class="btn" href="${headerCtaUrl}">${headerCtaLabel}</a>
   </nav>
 </div></header>
 <main class="read"><div class="wrap">
@@ -512,7 +577,7 @@ ${HUB_FAQ.map((f) => `<h3>${escapeHtml(f.question)}</h3>\n<p>${escapeHtml(f.answ
 ${renderCrumbs(crumbs)}
 <h1>${escapeHtml(clusterName)}</h1>
 <p class="updated">${articles.length} article${articles.length === 1 ? "" : "s"}</p>
-${introHtml}<p>Front Step Sites is a done-for-you website service for small businesses, priced at $99 a year with the domain included and no setup fee. The ${escapeHtml(clusterName)} hub is a section of the Front Step Sites blog with ${articles.length} article${articles.length === 1 ? "" : "s"} of practical, specific guidance, with 4 coherent marketing updates per Central calendar month included on the Launch plan.</p>${cluster.startsWith("trades/") ? '\n<p>When a customer is ready to call, use the <a href="/blog/click-to-call-making-your-phone-number-work-on-every-page/">click-to-call guide</a> to make the phone number work from every page.</p>' : ""}
+${introHtml}<p>Front Step Sites is a done-for-you website service for small businesses, priced at $99 a year with the domain included and no setup fee. The ${escapeHtml(clusterName)} hub is a section of the Front Step Sites blog with ${articles.length} article${articles.length === 1 ? "" : "s"} of practical, specific guidance, with 4 coherent marketing updates per Central calendar month included on the Launch plan.</p>${cluster.startsWith("trades/") ? '\n<p>When a customer is ready to call, use the <a href="/blog/click-to-call-making-your-phone-number-work-on-every-page/">click-to-call guide</a> to make the phone number work from every page.</p>' : ""}${cluster === "trades/plumbing" ? '\n<p>See the plumbing sample beside a second fictional service-business design in <a href="/blog/trade-business-website-examples-8-sections-in-order/">the trade website examples walkthrough</a>.</p>' : ""}
 <ul class="article-list">
 ${articles.map((a) => `<li><a href="/blog/${a.slug}/">${escapeHtml(a.title)}</a><p>${escapeHtml(a.answer)}</p></li>`).join("\n")}
 </ul>
