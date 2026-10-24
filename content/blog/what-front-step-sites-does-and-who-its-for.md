@@ -4,12 +4,13 @@ description: "Front Step Sites builds and runs small business websites for $99 a
 slug: "what-front-step-sites-does-and-who-its-for"
 cluster: "guides"
 answer: "Front Step Sites is a done-for-you website service for small businesses in the US: you answer a few questions, a site gets built for your trade, and the $99-a-year plan includes your domain, hosting, and local SEO setup. It fits owners who want a working website without learning a page builder, and it's not for businesses that need a full custom design, online store, or booking system."
-updated: "2026-10-02"
+published: "2026-10-02"
+updated: "2026-10-24"
 image: "/assets/blog/what-front-step-sites-does-and-who-its-for-cover.svg"
 imageAlt: "What Front Step Sites does: $99 a year, domain included, changes made for you"
 ---
 
-Front Step Sites is a done-for-you website service for small businesses in the US. You answer a few questions about your business, a website gets built for your trade, and the $99-a-year Launch plan includes the domain, hosting, and local SEO setup with no separate setup fee. It fits a business owner who wants a real website live this week without learning a page builder; it's not the right fit for a business that needs a custom design, an online store, or a booking system built from scratch.
+Front Step Sites is a done-for-you website service for small businesses in the US. You answer the business questionnaire, review the site we build for your trade, and approve it before publication. The $99-a-year Launch plan includes the domain, hosting, and local SEO setup with no separate setup fee. It fits a business owner who wants a real website without learning a page builder; it's not the right fit for a business that needs a custom design, an online store, or a booking system built from scratch.
 
 ## What does Front Step Sites actually build?
 
@@ -63,4 +64,4 @@ No long-term contract beyond the plan term you're on, and no fee to leave. The o
 
 ## The short version
 
-Front Step Sites is a $99-a-year, done-for-you website for small businesses, domain included, with changes made for you instead of by you. It fits an owner who'd rather spend time on the job than on a page builder, and it's not built for a business that needs a custom design, a store, or booking software from day one. The "Get started" button on this page shows a sample site for your trade before you decide.
+Front Step Sites is a $99-a-year, done-for-you website for small businesses, domain included, with changes made for you instead of by you. It fits an owner who'd rather spend time on the job than on a page builder, and it's not built for a business that needs a custom design, a store, or booking software from day one. The "Get started" button opens secure checkout for the $99/year Launch plan. To see an example first, view the [fictional plumbing sample](/plumber/).

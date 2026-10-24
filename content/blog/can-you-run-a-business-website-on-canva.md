@@ -6,9 +6,10 @@ cluster: "compare"
 answer: "Yes. Canva supports multipage websites, so needing service, about and contact pages does not rule it out. Before choosing it, test your domain, customer enquiry path and ongoing updates in the plan you intend to use. The decision is whether you want to maintain the site yourself or pay a service to do that work."
 lead: "Canva Websites is a page builder inside Canva with one-page and multipage website templates."
 published: "2026-10-03"
-updated: "2026-10-13"
+updated: "2026-10-24"
 image: "/assets/blog/can-you-run-a-business-website-on-canva-cover.svg"
 imageAlt: "Cover for Can you run a business website on Canva"
+mobileWideTable: "true"
 ---
 
 Canva is where many owners already make flyers, menus and business cards, so building a website there may be a familiar next step. A useful business site still needs to help a customer understand your services and contact you. Test that journey before you commit to any builder.
@@ -28,6 +29,19 @@ Examples should be tested with the owner's real needs rather than copied from an
 Yes. Canva's current [official website builder page](https://www.canva.com/website-builder/) describes adding multiple pages and offers both one-page and multipage templates. The older advice that nine business pages require nine separate Canva websites is out of date.
 
 For example, a plumber could plan a home page, five service pages, an about page, a service-area page and a contact page. Needing those nine pages is not, by itself, a reason to reject Canva. Build a small sample and check how visitors move between its pages.
+
+## Canva Websites limits to check (verified October 24, 2026)
+
+Canva's current help pages describe these publishing limits. Re-check Canva's help pages on the day you publish, because plan eligibility and limits can change.
+
+| Limit | Canva Free | Eligible paid plans |
+|---|---|---|
+| Pages in one multipage website | Up to 45 pages | Up to 45 pages |
+| Sites on the free my.canva.site domain | Up to five published sites | Unlimited published sites |
+| Externally purchased domains connected to Canva | Not available | Up to five connected domains |
+| Sections on each page | Design up to 20, but publish up to 10 | Publish up to 20 |
+
+Connecting a domain bought outside Canva requires an eligible paid plan. The limits above describe Canva Websites, not mobile website or Link in Bio templates, which have different publishing options.
 
 ## What can you design in Canva?
 
@@ -67,6 +81,10 @@ Yes. It supports multipage websites as well as one-page sites. Test whether your
 ### Do I need a domain name for a Canva website?
 
 If you want a business address you control, check the current custom-domain publishing options and renewal costs. Keep control of the registration and the account that manages it.
+
+### Is Canva Websites free, and what are the current limits?
+
+Canva Free can publish up to five sites on the free my.canva.site domain, with as many as 45 pages per multipage site and up to 10 published sections per page. Eligible paid plans can publish unlimited sites on that free domain, publish up to 20 sections per page, and connect up to five externally purchased domains. Re-check Canva's help pages before publishing because these limits can change.
 
 ### Can I start on Canva and move to a different builder later?
 
