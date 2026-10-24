@@ -272,6 +272,10 @@ function renderTradeExampleWalkthrough() {
     <article class="trade-example">
       <p class="example-label">Fictional example — no customer or result is represented</p>
       <h3>Plumbing sample</h3>
+      <figure class="doc-figure">
+        <a href="/plumber/" aria-label="Open the fictional plumbing sample shown"><img src="/assets/blog/trade-examples-plumbing-owned-20261024.jpg" alt="Fictional plumbing demo showing a van-livery opening, service navigation, and sample business identity." width="960" height="720" loading="lazy" decoding="async"></a>
+        <figcaption>Fictional plumbing sample, captured from our public demo.</figcaption>
+      </figure>
       <p><strong>Customer task:</strong> Preview a plumbing identity and complete a local sample inquiry.</p>
       <p><strong>Interaction:</strong> The sample form checks for a name and phone number, then shows a preview confirmation. Nothing is sent or stored.</p>
       <h4>Three page decisions</h4>
@@ -285,6 +289,10 @@ function renderTradeExampleWalkthrough() {
     <article class="trade-example">
       <p class="example-label">Fictional example — no customer or result is represented</p>
       <h3>Cleaning design</h3>
+      <figure class="doc-figure">
+        <a href="/examples/cleaning/" aria-label="Open the fictional cleaning sample shown"><img src="/assets/blog/trade-examples-cleaning-owned-20261024.jpg" alt="Fictional cleaning demo showing a calm introduction beside three clearly separated cleaning needs." width="960" height="720" loading="lazy" decoding="async"></a>
+        <figcaption>Fictional cleaning design, captured from our public demo.</figcaption>
+      </figure>
       <p><strong>Customer task:</strong> Compare cleaning needs and preview the questions a visitor would hand off.</p>
       <p><strong>Interaction:</strong> The cleaning brief lets a visitor choose an example cleaning type and preview a question. No request is sent, saved, or booked.</p>
       <h4>Three page decisions</h4>
