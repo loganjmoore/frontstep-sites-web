@@ -6,7 +6,7 @@ cluster: "guides"
 lead: "Useful trade business website examples make the customer path visible. A strong page puts the service, area, contact route, proof, job details, and next step in an order a customer can follow on a phone."
 answer: "A useful trade business website example starts with the service, service area, and contact route, then separates job types, explains assessment and access, shows real proof, defines cleanup or scope, and ends with a short inquiry path. This guide walks through 8 sections using Front Step Sites' existing tree-service page as a source-backed example rather than presenting a fabricated customer."
 published: "2026-10-13"
-updated: "2026-10-13"
+updated: "2026-10-23"
 author: "Logan Moore"
 image: "/assets/blog/trade-business-website-examples-8-sections-in-order-cover.svg"
 imageAlt: "Diagram of eight trade business website sections arranged from first screen through contact and follow-up"
@@ -14,13 +14,15 @@ imageAlt: "Diagram of eight trade business website sections arranged from first 
 
 Useful trade business website examples make the customer path visible. A strong page puts the service, area, contact route, proof, job details, and next step in an order a customer can follow on a phone. This walkthrough uses Front Step Sites' existing tree-service guide as the worked source, with no invented company or customer result.
 
+{{trade-example-walkthrough}}
+
 ## What does this trade website example actually prove?
 
 This trade website example proves that a page can be planned around two common customer situations without pretending a fictional business has customers. The source says: "One visitor has a fallen limb blocking a driveway; another wants a large backyard tree assessed before planning a patio. What should your tree service website show to help both people? Give them separate, clear routes to urgent contact and planned estimates, with enough detail to understand the work you actually handle."
 
 That passage comes from the site's [tree service website guide](/blog/website-tree-service/). It supports the page structure below: urgent and planned work need different routes, and each route needs enough detail for a visitor to recognize the right next step.
 
-The evidence has a clear limit. This is an editorial walkthrough of a supported page pattern. It provides no live customer website, screenshot, conversion study, or promise of a particular number of calls.
+The evidence has a clear limit. The plumbing and cleaning samples are fictional product walkthroughs, not customer sites. They demonstrate working local interactions and page decisions, but they provide no customer result, conversion study, or promise of a particular number of calls.
 
 ## What are the 8 sections of a trade business website?
 
