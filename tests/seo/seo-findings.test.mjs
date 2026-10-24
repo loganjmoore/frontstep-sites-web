@@ -30,8 +30,11 @@ test("homepage routes informational intent to purpose-built guides", () => {
 
 test("intent-mismatch articles lead with the requested primary formats", () => {
   const builders = read("blog/best-web-builder-sites-for-a-small-business/index.html");
-  assert.match(builders, /<h1>What Is a Website\? Best Web Builder Sites, Ranked<\/h1>/);
-  assert.ok(builders.indexOf("A website is a collection of linked pages") < builders.indexOf("Best web builder sites, ranked"));
+  assert.match(builders, /<title>Best Web Builder Sites for Small Businesses \(2026\)<\/title>/);
+  assert.match(builders, /<h1>Best Web Builder Sites for Small Businesses \(2026\)<\/h1>/);
+  assert.ok(builders.indexOf("Best web builder sites, ranked") < builders.indexOf("A website is a collection of linked pages"));
+  assert.match(builders, /fit-and-cost comparison, not a hands-on product test/);
+  assert.match(builders, /wix\.com, squarespace\.com, workspace\.google\.com, and frontstepsites\.com in October 2026/);
   assert.match(builders, /<strong>Verdict:<\/strong>/);
 
   const makers = read("blog/website-maker-or-done-for-you-three-year-cost/index.html");
@@ -40,6 +43,29 @@ test("intent-mismatch articles lead with the requested primary formats", () => {
   assert.match(makers, /<strong>Pro:<\/strong>/);
   assert.match(makers, /<strong>Con:<\/strong>/);
   assert.match(makers, /<th>Rank and option<\/th><th>Price checked<\/th><th>Main pro<\/th><th>Main con<\/th>/);
+});
+
+test("October 24 acquisition pages match metadata, schema, and cleaning journey requirements", () => {
+  const builders = read("blog/best-web-builder-sites-for-a-small-business/index.html");
+  const cleaning = read("blog/cleaning-local-seo-checklist/index.html");
+  const schemas = html => [...html.matchAll(/<script type="application\/ld\+json">(.*?)<\/script>/gs)].map(match => JSON.parse(match[1]));
+
+  for (const [html, title, canonical] of [
+    [builders, "Best Web Builder Sites for Small Businesses (2026)", "https://frontstepsites.com/blog/best-web-builder-sites-for-a-small-business/"],
+    [cleaning, "Local SEO for Cleaning Companies: 2026 Checklist", "https://frontstepsites.com/blog/cleaning-local-seo-checklist/"],
+  ]) {
+    assert.match(html, new RegExp(`<h1>${title.replace(/[()]/g, "\\$&")}<\\/h1>`));
+    assert.match(html, new RegExp(`<meta property="og:title" content="${title.replace(/[()]/g, "\\$&")}">`));
+    assert.match(html, new RegExp(`<link rel="canonical" href="${canonical}">`));
+    assert.equal(schemas(html).find(schema => schema["@type"] === "BlogPosting")?.headline, title);
+    assert.ok(schemas(html).find(schema => schema["@type"] === "FAQPage")?.mainEntity.length > 0);
+  }
+
+  assert.match(cleaning, /See the checklist in a fictional cleaning website/);
+  assert.match(cleaning, /href="\/examples\/cleaning\/" aria-label="Open the fictional cleaning website shown"><img/);
+  assert.match(cleaning, /recurring care, a detailed reset, and moving-home work/);
+  assert.match(cleaning, /sends or saves nothing/);
+  assert.match(cleaning, /href="https:\/\/app\.frontstepsites\.com\/get-started">Start your own Front Step Sites website<\/a>/);
 });
 
 test("October 13 ranking and acquisition findings are present in rendered pages", () => {
@@ -468,8 +494,8 @@ test("intent-mismatch articles lead with the requested formats", () => {
   }
 
   const builderHub = read("blog/best-web-builder-sites-for-a-small-business/index.html");
-  assert.match(builderHub, /<th>Option<\/th><th>Price as we checked it<\/th><th>Who makes edits<\/th><th>Fits best<\/th>/);
-  for (const option of ["Wix", "Squarespace", "Google Sites", "Done-for-you site"]) {
+  assert.match(builderHub, /<th>Option<\/th><th>Annual cost and billing<\/th><th>Who makes edits<\/th><th>Fits best<\/th><th>Limits to check<\/th>/);
+  for (const option of ["Wix", "Squarespace", "Google Sites", "Front Step Sites"]) {
     assert.match(builderHub, new RegExp(`<td>${option}<\\/td>`));
   }
 
@@ -663,7 +689,7 @@ test("cleaning Business Profile guide has the requested setup checklist", () => 
 test("October 10 entity-definition findings use unique plain definitions immediately after the H1", () => {
   const definitions = {
     "how-to-make-a-google-site": "Google Sites is a website builder from Google for making simple pages. It fits someone who needs a small brochure or information site and is comfortable handling the content and updates.",
-    "best-web-builder-sites-for-a-small-business": "A website is a collection of linked pages and files published under one domain name. A website builder is a self-serve tool for creating and editing those pages without writing the underlying code yourself. Front Step Sites is a done-for-you website service for small businesses that would rather request changes than use a builder themselves.",
+    "best-web-builder-sites-for-a-small-business": "Wix fits owners who want flexible page control, Squarespace fits owners who prefer structured templates, and Google Sites fits a few simple pages. Front Step Sites is a done-for-you service, not a self-serve builder, for owners who want someone else to build and update the site.",
     "click-to-call-making-your-phone-number-work-on-every-page": "Click-to-call is a phone link that opens a calling option on a supported device, and its HTML destination uses the tel:+12025550147 format.",
     "contact-forms-that-actually-get-filled-out": "A contact form is a set of website fields that lets a visitor send an inquiry to a business.",
     "how-to-write-an-about-page-for-a-local-business": "An About page is the part of a local business website that explains who runs the business, what it does, where it works, and what customers can expect.",
