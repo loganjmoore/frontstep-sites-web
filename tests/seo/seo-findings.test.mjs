@@ -68,6 +68,39 @@ test("October 24 acquisition pages match metadata, schema, and cleaning journey 
   assert.match(cleaning, /href="https:\/\/app\.frontstepsites\.com\/get-started">Start your own Front Step Sites website<\/a>/);
 });
 
+test("October 24 plumber checklist and homepage price facts stay synchronized", () => {
+  const plumbing = read("blog/website-plumbing/index.html");
+  const home = read("index.html");
+  const schemas = html => [...html.matchAll(/<script type="application\/ld\+json">(.*?)<\/script>/gs)].map(match => JSON.parse(match[1]));
+  const title = "Plumber Website Checklist and Working Example (2026)";
+
+  assert.match(plumbing, new RegExp(`<title>${title.replace(/[()]/g, "\\$&")}<\\/title>`));
+  assert.match(plumbing, new RegExp(`<h1>${title.replace(/[()]/g, "\\$&")}<\\/h1>`));
+  assert.match(plumbing, new RegExp(`<meta property="og:title" content="${title.replace(/[()]/g, "\\$&")}">`));
+  const posting = schemas(plumbing).find(schema => schema["@type"] === "BlogPosting");
+  assert.equal(posting?.headline, title);
+  assert.equal(posting?.datePublished, "2026-09-26");
+  assert.equal(posting?.dateModified, "2026-10-24");
+  assert.match(plumbing, /<meta name="description" content="[^"]*checklist[^"]*fictional working sample[^"]*">/);
+  assert.ok(plumbing.indexOf("Walk through a fictional plumber website") > plumbing.indexOf("Short answer"));
+  assert.match(plumbing, /Fictional sample: no customer, endorsement, or result is represented/);
+  assert.match(plumbing, /href="\/plumber\/\?p=2025550147" aria-label="Open the fictional plumber website with a sample phone number"><img/);
+  assert.match(plumbing, /<th>What to inspect<\/th><th>What the sample demonstrates<\/th>/);
+  for (const label of ["First screen", "Services", "Service area", "Contact route"]) assert.match(plumbing, new RegExp(`<td>${label}<\\/td>`));
+  assert.match(plumbing, /Your task:<\/strong> Confirm that the sample names the service, exposes a phone route when a sample number is supplied, explains the form boundary, and completes a sample inquiry\./);
+  assert.match(plumbing, /href="https:\/\/app\.frontstepsites\.com\/get-started">Start my plumber website<\/a>/);
+  assert.match(plumbing, /\$99\/year, domain included, no setup fee\./);
+
+  const freshness = "Prices checked October 24, 2026 on wix.com and squarespace.com; annual billing shown; region, currency, taxes, renewal prices, and current terms may differ.";
+  assert.ok(home.includes(freshness));
+  assert.match(home, /Wix Light at \$17 a month billed yearly \(\$204 a year\) and Squarespace Basic at \$19 a month billed annually \(\$228 a year\), checked October 24, 2026/);
+  assert.match(home, /Competitor prices checked October 24, 2026/);
+  assert.doesNotMatch(home, /Prices checked Sept|Competitor prices checked September|tooltester\.com/);
+  const structured = schemas(home);
+  assert.ok(structured.find(schema => schema["@type"] === "Organization"));
+  assert.match(structured.find(schema => schema["@type"] === "FAQPage").mainEntity.find(item => item.name === "Is this really cheaper than Wix?").acceptedAnswer.text, /Wix Light at \$17 a month billed yearly \(\$204 a year\) and Squarespace Basic at \$19 a month billed annually \(\$228 a year\)/);
+});
+
 test("October 13 ranking and acquisition findings are present in rendered pages", () => {
 
   const builders = read("blog/website-builders-vs-done-for-you-websites/index.html");
@@ -967,7 +1000,7 @@ test("catalog entries explain business fit while retaining direct answers elsewh
   const llms = read("llms.txt");
   assert.ok(llms.includes("- [Can you run a business website on Canva?](https://frontstepsites.com/blog/can-you-run-a-business-website-on-canva/): Canva supports multipage websites. Use this checklist to decide whether its publishing, contact and maintenance workflow fits your local business."));
   assert.ok(llms.includes("- [HTML Website Development: Build a Page Step by Step](https://frontstepsites.com/blog/html-website-development-when-custom-code-fits/): HTML website development is the process of writing the structure of a web page, styling it with CSS, testing its links and layout, and publishing the files to a web host."));
-  assert.ok(llms.includes("- [Plumbing: what your website needs](https://frontstepsites.com/blog/website-plumbing/): A plumber website needs a working call button, clear service hours, the towns you cover, and plain descriptions of the jobs you take."));
+  assert.ok(llms.includes("- [Plumber Website Checklist and Working Example (2026)](https://frontstepsites.com/blog/website-plumbing/): A plumber website needs a working call button, clear service hours, the towns you cover, and plain descriptions of the jobs you take."));
 });
 
 test("flagged read pages defer analytics and avoid late font swaps", () => {
