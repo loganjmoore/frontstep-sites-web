@@ -4,7 +4,8 @@ description: "Locksmith websites cost $0 to several thousand dollars depending o
 slug: "locksmith-website-cost"
 cluster: "trades/locksmith"
 answer: "A locksmith website can cost as little as a DIY builder's monthly fee or several thousand dollars for custom freelancer or agency work. A done-for-you plan sits in between: Front Step Sites is $99 a year with the domain included. What you pay should track what the site needs to do: show your service area, your license, and a phone number that gets answered."
-updated: "2026-09-30"
+published: "2026-09-30"
+updated: "2026-10-24"
 image: "/assets/blog/locksmith-website-cost-cover.svg"
 imageAlt: "Four pricing tiers for a locksmith website: DIY builder, freelancer, agency, and Front Step Sites at $99 a year"
 ---
@@ -26,7 +27,9 @@ Most locksmiths end up choosing between four routes to get a website built. Here
 | DIY builder | A monthly plan fee, paid by you | Owners with time to write and edit the site themselves | You're responsible for keeping license info, hours, and service areas current |
 | Freelancer | Often a few thousand dollars for a custom build | An owner who wants a one-time custom look and has a clear scope | Wide price variation; get the scope in writing before you pay |
 | Agency | Often a few thousand dollars and up, sometimes bundled with marketing | A shop that wants the website folded into a broader marketing plan | Ask for a breakdown of what's website work versus ad spend |
-| Front Step Sites | $99/yr, domain included, no setup fee | An owner who wants ongoing changes without touching an editor | four coherent marketing updates per Central calendar month included; four marketing updates per Central calendar month changes on the $29/mo Grow plan |
+| Front Step Sites | $99/yr for Launch; $29/mo or $290/yr for Grow | An owner who wants ongoing changes without touching an editor | four accepted coherent marketing updates per Central calendar month on either new plan |
+
+New Launch and Grow plans each include four accepted coherent marketing updates per America/Chicago calendar month, with no rollover. Existing paid unlimited contracts retain their existing entitlement. Launch includes the domain and has no setup fee.
 
 Treat the freelancer and agency numbers as planning ranges, not quotes. A locksmith site with one home page and a contact form costs less to build than one with separate lockout, rekey, and commercial pages, real photos, and a working after-hours contact route. Ask any bidder for a price against the same defined scope so you're comparing like for like.
 

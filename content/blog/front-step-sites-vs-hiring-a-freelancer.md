@@ -4,7 +4,8 @@ description: Compare Front Step Sites with hiring a freelancer on price, changes
 slug: front-step-sites-vs-hiring-a-freelancer
 cluster: compare
 answer: Front Step Sites fits owners who want a business website with a stated annual price and a defined process for ongoing changes. A freelancer can be the better choice when you need custom design or specialist functionality and want to agree on a detailed project scope. Compare responsibilities, future edits, and ownership as carefully as the initial price.
-updated: 2026-09-26
+published: 2026-09-26
+updated: 2026-10-24
 ---
 
 Front Step Sites is a done-for-you website service for small businesses, priced at $99 a year with the domain included, while a freelancer is an independent contractor you hire for a custom, scoped project. Should you pay a freelancer to build your website, or use Front Step Sites? Both can make sense, but they are not interchangeable purchases. The useful comparison is what your business needs built, who will keep it accurate, and what happens when those needs change.
@@ -13,10 +14,10 @@ Front Step Sites is a done-for-you website service for small businesses, priced 
 
 | | Front Step Sites | Freelancer |
 |---|---|---|
-| Ongoing cost | $99/yr (Launch), or $29/mo ($290/yr) for four marketing updates per Central calendar month changes on Grow | Varies by agreement; some include ongoing support, others end at handoff |
+| Ongoing cost | $99/yr (Launch), or $29/mo ($290/yr) for Grow; each includes four accepted coherent marketing updates per Central calendar month | Varies by agreement; some include ongoing support, others end at handoff |
 | Upfront cost | $0 setup fee | Often a few thousand dollars for a custom project, more for complex work |
 | Timeline | Ongoing subscription, no fixed project timeline | Set in the freelancer's quote, scoped to the project |
-| Changes, hosting, and renewals after launch | Write a plain-English request in your account: four per Central calendar month on Launch or four marketing updates per Central calendar month on Grow | Depends on the agreement: some freelancers offer ongoing support or teach you to edit, others hand it over at launch |
+| Changes, hosting, and renewals after launch | Write a plain-English request in your account: four accepted coherent marketing updates per Central calendar month on either new plan | Depends on the agreement: some freelancers offer ongoing support or teach you to edit, others hand it over at launch |
 
 ## Start with the job your website must do
 
@@ -40,9 +41,9 @@ Compare what you expect to pay during the first year and what you expect to pay 
 
 The first website is only part of the purchase. A pressure washing business may add gutter cleaning, change its coverage area, or need to remove a seasonal offer. Decide who will handle those edits before you sign up.
 
-The Front Step Sites $99 plan includes 4 coherent marketing updates per Central calendar month. Customers ask for changes by writing in their account. New pages, blog posts, and local SEO setup are included.
+New Launch and Grow plans each include four accepted coherent marketing updates per America/Chicago calendar month, with no rollover. Existing paid unlimited contracts retain their existing entitlement. Customers ask for changes by writing in their account. New pages, blog posts, and local SEO setup are included.
 
-The Grow plan costs $29 a month or $290 a year. It includes four coherent marketing updates per Central calendar month and Google reviews shown on the site.
+The Grow plan costs $29 a month or $290 a year and includes Google reviews shown on the site.
 
 A freelancer may offer ongoing support, teach you to make edits, or finish the agreed project and hand it over. None of those arrangements is automatically wrong. Ask how requests are submitted, how they are priced, and what response time is actually agreed. Choose an arrangement that fits your normal workload, including busy seasons.
 

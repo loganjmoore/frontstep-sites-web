@@ -4,7 +4,8 @@ description: "Compare Front Step Sites with a marketing agency by the work you n
 slug: "front-step-sites-vs-a-marketing-agency"
 cluster: "compare"
 answer: "Front Step Sites fits an owner who wants a business website with ongoing changes at a clear recurring price. A marketing agency may fit better when you need someone to plan and run advertising, coordinate larger campaigns, or handle a complex project. Compare the work each proposal includes before comparing its price."
-updated: 2026-09-26
+published: 2026-09-26
+updated: 2026-10-24
 ---
 
 Front Step Sites is a done-for-you website service for small businesses, priced at $99 a year with the domain included, while a marketing agency is a firm that plans and runs advertising and larger campaigns. Do you need a website service, or do you need a marketing agency? It is easy to compare the invoices and miss that you are buying different work. Start with what needs fixing in your business, then choose the person or service equipped to do that job.
@@ -13,10 +14,10 @@ Front Step Sites is a done-for-you website service for small businesses, priced 
 
 | | Front Step Sites | Marketing agency |
 |---|---|---|
-| Ongoing cost | $99/yr (Launch), or $29/mo ($290/yr) for four marketing updates per Central calendar month changes on Grow | Set by the agency's proposal; ask for it broken out from ad spend |
+| Ongoing cost | $99/yr (Launch), or $29/mo ($290/yr) for Grow; each includes four accepted coherent marketing updates per Central calendar month | Set by the agency's proposal; ask for it broken out from ad spend |
 | Upfront cost | $0 setup fee | Varies; ask what's included before any ad spend starts |
 | Contract length | Ongoing subscription, cancel any time | Ask what happens after any introductory term |
-| Who handles changes | You submit requests in your account: four per Central calendar month on Launch or four marketing updates per Central calendar month on Grow | Ask who on the team handles requests and how fast |
+| Who handles changes | You submit requests in your account: four accepted coherent marketing updates per Central calendar month on either new plan | Ask who on the team handles requests and how fast |
 
 ## Decide whether the problem is the website or the marketing
 
@@ -28,9 +29,9 @@ Write one sentence describing your need. For example: "People referred to us nee
 
 ## Know what the Front Step Sites plans include
 
-Front Step Sites costs $99 a year with the domain included and no setup fee. On that plan, you get 4 coherent marketing updates per Central calendar month. Customers request changes by writing in their account.
+Front Step Sites costs $99 a year with the domain included and no setup fee. New Launch and Grow plans each include four accepted coherent marketing updates per America/Chicago calendar month, with no rollover. Existing paid unlimited contracts retain their existing entitlement. Customers request changes by writing in their account.
 
-The Grow plan costs $29 a month or $290 a year. It includes four coherent marketing updates per Central calendar month and Google reviews shown on the site. New pages, blog posts, and local SEO setup are included.
+The Grow plan costs $29 a month or $290 a year and includes Google reviews shown on the site. New pages, blog posts, and local SEO setup are included.
 
 Choose around the updates you actually expect to request. A house cleaner might need an occasional service area correction or a new page explaining move-out cleaning. A landscaper changing available seasonal services may want more frequent updates. Write out those likely requests before choosing a plan.
 

@@ -37,3 +37,35 @@ test("new three-year budget article preserves pricing and the accepted marketing
     assert.doesNotMatch(article, /(?:Build online scheduling|Accept deposits on the site)(?:\s*\|\s*|<\/td><td>)Separate quote/);
   }
 });
+
+test("comparison and cost articles use the current monthly update scope", () => {
+  const slugs = [
+    "front-step-sites-vs-hiring-a-freelancer",
+    "front-step-sites-vs-a-marketing-agency",
+    "auto-repair-website-cost",
+    "locksmith-website-cost",
+    "appliance-repair-website-cost",
+  ];
+
+  for (const slug of slugs) {
+    for (const path of [`content/blog/${slug}.md`, `blog/${slug}/index.html`]) {
+      const article = read(path);
+      assert.match(article, /four accepted coherent marketing updates per America\/Chicago calendar month, with no rollover/);
+      assert.match(article, /Existing paid unlimited contracts retain their existing entitlement/);
+      assert.doesNotMatch(article, /four marketing updates per Central calendar month changes/i);
+      assert.doesNotMatch(article, /Launch.{0,80}(?:two|2) (?:requests|updates)|Grow.{0,80}unlimited\b/i);
+    }
+  }
+
+  for (const [slug, published] of [
+    ["front-step-sites-vs-hiring-a-freelancer", "2026-09-26"],
+    ["front-step-sites-vs-a-marketing-agency", "2026-09-26"],
+    ["auto-repair-website-cost", "2026-09-30"],
+    ["locksmith-website-cost", "2026-09-30"],
+    ["appliance-repair-website-cost", "2026-09-30"],
+  ]) {
+    const article = read(`blog/${slug}/index.html`);
+    assert.match(article, new RegExp(`"datePublished":"${published}"`));
+    assert.match(article, /"dateModified":"2026-10-24"/);
+  }
+});
