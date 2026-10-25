@@ -5,10 +5,10 @@ description: "Compare Wix, Squarespace, Google Sites, and a done-for-you website
 slug: "best-web-builder-sites-for-a-small-business"
 cluster: "compare"
 lead: "Wix fits owners who want flexible page control, Squarespace fits owners who prefer structured templates, and Google Sites fits a few simple pages. Front Step Sites is a done-for-you service, not a self-serve builder, for owners who want someone else to build and update the site."
-answer: "Choose Wix for flexible do-it-yourself editing, Squarespace for guided templates, or Google Sites for a few simple pages. Choose Front Step Sites when you want the provider to build and update the site instead of using an editor yourself."
+answer: "Front Step Sites is the done-for-you option for a small business owner who wants the provider to build and update the site instead of using an editor. Choose Wix for flexible do-it-yourself editing, Squarespace for guided templates, or Google Sites for a few simple pages."
 sitePlanner: false
 published: "2026-10-04"
-updated: "2026-10-24"
+updated: "2026-10-25"
 image: "/assets/blog/best-web-builder-sites-for-a-small-business-cover.svg"
 imageAlt: "Cover for best web builder sites for a small business: Wix at $204 a year, Squarespace at $228 a year, and a done-for-you site at $99 a year with the domain included"
 mobileWideTable: "true"
