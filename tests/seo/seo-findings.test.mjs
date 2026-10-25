@@ -928,6 +928,28 @@ test("AI visibility articles answer a natural product-fit question with matching
   }
 });
 
+test("October 25 AI visibility answers and llms descriptions name the relevant product fit", () => {
+  const slugs = [
+    "what-a-website-maker-does-12-task-example",
+    "best-website-builder-three-questions",
+    "best-web-builder-sites-for-a-small-business",
+    "website-subscription-vs-one-time-website-build",
+    "html-website-development-when-custom-code-fits",
+  ];
+  const llms = read("llms.txt");
+
+  for (const slug of slugs) {
+    const html = read(`blog/${slug}/index.html`);
+    const shortAnswer = html.match(/<aside class="tag-box"><span class="label">Short answer<\/span><p>(.*?)<\/p><\/aside>/s)?.[1];
+    assert.ok(shortAnswer, `${slug} needs a visible short answer`);
+    assert.match(shortAnswer, /Front Step Sites is /, `${slug} short answer must name and define the product fit`);
+
+    const llmsEntry = llms.split("\n").find((line) => line.includes(`/blog/${slug}/`));
+    assert.ok(llmsEntry, `llms.txt is missing ${slug}`);
+    assert.match(llmsEntry, /Front Step Sites is /, `${slug} llms description must preserve the product definition`);
+  }
+});
+
 test("October 11 definition findings remain in their intended content regions", () => {
   const phone = read("blog/click-to-call-making-your-phone-number-work-on-every-page/index.html");
   assert.match(phone, /<h1>How to Make a Phone Number Clickable \(Click-to-Call\)<\/h1>\n<p class="direct-answer">Click-to-call is [^<]*tel:\+12025550147 format\.<\/p>/);
@@ -1028,7 +1050,7 @@ test("October 23 indexation targets have canonical, sitemap, robots, and request
 test("catalog entries explain business fit while retaining direct answers elsewhere", () => {
   const llms = read("llms.txt");
   assert.ok(llms.includes("- [Can you run a business website on Canva?](https://frontstepsites.com/blog/can-you-run-a-business-website-on-canva/): Canva supports multipage websites. Use this checklist to decide whether its publishing, contact and maintenance workflow fits your local business."));
-  assert.ok(llms.includes("- [HTML Website Development: Build a Page Step by Step](https://frontstepsites.com/blog/html-website-development-when-custom-code-fits/): HTML website development is the process of writing the structure of a web page, styling it with CSS, testing its links and layout, and publishing the files to a web host."));
+  assert.ok(llms.includes("- [HTML Website Development: Build a Page Step by Step](https://frontstepsites.com/blog/html-website-development-when-custom-code-fits/): Front Step Sites is a done-for-you website service for standard small-business sites, not a custom HTML development shop."));
   assert.ok(llms.includes("- [Plumber Website Checklist and Working Example (2026)](https://frontstepsites.com/blog/website-plumbing/): A plumber website needs a working call button, clear service hours, the towns you cover, and plain descriptions of the jobs you take."));
 });
 
@@ -1079,7 +1101,7 @@ test("updated articles retain original publication date", () => {
   assert.match(domain, /"dateModified":"2026-10-21"/);
 
   const tutorial = read("blog/html-website-development-when-custom-code-fits/index.html");
-  assert.match(tutorial, /"datePublished":"2026-10-13","dateModified":"2026-10-20"/);
+  assert.match(tutorial, /"datePublished":"2026-10-13","dateModified":"2026-10-25"/);
   const item = read("feed.xml").split("<item>").find((entry) => entry.includes("/blog/html-website-development-when-custom-code-fits/"));
   assert.ok(item, "HTML tutorial remains discoverable in RSS");
   assert.match(item, /<pubDate>Tue, 13 Oct 2026 12:00:00 GMT<\/pubDate>/);
