@@ -6,7 +6,7 @@ cluster: "compare"
 answer: "Yes. Canva supports multipage websites, so needing service, about and contact pages does not rule it out. Before choosing it, test your domain, customer enquiry path and ongoing updates in the plan you intend to use. The decision is whether you want to maintain the site yourself or pay a service to do that work."
 lead: "Canva Websites is a page builder inside Canva with one-page and multipage website templates."
 published: "2026-10-03"
-updated: "2026-10-24"
+updated: "2026-10-27"
 image: "/assets/blog/can-you-run-a-business-website-on-canva-cover.svg"
 imageAlt: "Cover for Can you run a business website on Canva"
 mobileWideTable: "true"
@@ -22,7 +22,20 @@ Canva is where many owners already make flyers, menus and business cards, so bui
 
 **Verdict:** Canva Websites works best for an owner who already likes Canva, needs a straightforward site, and can test the exact publishing and update workflow in the intended plan. A done-for-you service fits better when writing, building, and ongoing edits are work the owner wants to hand off.
 
-Examples should be tested with the owner's real needs rather than copied from an unrelated showcase. A solo service business can prototype a home, services, about, and contact journey; a business that needs booking, payment, a large catalogue, or unusual data should prove those requirements in a sample before choosing Canva.
+| Plan and published price | Main pro | Main con | Review verdict |
+|---|---|---|---|
+| Canva Free ($0) | Publish up to five sites on a free my.canva.site address and test the editor without buying a website plan | Shows Canva branding, does not connect an existing domain, and publishes at most 10 sections per page | Useful for a prototype or temporary information site, not the final test of a business domain |
+| Eligible paid Canva plan (price varies by plan, billing method, and region) | Connect an existing domain, publish unlimited sites on the free Canva domain, and publish up to 20 sections per page | The owner still handles the words, design, publishing, testing, and later updates | Consider it only after checking the current upgrade price and completing the same customer journey on the intended plan |
+
+## Three example Canva websites to build and review
+
+These are practical test plans, not customer sites or claims that Canva provides these businesses. Use the one closest to your needs and judge the finished draft by the listed customer task.
+
+| Example Canva site | Pages or sections to build | Customer task to test | What would fail the review |
+|---|---|---|---|
+| Local plumber brochure | Home, drain cleaning, water heaters, service area, about, and contact | Find the right service, confirm coverage, and use the phone or enquiry route | Generic services, an invented location, or a contact route that is not tested end to end |
+| Salon service site | Home, services and prices, team, gallery, policies, and contact | Check a current price, choose the right service, and contact the salon on a phone | Stale prices, decorative text that is hard to read, or navigation that hides the service list |
+| One-off event site | Summary, date and location, schedule, accessibility details, registration link, and contact | Confirm when and where the event happens, then open the real registration route | Missing access information, an outdated schedule, or a registration link that loses the event context |
 
 ## Can Canva build a multipage business website?
 

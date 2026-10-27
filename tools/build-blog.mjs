@@ -826,6 +826,7 @@ function main() {
       author: data.author,
       image: data.image,
       imageAlt: data.imageAlt,
+      llmsDescription: data.llmsDescription,
       sitePlanner: data.sitePlanner,
       resourceTool: data.resourceTool,
       launchCtaInBody: data.launchCtaInBody,
@@ -987,7 +988,7 @@ function main() {
   llmsLines.push("## Articles");
   llmsLines.push("");
   for (const a of articles) {
-    llmsLines.push(`- [${a.title}](${SITE}/blog/${a.slug}/): ${a.slug === "can-you-run-a-business-website-on-canva" ? a.description : firstSentence(a.answer)}`);
+    llmsLines.push(`- [${a.title}](${SITE}/blog/${a.slug}/): ${a.llmsDescription || (a.slug === "can-you-run-a-business-website-on-canva" ? a.description : firstSentence(a.answer))}`);
   }
   writeFileSync(join(WEB, "llms.txt"), llmsLines.join("\n") + "\n");
 

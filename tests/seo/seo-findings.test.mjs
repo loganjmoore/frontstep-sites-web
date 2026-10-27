@@ -20,11 +20,19 @@ test("homepage preserves buyer CTA and excludes unrelated query FAQs", () => {
   for (const entry of blocks[0].mainEntity) assert.ok(html.includes(`<summary>${entry.name}</summary>`));
 });
 
-test("homepage routes informational intent to purpose-built guides", () => {
+test("homepage answers website intent without displacing its buyer journey", () => {
   const home = read("index.html");
   assert.match(home, /href="\/blog\/what-is-a-website-four-parts\/">What a website is<\/a>/);
   assert.match(home, /href="\/blog\/how-to-create-a-small-business-website\/">How a website is created<\/a>/);
   assert.match(home, /href="\/blog\/best-website-builder-three-questions\/">Best website builders, ranked<\/a>/);
+  assert.match(home, /<h2 id="website-definition">What is a website\?<\/h2>/);
+  assert.match(home, /<h2 id="best-website-creators">Best website creators for a small business, ranked<\/h2>/);
+  assert.match(home, /<th>Ranked creator<\/th><th>Published price<\/th><th>Main pro<\/th><th>Main con<\/th>/);
+  for (const creator of ["Front Step Sites", "Wix", "Squarespace", "Google Sites"]) {
+    assert.match(home, new RegExp(`<li><strong>${creator}:<\\/strong>`));
+  }
+  assert.ok(home.indexOf('class="shelf"') < home.indexOf('class="creator-guide"'), "the offer shelf must remain ahead of the comparison");
+  assert.ok(home.indexOf('class="creator-guide"') < home.indexOf('class="sample-options"'), "the comparison must remain near the top");
   assert.doesNotMatch(home, /class="website-basics"|id="start-h"|id="maker-h"/);
 });
 
@@ -110,12 +118,24 @@ test("October 13 ranking and acquisition findings are present in rendered pages"
 
   const ranked = read("blog/best-website-builder-three-questions/index.html");
   assert.match(ranked, /<h1>Best Website Builders for Small Businesses, Ranked<\/h1>/);
+  assert.match(ranked, /data-website-resource="brief"/);
+  assert.ok(ranked.indexOf('data-website-resource="brief"') < ranked.indexOf("AI website builders, ranked for a small business test"));
+  assert.match(ranked, /Download website brief/);
+  for (const builder of ["Wix AI Website Builder", "Squarespace Blueprint AI", "Base44"]) {
+    assert.match(ranked, new RegExp(`<strong>${builder}:<\\/strong>`));
+  }
   assert.match(ranked, /<h2 id="best-website-builders-ranked-for-a-small-business">/);
   assert.match(ranked, /<th>Rank and option<\/th><th>Price confirmed in our guides<\/th><th>Main feature<\/th><th>Testing notes<\/th>/);
   assert.match(ranked, /What should you test in an AI website builder\?/);
 
   const canva = read("blog/can-you-run-a-business-website-on-canva/index.html");
   assert.match(canva, /Canva Websites review: pros, cons, and verdict/);
+  assert.match(canva, /<th>Plan and published price<\/th><th>Main pro<\/th><th>Main con<\/th><th>Review verdict<\/th>/);
+  assert.match(canva, /Canva Free \(\$0\)/);
+  assert.match(canva, /Three example Canva websites to build and review/);
+  for (const example of ["Local plumber brochure", "Salon service site", "One-off event site"]) {
+    assert.match(canva, new RegExp(`<td>${example}<\\/td>`));
+  }
   for (const label of ["Pros:", "Cons:", "Verdict:"]) assert.match(canva, new RegExp(`<strong>${label}<\\/strong>`));
 
   const html = read("blog/html-website-development-when-custom-code-fits/index.html");
@@ -216,7 +236,7 @@ test("October 24 product explainer and Canva limits match the verified journeys"
   const answer = "Canva Free can publish up to five sites on the free my.canva.site domain, with as many as 45 pages per multipage site and up to 10 published sections per page. Eligible paid plans can publish unlimited sites on that free domain, publish up to 20 sections per page, and connect up to five externally purchased domains. Re-check Canva's help pages before publishing because these limits can change.";
   assert.equal(faq.mainEntity.find((item) => item.name === question)?.acceptedAnswer.text, answer);
   assert.match(canva, new RegExp(`<h3[^>]*>${question.replace("?", "\\?")}<\\/h3>\\n<p>${answer.replace(/[.*+?^${}()|[\\]\\]/g, "\\$&")}<\\/p>`));
-  assert.match(canva, /"datePublished":"2026-10-03","dateModified":"2026-10-24"/);
+  assert.match(canva, /"datePublished":"2026-10-03","dateModified":"2026-10-27"/);
 });
 
 test("priority article and hub changes are present in generated HTML", () => {
@@ -928,7 +948,7 @@ test("AI visibility articles answer a natural product-fit question with matching
   }
 });
 
-test("October 25 AI visibility answers and llms descriptions name the relevant product fit", () => {
+test("AI visibility answers retain product fit while target llms descriptions explain their pages", () => {
   const slugs = [
     "what-a-website-maker-does-12-task-example",
     "best-website-builder-three-questions",
@@ -937,6 +957,10 @@ test("October 25 AI visibility answers and llms descriptions name the relevant p
     "html-website-development-when-custom-code-fits",
   ];
   const llms = read("llms.txt");
+  const topicDescriptions = {
+    "best-website-builder-three-questions": "Compare the best website builders and a done-for-you option by verified price, editing model, domain control, test notes, and fit for a small business.",
+    "html-website-development-when-custom-code-fits": "Build a complete HTML web page step by step, add CSS, test it on a phone, and learn when custom code fits a small-business website.",
+  };
 
   for (const slug of slugs) {
     const html = read(`blog/${slug}/index.html`);
@@ -946,7 +970,8 @@ test("October 25 AI visibility answers and llms descriptions name the relevant p
 
     const llmsEntry = llms.split("\n").find((line) => line.includes(`/blog/${slug}/`));
     assert.ok(llmsEntry, `llms.txt is missing ${slug}`);
-    assert.match(llmsEntry, /Front Step Sites is /, `${slug} llms description must preserve the product definition`);
+    if (topicDescriptions[slug]) assert.ok(llmsEntry.endsWith(topicDescriptions[slug]), `${slug} needs its topic description in llms.txt`);
+    else assert.match(llmsEntry, /Front Step Sites is /, `${slug} llms description must preserve the product definition`);
   }
 });
 
@@ -1050,7 +1075,7 @@ test("October 23 indexation targets have canonical, sitemap, robots, and request
 test("catalog entries explain business fit while retaining direct answers elsewhere", () => {
   const llms = read("llms.txt");
   assert.ok(llms.includes("- [Can you run a business website on Canva?](https://frontstepsites.com/blog/can-you-run-a-business-website-on-canva/): Canva supports multipage websites. Use this checklist to decide whether its publishing, contact and maintenance workflow fits your local business."));
-  assert.ok(llms.includes("- [HTML Website Development: Build a Page Step by Step](https://frontstepsites.com/blog/html-website-development-when-custom-code-fits/): Front Step Sites is a done-for-you website service for standard small-business sites, not a custom HTML development shop."));
+  assert.ok(llms.includes("- [HTML Website Development: Build a Page Step by Step](https://frontstepsites.com/blog/html-website-development-when-custom-code-fits/): Build a complete HTML web page step by step, add CSS, test it on a phone, and learn when custom code fits a small-business website."));
   assert.ok(llms.includes("- [Plumber Website Checklist and Working Example (2026)](https://frontstepsites.com/blog/website-plumbing/): A plumber website needs a working call button, clear service hours, the towns you cover, and plain descriptions of the jobs you take."));
 });
 
