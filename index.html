@@ -83,6 +83,17 @@ header nav a.hide-sm{display:none}
   .scope-part + .scope-part{border-top:0;border-left:1px solid var(--line);padding-left:20px}
   .hub-links{grid-column:1/-1}
 }
+.creator-guide{margin-top:40px;padding-top:28px;border-top:2px solid var(--ink)}
+.creator-guide h2 + p{margin-top:.8rem}
+.creator-guide h2:not(:first-child){margin-top:2.2rem}
+.creator-guide p{max-width:68ch;color:var(--ink-2)}
+.creator-list{margin:1.2rem 0 1.5rem;padding-left:1.4rem;max-width:72ch}
+.creator-list li{margin:.55rem 0}
+.creator-table{overflow-x:auto;margin:1rem 0}
+.creator-table table{width:100%;min-width:720px;border-collapse:collapse;background:var(--tag);border:1.5px solid var(--ink)}
+.creator-table th,.creator-table td{padding:.75rem;text-align:left;vertical-align:top;border-bottom:1px solid var(--line)}
+.creator-table th{background:var(--yellow);font-size:.88rem}
+.creator-table tr:last-child td{border-bottom:0}
 .shelf{position:relative;margin-top:40px;padding-bottom:36px}
 .shelf .tags{display:grid;gap:40px;align-items:start;position:relative;z-index:1}
 @media(min-width:860px){.shelf .tags{grid-template-columns:1fr 1.22fr 1fr;gap:28px}}
@@ -324,6 +335,32 @@ footer p{color:var(--ink-2);font-size:.92rem}
         </div>
       </div>
     </div>
+
+    <section class="creator-guide" aria-labelledby="website-definition">
+      <h2 id="website-definition">What is a website?</h2>
+      <p>A website is a group of connected pages and resources published under one domain name. A small-business website usually explains what the business does, where it works, and how a customer can call or send an enquiry. The <a href="/blog/what-is-a-website-four-parts/">plain-English website guide</a> explains its domain, hosting, pages, and content.</p>
+
+      <h2 id="best-website-creators">Best website creators for a small business, ranked</h2>
+      <p>The best website creator depends on who will write, build, and maintain the pages. This ranking puts a done-for-you service first for an owner who wants to hand off that work. Owners who want direct editing control should rank the self-serve builders first.</p>
+      <ol class="creator-list">
+        <li><strong>Front Step Sites:</strong> best when the owner wants the writing, build, hosting, and routine changes handled.</li>
+        <li><strong>Wix:</strong> best when the owner wants a flexible visual editor and will make each update.</li>
+        <li><strong>Squarespace:</strong> best when the owner wants structured templates and will make each update.</li>
+        <li><strong>Google Sites:</strong> best for a few simple pages tied to a Google account.</li>
+      </ol>
+      <div class="creator-table" role="region" aria-label="Best website creator price, pro, and con comparison" tabindex="0">
+        <table>
+          <thead><tr><th>Ranked creator</th><th>Published price</th><th>Main pro</th><th>Main con</th></tr></thead>
+          <tbody>
+            <tr><td>1. Front Step Sites</td><td>$99/year, domain included</td><td>Provider writes, builds, hosts, and handles routine changes</td><td>No self-serve editor; booking, payment, store, and custom backend applications are outside the plan</td></tr>
+            <tr><td>2. Wix</td><td>Light from $17/month billed yearly, checked October 24, 2026</td><td>Flexible self-serve visual editor</td><td>The owner writes, builds, checks, and maintains the site</td></tr>
+            <tr><td>3. Squarespace</td><td>Basic $19/month billed annually, checked October 24, 2026</td><td>Structured templates and direct editing control</td><td>The owner remains responsible for content and updates</td></tr>
+            <tr><td>4. Google Sites</td><td>No separate website plan to choose</td><td>Simple pages tied to a Google account</td><td>Fewer business-site controls, so test the domain, metadata, contact route, and mobile navigation</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Prices, plan names, and terms can change. Compare the <a href="/blog/best-website-builder-three-questions/">best website builders and their test notes</a>, then use the <a href="/blog/website-maker-or-done-for-you-three-year-cost/">three-year website maker cost comparison</a> before choosing.</p>
+    </section>
 
     <div class="sample-options" aria-label="Sample and preview options">
       <a class="btn btn-secondary" href="/plumber/">View sample</a>
