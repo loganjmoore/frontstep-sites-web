@@ -958,6 +958,7 @@ test("AI visibility answers retain product fit while target llms descriptions ex
   ];
   const llms = read("llms.txt");
   const topicDescriptions = {
+    "best-web-builder-sites-for-a-small-business": "Compare Wix, Squarespace, Google Sites, and a done-for-you website by annual cost, who makes edits, best fit, and limits.",
     "best-website-builder-three-questions": "Compare the best website builders and a done-for-you option by verified price, editing model, domain control, test notes, and fit for a small business.",
     "html-website-development-when-custom-code-fits": "Build a complete HTML web page step by step, add CSS, test it on a phone, and learn when custom code fits a small-business website.",
   };

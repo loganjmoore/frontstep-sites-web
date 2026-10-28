@@ -13,6 +13,7 @@ image: "/assets/blog/best-web-builder-sites-for-a-small-business-cover.svg"
 imageAlt: "Cover for best web builder sites for a small business: Wix at $204 a year, Squarespace at $228 a year, and a done-for-you site at $99 a year with the domain included"
 mobileWideTable: "true"
 tableRegionLabel: "Web builder cost, editing, fit, and limit comparison"
+llmsDescription: "Compare Wix, Squarespace, Google Sites, and a done-for-you website by annual cost, who makes edits, best fit, and limits."
 ---
 
 **How this comparison was checked:** This is a fit-and-cost comparison, not a hands-on product test. We checked the primary pricing and product pages on wix.com, squarespace.com, workspace.google.com, and frontstepsites.com in October 2026. Verify current prices, renewal terms, taxes, availability, and plan limits before buying.
