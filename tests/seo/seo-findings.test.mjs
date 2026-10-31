@@ -750,9 +750,11 @@ test("citability pages put plain subject definitions in extractable article text
 
 test("cleaning Business Profile guide includes current constraints and the worked example", () => {
   const html = read("blog/cleaning-google-business-profile/index.html");
-  const title = "Google Business Profile for Cleaning Companies: Setup Checklist (2026)";
+  const title = "Cleaning Company Google Business Profile Checklist (2026)";
+  const h1 = "Google Business Profile for Cleaning Companies: Setup Checklist (2026)";
+  assert.ok(title.length <= 60);
   assert.match(html, new RegExp(`<title>${title.replace(/[()]/g, "\\$&")}<\\/title>`));
-  assert.match(html, new RegExp(`<h1>${title.replace(/[()]/g, "\\$&")}<\\/h1>`));
+  assert.match(html, new RegExp(`<h1>${h1.replace(/[()]/g, "\\$&")}<\\/h1>`));
   const description = html.match(/<meta name="description" content="([^"]+)">/)?.[1] || "";
   assert.ok(description.length < 160);
   for (const phrase of ["service-area setup", "verification", "categories", "services", "photos", "estimate route"]) assert.ok(description.includes(phrase));
