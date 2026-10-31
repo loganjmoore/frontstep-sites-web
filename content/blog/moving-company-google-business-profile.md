@@ -1,51 +1,60 @@
 ---
-title: "Moving Company Google Business Profile"
-description: "Set up a moving company Google Business Profile with the right service area, your USDOT number, and honest weekend hours, using Google's own rules."
+title: "Moving Company Google Business Profile Setup Checklist (2026)"
+h1: "Moving Company Google Business Profile Setup Checklist (2026)"
+description: "Set up a moving company profile with service areas, category, mover credentials, accurate hours, photos, reviews, and a tested quote route."
 slug: "moving-company-google-business-profile"
 cluster: "trades/moving"
-answer: "A moving company Google Business Profile needs a service area built from cities or zip codes (not a radius), your USDOT number in the business description if you cross state lines, and accurate customer-facing hours when they apply to your business. Set it up as a service-area business if customers never visit a storefront, and upload real photos of your trucks and crew."
-updated: "2026-10-02"
+answer: "Claim the correct Google Business Profile and use one service-area profile when customers do not visit an eligible office, then hide that address. Choose Moving company as the primary category when accurate, list only real coverage and services, verify applicable FMCSA or state credentials, publish accurate customer-facing hours, and test the public phone, website, and quote path."
+mobileWideTable: "true"
+published: "2026-10-02"
+updated: "2026-10-31"
 image: "/assets/blog/moving-company-google-business-profile-cover.svg"
-imageAlt: "A moving company Google Business Profile checklist: service area, USDOT number, and booking hours"
+imageAlt: "A moving company Google Business Profile setup checklist covering ownership, service area, category, credentials, hours, contact routes, photos, and reviews"
 ---
 
-A moving company Google Business Profile needs three things most trades can treat as optional: a service area built from cities or zip codes instead of a radius, your USDOT number if you cross state lines, and accurate booking availability where business hours apply. Set the profile up as a service-area business if your crew works out of a truck and customers never visit an office. Get those three pieces right and a customer comparing three or four movers can tell in seconds whether you cover their route and are a legitimate, regulated operation.
+## Moving company profile setup table
+
+| Setup item | What the moving company supplies | Public pass check |
+|---|---|---|
+| Ownership | The existing eligible profile, real business name, and an account the business controls | Search and Maps show one correct profile, not a new duplicate |
+| Address or service area | One service-area profile for the central office when customers do not visit an eligible location; hide that address and list real cities or postal codes | No private or ineligible address is public, and listed coverage matches routes the company actually accepts |
+| Category and services | Moving company as the primary category when it accurately describes the main work, plus only real moving or storage services | The public category and services match what a customer can currently book |
+| Applicable credentials | The legal business identity and FMCSA or state credentials that apply to the operation | The name and credential number match the business in the appropriate official public lookup; the profile does not imply a credential that is not held |
+| Customer-facing hours | Accurate hours when Google guidance says the business should publish them | Public hours match when customers can actually reach or visit the business, or hours are omitted when the business type should not provide them |
+| Phone and website | A current business phone, website, and clear quote route | A mobile test opens the right number and site, and a test quote reaches the intended next step |
+| Photos and reviews | Permission-cleared truck, crew, and equipment photos plus privacy-safe review replies | Images represent the business, and replies reveal no customer address, belongings, or private move details |
+
+Source check: Google Business Profile service-area and business-representation guidance, plus FMCSA mover-registration guidance, was rechecked on October 31, 2026. Google confirms one profile for a service-area business, address hiding when customers are not received there, up to 20 cities or postal codes instead of a radius, and an overall boundary of about two hours' driving time. FMCSA confirms that interstate movers need applicable federal registration and that intrastate requirements vary by state.
 
 ## How do you set up a Google Business Profile for a moving company?
 
-Search your business name on Google Maps before creating a new profile. A past dispatcher, a previous owner, or an old directory listing may have already generated one, and claiming an existing profile keeps whatever reviews and history it has instead of starting from zero.
+Search your business name on Google Maps before creating a new profile. A past dispatcher, previous owner, or old directory listing may have already generated one. Claim the correct profile instead of creating a duplicate, and keep ownership under an account the business controls.
 
-Use your real, legal business name, not a version padded with extra keywords like "Best Cheap Movers Near Me." Choose "Moving company" or "Moving and storage service" as your primary category, and add a secondary category only if you genuinely offer it, such as "Self-storage facility." If you don't receive customers at a fixed address, set the profile up as a service-area business during setup so Google doesn't publish a street address you don't want the public visiting.
+Use the real business name, not a version padded with search phrases. Choose Moving company as the primary category when it accurately describes the main work. Add another category only when it represents a service customers can actually book. If customers do not visit an eligible staffed office, use the service-area setup and hide the address.
 
 ## What service area should a moving company list?
 
-Google doesn't let you draw a radius around a pin anymore. According to [Google's own service-area guidance](https://support.google.com/business/answer/9157481?hl=en), you build your coverage from a list of cities, postal codes, or similarly named areas, up to 20 of them, and the overall area shouldn't stretch much more than about two hours of driving time from where your business is based.
+Google does not let a service-area business draw a radius around a pin. According to [Google's own service-area guidance](https://support.google.com/business/answer/9157481?hl=en), build coverage from up to 20 cities, postal codes, or other named areas. The overall boundary should stay within about two hours of driving time from the business base, although Google notes that some businesses may have a larger appropriate area.
 
 List the towns and zip codes you can genuinely staff a crew and truck for on short notice, not every town within range on a straight line. A mover who lists 20 towns across three counties but only ever answers quickly within a tighter radius generates calls they can't service well, and a customer who waited days for a callback from a "nearby" mover will say so in a review.
 
-## Where does your USDOT number go on a Google Business Profile?
+## How should a moving company verify applicable credentials?
 
-Google has no dedicated field for a mover's USDOT number. Put it in your business description instead, since for-hire household goods movers that cross state lines must register with the Federal Motor Carrier Safety Administration and hold a USDOT number and MC operating authority, according to the [FMCSA](https://www.fmcsa.dot.gov/protect-your-move/movers-vs-brokers). An in-state operation is not automatically exempt: [FMCSA says some states require intrastate carriers to obtain a USDOT number](https://www.fmcsa.dot.gov/faq/do-intrastate-carriers-non-hazardous-materials-need-usdot-number). Check with your state Department of Transportation or responsible state agency.
+First determine which federal or state credentials apply to the operation. Interstate household-goods movers must have applicable federal registration, according to the [FMCSA](https://www.fmcsa.dot.gov/protect-your-move/movers-vs-brokers). An in-state operation is not automatically exempt because [FMCSA says some states require intrastate carriers to obtain a USDOT number](https://www.fmcsa.dot.gov/faq/do-intrastate-carriers-non-hazardous-materials-need-usdot-number). Check the responsible state agency as well.
 
-Showing the number costs nothing and gives a cautious customer, someone about to hand a stranger their household belongings, a way to verify you're not one of the rogue movers the FMCSA warns about. Don't invent a number you don't hold; it's checkable.
+Do not treat the Google profile description as a universal credential field or claim that every mover must put a USDOT number there. Instead, make sure the legal business name and any applicable credential match the appropriate official public lookup, then present verified credential information consistently on the website and quote path. Never invent a number or imply an authorization the company does not hold.
 
 ## What hours actually matter for a moving company profile?
 
 Use [Google's business-hours guidance](https://support.google.com/business/answer/3038177?hl=en) to decide whether hours apply to your business: it lists exceptions for appointment-only businesses and certain other types, including transportation services. Where hours apply, show your actual customer-facing booking availability. Include weekends only if your office or dispatcher really answers then; voicemail until Monday is not weekend availability.
 
-Reviews carry real weight in this decision. According to [BrightLocal's 2026 Local Consumer Review Survey](https://www.brightlocal.com/research/local-consumer-review-survey/), 97% of consumers read reviews for local businesses before choosing one, and for a mover that often means reading about a crew that will be inside someone's home. Accurate hours reduce the chance of a frustrated "nobody called me back" review in the first place.
+Accurate hours reduce the chance that a customer expects an immediate response when nobody is available. Keep the website and quote-route wording consistent with the public profile, and update the information when dispatcher or office availability changes.
 
 ## What belongs on the profile beyond the basics?
 
-Upload real photos of your trucks, your crew, and your equipment rather than stock imagery of an unmarked van. If you offer binding versus non-binding estimates, mention that distinction in your business description so a comparison-shopping customer isn't guessing. Use posts for genuinely timely updates, like extra crew availability during a busy moving weekend, and reply to reviews without disclosing details about a customer's address or belongings.
+Upload current photos of the company's trucks, crew, and equipment rather than stock imagery of an unmarked van. Obtain permission, check every frame for customer addresses and belongings, and avoid presenting a photo as work the company did when it did not.
 
-| Profile field | What to put there | Why it matters for a moving company |
-| --- | --- | --- |
-| Business name | Your real, legal business name | Keyword-stuffed names risk suspension |
-| Service area | Cities/zips within ~2 hours drive | Matches Google's rules and sets honest expectations |
-| Hours | Actual booking availability, where hours apply | Do not imply weekend coverage you do not provide |
-| Description | USDOT number if you cross state lines | Only real spot to show it since there's no dedicated field |
-| Photos | Real trucks, crew, or equipment | Replaces the trust a storefront visit would normally build |
+List only real moving and storage services. Explain important estimate or quote distinctions on the website and quote route where there is enough room for accurate terms. Reply to reviews without disclosing a customer's address, inventory, access instructions, price dispute, or other private move details.
 
 ## Frequently asked questions
 

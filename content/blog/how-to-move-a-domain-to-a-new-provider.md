@@ -5,8 +5,39 @@ slug: "how-to-move-a-domain-to-a-new-provider"
 cluster: "guides"
 answer: "To move a domain to a new registrar, confirm access and transfer eligibility, protect the existing website and email settings, unlock the domain, and use its authorization code at the new provider. A domain transfer does not move website files or mailboxes. Keep old services active until you have verified the transfer and every service that depends on the domain."
 lead: Front Step Sites is a done-for-you website service for small businesses in the US, at $99 a year with the domain included and no setup fee.
-updated: "2026-09-26"
+mobileWideTable: "true"
+launchCtaInBody: "true"
+published: "2026-09-26"
+updated: "2026-10-31"
 ---
+
+## What moves and what does not
+
+| Part | What the registrar transfer changes | What still needs a separate plan |
+|---|---|---|
+| Registration and billing | Moves domain registration and future renewal management to the destination registrar | Confirm the registrant, renewal settings, billing owner, and recovery access in the new account |
+| DNS | May keep the same nameservers, but that depends on both providers and the current DNS service | Record and verify website, mail, verification, and subdomain records before changing nameservers |
+| Website files | Does not copy the site, database, images, or hosting account | Back up and migrate the website separately if the host is changing |
+| Email and mailboxes | Does not copy messages, mailboxes, aliases, or email settings | Preserve mail DNS and make mailbox backups or a migration plan when the email provider is changing |
+| Booking or portal subdomains | Does not move the service behind a subdomain | Preserve each subdomain's DNS record and confirm the destination service still works |
+| Old subscriptions | Does not cancel registrar, hosting, email, DNS, security, or support subscriptions | Cancel only after every dependent website, mailbox, form, and subdomain passes |
+
+## Domain transfer preflight checklist
+
+| Step | Evidence to retain | Owner |
+|---|---|---|
+| 1. Confirm registrant and recovery access | The registrant is correct, the business can sign in, and account recovery works | Business owner |
+| 2. Check the domain ending, renewal date, and transfer-lock eligibility | Both providers confirm the rules and timing for this domain | Business owner |
+| 3. Record nameservers plus website, mail, verification, and subdomain DNS | A complete, securely stored DNS export or record list exists | Technical owner |
+| 4. Make appropriate website and mailbox backups | Restorable website and mailbox copies exist where the services are also moving | Website and email owners |
+| 5. Unlock the domain and obtain the authorization code securely | The code is available only inside the approved transfer process or secure credential storage | Business owner |
+| 6. Start the transfer at the destination provider | The destination account shows the transfer and required confirmations | Business owner |
+| 7. Verify the registrant, www and non-www website, HTTPS, form delivery, inbound and outbound mail, and subdomains | Each check has a dated pass result | Business and technical owners |
+| 8. Cancel an old service only after every dependent service passes | The handover record shows no website, mail, DNS, form, or subdomain dependency remains | Business owner |
+
+[Download the fictional domain transfer preflight CSV](/assets/domain-transfer-preflight.csv). It is an ungated example with no credentials, authorization code, customer data, or live domain.
+
+{{launch-cta}}
 
 A domain transfer is the process of moving a domain's registration from one registrar to another. How do you do that without losing your website or email? First, find out which part you are actually moving: the domain registration, the website, the email service, or all three. They can share one bill, but they are different services and need separate checks.
 
@@ -88,6 +119,10 @@ Record which old subscriptions were canceled and which remain necessary. Email h
 If a former designer manages part of the setup, request the specific access or information you need. The [guide to leaving a web designer](/blog/how-to-leave-a-web-designer-and-keep-your-domain-and-site/) can help you organize that handover without confusing domain ownership with website files.
 
 ## Frequently asked questions
+
+### How long does a domain transfer take?
+
+Timing varies by registrar, domain ending, lock state, and the confirmations required. Check the current instructions and transfer status with both providers instead of relying on one universal promise.
 
 ### Will my email addresses change when I transfer the domain?
 

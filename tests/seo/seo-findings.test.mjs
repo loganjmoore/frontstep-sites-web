@@ -748,24 +748,29 @@ test("citability pages put plain subject definitions in extractable article text
   }
 });
 
-test("cleaning Business Profile guide has the requested setup checklist", () => {
+test("cleaning Business Profile guide includes current constraints and the worked example", () => {
   const html = read("blog/cleaning-google-business-profile/index.html");
-  assert.match(html, /<title>Cleaning Company Google Business Profile Checklist<\/title>/);
-  assert.match(html, /<meta name="description" content="Follow a truthful cleaning company profile setup sequence covering eligibility, service areas, categories, services, hours, photos, your website, and reviews\.">/);
-  assert.match(html, /<h1>Google Business Profile for Cleaning Companies: Setup Checklist<\/h1>\n<p class="direct-answer">Your cleaning company Google Business Profile should explain/);
-  assert.match(html, /<h2 id="cleaning-company-profile-setup-order">Cleaning company profile setup order<\/h2>/);
-  assert.match(html, /<div class="table-wrap mobile-wide-table"><table><thead><tr><th>Step<\/th><th>What to enter<\/th><th>What to verify<\/th><th>Common mistake<\/th>/);
-  const checklist = html.split('<h2 id="cleaning-company-profile-setup-order">')[1].split("Source note:")[0];
-  assert.equal((checklist.match(/<tbody><tr>|<\/tr><tr>/g) || []).length, 7);
-  assert.match(html, /support\.google\.com<\/a> was rechecked on October 11, 2026/);
+  const title = "Google Business Profile for Cleaning Companies: Setup Checklist (2026)";
+  assert.match(html, new RegExp(`<title>${title.replace(/[()]/g, "\\$&")}<\\/title>`));
+  assert.match(html, new RegExp(`<h1>${title.replace(/[()]/g, "\\$&")}<\\/h1>`));
+  const description = html.match(/<meta name="description" content="([^"]+)">/)?.[1] || "";
+  assert.ok(description.length < 160);
+  for (const phrase of ["service-area setup", "verification", "categories", "services", "photos", "estimate route"]) assert.ok(description.includes(phrase));
+  assert.match(html, /<p class="direct-answer">A cleaning company that visits customers should keep one Google Business Profile for its whole service area and hide the address/);
+  assert.match(html, /<h2 id="cleaning-company-profile-setup-checklist">Cleaning company profile setup checklist<\/h2>/);
+  const checklist = html.split('<h2 id="cleaning-company-profile-setup-checklist">')[1].split("Source note:")[0];
+  for (const phrase of ["up to 20 cities", "not a radius", "two hours", "up to 48 hours", "phone or text", "email", "video", "mail"]) assert.ok(checklist.includes(phrase));
+  assert.match(html, /support\.google\.com<\/a>, including its linked service-area, verification, and photo guidance, was rechecked on October 31, 2026/);
+  assert.ok(html.indexOf('class="cleaning-example"') > html.indexOf("Source note:"));
+  assert.ok(html.indexOf('class="cleaning-example"') < html.indexOf('id="establish-the-correct-business-and-location"'));
   assert.match(html, /<link rel="canonical" href="https:\/\/frontstepsites\.com\/blog\/cleaning-google-business-profile\/">/);
   assert.match(html, /href="https:\/\/app\.frontstepsites\.com\/get-started"/);
-  assert.match(html, /"datePublished":"2026-09-26","dateModified":"2026-10-11"/);
+  assert.match(html, /"datePublished":"2026-09-26","dateModified":"2026-10-31"/);
   const faq = [...html.matchAll(/<script type="application\/ld\+json">(.*?)<\/script>/gs)]
     .map((match) => JSON.parse(match[1]))
     .find((value) => value["@type"] === "FAQPage");
   assert.equal(faq.mainEntity.length, 4);
-  assert.match(read("sitemap.xml"), /https:\/\/frontstepsites\.com\/blog\/cleaning-google-business-profile\/<\/loc><lastmod>2026-10-11/);
+  assert.match(read("sitemap.xml"), /https:\/\/frontstepsites\.com\/blog\/cleaning-google-business-profile\/<\/loc><lastmod>2026-10-31/);
 });
 
 test("October 10 entity-definition findings use unique plain definitions immediately after the H1", () => {
@@ -1193,4 +1198,73 @@ test("website-builder comparison includes the requested three-point outcome tabl
   assert.equal((section.match(/<tr>/g) || []).length, 4, "the table must contain one header and exactly three comparison points");
   for (const point of ["Who owns the domain?", "Who maintains it?", "What happens when something breaks?"]) assert.match(section, new RegExp(point.replace("?", "\\?")));
   assert.equal((html.match(/href="\/blog\/what-front-step-sites-does-and-who-its-for\/"/g) || []).length, 1, "the article must link to the product-fit guide once");
+});
+
+test("October 31 acquisition guides render the requested executable paths", () => {
+  const schemas = html => [...html.matchAll(/<script type="application\/ld\+json">(.*?)<\/script>/gs)].map(match => JSON.parse(match[1]));
+
+  const domain = read("blog/how-to-move-a-domain-to-a-new-provider/index.html");
+  assert.ok(domain.indexOf("What moves and what does not") < domain.indexOf("A domain transfer is the process"));
+  assert.match(domain, /<th>Part<\/th><th>What the registrar transfer changes<\/th><th>What still needs a separate plan<\/th>/);
+  const preflight = domain.split('<h2 id="domain-transfer-preflight-checklist">')[1].split("A domain transfer is the process")[0];
+  const steps = [
+    "Confirm registrant and recovery access",
+    "Check the domain ending, renewal date, and transfer-lock eligibility",
+    "Record nameservers plus website, mail, verification, and subdomain DNS",
+    "Make appropriate website and mailbox backups",
+    "Unlock the domain and obtain the authorization code securely",
+    "Start the transfer at the destination provider",
+    "Verify the registrant, www and non-www website, HTTPS, form delivery, inbound and outbound mail, and subdomains",
+    "Cancel an old service only after every dependent service passes",
+  ];
+  const stepPositions = steps.map(step => preflight.indexOf(step));
+  assert.ok(stepPositions.every(position => position >= 0));
+  assert.deepEqual(stepPositions, [...stepPositions].sort((a, b) => a - b));
+  assert.match(preflight, /href="\/assets\/domain-transfer-preflight\.csv"/);
+  assert.match(preflight, /href="https:\/\/app\.frontstepsites\.com\/get-started">Start Launch/);
+  const domainFaq = schemas(domain).find(value => value["@type"] === "FAQPage");
+  assert.match(domainFaq.mainEntity.find(item => item.name === "How long does a domain transfer take?")?.acceptedAnswer.text || "", /varies by registrar, domain ending, lock state, and the confirmations required/);
+  assert.match(domain, /"datePublished":"2026-09-26","dateModified":"2026-10-31"/);
+
+  const csv = read("assets/domain-transfer-preflight.csv");
+  assert.equal(csv.split("\n")[0], "Step,Owner,Evidence,Status,Notes");
+  assert.equal(csv.trim().split("\n").length, 9);
+  assert.doesNotMatch(csv, /https?:\/\/|@|\.com\b/i);
+
+  const appliance = read("blog/appliance-repair-local-seo-checklist/index.html");
+  const applianceTitle = "Appliance Repair Local SEO Checklist: What to Fix First";
+  assert.match(appliance, new RegExp(`<title>${applianceTitle}<\\/title>`));
+  assert.match(appliance, new RegExp(`<h1>${applianceTitle}<\\/h1>`));
+  const applianceDescription = appliance.match(/<meta name="description" content="([^"]+)">/)?.[1] || "";
+  assert.ok(applianceDescription.length < 160);
+  for (const phrase of ["Google profile", "appliance and brand scope", "service areas", "mobile contact", "honest turnaround"]) assert.ok(applianceDescription.includes(phrase));
+  const priorities = appliance.split('<h2 id="appliance-repair-local-seo-priorities">')[1].split('<h2 id="fictional-refrigerator-repair-worked-example">')[0];
+  assert.match(priorities, /<th>Priority<\/th><th>Evidence to collect<\/th><th>Pass condition<\/th><th>Next action<\/th>/);
+  for (const row of ["Google Business Profile accuracy", "Appliance and brand scope", "Service and coverage pages", "Mobile call or request path", "Honest availability", "Reviews and active listings"]) assert.ok(priorities.includes(`<td>${row}</td>`));
+  for (const oldClaim of ["37,453", "$7.4 billion", "29,950", "58%", "36%", "70%"] ) assert.doesNotMatch(appliance, new RegExp(oldClaim.replace("$", "\\$")));
+  const exampleStart = appliance.indexOf("Fictional refrigerator-repair worked example");
+  const exampleEnd = appliance.indexOf("Keep the evidence current");
+  const example = appliance.slice(exampleStart, exampleEnd);
+  for (const placeholder of ["[refrigerator types served]", "[brands currently accepted]", "[symptoms the business currently accepts]", "[work the business does not accept]", "[cities or postal codes the business actually serves]", "[current turnaround wording the business can honor]", "[tested phone link or request-form path]", "[who responds and the next step the customer should expect]"]) assert.ok(example.includes(placeholder));
+  assert.match(example, /href="https:\/\/app\.frontstepsites\.com\/get-started">Start my appliance repair website<\/a>/);
+  for (const href of ["/blog/website-appliance-repair/", "/blog/appliance-repair-google-business-profile/"]) assert.match(appliance, new RegExp(`href="${href}"`));
+  assert.match(appliance, /<link rel="canonical" href="https:\/\/frontstepsites\.com\/blog\/appliance-repair-local-seo-checklist\/">/);
+  assert.match(appliance, /"datePublished":"2026-10-02","dateModified":"2026-10-31"/);
+
+  const moving = read("blog/moving-company-google-business-profile/index.html");
+  const movingTitle = "Moving Company Google Business Profile Setup Checklist (2026)";
+  assert.match(moving, new RegExp(`<title>${movingTitle.replace(/[()]/g, "\\$&")}<\\/title>`));
+  assert.match(moving, new RegExp(`<h1>${movingTitle.replace(/[()]/g, "\\$&")}<\\/h1>`));
+  const movingDescription = moving.match(/<meta name="description" content="([^"]+)">/)?.[1] || "";
+  assert.ok(movingDescription.length < 160);
+  for (const phrase of ["service areas", "category", "mover credentials", "accurate hours", "photos", "reviews", "quote route"]) assert.ok(movingDescription.includes(phrase));
+  assert.match(moving, /<aside class="tag-box"><span class="label">Short answer<\/span><p>Claim the correct Google Business Profile and use one service-area profile/);
+  assert.match(moving, /<\/aside>\n<h2 id="moving-company-profile-setup-table">/);
+  const setup = moving.split('<h2 id="moving-company-profile-setup-table">')[1].split("Source check:")[0];
+  for (const row of ["Ownership", "Address or service area", "Category and services", "Applicable credentials", "Customer-facing hours", "Phone and website", "Photos and reviews"]) assert.ok(setup.includes(`<td>${row}</td>`));
+  assert.match(moving, /was rechecked on October 31, 2026/);
+  for (const href of ["https://support.google.com/business/answer/9157481?hl=en", "https://support.google.com/business/answer/3038177?hl=en", "https://www.fmcsa.dot.gov/protect-your-move/movers-vs-brokers", "https://www.fmcsa.dot.gov/faq/do-intrastate-carriers-non-hazardous-materials-need-usdot-number"]) assert.match(moving, new RegExp(`href="${href.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}"`));
+  assert.doesNotMatch(moving, /Put it in your business description|Only real spot to show it/);
+  assert.match(moving, /<link rel="canonical" href="https:\/\/frontstepsites\.com\/blog\/moving-company-google-business-profile\/">/);
+  assert.match(moving, /"datePublished":"2026-10-02","dateModified":"2026-10-31"/);
 });
