@@ -5,29 +5,33 @@ slug: front-step-sites-vs-wix-for-a-small-business-website
 cluster: compare
 answer: Front Step Sites fits owners who want to request website changes instead of building and editing the site themselves. Wix fits owners who want to work directly on their website and have time to maintain it. Compare the ongoing work as well as the price, then check that your chosen option supports the specific things your business needs.
 lead: Front Step Sites is a done-for-you website service for small businesses; Wix is a DIY website builder.
-updated: 2026-10-03
+updated: 2026-10-31
+mobileWideTable: "true"
+tableRegionLabel: "Front Step Sites and Wix annual price inclusion comparison"
 ---
 
 This comparison is for owners deciding whether to build and edit a website themselves in Wix, or have Front Step Sites build it and handle the changes for $99 a year.
 
 Front Step Sites is a done-for-you website service for small businesses, priced at $99 a year with the domain included, while Wix is a do-it-yourself website builder you edit directly. Should you use Wix or have Front Step Sites handle your small business website? The decision starts with how you want to spend your time: working on the pages yourself or sending someone the changes you need. Price matters, but so do the jobs your website must handle and who will keep its information accurate after launch.
 
-## Front Step Sites vs. Wix at a glance
+## What the stated annual prices include
 
-| | Wix | Front Step Sites |
+The like-for-like difference is who does the work. Wix Light suits an owner who wants a DIY builder and direct control of every edit. Front Step Sites Launch suits an owner who wants the provider to write, build, host, and update the site within a defined request allowance.
+
+| Included at the stated annual price | Wix Light DIY subscription | Front Step Sites Launch |
 |---|---|---|
-| Price/yr | About $204/yr ($17/mo billed yearly) | $99/yr |
-| Setup fee | $0 | $0 |
-| Who builds the site | You build it yourself in the Wix editor | Built by Front Step Sites from your answers to a short questionnaire |
-| Who writes the copy | You, with your own business information and photos | Front Step Sites writes it, and you approve it before it goes live |
-| Hosting and SSL | Not covered on this page; check Wix's current plan terms | Included |
-| Who fixes problems | You do | Front Step Sites keeps the site running; you ask for changes in your account |
-| Domain | Domain is a separate purchase | Included, registered in your name, no transfer fee to leave |
-| How changes are made | You edit it yourself in the Wix editor | Write a plain-English request in your account (four per Central calendar month on Launch) |
+| Price | $204 a year ($17 a month, billed yearly) | $99 a year; no setup fee |
+| Site build | The editor and tools; you build the pages | Front Step Sites builds the site from your answers to a short questionnaire |
+| Website copy | You write and add it | Front Step Sites writes it from your approved business facts; you approve it before launch |
+| Domain | Included for the first year; check the renewal price | Included, registered in your name, with no transfer fee to leave |
+| Future changes | You make them in the Wix editor | You send a plain-English request; Launch includes four coherent marketing updates per Central calendar month |
+| Ongoing work | You maintain the pages and business information | Front Step Sites keeps the site running; you provide accurate business information and review changes |
+
+For another provider comparison, read [Front Step Sites vs. Squarespace](/blog/front-step-sites-vs-squarespace-for-a-local-business/). To compare a recurring service with a single project, read [website subscription vs. a one-time build](/blog/website-subscription-vs-one-time-website-build/).
 
 ## Compare the published prices with the work involved
 
-As of September 2026, Wix Light is $17/month billed yearly ($204/year). Front Step Sites is $99 a year with the domain included and no setup fee. Use those figures as a starting point, then check the current purchase terms before choosing.
+Checked October 24, 2026, Wix Light was $17/month billed yearly ($204/year). Front Step Sites is $99 a year with the domain included and no setup fee. Use those figures as a starting point, then check the current purchase terms before choosing.
 
 Front Step Sites also offers the Grow plan at $29/month or $290/year. Grow includes four coherent marketing updates per Central calendar month and Google reviews shown on the site. The $99 plan includes four coherent marketing updates per Central calendar month.
 

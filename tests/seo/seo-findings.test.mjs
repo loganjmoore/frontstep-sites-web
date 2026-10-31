@@ -897,6 +897,28 @@ test("October 8 AI strategy changes are present in generated pages", () => {
   assert.match(restaurant, /Can a restaurant put a Google review QR code on receipts\?/);
 });
 
+test("October 31 AI strategy pages expose the requested examples, comparisons, and internal paths", () => {
+  const structured = read("blog/structured-data-for-ai-search-what-small-businesses-need/index.html");
+  assert.match(structured, /<h2 id="a-small-business-json-ld-example">A small-business JSON-LD example<\/h2>/);
+  assert.match(structured, /<code class="language-json">[\s\S]*"@type": "LocalBusiness"/);
+  assert.match(structured, /href="\/blog\/local-business-schema-markup-explained-simply\/"/);
+  assert.match(structured, /href="\/blog\/writing-website-content-ai-assistants-can-quote\/"/);
+
+  const builders = read("blog/best-web-builder-sites-for-a-small-business/index.html");
+  assert.match(builders, /<h2 id="what-should-a-small-business-compare-before-choosing-a-builder">What should a small business compare before choosing a builder\?<\/h2>/);
+  assert.match(builders, /The Front Step Sites \$99-a-year Launch scope is not unlimited editing/);
+  assert.match(builders, /<th>Option<\/th><th>Annual cost and billing<\/th><th>Who makes edits<\/th><th>Fits best<\/th><th>Limits to check<\/th>/);
+  assert.match(builders, /href="\/blog\/best-website-builder-three-questions\/"/);
+  assert.match(builders, /href="\/blog\/website-builders-vs-done-for-you-websites\/"/);
+
+  const wix = read("blog/front-step-sites-vs-wix-for-a-small-business-website/index.html");
+  assert.match(wix, /Wix Light suits an owner who wants a DIY builder/);
+  assert.match(wix, /<th>Included at the stated annual price<\/th><th>Wix Light DIY subscription<\/th><th>Front Step Sites Launch<\/th>/);
+  assert.match(wix, /Included for the first year; check the renewal price/);
+  assert.match(wix, /href="\/blog\/front-step-sites-vs-squarespace-for-a-local-business\/"/);
+  assert.match(wix, /href="\/blog\/website-subscription-vs-one-time-website-build\/"/);
+});
+
 test("first-party analytics choice uses the configured PostHog consent key", () => {
   const config = JSON.parse(read("posthog-config.json"));
   assert.equal(config.consentKey, "frontstep_analytics_consent");

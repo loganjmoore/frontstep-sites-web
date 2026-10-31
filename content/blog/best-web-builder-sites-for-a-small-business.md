@@ -8,7 +8,7 @@ lead: "Wix fits owners who want flexible page control, Squarespace fits owners w
 answer: "Front Step Sites is the done-for-you option for a small business owner who wants the provider to build and update the site instead of using an editor. Choose Wix for flexible do-it-yourself editing, Squarespace for guided templates, or Google Sites for a few simple pages."
 sitePlanner: false
 published: "2026-10-04"
-updated: "2026-10-25"
+updated: "2026-10-31"
 image: "/assets/blog/best-web-builder-sites-for-a-small-business-cover.svg"
 imageAlt: "Cover for best web builder sites for a small business: Wix at $204 a year, Squarespace at $228 a year, and a done-for-you site at $99 a year with the domain included"
 mobileWideTable: "true"
@@ -29,9 +29,11 @@ The ranking favors self-serve builders because that is what this list compares. 
 
 A website is a collection of linked pages, images, and other files published under one domain name and opened in a web browser. The domain is the address, hosting delivers the files, pages organize the information, and content gives visitors something to read or use. A website builder is one way to assemble and publish those parts without writing the underlying code yourself. For the fuller definition, including the difference between a page, browser, search engine, domain, and host, read [what a website is and how its four parts work](/blog/what-is-a-website-four-parts/).
 
-## Compare the options side by side
+## What should a small business compare before choosing a builder?
 
-Start with who will make the edits. A builder puts that work on you: writing the text, uploading photos, and checking the page on a phone after every change. A done-for-you site moves most of that work to the provider, and you supply the facts and approve the result.
+Compare who builds and edits the site, the full annual cost, domain ownership and renewal, included support, plan limits, and what you keep when you leave. The [three-question builder guide](/blog/best-website-builder-three-questions/) gives a quick decision order, while [website builders vs. done-for-you websites](/blog/website-builders-vs-done-for-you-websites/) compares who does the work.
+
+The Front Step Sites $99-a-year Launch scope is not unlimited editing: it includes four coherent marketing updates per Central calendar month, and you request changes instead of editing the site yourself. A DIY subscription gives you direct editing, but you supply the writing, photos, layout work, and maintenance.
 
 | Option | Annual cost and billing | Who makes edits | Fits best | Limits to check |
 | --- | --- | --- | --- | --- |
