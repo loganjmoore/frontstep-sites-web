@@ -240,7 +240,7 @@ function renderMarkdown(body, ctx) {
     } else if (block.type === "plumberExampleWalkthrough") {
       html += `${renderPlumberExampleWalkthrough()}\n`;
     } else if (block.type === "launchCta") {
-      html += `${renderLaunchCta()}\n`;
+      html += `${renderLaunchCta(ctx.launchCtaLabel)}\n`;
     }
   }
   flushFaq();
@@ -264,11 +264,11 @@ function brandSvg() {
   return `<svg viewBox="0 0 34 34" aria-hidden="true"><rect width="34" height="34" fill="#ffd60a"/><path d="M6 27h22v-5H17v-5h-5v-5H6z" fill="#111312"/></svg>`;
 }
 
-function renderLaunchCta() {
+function renderLaunchCta(label = START_LABEL) {
   return `<aside class="tag-box tag-offer">
   <span class="label">Front Step Sites &middot; Launch</span>
   <p>$99/yr, domain included, no setup fee.</p>
-  <a class="btn" href="${START_URL}">${START_LABEL}</a>
+  <a class="btn" href="${START_URL}">${escapeHtml(label)}</a>
   <p>${START_EXPECTATION}</p>
 </aside>`;
 }
@@ -611,7 +611,7 @@ ${renderCrumbs(crumbs)}
 ${article.lead ? `<p class="direct-answer">${escapeHtml(article.lead)}</p>\n` : ""}<p class="updated">${article.author ? `By ${escapeHtml(article.author)} &middot; ` : ""}Updated ${formatDate(article.updated)}</p>
 ${article.image ? `<figure class="doc-figure doc-cover"><img src="${escapeAttr(article.image)}" alt="${escapeAttr(article.imageAlt || "")}" width="1200" height="630" fetchpriority="high"></figure>\n` : ""}<aside class="tag-box"><span class="label">Short answer</span><p>${escapeHtml(article.answer)}</p></aside>${article.sitePlanner === "true" ? `\n${renderSitePlanBuilder()}` : ""}
 ${article.resourceTool ? renderWebsiteResource(article.resourceTool) + "\n" : ""}${article.bodyHtml}
-${article.launchCtaInBody === "true" ? "" : renderLaunchCta()}
+${article.launchCtaInBody === "true" ? "" : renderLaunchCta(article.launchCtaLabel)}
 ${relatedHtml}
 </article>`;
 
@@ -808,7 +808,7 @@ function main() {
   const deadLinksReport = [];
 
   for (const { file, data, body } of parsedArticles) {
-    const ctx = { allowedBareSlugs, deadLinks: [], mobileWideTable: data.mobileWideTable === "true", tableRegionLabel: data.tableRegionLabel || "" };
+    const ctx = { allowedBareSlugs, deadLinks: [], mobileWideTable: data.mobileWideTable === "true", tableRegionLabel: data.tableRegionLabel || "", launchCtaLabel: data.launchCtaLabel };
     const { html, faqItems } = renderMarkdown(body, ctx);
     if (ctx.deadLinks.length) {
       deadLinksReport.push({ file, links: ctx.deadLinks });
@@ -830,6 +830,7 @@ function main() {
       sitePlanner: data.sitePlanner,
       resourceTool: data.resourceTool,
       launchCtaInBody: data.launchCtaInBody,
+      launchCtaLabel: data.launchCtaLabel,
       bodyHtml: html,
       faqItems,
     });

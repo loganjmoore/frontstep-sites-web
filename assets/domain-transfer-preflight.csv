@@ -1,0 +1,9 @@
+Step,Owner,Evidence,Status,Notes
+Confirm registrant and recovery access,Business owner,Example account access and recovery route checked,Example complete,Fictional handover only; no account details recorded
+Check domain ending renewal date and transfer-lock eligibility,Business owner,Example provider rules and dates recorded,Example complete,Confirm again with both providers before a real transfer
+Record nameservers website mail verification and subdomain DNS,Technical owner,Example DNS inventory saved,Example complete,No live domain or record values included
+Make appropriate website and mailbox backups,Website and email owners,Example backup locations and restore checks recorded,Example complete,Backups are separate from this checklist
+Unlock the domain and obtain the authorization code securely,Business owner,Example secure handling step acknowledged,Example ready,No authorization code is stored in this file
+Start the transfer at the destination provider,Business owner,Example destination status recorded,Example pending,Wait for the provider confirmations shown in the account
+Verify registrant website HTTPS forms mail and subdomains,Business and technical owners,Example dated verification results recorded,Example pending,Test every listed dependency after the transfer
+Cancel old services only after every dependency passes,Business owner,Example dependency sign-off recorded,Example blocked,Keep old services active until all checks pass
