@@ -1254,9 +1254,10 @@ test("October 31 acquisition guides render the requested executable paths", () =
   assert.match(appliance, /"datePublished":"2026-10-02","dateModified":"2026-10-31"/);
 
   const moving = read("blog/moving-company-google-business-profile/index.html");
-  const movingTitle = "Moving Company Google Business Profile Setup Checklist (2026)";
+  const movingTitle = "Moving Company Google Business Profile Checklist (2026)";
+  const movingH1 = "Moving Company Google Business Profile Setup Checklist (2026)";
   assert.match(moving, new RegExp(`<title>${movingTitle.replace(/[()]/g, "\\$&")}<\\/title>`));
-  assert.match(moving, new RegExp(`<h1>${movingTitle.replace(/[()]/g, "\\$&")}<\\/h1>`));
+  assert.match(moving, new RegExp(`<h1>${movingH1.replace(/[()]/g, "\\$&")}<\\/h1>`));
   const movingDescription = moving.match(/<meta name="description" content="([^"]+)">/)?.[1] || "";
   assert.ok(movingDescription.length < 160);
   for (const phrase of ["service areas", "category", "mover credentials", "accurate hours", "photos", "reviews", "quote route"]) assert.ok(movingDescription.includes(phrase));

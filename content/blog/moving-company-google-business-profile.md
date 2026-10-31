@@ -1,5 +1,5 @@
 ---
-title: "Moving Company Google Business Profile Setup Checklist (2026)"
+title: "Moving Company Google Business Profile Checklist (2026)"
 h1: "Moving Company Google Business Profile Setup Checklist (2026)"
 description: "Set up a moving company profile with service areas, category, mover credentials, accurate hours, photos, reviews, and a tested quote route."
 slug: "moving-company-google-business-profile"
