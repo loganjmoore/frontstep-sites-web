@@ -1,5 +1,5 @@
 ---
-title: "Google Business Profile for Cleaning Companies: Setup Checklist (2026)"
+title: "Cleaning Company Google Business Profile Checklist (2026)"
 h1: "Google Business Profile for Cleaning Companies: Setup Checklist (2026)"
 description: "Follow service-area setup, verification, categories, services, photos, and the estimate route for a cleaning company Google Business Profile."
 slug: "cleaning-google-business-profile"
