@@ -636,6 +636,51 @@ const HUB_FAQ = [
   { question: "How do I ask for a change to my site?", answer: "Sign in to your account and write the request in plain English. Launch includes 4 marketing updates per Central calendar month." },
 ];
 
+function renderTradeList(rows) {
+  return `<ul class="hub-list">${rows
+    .map((r) =>
+      r.url
+        ? `<li><a href="${r.url}">${escapeHtml(r.name)}</a><span class="count">${r.count} article${r.count === 1 ? "" : "s"}</span></li>`
+        : `<li><span class="muted">${escapeHtml(r.name)}</span><span class="count">coming soon</span></li>`
+    )
+    .join("")}</ul>`;
+}
+
+function renderTradeDirectory(tradeRows) {
+  const canonical = `${SITE}/blog/trades/`;
+  const crumbs = [{ name: "Home", url: "/" }, { name: "Blog", url: "/blog/" }, { name: "Trades", url: null }];
+  const jsonLd = [
+    {
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      name: "Website guides by trade",
+      url: canonical,
+      hasPart: {
+        "@type": "ItemList",
+        itemListElement: tradeRows.filter((r) => r.url).map((r, i) => ({ "@type": "ListItem", position: i + 1, name: r.name, url: `${SITE}${r.url}` })),
+      },
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      itemListElement: crumbs.map((c, i) => ({ "@type": "ListItem", position: i + 1, name: c.name, item: c.url ? `${SITE}${c.url}` : canonical })),
+    },
+  ];
+  const bodyHtml = `<article class="doc">
+${renderCrumbs(crumbs)}
+<h1>Website guides by trade</h1>
+<p>Choose your trade for practical guidance about website content, local search, customer reviews, and the contact details customers need before they call or book.</p>
+${renderTradeList(tradeRows)}
+</article>`;
+  return pageShell({
+    title: "Website Guides by Trade | Front Step Sites",
+    description: "Choose your trade for practical website and local search guides from Front Step Sites.",
+    canonical,
+    bodyHtml,
+    jsonLd,
+  });
+}
+
 function renderClusterHub(cluster, clusterName, articles, introHtml = "") {
   const canonical = `${SITE}/blog/${cluster}/`;
   const crumbs = [{ name: "Home", url: "/" }, { name: "Blog", url: "/blog/" }, { name: clusterName, url: null }];
@@ -700,15 +745,6 @@ function renderBlogHub(tradeRows, guideRows, aiRows, compareRows, latestRows, fe
     },
   ];
 
-  const renderTradeList = (rows) =>
-    `<ul class="hub-list">${rows
-      .map((r) =>
-        r.url
-          ? `<li><a href="${r.url}">${escapeHtml(r.name)}</a><span class="count">${r.count} article${r.count === 1 ? "" : "s"}</span></li>`
-          : `<li><span class="muted">${escapeHtml(r.name)}</span><span class="count">coming soon</span></li>`
-      )
-      .join("")}</ul>`;
-
   const renderArticleRows = (rows) =>
     rows.length
       ? `<ul class="hub-list">${rows.map((r) => `<li><a href="/blog/${r.slug}/">${escapeHtml(r.title)}</a></li>`).join("")}</ul>`
@@ -727,7 +763,7 @@ ${renderCrumbs(crumbs)}
 </div>
 
 <div class="hub-rail">
-  <h2>For your trade</h2>
+  <h2><a href="/blog/trades/">For your trade</a></h2>
   ${renderTradeList(tradeRows)}
 </div>
 
@@ -803,6 +839,7 @@ function main() {
   allowedBareSlugs.add("guides");
   allowedBareSlugs.add("ai-search");
   allowedBareSlugs.add("compare");
+  allowedBareSlugs.add("trades");
 
   const articles = [];
   const deadLinksReport = [];
@@ -927,6 +964,9 @@ function main() {
   const featuredRows = featuredSlugs.map((slug) => articlesBySlug.get(slug)).filter(Boolean);
 
   writeFileSync(join(BLOG_DIR, "index.html"), renderBlogHub(tradeRows, hubRow("guides"), hubRow("ai-search"), hubRow("compare"), latestRows, featuredRows));
+  const tradeDir = join(BLOG_DIR, "trades");
+  mkdirSync(tradeDir, { recursive: true });
+  writeFileSync(join(tradeDir, "index.html"), renderTradeDirectory(tradeRows));
 
   // sitemap.xml
   const today = new Date().toISOString().slice(0, 10);
@@ -937,6 +977,7 @@ function main() {
     { loc: "/privacy/", lastmod: "2026-10-08" },
     { loc: "/terms/", lastmod: unchangedDate("/terms/") },
     { loc: "/blog/", lastmod: unchangedDate("/blog/") },
+    { loc: "/blog/trades/", lastmod: unchangedDate("/blog/trades/") },
     ...hubClusters.map((h) => ({ loc: `/blog/${h.cluster}/`, lastmod: unchangedDate(`/blog/${h.cluster}/`) })),
     ...articles.map((a) => ({ loc: `/blog/${a.slug}/`, lastmod: a.updated })),
   ];

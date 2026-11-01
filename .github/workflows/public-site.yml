@@ -17,3 +17,17 @@ jobs:
       - run: node tools/build-blog.mjs
       - run: node --test tests/seo/*.test.mjs
       - run: git diff --exit-code -- blog feed.xml sitemap.xml robots.txt llms.txt
+      - run: npm install --prefix "$RUNNER_TEMP/front-browser" --no-save --no-package-lock playwright-core@1.62.1
+      - name: Check rendered trade discovery
+        run: |
+          python3 -m http.server 8799 --bind 127.0.0.1 > "$RUNNER_TEMP/front-http.log" 2>&1 &
+          server_pid=$!
+          trap 'kill "$server_pid"' EXIT
+          NODE_PATH="$RUNNER_TEMP/front-browser/node_modules" node tests/seo/trades.browser.cjs
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: front-trades-candidate
+          path: test-results/trades/
+          if-no-files-found: error
+          retention-days: 7

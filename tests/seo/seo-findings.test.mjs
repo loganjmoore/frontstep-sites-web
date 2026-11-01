@@ -1271,3 +1271,18 @@ test("October 31 acquisition guides render the requested executable paths", () =
   assert.match(moving, /<link rel="canonical" href="https:\/\/frontstepsites\.com\/blog\/moving-company-google-business-profile\/">/);
   assert.match(moving, /"datePublished":"2026-10-02","dateModified":"2026-10-31"/);
 });
+
+
+test("trade directory exposes the same real hubs to readers, structured data and sitemap", () => {
+  const html = read("blog/trades/index.html");
+  const hubs = [...html.matchAll(/<li><a href="(\/blog\/trades\/[^"/]+\/)">([^<]+)<\/a>/g)];
+  assert.equal(hubs.length, 19);
+  const collection = [...html.matchAll(/<script type="application\/ld\+json">(.*?)<\/script>/gs)]
+    .map(match => JSON.parse(match[1])).find(value => value["@type"] === "CollectionPage");
+  assert.deepEqual(collection.hasPart.itemListElement.map(item => [item.url, item.name]),
+    hubs.map(match => [`https://frontstepsites.com${match[1]}`, match[2]]));
+  for (const [, href] of hubs) assert.ok(read(`${href.slice(1)}index.html`).includes('<h1>'));
+  assert.match(read("blog/index.html"), /href="\/blog\/trades\/">For your trade/);
+  assert.match(read("sitemap.xml"), /<loc>https:\/\/frontstepsites.com\/blog\/trades\/<\/loc>/);
+  assert.match(read("blog/trade-business-website-examples-8-sections-in-order/index.html"), /href="\/blog\/trade-website-example-tree-service-five-sections\/"/);
+});

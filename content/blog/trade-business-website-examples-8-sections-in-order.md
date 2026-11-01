@@ -6,7 +6,7 @@ cluster: "guides"
 lead: "Useful trade business website examples make the customer path visible. A strong page puts the service, area, contact route, proof, job details, and next step in an order a customer can follow on a phone."
 answer: "A useful trade business website example starts with the service, service area, and contact route, then separates job types, explains assessment and access, shows real proof, defines cleanup or scope, and ends with a short inquiry path. This guide walks through 8 sections using Front Step Sites' existing tree-service page as a source-backed example rather than presenting a fabricated customer."
 published: "2026-10-13"
-updated: "2026-10-23"
+updated: "2026-11-01"
 author: "Logan Moore"
 image: "/assets/blog/trade-business-website-examples-8-sections-in-order-cover.svg"
 imageAlt: "Diagram of eight trade business website sections arranged from first screen through contact and follow-up"
@@ -23,6 +23,8 @@ This trade website example proves that a page can be planned around two common c
 That passage comes from the site's [tree service website guide](/blog/website-tree-service/). It supports the page structure below: urgent and planned work need different routes, and each route needs enough detail for a visitor to recognize the right next step.
 
 The evidence has a clear limit. The plumbing and cleaning samples are fictional product walkthroughs, not customer sites. They demonstrate working local interactions and page decisions, but they provide no customer result, conversion study, or promise of a particular number of calls.
+
+For a shorter homepage plan using the same source, see the [five-section tree service website example](/blog/trade-website-example-tree-service-five-sections/).
 
 ## What are the 8 sections of a trade business website?
 
