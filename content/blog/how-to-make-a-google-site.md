@@ -37,7 +37,7 @@ Google's help page on naming sites explains that the name you type is the docume
 
 1. **Use a bare domain as the custom address.** Google Sites custom URLs require a subdomain such as www, only the site owner can connect them, and one site can connect up to five custom domains. Follow the guide to [putting a Google Sites site on your own domain](/blog/put-a-google-sites-site-on-your-own-domain/) for the ownership and DNS steps.
 2. **Run a built-in e-commerce checkout.** Google Sites has no native product catalog, shopping cart, or checkout. You can link to or embed a separate store or payment provider, but that provider handles the transaction flow.
-3. **Design outside the Google Sites layout system.** Custom themes can change fonts, colors, images, buttons, menus, and site width, but pages still use the Google Sites grid and content blocks. A fully custom layout or custom site behavior needs a different platform.
+3. **Design outside the Google Sites layout system.** Custom themes can change fonts, colors, images, buttons, menus, and site width, but pages still use the Google Sites grid and content blocks. Google Sites can [embed HTML, CSS, and JavaScript](https://support.google.com/sites/answer/90569?hl=en) in a content area; that does not replace the surrounding Sites layout. Compare a different platform if you need control over the entire page and site-wide behavior.
 
 Those limits do not make Google Sites a bad tool. They make it a fit for a small information site rather than a custom storefront or application. If your business needs more control, compare the [Google Sites alternatives for a business](/blog/google-sites-alternatives-for-a-business/).
 
@@ -61,7 +61,7 @@ Use our guide to [putting a Google Sites site on your own domain](/blog/put-a-go
 
 | Question | Default address | Custom domain |
 | --- | --- | --- |
-| What does it look like? | sites.google.com/view/your-site-name | Your own domain, such as yourname.com |
+| What does it look like? | sites.google.com/view/your-site-name | Your own subdomain, such as www.yourname.com |
 | Who can connect it? | The site owner, when publishing | Only the site owner |
 | How long until it shows? | Google's help does not give a time | Up to 48 hours |
 

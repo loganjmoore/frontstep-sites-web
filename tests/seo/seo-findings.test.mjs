@@ -1308,6 +1308,9 @@ test("November 1 indexing targets are directly discoverable and the Google Sites
   const limits = googleSites.split('<h2 id="what-you-cannot-do-with-google-sites">')[1]
     .split('<h2 id="how-do-you-add-pages-and-content">')[0];
   assert.match(limits, /<ol>/);
+  assert.match(limits, /embed HTML, CSS, and JavaScript/);
+  assert.match(limits, /that does not replace the surrounding Sites layout/);
+  assert.match(googleSites, /Your own subdomain, such as www\.yourname\.com/);
   assert.equal((limits.match(/<li>/g) || []).length, 3);
   for (const phrase of ["custom domain", "built-in e-commerce checkout", "Google Sites layout system"]) assert.match(limits, new RegExp(phrase));
   for (const slug of ["put-a-google-sites-site-on-your-own-domain", "google-sites-alternatives-for-a-business"]) {
