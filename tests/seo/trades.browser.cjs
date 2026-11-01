@@ -15,6 +15,8 @@ const { chromium } = require('playwright-core');
       page.on('pageerror', error => errors.push(error.message));
       await page.route('**/*', route => new URL(route.request().url()).origin === origin && route.request().method() === 'GET' ? route.continue() : route.abort());
       assert.equal((await page.goto(`${origin}/blog/`)).status(), 200);
+      await page.getByRole('button', { name: 'Keep analytics off', exact: true }).click();
+      await page.getByRole('button', { name: 'Keep analytics off', exact: true }).waitFor({ state: 'hidden' });
       await page.getByRole('link', { name: 'For your trade', exact: true }).click();
       await page.waitForURL(`${origin}/blog/trades/`);
       await page.getByRole('heading', { level: 1, name: 'Website guides by trade', exact: true }).waitFor();
