@@ -831,7 +831,7 @@ test("Google Sites next steps link from the matching publishing and domain instr
   assert.match(domain, /href="\/blog\/put-a-google-sites-site-on-your-own-domain\/"/);
   assert.match(html, /id="which-option-fits-you"/);
   assert.match(html, /"datePublished":"2026-10-04"/);
-  assert.match(html, /"dateModified":"2026-10-21"/);
+  assert.match(html, /"dateModified":"2026-11-01"/);
 });
 
 test("AI strategy articles lead with the requested direct answers and related links", () => {
@@ -1285,4 +1285,32 @@ test("trade directory exposes the same real hubs to readers, structured data and
   assert.match(read("blog/index.html"), /href="\/blog\/trades\/">For your trade/);
   assert.match(read("sitemap.xml"), /<loc>https:\/\/frontstepsites.com\/blog\/trades\/<\/loc>/);
   assert.match(read("blog/trade-business-website-examples-8-sections-in-order/index.html"), /href="\/blog\/trade-website-example-tree-service-five-sections\/"/);
+});
+
+test("November 1 indexing targets are directly discoverable and the Google Sites guide states its limits", () => {
+  const blogIndex = read("blog/index.html");
+  const cleaningHub = read("blog/trades/cleaning/index.html");
+  const sitemap = read("sitemap.xml");
+  const slugs = ["cleaning-google-business-profile", "cleaning-local-seo-checklist", "cleaning-homepage-copy"];
+
+  for (const slug of slugs) {
+    const path = `/blog/${slug}/`;
+    const page = read(`blog/${slug}/index.html`);
+    assert.equal((blogIndex.match(new RegExp(`href="${path}"`, "g")) || []).length, 1);
+    assert.equal((cleaningHub.match(new RegExp(`href="${path}"`, "g")) || []).length, 1);
+    assert.equal((sitemap.match(new RegExp(`<loc>https://frontstepsites\\.com${path}</loc>`, "g")) || []).length, 1);
+    assert.match(page, new RegExp(`<link rel="canonical" href="https://frontstepsites\\.com${path}">`));
+    assert.doesNotMatch(page, /<meta name="robots" content="[^"]*noindex/i);
+  }
+
+  const googleSites = read("blog/how-to-make-a-google-site/index.html");
+  assert.match(googleSites, /<h1>[^<]+<\/h1>\n<p class="direct-answer">Google Sites is a website builder from Google for making simple pages\./);
+  const limits = googleSites.split('<h2 id="what-you-cannot-do-with-google-sites">')[1]
+    .split('<h2 id="how-do-you-add-pages-and-content">')[0];
+  assert.match(limits, /<ol>/);
+  assert.equal((limits.match(/<li>/g) || []).length, 3);
+  for (const phrase of ["custom domain", "built-in e-commerce checkout", "Google Sites layout system"]) assert.match(limits, new RegExp(phrase));
+  for (const slug of ["put-a-google-sites-site-on-your-own-domain", "google-sites-alternatives-for-a-business"]) {
+    assert.match(limits, new RegExp(`href="/blog/${slug}/"`));
+  }
 });
