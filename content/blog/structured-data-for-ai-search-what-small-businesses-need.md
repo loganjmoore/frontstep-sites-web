@@ -19,7 +19,7 @@ Structured data is machine-readable markup that labels facts on a web page so se
 | FAQPage | On a page where the same questions and complete answers are visible to visitors. | A visible FAQ asks how estimates work and gives the complete answer directly below it. |
 | BreadcrumbList | On a page with a visible breadcrumb trail that reflects the page's place in the site. | A tree-removal page shows and labels the trail Home, Services, Tree removal. |
 
-A LocalBusiness schema block gives software a machine-readable version of verified public facts such as a business name, phone number, hours, and service area. It can help AI systems interpret those facts, but it does not guarantee an AI answer, citation, ranking, or recommendation. The [local-business schema guide](/blog/local-business-schema-markup-explained-simply/) explains the fields in plain English.
+A LocalBusiness schema block gives software a machine-readable version of verified public facts such as a business name, phone number, hours, and service area. It can help AI systems interpret those facts, but it does not guarantee an AI answer, citation, ranking, or recommendation. Schema does not guarantee rich results or AI citations. The [local-business schema guide](/blog/local-business-schema-markup-explained-simply/) explains the fields in plain English.
 
 Once the labels match the page, make the visible explanation clear enough to reuse without extra context. The guide to [writing website content AI assistants can quote](/blog/writing-website-content-ai-assistants-can-quote/) covers that writing job.
 
