@@ -951,6 +951,9 @@ function main() {
   // topics.json lists new posts last, so the last six built articles are the newest.
   const latestRows = articles.slice(-6).reverse();
   const featuredSlugs = [
+    "cleaning-google-business-profile",
+    "cleaning-local-seo-checklist",
+    "cleaning-homepage-copy",
     "tree-service-local-seo-checklist",
     "who-owns-your-domain-name-and-why-it-matters",
     "pest-control-get-more-reviews",

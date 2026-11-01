@@ -7,7 +7,7 @@ tableRegionLabel: "Google Sites option and address comparisons"
 lead: "Google Sites is a website builder from Google for making simple pages. It fits someone who needs a small brochure or information site and is comfortable handling the content and updates."
 answer: "To make a Google Site, open Google Sites while signed in to your Google account, choose a template under Start a new site, type a name, add your pages, and click Publish at the top right. Your first address starts with sites.google.com, and you can connect your own domain later if you are the site's owner."
 published: "2026-10-04"
-updated: "2026-10-21"
+updated: "2026-11-01"
 image: "/assets/blog/how-to-make-a-google-site-cover.svg"
 imageAlt: "Cover for how to make a Google Site, step by step: five steps from template to publish, and a custom domain that only the site owner can connect"
 ---
@@ -32,6 +32,14 @@ Work through these five steps in order:
 5. At the top right, click Publish.
 
 Google's help page on naming sites explains that the name you type is the document name in Google Drive, and only you see it. The site title shows in the header and in the browser's title bar after you publish. Those are two separate settings, so you can change one without touching the other.
+
+## What you cannot do with Google Sites
+
+1. **Use a bare domain as the custom address.** Google Sites custom URLs require a subdomain such as www, only the site owner can connect them, and one site can connect up to five custom domains. Follow the guide to [putting a Google Sites site on your own domain](/blog/put-a-google-sites-site-on-your-own-domain/) for the ownership and DNS steps.
+2. **Run a built-in e-commerce checkout.** Google Sites has no native product catalog, shopping cart, or checkout. You can link to or embed a separate store or payment provider, but that provider handles the transaction flow.
+3. **Design outside the Google Sites layout system.** Custom themes can change fonts, colors, images, buttons, menus, and site width, but pages still use the Google Sites grid and content blocks. A fully custom layout or custom site behavior needs a different platform.
+
+Those limits do not make Google Sites a bad tool. They make it a fit for a small information site rather than a custom storefront or application. If your business needs more control, compare the [Google Sites alternatives for a business](/blog/google-sites-alternatives-for-a-business/).
 
 ## How do you add pages and content?
 
