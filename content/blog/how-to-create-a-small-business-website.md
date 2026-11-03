@@ -1,32 +1,30 @@
 ---
 title: "How to create a small business website"
-description: "Nine steps to create a small business website, in order, with rough hours for each and who does it. Plan on about 9 to 15 hours of your own time."
+description: "Eight steps to create a small business website, in order, with rough hours for each and who does it. Plan on about 9 to 15 hours of your own time."
 slug: "how-to-create-a-small-business-website"
 cluster: "guides"
 answer: "To create a small business website, choose and register a domain, pick hosting or a builder, write a few pages, add photos and a contact form, link your Google Business Profile, then test on a phone and launch. A do-it-yourself owner can work through the list in roughly 9 to 15 hours (my estimate), and the writing takes the most time."
 lead: "A small business website is a set of pages that tells customers who you are, what you do, and how to reach you."
 published: "2026-10-03"
-updated: "2026-10-11"
+updated: "2026-11-03"
 image: "/assets/blog/how-to-create-a-small-business-website-cover.svg"
-imageAlt: "Cover for How to create a small business website: nine steps from domain to launch, with rough hours for each"
+imageAlt: "Cover for How to create a small business website: eight steps from domain to launch, with rough hours for each"
 ---
 
 You don't need a designer to build a small business website, but you do need an order of operations. Choose the builder first and you'll end up redoing work once you find out what the site has to say.
 
 ## What are the steps, in order?
 
-The table below lists nine steps. The times are my estimates for a small site of four to six pages, done by an owner who has never built one. Your times will vary with how fast you write.
+The numbered list below has eight steps. The times are my estimates for a small site of four to six pages, done by an owner who has never built one. Your times will vary with how fast you write.
 
-| # | Step | Rough time | Who does it |
-|---|---|---|---|
-| 1 | Choose and register a domain | 30 minutes | You, in your name |
-| 2 | Pick hosting, or a builder that includes it | 30 minutes | You |
-| 3 | Decide on the pages: home, each service, about, contact | 1 hour | You |
-| 4 | Write the copy for each page | 4 to 8 hours | You |
-| 5 | Pick or shoot photos of your work and your team | 1 to 2 hours | You, with a phone |
-| 6 | Add a contact form and your phone number | 30 minutes | You, or your builder |
-| 7 | Link your Google Business Profile to the site | 30 minutes, plus any verification wait | You |
-| 8 | Test on a phone, fix anything broken, then launch | 1 to 2 hours | You |
+1. **Choose and register a domain.** Allow 30 minutes and register it in your name.
+2. **Pick hosting, or a builder that includes it.** Allow 30 minutes.
+3. **Decide on the pages: home, each service, about, and contact.** Allow 1 hour.
+4. **Write the copy for each page.** Allow 4 to 8 hours.
+5. **Pick or shoot photos of your work and your team.** Allow 1 to 2 hours with a phone.
+6. **Add a contact form and your phone number.** Allow 30 minutes for you or your builder.
+7. **Link your Google Business Profile to the site.** Allow 30 minutes plus any verification wait.
+8. **Test on a phone, fix anything broken, then launch.** Allow 1 to 2 hours.
 
 Add the middle of those ranges and you get about 9 to 15 hours of your own time. That total doesn't count the calendar days you spend waiting on photos, a reply, or a login.
 
@@ -72,4 +70,4 @@ A home page, one page for each main service, an about page, and a contact page w
 
 ## The short version
 
-Creating a small business website is nine steps: domain, hosting, pages, copy, photos, contact form, Google Business Profile link, then a phone test and launch. Plan on roughly 9 to 15 hours of your own time, and expect the copy to take the most. If you'd rather not run the steps yourself, [Front Step Sites](/blog/what-front-step-sites-does-and-who-its-for/) handles them for $99 a year, domain included.
+Creating a small business website is eight steps: domain, hosting, pages, copy, photos, contact form, Google Business Profile link, then a phone test and launch. Plan on roughly 9 to 15 hours of your own time, and expect the copy to take the most. If you'd rather not run the steps yourself, [Front Step Sites](/blog/what-front-step-sites-does-and-who-its-for/) handles them for $99 a year, domain included.
