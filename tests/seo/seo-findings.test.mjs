@@ -20,20 +20,12 @@ test("homepage preserves buyer CTA and excludes unrelated query FAQs", () => {
   for (const entry of blocks[0].mainEntity) assert.ok(html.includes(`<summary>${entry.name}</summary>`));
 });
 
-test("homepage answers website intent without displacing its buyer journey", () => {
+test("homepage routes informational intent to purpose-built pages", () => {
   const home = read("index.html");
-  assert.match(home, /href="\/blog\/what-is-a-website-four-parts\/">What a website is<\/a>/);
-  assert.match(home, /href="\/blog\/how-to-create-a-small-business-website\/">How a website is created<\/a>/);
-  assert.match(home, /href="\/blog\/best-website-builder-three-questions\/">Best website builders, ranked<\/a>/);
-  assert.match(home, /<h2 id="website-definition">What is a website\?<\/h2>/);
-  assert.match(home, /<h2 id="best-website-creators">Best website creators for a small business, ranked<\/h2>/);
-  assert.match(home, /<th>Ranked creator<\/th><th>Published price<\/th><th>Main pro<\/th><th>Main con<\/th>/);
-  for (const creator of ["Front Step Sites", "Wix", "Squarespace", "Google Sites"]) {
-    assert.match(home, new RegExp(`<li><strong>${creator}:<\\/strong>`));
-  }
-  assert.ok(home.indexOf('class="shelf"') < home.indexOf('class="creator-guide"'), "the offer shelf must remain ahead of the comparison");
-  assert.ok(home.indexOf('class="creator-guide"') < home.indexOf('class="sample-options"'), "the comparison must remain near the top");
-  assert.doesNotMatch(home, /class="website-basics"|id="start-h"|id="maker-h"/);
+  assert.match(home, /href="\/blog\/what-is-a-website-four-parts\/">What is a website\? A plain-English definition<\/a>/);
+  assert.match(home, /href="\/blog\/how-to-create-a-small-business-website\/">How a website is created: 8 steps<\/a>/);
+  assert.match(home, /href="\/blog\/best-web-builder-sites-for-a-small-business\/">Best website creator sites, ranked<\/a>/);
+  assert.doesNotMatch(home, /class="creator-guide"|id="website-definition"|id="best-website-creators"/);
 });
 
 test("intent-mismatch articles lead with the requested primary formats", () => {
@@ -44,6 +36,16 @@ test("intent-mismatch articles lead with the requested primary formats", () => {
   assert.match(builders, /fit-and-cost comparison, not a hands-on product test/);
   assert.match(builders, /wix\.com, squarespace\.com, workspace\.google\.com, and frontstepsites\.com in October 2026/);
   assert.match(builders, /<strong>Verdict:<\/strong>/);
+  assert.ok(builders.indexOf("Best web builder sites, ranked") < builders.indexOf("<th>Option</th>"));
+  assert.ok(builders.indexOf("<th>Option</th>") < builders.indexOf("A website is a collection of linked pages"));
+
+  const howTo = read("blog/how-to-create-a-small-business-website/index.html");
+  const steps = howTo.match(/<h2 id="what-are-the-steps-in-order">[\s\S]*?<ol>([\s\S]*?)<\/ol>/)?.[1] || "";
+  assert.equal((steps.match(/<li>/g) || []).length, 8);
+  assert.ok(howTo.indexOf("<ol>") < howTo.indexOf("If you'd rather hand off steps 2 through 8"));
+
+  const definition = read("blog/what-is-a-website-four-parts/index.html");
+  assert.ok(definition.indexOf("A website is a collection of linked web pages") < definition.indexOf("If you would rather hand off"));
 
   const makers = read("blog/website-maker-or-done-for-you-three-year-cost/index.html");
   assert.match(makers, /<h1>Best Website Makers for Small Businesses: 3-Year Cost<\/h1>/);
@@ -599,9 +601,9 @@ test("intent-mismatch articles lead with the requested formats", () => {
   }
 
   const home = read("index.html");
-  assert.match(home, /href="\/blog\/what-is-a-website-four-parts\/">What a website is<\/a>/);
-  assert.match(home, /href="\/blog\/how-to-create-a-small-business-website\/">How a website is created<\/a>/);
-  assert.match(home, /href="\/blog\/best-website-builder-three-questions\/">Best website builders, ranked<\/a>/);
+  assert.match(home, /href="\/blog\/what-is-a-website-four-parts\/">What is a website\? A plain-English definition<\/a>/);
+  assert.match(home, /href="\/blog\/how-to-create-a-small-business-website\/">How a website is created: 8 steps<\/a>/);
+  assert.match(home, /href="\/blog\/best-web-builder-sites-for-a-small-business\/">Best website creator sites, ranked<\/a>/);
 });
 
 test("resource tools retain useful plans and safe output instead of the old planning-only demo", async () => {
