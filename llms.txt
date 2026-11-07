@@ -8,6 +8,7 @@
 - [Privacy policy](https://frontstepsites.com/privacy/)
 - [Terms of service](https://frontstepsites.com/terms/)
 - [Blog](https://frontstepsites.com/blog/): Practical, specific answers for small business owners about websites and local search.
+- [Website Guides by Trade](https://frontstepsites.com/blog/trades/): Choose your trade for practical website and local search guides.
 - [AI search (GEO)](https://frontstepsites.com/blog/ai-search/)
 - [Appliance Repair](https://frontstepsites.com/blog/trades/appliance-repair/)
 - [Auto Detailing](https://frontstepsites.com/blog/trades/auto-detailing/)

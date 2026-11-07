@@ -1026,6 +1026,7 @@ function main() {
   llmsLines.push(`- [Privacy policy](${SITE}/privacy/)`);
   llmsLines.push(`- [Terms of service](${SITE}/terms/)`);
   llmsLines.push(`- [Blog](${SITE}/blog/): Practical, specific answers for small business owners about websites and local search.`);
+  llmsLines.push(`- [Website Guides by Trade](${SITE}/blog/trades/): Choose your trade for practical website and local search guides.`);
   for (const h of hubClusters.sort((a, b) => a.name.localeCompare(b.name))) {
     llmsLines.push(`- [${h.name}](${SITE}/blog/${h.cluster}/)`);
   }
