@@ -33,6 +33,18 @@ Work through these five steps in order:
 
 Google's help page on naming sites explains that the name you type is the document name in Google Drive, and only you see it. The site title shows in the header and in the browser's title bar after you publish. Those are two separate settings, so you can change one without touching the other.
 
+## Register your site with Google Search Console
+
+A published Google Site can show up in Google without any registration, but Search Console shows whether it does. The steps:
+
+1. Sign in to Google Search Console with the Google account you want to own the report.
+2. Add a property.
+3. Choose Domain or URL prefix.
+4. Verify ownership by DNS TXT record or by HTML file. The options Search Console offers depend on the property type and on what you can edit.
+5. Submit your sitemap in the Sitemaps report.
+
+Our guide to [setting up Google Search Console for a small business](/blog/how-to-set-up-google-search-console-for-a-small-business/) walks through each step.
+
 ## What you cannot do with Google Sites
 
 1. **Use a bare domain as the custom address.** Google Sites custom URLs require a subdomain such as www, only the site owner can connect them, and one site can connect up to five custom domains. Follow the guide to [putting a Google Sites site on your own domain](/blog/put-a-google-sites-site-on-your-own-domain/) for the ownership and DNS steps.
