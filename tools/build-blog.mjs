@@ -963,6 +963,7 @@ function main() {
     "writing-website-content-ai-assistants-can-quote",
     "yelp-nextdoor-and-angi-which-listings-are-worth-your-time",
     "html-website-development-when-custom-code-fits",
+    "is-brainpop-a-website-guide",
   ];
   const articlesBySlug = new Map(articles.map((article) => [article.slug, article]));
   const featuredRows = featuredSlugs.map((slug) => articlesBySlug.get(slug)).filter(Boolean);
