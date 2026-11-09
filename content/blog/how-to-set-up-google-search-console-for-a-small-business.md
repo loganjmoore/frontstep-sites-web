@@ -11,6 +11,18 @@ updated: 2026-10-10
 
 You want to know whether Google can find your business website and which searches bring people to it. Google Search Console can help answer both questions. Start by connecting the site to an account you control, then focus on a few useful checks instead of every chart.
 
+## Register your website with Google
+
+Google has no separate registration form for a website. Adding it to Search Console is the closest thing, and it takes five steps:
+
+1. Sign in to [Google Search Console](https://search.google.com/search-console/about) with a Google account your business controls.
+2. Add a property.
+3. Choose Domain or URL prefix.
+4. Verify ownership. A Domain property uses a DNS TXT record. A URL-prefix property can also use an HTML file uploaded to your site.
+5. Submit your sitemap in the Sitemaps report.
+
+The sections below explain each step. Registering does not rank the site or guarantee Google indexes every page.
+
 ## Gather your logins before you start
 
 Use a Google account that will stay with your business. Keep its recovery details current and turn on two-step verification. Your website provider can help with setup without becoming the only person who can access the account.

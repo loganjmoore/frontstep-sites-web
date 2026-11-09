@@ -79,6 +79,8 @@ Google Sites also offers a setting that requests public search engines not displ
 
 A custom domain for a Google Site should be connected by the site owner and tested with the full public address. Google Sites Help says one site can connect up to five custom domains, only the site owner can make the connection, and changes may take up to 48 hours to appear. It also requires a subdomain such as “www.”
 
+The steps are in our guide to [putting a Google Sites site on your own domain](/blog/put-a-google-sites-site-on-your-own-domain/).
+
 Write down three owners before launch: who owns the Google Site, who controls the domain registrar account, and who can edit the site. Those may be one person, but they should never be a mystery. If the builder disappears, the business still needs both the site and the domain.
 
 Open the custom address with and without “www.” Check that the secure padlock appears, the address does not loop, and every menu link stays on the expected domain. If domain control feels murky, compare [Google Sites alternatives for a business](/blog/google-sites-alternatives-for-a-business/) before putting the address on signs or vehicles.

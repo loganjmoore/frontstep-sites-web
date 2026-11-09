@@ -683,7 +683,7 @@ ${renderTradeList(tradeRows)}
 
 function renderClusterHub(cluster, clusterName, articles, introHtml = "") {
   const canonical = `${SITE}/blog/${cluster}/`;
-  const crumbs = [{ name: "Home", url: "/" }, { name: "Blog", url: "/blog/" }, { name: clusterName, url: null }];
+  const crumbs = [{ name: "Home", url: "/" }, { name: "Blog", url: "/blog/" }, ...(cluster.startsWith("trades/") ? [{ name: "Trades", url: "/blog/trades/" }] : []), { name: clusterName, url: null }];
   const jsonLd = [
     {
       "@context": "https://schema.org",
