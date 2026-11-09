@@ -640,7 +640,7 @@ function renderTradeList(rows) {
   return `<ul class="hub-list">${rows
     .map((r) =>
       r.url
-        ? `<li><a href="${r.url}">${escapeHtml(r.name)}</a><span class="count">${r.count} article${r.count === 1 ? "" : "s"}</span></li>`
+        ? `<li><a href="${r.url}">${escapeHtml(r.name)}</a><span class="count">${r.count} article${r.count === 1 ? "" : "s"}</span>${r.guide ? ` <a href="${r.guide}">Website guide</a>` : ""}</li>`
         : `<li><span class="muted">${escapeHtml(r.name)}</span><span class="count">coming soon</span></li>`
     )
     .join("")}</ul>`;
@@ -938,7 +938,8 @@ function main() {
     .map((cluster) => {
       const name = clusterHumanName(cluster, topicsByCluster);
       const built = articlesByCluster.get(cluster) || [];
-      return { name, count: built.length, url: built.length ? `/blog/${cluster}/` : null };
+      const guide = built.find((a) => a.slug.startsWith("website-"));
+      return { name, count: built.length, url: built.length ? `/blog/${cluster}/` : null, guide: guide ? `/blog/${guide.slug}/` : null };
     })
     .sort((a, b) => a.name.localeCompare(b.name));
 
