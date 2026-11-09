@@ -17,6 +17,16 @@ const { chromium } = require('playwright-core');
       assert.equal((await page.goto(`${origin}/blog/`)).status(), 200);
       await page.getByRole('button', { name: 'Keep analytics off', exact: true }).click();
       await page.getByRole('button', { name: 'Keep analytics off', exact: true }).waitFor({ state: 'hidden' });
+      for (const trade of ['restaurant', 'roofing', 'salon']) {
+        const guide = page.locator(`a[href="/blog/website-${trade}/"]`);
+        assert.equal(await guide.count(), 1);
+        await guide.focus();
+        await page.keyboard.press('Enter');
+        await page.waitForURL(`${origin}/blog/website-${trade}/`);
+        await page.locator('article h1').waitFor();
+        assert.equal(await page.locator('link[rel="canonical"]').getAttribute('href'), `https://frontstepsites.com/blog/website-${trade}/`);
+        await page.goBack();
+      }
       await page.getByRole('link', { name: 'For your trade', exact: true }).click();
       await page.waitForURL(`${origin}/blog/trades/`);
       await page.getByRole('heading', { level: 1, name: 'Website guides by trade', exact: true }).waitFor();
