@@ -636,11 +636,11 @@ const HUB_FAQ = [
   { question: "How do I ask for a change to my site?", answer: "Sign in to your account and write the request in plain English. Launch includes 4 marketing updates per Central calendar month." },
 ];
 
-function renderTradeList(rows) {
+function renderTradeList(rows, includeGuides = false) {
   return `<ul class="hub-list">${rows
     .map((r) =>
       r.url
-        ? `<li><a href="${r.url}">${escapeHtml(r.name)}</a><span class="count">${r.count} article${r.count === 1 ? "" : "s"}</span>${r.guide ? ` <a href="${r.guide}">Website guide</a>` : ""}</li>`
+        ? `<li><a href="${r.url}">${escapeHtml(r.name)}</a><span class="count">${r.count} article${r.count === 1 ? "" : "s"}</span>${includeGuides && r.guide ? ` <a href="${r.guide}">${escapeHtml(r.name)} website guide</a>` : ""}</li>`
         : `<li><span class="muted">${escapeHtml(r.name)}</span><span class="count">coming soon</span></li>`
     )
     .join("")}</ul>`;
@@ -764,7 +764,7 @@ ${renderCrumbs(crumbs)}
 
 <div class="hub-rail">
   <h2><a href="/blog/trades/">For your trade</a></h2>
-  ${renderTradeList(tradeRows)}
+  ${renderTradeList(tradeRows, true)}
 </div>
 
 <div class="hub-rail">
