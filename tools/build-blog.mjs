@@ -965,6 +965,9 @@ function main() {
     "html-website-development-when-custom-code-fits",
     "is-brainpop-a-website-guide",
     "best-web-builder-sites-for-a-small-business",
+    "bing-places-and-apple-business-connect-the-listings-most-businesses-sk",
+    "blogging-for-local-businesses-does-it-still-work",
+    "can-you-run-a-business-website-on-canva",
   ];
   const articlesBySlug = new Map(articles.map((article) => [article.slug, article]));
   const featuredRows = featuredSlugs.map((slug) => articlesBySlug.get(slug)).filter(Boolean);
