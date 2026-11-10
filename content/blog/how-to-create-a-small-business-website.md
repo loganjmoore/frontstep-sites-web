@@ -11,7 +11,7 @@ image: "/assets/blog/how-to-create-a-small-business-website-cover.svg"
 imageAlt: "Cover for How to create a small business website: eight steps from domain to launch, with rough hours for each"
 ---
 
-You don't need a designer to build a small business website, but you do need an order of operations. Choose the builder first and you'll end up redoing work once you find out what the site has to say.
+You don't need a designer to build a small business website (here is [what a website is, in four parts](/blog/what-is-a-website-four-parts/)), but you do need an order of operations. Choose the builder first and you'll end up redoing work once you find out what the site has to say.
 
 ## What are the steps, in order?
 
