@@ -20,10 +20,10 @@ llmsDescription: "Compare Wix, Squarespace, Google Sites, and a done-for-you web
 
 ## Best web builder sites, ranked by small-business fit
 
-1. **Wix:** Best for owners who want the most freedom to arrange pages themselves. **Verdict:** choose it when you have tested the editor with a real service page and want direct control of future changes.
-2. **Squarespace:** Best for owners who prefer structured, polished templates. **Verdict:** choose it when you value a more guided layout and are comfortable making every update.
-3. **Google Sites:** Best for publishing a few simple pages quickly. **Verdict:** choose it for a basic site only after checking its domain setup, page titles, contact route, and mobile navigation.
-4. **Done-for-you site:** Best alternative when you want the finished site and future edits handled for you. **Verdict:** choose it when avoiding the editor matters more than making same-night changes yourself.
+1. **Wix:** Best for owners who want the most freedom to arrange pages themselves. **Pros:** flexible page layout; direct control of every change. **Cons:** you do all the writing, layout and upkeep; 2 GB storage on Light. **Verdict:** choose it when you have tested the editor with a real service page and want direct control of future changes.
+2. **Squarespace:** Best for owners who prefer structured, polished templates. **Pros:** guided layouts; domain included for the first year. **Cons:** you make every update; $228 a year before renewal. **Verdict:** choose it when you value a more guided layout and are comfortable making every update.
+3. **Google Sites:** Best for publishing a few simple pages quickly. **Pros:** no separate website plan to buy; fast to publish. **Cons:** basic page controls; custom-domain setup needs separate checks. **Verdict:** choose it for a basic site only after checking its domain setup, page titles, contact route, and mobile navigation.
+4. **Done-for-you site:** Best alternative when you want the finished site and future edits handled for you. **Pros:** $99 a year with the domain included; no editor to learn. **Cons:** you request changes instead of making them; four coherent marketing updates per Central calendar month. **Verdict:** choose it when avoiding the editor matters more than making same-night changes yourself.
 
 The ranking favors self-serve builders because that is what this list compares. If your priority is spending less time in an editor, move the done-for-you option to the top.
 
@@ -35,6 +35,8 @@ The ranking favors self-serve builders because that is what this list compares. 
 | Front Step Sites | $99 a year, domain included, no setup fee | Front Step Sites, from your requests | Owners who want the edits handled | Four coherent marketing updates per Central calendar month |
 
 Checked October 24, 2026: [Wix’s official plan guide](https://www.wix.com/blog/how-much-is-a-wix-website) lists Light at $17 a month for a yearly subscription paid in full ($204 a year), with 2 GB of storage and a domain for the first year. [Squarespace’s pricing page](https://www.squarespace.com/pricing) lists Basic at $19 a month billed annually ($228 a year) or $25 billed monthly. These displayed-dollar reference prices are not a local checkout quote; your region, currency, taxes, renewal prices, and current plan terms may differ.
+
+## What is a website?
 
 A website is a collection of linked pages, images, and other files published under one domain name and opened in a web browser. The domain is the address, hosting delivers the files, pages organize the information, and content gives visitors something to read or use. A website builder is one way to assemble and publish those parts without writing the underlying code yourself. For the fuller definition, including the difference between a page, browser, search engine, domain, and host, read [what a website is and how its four parts work](/blog/what-is-a-website-four-parts/).
 
