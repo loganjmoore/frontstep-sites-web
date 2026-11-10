@@ -1,0 +1,1 @@
+These comparisons put the cost of making a website yourself next to paying for the work. Start with the [three-year cost of a website maker versus a done-for-you site](/blog/website-maker-or-done-for-you-three-year-cost/), then see [what a website maker does, as a 12-task cost example](/blog/what-a-website-maker-does-12-task-example/) for the task-by-task breakdown.
