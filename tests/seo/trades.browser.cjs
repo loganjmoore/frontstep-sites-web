@@ -33,6 +33,9 @@ const { chromium } = require('playwright-core');
       const links = page.locator('article .hub-list li > a:first-child');
       assert.equal(await links.count(), 19);
       const items = await page.locator('script[type="application/ld+json"]').evaluateAll(nodes => nodes.map(node => JSON.parse(node.textContent)).find(item => item['@type'] === 'CollectionPage').hasPart.itemListElement);
+      for (const trade of ['appliance-repair', 'auto-detailing', 'auto-repair', 'cleaning', 'electrical', 'garage-door']) {
+        assert.equal(await page.locator(`article a[href="/blog/website-${trade}/"]`).count(), 1);
+      }
       assert.deepEqual(await links.evaluateAll(nodes => nodes.map(node => [node.pathname, node.textContent])), items.map(item => [new URL(item.url).pathname, item.name]));
       for (const [slug, name] of [['landscaping', 'Landscaping and Lawn Care'], ['locksmith', 'Locksmith'], ['moving-company', 'Moving Company']]) {
         assert.equal(await page.getByRole('link', { name: `${name} website guide`, exact: true }).getAttribute('href'), `/blog/website-${slug}/`);

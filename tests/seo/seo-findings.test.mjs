@@ -1285,6 +1285,14 @@ test("trade directory exposes the same real hubs to readers, structured data and
   assert.deepEqual(collection.hasPart.itemListElement.map(item => [item.url, item.name]),
     hubs.map(match => [`https://frontstepsites.com${match[1]}`, match[2]]));
   for (const [, href] of hubs) assert.ok(read(`${href.slice(1)}index.html`).includes('<h1>'));
+  for (const trade of ["appliance-repair", "auto-detailing", "auto-repair", "cleaning", "electrical", "garage-door"]) {
+    const path = `/blog/website-${trade}/`;
+    const page = read(`blog/website-${trade}/index.html`);
+    assert.equal((html.match(new RegExp(`href="${path}"`, "g")) || []).length, 1);
+    assert.equal((sitemap.match(new RegExp(`<loc>https://frontstepsites\\.com${path}</loc>`, "g")) || []).length, 1);
+    assert.match(page, new RegExp(`<link rel="canonical" href="https://frontstepsites\\.com${path}">`));
+    assert.doesNotMatch(page, /<meta[^>]+(?:name|property)="(?:robots|googlebot)"[^>]+noindex/i);
+  }
   for (const [slug, name, trade] of [["landscaping", "Landscaping and Lawn Care", "landscaping"], ["locksmith", "Locksmith", "locksmith"], ["moving-company", "Moving Company", "moving"]]) {
     const path = `/blog/website-${slug}/`;
     const page = read(`blog/website-${slug}/index.html`);
