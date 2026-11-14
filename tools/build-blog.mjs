@@ -670,7 +670,7 @@ function renderTradeDirectory(tradeRows) {
 ${renderCrumbs(crumbs)}
 <h1>Website guides by trade</h1>
 <p>Choose your trade for practical guidance about website content, local search, customer reviews, and the contact details customers need before they call or book.</p>
-${renderTradeList(tradeRows)}
+${renderTradeList(tradeRows, true)}
 </article>`;
   return pageShell({
     title: "Website Guides by Trade | Front Step Sites",
