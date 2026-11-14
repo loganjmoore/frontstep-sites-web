@@ -9,7 +9,7 @@ const { chromium } = require('playwright-core');
   await mkdir('test-results/trades', { recursive: true });
   const browser = await chromium.launch({ channel: 'chrome', headless: true, chromiumSandbox: true });
   try {
-    for (const width of [390, 1280]) {
+    for (const width of [320, 390, 1280]) {
       const page = await browser.newPage({ viewport: { width, height: 900 } });
       const errors = [];
       page.on('pageerror', error => errors.push(error.message));
@@ -55,6 +55,8 @@ const { chromium } = require('playwright-core');
       await page.locator('article h1').waitFor();
       await page.goBack();
       await page.waitForURL(`${origin}/blog/trades/`);
+      await page.evaluate(() => document.fonts.ready);
+      assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth), 'trade directory must fit after keyboard navigation and Back');
       assert.equal((await page.goto(`${origin}/blog/structured-data-for-ai-search-what-small-businesses-need/`)).status(), 200);
       const schema = page.locator('article');
       assert.ok((await schema.innerText()).includes('Schema does not guarantee rich results or AI citations.'));
