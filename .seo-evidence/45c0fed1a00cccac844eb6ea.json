@@ -1,0 +1,36 @@
+{
+  "version": 1,
+  "verifier": "seo-worker-v1",
+  "postFile": "content/blog/build-a-website-with-wix-six-mistakes.md",
+  "artifact": ".seo-evidence/45c0fed1a00cccac844eb6ea.json",
+  "verifiedAt": "2026-11-15T08:42:33.181Z",
+  "sourceFiles": [
+    {
+      "path": "index.html",
+      "sha256": "c15dcdd5e16978e4441dd0b24a130be5e9590d600579e54687492fd4ccb97408",
+      "excerpt": "            <tr><th scope=\"row\">Grow monthly<small>4 marketing updates/month</small></th><td>$29 monthly</td><td>$348<small>12 monthly payments</small></td></tr>\n            <tr><th scope=\"row\">Grow yearly<small>4 marketing updates/month</small></th><td>$290 yearly</td><td>$290<small>$24.17/month equivalent</small></td></tr>\n          </tbody>\n        </table>\n        <p class=\"hint\">Yearly Grow costs $58 less than 12 monthly payments. Monthly equivalents are for comparison; yearly plans are billed in one payment.</p>"
+    }
+  ],
+  "example": {
+    "description": "Subtracts the tracked yearly Grow total from the tracked total for 12 monthly Grow payments.",
+    "operation": "subtract",
+    "inputs": [
+      348,
+      290
+    ],
+    "result": 58,
+    "excerpt": "Here is a source-backed arithmetic example, not a Wix price quote. The tracked Front Step Sites plan table lists Grow at $29 monthly, or $348 over 12 monthly payments, and $290 when billed yearly:\n\n`$29 × 12 = $348`, then `$348 - $290 = $58`.",
+    "reproducedBy": "worker arithmetic"
+  },
+  "references": [
+    {
+      "url": "https://developers.google.com/search/docs/crawling-indexing/mobile/mobile-sites-mobile-first-indexing",
+      "status": 200,
+      "sha256": "b8b9e86f75afcac2c235dc42ac9053c77fab7e2393543a0ae061f21010889429",
+      "sourceExcerpt": "Google uses the mobile version of a site's content, crawled with the smartphone agent, for indexing and ranking. This is called mobile-first indexing.",
+      "supportingClaim": "[Google Search Central](https://developers.google.com/search/docs/crawling-indexing/mobile/mobile-sites-mobile-first-indexing) says Google uses the mobile version of a site's content for indexing and ranking.",
+      "primarySourceRationale": "Google Search Central is Google's first-party documentation and supports only the statement about how Google performs mobile-first indexing."
+    }
+  ],
+  "claimRationale": "The tracked product page supports only the current Front Step Sites Grow figures used in the worked example: $29 monthly, $348 for 12 monthly payments, $290 yearly, and a $58 difference. Recomputing $348 minus $290 gives $58. These figures do not establish Wix pricing, Wix savings, taxes, renewal prices, future Front Step Sites prices, separately quoted work, owner time, rankings, leads, or business outcomes. The blocked Wix pricing claim and URL were removed rather than reused. Google's first-party documentation supports only the statement about Google's mobile-first indexing behavior; it does not prove that this checklist improves rankings or customer results."
+}

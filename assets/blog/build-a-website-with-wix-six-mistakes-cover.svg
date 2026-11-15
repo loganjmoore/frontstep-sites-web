@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img" aria-label="Six-card pre-publish inspection for a Wix website covering template, phone layout, action, cost, headings, and live testing">
+  <rect width="1200" height="630" fill="#eceeec"/>
+  <rect x="46" y="46" width="1120" height="550" fill="#111312"/>
+  <rect x="40" y="40" width="1120" height="550" fill="#fff" stroke="#111312" stroke-width="3"/>
+  <g transform="translate(1030 66)"><rect width="34" height="34" fill="#ffd60a"/><path d="M6 27h22v-5H17v-5h-5v-5H6z" fill="#111312"/></g>
+  <text x="80" y="98" font-family="Arial,sans-serif" font-size="22" font-weight="700" letter-spacing="2" fill="#474d4b">FRONT STEP SITES BLOG</text>
+  <text x="80" y="186" font-family="Arial,sans-serif" font-size="57" font-weight="800" fill="#111312">Build a website with Wix</text>
+  <text x="80" y="242" font-family="Arial,sans-serif" font-size="38" font-weight="700" fill="#474d4b">6 mistakes to fix before publish</text>
+  <g font-family="Arial,sans-serif" fill="#111312">
+    <g transform="translate(80 306)"><rect width="320" height="98" fill="#ffd60a" stroke="#111312" stroke-width="2"/><text x="18" y="34" font-size="16" font-weight="800" letter-spacing="1">01 TEMPLATE</text><text x="18" y="70" font-size="21" font-weight="700">Preview every page type</text></g>
+    <g transform="translate(420 306)"><rect width="320" height="98" fill="#fff" stroke="#111312" stroke-width="2"/><text x="18" y="34" font-size="16" font-weight="800" letter-spacing="1">02 PHONE</text><text x="18" y="70" font-size="21" font-weight="700">Inspect the mobile view</text></g>
+    <g transform="translate(760 306)"><rect width="360" height="98" fill="#fff" stroke="#111312" stroke-width="2"/><text x="18" y="34" font-size="16" font-weight="800" letter-spacing="1">03 ACTION</text><text x="18" y="70" font-size="21" font-weight="700">Make one next step clear</text></g>
+    <g transform="translate(80 422)"><rect width="320" height="98" fill="#fff" stroke="#111312" stroke-width="2"/><text x="18" y="34" font-size="16" font-weight="800" letter-spacing="1">04 COST</text><text x="18" y="70" font-size="21" font-weight="700">Price the full year</text></g>
+    <g transform="translate(420 422)"><rect width="320" height="98" fill="#fff" stroke="#111312" stroke-width="2"/><text x="18" y="34" font-size="16" font-weight="800" letter-spacing="1">05 HEADINGS</text><text x="18" y="70" font-size="21" font-weight="700">Name the page clearly</text></g>
+    <g transform="translate(760 422)"><rect width="360" height="98" fill="#111312" stroke="#111312" stroke-width="2"/><text x="18" y="34" font-size="16" font-weight="800" letter-spacing="1" fill="#ffd60a">06 LIVE TEST</text><text x="18" y="70" font-size="21" font-weight="700" fill="#fff">Open the public URL</text></g>
+  </g>
+  <text x="80" y="558" font-family="Arial,sans-serif" font-size="20" font-weight="700" letter-spacing="1" fill="#474d4b">PLAN · PUBLISH · TEST THE CUSTOMER PATH</text>
+</svg>
