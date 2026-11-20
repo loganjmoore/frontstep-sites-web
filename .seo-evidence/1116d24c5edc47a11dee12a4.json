@@ -1,0 +1,44 @@
+{
+  "version": 1,
+  "verifier": "seo-worker-v1",
+  "postFile": "content/blog/create-a-website-with-wix-launch-checklist.md",
+  "artifact": ".seo-evidence/1116d24c5edc47a11dee12a4.json",
+  "verifiedAt": "2026-11-20T16:21:23.848Z",
+  "sourceFiles": [
+    {
+      "path": "index.html",
+      "sha256": "c15dcdd5e16978e4441dd0b24a130be5e9590d600579e54687492fd4ccb97408",
+      "excerpt": "            <tr><th scope=\"row\">Launch<small>4 marketing updates/month</small></th><td>$99 yearly</td><td>$99<small>$8.25/month equivalent</small></td></tr>\n            <tr><th scope=\"row\">Grow monthly<small>4 marketing updates/month</small></th><td>$29 monthly</td><td>$348<small>12 monthly payments</small></td></tr>\n            <tr><th scope=\"row\">Grow yearly<small>4 marketing updates/month</small></th><td>$290 yearly</td><td>$290<small>$24.17/month equivalent</small></td></tr>"
+    }
+  ],
+  "example": {
+    "description": "Subtract the tracked Launch annual price from the tracked Grow annual price.",
+    "operation": "subtract",
+    "inputs": [
+      290,
+      99
+    ],
+    "result": 191,
+    "excerpt": "Front Step Sites lists Launch at $99 yearly and Grow at $290 yearly, so the difference between those two annual subscription prices is `$290 - $99 = $191`.",
+    "reproducedBy": "worker arithmetic"
+  },
+  "references": [
+    {
+      "url": "https://support.wix.com/en/article/wix-seo-setup-checklist-creating-your-seo-checklist",
+      "status": 200,
+      "sha256": "39a4e81a6f8dcaea0d07bb230e072f799d365e978e87baf0d67291bb66b5a34f",
+      "sourceExcerpt": "The Wix SEO Setup Checklist is a step-by-step checklist designed to help you improve your site's search engine optimization (SEO) based on your business's information and your keywords.",
+      "supportingClaim": "[The Wix Help Center](https://support.wix.com/en/article/wix-seo-setup-checklist-creating-your-seo-checklist) says, “The Wix SEO Setup Checklist is a step-by-step checklist designed to help you improve your site's search engine optimization (SEO).”",
+      "primarySourceRationale": "Wix maintains the official product documentation for its own SEO Setup Checklist."
+    },
+    {
+      "url": "https://developers.google.com/search/docs/crawling-indexing/mobile/mobile-sites-mobile-first-indexing",
+      "status": 200,
+      "sha256": "1d62d4daef15bef8f1fb6de15bf056520b97c01017243beb3f9da2ad24950689",
+      "sourceExcerpt": "Google uses the mobile version of a site's content, crawled with the smartphone agent, for indexing and ranking. This is called mobile-first indexing.",
+      "supportingClaim": "[Google Search Central](https://developers.google.com/search/docs/crawling-indexing/mobile/mobile-sites-mobile-first-indexing) says, “Google uses the mobile version of a site's content, crawled with the smartphone agent, for indexing and ranking.”",
+      "primarySourceRationale": "Google Search Central is Google's official documentation for its indexing systems."
+    }
+  ],
+  "claimRationale": "The Wix reference and its supporting claim now appear together in the post, followed by an explicit limit: the source describes the checklist's SEO purpose but does not guarantee indexing or rankings. The Google reference and quoted mobile-first indexing claim also appear together in the post. The tracked plan table supports only the $191 subtraction between two Front Step Sites annual prices; the post expressly limits that evidence and does not use it as a Wix price or performance claim."
+}
