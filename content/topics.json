@@ -1714,5 +1714,11 @@
   "title": "Build a Website With Wix: 6 Mistakes to Fix",
   "cluster": "guides",
   "angle": "a six-mistake pre-publish audit covering template choice, the separate mobile view, customer action, annual cost, headings, and signed-out live testing"
+ },
+ {
+  "slug": "create-a-website-with-wix-launch-checklist",
+  "title": "Create a Website With Wix: 9-Point Launch Checklist",
+  "cluster": "guides",
+  "angle": "a start-to-launch checklist with nine explicit pass conditions, from gathering business facts through domain, search, testing, and owner handoff"
  }
 ]

@@ -952,6 +952,8 @@ function main() {
   // topics.json lists new posts last, so the last six built articles are the newest.
   const latestRows = articles.slice(-6).reverse();
   const featuredSlugs = [
+    // Keep this indexing target discoverable when newer posts displace top picks.
+    "best-website-builder-three-questions",
     "cleaning-google-business-profile",
     "cleaning-local-seo-checklist",
     "cleaning-homepage-copy",
