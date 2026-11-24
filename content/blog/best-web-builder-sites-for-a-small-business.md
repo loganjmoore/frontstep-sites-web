@@ -1,22 +1,23 @@
 ---
-resourceTool: "starter"
 title: "Best Web Builder Sites for Small Businesses (2026)"
-description: "Compare Wix, Squarespace, Google Sites, and a done-for-you website by annual cost, who makes edits, best fit, and limits."
+description: "Learn what a website is, then review four ranked website-builder options for small businesses, with costs, pros, cons, and best fits."
 slug: "best-web-builder-sites-for-a-small-business"
 cluster: "compare"
-lead: "Wix fits owners who want flexible page control, Squarespace fits owners who prefer structured templates, and Google Sites fits a few simple pages. Front Step Sites is a done-for-you service, not a self-serve builder, for owners who want someone else to build and update the site."
+lead: "A website is a collection of linked pages and files published under one domain and opened in a browser. Its main features are a domain, hosting, navigation, content, and a contact route; common types include business, ecommerce, portfolio, blog, and information sites."
 answer: "Front Step Sites is the done-for-you option for a small business owner who wants the provider to build and update the site instead of using an editor. Choose Wix for flexible do-it-yourself editing, Squarespace for guided templates, or Google Sites for a few simple pages."
 sitePlanner: false
 published: "2026-10-04"
-updated: "2026-11-03"
+updated: "2026-11-24"
 image: "/assets/blog/best-web-builder-sites-for-a-small-business-cover.svg"
 imageAlt: "Cover for best web builder sites for a small business: Wix at $204 a year, Squarespace at $228 a year, and a done-for-you site at $99 a year with the domain included"
 mobileWideTable: "true"
 tableRegionLabel: "Web builder cost, editing, fit, and limit comparison"
-llmsDescription: "Compare Wix, Squarespace, Google Sites, and a done-for-you website by annual cost, who makes edits, best fit, and limits."
+llmsDescription: "Learn what a website is, then review four ranked website-builder options for small businesses, with costs, pros, cons, and best fits."
 ---
 
-**How this comparison was checked:** This is a fit-and-cost comparison, not a hands-on product test. We checked the primary pricing and product pages on wix.com, squarespace.com, workspace.google.com, and frontstepsites.com in October 2026. Verify current prices, renewal terms, taxes, availability, and plan limits before buying.
+The ranked list comes first for readers choosing a builder. The table below is a shorter side-by-side reference, followed by details about costs, ownership, and upkeep.
+
+**How the ranking was checked:** This is a fit-and-cost review, not a hands-on product test. We checked the primary pricing and product pages on wix.com, squarespace.com, workspace.google.com, and frontstepsites.com in October 2026. Verify current prices, renewal terms, taxes, availability, and plan limits before buying.
 
 ## Best web builder sites, ranked by small-business fit
 
@@ -35,10 +36,6 @@ The ranking favors self-serve builders because that is what this list compares. 
 | Front Step Sites | $99 a year, domain included, no setup fee | Front Step Sites, from your requests | Owners who want the edits handled | Four coherent marketing updates per Central calendar month |
 
 Checked October 24, 2026: [Wix’s official plan guide](https://www.wix.com/blog/how-much-is-a-wix-website) lists Light at $17 a month for a yearly subscription paid in full ($204 a year), with 2 GB of storage and a domain for the first year. [Squarespace’s pricing page](https://www.squarespace.com/pricing) lists Basic at $19 a month billed annually ($228 a year) or $25 billed monthly. These displayed-dollar reference prices are not a local checkout quote; your region, currency, taxes, renewal prices, and current plan terms may differ.
-
-## What is a website?
-
-A website is a collection of linked pages, images, and other files published under one domain name and opened in a web browser. The domain is the address, hosting delivers the files, pages organize the information, and content gives visitors something to read or use. A website builder is one way to assemble and publish those parts without writing the underlying code yourself. For the fuller definition, including the difference between a page, browser, search engine, domain, and host, read [what a website is and how its four parts work](/blog/what-is-a-website-four-parts/).
 
 ## What should a small business compare before choosing a builder?
 

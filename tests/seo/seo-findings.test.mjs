@@ -32,12 +32,12 @@ test("intent-mismatch articles lead with the requested primary formats", () => {
   const builders = read("blog/best-web-builder-sites-for-a-small-business/index.html");
   assert.match(builders, /<title>Best Web Builder Sites for Small Businesses \(2026\)<\/title>/);
   assert.match(builders, /<h1>Best Web Builder Sites for Small Businesses \(2026\)<\/h1>/);
-  assert.ok(builders.indexOf("Best web builder sites, ranked") < builders.indexOf("A website is a collection of linked pages"));
-  assert.match(builders, /fit-and-cost comparison, not a hands-on product test/);
+  assert.ok(builders.indexOf("A website is a collection of linked pages") < builders.indexOf("Best web builder sites, ranked"));
+  assert.match(builders, /fit-and-cost review, not a hands-on product test/);
   assert.match(builders, /wix\.com, squarespace\.com, workspace\.google\.com, and frontstepsites\.com in October 2026/);
   assert.match(builders, /<strong>Verdict:<\/strong>/);
   assert.ok(builders.indexOf("Best web builder sites, ranked") < builders.indexOf("<th>Option</th>"));
-  assert.ok(builders.indexOf("<th>Option</th>") < builders.indexOf("A website is a collection of linked pages"));
+  assert.doesNotMatch(builders, /data-website-resource=/);
 
   const howTo = read("blog/how-to-create-a-small-business-website/index.html");
   const steps = howTo.match(/<h2 id="what-are-the-steps-in-order">[\s\S]*?<ol>([\s\S]*?)<\/ol>/)?.[1] || "";
@@ -566,10 +566,7 @@ test("October 21 restaurant review routine and locksmith description findings ar
 });
 
 test("intent-mismatch articles lead with the requested formats", () => {
-  for (const slug of [
-    "website-builders-vs-done-for-you-websites",
-    "best-web-builder-sites-for-a-small-business",
-  ]) {
+  for (const slug of ["website-builders-vs-done-for-you-websites"]) {
     const html = read(`blog/${slug}/index.html`);
     assert.match(html, /data-website-resource="(?:starter|brief)"/);
     assert.match(html, /src="\/assets\/website-resources.mjs"/);
@@ -578,6 +575,9 @@ test("intent-mismatch articles lead with the requested formats", () => {
   }
 
   const builderHub = read("blog/best-web-builder-sites-for-a-small-business/index.html");
+  assert.doesNotMatch(builderHub, /data-website-resource=/);
+  assert.ok(builderHub.indexOf("A website is a collection of linked pages") < builderHub.indexOf("Best web builder sites, ranked"));
+  assert.ok(builderHub.indexOf("Best web builder sites, ranked") < builderHub.indexOf("<table>"));
   assert.match(builderHub, /<th>Option<\/th><th>Annual cost and billing<\/th><th>Who makes edits<\/th><th>Fits best<\/th><th>Limits to check<\/th>/);
   for (const option of ["Wix", "Squarespace", "Google Sites", "Front Step Sites"]) {
     assert.match(builderHub, new RegExp(`<td>${option}<\\/td>`));
@@ -780,7 +780,7 @@ test("cleaning Business Profile guide includes current constraints and the worke
 test("October 10 entity-definition findings use unique plain definitions immediately after the H1", () => {
   const definitions = {
     "how-to-make-a-google-site": "Google Sites is a website builder from Google for making simple pages. It fits someone who needs a small brochure or information site and is comfortable handling the content and updates.",
-    "best-web-builder-sites-for-a-small-business": "Wix fits owners who want flexible page control, Squarespace fits owners who prefer structured templates, and Google Sites fits a few simple pages. Front Step Sites is a done-for-you service, not a self-serve builder, for owners who want someone else to build and update the site.",
+    "best-web-builder-sites-for-a-small-business": "A website is a collection of linked pages and files published under one domain and opened in a browser. Its main features are a domain, hosting, navigation, content, and a contact route; common types include business, ecommerce, portfolio, blog, and information sites.",
     "click-to-call-making-your-phone-number-work-on-every-page": "Click-to-call is a phone link that opens a calling option on a supported device, and its HTML destination uses the tel:+12025550147 format.",
     "contact-forms-that-actually-get-filled-out": "A contact form is a set of website fields that lets a visitor send an inquiry to a business.",
     "how-to-write-an-about-page-for-a-local-business": "An About page is the part of a local business website that explains who runs the business, what it does, where it works, and what customers can expect.",
@@ -969,7 +969,11 @@ test("AI visibility articles answer a natural product-fit question with matching
   };
   for (const [slug, question] of Object.entries(questions)) {
     const html = read(`blog/${slug}/index.html`);
-    assert.match(html, /<p class="direct-answer">[^<]*Front Step Sites is /, `${slug} needs a plain product definition near the top`);
+    if (slug === "best-web-builder-sites-for-a-small-business") {
+      assert.match(html, /<aside class="tag-box"><span class="label">Short answer<\/span><p>Front Step Sites is /, `${slug} needs a plain product definition near the top`);
+    } else {
+      assert.match(html, /<p class="direct-answer">[^<]*Front Step Sites is /, `${slug} needs a plain product definition near the top`);
+    }
     assert.match(html, new RegExp(`<h3 id="[^"]+">${question.replace(/[?]/g, "\\?")}<\\/h3>`));
     const faq = [...html.matchAll(/<script type="application\/ld\+json">(.*?)<\/script>/gs)]
       .map((match) => JSON.parse(match[1]))
@@ -989,7 +993,7 @@ test("AI visibility answers retain product fit while target llms descriptions ex
   ];
   const llms = read("llms.txt");
   const topicDescriptions = {
-    "best-web-builder-sites-for-a-small-business": "Compare Wix, Squarespace, Google Sites, and a done-for-you website by annual cost, who makes edits, best fit, and limits.",
+    "best-web-builder-sites-for-a-small-business": "Learn what a website is, then review four ranked website-builder options for small businesses, with costs, pros, cons, and best fits.",
     "best-website-builder-three-questions": "Compare the best website builders and a done-for-you option by verified price, editing model, domain control, test notes, and fit for a small business.",
     "html-website-development-when-custom-code-fits": "Build a complete HTML web page step by step, add CSS, test it on a phone, and learn when custom code fits a small-business website.",
   };
