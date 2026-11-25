@@ -83,6 +83,24 @@ header nav a.hide-sm{display:none}
   .scope-part + .scope-part{border-top:0;border-left:1px solid var(--line);padding-left:20px}
   .hub-links{grid-column:1/-1}
 }
+.creator-guide{margin-top:40px;border-top:2px solid var(--ink);padding-top:28px}
+.creator-guide h2{max-width:22ch}
+.creator-ranking{list-style:none;counter-reset:creator;display:grid;margin-top:24px;border-top:1px solid var(--ink)}
+.creator-ranking li{counter-increment:creator;display:grid;grid-template-columns:42px 1fr;gap:14px;padding:18px 0;border-bottom:1px solid var(--line)}
+.creator-ranking li::before{content:counter(creator);font-stretch:75%;font-weight:800;font-size:2.25rem;line-height:1}
+.creator-ranking h3{font-size:1.15rem;line-height:1.25}
+.creator-ranking .best-for{margin-top:3px;color:var(--ink-2)}
+.creator-notes{display:grid;gap:8px 20px;margin-top:12px}
+.creator-notes dt{font-size:.78rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase}
+.creator-notes dd{color:var(--ink-2)}
+.creator-method{margin-top:18px;color:var(--ink-2);max-width:75ch;font-size:.95rem}
+@media(min-width:720px){
+  .creator-ranking{grid-template-columns:1fr 1fr}
+  .creator-ranking li:nth-child(odd){padding-right:22px;border-right:1px solid var(--line)}
+  .creator-ranking li:nth-child(even){padding-left:22px}
+  .creator-notes{grid-template-columns:1fr 1fr}
+  .creator-notes .test-note{grid-column:1/-1}
+}
 .shelf{position:relative;margin-top:40px;padding-bottom:36px}
 .shelf .tags{display:grid;gap:40px;align-items:start;position:relative;z-index:1}
 @media(min-width:860px){.shelf .tags{grid-template-columns:1fr 1.22fr 1fr;gap:28px}}
@@ -284,6 +302,58 @@ footer p{color:var(--ink-2);font-size:.92rem}
         <a href="/blog/compare/">All comparisons</a>
         <a href="/blog/ai-search/">AI search guides</a>
       </nav>
+    </div>
+
+    <div class="creator-guide" aria-labelledby="creator-guide-h">
+      <h2 id="creator-guide-h">Best website creators for a small business, ranked</h2>
+      <p class="lead" style="margin-top:.8rem">A website is a group of linked pages published under one domain. If you need a small-business site, these four options differ most in who builds it, who makes changes, and what the first year costs.</p>
+      <ol class="creator-ranking">
+        <li>
+          <div>
+            <h3>Wix</h3>
+            <p class="best-for"><strong>Best for:</strong> owners who want flexible do-it-yourself editing.</p>
+            <dl class="creator-notes">
+              <div><dt>Price checked</dt><dd>Light: $204/year ($17/month billed yearly)</dd></div>
+              <div><dt>Pros and cons</dt><dd>Flexible layouts and direct editing; you handle the writing, build, and upkeep.</dd></div>
+              <div class="test-note"><dt>Test note</dt><dd>Build one real service page, change a photo, and inspect the published phone view.</dd></div>
+            </dl>
+          </div>
+        </li>
+        <li>
+          <div>
+            <h3>Squarespace</h3>
+            <p class="best-for"><strong>Best for:</strong> owners who prefer structured templates.</p>
+            <dl class="creator-notes">
+              <div><dt>Price checked</dt><dd>Basic: $228/year ($19/month billed annually)</dd></div>
+              <div><dt>Pros and cons</dt><dd>Guided layouts and a first-year domain; you make every update.</dd></div>
+              <div class="test-note"><dt>Test note</dt><dd>Change the navigation, contact details, and a service page before committing.</dd></div>
+            </dl>
+          </div>
+        </li>
+        <li>
+          <div>
+            <h3>Google Sites</h3>
+            <p class="best-for"><strong>Best for:</strong> publishing a few simple pages quickly.</p>
+            <dl class="creator-notes">
+              <div><dt>Price checked</dt><dd>No separate website plan to select with a Google account</dd></div>
+              <div><dt>Pros and cons</dt><dd>Fast to publish; basic page controls and extra custom-domain checks.</dd></div>
+              <div class="test-note"><dt>Test note</dt><dd>Check domain setup, page titles, the contact route, and mobile navigation.</dd></div>
+            </dl>
+          </div>
+        </li>
+        <li>
+          <div>
+            <h3>Front Step Sites</h3>
+            <p class="best-for"><strong>Best for:</strong> owners who want the site and future edits handled.</p>
+            <dl class="creator-notes">
+              <div><dt>Price checked</dt><dd>$99/year, domain included, no setup fee</dd></div>
+              <div><dt>Pros and cons</dt><dd>No editor to learn; you request changes instead of making them yourself.</dd></div>
+              <div class="test-note"><dt>Test note</dt><dd>Review the questionnaire, four included monthly updates, and the one-click exit process below.</dd></div>
+            </dl>
+          </div>
+        </li>
+      </ol>
+      <p class="creator-method">This is a fit-and-cost ranking, not a hands-on product test. Prices were checked October 24, 2026; region, currency, taxes, renewals, availability, and current terms may differ. <a href="/blog/best-web-builder-sites-for-a-small-business/">See the full comparison and checking method.</a></p>
     </div>
 
     <div class="shelf" aria-label="Price comparison">

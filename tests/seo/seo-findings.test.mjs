@@ -20,12 +20,22 @@ test("homepage preserves buyer CTA and excludes unrelated query FAQs", () => {
   for (const entry of blocks[0].mainEntity) assert.ok(html.includes(`<summary>${entry.name}</summary>`));
 });
 
-test("homepage routes informational intent to purpose-built pages", () => {
+test("homepage answers website-creator intent with a ranked list and deeper guides", () => {
   const home = read("index.html");
   assert.match(home, /href="\/blog\/what-is-a-website-four-parts\/">What is a website\? A plain-English definition<\/a>/);
   assert.match(home, /href="\/blog\/how-to-create-a-small-business-website\/">How a website is created: 8 steps<\/a>/);
   assert.match(home, /href="\/blog\/best-web-builder-sites-for-a-small-business\/">Best website creator sites, ranked<\/a>/);
-  assert.doesNotMatch(home, /class="creator-guide"|id="website-definition"|id="best-website-creators"/);
+  assert.match(home, /<div class="creator-guide" aria-labelledby="creator-guide-h">/);
+  assert.match(home, /<h2 id="creator-guide-h">Best website creators for a small business, ranked<\/h2>/);
+  const ranking = home.match(/<ol class="creator-ranking">([\s\S]*?)<\/ol>/)?.[1] || "";
+  assert.equal((ranking.match(/<li>/g) || []).length, 4);
+  for (const option of ["Wix", "Squarespace", "Google Sites", "Front Step Sites"]) {
+    assert.match(ranking, new RegExp(`<h3>${option}<\\/h3>`));
+  }
+  assert.equal((ranking.match(/<dt>Price checked<\/dt>/g) || []).length, 4);
+  assert.equal((ranking.match(/<dt>Pros and cons<\/dt>/g) || []).length, 4);
+  assert.equal((ranking.match(/<dt>Test note<\/dt>/g) || []).length, 4);
+  assert.ok(home.indexOf("creator-guide-h") < home.indexOf('<div class="shelf"'), "ranking should precede the product shelf");
 });
 
 test("intent-mismatch articles lead with the requested primary formats", () => {
@@ -195,6 +205,7 @@ test("AI visibility pages carry useful answers and plain product definitions", (
     assert.match(home, new RegExp(`href="${href}"`));
   }
   assert.match(home, /Do I need to know HTML or code\?/);
+  assert.match(home, /A website is a group of linked pages published under one domain\./);
   assert.doesNotMatch(home, /about-me sites/i);
 
   for (const slug of [
